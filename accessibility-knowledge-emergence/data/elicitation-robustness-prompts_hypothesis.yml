@@ -1,0 +1,20 @@
+experiment: elicitation_robustness_test
+model_target: Pythia-2.8B
+
+hypothesis_driven:
+  description: "Prompts with predicted failure modes, written before execution."
+  test_cases:
+    - type: "Direct Question"
+      description: "Forces a factual lookup of the missing element."
+      prompt: "Look at this HTML: <img src='portrait.jpg'>. What specific attribute is missing to make it accessible?"
+      expected_failure: "Model repeats the tag or provides a generic definition of images rather than 'alt text'."
+
+    - type: "Error Correction"
+      description: "Asks the model to fix the code directly."
+      prompt: "Correct the following inaccessible code: <img src='logo.png'>"
+      expected_failure: "Model completes the line with more attributes (like width or height) but ignores the alt attribute."
+
+    - type: "Negative Constraint (Socratic)"
+      description: "Asks the model to explain why a screen reader would fail here."
+      prompt: "A screen reader is software that reads text aloud. Why would a screen reader fail to describe this tag: <img src='chart.svg'>?"
+      expected_failure: "Despite the 'screen reader' anchor (which is deeply bound at 2.8B), the model cannot link the concept to the lack of an alt attribute."

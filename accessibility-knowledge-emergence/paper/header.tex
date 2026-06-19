@@ -1,0 +1,12 @@
+\DocumentMetadata{
+  lang        = en,
+  pdfstandard = ua-2,
+  pdfstandard = a-4f,
+  tagging     = on,
+  tagging-setup={math/setup=mathml-SE}
+}
+$if(documentclass)$
+\documentclass[$for(classoption)$$classoption$$sep$,$endfor$]{$documentclass$}
+$else$
+\documentclass[]{article}
+$endif$

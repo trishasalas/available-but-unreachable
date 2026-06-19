@@ -1,0 +1,15 @@
+.ipynb_checkpoints
+.DS_Store
+build-debug/
+*.aux
+*.fls
+*.fdb_latexmk
+*.log
+.idea/
+__pycache__/
+memory/MEMORY.md
+paper-2/
+paper-3/
+.claude/
+
+CLAUDE.md

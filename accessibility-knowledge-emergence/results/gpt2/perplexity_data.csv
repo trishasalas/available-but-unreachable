@@ -1,0 +1,13 @@
+model,concept,correct_ppl,wrong_ppl
+Small (117M),screen_reader,57.5,50.7
+Small (117M),alt_text,42.0,73.0
+Small (117M),skip_link,141.4,105.5
+Medium (406M),screen_reader,37.7,33.8
+Medium (406M),alt_text,23.7,43.7
+Medium (406M),skip_link,76.6,56.0
+Large (838M),screen_reader,22.8,45.8
+Large (838M),alt_text,24.4,40.2
+Large (838M),skip_link,95.2,38.6
+XL (1.5B),screen_reader,24.8,65.4
+XL (1.5B),alt_text,19.6,40.7
+XL (1.5B),skip_link,76.7,42.7

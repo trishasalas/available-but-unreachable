@@ -1,0 +1,28 @@
+validation:
+  description: "Prompts with predicted failure modes, written before execution."
+  test_cases:
+    - type: "Direct Completion"
+      description: "alt text"
+      prompt: "The following code is not accessible because it doesn't have what? <img src='photo.jpg'>"
+      expected_behavior: "Stalls or repeats prompt despite correctly defining 'alt text' elsewhere."
+
+    - type: "Instructional Correction"
+      description: "alt text"
+      prompt: "What accessibility attribute is missing from this HTML: <img src='photo.jpg'>?"
+      expected_behavior: "Failure to answer 'alt text'."
+
+    - type: "Functional Socratic"
+      description: "screen reader"
+      prompt: "A screen reader is software that reads text aloud. Why would it fail to describe <img src='chart.svg'>?"
+      expected_behavior: "Model fails to link the 'screen reader' definition to the missing 'alt' attribute."
+
+    - type: "Fluent Confabulation (Control)"
+      description: "ARIA"
+      prompt: "ARIA stands for"
+      expected_behavior: "Produces confident but incorrect expansions."
+
+    - type: "Fluent Confabulation (Control)"
+      description: "HTML"
+      prompt: "HTML stands for"
+      expected_behavior: "Produces confident but incorrect expansions."
+    

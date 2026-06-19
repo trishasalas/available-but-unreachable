@@ -1,0 +1,20 @@
+{"concept": "closed captions", "template_type": "cloze", "prompt": "Closed captions display", "max_tokens": 100, "prompt_id": "cloze_cc_001"}
+{"concept": "color contrast", "template_type": "cloze", "prompt": "Color contrast is important because", "max_tokens": 100, "prompt_id": "cloze_contrast_001"}
+{"concept": "page title", "template_type": "cloze", "prompt": "A page title describes", "max_tokens": 100, "prompt_id": "cloze_title_001"}
+{"concept": "closed captions", "template_type": "direct_question", "prompt": "What are closed captions?", "max_tokens": 100, "prompt_id": "direct_cc_001"}
+{"concept": "color contrast", "template_type": "direct_question", "prompt": "What is color contrast?", "max_tokens": 100, "prompt_id": "direct_contrast_001"}
+{"concept": "page title", "template_type": "direct_question", "prompt": "What is a page title?", "max_tokens": 100, "prompt_id": "direct_title_001"}
+{"concept": "closed captions", "template_type": "instruction", "prompt": "Explain closed captions to a web developer.", "max_tokens": 100, "prompt_id": "instr_cc_001"}
+{"concept": "color contrast", "template_type": "instruction", "prompt": "Explain color contrast to a web developer.", "max_tokens": 100, "prompt_id": "instr_contrast_001"}
+{"concept": "page title", "template_type": "instruction", "prompt": "Explain page titles to a web developer.", "max_tokens": 100, "prompt_id": "instr_title_001"}
+{"concept": "closed captions", "template_type": "evaluative", "prompt": "A video without closed captions is not accessible because", "max_tokens": 100, "prompt_id": "eval_cc_001"}
+{"concept": "color contrast", "template_type": "evaluative", "prompt": "Text with low color contrast is not accessible because", "max_tokens": 100, "prompt_id": "eval_contrast_001"}
+{"concept": "page title", "template_type": "evaluative", "prompt": "A web page without a title is not accessible because", "max_tokens": 100, "prompt_id": "eval_title_001"}
+{"concept": "closed captions", "template_type": "scenario", "prompt": "A deaf user is watching a video on a website. Without closed captions, the user", "max_tokens": 100, "prompt_id": "scenario_cc_001"}
+{"concept": "color contrast", "template_type": "scenario", "prompt": "A low vision user visits a website with poor color contrast. The user", "max_tokens": 100, "prompt_id": "scenario_contrast_001"}
+{"concept": "page title", "template_type": "scenario", "prompt": "A screen reader user navigates to a web page with no title. The user", "max_tokens": 100, "prompt_id": "scenario_title_001"}
+{"concept": "bicycle", "template_type": "cloze", "prompt": "A bicycle is used for", "max_tokens": 100, "prompt_id": "cloze_control_001"}
+{"concept": "bicycle", "template_type": "direct_question", "prompt": "What is a bicycle?", "max_tokens": 100, "prompt_id": "direct_control_001"}
+{"concept": "bicycle", "template_type": "instruction", "prompt": "Explain bicycles to a web developer.", "max_tokens": 100, "prompt_id": "instr_control_001"}
+{"concept": "bicycle", "template_type": "evaluative", "prompt": "A bicycle without brakes is not safe because", "max_tokens": 100, "prompt_id": "eval_control_001"}
+{"concept": "bicycle", "template_type": "scenario", "prompt": "A child is riding a bicycle on a busy street. Without a helmet, the child", "max_tokens": 100, "prompt_id": "scenario_control_001"}
