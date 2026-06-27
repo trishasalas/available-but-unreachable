@@ -15,7 +15,7 @@ This answers a different question than the logit lens or decomposition tools:
 
 ## Why this matters for the accessibility emergence work
 
-The Pythia behavioral paper found that screen reader / alt text / skip link
+The Pythia behavioral sections found that screen reader / alt text / skip link
 emerge at 2.8B parameters. But "emerge" there means behavioral — the model
 starts generating correct completions. A probe can show whether the knowledge
 exists geometrically in smaller models *before* the behavioral threshold,

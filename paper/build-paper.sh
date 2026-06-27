@@ -1,24 +1,24 @@
 #!/bin/bash
 
-# build-paper.sh
-# Run from paper-1/ directory
+# build-sections.sh
+# Run from sections-1/ directory
 # Requires: pandoc, lualatex (MacTeX)
 #   brew install pandoc
 #   brew install --cask mactex
 #
 # Produces a tagged PDF/UA-2 + PDF/A-4f document via the template in
-# paper/template.tex, which enables \DocumentMetadata tagging. This
+# sections/template.tex, which enables \DocumentMetadata tagging. This
 # requires a TeX Live 2022+ / MacTeX 2022+ installation.
 #
 # Accessibility checklist before building:
 #   - All figures referenced with descriptive alt text: ![Describe what a
 #     sighted reader sees](../figures/filename.png)
-#   - paper/metadata.yaml has: title, author, date, abstract, lang
+#   - sections/metadata.yaml has: title, author, date, abstract, lang
 #   - sections/10-colophon.md is written
 #
 # Usage:
-#   ./build-paper.sh           # normal build
-#   ./build-paper.sh --debug   # two-step build, keeps intermediate .tex,
+#   ./build-sections.sh           # normal build
+#   ./build-sections.sh --debug   # two-step build, keeps intermediate .tex,
 #                               # verbose pandoc output, full lualatex log
 
 set -e
@@ -39,9 +39,9 @@ fi
 
 PANDOC_FLAGS=(
   --from markdown-implicit_figures
-  --metadata-file=paper/metadata.yaml
-  --lua-filter=paper/filters/caption-style.lua
-  --template=paper/template.tex
+  --metadata-file=sections/metadata.yaml
+  --lua-filter=sections/filters/caption-style.lua
+  --template=sections/template.tex
   --wrap=none
   --citeproc
   -V documentclass=extarticle

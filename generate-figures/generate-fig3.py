@@ -25,7 +25,7 @@ import pandas as pd
 from pathlib import Path
 
 SCRIPT_DIR  = Path(__file__).resolve().parent
-PROJECT_DIR = SCRIPT_DIR.parent  # accessibility-knowledge-emergence/
+PROJECT_DIR = SCRIPT_DIR.parent  # sections/
 FIGURES_DIR = PROJECT_DIR / "figures"
 RESULTS_DIR = PROJECT_DIR / "results"
 
@@ -49,7 +49,7 @@ plt.rcParams.update({
 MODELS = ["Small\n(117M)", "Medium\n(406M)", "Large\n(838M)", "XL\n(1.5B)"]
 
 # ── Flip zone: ambiguous crossing spans Medium through Large (index 1–2) ───────
-# GPT-2 does not produce a single clean cross — see paper discussion.
+# GPT-2 does not produce a single clean cross — see sections discussion.
 FLIP_ZONE = (1, 3)
 
 

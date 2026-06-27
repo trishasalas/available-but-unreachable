@@ -25,7 +25,7 @@ import pandas as pd
 from pathlib import Path
 
 SCRIPT_DIR  = Path(__file__).resolve().parent
-PROJECT_DIR = SCRIPT_DIR.parent  # accessibility-knowledge-emergence/
+PROJECT_DIR = SCRIPT_DIR.parent  # sections/
 FIGURES_DIR = PROJECT_DIR / "figures"
 RESULTS_DIR = PROJECT_DIR / "results"
 

@@ -4,7 +4,7 @@ DEPRECATED — use individual figure scripts (generate-fig1.py through generate-
 
 This was the original combined figure generator before each figure was split
 into its own script. Kept for provenance only; outputs may not match current
-paper figures.
+sections figures.
 """
 
 import matplotlib
@@ -16,7 +16,7 @@ from pathlib import Path
 
 # ── Paths (resolved from script location, run from anywhere) ──────────────────
 SCRIPT_DIR  = Path(__file__).resolve().parent
-PROJECT_DIR = SCRIPT_DIR.parent  # accessibility-knowledge-emergence/
+PROJECT_DIR = SCRIPT_DIR.parent  # sections/
 FIGURES_DIR = PROJECT_DIR / "figures"
 RESULTS_DIR = PROJECT_DIR / "results"
 FIGURES_DIR.mkdir(parents=True, exist_ok=True)
@@ -45,7 +45,7 @@ plt.rcParams.update({
 #   correct = [106.7, 40.1, 18.8, 13.6, 15.6]
 #   wrong   = [ 41.4, 32.8, 42.2, 54.9, 46.1]
 #
-# GPT-2 values from preference ratios reported in paper (no raw CSVs retained):
+# GPT-2 values from preference ratios reported in sections (no raw CSVs retained):
 #   Wrong 1.1x  → 1/1.1 ≈ 0.91
 #   Correct N.Nx → N.N
 
@@ -212,7 +212,7 @@ if __name__ == "__main__":
         fig_path  = FIGURES_DIR / "fig-pythia-perplexity.png",
     )
 
-    # GPT-2: preference ratios from paper (no raw perplexity CSVs retained)
+    # GPT-2: preference ratios from sections (no raw perplexity CSVs retained)
     #   Small/Medium: Wrong 1.1x  → 1/1.1
     #   Large:        Correct 2.0x → 2.0
     #   XL:           Correct 2.6x → 2.6
@@ -225,7 +225,7 @@ if __name__ == "__main__":
         title     = "Recognition Precedes Generation — GPT-2",
         subtitle  = "Perplexity preference ratio for screen reader: correct vs wrong definition",
         caption   = (
-            "Preference ratio derived from paper-reported multiples (raw perplexity values not retained). "
+            "Preference ratio derived from sections-reported multiples (raw perplexity values not retained). "
             "GPT-2 flip occurs between 406M and 838M -- consistent with Pythia's 410M to 1B transition."
         ),
         fig_path  = FIGURES_DIR / "fig-gpt2-perplexity.png",
