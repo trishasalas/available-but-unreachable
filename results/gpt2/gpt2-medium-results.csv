@@ -1,0 +1,400 @@
+prompt_id,concept,prompt_type,template_type,prompt,output,max_tokens,model
+decl_screen_reader_001,screen reader,declarative,cloze,A screen reader is,"a device that allows you to read text on a screen. It is used to read text on a screen, such as a computer screen, a television screen, or a television set.
+
+The screen reader is a device that allows you to read text on a screen. It is used to read text on a screen, such as a computer screen, a television screen, or a television set.
+
+The screen reader is a device that allows you to read text on a screen. It is",100,gpt2-medium
+decl_wcag_001,WCAG,declarative,cloze,WCAG stands for,World Championship of Hockey. It is a tournament that is held every four years in the United States. It is a tournament that is played in the United States. It is a tournament that is played in the United States. It is a tournament that is played in the United States. It is a tournament that is played in the United States. It is a tournament that is played in the United States. It is a tournament that is played in the United States. It is a tournament that is played in,100,gpt2-medium
+decl_skip_link_001,skip link,declarative,cloze,A skip link is,"a link that is not part of the original file.
+
+A link is a link that is part of the original file.
+
+A link is a link that is part of the original file.
+
+A link is a link that is part of the original file.
+
+A link is a link that is part of the original file.
+
+A link is a link that is part of the original file.
+
+A link is a link that is part of the original file",100,gpt2-medium
+decl_alt_text_001,alt text,declarative,cloze,The purpose of alt text is,"to provide a way for users to communicate with each other without having to type in text.
+
+Alt text is a way to communicate with each other without having to type in text.
+
+Alt text is a way to communicate with each other without having to type in text.
+
+Alt text is a way to communicate with each other without having to type in text.
+
+Alt text is a way to communicate with each other without having to type in text.
+
+Alt text is a",100,gpt2-medium
+decl_aria_001,ARIA,declarative,cloze,ARIA stands for,"""Association of American Railroads."" It's a group of railroads that represents the interests of the railroads in the United States. It's a group that represents the interests of the railroads in the United States.
+
+The group is made up of the largest railroads in the country, including Amtrak, which is the largest passenger rail company in the world.
+
+The group is made up of the largest railroads in the country, including Amtrak, which is the largest passenger rail",100,gpt2-medium
+decl_focus_indicator_001,focus indicator,declarative,cloze,A focus indicator is,"a device that shows the amount of focus that is being applied to a particular area of the screen. It is used to indicate the amount of focus that is being applied to a particular area of the screen.
+
+The focus indicator is usually placed on the top of the screen, and is usually placed on the top edge of the screen.
+
+The focus indicator is usually placed on the top of the screen, and is usually placed on the top edge of the screen.
+
+The focus indicator",100,gpt2-medium
+decl_keyboard_nav_001,keyboard navigation,declarative,cloze,Keyboard navigation allows,"you to navigate between pages of your website.
+
+Navigation
+
+The navigation bar is located at the top of the page. It is used to navigate between pages of your website.
+
+The navigation bar is located at the top of the page. It is used to navigate between pages of your website.
+
+The navigation bar is located at the top of the page. It is used to navigate between pages of your website.
+
+The navigation bar is located at the top of the",100,gpt2-medium
+decl_color_contrast_001,color contrast,declarative,cloze,Color contrast is important because,"it helps you see the difference between two colors.
+
+The color contrast of a color is the difference between the two colors.
+
+The color contrast of a color is the difference between the two colors.
+
+The color contrast of a color is the difference between the two colors.
+
+The color contrast of a color is the difference between the two colors.
+
+The color contrast of a color is the difference between the two colors.
+
+The color contrast of a color is the",100,gpt2-medium
+decl_semantic_html_001,semantic HTML,declarative,cloze,Semantic HTML helps,"you write better HTML.
+
+Semantic HTML is a new HTML5 feature that allows you to write better HTML. It's a new feature that allows you to write better HTML.
+
+Semantic HTML is a new HTML5 feature that allows you to write better HTML. It's a new feature that allows you to write better HTML.
+
+Semantic HTML is a new HTML5 feature that allows you to write better HTML. It's a new feature that allows you to write better HTML",100,gpt2-medium
+decl_captions_001,captions,declarative,cloze,Captions are used for,"the purpose of providing a visual representation of the text.
+
+The text is displayed in a block of text, with the captions at the top of the block.
+
+The text is displayed in a block of text, with the captions at the top of the block.
+
+The text is displayed in a block of text, with the captions at the top of the block.
+
+The text is displayed in a block of text, with the captions at the top of",100,gpt2-medium
+eval_alt_text_001,alt text,evaluative,code_review,The following code is not accessible because it doesn't have what? <img src='photo.jpg'>,"The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
+
+The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
+
+The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
+
+The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
+
+The following code is not accessible",100,gpt2-medium
+eval_div_onclick_001,semantic HTML,evaluative,code_review,A <div> with onclick is not accessible because,"it is not a <div> with onclick .
+
+The problem is that <div> with onclick is not accessible because it is not a <div> with onclick .
+
+The problem is that <div> with onclick is not accessible because it is not a <div> with onclick .
+
+The problem is that <div> with onclick is not accessible because it is not a <div> with onclick .
+
+The problem is that <div",100,gpt2-medium
+eval_empty_link_001,empty link,evaluative,code_review,The accessibility problem with <a href='#'></a> is,"that it's not clear what the user is supposed to do with it.
+
+The user is supposed to click on the link, but the link doesn't actually do anything.
+
+The user is supposed to click on the link, but the link doesn't actually do anything.
+
+The user is supposed to click on the link, but the link doesn't actually do anything.
+
+The user is supposed to click on the link, but the link doesn't actually do anything.",100,gpt2-medium
+eval_unlabeled_input_001,form label,evaluative,code_review,<input type='text'> needs a,"valid input type</input type='text' name='required' value='required' />
+
+<input type='submit' value='Submit' />
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div",100,gpt2-medium
+eval_click_here_001,link text,evaluative,code_review,A button that only says 'Click here' is bad because,"it's not a button. It's a button that says 'Click here' and then you click it.
+
+A button that says 'Click here' is bad because it's not a button. It's a button that says 'Click here' and then you click it.
+
+A button that says 'Click here' is bad because it's not a button. It's a button that says 'Click here' and then you click it.
+
+A button that says 'Click",100,gpt2-medium
+comp_alt_text_few_shot_001,alt text,completion,few_shot,"<img src=""icons/home.png"" alt=""Home""><img src=""icons/mail.png"" alt=""Inbox""><img src=""photo.jpg""","alt=""Photo""><img src=""photo.jpg"" alt=""Photo""><img src=""photo.jpg"" alt=""Photo""><img src=""photo.jpg"" alt=""Photo""><img src=""photo.jpg"" alt=""Photo""><img src=""photo.jpg"" alt=""Photo""><img src=""photo.jpg"" alt=""Photo""><img src=""photo.jpg"" alt=""Photo""><img src=""photo.jpg"" alt=""Photo""><img src=""photo.jpg"" alt",100,gpt2-medium
+comp_alt_text_bare_001,alt text,completion,bare,"<img src=""photo.jpg""","alt=""The new ""B"" in the ""B"" in the ""B"" in the ""B"" in the ""B"" in the ""B"" in the ""B"" in the ""B"" in the ""B"" in the ""B"" in the ""B"" in the ""B"" in the ""B"" in the ""B"" in the ""B"" in the ""B"" in the ""B"" in the ""B"" in the ""B"" in the """,100,gpt2-medium
+comp_captions_few_shot_001,captions,completion,few_shot,"<video src=""intro.mp4""><track kind=""captions"" src=""intro.vtt""></video><video src=""demo.mp4""><track kind=""captions"" src=""demo.vtt""></video><video src=""lecture.mp4"">","<track kind=""captions"" src=""lecture.vtt""></track><track kind=""captions"" src=""lecture.vtt""></track><track kind=""captions"" src=""lecture.vtt""></track><track kind=""captions"" src=""lecture.vtt""></track><track kind=""captions"" src=""lecture.vtt""></track><track kind=""captions"" src=""lecture.vtt""></track><track kind=""",100,gpt2-medium
+comp_captions_bare_001,captions,completion,bare,"<video src=""lecture.mp4"">","The video above is a lecture by Dr. David J. Schoenfeld, a professor of psychology at the University of California, Berkeley.
+
+The lecture is part of a series of lectures that Schoenfeld has given on the psychology of religion.
+
+The lecture is available for free download on YouTube.
+
+The lecture is also available for purchase on iTunes.
+
+The lecture is available for purchase on Amazon.com.
+
+The lecture is available for purchase on YouTube",100,gpt2-medium
+comp_page_title_few_shot_001,page title,completion,few_shot,<html><head><title>About Us</title></head><html><head><title>Contact</title></head><html><head>,"<meta http-equiv=""Content-Type"" content=""text/html; charset=3Dutf-8""></meta><body><h1>Contact</h1></body></html>
+
+<!-- /head -->
+
+<!-- /body -->
+
+<!-- /html -->
+
+<!-- /head -->
+
+<!-- /html -->
+
+<!-- /html -->
+
+<!-- /html -->
+
+<!-- /html -->",100,gpt2-medium
+comp_page_title_bare_001,page title,completion,bare,"<html><head><meta charset=""utf-8"">","<title>The New York Times</title> <meta name=""viewport"" content=""width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimum-scale=1.0, user-scalable=no, ratio=1.0, scrollbars=no, vendor-prefix=""> <meta name=""viewport"" content=""width=device-width, initial-scale=",100,gpt2-medium
+comp_script_bare_001,script,completion,bare,<script,"type=""text/javascript"" src=""https://www.youtube.com/embed/YQZYjZjZWZY"" charset=""utf-8""></script>
+
+<script type=""text/javascript"" src=""https://www.youtube.com/embed/YQZYjZjZWZY"" charset=""utf-8""></script>
+
+<script type=""text/javascript"" src=""https://www.youtube.",100,gpt2-medium
+comp_script_few_shot_001,script,completion,few_shot,"<script src=""utils.js""></script><script src=""main.js""></script><script src=""","main.js""></script><script src=""main.js""></script><script src=""main.js""></script><script src=""main.js""></script><script src=""main.js""></script><script src=""main.js""></script><script src=""main.js""></script><script src=""main.js""></script><script src=""main.js""></script><script src=""main.js""></script><script src=""main.js""></script><script src=""main",100,gpt2-medium
+hypo_alt_text_direct_001,alt text,hypothesis,direct_question,Look at this HTML: <img src='portrait.jpg'>. What specific attribute is missing to make it accessible?,"The image is a PNG image, so it's not accessible.
+
+The image is a JPEG image, so it's not accessible.
+
+The image is a GIF image, so it's not accessible.
+
+The image is a TIFF image, so it's not accessible.
+
+The image is a JPEG image, so it's not accessible.
+
+The image is a GIF image, so it's not accessible.
+
+The image is a TIFF image",100,gpt2-medium
+hypo_alt_text_correction_001,alt text,hypothesis,error_correction,Correct the following inaccessible code: <img src='logo.png'>,"<img src='logo.png' alt='Logo' width='100%' height='100%' />
+
+<img src='logo.png' alt='Logo' width='100%' height='100%' />
+
+<img src='logo.png' alt='Logo' width='100%' height='100%' />
+
+<img src='logo.png' alt='Logo' width='100",100,gpt2-medium
+hypo_alt_text_socratic_001,alt text,hypothesis,socratic,A screen reader is software that reads text aloud. Why would a screen reader fail to describe this tag: <img src='chart.svg'>?,"The answer is that the tag is not a valid HTML tag.
+
+The tag is a JavaScript object.
+
+The tag is a JavaScript object. The tag is a JavaScript object.
+
+The tag is a JavaScript object. The tag is a JavaScript object.
+
+The tag is a JavaScript object. The tag is a JavaScript object.
+
+The tag is a JavaScript object. The tag is a JavaScript object.
+
+The tag is a JavaScript object. The tag is",100,gpt2-medium
+valid_alt_text_direct_001,alt text,validation,direct_question,The following code is not accessible because it doesn't have what? <img src='photo.jpg'>,"The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
+
+The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
+
+The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
+
+The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
+
+The following code is not accessible",100,gpt2-medium
+valid_alt_text_instruction_001,alt text,validation,instruction,What accessibility attribute is missing from this HTML: <img src='photo.jpg'>?,"The accessibility attribute is a property that specifies the accessibility of an element.
+
+The accessibility attribute is a property that specifies the accessibility of an element.
+
+The accessibility attribute is a property that specifies the accessibility of an element.
+
+The accessibility attribute is a property that specifies the accessibility of an element.
+
+The accessibility attribute is a property that specifies the accessibility of an element.
+
+The accessibility attribute is a property that specifies the accessibility of an element.
+
+The accessibility",100,gpt2-medium
+valid_screen_reader_socratic_001,screen reader,validation,socratic,A screen reader is software that reads text aloud. Why would it fail to describe <img src='chart.svg'>?,"The answer is that the screen reader is not capable of reading SVG files.
+
+The screen reader is capable of reading SVG files, but it cannot read SVG files that are not SVG files.
+
+The screen reader is capable of reading SVG files, but it cannot read SVG files that are not SVG files.
+
+The screen reader is capable of reading SVG files, but it cannot read SVG files that are not SVG files.
+
+The screen reader is capable of reading SVG files",100,gpt2-medium
+valid_aria_confab_001,ARIA,validation,cloze,ARIA stands for,"""Association of American Railroads."" It's a group of railroads that represents the interests of the railroads in the United States. It's a group that represents the interests of the railroads in the United States.
+
+The group is made up of the largest railroads in the country, including Amtrak, which is the largest passenger rail company in the world.
+
+The group is made up of the largest railroads in the country, including Amtrak, which is the largest passenger rail",100,gpt2-medium
+valid_html_confab_001,HTML,validation,cloze,HTML stands for,"Hypertext Markup Language. It is a markup language that allows you to write HTML documents in a way that is easy to understand and understand.
+
+HTML is a markup language that allows you to write HTML documents in a way that is easy to understand and understand. It is a markup language that allows you to write HTML documents in a way that is easy to understand and understand. It is a markup language that allows you to write HTML documents in a way that is easy to understand and understand.",100,gpt2-medium
+ctrl_cc_cloze_001,closed captions,control,cloze,Closed captions display,"captions from the video.
+
+The video is available in the following languages: English, French, Spanish, Portuguese, German, Italian, Japanese, Korean, Chinese, Russian, Arabic, and Turkish.
+
+The video is available in the following languages: English, French, Spanish, Portuguese, German, Italian, Japanese, Korean, Chinese, Russian, Arabic, and Turkish.
+
+The video is available in the following languages: English, French, Spanish, Portuguese, German, Italian",100,gpt2-medium
+ctrl_contrast_cloze_001,color contrast,control,cloze,Color contrast is important because,"it helps you see the difference between two colors.
+
+The color contrast of a color is the difference between the two colors.
+
+The color contrast of a color is the difference between the two colors.
+
+The color contrast of a color is the difference between the two colors.
+
+The color contrast of a color is the difference between the two colors.
+
+The color contrast of a color is the difference between the two colors.
+
+The color contrast of a color is the",100,gpt2-medium
+ctrl_title_cloze_001,page title,control,cloze,A page title describes,"the page in which the page is located.
+
+A page title is a page title that is used to describe the page in which the page is located.
+
+A page title is a page title that is used to describe the page in which the page is located.
+
+A page title is a page title that is used to describe the page in which the page is located.
+
+A page title is a page title that is used to describe the page in which the page is located",100,gpt2-medium
+ctrl_cc_direct_001,closed captions,control,direct_question,What are closed captions?,"A closed captioning system is a system that allows a caption to be displayed in a closed format. Closed captions are used to indicate that a particular image is a video.
+
+What is a closed caption?
+
+A closed caption is a caption that is displayed in a closed format. Closed captions are used to indicate that a particular image is a video.
+
+What is a closed captioning system?
+
+A closed captioning system is a system that allows a caption",100,gpt2-medium
+ctrl_contrast_direct_001,color contrast,control,direct_question,What is color contrast?,"Color contrast is the difference between the colors of two colors. It is the difference between the colors of two colors that are the same.
+
+Color contrast is the difference between the colors of two colors that are the same. It is the difference between the colors of two colors that are the same.
+
+Color contrast is the difference between the colors of two colors that are the same. It is the difference between the colors of two colors that are the same.
+
+Color contrast is",100,gpt2-medium
+ctrl_title_direct_001,page title,control,direct_question,What is a page title?,"A page title is a short description of the page. It is used to identify the page to the user.
+
+A page title is not a page title.
+
+A page title is not a page title.
+
+A page title is not a page title.
+
+A page title is not a page title.
+
+A page title is not a page title.
+
+A page title is not a page title.
+
+A page title is not a page title",100,gpt2-medium
+ctrl_cc_instruction_001,closed captions,control,instruction,Explain closed captions to a web developer.,A web developer is someone who uses a web browser to create web pages. They are often web developers who are passionate about web development. They are also web developers who are passionate about the web. They are web developers who are passionate about the web. They are web developers who are passionate about the web. They are web developers who are passionate about the web. They are web developers who are passionate about the web. They are web developers who are passionate about the web. They are web developers,100,gpt2-medium
+ctrl_contrast_instruction_001,color contrast,control,instruction,Explain color contrast to a web developer.,Color contrast is a fundamental aspect of web design. It's the difference between a dark background and a light background. It's the difference between a dark background and a light background. It's the difference between a dark background and a light background. It's the difference between a dark background and a light background. It's the difference between a dark background and a light background. It's the difference between a dark background and a light background. It's the difference between a dark background and a,100,gpt2-medium
+ctrl_title_instruction_001,page title,control,instruction,Explain page titles to a web developer.,"This is a simple example of how to use the HTML5 element.
+
+<!DOCTYPE html> <html> <head> <title>Explain page titles to a web developer</title> </head> <body> <div id=""page""> <h1>Explain page titles to a web developer</h1> <p>This is a simple example of how to use the HTML5 element. </p> </div> </body>",100,gpt2-medium
+ctrl_cc_evaluative_001,closed captions,control,evaluative,A video without closed captions is not accessible because,"it is not in the public domain.
+
+The video is available for viewing on YouTube.
+
+The video is available for viewing on YouTube.
+
+The video is available for viewing on YouTube.
+
+The video is available for viewing on YouTube.
+
+The video is available for viewing on YouTube.
+
+The video is available for viewing on YouTube.
+
+The video is available for viewing on YouTube.
+
+The video is available for viewing on YouTube.
+
+The video",100,gpt2-medium
+ctrl_contrast_evaluative_001,color contrast,control,evaluative,Text with low color contrast is not accessible because,"of the low contrast of the text.
+
+The text is not readable because of the low contrast of the text.
+
+The text is not readable because of the low contrast of the text.
+
+The text is not readable because of the low contrast of the text.
+
+The text is not readable because of the low contrast of the text.
+
+The text is not readable because of the low contrast of the text.
+
+The text is not readable because of the low contrast",100,gpt2-medium
+ctrl_title_evaluative_001,page title,control,evaluative,A web page without a title is not accessible because,"it does not have a title.
+
+A web page with a title is accessible because it has a title.
+
+A web page with a title is not accessible because it does not have a title.
+
+A web page with a title is not accessible because it does not have a title.
+
+A web page with a title is not accessible because it does not have a title.
+
+A web page with a title is not accessible because it does not have a title.",100,gpt2-medium
+ctrl_cc_scenario_001,closed captions,control,scenario,"A deaf user is watching a video on a website. Without closed captions, the user","is unable to understand what is being said.
+
+The user is watching a video on a website. Without closed captions, the user is unable to understand what is being said.
+
+A deaf user is watching a video on a website. Without closed captions, the user is unable to understand what is being said.
+
+A deaf user is watching a video on a website. Without closed captions, the user is unable to understand what is being said.
+
+A deaf user",100,gpt2-medium
+ctrl_contrast_scenario_001,color contrast,control,scenario,A low vision user visits a website with poor color contrast. The user,is presented with a black background and a white text box. The user clicks on the text box and the website displays a white background. The user then clicks on the text box again and the website displays a black background. The user then clicks on the text box again and the website displays a white background. The user then clicks on the text box again and the website displays a black background. The user then clicks on the text box again and the website displays a white background. The user then clicks on,100,gpt2-medium
+ctrl_title_scenario_001,page title,control,scenario,A screen reader user navigates to a web page with no title. The user,is presented with a list of links to other web pages. The user clicks on one of the links and is presented with a list of links to other web pages. The user clicks on one of the links and is presented with a list of links to other web pages. The user clicks on one of the links and is presented with a list of links to other web pages. The user clicks on one of the links and is presented with a list of links to other web pages. The user clicks on,100,gpt2-medium
+ctrl_bicycle_cloze_001,bicycle,control,cloze,A bicycle is used for,"transportation in the city of Wuhan, Hubei province, China, on May 15, 2016. (Photo: Xinhua, Getty Images)
+
+China's bicycle industry is booming, with the country's top bicycle maker, Shimano, reporting a record $1.2 billion in sales in 2016, according to the company's annual report.
+
+The report, released Wednesday, showed that Shimano's sales rose by more than 50% year-over-year to $1",100,gpt2-medium
+ctrl_bicycle_direct_001,bicycle,control,direct_question,What is a bicycle?,A bicycle is a vehicle that is designed to travel on a road. It is a vehicle that is designed to travel on a road. It is a vehicle that is designed to travel on a road. It is a vehicle that is designed to travel on a road. It is a vehicle that is designed to travel on a road. It is a vehicle that is designed to travel on a road. It is a vehicle that is designed to travel on a road. It is a vehicle that is,100,gpt2-medium
+ctrl_bicycle_instruction_001,bicycle,control,instruction,Explain bicycles to a web developer.,"I'm a web developer, and I'm trying to explain to a web developer how to use a bicycle. I'm not sure how to do this, but I'm trying.
+
+I'm not sure how to do this, but I'm trying. I'm not sure how to do this, but I'm trying.
+
+I'm not sure how to do this, but I'm trying. I'm not sure how to do this, but I'm trying.",100,gpt2-medium
+ctrl_bicycle_evaluative_001,bicycle,control,evaluative,A bicycle without brakes is not safe because,"it is not designed to handle the force of braking.
+
+The bicycle is designed to handle the force of braking. The bicycle is designed to handle the force of braking.
+
+The bicycle is designed to handle the force of braking. The bicycle is designed to handle the force of braking.
+
+The bicycle is designed to handle the force of braking. The bicycle is designed to handle the force of braking.
+
+The bicycle is designed to handle the force of braking. The bicycle is designed",100,gpt2-medium
+ctrl_bicycle_scenario_001,bicycle,control,scenario,"A child is riding a bicycle on a busy street. Without a helmet, the child","is at risk of being struck by a car.
+
+The child is riding on a bicycle with a helmet on. The child is wearing a bicycle helmet. The child is wearing a bicycle helmet. The child is wearing a bicycle helmet. The child is wearing a bicycle helmet. The child is wearing a bicycle helmet. The child is wearing a bicycle helmet. The child is wearing a bicycle helmet. The child is wearing a bicycle helmet. The child is wearing a bicycle helmet. The child is wearing",100,gpt2-medium

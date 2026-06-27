@@ -1,0 +1,52 @@
+prompt_id,concept,prompt_type,template_type,prompt,n_tokens,mean_entropy,last_token_entropy,max_entropy,min_entropy,model
+decl_screen_reader_001,screen reader,declarative,cloze,A screen reader is,5,5.3612,1.9705,7.8946,1.9705,EleutherAI/pythia-410m
+decl_wcag_001,WCAG,declarative,cloze,WCAG stands for,5,5.1675,5.9128,7.3268,1.6041,EleutherAI/pythia-410m
+decl_skip_link_001,skip link,declarative,cloze,A skip link is,5,5.8015,4.007,7.8946,4.007,EleutherAI/pythia-410m
+decl_alt_text_001,alt text,declarative,cloze,The purpose of alt text is,7,3.7263,1.3054,7.7377,0.1061,EleutherAI/pythia-410m
+decl_aria_001,ARIA,declarative,cloze,ARIA stands for,5,5.4072,5.6661,7.3268,2.1445,EleutherAI/pythia-410m
+decl_focus_indicator_001,focus indicator,declarative,cloze,A focus indicator is,5,4.865,2.6337,7.8946,2.1752,EleutherAI/pythia-410m
+decl_keyboard_nav_001,keyboard navigation,declarative,cloze,Keyboard navigation allows,5,4.8482,2.1097,7.3268,2.1097,EleutherAI/pythia-410m
+decl_color_contrast_001,color contrast,declarative,cloze,Color contrast is important because,6,4.4391,3.4273,7.3268,1.8025,EleutherAI/pythia-410m
+decl_semantic_html_001,semantic HTML,declarative,cloze,Semantic HTML helps,5,5.1406,3.6434,7.3268,2.87,EleutherAI/pythia-410m
+decl_captions_001,captions,declarative,cloze,Captions are used for,6,4.3439,5.6115,7.3268,2.0998,EleutherAI/pythia-410m
+eval_alt_text_001,alt text,evaluative,code_review,The following code is not accessible because it doesn't have what? <img src='photo.jpg'>,22,3.4794,4.264,7.7377,0.2741,EleutherAI/pythia-410m
+eval_div_onclick_001,semantic HTML,evaluative,code_review,A <div> with onclick is not accessible because,11,4.7033,2.9762,7.8946,1.523,EleutherAI/pythia-410m
+eval_empty_link_001,empty link,evaluative,code_review,The accessibility problem with <a href='#'></a> is,14,3.402,4.2153,7.7377,0.269,EleutherAI/pythia-410m
+eval_unlabeled_input_001,form label,evaluative,code_review,<input type='text'> needs a,9,3.0226,5.9418,7.3268,0.2774,EleutherAI/pythia-410m
+eval_click_here_001,link text,evaluative,code_review,A button that only says 'Click here' is bad because,13,4.7058,2.6361,7.8946,1.3823,EleutherAI/pythia-410m
+comp_alt_text_few_shot_001,alt text,completion,few_shot,"<img src=""icons/home.png"" alt=""Home""><img src=""icons/mail.png"" alt=""Inbox""><img src=""photo.jpg""",36,1.4709,0.222,7.3268,0.0049,EleutherAI/pythia-410m
+comp_alt_text_bare_001,alt text,completion,bare,"<img src=""photo.jpg""",9,2.8291,2.5124,7.3268,0.7708,EleutherAI/pythia-410m
+comp_captions_few_shot_001,captions,completion,few_shot,"<video src=""intro.mp4""><track kind=""captions"" src=""intro.vtt""></video><video src=""demo.mp4""><track kind=""captions"" src=""demo.vtt""></video><video src=""lecture.mp4"">",57,1.7056,3.5923,7.3268,0.0053,EleutherAI/pythia-410m
+comp_captions_bare_001,captions,completion,bare,"<video src=""lecture.mp4"">",11,2.8879,0.7054,7.3268,0.1741,EleutherAI/pythia-410m
+comp_page_title_few_shot_001,page title,completion,few_shot,<html><head><title>About Us</title></head><html><head><title>Contact</title></head><html><head>,31,1.5457,3.4143,7.3747,0.0019,EleutherAI/pythia-410m
+comp_page_title_bare_001,page title,completion,bare,"<html><head><meta charset=""utf-8"">",13,1.5125,0.7473,7.3268,0.0063,EleutherAI/pythia-410m
+comp_script_bare_001,script,completion,bare,<script,3,4.5178,1.3372,7.3268,1.3372,EleutherAI/pythia-410m
+comp_script_few_shot_001,script,completion,few_shot,"<script src=""utils.js""></script><script src=""main.js""></script><script src=""",23,1.794,6.43,7.3268,0.0006,EleutherAI/pythia-410m
+hypo_alt_text_direct_001,alt text,hypothesis,direct_question,Look at this HTML: <img src='portrait.jpg'>. What specific attribute is missing to make it accessible?,26,3.3693,3.1005,7.3268,0.7502,EleutherAI/pythia-410m
+hypo_alt_text_correction_001,alt text,hypothesis,error_correction,Correct the following inaccessible code: <img src='logo.png'>,15,3.79,3.9017,7.6777,0.4318,EleutherAI/pythia-410m
+hypo_alt_text_socratic_001,alt text,hypothesis,socratic,A screen reader is software that reads text aloud. Why would a screen reader fail to describe this tag: <img src='chart.svg'>?,31,3.3611,3.2132,7.8946,0.2193,EleutherAI/pythia-410m
+valid_alt_text_direct_001,alt text,validation,direct_question,The following code is not accessible because it doesn't have what? <img src='photo.jpg'>,22,3.4794,4.264,7.7377,0.2741,EleutherAI/pythia-410m
+valid_alt_text_instruction_001,alt text,validation,instruction,What accessibility attribute is missing from this HTML: <img src='photo.jpg'>?,19,3.6525,2.5999,7.3268,0.9258,EleutherAI/pythia-410m
+valid_screen_reader_socratic_001,screen reader,validation,socratic,A screen reader is software that reads text aloud. Why would it fail to describe <img src='chart.svg'>?,26,3.383,2.7765,7.8946,1.0036,EleutherAI/pythia-410m
+valid_aria_confab_001,ARIA,validation,cloze,ARIA stands for,5,5.4072,5.6661,7.3268,2.1445,EleutherAI/pythia-410m
+valid_html_confab_001,HTML,validation,cloze,HTML stands for,4,3.7886,3.5174,7.3268,0.2316,EleutherAI/pythia-410m
+ctrl_cc_cloze_001,closed captions,control,cloze,Closed captions display,5,4.9471,4.8879,7.3268,2.4043,EleutherAI/pythia-410m
+ctrl_contrast_cloze_001,color contrast,control,cloze,Color contrast is important because,6,4.4391,3.4273,7.3268,1.8025,EleutherAI/pythia-410m
+ctrl_title_cloze_001,page title,control,cloze,A page title describes,5,5.3377,2.2216,7.8946,2.2216,EleutherAI/pythia-410m
+ctrl_cc_direct_001,closed captions,control,direct_question,What are closed captions?,7,3.7942,0.7938,7.3268,0.7938,EleutherAI/pythia-410m
+ctrl_contrast_direct_001,color contrast,control,direct_question,What is color contrast?,6,4.4027,1.8013,7.3268,1.8013,EleutherAI/pythia-410m
+ctrl_title_direct_001,page title,control,direct_question,What is a page title?,7,4.9111,1.3706,8.5718,1.3706,EleutherAI/pythia-410m
+ctrl_cc_instruction_001,closed captions,control,instruction,Explain closed captions to a web developer.,11,4.4026,3.0153,7.3268,2.591,EleutherAI/pythia-410m
+ctrl_contrast_instruction_001,color contrast,control,instruction,Explain color contrast to a web developer.,10,4.5938,3.2875,7.3268,3.0721,EleutherAI/pythia-410m
+ctrl_title_instruction_001,page title,control,instruction,Explain page titles to a web developer.,10,4.6239,3.9465,7.3268,3.041,EleutherAI/pythia-410m
+ctrl_cc_evaluative_001,closed captions,control,evaluative,A video without closed captions is not accessible because,11,3.9802,2.5718,7.8946,0.1459,EleutherAI/pythia-410m
+ctrl_contrast_evaluative_001,color contrast,control,evaluative,Text with low color contrast is not accessible because,10,4.9618,3.2063,7.4109,3.0438,EleutherAI/pythia-410m
+ctrl_title_evaluative_001,page title,control,evaluative,A web page without a title is not accessible because,11,4.4855,2.6303,7.8946,2.3627,EleutherAI/pythia-410m
+ctrl_cc_scenario_001,closed captions,control,scenario,"A deaf user is watching a video on a website. Without closed captions, the user",19,3.876,3.0658,7.8946,0.1333,EleutherAI/pythia-410m
+ctrl_contrast_scenario_001,color contrast,control,scenario,A low vision user visits a website with poor color contrast. The user,15,4.6087,4.8321,7.8946,2.3984,EleutherAI/pythia-410m
+ctrl_title_scenario_001,page title,control,scenario,A screen reader user navigates to a web page with no title. The user,17,4.0126,4.1368,7.8946,0.0705,EleutherAI/pythia-410m
+ctrl_bicycle_cloze_001,bicycle,control,cloze,A bicycle is used for,6,5.1764,4.6445,7.8946,2.4274,EleutherAI/pythia-410m
+ctrl_bicycle_direct_001,bicycle,control,direct_question,What is a bicycle?,6,5.5316,2.3977,8.5718,2.3977,EleutherAI/pythia-410m
+ctrl_bicycle_instruction_001,bicycle,control,instruction,Explain bicycles to a web developer.,10,4.1594,3.3379,7.3268,1.3879,EleutherAI/pythia-410m
+ctrl_bicycle_evaluative_001,bicycle,control,evaluative,A bicycle without brakes is not safe because,9,4.7558,3.2896,7.8946,2.8076,EleutherAI/pythia-410m
+ctrl_bicycle_scenario_001,bicycle,control,scenario,"A child is riding a bicycle on a busy street. Without a helmet, the child",18,4.1675,3.7797,7.8946,1.7159,EleutherAI/pythia-410m

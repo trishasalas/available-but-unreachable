@@ -1,0 +1,357 @@
+prompt_id,concept,prompt_type,template_type,prompt,output,max_tokens,model
+decl_screen_reader_001,screen reader,declarative,cloze,A screen reader is,"a software application that reads aloud the text on a computer screen. It is designed to be used by people who are blind or have low vision.
+
+A screen reader is a software application that reads aloud the text on a computer screen. It is designed to be used by people who are blind or have low vision.
+
+A screen reader is a software application that reads aloud the text on a computer screen. It is designed to be used by people who are blind or have low vision.",100,EleutherAI/pythia-2.8b
+decl_wcag_001,WCAG,declarative,cloze,WCAG stands for,"the World Council of Churches. The WCC is a worldwide association of churches, which is made up of over 1,000 denominations and over 100 million members. The WCC is a member of the World Council of Churches, which is a global network of churches.
+
+The WCC is a member of the World Council of Churches, which is a global network of churches. The WCC is a member of the World Council of Churches, which is a global network of",100,EleutherAI/pythia-2.8b
+decl_skip_link_001,skip link,declarative,cloze,A skip link is,"a link that is used to skip a section of a web page. The skip link is typically used to skip a section of a web page that is not relevant to the current page. For example, a skip link may be used to skip a section of a web page that is not relevant to the current page. The skip link may be used to skip a section of a web page that is not relevant to the current page. The skip link may be used to skip a section of a web page",100,EleutherAI/pythia-2.8b
+decl_alt_text_001,alt text,declarative,cloze,The purpose of alt text is,"to provide a brief description of the image.
+
+The alt text is not displayed in the browser window.
+
+The alt text is used to provide a brief description of the image.
+
+The alt text is not displayed in the browser window.
+
+The alt text is used to provide a brief description of the image.
+
+The alt text is not displayed in the browser window.
+
+The alt text is used to provide a brief description of the image.
+
+The alt",100,EleutherAI/pythia-2.8b
+decl_aria_001,ARIA,declarative,cloze,ARIA stands for,"“A Rational Approach to Information and Automation”.
+
+The ARIA framework is a set of principles and guidelines for the design of intelligent systems. It is a set of principles and guidelines for the design of intelligent systems. It is a set of principles and guidelines for the design of intelligent systems.
+
+The ARIA framework is a set of principles and guidelines for the design of intelligent systems. It is a set of principles and guidelines for the design of intelligent systems. It is a set",100,EleutherAI/pythia-2.8b
+decl_focus_indicator_001,focus indicator,declarative,cloze,A focus indicator is,a device that is used to indicate the focus of a camera. The focus indicator is typically a small light source that is mounted on the camera. The light source is typically a light emitting diode (LED) that is mounted on the camera. The light source is typically mounted on the camera in a position that is substantially parallel to the optical axis of the camera. The light source is typically mounted on the camera in a position that is substantially parallel to the optical axis of the camera. The light source is,100,EleutherAI/pythia-2.8b
+decl_keyboard_nav_001,keyboard navigation,declarative,cloze,Keyboard navigation allows,"you to navigate through the pages of this website.
+
+The navigation bar at the top of the page allows you to move between pages of this website.
+
+The navigation bar at the bottom of the page allows you to move between pages of this website.
+
+The navigation bar at the top of the page allows you to move between pages of this website.
+
+The navigation bar at the bottom of the page allows you to move between pages of this website.
+
+The navigation bar at",100,EleutherAI/pythia-2.8b
+decl_color_contrast_001,color contrast,declarative,cloze,Color contrast is important because,"it is a key factor in determining the quality of a printed image. In a color image, the colors of the image are represented by a combination of three primary colors, red, green, and blue. The colors of the image are represented by the amount of each color in the image. The colors of the image are represented by the amount of each color in the image. The colors of the image are represented by the amount of each color in the image. The colors of the image are represented by",100,EleutherAI/pythia-2.8b
+decl_semantic_html_001,semantic HTML,declarative,cloze,Semantic HTML helps,"you create semantic HTML documents.
+
+Semantic HTML is a set of HTML elements and attributes that help you create semantic HTML documents.
+
+Semantic HTML is a set of HTML elements and attributes that help you create semantic HTML documents.
+
+Semantic HTML is a set of HTML elements and attributes that help you create semantic HTML documents.
+
+Semantic HTML is a set of HTML elements and attributes that help you create semantic HTML documents.
+
+Semantic HTML is a set of HTML",100,EleutherAI/pythia-2.8b
+decl_captions_001,captions,declarative,cloze,Captions are used for,the purpose of identifying the subject of a photograph. The captions are typically written in a language that is understood by the viewer of the photograph. The captions are typically written in a language that is understood by the viewer of the photograph. The captions are typically written in a language that is understood by the viewer of the photograph. The captions are typically written in a language that is understood by the viewer of the photograph. The captions are typically written in a language that is understood by the,100,EleutherAI/pythia-2.8b
+eval_alt_text_001,alt text,evaluative,code_review,The following code is not accessible because it doesn't have what? <img src='photo.jpg'>,"The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
+
+The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
+
+The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
+
+The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
+
+The following code is not accessible",100,EleutherAI/pythia-2.8b
+eval_div_onclick_001,semantic HTML,evaluative,code_review,A <div> with onclick is not accessible because,"it is not in the same document as the <a> that is clicked.
+
+A <div> with onclick is not accessible because it is not in the same document as the <a> that is clicked.
+
+A <div> with onclick is not accessible because it is not in the same document as the <a> that is clicked.
+
+A <div> with onclick is not accessible because it is not in the same document as the <a> that is clicked.",100,EleutherAI/pythia-2.8b
+eval_empty_link_001,empty link,evaluative,code_review,The accessibility problem with <a href='#'></a> is,"that it is not a valid HTML tag.
+
+The accessibility problem with <a href='#'></a> is that it is not a valid HTML tag.
+
+−
+
+The accessibility problem with <a href='#'></a> is that it is not a valid HTML tag.
+
++
+
+The accessibility problem with <a href='#'></a> is that it is not a valid HTML tag.
+
+−
+
+The accessibility problem with <a href='",100,EleutherAI/pythia-2.8b
+eval_unlabeled_input_001,form label,evaluative,code_review,<input type='text'> needs a,"value
+
+<input type='text' value=''>
+
+<input type='text' value=''>
+
+<input type='text' value=''>
+
+<input type='text' value=''>
+
+<input type='text' value=''>
+
+<input type='text' value=''>
+
+<input type='text' value=''>
+
+<input type='text' value=''>
+
+<input type='text' value=''>",100,EleutherAI/pythia-2.8b
+eval_click_here_001,link text,evaluative,code_review,A button that only says 'Click here' is bad because,"it's not clear what the button does.
+
+A button that says 'Click here' is bad because it's not clear what the button does.
+
+A button that says 'Click here' is bad because it's not clear what the button does.
+
+A button that says 'Click here' is bad because it's not clear what the button does.
+
+A button that says 'Click here' is bad because it's not clear what the button does.
+
+A",100,EleutherAI/pythia-2.8b
+comp_alt_text_few_shot_001,alt text,completion,few_shot,"<img src=""icons/home.png"" alt=""Home""><img src=""icons/mail.png"" alt=""Inbox""><img src=""photo.jpg""","alt=""Photo""><img src=""icons/search.png"" alt=""Search""><img src=""icons/settings.png"" alt=""Settings""><img src=""icons/help.png"" alt=""Help""><img src=""icons/logout.png"" alt=""Logout""><img src=""icons/settings.png"" alt=""Settings""><img src=""icons/settings.png"" alt=""Settings""><img src=""icons/settings.png"" alt=""Settings""><img src=""",100,EleutherAI/pythia-2.8b
+comp_alt_text_bare_001,alt text,completion,bare,"<img src=""photo.jpg""","alt=""photo"" width=""300"" height=""300"" />
+
+<p>
+  <strong>
+    <a href=""http://www.flickr.com/photos/joshuapro/14993705/in/photostream/"">
+      <img src=""photo.jpg"" alt=""photo"" width=""300"" height=""300"" />
+    </a>
+  </strong>
+</p>
+
+<p>",100,EleutherAI/pythia-2.8b
+comp_captions_few_shot_001,captions,completion,few_shot,"<video src=""intro.mp4""><track kind=""captions"" src=""intro.vtt""></video><video src=""demo.mp4""><track kind=""captions"" src=""demo.vtt""></video><video src=""lecture.mp4"">","<track kind=""captions"" src=""lecture.vtt""></video><video src=""lecture.mp4"">
+<track kind=""captions"" src=""lecture.vtt""></video><video src=""lecture.mp4"">
+<track kind=""captions"" src=""lecture.vtt""></video><video src=""lecture.mp4"">
+<track kind=""captions"" src=""lecture.vtt""></video><video",100,EleutherAI/pythia-2.8b
+comp_captions_bare_001,captions,completion,bare,"<video src=""lecture.mp4"">","<source src=""lecture.webm"" type=""video/webm"" />
+  <source src=""lecture.mp4"" type=""video/mp4"" />
+</video>",100,EleutherAI/pythia-2.8b
+comp_page_title_few_shot_001,page title,completion,few_shot,<html><head><title>About Us</title></head><html><head><title>Contact</title></head><html><head>,<title>Contact</title></head><html><head><title>Privacy Policy</title></head><html><head><title>Terms of Use</title></head><html><head><title>Site Map</title></head><html><head><title>Site Map</title></head><html><head><title>Site Map</title></head><html><head><title>Site Map</title></head><html><head><title>Site Map</,100,EleutherAI/pythia-2.8b
+comp_page_title_bare_001,page title,completion,bare,"<html><head><meta charset=""utf-8"">","<title>CSS Test Reference</title>
+<link rel=""author"" title=""L. David Baron"" href=""https://dbaron.org/"">
+<link rel=""author"" title=""Mozilla Corporation"" href=""http://mozilla.com/"">
+<style>
+  div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    margin: 10px;
+    border: 10px solid black;",100,EleutherAI/pythia-2.8b
+comp_script_bare_001,script,completion,bare,<script,">
+  import {
+    useTranslation,
+    useForm,
+    useField,
+    useFormField,
+    useFormFieldGroup,
+    useFormFieldGroupGroup,
+    useFormFieldGroupGroupGroup,
+    useFormFieldGroupGroupGroupGroup,
+    useFormFieldGroupGroupGroupGroupGroup,
+    useFormFieldGroupGroupGroupGroupGroupGroup,
+    useFormFieldGroupGroupGroupGroupGroupGroupGroup,
+    useForm",100,EleutherAI/pythia-2.8b
+comp_script_few_shot_001,script,completion,few_shot,"<script src=""utils.js""></script><script src=""main.js""></script><script src=""","main.js""></script>",100,EleutherAI/pythia-2.8b
+hypo_alt_text_direct_001,alt text,hypothesis,direct_question,Look at this HTML: <img src='portrait.jpg'>. What specific attribute is missing to make it accessible?,"The answer is that the src attribute is missing the type attribute.
+
+The type attribute is used to specify the type of the image. The type attribute is optional, but if it is present, it must be a valid MIME type.
+
+The MIME type is a standard for describing the format of a file. It is a string that is used to identify the file type.
+
+The MIME type is used to identify the file type.
+
+The MIME",100,EleutherAI/pythia-2.8b
+hypo_alt_text_correction_001,alt text,hypothesis,error_correction,Correct the following inaccessible code: <img src='logo.png'>,"<img src='logo.png'>
+
+<img src='logo.png'>
+
+<img src='logo.png'>
+
+<img src='logo.png'>
+
+<img src='logo.png'>
+
+<img src='logo.png'>
+
+<img src='logo.png'>
+
+<img src='logo.png'>
+
+<img src='logo.png'>
+
+<img src='logo.png'>",100,EleutherAI/pythia-2.8b
+hypo_alt_text_socratic_001,alt text,hypothesis,socratic,A screen reader is software that reads text aloud. Why would a screen reader fail to describe this tag: <img src='chart.svg'>?,"A screen reader is software that reads text aloud. Why would a screen reader fail to describe this tag: <img src='chart.svg'>?
+
+A screen reader is software that reads text aloud. Why would a screen reader fail to describe this tag: <img src='chart.svg'>?
+
+A screen reader is software that reads text aloud. Why would a screen reader fail to describe this tag: <img src='chart.svg'>?
+
+A screen",100,EleutherAI/pythia-2.8b
+valid_alt_text_direct_001,alt text,validation,direct_question,The following code is not accessible because it doesn't have what? <img src='photo.jpg'>,"The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
+
+The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
+
+The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
+
+The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
+
+The following code is not accessible",100,EleutherAI/pythia-2.8b
+valid_alt_text_instruction_001,alt text,validation,instruction,What accessibility attribute is missing from this HTML: <img src='photo.jpg'>?,"I have a photo gallery on my website. I want to add an accessibility attribute to the image tag so that the image can be clicked on. I have tried adding the attribute to the img tag, but it doesn't work. I have also tried adding the attribute to the a tag, but it doesn't work either.
+
+I have tried adding the attribute to the img tag, but it doesn't work. I have also tried adding the attribute to the a tag, but it",100,EleutherAI/pythia-2.8b
+valid_screen_reader_socratic_001,screen reader,validation,socratic,A screen reader is software that reads text aloud. Why would it fail to describe <img src='chart.svg'>?,"A:
+
+The screen reader is reading the text aloud, but it is not reading the image.
+
+A:
+
+The screen reader is reading the text aloud, but it is not reading the image.
+
+A:
+
+The screen reader is reading the text aloud, but it is not reading the image.",100,EleutherAI/pythia-2.8b
+valid_aria_confab_001,ARIA,validation,cloze,ARIA stands for,"“A Rational Approach to Information and Automation”.
+
+The ARIA framework is a set of principles and guidelines for the design of intelligent systems. It is a set of principles and guidelines for the design of intelligent systems. It is a set of principles and guidelines for the design of intelligent systems.
+
+The ARIA framework is a set of principles and guidelines for the design of intelligent systems. It is a set of principles and guidelines for the design of intelligent systems. It is a set",100,EleutherAI/pythia-2.8b
+valid_html_confab_001,HTML,validation,cloze,HTML stands for,Hypertext Markup Language. It is a standard for creating web pages. It is a markup language that is used to create web pages. It is a markup language that is used to create web pages. It is a markup language that is used to create web pages. It is a markup language that is used to create web pages. It is a markup language that is used to create web pages. It is a markup language that is used to create web pages. It is a markup language that is,100,EleutherAI/pythia-2.8b
+ctrl_cc_cloze_001,closed captions,control,cloze,Closed captions display,"text in a box at the bottom of the screen.
+
+Closed captions display text in a box at the bottom of the screen.
+
+Closed captions display text in a box at the bottom of the screen.
+
+Closed captions display text in a box at the bottom of the screen.
+
+Closed captions display text in a box at the bottom of the screen.
+
+Closed captions display text in a box at the bottom of the screen.
+
+Closed capt",100,EleutherAI/pythia-2.8b
+ctrl_contrast_cloze_001,color contrast,control,cloze,Color contrast is important because,"it is a key factor in determining the quality of a printed image. In a color image, the colors of the image are represented by a combination of three primary colors, red, green, and blue. The colors of the image are represented by the amount of each color in the image. The colors of the image are represented by the amount of each color in the image. The colors of the image are represented by the amount of each color in the image. The colors of the image are represented by",100,EleutherAI/pythia-2.8b
+ctrl_title_cloze_001,page title,control,cloze,A page title describes,"the content of the page.
+
+A page title is a short, descriptive phrase that is displayed in the browser's title bar.
+
+A page title is used to identify the page in the browser's address bar.
+
+A page title is also used to identify the page in the browser's bookmarks bar.
+
+A page title is also used to identify the page in the browser's search results.
+
+A page title is also used to identify the page in the browser's",100,EleutherAI/pythia-2.8b
+ctrl_cc_direct_001,closed captions,control,direct_question,What are closed captions?,"Closed captions are subtitles that are displayed on the screen when the video is played. They are usually displayed in the bottom right corner of the screen.
+
+Closed captions are not available on all videos.
+
+Closed captions are available on the following videos:
+
+What are subtitles?
+
+Subtitles are the text that is displayed on the screen when the video is played. Subtitles are usually displayed in the bottom right corner of the screen",100,EleutherAI/pythia-2.8b
+ctrl_contrast_direct_001,color contrast,control,direct_question,What is color contrast?,"Color contrast is the difference between the color of the background and the color of the foreground.
+
+The color of the background is the color of the background of the image.
+
+The color of the foreground is the color of the foreground of the image.
+
+The color contrast of an image is the difference between the color of the background and the color of the foreground.
+
+The color contrast of an image is the difference between the color of the background and the color of the",100,EleutherAI/pythia-2.8b
+ctrl_title_direct_001,page title,control,direct_question,What is a page title?,"A page title is the text that appears in the browser's title bar. It is the first thing that a user sees when they open a web page.
+
+The page title is usually the same as the page's URL. For example, if the page is http://www.example.com/index.html, the page title is ""Index"".
+
+The page title is usually the same as the page's URL. For example, if the page is http://www.",100,EleutherAI/pythia-2.8b
+ctrl_cc_instruction_001,closed captions,control,instruction,Explain closed captions to a web developer.,"I'm working on a project that requires a lot of closed captions. I've been told that I need to explain to the web developer how to use them. I've been told that I need to explain to the web developer how to use them.
+
+I've been told that I need to explain to the web developer how to use them.
+
+I've been told that I need to explain to the web developer how to use them.
+
+I've been told that",100,EleutherAI/pythia-2.8b
+ctrl_contrast_instruction_001,color contrast,control,instruction,Explain color contrast to a web developer.,"I'm a web developer and I'm trying to explain color contrast to a web developer. I've been trying to explain it to him for a while now and I'm not sure if I'm doing it right.
+
+I'm trying to explain color contrast to a web developer. I've been trying to explain it to him for a while now and I'm not sure if I'm doing it right.
+
+I'm trying to explain color contrast to a web developer. I've",100,EleutherAI/pythia-2.8b
+ctrl_title_instruction_001,page title,control,instruction,Explain page titles to a web developer.,"I'm a web developer and I'm trying to explain to a client why their site has a page title of ""Home"" and not ""About Us"". I've been told that the page title is the title of the page, but I don't understand why the page title is not the title of the page.
+
+I've been told that the page title is the title of the page, but I don't understand why the page title is not the title of the page.",100,EleutherAI/pythia-2.8b
+ctrl_cc_evaluative_001,closed captions,control,evaluative,A video without closed captions is not accessible because,"the video is not in English.
+
+Please contact us if you need a video in a different language.
+
+A video with closed captions is not accessible because the video is not in English.
+
+Please contact us if you need a video in a different language.
+
+A video without closed captions is not accessible because the video is not in English.
+
+Please contact us if you need a video in a different language.
+
+A video without closed captions is not",100,EleutherAI/pythia-2.8b
+ctrl_contrast_evaluative_001,color contrast,control,evaluative,Text with low color contrast is not accessible because,"it is not in the same color range as the background.
+
+Text with high color contrast is not accessible because it is not in the same color range as the background.
+
+Text with low color contrast is not accessible because it is not in the same color range as the background.
+
+Text with high color contrast is not accessible because it is not in the same color range as the background.
+
+Text with low color contrast is not accessible because it is not in the same color range",100,EleutherAI/pythia-2.8b
+ctrl_title_evaluative_001,page title,control,evaluative,A web page without a title is not accessible because,"the user cannot determine what the page is about.
+
+A web page without a title is not accessible because the user cannot determine what the page is about.
+
+A web page without a title is not accessible because the user cannot determine what the page is about.
+
+A web page without a title is not accessible because the user cannot determine what the page is about.
+
+A web page without a title is not accessible because the user cannot determine what the page is about.",100,EleutherAI/pythia-2.8b
+ctrl_cc_scenario_001,closed captions,control,scenario,"A deaf user is watching a video on a website. Without closed captions, the user",cannot understand the video. The user can use a screen reader to read the video. The screen reader reads the video by using the audio of the video. The screen reader can also read the video by using the text of the video. The screen reader can also read the video by using the text of the video and the audio of the video. The screen reader can also read the video by using the text of the video and the audio of the video and the video's metadata. The screen reader can,100,EleutherAI/pythia-2.8b
+ctrl_contrast_scenario_001,color contrast,control,scenario,A low vision user visits a website with poor color contrast. The user,"is able to see the text on the website, but is unable to read the text. The user is able to see the background of the website, but is unable to read the background. The user is able to see the background of the website, but is unable to read the background. The user is able to see the background of the website, but is unable to read the background. The user is able to see the background of the website, but is unable to read the background. The user",100,EleutherAI/pythia-2.8b
+ctrl_title_scenario_001,page title,control,scenario,A screen reader user navigates to a web page with no title. The user,"is then presented with a title bar and a list of links. The user then selects a link and is presented with a page with no title. The user then navigates to a web page with a title.
+
+A screen reader user navigates to a web page with no title. The user is then presented with a title bar and a list of links. The user then selects a link and is presented with a page with no title. The user then navigates to a web page with a",100,EleutherAI/pythia-2.8b
+ctrl_bicycle_cloze_001,bicycle,control,cloze,A bicycle is used for,"transportation, recreation, and sport. The bicycle is a vehicle that is powered by a rider's muscular force. The bicycle is a vehicle that is powered by a rider's muscular force. The bicycle is a vehicle that is powered by a rider's muscular force. The bicycle is a vehicle that is powered by a rider's muscular force. The bicycle is a vehicle that is powered by a rider's muscular force. The bicycle is a vehicle that is powered by a rider's muscular force. The bicycle is",100,EleutherAI/pythia-2.8b
+ctrl_bicycle_direct_001,bicycle,control,direct_question,What is a bicycle?,"A bicycle is a vehicle that uses a wheel to move. It is a type of vehicle that is powered by the movement of the rider's legs. Bicycles are used for transportation, recreation, and sport.
+
+Bicycles are powered by the rider's legs. The rider pedals the bicycle with one or both feet. The rider's feet are connected to the bicycle by a pedal assembly. The rider's legs are connected to the bicycle by a chain or a deraille",100,EleutherAI/pythia-2.8b
+ctrl_bicycle_instruction_001,bicycle,control,instruction,Explain bicycles to a web developer.,I’m a web developer and I’m looking to buy a bicycle. I’ve been looking at the different models and I’m not sure which one to get. I’m not sure if I should get a road bike or a mountain bike. I’m not sure if I should get a road bike or a hybrid. I’m not sure if I should get a road bike or a hybrid. I’m not sure if I should get a road bike or,100,EleutherAI/pythia-2.8b
+ctrl_bicycle_evaluative_001,bicycle,control,evaluative,A bicycle without brakes is not safe because,"it is not designed to stop.
+
+A bicycle without brakes is not safe because it is not designed to stop.
+
+A bicycle without brakes is not safe because it is not designed to stop.
+
+A bicycle without brakes is not safe because it is not designed to stop.
+
+A bicycle without brakes is not safe because it is not designed to stop.
+
+A bicycle without brakes is not safe because it is not designed to stop.
+
+A bicycle without brakes is not",100,EleutherAI/pythia-2.8b
+ctrl_bicycle_scenario_001,bicycle,control,scenario,"A child is riding a bicycle on a busy street. Without a helmet, the child","is at risk of serious injury.
+
+The child is wearing a helmet, but the helmet is not properly fitted.
+
+The child is wearing a helmet that is too small.
+
+The child is wearing a helmet that is too large.
+
+The child is wearing a helmet that is too loose.
+
+The child is wearing a helmet that is too tight.
+
+The child is wearing a helmet that is too loose.
+
+The child is wearing a helmet that is too",100,EleutherAI/pythia-2.8b

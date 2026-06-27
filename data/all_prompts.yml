@@ -1,0 +1,425 @@
+# ============================================================
+# Consolidated Prompt File — Paper 1 TMLR Submission
+# ============================================================
+# All prompts for Experiment 1 (Declarative & Evaluative Elicitation)
+# Organized by prompt_type for readability.
+#
+# Schema:
+#   prompt_id      — unique identifier
+#   concept        — accessibility concept or control
+#   prompt_type    — declarative | evaluative | completion | hypothesis | validation | control
+#   template_type  — cloze | code_review | few_shot | bare | direct_question | error_correction | socratic | instruction | scenario | evaluative
+#   prompt         — the actual prompt text
+#   max_tokens     — generation limit
+#
+# Notes:
+#   - Original Paper 1 used max_new_tokens=10 (declarative) and 20 (evaluative).
+#     Standardized to 100 here to capture full confabulation patterns.
+#     Models that know the answer stop early; extra room doesn't change results.
+#   - Bicycle prompts serve as non-accessibility control (domain the model definitely knows).
+#   - HTML/ARIA confabulation controls test confident wrongness.
+# ============================================================
+
+prompts:
+
+  # ----------------------------------------------------------
+  # DECLARATIVE — Can the model complete accessibility concepts?
+  # Original Paper 1 Experiment 1 prompts.
+  # ----------------------------------------------------------
+
+  - prompt_id: decl_screen_reader_001
+    concept: screen reader
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A screen reader is"
+    max_tokens: 100
+
+  - prompt_id: decl_wcag_001
+    concept: WCAG
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "WCAG stands for"
+    max_tokens: 100
+
+  - prompt_id: decl_skip_link_001
+    concept: skip link
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A skip link is"
+    max_tokens: 100
+
+  - prompt_id: decl_alt_text_001
+    concept: alt text
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "The purpose of alt text is"
+    max_tokens: 100
+
+  - prompt_id: decl_aria_001
+    concept: ARIA
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "ARIA stands for"
+    max_tokens: 100
+
+  - prompt_id: decl_focus_indicator_001
+    concept: focus indicator
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A focus indicator is"
+    max_tokens: 100
+
+  - prompt_id: decl_keyboard_nav_001
+    concept: keyboard navigation
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Keyboard navigation allows"
+    max_tokens: 100
+
+  - prompt_id: decl_color_contrast_001
+    concept: color contrast
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Color contrast is important because"
+    max_tokens: 100
+
+  - prompt_id: decl_semantic_html_001
+    concept: semantic HTML
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Semantic HTML helps"
+    max_tokens: 100
+
+  - prompt_id: decl_captions_001
+    concept: captions
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Captions are used for"
+    max_tokens: 100
+
+  # ----------------------------------------------------------
+  # EVALUATIVE — Can the model identify accessibility violations?
+  # Original Paper 1 Experiment 2a prompts.
+  # ----------------------------------------------------------
+
+  - prompt_id: eval_alt_text_001
+    concept: alt text
+    prompt_type: evaluative
+    template_type: code_review
+    prompt: "The following code is not accessible because it doesn't have what? <img src='photo.jpg'>"
+    max_tokens: 100
+
+  - prompt_id: eval_div_onclick_001
+    concept: semantic HTML
+    prompt_type: evaluative
+    template_type: code_review
+    prompt: "A <div> with onclick is not accessible because"
+    max_tokens: 100
+
+  - prompt_id: eval_empty_link_001
+    concept: empty link
+    prompt_type: evaluative
+    template_type: code_review
+    prompt: "The accessibility problem with <a href='#'></a> is"
+    max_tokens: 100
+
+  - prompt_id: eval_unlabeled_input_001
+    concept: form label
+    prompt_type: evaluative
+    template_type: code_review
+    prompt: "<input type='text'> needs a"
+    max_tokens: 100
+
+  - prompt_id: eval_click_here_001
+    concept: link text
+    prompt_type: evaluative
+    template_type: code_review
+    prompt: "A button that only says 'Click here' is bad because"
+    max_tokens: 100
+
+  # ----------------------------------------------------------
+  # COMPLETION — HTML completion with and without accessibility patterns
+  # Tests token-level knowledge via few-shot priming and bare completion.
+  # ----------------------------------------------------------
+
+  - prompt_id: comp_alt_text_few_shot_001
+    concept: alt text
+    prompt_type: completion
+    template_type: few_shot
+    prompt: '<img src="icons/home.png" alt="Home"><img src="icons/mail.png" alt="Inbox"><img src="photo.jpg"'
+    max_tokens: 100
+
+  - prompt_id: comp_alt_text_bare_001
+    concept: alt text
+    prompt_type: completion
+    template_type: bare
+    prompt: '<img src="photo.jpg"'
+    max_tokens: 100
+
+  - prompt_id: comp_captions_few_shot_001
+    concept: captions
+    prompt_type: completion
+    template_type: few_shot
+    prompt: '<video src="intro.mp4"><track kind="captions" src="intro.vtt"></video><video src="demo.mp4"><track kind="captions" src="demo.vtt"></video><video src="lecture.mp4">'
+    max_tokens: 100
+
+  - prompt_id: comp_captions_bare_001
+    concept: captions
+    prompt_type: completion
+    template_type: bare
+    prompt: '<video src="lecture.mp4">'
+    max_tokens: 100
+
+  - prompt_id: comp_page_title_few_shot_001
+    concept: page title
+    prompt_type: completion
+    template_type: few_shot
+    prompt: '<html><head><title>About Us</title></head><html><head><title>Contact</title></head><html><head>'
+    max_tokens: 100
+
+  - prompt_id: comp_page_title_bare_001
+    concept: page title
+    prompt_type: completion
+    template_type: bare
+    prompt: '<html><head><meta charset="utf-8">'
+    max_tokens: 100
+
+  - prompt_id: comp_script_bare_001
+    concept: script
+    prompt_type: completion
+    template_type: bare
+    prompt: "<script"
+    max_tokens: 100
+    # Non-accessibility control — tests general HTML completion.
+
+  - prompt_id: comp_script_few_shot_001
+    concept: script
+    prompt_type: completion
+    template_type: few_shot
+    prompt: '<script src="utils.js"></script><script src="main.js"></script><script src="'
+    max_tokens: 100
+    # Non-accessibility control — tests general HTML completion with pattern.
+
+  # ----------------------------------------------------------
+  # HYPOTHESIS — Pre-registered predictions about specific failure modes
+  # Target: Pythia 2.8B (first model with declarative knowledge).
+  # Tests whether the evaluative gap holds under varied framing.
+  # ----------------------------------------------------------
+
+  - prompt_id: hypo_alt_text_direct_001
+    concept: alt text
+    prompt_type: hypothesis
+    template_type: direct_question
+    prompt: "Look at this HTML: <img src='portrait.jpg'>. What specific attribute is missing to make it accessible?"
+    max_tokens: 100
+    # Expected failure: Model repeats the tag or provides a generic definition
+    # rather than naming 'alt text'.
+
+  - prompt_id: hypo_alt_text_correction_001
+    concept: alt text
+    prompt_type: hypothesis
+    template_type: error_correction
+    prompt: "Correct the following inaccessible code: <img src='logo.png'>"
+    max_tokens: 100
+    # Expected failure: Model adds width/height/src attributes
+    # but ignores the alt attribute.
+
+  - prompt_id: hypo_alt_text_socratic_001
+    concept: alt text
+    prompt_type: hypothesis
+    template_type: socratic
+    prompt: "A screen reader is software that reads text aloud. Why would a screen reader fail to describe this tag: <img src='chart.svg'>?"
+    max_tokens: 100
+    # Expected failure: Despite deep binding of 'screen reader' at 2.8B,
+    # the model cannot link the concept to the missing alt attribute.
+
+  # ----------------------------------------------------------
+  # VALIDATION — Additional prompts confirming the gap pattern
+  # ----------------------------------------------------------
+
+  - prompt_id: valid_alt_text_direct_001
+    concept: alt text
+    prompt_type: validation
+    template_type: direct_question
+    prompt: "The following code is not accessible because it doesn't have what? <img src='photo.jpg'>"
+    max_tokens: 100
+    # Expected: Stalls or repeats despite correctly defining 'alt text' elsewhere.
+
+  - prompt_id: valid_alt_text_instruction_001
+    concept: alt text
+    prompt_type: validation
+    template_type: instruction
+    prompt: "What accessibility attribute is missing from this HTML: <img src='photo.jpg'>?"
+    max_tokens: 100
+
+  - prompt_id: valid_screen_reader_socratic_001
+    concept: screen reader
+    prompt_type: validation
+    template_type: socratic
+    prompt: "A screen reader is software that reads text aloud. Why would it fail to describe <img src='chart.svg'>?"
+    max_tokens: 100
+    # Expected: Fails to link screen reader definition to missing alt attribute.
+
+  - prompt_id: valid_aria_confab_001
+    concept: ARIA
+    prompt_type: validation
+    template_type: cloze
+    prompt: "ARIA stands for"
+    max_tokens: 100
+    # Fluent confabulation control — produces confident wrong expansions.
+
+  - prompt_id: valid_html_confab_001
+    concept: HTML
+    prompt_type: validation
+    template_type: cloze
+    prompt: "HTML stands for"
+    max_tokens: 100
+    # Non-accessibility confabulation control.
+
+  # ----------------------------------------------------------
+  # ELICITATION CONTROL — Expanded concept x template matrix
+  # 3 accessibility concepts x 5 templates + bicycle control x 5 templates.
+  # Tests whether the gap is concept-specific or domain-wide.
+  # ----------------------------------------------------------
+
+  - prompt_id: ctrl_cc_cloze_001
+    concept: closed captions
+    prompt_type: control
+    template_type: cloze
+    prompt: "Closed captions display"
+    max_tokens: 100
+
+  - prompt_id: ctrl_contrast_cloze_001
+    concept: color contrast
+    prompt_type: control
+    template_type: cloze
+    prompt: "Color contrast is important because"
+    max_tokens: 100
+
+  - prompt_id: ctrl_title_cloze_001
+    concept: page title
+    prompt_type: control
+    template_type: cloze
+    prompt: "A page title describes"
+    max_tokens: 100
+
+  - prompt_id: ctrl_cc_direct_001
+    concept: closed captions
+    prompt_type: control
+    template_type: direct_question
+    prompt: "What are closed captions?"
+    max_tokens: 100
+
+  - prompt_id: ctrl_contrast_direct_001
+    concept: color contrast
+    prompt_type: control
+    template_type: direct_question
+    prompt: "What is color contrast?"
+    max_tokens: 100
+
+  - prompt_id: ctrl_title_direct_001
+    concept: page title
+    prompt_type: control
+    template_type: direct_question
+    prompt: "What is a page title?"
+    max_tokens: 100
+
+  - prompt_id: ctrl_cc_instruction_001
+    concept: closed captions
+    prompt_type: control
+    template_type: instruction
+    prompt: "Explain closed captions to a web developer."
+    max_tokens: 100
+
+  - prompt_id: ctrl_contrast_instruction_001
+    concept: color contrast
+    prompt_type: control
+    template_type: instruction
+    prompt: "Explain color contrast to a web developer."
+    max_tokens: 100
+
+  - prompt_id: ctrl_title_instruction_001
+    concept: page title
+    prompt_type: control
+    template_type: instruction
+    prompt: "Explain page titles to a web developer."
+    max_tokens: 100
+
+  - prompt_id: ctrl_cc_evaluative_001
+    concept: closed captions
+    prompt_type: control
+    template_type: evaluative
+    prompt: "A video without closed captions is not accessible because"
+    max_tokens: 100
+
+  - prompt_id: ctrl_contrast_evaluative_001
+    concept: color contrast
+    prompt_type: control
+    template_type: evaluative
+    prompt: "Text with low color contrast is not accessible because"
+    max_tokens: 100
+
+  - prompt_id: ctrl_title_evaluative_001
+    concept: page title
+    prompt_type: control
+    template_type: evaluative
+    prompt: "A web page without a title is not accessible because"
+    max_tokens: 100
+
+  - prompt_id: ctrl_cc_scenario_001
+    concept: closed captions
+    prompt_type: control
+    template_type: scenario
+    prompt: "A deaf user is watching a video on a website. Without closed captions, the user"
+    max_tokens: 100
+
+  - prompt_id: ctrl_contrast_scenario_001
+    concept: color contrast
+    prompt_type: control
+    template_type: scenario
+    prompt: "A low vision user visits a website with poor color contrast. The user"
+    max_tokens: 100
+
+  - prompt_id: ctrl_title_scenario_001
+    concept: page title
+    prompt_type: control
+    template_type: scenario
+    prompt: "A screen reader user navigates to a web page with no title. The user"
+    max_tokens: 100
+
+  # Bicycle control — non-accessibility domain
+
+  - prompt_id: ctrl_bicycle_cloze_001
+    concept: bicycle
+    prompt_type: control
+    template_type: cloze
+    prompt: "A bicycle is used for"
+    max_tokens: 100
+
+  - prompt_id: ctrl_bicycle_direct_001
+    concept: bicycle
+    prompt_type: control
+    template_type: direct_question
+    prompt: "What is a bicycle?"
+    max_tokens: 100
+
+  - prompt_id: ctrl_bicycle_instruction_001
+    concept: bicycle
+    prompt_type: control
+    template_type: instruction
+    prompt: "Explain bicycles to a web developer."
+    max_tokens: 100
+
+  - prompt_id: ctrl_bicycle_evaluative_001
+    concept: bicycle
+    prompt_type: control
+    template_type: evaluative
+    prompt: "A bicycle without brakes is not safe because"
+    max_tokens: 100
+
+  - prompt_id: ctrl_bicycle_scenario_001
+    concept: bicycle
+    prompt_type: control
+    template_type: scenario
+    prompt: "A child is riding a bicycle on a busy street. Without a helmet, the child"
+    max_tokens: 100

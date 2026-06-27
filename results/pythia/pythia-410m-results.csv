@@ -1,0 +1,417 @@
+prompt_id,concept,prompt_type,template_type,prompt,output,max_tokens,model
+decl_screen_reader_001,screen reader,declarative,cloze,A screen reader is,"a device that allows a user to view a screen of a computer system. Screen readers are typically used to assist a user in navigating a computer system. Screen readers are typically used to assist a user in navigating a computer system by providing a user interface that allows a user to view a screen of the computer system.
+Screen readers are typically used to assist a user in navigating a computer system by providing a user interface that allows a user to view a screen of the computer system. Screen readers are typically used",100,EleutherAI/pythia-410m
+decl_wcag_001,WCAG,declarative,cloze,WCAG stands for,"the World Confederation of Agricultural and Food Industries.
+
+WCAG is a global organization of more than 100,000 members, representing more than 100 countries, with more than 1,000 members in more than 100 countries.
+
+WCAG is a member of the World Confederation of Agricultural and Food Industries (WCAGI), a global organization of more than 100,000 members, representing more than 100 countries, with more than 1,000 members in more than 100 countries.
+
+WC",100,EleutherAI/pythia-410m
+decl_skip_link_001,skip link,declarative,cloze,A skip link is,"a link that is not part of the main page.
+
+A skip link is a link that is not part of the main page.
+
+A skip link is a link that is not part of the main page.
+
+A skip link is a link that is not part of the main page.
+
+A skip link is a link that is not part of the main page.
+
+A skip link is a link that is not part of the main page.
+
+A skip",100,EleutherAI/pythia-410m
+decl_alt_text_001,alt text,declarative,cloze,The purpose of alt text is,"to provide a way for users to customize the text of the alt text.
+
+Alt text is a text that is displayed on the screen.
+
+Alt text is a text that is displayed on the screen.
+
+Alt text is a text that is displayed on the screen.
+
+Alt text is a text that is displayed on the screen.
+
+Alt text is a text that is displayed on the screen.
+
+Alt text is a text that is displayed on the screen.",100,EleutherAI/pythia-410m
+decl_aria_001,ARIA,declarative,cloze,ARIA stands for,the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for,100,EleutherAI/pythia-410m
+decl_focus_indicator_001,focus indicator,declarative,cloze,A focus indicator is,"a device that is used to indicate the presence of a focus in a camera. The focus indicator is typically a small, light-emitting diode (LED) that is placed in the camera's viewfinder. The LED is turned on when the camera is in focus, and off when the camera is out of focus. The LED is turned off when the camera is in the dark.
+
+The focus indicator is typically mounted on the camera's viewfinder. The focus indicator is typically mounted on the camera",100,EleutherAI/pythia-410m
+decl_keyboard_nav_001,keyboard navigation,declarative,cloze,Keyboard navigation allows,"you to navigate through the various sections of the site.
+
+The site is divided into three sections:
+
+The main site
+
+The main site is the home page of the site.
+
+The main site is the home page of the site.
+
+The main site is the home page of the site.
+
+The main site is the home page of the site.
+
+The main site is the home page of the site.
+
+The main site is the home page",100,EleutherAI/pythia-410m
+decl_color_contrast_001,color contrast,declarative,cloze,Color contrast is important because,"it can be used to distinguish between different colors. For example, a person wearing a red shirt and a blue shirt may be wearing a red shirt and a blue shirt, but a person wearing a red shirt and a blue shirt may be wearing a red shirt and a blue shirt.
+Color contrast is also important because it can be used to distinguish between different colors. For example, a person wearing a red shirt and a blue shirt may be wearing a red shirt and a blue shirt, but a person",100,EleutherAI/pythia-410m
+decl_semantic_html_001,semantic HTML,declarative,cloze,Semantic HTML helps,"you create a rich, interactive website.
+
+Semantic HTML is a powerful HTML parser that can parse HTML documents and generate HTML code. It is a powerful HTML parser that can parse HTML documents and generate HTML code.
+
+Semantic HTML is a powerful HTML parser that can parse HTML documents and generate HTML code. It is a powerful HTML parser that can parse HTML documents and generate HTML code.
+
+Semantic HTML is a powerful HTML parser that can parse HTML documents and generate HTML code.",100,EleutherAI/pythia-410m
+decl_captions_001,captions,declarative,cloze,Captions are used for,"the purpose of providing a clear and concise description of the invention. The description should not be construed as an admission that the invention is prior art to the present disclosure.
+In the field of semiconductor devices, there is a need to reduce the size of the devices. In particular, the size of the transistors is reduced to reduce the size of the devices. However, the size of the transistors is limited by the size of the gate electrodes. The gate electrodes are the part of the device that is used",100,EleutherAI/pythia-410m
+eval_alt_text_001,alt text,evaluative,code_review,The following code is not accessible because it doesn't have what? <img src='photo.jpg'>,"The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
+
+The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
+
+The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
+
+The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
+
+The following code is not accessible",100,EleutherAI/pythia-410m
+eval_div_onclick_001,semantic HTML,evaluative,code_review,A <div> with onclick is not accessible because,"it is not a valid HTML element.
+
+A <div> with onclick is not accessible because it is not a valid HTML element.
+
+A <div> with onclick is not accessible because it is not a valid HTML element.
+
+A <div> with onclick is not accessible because it is not a valid HTML element.
+
+A <div> with onclick is not accessible because it is not a valid HTML element.
+
+A <div> with onclick is not accessible because",100,EleutherAI/pythia-410m
+eval_empty_link_001,empty link,evaluative,code_review,The accessibility problem with <a href='#'></a> is,"that it is not clear what the user is looking for.
+
+The <a href='#'></a> tag is a tag that is used to indicate that the user is looking for a specific element.
+
+The <a href='#'></a> tag is a tag that is used to indicate that the user is looking for a specific element.
+
+The <a href='#'></a> tag is a tag that is used to indicate that the user is looking for a specific",100,EleutherAI/pythia-410m
+eval_unlabeled_input_001,form label,evaluative,code_review,<input type='text'> needs a,"<input type='text'>
+
+<input type='submit'>
+
+</form>",100,EleutherAI/pythia-410m
+eval_click_here_001,link text,evaluative,code_review,A button that only says 'Click here' is bad because,"it's not a link.
+
+A button that only says 'Click here' is bad because it's not a link.
+
+A button that says 'Click here' is bad because it's not a link.
+
+A button that says 'Click here' is bad because it's not a link.
+
+A button that says 'Click here' is bad because it's not a link.
+
+A button that says 'Click here' is bad because it's not a",100,EleutherAI/pythia-410m
+comp_alt_text_few_shot_001,alt text,completion,few_shot,"<img src=""icons/home.png"" alt=""Home""><img src=""icons/mail.png"" alt=""Inbox""><img src=""photo.jpg""","alt=""Photo""><img src=""icons/profile.png"" alt=""Profile""><img src=""icons/settings.png"" alt=""Settings""><img src=""icons/settings.png"" alt=""Settings""><img src=""icons/settings.png"" alt=""Settings""><img src=""icons/settings.png"" alt=""Settings""><img src=""icons/settings.png"" alt=""Settings""><img src=""icons/settings.png"" alt=""Settings""><img src=""icons/",100,EleutherAI/pythia-410m
+comp_alt_text_bare_001,alt text,completion,bare,"<img src=""photo.jpg""","alt=""image"" />
+
+<p>
+  <a href=""http://www.google.com/intl/en/maps/documentation/javascript/examples/map_basic.html"">
+    <img src=""http://www.google.com/intl/en/maps/documentation/javascript/examples/map_basic.html#map_basic_basic_map_basic_map_basic_map_basic_map_basic_map_",100,EleutherAI/pythia-410m
+comp_captions_few_shot_001,captions,completion,few_shot,"<video src=""intro.mp4""><track kind=""captions"" src=""intro.vtt""></video><video src=""demo.mp4""><track kind=""captions"" src=""demo.vtt""></video><video src=""lecture.mp4"">","<video src=""lecture.vtt""><track kind=""captions"" src=""lecture.vtt""></video><video src=""lecture.mp4""><track kind=""captions"" src=""lecture.vtt""></video><video src=""lecture.mp4""><track kind=""captions"" src=""lecture.vtt""></video><video src=""lecture.mp4""><track kind=""captions"" src=""lecture.vtt""></",100,EleutherAI/pythia-410m
+comp_captions_bare_001,captions,completion,bare,"<video src=""lecture.mp4"">","<source src=""lecture.mp4"" type=""video/mp4"" />
+    <source src=""lecture.mp4"" type=""video/webm"" />
+    <source src=""lecture.mp4"" type=""video/webm"" />
+    <source src=""lecture.mp4"" type=""video/webm"" />
+    <source src=""lecture.mp4"" type=""video/webm"" />",100,EleutherAI/pythia-410m
+comp_page_title_few_shot_001,page title,completion,few_shot,<html><head><title>About Us</title></head><html><head><title>Contact</title></head><html><head>,"<title>About Us</title>
+<style type=""text/css"">
+
+body {
+	background-color: #f0f0f0;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-",100,EleutherAI/pythia-410m
+comp_page_title_bare_001,page title,completion,bare,"<html><head><meta charset=""utf-8"">","<title>CSS Test: Test that the 'display: inline' property is applied to a block element when the 'display' property is not applied.</title>
+<link rel=""author"" title=""L. David Baron"" href=""https://dbaron.org/"">
+<link rel=""help"" href=""http://www.w3.org/TR/css-display-3/#the-display-property"">
+<link rel=""help"" href=""http",100,EleutherAI/pythia-410m
+comp_script_bare_001,script,completion,bare,<script,">
+    import {
+        get,
+        set,
+        isFunction,
+        isObject,
+        isArray,
+        isFunction,
+        isFunction,
+        isFunction,
+        isFunction,
+        isFunction,
+        isFunction,
+        isFunction,
+        isFunction,
+        isFunction,
+        isFunction,
+        isFunction,
+        isFunction,
+        isFunction,
+        isFunction,",100,EleutherAI/pythia-410m
+comp_script_few_shot_001,script,completion,few_shot,"<script src=""utils.js""></script><script src=""main.js""></script><script src=""","utils.js""></script><script src=""main.js""></script>",100,EleutherAI/pythia-410m
+hypo_alt_text_direct_001,alt text,hypothesis,direct_question,Look at this HTML: <img src='portrait.jpg'>. What specific attribute is missing to make it accessible?,"A:
+
+The attribute is missing the attribute name.
+
+The attribute name is missing the attribute value.
+
+The attribute value is missing the attribute name.
+
+The attribute name is missing the attribute value.
+
+The attribute name is missing the attribute value.
+
+The attribute name is missing the attribute value.
+
+The attribute name is missing the attribute value.
+
+The attribute name is missing the attribute value.
+
+The attribute name is missing the attribute",100,EleutherAI/pythia-410m
+hypo_alt_text_correction_001,alt text,hypothesis,error_correction,Correct the following inaccessible code: <img src='logo.png'>,"The following code is inaccessible:
+
+<img src='logo.png'>
+
+The following code is accessible:
+
+<img src='logo.png'>
+
+The following code is accessible:
+
+<img src='logo.png'>
+
+The following code is inaccessible:
+
+<img src='logo.png'>
+
+The following code is accessible:
+
+<img src='logo.png'>
+
+The following code is inaccessible:",100,EleutherAI/pythia-410m
+hypo_alt_text_socratic_001,alt text,hypothesis,socratic,A screen reader is software that reads text aloud. Why would a screen reader fail to describe this tag: <img src='chart.svg'>?,"A screen reader is software that reads text aloud. Why would a screen reader fail to describe this tag: <img src='chart.svg'>?
+
+A screen reader is software that reads text aloud. Why would a screen reader fail to describe this tag: <img src='chart.svg'>?
+
+A screen reader is software that reads text aloud. Why would a screen reader fail to describe this tag: <img src='chart.svg'>?
+
+A screen",100,EleutherAI/pythia-410m
+valid_alt_text_direct_001,alt text,validation,direct_question,The following code is not accessible because it doesn't have what? <img src='photo.jpg'>,"The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
+
+The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
+
+The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
+
+The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
+
+The following code is not accessible",100,EleutherAI/pythia-410m
+valid_alt_text_instruction_001,alt text,validation,instruction,What accessibility attribute is missing from this HTML: <img src='photo.jpg'>?,"The HTML code for this page is:
+
+<img src='photo.jpg'>
+
+The HTML code for this page is:
+
+<img src='photo.jpg'>
+
+The HTML code for this page is:
+
+<img src='photo.jpg'>
+
+The HTML code for this page is:
+
+<img src='photo.jpg'>
+
+The HTML code for this page is:
+
+<img src='photo.jpg'>",100,EleutherAI/pythia-410m
+valid_screen_reader_socratic_001,screen reader,validation,socratic,A screen reader is software that reads text aloud. Why would it fail to describe <img src='chart.svg'>?,"</img>?
+
+A screen reader is software that reads text aloud. Why would it fail to describe <img src='chart.svg'>?</img>?
+
+A screen reader is software that reads text aloud. Why would it fail to describe <img src='chart.svg'>?</img>?
+
+A screen reader is software that reads text aloud. Why would it fail to describe <img src='chart.svg'>?</img>?
+
+A",100,EleutherAI/pythia-410m
+valid_aria_confab_001,ARIA,validation,cloze,ARIA stands for,the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for,100,EleutherAI/pythia-410m
+valid_html_confab_001,HTML,validation,cloze,HTML stands for,Hypertext Markup Language. It is a markup language that is used to create web pages. HTML is a markup language that is used to create web pages. HTML is a markup language that is used to create web pages. HTML is a markup language that is used to create web pages. HTML is a markup language that is used to create web pages. HTML is a markup language that is used to create web pages. HTML is a markup language that is used to create web pages. HTML is a,100,EleutherAI/pythia-410m
+ctrl_cc_cloze_001,closed captions,control,cloze,Closed captions display,"a list of the most recent comments on a given topic.
+
+Closed captions are a great way to get feedback on your blog. They are a great way to get feedback on your blog.
+
+Closed captions are a great way to get feedback on your blog. They are a great way to get feedback on your blog.
+
+Closed captions are a great way to get feedback on your blog. They are a great way to get feedback on your blog.
+
+Closed capt",100,EleutherAI/pythia-410m
+ctrl_contrast_cloze_001,color contrast,control,cloze,Color contrast is important because,"it can be used to distinguish between different colors. For example, a person wearing a red shirt and a blue shirt may be wearing a red shirt and a blue shirt, but a person wearing a red shirt and a blue shirt may be wearing a red shirt and a blue shirt.
+Color contrast is also important because it can be used to distinguish between different colors. For example, a person wearing a red shirt and a blue shirt may be wearing a red shirt and a blue shirt, but a person",100,EleutherAI/pythia-410m
+ctrl_title_cloze_001,page title,control,cloze,A page title describes,"the content of the page.
+
+A page title is a short description of the content of the page.
+
+A page title is a short description of the content of the page.
+
+A page title is a short description of the content of the page.
+
+A page title is a short description of the content of the page.
+
+A page title is a short description of the content of the page.
+
+A page title is a short description of the content of the",100,EleutherAI/pythia-410m
+ctrl_cc_direct_001,closed captions,control,direct_question,What are closed captions?,"Closed captions are a feature of the web that allows you to add text to your web pages. They are a great way to add a little extra information to your web pages.
+
+What are closed captions?
+
+Closed captions are a feature of the web that allows you to add text to your web pages. They are a great way to add a little extra information to your web pages.
+
+What are closed captions?
+
+Closed captions are a feature",100,EleutherAI/pythia-410m
+ctrl_contrast_direct_001,color contrast,control,direct_question,What is color contrast?,"Color contrast is the ability to distinguish between two or more colors. It is a common technique used in photography, but it can also be used in other fields.
+
+What is color contrast?
+
+Color contrast is the ability to distinguish between two or more colors. It is a common technique used in photography, but it can also be used in other fields.
+
+What is color contrast?
+
+Color contrast is the ability to distinguish between two or more colors. It is a",100,EleutherAI/pythia-410m
+ctrl_title_direct_001,page title,control,direct_question,What is a page title?,"A page title is a short description of the page.
+
+A page title is a short description of the page.
+
+A page title is a short description of the page.
+
+A page title is a short description of the page.
+
+A page title is a short description of the page.
+
+A page title is a short description of the page.
+
+A page title is a short description of the page.
+
+A page title is a short description",100,EleutherAI/pythia-410m
+ctrl_cc_instruction_001,closed captions,control,instruction,Explain closed captions to a web developer.,"I have a web application that uses a lot of closed captions. I want to explain them to the web developer.
+
+I have a web application that uses a lot of closed captions. I want to explain them to the web developer.
+
+I have a web application that uses a lot of closed captions. I want to explain them to the web developer.
+
+I have a web application that uses a lot of closed captions. I want to explain them to",100,EleutherAI/pythia-410m
+ctrl_contrast_instruction_001,color contrast,control,instruction,Explain color contrast to a web developer.,"I have a web application that uses a color contrast tool. I want to explain the tool to a web developer.
+
+I have a web application that uses a color contrast tool. I want to explain the tool to a web developer.
+
+I have a web application that uses a color contrast tool. I want to explain the tool to a web developer.
+
+I have a web application that uses a color contrast tool. I want to explain the tool to a web developer.",100,EleutherAI/pythia-410m
+ctrl_title_instruction_001,page title,control,instruction,Explain page titles to a web developer.,"Explain page titles to a web developer.
+
+Explain page titles to a web developer.
+
+Explain page titles to a web developer.
+
+Explain page titles to a web developer.
+
+Explain page titles to a web developer.
+
+Explain page titles to a web developer.
+
+Explain page titles to a web developer.
+
+Explain page titles to a web developer.
+
+Explain page titles to a web developer.",100,EleutherAI/pythia-410m
+ctrl_cc_evaluative_001,closed captions,control,evaluative,A video without closed captions is not accessible because,"it has been marked as forbidden.
+
+You may want to view it as a video, but you can't because it has been marked as forbidden.
+
+You can help the Wikimedia Foundation by making a donation to the Wikimedia Foundation.
+
+The video is available for viewing in its entirety.
+
+The video is available for viewing in its entirety.
+
+The video is available for viewing in its entirety.
+
+The video is available for viewing in its entirety.",100,EleutherAI/pythia-410m
+ctrl_contrast_evaluative_001,color contrast,control,evaluative,Text with low color contrast is not accessible because,"of the low contrast.
+
+Text with high color contrast is not accessible because of the high contrast.
+
+Text with low color contrast is not accessible because of the low contrast.
+
+Text with high color contrast is not accessible because of the high contrast.
+
+Text with low color contrast is not accessible because of the low contrast.
+
+Text with high color contrast is not accessible because of the high contrast.
+
+Text with low color contrast is not accessible because of the low contrast",100,EleutherAI/pythia-410m
+ctrl_title_evaluative_001,page title,control,evaluative,A web page without a title is not accessible because,"the page is not in the current state of the web.
+
+A web page without a title is not accessible because the page is not in the current state of the web.
+
+A web page without a title is not accessible because the page is not in the current state of the web.
+
+A web page without a title is not accessible because the page is not in the current state of the web.
+
+A web page without a title is not accessible because the page is not",100,EleutherAI/pythia-410m
+ctrl_cc_scenario_001,closed captions,control,scenario,"A deaf user is watching a video on a website. Without closed captions, the user","can't see what's being said.
+
+A deaf user is watching a video on a website. Without closed captions, the user can't see what's being said.
+
+A deaf user is watching a video on a website. Without closed captions, the user can't see what's being said.
+
+A deaf user is watching a video on a website. Without closed captions, the user can't see what's being said.
+
+A deaf user is watching a",100,EleutherAI/pythia-410m
+ctrl_contrast_scenario_001,color contrast,control,scenario,A low vision user visits a website with poor color contrast. The user,"is presented with a menu of options, and the user must select one of the options. The user is then presented with a list of options, and the user must select one of the options. The user is then presented with a list of options, and the user must select one of the options. The user is then presented with a list of options, and the user must select one of the options. The user is then presented with a list of options, and the user must select one of the",100,EleutherAI/pythia-410m
+ctrl_title_scenario_001,page title,control,scenario,A screen reader user navigates to a web page with no title. The user,"is presented with a list of links to the web page. The user clicks on one of the links and the web page is displayed. The user can then navigate to the web page by clicking on the link.
+
+A screen reader user navigates to a web page with no title. The user is presented with a list of links to the web page. The user clicks on one of the links and the web page is displayed. The user can then navigate to the web page by clicking on the",100,EleutherAI/pythia-410m
+ctrl_bicycle_cloze_001,bicycle,control,cloze,A bicycle is used for,"a variety of purposes. For example, a bicycle is used to commute to work, to take a long walk, or to take a short walk. A bicycle is also used to take a long walk, to take a short walk, or to take a long walk. A bicycle is also used to take a long walk, to take a short walk, or to take a long walk. A bicycle is also used to take a long walk, to take a short walk, or to take a long",100,EleutherAI/pythia-410m
+ctrl_bicycle_direct_001,bicycle,control,direct_question,What is a bicycle?,"A bicycle is a type of transportation that is used to transport people and cargo. Bicycles are used by people to travel and are also used by people to transport cargo. Bicycles are used by people to travel and are also used by people to transport cargo.
+
+Bicycles are used by people to travel and are also used by people to transport cargo. Bicycles are used by people to travel and are also used by people to transport cargo.
+
+Bicy",100,EleutherAI/pythia-410m
+ctrl_bicycle_instruction_001,bicycle,control,instruction,Explain bicycles to a web developer.,"Bicycles are a great way to get around town. They are easy to use, and they are a great way to get around town.
+
+Bicycles are a great way to get around town. They are easy to use, and they are a great way to get around town.
+
+Bicycles are a great way to get around town. They are easy to use, and they are a great way to get around town.
+
+Bicycles are a",100,EleutherAI/pythia-410m
+ctrl_bicycle_evaluative_001,bicycle,control,evaluative,A bicycle without brakes is not safe because,"it is not designed to be used in a crash.
+
+A bicycle without brakes is not safe because it is not designed to be used in a crash.
+
+A bicycle without brakes is not safe because it is not designed to be used in a crash.
+
+A bicycle without brakes is not safe because it is not designed to be used in a crash.
+
+A bicycle without brakes is not safe because it is not designed to be used in a crash.
+
+A bicycle without",100,EleutherAI/pythia-410m
+ctrl_bicycle_scenario_001,bicycle,control,scenario,"A child is riding a bicycle on a busy street. Without a helmet, the child","is at risk of being struck by a car.
+
+The child is riding a bicycle on a busy street. Without a helmet, the child is at risk of being struck by a car.
+
+The child is riding a bicycle on a busy street. Without a helmet, the child is at risk of being struck by a car.
+
+The child is riding a bicycle on a busy street. Without a helmet, the child is at risk of being struck by a car.
+
+The",100,EleutherAI/pythia-410m

@@ -1,0 +1,466 @@
+prompt_id,concept,prompt_type,template_type,prompt,output,max_tokens,model
+decl_screen_reader_001,screen reader,declarative,cloze,A screen reader is,"a software program that reads text on a computer screen and converts it into speech. It is used by people who are blind or have low vision.
+
+The program is called a screen reader because it reads text on a computer screen and converts it into speech.
+
+The program is called a screen reader because it reads text on a computer screen and converts it into speech.
+
+The program is called a screen reader because it reads text on a computer screen and converts it into speech.",100,gpt2-xl
+decl_wcag_001,WCAG,declarative,cloze,WCAG stands for,"Web Content Accessibility Guidelines. WCAG is a set of guidelines for web content accessibility. WCAG 2.0 is the latest version of the guidelines.
+
+The WCAG 2.0 guidelines are a set of guidelines for web content accessibility. WCAG 2.0 is the latest version of the guidelines.
+
+The WCAG 2.0 guidelines are a set of guidelines for web content accessibility. WCAG 2.0 is the latest version of the guidelines.
+
+The WCAG",100,gpt2-xl
+decl_skip_link_001,skip link,declarative,cloze,A skip link is,a link that is not a link. It is a link that is not a link. It is a link that is not a link. It is a link that is not a link. It is a link that is not a link. It is a link that is not a link. It is a link that is not a link. It is a link that is not a link. It is a link that is not a link. It is a link that is not a link. It is,100,gpt2-xl
+decl_alt_text_001,alt text,declarative,cloze,The purpose of alt text is,"to provide a brief description of the image or text. It is not a replacement for the image or text.
+
+The alt text is not part of the image or text.
+
+The alt text is not part of the image or text.
+
+The alt text is not part of the image or text.
+
+The alt text is not part of the image or text.
+
+The alt text is not part of the image or text.
+
+The alt text is not part",100,gpt2-xl
+decl_aria_001,ARIA,declarative,cloze,ARIA stands for,"""Association of Reggae Artists"". It is a non-profit organisation that promotes the art of Reggae music.
+
+ARIA is a registered charity in the UK and Ireland.
+
+ARIA is a registered charity in the UK and Ireland.
+
+ARIA is a registered charity in the UK and Ireland.
+
+ARIA is a registered charity in the UK and Ireland.
+
+ARIA is a registered charity in the UK and Ireland.
+
+ARIA",100,gpt2-xl
+decl_focus_indicator_001,focus indicator,declarative,cloze,A focus indicator is,"a device that displays a numerical value on a screen. It is used to indicate the direction of a camera's focus.
+
+The focus indicator is a device that displays a numerical value on a screen. It is used to indicate the direction of a camera's focus.
+
+The focus indicator is a device that displays a numerical value on a screen. It is used to indicate the direction of a camera's focus.
+
+The focus indicator is a device that displays a numerical value on a screen",100,gpt2-xl
+decl_keyboard_nav_001,keyboard navigation,declarative,cloze,Keyboard navigation allows,"you to navigate the site using the arrow keys.
+
+To navigate to a specific page, click on the page number.
+
+To navigate to a specific section, click on the section number.
+
+To navigate to a specific section, click on the section number.
+
+To navigate to a specific section, click on the section number.
+
+To navigate to a specific section, click on the section number.
+
+To navigate to a specific section, click on the section number.",100,gpt2-xl
+decl_color_contrast_001,color contrast,declarative,cloze,Color contrast is important because,"it helps you see the difference between two colors.
+
+Color contrast is important because it helps you see the difference between two colors.
+
+Color contrast is important because it helps you see the difference between two colors.
+
+Color contrast is important because it helps you see the difference between two colors.
+
+Color contrast is important because it helps you see the difference between two colors.
+
+Color contrast is important because it helps you see the difference between two colors.
+
+Color contrast is",100,gpt2-xl
+decl_semantic_html_001,semantic HTML,declarative,cloze,Semantic HTML helps,"you to write HTML that is more semantic. It helps you to write HTML that is more readable and easier to understand.
+
+Semantic HTML is a way to write HTML that is more semantic. It helps you to write HTML that is more readable and easier to understand.
+
+Semantic HTML is a way to write HTML that is more semantic. It helps you to write HTML that is more readable and easier to understand.
+
+Semantic HTML is a way to write HTML that is more",100,gpt2-xl
+decl_captions_001,captions,declarative,cloze,Captions are used for,"the caption of a video. They are a way to describe the video in a way that is easy to understand.
+
+Captions are used for the caption of a video. They are a way to describe the video in a way that is easy to understand.
+
+Captions are used for the caption of a video. They are a way to describe the video in a way that is easy to understand.
+
+Captions are used for the caption of a video. They are a way",100,gpt2-xl
+eval_alt_text_001,alt text,evaluative,code_review,The following code is not accessible because it doesn't have what? <img src='photo.jpg'>,"The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
+
+The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
+
+The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
+
+The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
+
+The following code is not accessible",100,gpt2-xl
+eval_div_onclick_001,semantic HTML,evaluative,code_review,A <div> with onclick is not accessible because,"it is not a descendant of a <div> .
+
+A <div> with onclick is not accessible because it is not a descendant of a <div> .
+
+A <div> with onclick is not accessible because it is not a descendant of a <div> .
+
+A <div> with onclick is not accessible because it is not a descendant of a <div> .
+
+A <div> with onclick is not accessible because it is not a",100,gpt2-xl
+eval_empty_link_001,empty link,evaluative,code_review,The accessibility problem with <a href='#'></a> is,"that it's not a link. It's a textarea.
+
+<a href='#'></a> is a textarea.
+
+<a href='#'></a> is a link.
+
+<a href='#'></a> is a link.
+
+<a href='#'></a> is a link.
+
+<a href='#'></a> is a link.
+
+<a href='#'></a>",100,gpt2-xl
+eval_unlabeled_input_001,form label,evaluative,code_review,<input type='text'> needs a,"value
+
+<input type='text' id='name' value='John' /> needs a value
+
+<input type='text' id='name' value='John' /> needs a value
+
+<input type='text' id='name' value='John' /> needs a value
+
+<input type='text' id='name' value='John' /> needs a value
+
+<input type='text' id='name' value='John' /> needs a",100,gpt2-xl
+eval_click_here_001,link text,evaluative,code_review,A button that only says 'Click here' is bad because,"it's not a button. It's a prompt.
+
+A button that only says 'Click here' is bad because it's not a button. It's a prompt.
+
+A button that only says 'Click here' is bad because it's not a button. It's a prompt.
+
+A button that only says 'Click here' is bad because it's not a button. It's a prompt.
+
+A button that only says 'Click here' is bad because",100,gpt2-xl
+comp_alt_text_few_shot_001,alt text,completion,few_shot,"<img src=""icons/home.png"" alt=""Home""><img src=""icons/mail.png"" alt=""Inbox""><img src=""photo.jpg""","alt=""Photo""></a>
+
+<a href=""http://www.google.com/intl/en/policies/privacy/"">Privacy Policy</a>
+
+<a href=""http://www.google.com/intl/en/policies/terms/"">Terms of Service</a>
+
+<a href=""http://www.google.com/intl/en/policies/ads/"">Ads</",100,gpt2-xl
+comp_alt_text_bare_001,alt text,completion,bare,"<img src=""photo.jpg""","alt=""The first time I saw the movie, I was in the middle of a conversation with a friend. I was talking about the movie and how it was a great movie, and he said, ""I don't know if I've seen it, but I heard it was really good."" I said, ""Yeah, it was really good."" He said, ""I heard it was really good, but I didn't know it was that good."" I said, ""Well, it was really",100,gpt2-xl
+comp_captions_few_shot_001,captions,completion,few_shot,"<video src=""intro.mp4""><track kind=""captions"" src=""intro.vtt""></video><video src=""demo.mp4""><track kind=""captions"" src=""demo.vtt""></video><video src=""lecture.mp4"">","<track kind=""captions"" src=""lecture.vtt""></video><video src=""music.mp4"">
+
+<track kind=""captions"" src=""music.vtt""></video><video src=""music.vtt""></video><video src=""music.vtt""></video><video src=""music.vtt""></video><video src=""music.vtt""></video><video src=""music.vtt""></video><video src=""music.",100,gpt2-xl
+comp_captions_bare_001,captions,completion,bare,"<video src=""lecture.mp4"">","The following is a lecture given by Dr. David L. Buss, Professor of Psychology at the University of Texas at Austin.
+
+The following is a lecture given by Dr. David L. Buss, Professor of Psychology at the University of Texas at Austin.
+
+The following is a lecture given by Dr. David L. Buss, Professor of Psychology at the University of Texas at Austin.
+
+The following is a lecture given by Dr. David L. Buss",100,gpt2-xl
+comp_page_title_few_shot_001,page title,completion,few_shot,<html><head><title>About Us</title></head><html><head><title>Contact</title></head><html><head>,"<meta http-equiv=""Content-Type"" content=""text/html; charset=utf-8""> <meta name=""viewport"" content=""width=device-width, initial-scale=1""> <meta name=""apple-mobile-web-app-capable"" content=""yes""> <meta name=""apple-mobile-web-app-status-bar-style"" content=""black-translucent""> <meta name=""apple-mobile-web-app",100,gpt2-xl
+comp_page_title_bare_001,page title,completion,bare,"<html><head><meta charset=""utf-8"">","<meta http-equiv=""X-UA-Compatible"" content=""IE=edge""> <meta name=""viewport"" content=""width=device-width, initial-scale=1""> <title>Laravel 5.5.x on Ubuntu 14.04 LTS</title> <link rel=""stylesheet"" href=""https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"">",100,gpt2-xl
+comp_script_bare_001,script,completion,bare,<script,"src=""//platform.twitter.com/widgets.js"" charset=""utf-8""></script>
+
+The New York Times has a story out today about the ""unprecedented"" and ""unprecedented"" amount of money that the Koch brothers have spent on the 2016 election.
+
+The Kochs have spent $889 million on the 2016 election, according to a new analysis by the Center for Responsive Politics. That's more than double the $534 million that",100,gpt2-xl
+comp_script_few_shot_001,script,completion,few_shot,"<script src=""utils.js""></script><script src=""main.js""></script><script src=""","main.js""></script>
+
+<script src=""main.js""></script>
+
+<script src=""main.js""></script>
+
+<script src=""main.js""></script>
+
+<script src=""main.js""></script>
+
+<script src=""main.js""></script>
+
+<script src=""main.js""></script>
+
+<script src=""main.js""></script>
+
+<script src=""main.js""></",100,gpt2-xl
+hypo_alt_text_direct_001,alt text,hypothesis,direct_question,Look at this HTML: <img src='portrait.jpg'>. What specific attribute is missing to make it accessible?,"The answer is: none.
+
+The image is not accessible because it is not a valid HTML element.
+
+The image is not accessible because it is not a valid HTML element.
+
+The image is not accessible because it is not a valid HTML element.
+
+The image is not accessible because it is not a valid HTML element.
+
+The image is not accessible because it is not a valid HTML element.
+
+The image is not accessible because it is not a",100,gpt2-xl
+hypo_alt_text_correction_001,alt text,hypothesis,error_correction,Correct the following inaccessible code: <img src='logo.png'>,"<img src='logo.png'>
+
+<img src='logo.png'>
+
+<img src='logo.png'>
+
+<img src='logo.png'>
+
+<img src='logo.png'>
+
+<img src='logo.png'>
+
+<img src='logo.png'>
+
+<img src='logo.png'>
+
+<img src='logo.png'>",100,gpt2-xl
+hypo_alt_text_socratic_001,alt text,hypothesis,socratic,A screen reader is software that reads text aloud. Why would a screen reader fail to describe this tag: <img src='chart.svg'>?,"The answer is that the tag is not a chart. It is a chart tag.
+
+The <chart> element is a child of the <div> element. The <div> element is a child of the <div> element. The <div> element is a child of the <div> element. The <div> element is a child of the <div> element. The <div> element is a child of the <div> element. The <div>",100,gpt2-xl
+valid_alt_text_direct_001,alt text,validation,direct_question,The following code is not accessible because it doesn't have what? <img src='photo.jpg'>,"The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
+
+The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
+
+The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
+
+The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
+
+The following code is not accessible",100,gpt2-xl
+valid_alt_text_instruction_001,alt text,validation,instruction,What accessibility attribute is missing from this HTML: <img src='photo.jpg'>?,"The image is not accessible because it is not a valid image tag.
+
+What accessibility attribute is missing from this HTML: <img src='photo.jpg'>?
+
+The image is not accessible because it is not a valid image tag.
+
+What accessibility attribute is missing from this HTML: <img src='photo.jpg'>?
+
+The image is not accessible because it is not a valid image tag.
+
+What accessibility attribute is missing from this HTML: <",100,gpt2-xl
+valid_screen_reader_socratic_001,screen reader,validation,socratic,A screen reader is software that reads text aloud. Why would it fail to describe <img src='chart.svg'>?,"The answer is that the screen reader is not a human. It is a computer program that reads text aloud.
+
+The screen reader is not a human. It is a computer program that reads text aloud.
+
+The screen reader is not a human. It is a computer program that reads text aloud.
+
+The screen reader is not a human. It is a computer program that reads text aloud.
+
+The screen reader is not a human. It is a computer program that",100,gpt2-xl
+valid_aria_confab_001,ARIA,validation,cloze,ARIA stands for,"""Association of Reggae Artists"". It is a non-profit organisation that promotes the art of Reggae music.
+
+ARIA is a registered charity in the UK and Ireland.
+
+ARIA is a registered charity in the UK and Ireland.
+
+ARIA is a registered charity in the UK and Ireland.
+
+ARIA is a registered charity in the UK and Ireland.
+
+ARIA is a registered charity in the UK and Ireland.
+
+ARIA",100,gpt2-xl
+valid_html_confab_001,HTML,validation,cloze,HTML stands for,"Hypertext Markup Language. It is a markup language used to create web pages. HTML is used to create web pages, but it is also used to create other types of documents.
+
+HTML is a markup language used to create web pages. It is used to create web pages, but it is also used to create other types of documents.
+
+HTML is a markup language used to create web pages. It is used to create web pages, but it is also used to create other types",100,gpt2-xl
+ctrl_cc_cloze_001,closed captions,control,cloze,Closed captions display,"in a new window
+
+Closed captions are a feature of some video formats that allow the user to read the subtitles of a video without the need to watch the video. Closed captions are also available in some audio formats.
+
+Closed captions are available in the following video formats:
+
+AAC
+
+MP3
+
+MP4
+
+VOB
+
+WMA
+
+WAV
+
+WMA Lossless
+
+WAV Lossless
+
+W",100,gpt2-xl
+ctrl_contrast_cloze_001,color contrast,control,cloze,Color contrast is important because,"it helps you see the difference between two colors.
+
+Color contrast is important because it helps you see the difference between two colors.
+
+Color contrast is important because it helps you see the difference between two colors.
+
+Color contrast is important because it helps you see the difference between two colors.
+
+Color contrast is important because it helps you see the difference between two colors.
+
+Color contrast is important because it helps you see the difference between two colors.
+
+Color contrast is",100,gpt2-xl
+ctrl_title_cloze_001,page title,control,cloze,A page title describes,"the content of the page.
+
+A page title is a string of characters that identifies the page.
+
+The page title is used to identify the page in the search results.
+
+The page title is not used to identify the page in the search results.
+
+The page title is used to identify the page in the search results.
+
+The page title is used to identify the page in the search results.
+
+The page title is used to identify the page in the search",100,gpt2-xl
+ctrl_cc_direct_001,closed captions,control,direct_question,What are closed captions?,"Closed captions are subtitles that are not available in the original language. They are provided by a third party, such as a movie studio, and are not available in the original language.
+
+What are the benefits of closed captions?
+
+Closed captions are a great way to enjoy movies in a language other than English. They are available in many languages, and they are available in many different languages.
+
+Closed captions are also a great way to learn",100,gpt2-xl
+ctrl_contrast_direct_001,color contrast,control,direct_question,What is color contrast?,"Color contrast is the difference between the color of the background and the color of the foreground.
+
+The background color is the color of the background.
+
+The foreground color is the color of the foreground.
+
+The background color is the color of the background.
+
+The foreground color is the color of the foreground.
+
+The background color is the color of the background.
+
+The foreground color is the color of the foreground.
+
+The background color is the color",100,gpt2-xl
+ctrl_title_direct_001,page title,control,direct_question,What is a page title?,"A page title is a short phrase that is used to identify a page on the site. It is used to help users find the page they are looking for.
+
+What is a page description?
+
+A page description is a short phrase that is used to identify a page on the site. It is used to help users find the page they are looking for.
+
+What is a page meta description?
+
+A page meta description is a short phrase that is used to identify",100,gpt2-xl
+ctrl_cc_instruction_001,closed captions,control,instruction,Explain closed captions to a web developer.,"This is a quick and dirty guide to explain closed captions to a web developer.
+
+Closed captions are a way to add subtitles to video files. They are a way to add subtitles to video files.
+
+Closed captions are a way to add subtitles to video files. They are a way to add subtitles to video files.
+
+Closed captions are a way to add subtitles to video files. They are a way to add subtitles to video files.",100,gpt2-xl
+ctrl_contrast_instruction_001,color contrast,control,instruction,Explain color contrast to a web developer.,"The color contrast between two elements is the difference between the lightness of the two colors.
+
+The color contrast between two elements is the difference between the lightness of the two colors.
+
+The color contrast between two elements is the difference between the lightness of the two colors.
+
+The color contrast between two elements is the difference between the lightness of the two colors.
+
+The color contrast between two elements is the difference between the lightness of the two colors.",100,gpt2-xl
+ctrl_title_instruction_001,page title,control,instruction,Explain page titles to a web developer.,"This is a simple example of how to use the Explain page title feature.
+
+The page title is displayed in the browser's address bar.
+
+The title is displayed in the browser's address bar.
+
+The title is displayed in the browser's address bar.
+
+The title is displayed in the browser's address bar.
+
+The title is displayed in the browser's address bar.
+
+The title is displayed in the browser's address bar.
+
+The title",100,gpt2-xl
+ctrl_cc_evaluative_001,closed captions,control,evaluative,A video without closed captions is not accessible because,"the video player does not support closed captions.
+
+A video without closed captions is not accessible because the video player does not support closed captions.
+
+A video without closed captions is not accessible because the video player does not support closed captions.
+
+A video without closed captions is not accessible because the video player does not support closed captions.
+
+A video without closed captions is not accessible because the video player does not support closed captions.",100,gpt2-xl
+ctrl_contrast_evaluative_001,color contrast,control,evaluative,Text with low color contrast is not accessible because,"it is not in the color space of the screen.
+
+Text with low color contrast is not accessible because it is not in the color space of the screen.
+
+Text with low color contrast is not accessible because it is not in the color space of the screen.
+
+Text with low color contrast is not accessible because it is not in the color space of the screen.
+
+Text with low color contrast is not accessible because it is not in the color space of the screen.",100,gpt2-xl
+ctrl_title_evaluative_001,page title,control,evaluative,A web page without a title is not accessible because,"the page is not in the correct format.
+
+The page you are trying to access is not in the correct format.
+
+The page you are trying to access is not in the correct format.
+
+The page you are trying to access is not in the correct format.
+
+The page you are trying to access is not in the correct format.
+
+The page you are trying to access is not in the correct format.
+
+The page you are trying to access is not",100,gpt2-xl
+ctrl_cc_scenario_001,closed captions,control,scenario,"A deaf user is watching a video on a website. Without closed captions, the user","can't understand what is being said. The user then clicks on a button to turn on captions. The video is then played without captions.
+
+The user is now able to understand what is being said.
+
+The user is now able to understand what is being said.
+
+The user is now able to understand what is being said.
+
+The user is now able to understand what is being said.
+
+The user is now able to understand what is being said.",100,gpt2-xl
+ctrl_contrast_scenario_001,color contrast,control,scenario,A low vision user visits a website with poor color contrast. The user,"'s vision is not good enough to distinguish the colors on the page. The user's vision is not good enough to distinguish the colors on the page.
+
+The user's vision is not good enough to distinguish the colors on the page.
+
+The user's vision is not good enough to distinguish the colors on the page.
+
+The user's vision is not good enough to distinguish the colors on the page.
+
+The user's vision is not good enough to distinguish the colors on the",100,gpt2-xl
+ctrl_title_scenario_001,page title,control,scenario,A screen reader user navigates to a web page with no title. The user,"clicks on the ""back"" button and the page loads. The user clicks on the ""back"" button again and the page loads. The user clicks on the ""back"" button again and the page loads. The user clicks on the ""back"" button again and the page loads. The user clicks on the ""back"" button again and the page loads. The user clicks on the ""back"" button again and the page loads. The user clicks on the ""back"" button again and the page",100,gpt2-xl
+ctrl_bicycle_cloze_001,bicycle,control,cloze,A bicycle is used for,transportation in the United States. It is a two-wheeled vehicle that is propelled by a person on foot or on a bicycle.,100,gpt2-xl
+ctrl_bicycle_direct_001,bicycle,control,direct_question,What is a bicycle?,"A bicycle is a two-wheeled vehicle that is propelled by human power. It is a form of transportation that is used for transportation, recreation, and transportation for work.
+
+What is a bicycle helmet?
+
+A bicycle helmet is a protective device that is worn by a cyclist to protect the head and face from the hazards of riding a bicycle.
+
+What is a bicycle lane?
+
+A bicycle lane is a designated space for bicycles on a roadway. Bicycle lanes are",100,gpt2-xl
+ctrl_bicycle_instruction_001,bicycle,control,instruction,Explain bicycles to a web developer.,"I'm a web developer. I'm also a cyclist. I've been riding for about a year now, and I've been thinking about how to explain bicycles to web developers.
+
+I've been thinking about this because I'm working on a project that involves a lot of cycling. I'm trying to figure out how to explain the concept of a bicycle to a web developer.
+
+I'm not sure how to do it. I'm not sure how to explain the concept of",100,gpt2-xl
+ctrl_bicycle_evaluative_001,bicycle,control,evaluative,A bicycle without brakes is not safe because,"it is not able to stop in time.
+
+A bicycle without brakes is not safe because it is not able to stop in time.
+
+A bicycle without brakes is not safe because it is not able to stop in time.
+
+A bicycle without brakes is not safe because it is not able to stop in time.
+
+A bicycle without brakes is not safe because it is not able to stop in time.
+
+A bicycle without brakes is not safe because it is not able to",100,gpt2-xl
+ctrl_bicycle_scenario_001,bicycle,control,scenario,"A child is riding a bicycle on a busy street. Without a helmet, the child","is at risk of serious injury.
+
+The child is wearing a helmet.
+
+The child is not wearing a helmet.
+
+The child is not wearing a helmet because the helmet is not properly fitted.
+
+The child is not wearing a helmet because the helmet is not properly fitted.
+
+The child is not wearing a helmet because the helmet is not properly fitted.
+
+The child is not wearing a helmet because the helmet is not properly fitted.
+
+The child is not",100,gpt2-xl

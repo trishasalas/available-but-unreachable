@@ -1,0 +1,452 @@
+prompt_id,concept,prompt_type,template_type,prompt,output,max_tokens,model
+decl_screen_reader_001,screen reader,declarative,cloze,A screen reader is,"a device that reads and writes data to a screen. It is used to read and write data to a screen.
+
+The screen reader is a device that reads and writes data to a screen. It is used to read and write data to a screen.
+
+The screen reader is a device that reads and writes data to a screen. It is used to read and write data to a screen.
+
+The screen reader is a device that reads and writes data to a screen. It is",100,gpt2
+decl_wcag_001,WCAG,declarative,cloze,WCAG stands for,"""Western Hemisphere Association of Chiefs of Police."" It is a group of police officers who are responsible for enforcing the law in the United States.
+
+The group is comprised of officers from the U.S. Department of Justice, the U.S. Department of Homeland Security, the U.S. Department of Justice's Office of Inspector General, the U.S. Department of Justice's Office of Inspector General, the U.S. Department of Justice's Office of Inspector General, the U",100,gpt2
+decl_skip_link_001,skip link,declarative,cloze,A skip link is,"a link to a page that is not available.
+
+A skip link is a link to a page that is not available.
+
+A skip link is a link to a page that is not available.
+
+A skip link is a link to a page that is not available.
+
+A skip link is a link to a page that is not available.
+
+A skip link is a link to a page that is not available.
+
+A skip link is a link to a",100,gpt2
+decl_alt_text_001,alt text,declarative,cloze,The purpose of alt text is,"to provide a simple way to create a simple, easy to use, and easy to understand text editor.
+
+The Alt Text Editor is a simple, easy to use, and easy to understand text editor.
+
+The Alt Text Editor is a simple, easy to use, and easy to understand text editor.
+
+The Alt Text Editor is a simple, easy to use, and easy to understand text editor.
+
+The Alt Text Editor is a simple, easy to use, and easy",100,gpt2
+decl_aria_001,ARIA,declarative,cloze,ARIA stands for,"American Indian and Alaska Native. It is a group of people who live in the United States and Canada.
+
+ARIA is a group of people who live in the United States and Canada.
+
+ARIA is a group of people who live in the United States and Canada.
+
+ARIA is a group of people who live in the United States and Canada.
+
+ARIA is a group of people who live in the United States and Canada.
+
+ARIA is a group",100,gpt2
+decl_focus_indicator_001,focus indicator,declarative,cloze,A focus indicator is,"a tool that displays the current focus of a focus indicator.
+
+A focus indicator is a tool that displays the current focus of a focus indicator.
+
+A focus indicator is a tool that displays the current focus of a focus indicator.
+
+A focus indicator is a tool that displays the current focus of a focus indicator.
+
+A focus indicator is a tool that displays the current focus of a focus indicator.
+
+A focus indicator is a tool that displays the current focus of a focus",100,gpt2
+decl_keyboard_nav_001,keyboard navigation,declarative,cloze,Keyboard navigation allows,"you to navigate through the world of the game.
+
+The game is designed to be played with a keyboard.
+
+The game is designed to be played with a mouse.
+
+The game is designed to be played with a keyboard.
+
+The game is designed to be played with a mouse.
+
+The game is designed to be played with a mouse.
+
+The game is designed to be played with a mouse.
+
+The game is designed to be played with a mouse",100,gpt2
+decl_color_contrast_001,color contrast,declarative,cloze,Color contrast is important because,"it determines how much light is absorbed by the retina. The more light you have, the more you can see.
+
+The retina is a specialized area of the brain that is responsible for visual perception. It is the part of the brain that is responsible for the color vision.
+
+The retina is also responsible for the color vision.
+
+The retina is the part of the brain that is responsible for the color vision.
+
+The retina is also responsible for the color vision.",100,gpt2
+decl_semantic_html_001,semantic HTML,declarative,cloze,Semantic HTML helps,"you to write better, more readable code.
+
+Semantic HTML is a powerful, flexible, and flexible language that can be used to write better, more readable code.
+
+Semantic HTML is a powerful, flexible, and flexible language that can be used to write better, more readable code.
+
+Semantic HTML is a powerful, flexible, and flexible language that can be used to write better, more readable code.
+
+Semantic HTML is a powerful, flexible, and flexible",100,gpt2
+decl_captions_001,captions,declarative,cloze,Captions are used for,"the purpose of determining the location of the player's character.
+
+The player's character is placed in a location that is not in the player's character's character.
+
+The player's character is placed in a location that is not in the player's character's character.
+
+The player's character is placed in a location that is not in the player's character's character.
+
+The player's character is placed in a location that is not in the player's character's character.",100,gpt2
+eval_alt_text_001,alt text,evaluative,code_review,The following code is not accessible because it doesn't have what? <img src='photo.jpg'>,<h1>The following code is not accessible because it doesn't have what?</h1> <p>The following code is not accessible because it doesn't have what?</p> <p>The following code is not accessible because it doesn't have what?</p> <p>The following code is not accessible because it doesn't have what?</p> <p>The following code is not accessible because it doesn't have what?</p> <p>,100,gpt2
+eval_div_onclick_001,semantic HTML,evaluative,code_review,A <div> with onclick is not accessible because,"it is not a valid <div> element.
+
+<div> with onclick is not accessible because it is not a valid <div> element.
+
+<div> with onclick is not accessible because it is not a valid <div> element.
+
+<div> with onclick is not accessible because it is not a valid <div> element.
+
+<div> with onclick is not accessible because it is not a valid <div> element.",100,gpt2
+eval_empty_link_001,empty link,evaluative,code_review,The accessibility problem with <a href='#'></a> is,"that it's hard to get the right type of user interface.
+
+The problem is that the <a href='#'></a> is not a good choice for the user interface.
+
+The solution is to use a <a href='#'></a> instead.
+
+The <a href='#'></a> is a good choice for the user interface.
+
+The <a href='#'></a> is a good choice for the user interface.",100,gpt2
+eval_unlabeled_input_001,form label,evaluative,code_review,<input type='text'> needs a,"name</input>
+
+<input type='submit' value='Submit' />
+
+<input type='submit' value='Submit' />
+
+<input type='submit' value='Submit' />
+
+<input type='submit' value='Submit' />
+
+<input type='submit' value='Submit' />
+
+<input type='submit' value='Submit' />
+
+<input type='submit' value='Submit' />
+
+<input type",100,gpt2
+eval_click_here_001,link text,evaluative,code_review,A button that only says 'Click here' is bad because,"it's not a button.
+
+A button that only says 'Click here' is bad because it's not a button.
+
+A button that only says 'Click here' is bad because it's not a button.
+
+A button that only says 'Click here' is bad because it's not a button.
+
+A button that only says 'Click here' is bad because it's not a button.
+
+A button that only says 'Click here' is bad because",100,gpt2
+comp_alt_text_few_shot_001,alt text,completion,few_shot,"<img src=""icons/home.png"" alt=""Home""><img src=""icons/mail.png"" alt=""Inbox""><img src=""photo.jpg""","alt=""Inbox""><img src=""photo.jpg"" alt=""Inbox""><img src=""photo.jpg"" alt=""Inbox""><img src=""photo.jpg"" alt=""Inbox""><img src=""photo.jpg"" alt=""Inbox""><img src=""photo.jpg"" alt=""Inbox""><img src=""photo.jpg"" alt=""Inbox""><img src=""photo.jpg"" alt=""Inbox""><img src=""photo.jpg"" alt=""Inbox",100,gpt2
+comp_alt_text_bare_001,alt text,completion,bare,"<img src=""photo.jpg""","alt=""The first time I saw this, I was so excited. I was so excited to see this. I was so excited to see this. I was so excited to see this. I was so excited to see this. I was so excited to see this. I was so excited to see this. I was so excited to see this. I was so excited to see this. I was so excited to see this. I was so excited to see this. I was so excited to see",100,gpt2
+comp_captions_few_shot_001,captions,completion,few_shot,"<video src=""intro.mp4""><track kind=""captions"" src=""intro.vtt""></video><video src=""demo.mp4""><track kind=""captions"" src=""demo.vtt""></video><video src=""lecture.mp4"">","<video src=""lecture.mp4""> <video src=""lecture.mp4""> <video src=""lecture.mp4""> <video src=""lecture.mp4""> <video src=""lecture.mp4""> <video src=""lecture.mp4""> <video src=""lecture.mp4""> <video src=""lecture.mp4""> <video src=""lecture.mp4""> <video src=""lecture.mp4"">",100,gpt2
+comp_captions_bare_001,captions,completion,bare,"<video src=""lecture.mp4"">","<video src=""lecture.mp4"">
+
+<video src=""lecture.mp4"">
+
+<video src=""lecture.mp4"">
+
+<video src=""lecture.mp4"">
+
+<video src=""lecture.mp4"">
+
+<video src=""lecture.mp4"">
+
+<video src=""lecture.mp4"">
+
+<video src=""lecture.mp4"">
+
+<video",100,gpt2
+comp_page_title_few_shot_001,page title,completion,few_shot,<html><head><title>About Us</title></head><html><head><title>Contact</title></head><html><head>,About Us</title></head><html><head><title>Privacy Policy</title></head><html><head><title>Privacy Policy</title></head><html><head><title>Privacy Policy</title></head><html><head><title>Privacy Policy</title></head><html><head><title>Privacy Policy</title></head><html><head><title>Privacy Policy</title></head><html><head><title>Privacy Policy</title></head><html><,100,gpt2
+comp_page_title_bare_001,page title,completion,bare,"<html><head><meta charset=""utf-8"">","<title>The New York Times</title></head><body> <div class=""content""> <h1>The New York Times</h1> <p>The New York Times</p> <p>The New York Times</p> <p>The New York Times</p> <p>The New York Times</p> <p>The New York Times</p> <p>The New York Times</p> <p>The New York Times</",100,gpt2
+comp_script_bare_001,script,completion,bare,<script,"type=""text/javascript""> var _ = document.getElementsByTagName(""script"")[0]; var _ = document.getElementsByTagName(""script.parentNode.insertBefore(_, _))[0]; var _ = document.getElementsByTagName(""script.parentNode.insertBefore(_, _))[1]; var _ = document.getElementsByTagName(""script.parentNode.insertBefore(_, _",100,gpt2
+comp_script_few_shot_001,script,completion,few_shot,"<script src=""utils.js""></script><script src=""main.js""></script><script src=""","js.js""></script><script src=""js.js""></script><script src=""js.js""></script><script src=""js.js""></script><script src=""js.js""></script><script src=""js.js""></script><script src=""js.js""></script><script src=""js.js""></script><script src=""js.js""></script><script src=""js.js""></script><script src=""js.js""></script><script src=""js",100,gpt2
+hypo_alt_text_direct_001,alt text,hypothesis,direct_question,Look at this HTML: <img src='portrait.jpg'>. What specific attribute is missing to make it accessible?,"The following is a list of attributes that are missing from the HTML:
+
+<img src='portrait.jpg' alt='Portrait' />
+
+<img src='portrait.jpg' alt='Portrait' />
+
+<img src='portrait.jpg' alt='Portrait' />
+
+<img src='portrait.jpg' alt='Portrait' />
+
+<img src='portrait.jpg' alt='Portrait'",100,gpt2
+hypo_alt_text_correction_001,alt text,hypothesis,error_correction,Correct the following inaccessible code: <img src='logo.png'>,"<img src='logo.png' alt='Logo' />
+
+<img src='logo.png' alt='Logo' />
+
+<img src='logo.png' alt='Logo' />
+
+<img src='logo.png' alt='Logo' />
+
+<img src='logo.png' alt='Logo' />
+
+<img src='logo.png' alt='Logo",100,gpt2
+hypo_alt_text_socratic_001,alt text,hypothesis,socratic,A screen reader is software that reads text aloud. Why would a screen reader fail to describe this tag: <img src='chart.svg'>?,"</img>
+
+The screen reader is a simple, yet powerful tool for reading text. It is a simple, yet powerful tool for reading text. It is a simple, yet powerful tool for reading text.
+
+The screen reader is a simple, yet powerful tool for reading text. It is a simple, yet powerful tool for reading text.
+
+The screen reader is a simple, yet powerful tool for reading text. It is a simple, yet powerful tool for reading text.",100,gpt2
+valid_alt_text_direct_001,alt text,validation,direct_question,The following code is not accessible because it doesn't have what? <img src='photo.jpg'>,<h1>The following code is not accessible because it doesn't have what?</h1> <p>The following code is not accessible because it doesn't have what?</p> <p>The following code is not accessible because it doesn't have what?</p> <p>The following code is not accessible because it doesn't have what?</p> <p>The following code is not accessible because it doesn't have what?</p> <p>,100,gpt2
+valid_alt_text_instruction_001,alt text,validation,instruction,What accessibility attribute is missing from this HTML: <img src='photo.jpg'>?,"</img>
+
+What accessibility attribute is missing from this HTML: <img src='photo.jpg'>?</img>
+
+What accessibility attribute is missing from this HTML: <img src='photo.jpg'>?</img>
+
+What accessibility attribute is missing from this HTML: <img src='photo.jpg'>?</img>
+
+What accessibility attribute is missing from this HTML: <img src='photo.jpg'>?</img>
+
+What accessibility attribute",100,gpt2
+valid_screen_reader_socratic_001,screen reader,validation,socratic,A screen reader is software that reads text aloud. Why would it fail to describe <img src='chart.svg'>?,</img>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?,100,gpt2
+valid_aria_confab_001,ARIA,validation,cloze,ARIA stands for,"American Indian and Alaska Native. It is a group of people who live in the United States and Canada.
+
+ARIA is a group of people who live in the United States and Canada.
+
+ARIA is a group of people who live in the United States and Canada.
+
+ARIA is a group of people who live in the United States and Canada.
+
+ARIA is a group of people who live in the United States and Canada.
+
+ARIA is a group",100,gpt2
+valid_html_confab_001,HTML,validation,cloze,HTML stands for,"""HTML-friendly"" and is used by many web browsers. It is used by many web browsers to display HTML content.
+
+HTML is a set of HTML documents that are used to display HTML content.
+
+HTML is a set of HTML documents that are used to display HTML content.
+
+HTML is a set of HTML documents that are used to display HTML content.
+
+HTML is a set of HTML documents that are used to display HTML content.
+
+HTML is a set of",100,gpt2
+ctrl_cc_cloze_001,closed captions,control,cloze,Closed captions display,"the current time and date.
+
+The captions are displayed in a separate window.
+
+The captions are displayed in a separate window.
+
+The captions are displayed in a separate window.
+
+The captions are displayed in a separate window.
+
+The captions are displayed in a separate window.
+
+The captions are displayed in a separate window.
+
+The captions are displayed in a separate window.
+
+The captions are displayed in a separate",100,gpt2
+ctrl_contrast_cloze_001,color contrast,control,cloze,Color contrast is important because,"it determines how much light is absorbed by the retina. The more light you have, the more you can see.
+
+The retina is a specialized area of the brain that is responsible for visual perception. It is the part of the brain that is responsible for the color vision.
+
+The retina is also responsible for the color vision.
+
+The retina is the part of the brain that is responsible for the color vision.
+
+The retina is also responsible for the color vision.",100,gpt2
+ctrl_title_cloze_001,page title,control,cloze,A page title describes,"the process of creating a page.
+
+The page title is a list of the pages that are currently being created.
+
+The page title is a list of the pages that are currently being created.
+
+The page title is a list of the pages that are currently being created.
+
+The page title is a list of the pages that are currently being created.
+
+The page title is a list of the pages that are currently being created.
+
+The page title is a list",100,gpt2
+ctrl_cc_direct_001,closed captions,control,direct_question,What are closed captions?,"Open captions are a way to show the user what is happening in the captions.
+
+Open captions are a way to show the user what is happening in the captions. Open captions are a way to show the user what is happening in the captions. Open captions are a way to show the user what is happening in the captions. Open captions are a way to show the user what is happening in the captions. Open captions are a way",100,gpt2
+ctrl_contrast_direct_001,color contrast,control,direct_question,What is color contrast?,"Color contrast is the ratio of light to dark. It is the ratio of the light to dark that is reflected in a given area.
+
+Color contrast is the ratio of light to dark that is reflected in a given area. The ratio of light to dark is the ratio of the light to dark that is reflected in a given area.
+
+Color contrast is the ratio of light to dark that is reflected in a given area. The ratio of light to dark is the ratio of the",100,gpt2
+ctrl_title_direct_001,page title,control,direct_question,What is a page title?,A page title is a name that is used to describe a page. A page title is used to describe a page in a way that is consistent with the content of the page. A page title is used to describe a page in a way that is consistent with the content of the page. A page title is used to describe a page in a way that is consistent with the content of the page. A page title is used to describe a page in a way that is consistent with the content,100,gpt2
+ctrl_cc_instruction_001,closed captions,control,instruction,Explain closed captions to a web developer.,"This is a simple example of a closed captions example.
+
+Example
+
+This example shows how to use the open captions API to create captions for a web application.
+
+Example
+
+This example shows how to use the open captions API to create captions for a web application.
+
+Example
+
+This example shows how to use the open captions API to create captions for a web application.
+
+Example
+
+This example shows how to use",100,gpt2
+ctrl_contrast_instruction_001,color contrast,control,instruction,Explain color contrast to a web developer.,"The following code snippet shows how to use the color contrast feature of the web developer's browser to show the difference between the color of a web page and the color of a web page.
+
+import java.io.File; import java.io.FileReader; import java.io.FileWriter; import java.io.FileWriter.Reader; import java.io.FileWriter.Reader.Reader.Reader.Reader.Reader.Reader.Reader.Reader.Reader.",100,gpt2
+ctrl_title_instruction_001,page title,control,instruction,Explain page titles to a web developer.,"Use the following code to create a page title:
+
+<!-- <div class=""title""> <h1>Hello World</h1> <p>Hello World</p> </div>
+
+The code above will create a page title that looks like this:
+
+<!-- <div class=""title""> <h1>Hello World</h1> <p>Hello World</p> </div>
+
+The code above will create a page title that",100,gpt2
+ctrl_cc_evaluative_001,closed captions,control,evaluative,A video without closed captions is not accessible because,"it violates the DMCA. If you spot a mistake, please let us know.
+
+To post a video, submit the following form:
+
+Title: Video without closed captions
+
+Body: The video will start in 8 Cancel Play now
+
+Favorites: 1
+
+Comments: 0
+
+Views: 1,836
+
+Added: 1 day ago
+
+Tags: video, video, video, video, video, video, video, video, video,",100,gpt2
+ctrl_contrast_evaluative_001,color contrast,control,evaluative,Text with low color contrast is not accessible because,"of the low contrast.
+
+Text with high contrast is not accessible because of the high contrast.
+
+Text with low contrast is not accessible because of the low contrast.
+
+Text with high contrast is not accessible because of the high contrast.
+
+Text with low contrast is not accessible because of the low contrast.
+
+Text with high contrast is not accessible because of the high contrast.
+
+Text with low contrast is not accessible because of the high contrast.
+
+Text with low",100,gpt2
+ctrl_title_evaluative_001,page title,control,evaluative,A web page without a title is not accessible because,"it is not a valid URL.
+
+The following is a list of URLs that are not valid for a web page.
+
+The following is a list of URLs that are not valid for a web page.
+
+The following is a list of URLs that are not valid for a web page.
+
+The following is a list of URLs that are not valid for a web page.
+
+The following is a list of URLs that are not valid for a web page.
+
+The",100,gpt2
+ctrl_cc_scenario_001,closed captions,control,scenario,"A deaf user is watching a video on a website. Without closed captions, the user","is unable to hear the video.
+
+The user is unable to hear the video because the video is not being watched.
+
+The user is unable to hear the video because the video is not being watched.
+
+The user is unable to hear the video because the video is not being watched.
+
+The user is unable to hear the video because the video is not being watched.
+
+The user is unable to hear the video because the video is not being watched.
+
+The",100,gpt2
+ctrl_contrast_scenario_001,color contrast,control,scenario,A low vision user visits a website with poor color contrast. The user,"is likely to be using a mobile device.
+
+A low vision user visits a website with poor color contrast. The user is likely to be using a mobile device.
+
+A low vision user visits a website with poor color contrast. The user is likely to be using a mobile device.
+
+A low vision user visits a website with poor color contrast. The user is likely to be using a mobile device.
+
+A low vision user visits a website with poor color contrast. The user",100,gpt2
+ctrl_title_scenario_001,page title,control,scenario,A screen reader user navigates to a web page with no title. The user,"then navigates to the page with no title.
+
+The user navigates to a web page with no title. The user then navigates to the page with no title.
+
+The user navigates to a web page with no title. The user navigates to a web page with no title.
+
+The user navigates to a web page with no title. The user navigates to a web page with no title.
+
+The user navigates to a web page with no",100,gpt2
+ctrl_bicycle_cloze_001,bicycle,control,cloze,A bicycle is used for,"the transportation of passengers and goods. The bicycle is used for the transportation of passengers and goods.
+
+A bicycle is used for the transportation of passengers and goods.
+
+A bicycle is used for the transportation of passengers and goods.
+
+A bicycle is used for the transportation of passengers and goods.
+
+A bicycle is used for the transportation of passengers and goods.
+
+A bicycle is used for the transportation of passengers and goods.
+
+A bicycle is used for the transportation of passengers",100,gpt2
+ctrl_bicycle_direct_001,bicycle,control,direct_question,What is a bicycle?,"A bicycle is a bicycle that is used to travel on a bicycle path. It is a bicycle that is used to travel on a bicycle path.
+
+What is a bicycle's name?
+
+A bicycle's name is a descriptive name for a bicycle.
+
+What is a bicycle's name's meaning?
+
+A bicycle's name is a descriptive name for a bicycle.
+
+What is a bicycle's name's meaning?
+
+A bicycle's name is a descriptive name",100,gpt2
+ctrl_bicycle_instruction_001,bicycle,control,instruction,Explain bicycles to a web developer.,"The idea is simple: if you want to build a web app, you need to know how to build it.
+
+The problem is that there are so many different ways to build a web app.
+
+The first is to build a web app from scratch.
+
+The second is to build a web app from scratch.
+
+The third is to build a web app from scratch.
+
+The fourth is to build a web app from scratch.
+
+The fifth is",100,gpt2
+ctrl_bicycle_evaluative_001,bicycle,control,evaluative,A bicycle without brakes is not safe because,"it is not designed to be ridden safely.
+
+The bicycle is designed to be ridden safely.
+
+The bicycle is designed to be ridden safely.
+
+The bicycle is designed to be ridden safely.
+
+The bicycle is designed to be ridden safely.
+
+The bicycle is designed to be ridden safely.
+
+The bicycle is designed to be ridden safely.
+
+The bicycle is designed to be ridden safely.
+
+The bicycle is designed to be ridden safely.
+
+The",100,gpt2
+ctrl_bicycle_scenario_001,bicycle,control,scenario,"A child is riding a bicycle on a busy street. Without a helmet, the child","is unable to see the bike.
+
+The child is riding on a bicycle on a busy street. Without a helmet, the child is unable to see the bike.
+
+The child is riding on a bicycle on a busy street. Without a helmet, the child is unable to see the bike.
+
+The child is riding on a bicycle on a busy street. Without a helmet, the child is unable to see the bike.
+
+The child is riding on a bicycle on a busy",100,gpt2

@@ -1,0 +1,52 @@
+prompt_id,concept,prompt_type,template_type,prompt,n_tokens,mean_entropy,last_token_entropy,max_entropy,min_entropy,model
+decl_screen_reader_001,screen reader,declarative,cloze,A screen reader is,5,4.8425,3.0978,7.763,2.1347,gpt2-medium
+decl_wcag_001,WCAG,declarative,cloze,WCAG stands for,5,4.7992,4.9387,7.2623,0.3691,gpt2-medium
+decl_skip_link_001,skip link,declarative,cloze,A skip link is,5,5.5555,3.4285,7.763,3.4285,gpt2-medium
+decl_alt_text_001,alt text,declarative,cloze,The purpose of alt text is,7,3.5626,1.3822,8.5565,0.1523,gpt2-medium
+decl_aria_001,ARIA,declarative,cloze,ARIA stands for,5,4.6395,5.9861,7.4348,0.1354,gpt2-medium
+decl_focus_indicator_001,focus indicator,declarative,cloze,A focus indicator is,5,4.6609,2.7998,7.763,2.0964,gpt2-medium
+decl_keyboard_nav_001,keyboard navigation,declarative,cloze,Keyboard navigation allows,5,4.844,2.1836,6.0022,2.1836,gpt2-medium
+decl_color_contrast_001,color contrast,declarative,cloze,Color contrast is important because,6,4.5159,3.5916,6.0343,2.5534,gpt2-medium
+decl_semantic_html_001,semantic HTML,declarative,cloze,Semantic HTML helps,5,5.4567,4.023,7.7293,3.961,gpt2-medium
+decl_captions_001,captions,declarative,cloze,Captions are used for,6,4.5982,6.6238,6.6238,2.0744,gpt2-medium
+eval_alt_text_001,alt text,evaluative,code_review,The following code is not accessible because it doesn't have what? <img src='photo.jpg'>,22,3.7907,4.986,8.5565,0.0101,gpt2-medium
+eval_div_onclick_001,semantic HTML,evaluative,code_review,A <div> with onclick is not accessible because,12,4.6867,3.0893,7.763,1.7957,gpt2-medium
+eval_empty_link_001,empty link,evaluative,code_review,The accessibility problem with <a href='#'></a> is,15,3.7733,5.1109,8.5565,0.0352,gpt2-medium
+eval_unlabeled_input_001,form label,evaluative,code_review,<input type='text'> needs a,9,3.0491,6.3607,6.3607,0.1517,gpt2-medium
+eval_click_here_001,link text,evaluative,code_review,A button that only says 'Click here' is bad because,13,4.6258,2.705,7.763,1.6688,gpt2-medium
+comp_alt_text_few_shot_001,alt text,completion,few_shot,"<img src=""icons/home.png"" alt=""Home""><img src=""icons/mail.png"" alt=""Inbox""><img src=""photo.jpg""",36,1.6409,0.8348,7.6399,0.0042,gpt2-medium
+comp_alt_text_bare_001,alt text,completion,bare,"<img src=""photo.jpg""",9,2.2784,1.1101,6.0022,0.2409,gpt2-medium
+comp_captions_few_shot_001,captions,completion,few_shot,"<video src=""intro.mp4""><track kind=""captions"" src=""intro.vtt""></video><video src=""demo.mp4""><track kind=""captions"" src=""demo.vtt""></video><video src=""lecture.mp4"">",61,1.6504,5.5668,6.7652,0.0009,gpt2-medium
+comp_captions_bare_001,captions,completion,bare,"<video src=""lecture.mp4"">",11,2.901,2.3049,6.0022,0.3724,gpt2-medium
+comp_page_title_few_shot_001,page title,completion,few_shot,<html><head><title>About Us</title></head><html><head><title>Contact</title></head><html><head>,31,1.5422,6.2532,7.414,0.001,gpt2-medium
+comp_page_title_bare_001,page title,completion,bare,"<html><head><meta charset=""utf-8"">",14,1.5047,1.7241,6.0022,0.0006,gpt2-medium
+comp_script_bare_001,script,completion,bare,<script,3,4.5275,1.992,6.0022,1.992,gpt2-medium
+comp_script_few_shot_001,script,completion,few_shot,"<script src=""utils.js""></script><script src=""main.js""></script><script src=""",23,1.7654,7.1189,7.1189,0.0055,gpt2-medium
+hypo_alt_text_direct_001,alt text,hypothesis,direct_question,Look at this HTML: <img src='portrait.jpg'>. What specific attribute is missing to make it accessible?,26,3.4603,4.3288,6.5154,0.5862,gpt2-medium
+hypo_alt_text_correction_001,alt text,hypothesis,error_correction,Correct the following inaccessible code: <img src='logo.png'>,16,2.8749,1.8383,6.5845,0.6503,gpt2-medium
+hypo_alt_text_socratic_001,alt text,hypothesis,socratic,A screen reader is software that reads text aloud. Why would a screen reader fail to describe this tag: <img src='chart.svg'>?,32,3.5962,3.881,7.763,0.0374,gpt2-medium
+valid_alt_text_direct_001,alt text,validation,direct_question,The following code is not accessible because it doesn't have what? <img src='photo.jpg'>,22,3.7907,4.986,8.5565,0.0101,gpt2-medium
+valid_alt_text_instruction_001,alt text,validation,instruction,What accessibility attribute is missing from this HTML: <img src='photo.jpg'>?,19,3.8299,4.049,6.4013,0.7989,gpt2-medium
+valid_screen_reader_socratic_001,screen reader,validation,socratic,A screen reader is software that reads text aloud. Why would it fail to describe <img src='chart.svg'>?,27,3.4694,3.9565,7.763,0.0271,gpt2-medium
+valid_aria_confab_001,ARIA,validation,cloze,ARIA stands for,5,4.6395,5.9861,7.4348,0.1354,gpt2-medium
+valid_html_confab_001,HTML,validation,cloze,HTML stands for,4,3.4566,2.228,6.0022,0.0552,gpt2-medium
+ctrl_cc_cloze_001,closed captions,control,cloze,Closed captions display,6,4.5538,5.1879,6.5796,0.0804,gpt2-medium
+ctrl_contrast_cloze_001,color contrast,control,cloze,Color contrast is important because,6,4.5159,3.5916,6.0343,2.5534,gpt2-medium
+ctrl_title_cloze_001,page title,control,cloze,A page title describes,5,5.1229,2.7855,7.763,2.7855,gpt2-medium
+ctrl_cc_direct_001,closed captions,control,direct_question,What are closed captions?,7,3.6,1.5764,6.1151,0.044,gpt2-medium
+ctrl_contrast_direct_001,color contrast,control,direct_question,What is color contrast?,6,4.2879,2.2202,6.9101,2.0837,gpt2-medium
+ctrl_title_direct_001,page title,control,direct_question,What is a page title?,7,4.859,2.0368,8.916,1.2973,gpt2-medium
+ctrl_cc_instruction_001,closed captions,control,instruction,Explain closed captions to a web developer.,11,4.2009,3.7544,6.6851,0.4756,gpt2-medium
+ctrl_contrast_instruction_001,color contrast,control,instruction,Explain color contrast to a web developer.,10,4.5414,4.0788,6.5907,2.5311,gpt2-medium
+ctrl_title_instruction_001,page title,control,instruction,Explain page titles to a web developer.,10,4.4085,3.7302,6.2286,2.5641,gpt2-medium
+ctrl_cc_evaluative_001,closed captions,control,evaluative,A video without closed captions is not accessible because,11,3.99,2.8113,7.763,0.0011,gpt2-medium
+ctrl_contrast_evaluative_001,color contrast,control,evaluative,Text with low color contrast is not accessible because,10,5.1488,3.4168,7.8511,3.2848,gpt2-medium
+ctrl_title_evaluative_001,page title,control,evaluative,A web page without a title is not accessible because,11,4.9544,2.6958,7.763,2.6958,gpt2-medium
+ctrl_cc_scenario_001,closed captions,control,scenario,"A deaf user is watching a video on a website. Without closed captions, the user",19,4.1095,3.4566,7.763,0.0032,gpt2-medium
+ctrl_contrast_scenario_001,color contrast,control,scenario,A low vision user visits a website with poor color contrast. The user,15,4.8756,4.5506,7.763,2.5476,gpt2-medium
+ctrl_title_scenario_001,page title,control,scenario,A screen reader user navigates to a web page with no title. The user,17,4.0384,4.6546,7.763,0.2931,gpt2-medium
+ctrl_bicycle_cloze_001,bicycle,control,cloze,A bicycle is used for,6,5.3017,5.7554,7.763,2.1052,gpt2-medium
+ctrl_bicycle_direct_001,bicycle,control,direct_question,What is a bicycle?,6,5.5601,2.2804,8.916,2.2804,gpt2-medium
+ctrl_bicycle_instruction_001,bicycle,control,instruction,Explain bicycles to a web developer.,9,4.3447,4.3904,6.0022,2.7358,gpt2-medium
+ctrl_bicycle_evaluative_001,bicycle,control,evaluative,A bicycle without brakes is not safe because,9,4.5258,3.5355,7.763,2.4155,gpt2-medium
+ctrl_bicycle_scenario_001,bicycle,control,scenario,"A child is riding a bicycle on a busy street. Without a helmet, the child",18,4.1878,3.57,7.763,1.738,gpt2-medium
