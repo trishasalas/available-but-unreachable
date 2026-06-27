@@ -1,0 +1,11 @@
+suite,scale,n_access_incorrect,access_incorrect_entropy,n_control_correct,control_correct_entropy,confidence_gap
+pythia,160M,12,4.1157,2,3.7486,0.3671
+pythia,410M,9,3.8565,2,3.5346,0.3219
+pythia,1B,13,3.523,2,3.1737,0.3493
+pythia,2.8B,9,3.4762,3,3.52,-0.0438
+pythia,6.9B,8,3.0411,3,3.2747,-0.2336
+pythia,12B,7,2.8755,3,3.2425,-0.367
+gpt2,124M,10,5.0917,1,5.9137,-0.822
+gpt2,355M,8,4.6109,2,4.6627,-0.0518
+gpt2,774M,9,3.8968,2,3.7882,0.1086
+gpt2,1.5B,9,3.2053,3,3.6699,-0.4645

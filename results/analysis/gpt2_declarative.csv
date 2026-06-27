@@ -1,0 +1,11 @@
+concept,124M,355M,774M,1.5B
+ARIA,incorrect,incorrect,incorrect,incorrect
+WCAG,incorrect,incorrect,incorrect,correct
+alt text,partial,partial,partial,correct
+captions,incorrect,incorrect,partial,partial
+color contrast,partial,correct,correct,correct
+focus indicator,correct,partial,correct,incorrect
+keyboard navigation,partial,correct,partial,correct
+screen reader,partial,partial,correct,correct
+semantic HTML,partial,partial,partial,partial
+skip link,incorrect,partial,partial,incorrect

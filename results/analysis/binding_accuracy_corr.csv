@@ -1,0 +1,3 @@
+suite,n_pairs,pearson_r,spearman_r
+gpt2,32,0.448,0.387
+pythia,48,0.116,-0.117

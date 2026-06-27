@@ -1,0 +1,21 @@
+suite,concept,trajectory,160M,410M,1B,2.8B,6.9B,12B,124M,355M,774M,1.5B
+pythia,ARIA,never_emerges,0.0,0.0,0.0,0.0,0.0,0.0,,,,
+pythia,WCAG,monotonic_climb,0.0,0.0,0.0,0.0,2.0,2.0,,,,
+pythia,alt text,monotonic_climb,0.0,1.0,1.0,2.0,2.0,2.0,,,,
+pythia,captions,never_emerges,0.0,0.0,0.0,0.0,1.0,1.0,,,,
+pythia,color contrast,mixed,1.0,2.0,1.0,1.0,2.0,2.0,,,,
+pythia,focus indicator,never_emerges,1.0,0.0,0.0,0.0,0.0,0.0,,,,
+pythia,keyboard navigation,peak_regress,1.0,2.0,2.0,2.0,2.0,0.0,,,,
+pythia,screen reader,monotonic_climb,1.0,1.0,2.0,2.0,2.0,2.0,,,,
+pythia,semantic HTML,never_emerges,1.0,1.0,0.0,1.0,1.0,1.0,,,,
+pythia,skip link,peak_regress,0.0,1.0,0.0,2.0,2.0,0.0,,,,
+gpt2,ARIA,never_emerges,,,,,,,0.0,0.0,0.0,0.0
+gpt2,WCAG,monotonic_climb,,,,,,,0.0,0.0,0.0,2.0
+gpt2,alt text,monotonic_climb,,,,,,,1.0,1.0,1.0,2.0
+gpt2,captions,never_emerges,,,,,,,0.0,0.0,1.0,1.0
+gpt2,color contrast,monotonic_climb,,,,,,,1.0,2.0,2.0,2.0
+gpt2,focus indicator,peak_regress,,,,,,,2.0,1.0,2.0,0.0
+gpt2,keyboard navigation,mixed,,,,,,,1.0,2.0,1.0,2.0
+gpt2,screen reader,monotonic_climb,,,,,,,1.0,1.0,2.0,2.0
+gpt2,semantic HTML,never_emerges,,,,,,,1.0,1.0,1.0,1.0
+gpt2,skip link,never_emerges,,,,,,,0.0,1.0,1.0,0.0

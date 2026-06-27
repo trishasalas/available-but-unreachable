@@ -1,0 +1,19 @@
+concept,pythia_emergence,gpt2_emergence
+ARIA,never,never
+HTML,never,never
+WCAG,6.9B,1.5B
+alt text,2.8B,1.5B
+bicycle,never,never
+captions,never,never
+closed captions,never,never
+color contrast,410M,355M
+empty link,never,never
+focus indicator,never,124M
+form label,never,never
+keyboard navigation,410M,355M
+link text,never,never
+page title,never,never
+screen reader,1B,774M
+script,never,never
+semantic HTML,never,never
+skip link,2.8B,never

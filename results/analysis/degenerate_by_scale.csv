@@ -1,0 +1,11 @@
+suite,scale_label,n,n_degenerate,pct_degenerate
+gpt2,1.5B,51,3,5.9
+gpt2,124M,51,10,19.6
+gpt2,355M,51,6,11.8
+gpt2,774M,51,2,3.9
+pythia,12B,51,3,5.9
+pythia,160M,51,4,7.8
+pythia,1B,51,6,11.8
+pythia,2.8B,51,5,9.8
+pythia,410M,51,6,11.8
+pythia,6.9B,51,3,5.9
