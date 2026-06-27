@@ -8,7 +8,7 @@ The child is riding on a bicycle on a busy street. Without a helmet, the child i
 The child is riding on a bicycle on a busy street. Without a helmet, the child is unable to see the bike.
 
 The child is riding on a bicycle on a busy",100,gpt2,gpt2,124000000.0,124M,incorrect
-128,valid_alt_text_direct_001,alt text,validation,direct_question,The following code is not accessible because it doesn't have what? <img src='photo.jpg'>,<h1>The following code is not accessible because it doesn't have what?</h1> <p>The following code is not accessible because it doesn't have what?</p> <p>The following code is not accessible because it doesn't have what?</p> <p>The following code is not accessible because it doesn't have what?</p> <p>The following code is not accessible because it doesn't have what?</p> <p>,100,gpt2,gpt2,124000000.0,124M,uncoded
+128,valid_alt_text_direct_001,alt text,validation,direct_question,The following code is not accessible because it doesn't have what? <img src='photo.jpg'>,<h1>The following code is not accessible because it doesn't have what?</h1> <p>The following code is not accessible because it doesn't have what?</p> <p>The following code is not accessible because it doesn't have what?</p> <p>The following code is not accessible because it doesn't have what?</p> <p>The following code is not accessible because it doesn't have what?</p> <p>,100,gpt2,gpt2,124000000.0,124M,incorrect
 129,valid_alt_text_instruction_001,alt text,validation,instruction,What accessibility attribute is missing from this HTML: <img src='photo.jpg'>?,"</img>
 
 What accessibility attribute is missing from this HTML: <img src='photo.jpg'>?</img>
@@ -19,8 +19,8 @@ What accessibility attribute is missing from this HTML: <img src='photo.jpg'>?</
 
 What accessibility attribute is missing from this HTML: <img src='photo.jpg'>?</img>
 
-What accessibility attribute",100,gpt2,gpt2,124000000.0,124M,uncoded
-130,valid_screen_reader_socratic_001,screen reader,validation,socratic,A screen reader is software that reads text aloud. Why would it fail to describe <img src='chart.svg'>?,</img>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?,100,gpt2,gpt2,124000000.0,124M,uncoded
+What accessibility attribute",100,gpt2,gpt2,124000000.0,124M,incorrect
+130,valid_screen_reader_socratic_001,screen reader,validation,socratic,A screen reader is software that reads text aloud. Why would it fail to describe <img src='chart.svg'>?,</img>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?</div>?,100,gpt2,gpt2,124000000.0,124M,incorrect
 131,valid_aria_confab_001,ARIA,validation,cloze,ARIA stands for,"American Indian and Alaska Native. It is a group of people who live in the United States and Canada.
 
 ARIA is a group of people who live in the United States and Canada.
@@ -31,7 +31,7 @@ ARIA is a group of people who live in the United States and Canada.
 
 ARIA is a group of people who live in the United States and Canada.
 
-ARIA is a group",100,gpt2,gpt2,124000000.0,124M,uncoded
+ARIA is a group",100,gpt2,gpt2,124000000.0,124M,incorrect
 132,valid_html_confab_001,HTML,validation,cloze,HTML stands for,"""HTML-friendly"" and is used by many web browsers. It is used by many web browsers to display HTML content.
 
 HTML is a set of HTML documents that are used to display HTML content.
@@ -42,7 +42,7 @@ HTML is a set of HTML documents that are used to display HTML content.
 
 HTML is a set of HTML documents that are used to display HTML content.
 
-HTML is a set of",100,gpt2,gpt2,124000000.0,124M,uncoded
+HTML is a set of",100,gpt2,gpt2,124000000.0,124M,incorrect
 133,ctrl_cc_cloze_001,closed captions,control,cloze,Closed captions display,"the current time and date.
 
 The captions are displayed in a separate window.
@@ -59,7 +59,7 @@ The captions are displayed in a separate window.
 
 The captions are displayed in a separate window.
 
-The captions are displayed in a separate",100,gpt2,gpt2,124000000.0,124M,uncoded
+The captions are displayed in a separate",100,gpt2,gpt2,124000000.0,124M,partial
 134,ctrl_contrast_cloze_001,color contrast,control,cloze,Color contrast is important because,"it determines how much light is absorbed by the retina. The more light you have, the more you can see.
 
 The retina is a specialized area of the brain that is responsible for visual perception. It is the part of the brain that is responsible for the color vision.
@@ -68,7 +68,7 @@ The retina is also responsible for the color vision.
 
 The retina is the part of the brain that is responsible for the color vision.
 
-The retina is also responsible for the color vision.",100,gpt2,gpt2,124000000.0,124M,uncoded
+The retina is also responsible for the color vision.",100,gpt2,gpt2,124000000.0,124M,partial
 135,ctrl_title_cloze_001,page title,control,cloze,A page title describes,"the process of creating a page.
 
 The page title is a list of the pages that are currently being created.
@@ -81,26 +81,26 @@ The page title is a list of the pages that are currently being created.
 
 The page title is a list of the pages that are currently being created.
 
-The page title is a list",100,gpt2,gpt2,124000000.0,124M,uncoded
+The page title is a list",100,gpt2,gpt2,124000000.0,124M,partial
 136,ctrl_cc_direct_001,closed captions,control,direct_question,What are closed captions?,"Open captions are a way to show the user what is happening in the captions.
 
-Open captions are a way to show the user what is happening in the captions. Open captions are a way to show the user what is happening in the captions. Open captions are a way to show the user what is happening in the captions. Open captions are a way to show the user what is happening in the captions. Open captions are a way",100,gpt2,gpt2,124000000.0,124M,uncoded
+Open captions are a way to show the user what is happening in the captions. Open captions are a way to show the user what is happening in the captions. Open captions are a way to show the user what is happening in the captions. Open captions are a way to show the user what is happening in the captions. Open captions are a way",100,gpt2,gpt2,124000000.0,124M,partial
 137,ctrl_contrast_direct_001,color contrast,control,direct_question,What is color contrast?,"Color contrast is the ratio of light to dark. It is the ratio of the light to dark that is reflected in a given area.
 
 Color contrast is the ratio of light to dark that is reflected in a given area. The ratio of light to dark is the ratio of the light to dark that is reflected in a given area.
 
-Color contrast is the ratio of light to dark that is reflected in a given area. The ratio of light to dark is the ratio of the",100,gpt2,gpt2,124000000.0,124M,uncoded
+Color contrast is the ratio of light to dark that is reflected in a given area. The ratio of light to dark is the ratio of the",100,gpt2,gpt2,124000000.0,124M,partial
 127,hypo_alt_text_socratic_001,alt text,hypothesis,socratic,A screen reader is software that reads text aloud. Why would a screen reader fail to describe this tag: <img src='chart.svg'>?,"</img>
 
 The screen reader is a simple, yet powerful tool for reading text. It is a simple, yet powerful tool for reading text. It is a simple, yet powerful tool for reading text.
 
 The screen reader is a simple, yet powerful tool for reading text. It is a simple, yet powerful tool for reading text.
 
-The screen reader is a simple, yet powerful tool for reading text. It is a simple, yet powerful tool for reading text.",100,gpt2,gpt2,124000000.0,124M,uncoded
-138,ctrl_title_direct_001,page title,control,direct_question,What is a page title?,A page title is a name that is used to describe a page. A page title is used to describe a page in a way that is consistent with the content of the page. A page title is used to describe a page in a way that is consistent with the content of the page. A page title is used to describe a page in a way that is consistent with the content of the page. A page title is used to describe a page in a way that is consistent with the content,100,gpt2,gpt2,124000000.0,124M,uncoded
+The screen reader is a simple, yet powerful tool for reading text. It is a simple, yet powerful tool for reading text.",100,gpt2,gpt2,124000000.0,124M,incorrect
+138,ctrl_title_direct_001,page title,control,direct_question,What is a page title?,A page title is a name that is used to describe a page. A page title is used to describe a page in a way that is consistent with the content of the page. A page title is used to describe a page in a way that is consistent with the content of the page. A page title is used to describe a page in a way that is consistent with the content of the page. A page title is used to describe a page in a way that is consistent with the content,100,gpt2,gpt2,124000000.0,124M,correct
 140,ctrl_contrast_instruction_001,color contrast,control,instruction,Explain color contrast to a web developer.,"The following code snippet shows how to use the color contrast feature of the web developer's browser to show the difference between the color of a web page and the color of a web page.
 
-import java.io.File; import java.io.FileReader; import java.io.FileWriter; import java.io.FileWriter.Reader; import java.io.FileWriter.Reader.Reader.Reader.Reader.Reader.Reader.Reader.Reader.Reader.",100,gpt2,gpt2,124000000.0,124M,uncoded
+import java.io.File; import java.io.FileReader; import java.io.FileWriter; import java.io.FileWriter.Reader; import java.io.FileWriter.Reader.Reader.Reader.Reader.Reader.Reader.Reader.Reader.Reader.",100,gpt2,gpt2,124000000.0,124M,correct
 141,ctrl_title_instruction_001,page title,control,instruction,Explain page titles to a web developer.,"Use the following code to create a page title:
 
 <!-- <div class=""title""> <h1>Hello World</h1> <p>Hello World</p> </div>
@@ -109,7 +109,7 @@ The code above will create a page title that looks like this:
 
 <!-- <div class=""title""> <h1>Hello World</h1> <p>Hello World</p> </div>
 
-The code above will create a page title that",100,gpt2,gpt2,124000000.0,124M,uncoded
+The code above will create a page title that",100,gpt2,gpt2,124000000.0,124M,partial
 142,ctrl_cc_evaluative_001,closed captions,control,evaluative,A video without closed captions is not accessible because,"it violates the DMCA. If you spot a mistake, please let us know.
 
 To post a video, submit the following form:
@@ -126,7 +126,7 @@ Views: 1,836
 
 Added: 1 day ago
 
-Tags: video, video, video, video, video, video, video, video, video,",100,gpt2,gpt2,124000000.0,124M,uncoded
+Tags: video, video, video, video, video, video, video, video, video,",100,gpt2,gpt2,124000000.0,124M,partial
 143,ctrl_contrast_evaluative_001,color contrast,control,evaluative,Text with low color contrast is not accessible because,"of the low contrast.
 
 Text with high contrast is not accessible because of the high contrast.
@@ -141,7 +141,7 @@ Text with high contrast is not accessible because of the high contrast.
 
 Text with low contrast is not accessible because of the high contrast.
 
-Text with low",100,gpt2,gpt2,124000000.0,124M,uncoded
+Text with low",100,gpt2,gpt2,124000000.0,124M,partial
 144,ctrl_title_evaluative_001,page title,control,evaluative,A web page without a title is not accessible because,"it is not a valid URL.
 
 The following is a list of URLs that are not valid for a web page.
@@ -154,7 +154,7 @@ The following is a list of URLs that are not valid for a web page.
 
 The following is a list of URLs that are not valid for a web page.
 
-The",100,gpt2,gpt2,124000000.0,124M,uncoded
+The",100,gpt2,gpt2,124000000.0,124M,partial
 145,ctrl_cc_scenario_001,closed captions,control,scenario,"A deaf user is watching a video on a website. Without closed captions, the user","is unable to hear the video.
 
 The user is unable to hear the video because the video is not being watched.
@@ -167,7 +167,7 @@ The user is unable to hear the video because the video is not being watched.
 
 The user is unable to hear the video because the video is not being watched.
 
-The",100,gpt2,gpt2,124000000.0,124M,uncoded
+The",100,gpt2,gpt2,124000000.0,124M,partial
 146,ctrl_contrast_scenario_001,color contrast,control,scenario,A low vision user visits a website with poor color contrast. The user,"is likely to be using a mobile device.
 
 A low vision user visits a website with poor color contrast. The user is likely to be using a mobile device.
@@ -176,7 +176,7 @@ A low vision user visits a website with poor color contrast. The user is likely 
 
 A low vision user visits a website with poor color contrast. The user is likely to be using a mobile device.
 
-A low vision user visits a website with poor color contrast. The user",100,gpt2,gpt2,124000000.0,124M,uncoded
+A low vision user visits a website with poor color contrast. The user",100,gpt2,gpt2,124000000.0,124M,partial
 147,ctrl_title_scenario_001,page title,control,scenario,A screen reader user navigates to a web page with no title. The user,"then navigates to the page with no title.
 
 The user navigates to a web page with no title. The user then navigates to the page with no title.
@@ -185,7 +185,7 @@ The user navigates to a web page with no title. The user navigates to a web page
 
 The user navigates to a web page with no title. The user navigates to a web page with no title.
 
-The user navigates to a web page with no",100,gpt2,gpt2,124000000.0,124M,uncoded
+The user navigates to a web page with no",100,gpt2,gpt2,124000000.0,124M,partial
 148,ctrl_bicycle_cloze_001,bicycle,control,cloze,A bicycle is used for,"the transportation of passengers and goods. The bicycle is used for the transportation of passengers and goods.
 
 A bicycle is used for the transportation of passengers and goods.
@@ -211,7 +211,7 @@ A bicycle's name is a descriptive name for a bicycle.
 
 What is a bicycle's name's meaning?
 
-A bicycle's name is a descriptive name",100,gpt2,gpt2,124000000.0,124M,uncoded
+A bicycle's name is a descriptive name",100,gpt2,gpt2,124000000.0,124M,correct
 139,ctrl_cc_instruction_001,closed captions,control,instruction,Explain closed captions to a web developer.,"This is a simple example of a closed captions example.
 
 Example
@@ -228,7 +228,7 @@ This example shows how to use the open captions API to create captions for a web
 
 Example
 
-This example shows how to use",100,gpt2,gpt2,124000000.0,124M,uncoded
+This example shows how to use",100,gpt2,gpt2,124000000.0,124M,partial
 126,hypo_alt_text_correction_001,alt text,hypothesis,error_correction,Correct the following inaccessible code: <img src='logo.png'>,"<img src='logo.png' alt='Logo' />
 
 <img src='logo.png' alt='Logo' />
@@ -239,7 +239,7 @@ This example shows how to use",100,gpt2,gpt2,124000000.0,124M,uncoded
 
 <img src='logo.png' alt='Logo' />
 
-<img src='logo.png' alt='Logo",100,gpt2,gpt2,124000000.0,124M,uncoded
+<img src='logo.png' alt='Logo",100,gpt2,gpt2,124000000.0,124M,correct
 150,ctrl_bicycle_instruction_001,bicycle,control,instruction,Explain bicycles to a web developer.,"The idea is simple: if you want to build a web app, you need to know how to build it.
 
 The problem is that there are so many different ways to build a web app.
@@ -252,7 +252,7 @@ The third is to build a web app from scratch.
 
 The fourth is to build a web app from scratch.
 
-The fifth is",100,gpt2,gpt2,124000000.0,124M,uncoded
+The fifth is",100,gpt2,gpt2,124000000.0,124M,incorrect
 125,hypo_alt_text_direct_001,alt text,hypothesis,direct_question,Look at this HTML: <img src='portrait.jpg'>. What specific attribute is missing to make it accessible?,"The following is a list of attributes that are missing from the HTML:
 
 <img src='portrait.jpg' alt='Portrait' />
@@ -263,7 +263,7 @@ The fifth is",100,gpt2,gpt2,124000000.0,124M,uncoded
 
 <img src='portrait.jpg' alt='Portrait' />
 
-<img src='portrait.jpg' alt='Portrait'",100,gpt2,gpt2,124000000.0,124M,uncoded
+<img src='portrait.jpg' alt='Portrait'",100,gpt2,gpt2,124000000.0,124M,correct
 151,ctrl_bicycle_evaluative_001,bicycle,control,evaluative,A bicycle without brakes is not safe because,"it is not designed to be ridden safely.
 
 The bicycle is designed to be ridden safely.
@@ -454,14 +454,14 @@ The screen reader is a device that reads and writes data to a screen. It is",100
 
 A bicycle is a device that is used to move a bicycle or other vehicle. A bicycle is a device that is used to move a bicycle or other vehicle.
 
-A bicycle is a device that is used to move a bicycle or other",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,uncoded
+A bicycle is a device that is used to move a bicycle or other",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,correct
 303,ctrl_bicycle_instruction_001,bicycle,control,instruction,Explain bicycles to a web developer.,"Bicycles are a great way to learn about the world around you. They are a great way to learn about the world around you.
 
 Bicycles are a great way to learn about the world around you. They are a great way to learn about the world around you.
 
 Bicycles are a great way to learn about the world around you. They are a great way to learn about the world around you.
 
-Bicycles are a great way to",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,uncoded
+Bicycles are a great way to",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,correct
 305,ctrl_bicycle_scenario_001,bicycle,control,scenario,"A child is riding a bicycle on a busy street. Without a helmet, the child","is unable to see the street.
 
 A child is riding a bicycle on a busy street. Without a helmet, the child is unable to see the street.
@@ -691,8 +691,8 @@ The following code is a hack to make the code work correctly.
 
 The following code is a hack to make the code work correctly.
 
-<img src='logo.png'>",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,uncoded
-300,ctrl_title_scenario_001,page title,control,scenario,A screen reader user navigates to a web page with no title. The user,is then prompted to enter a title and a description. The user then navigates to a web page with a title and description. The user is then prompted to enter a description and a title. The user is then prompted to enter a title and a description. The user is then prompted to enter a description and a title. The user is then prompted to enter a title and a description. The user is then prompted to enter a title and a description. The user is then prompted to enter a title,100,EleutherAI/pythia-160m,pythia,160000000.0,160M,uncoded
+<img src='logo.png'>",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,incorrect
+300,ctrl_title_scenario_001,page title,control,scenario,A screen reader user navigates to a web page with no title. The user,is then prompted to enter a title and a description. The user then navigates to a web page with a title and description. The user is then prompted to enter a description and a title. The user is then prompted to enter a title and a description. The user is then prompted to enter a description and a title. The user is then prompted to enter a title and a description. The user is then prompted to enter a title and a description. The user is then prompted to enter a title,100,EleutherAI/pythia-160m,pythia,160000000.0,160M,partial
 299,ctrl_contrast_scenario_001,color contrast,control,scenario,A low vision user visits a website with poor color contrast. The user,"is not able to see the website.
 
 A low vision user visits a website with poor color contrast. The user is not able to see the website.
@@ -701,7 +701,7 @@ A low vision user visits a website with poor color contrast. The user is not abl
 
 A low vision user visits a website with poor color contrast. The user is not able to see the website.
 
-A low vision user visits a website with poor color contrast. The user is not able to",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,uncoded
+A low vision user visits a website with poor color contrast. The user is not able to",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,partial
 298,ctrl_cc_scenario_001,closed captions,control,scenario,"A deaf user is watching a video on a website. Without closed captions, the user","can see the video on the website.
 
 The user can see the video on the website by clicking on the video link.
@@ -712,7 +712,7 @@ The user can also see the video on the website by clicking on the video link.
 
 The user can also see the video on the website by clicking on the video link.
 
-The user can also see the video on the website by clicking on the video",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,uncoded
+The user can also see the video on the website by clicking on the video",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,partial
 297,ctrl_title_evaluative_001,page title,control,evaluative,A web page without a title is not accessible because,"it is not a title.
 
 A web page without a title is not accessible because it is not a title.
@@ -725,7 +725,7 @@ A web page without a title is not accessible because it is not a title.
 
 A web page without a title is not accessible because it is not a title.
 
-A web",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,uncoded
+A web",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,partial
 296,ctrl_contrast_evaluative_001,color contrast,control,evaluative,Text with low color contrast is not accessible because,"it is not available in the browser.
 
 The text is not accessible because it is not available in the browser.
@@ -738,7 +738,7 @@ The text is not accessible because it is not available in the browser.
 
 The text is not accessible because it is not available in the browser.
 
-The text is not accessible because it is not available",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,uncoded
+The text is not accessible because it is not available",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,incorrect
 295,ctrl_cc_evaluative_001,closed captions,control,evaluative,A video without closed captions is not accessible because,"it is not available.
 
 A video without closed captions is not accessible because it is not available.
@@ -751,7 +751,7 @@ A video without closed captions is not accessible because it is not available.
 
 A video without closed captions is not accessible because it is not available.
 
-A video without closed captions is not",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,uncoded
+A video without closed captions is not",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,partial
 294,ctrl_title_instruction_001,page title,control,instruction,Explain page titles to a web developer.,"The following page titles are available for use in the web developer's web site.
 
 Page titles are available for use in the web developer's web site.
@@ -762,14 +762,14 @@ Page titles are available for use in the web developer's web site.
 
 Page titles are available for use in the web developer's web site.
 
-Page titles are available for use in the web developer's web site.",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,uncoded
+Page titles are available for use in the web developer's web site.",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,partial
 293,ctrl_contrast_instruction_001,color contrast,control,instruction,Explain color contrast to a web developer.,"Color contrast is a technique that allows a web developer to create a color image that is more vivid than the original color.
 
 Color contrast is a technique that allows a web developer to create a color image that is more vivid than the original color.
 
 Color contrast is a technique that allows a web developer to create a color image that is more vivid than the original color.
 
-Color contrast is a technique that allows a web developer to create a color image that is more vivid than",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,uncoded
+Color contrast is a technique that allows a web developer to create a color image that is more vivid than",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,partial
 292,ctrl_cc_instruction_001,closed captions,control,instruction,Explain closed captions to a web developer.,"The following captions are closed:
 
 The following captions are closed:
@@ -790,7 +790,7 @@ The following captions are closed:
 
 The following captions are closed:
 
-The following captions are closed:",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,uncoded
+The following captions are closed:",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,partial
 291,ctrl_title_direct_001,page title,control,direct_question,What is a page title?,"A page title is a title that is used to describe a page of text. A page title is a title that is used to describe a page of text.
 
 A page title is a title that is used to describe a page of text.
@@ -799,10 +799,10 @@ A page title is a title that is used to describe a page of text.
 
 A page title is a title that is used to describe a page of text.
 
-A page title is a title that is used to",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,uncoded
+A page title is a title that is used to",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,correct
 290,ctrl_contrast_direct_001,color contrast,control,direct_question,What is color contrast?,"Color contrast is a technique that can be used to measure the color of a color. Color contrast is a technique that can be used to measure the color of a color. Color contrast is a technique that can be used to measure the color of a color.
 
-Color contrast is a technique that can be used to measure the color of a color. Color contrast is a technique that can be used to measure the color of a color. Color contrast is a technique that can be used to measure the",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,uncoded
+Color contrast is a technique that can be used to measure the color of a color. Color contrast is a technique that can be used to measure the color of a color. Color contrast is a technique that can be used to measure the",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,partial
 289,ctrl_cc_direct_001,closed captions,control,direct_question,What are closed captions?,"What are closed captions?
 
 What are closed captions?
@@ -827,7 +827,7 @@ What are closed captions?
 
 What are closed captions?
 
-What are",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,uncoded
+What are",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,partial
 288,ctrl_title_cloze_001,page title,control,cloze,A page title describes,"the content of a website.
 
 A page title describes the content of a website.
@@ -844,7 +844,7 @@ A page title describes the content of a website.
 
 A page title describes the content of a website.
 
-A page title describes the content of a",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,uncoded
+A page title describes the content of a",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,correct
 287,ctrl_contrast_cloze_001,color contrast,control,cloze,Color contrast is important because,"it is the most important factor in determining the color of a color image.
 
 Color contrast is important because it is the most important factor in determining the color of a color image.
@@ -853,7 +853,7 @@ Color contrast is important because it is the most important factor in determini
 
 Color contrast is important because it is the most important factor in determining the color of a color image.
 
-Color contrast is important because it is the most important factor in determining the color of a",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,uncoded
+Color contrast is important because it is the most important factor in determining the color of a",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,partial
 286,ctrl_cc_cloze_001,closed captions,control,cloze,Closed captions display,"the most information possible about the player.
 
 The following captions are available for the player's choice of the captions.
@@ -864,7 +864,7 @@ The following captions are available for the player's choice of the captions.
 
 The following captions are available for the player's choice of the captions.
 
-The following captions are available for the player's choice of the captions.",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,uncoded
+The following captions are available for the player's choice of the captions.",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,partial
 285,valid_html_confab_001,HTML,validation,cloze,HTML stands for,"the web, and is a collection of HTML code.
 
 HTML stands for the web, and is a collection of HTML code.
@@ -877,21 +877,21 @@ HTML stands for the web, and is a collection of HTML code.
 
 HTML stands for the web, and is a collection of HTML code.
 
-HTML stands for the web, and",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,uncoded
+HTML stands for the web, and",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,incorrect
 284,valid_aria_confab_001,ARIA,validation,cloze,ARIA stands for,"the first time in the history of the country, and the first time in the history of the world.
 
 The first time in the history of the world that the country stood for the first time in the history of the world, was in the early days of the 20th century.
 
 The first time in the history of the world that the country stood for the first time in the history of the world, was in the early days of the 20th century.
 
-The first time",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,uncoded
+The first time",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,incorrect
 283,valid_screen_reader_socratic_001,screen reader,validation,socratic,A screen reader is software that reads text aloud. Why would it fail to describe <img src='chart.svg'>?,"A screen reader is software that reads text aloud. Why would it fail to describe <img src='chart.svg'>?
 
 The screen reader is a software that reads text aloud. Why would it fail to describe <img src='chart.svg'>?
 
 The screen reader is a software that reads text aloud. Why would it fail to describe <img src='chart.svg'>?
 
-The screen reader is a software that reads text aloud. Why would it fail",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,uncoded
+The screen reader is a software that reads text aloud. Why would it fail",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,incorrect
 282,valid_alt_text_instruction_001,alt text,validation,instruction,What accessibility attribute is missing from this HTML: <img src='photo.jpg'>?,"What is the <img src='photo.jpg'> attribute?
 
 What is the <img src='photo.jpg'> attribute?
@@ -904,7 +904,7 @@ What is the <img src='photo.jpg'> attribute?
 
 What is the <img src='photo.jpg'> attribute?
 
-What is the <img src='photo",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,uncoded
+What is the <img src='photo",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,incorrect
 281,valid_alt_text_direct_001,alt text,validation,direct_question,The following code is not accessible because it doesn't have what? <img src='photo.jpg'>,"I'm trying to create a simple image that will be displayed on a page. I'm using the following code:
 <img src='photo.jpg'>
 
@@ -912,14 +912,14 @@ I'm trying to create a simple image that will be displayed on a page. I'm using 
 <img src='photo.jpg'>
 
 I'm trying to create a simple image that will be displayed on a page. I'm using the following code:
-<img src='photo.",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,uncoded
+<img src='photo.",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,incorrect
 280,hypo_alt_text_socratic_001,alt text,hypothesis,socratic,A screen reader is software that reads text aloud. Why would a screen reader fail to describe this tag: <img src='chart.svg'>?,"A screen reader is software that reads text aloud. Why would a screen reader fail to describe this tag: <img src='chart.svg'>?
 
 A screen reader is software that reads text aloud. Why would a screen reader fail to describe this tag: <img src='chart.svg'>?
 
 A screen reader is software that reads text aloud. Why would a screen reader fail to describe this tag: <img src='chart.svg'>?
 
-A screen",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,uncoded
+A screen",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,incorrect
 278,hypo_alt_text_direct_001,alt text,hypothesis,direct_question,Look at this HTML: <img src='portrait.jpg'>. What specific attribute is missing to make it accessible?,"<img src='portrait.jpg' />
 
 <img src='portrait.jpg' />
@@ -936,7 +936,7 @@ A screen",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,uncoded
 
 <img src='portrait.jpg' />
 
-<img",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,uncoded
+<img",100,EleutherAI/pythia-160m,pythia,160000000.0,160M,incorrect
 301,ctrl_bicycle_cloze_001,bicycle,control,cloze,A bicycle is used for,"transportation between a city and a state or a country.
 
 A bicycle is used for transportation between a city and a state or a country.
@@ -955,7 +955,7 @@ The child is riding on a bicycle with a helmet on. The child is wearing a bicycl
 
 I'm not sure how to do this, but I'm trying. I'm not sure how to do this, but I'm trying.
 
-I'm not sure how to do this, but I'm trying. I'm not sure how to do this, but I'm trying.",100,gpt2-medium,gpt2,355000000.0,355M,uncoded
+I'm not sure how to do this, but I'm trying. I'm not sure how to do this, but I'm trying.",100,gpt2-medium,gpt2,355000000.0,355M,correct
 71,comp_page_title_bare_001,page title,completion,bare,"<html><head><meta charset=""utf-8"">","<title>The New York Times</title> <meta name=""viewport"" content=""width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimum-scale=1.0, user-scalable=no, ratio=1.0, scrollbars=no, vendor-prefix=""> <meta name=""viewport"" content=""width=device-width, initial-scale=",100,gpt2-medium,gpt2,355000000.0,355M,correct
 70,comp_page_title_few_shot_001,page title,completion,few_shot,<html><head><title>About Us</title></head><html><head><title>Contact</title></head><html><head>,"<meta http-equiv=""Content-Type"" content=""text/html; charset=3Dutf-8""></meta><body><h1>Contact</h1></body></html>
 
@@ -1156,15 +1156,15 @@ The bicycle is designed to handle the force of braking. The bicycle is designed"
 
 <img src='logo.png' alt='Logo' width='100%' height='100%' />
 
-<img src='logo.png' alt='Logo' width='100",100,gpt2-medium,gpt2,355000000.0,355M,uncoded
-98,ctrl_bicycle_direct_001,bicycle,control,direct_question,What is a bicycle?,A bicycle is a vehicle that is designed to travel on a road. It is a vehicle that is designed to travel on a road. It is a vehicle that is designed to travel on a road. It is a vehicle that is designed to travel on a road. It is a vehicle that is designed to travel on a road. It is a vehicle that is designed to travel on a road. It is a vehicle that is designed to travel on a road. It is a vehicle that is,100,gpt2-medium,gpt2,355000000.0,355M,uncoded
+<img src='logo.png' alt='Logo' width='100",100,gpt2-medium,gpt2,355000000.0,355M,correct
+98,ctrl_bicycle_direct_001,bicycle,control,direct_question,What is a bicycle?,A bicycle is a vehicle that is designed to travel on a road. It is a vehicle that is designed to travel on a road. It is a vehicle that is designed to travel on a road. It is a vehicle that is designed to travel on a road. It is a vehicle that is designed to travel on a road. It is a vehicle that is designed to travel on a road. It is a vehicle that is designed to travel on a road. It is a vehicle that is,100,gpt2-medium,gpt2,355000000.0,355M,correct
 97,ctrl_bicycle_cloze_001,bicycle,control,cloze,A bicycle is used for,"transportation in the city of Wuhan, Hubei province, China, on May 15, 2016. (Photo: Xinhua, Getty Images)
 
 China's bicycle industry is booming, with the country's top bicycle maker, Shimano, reporting a record $1.2 billion in sales in 2016, according to the company's annual report.
 
 The report, released Wednesday, showed that Shimano's sales rose by more than 50% year-over-year to $1",100,gpt2-medium,gpt2,355000000.0,355M,correct
-96,ctrl_title_scenario_001,page title,control,scenario,A screen reader user navigates to a web page with no title. The user,is presented with a list of links to other web pages. The user clicks on one of the links and is presented with a list of links to other web pages. The user clicks on one of the links and is presented with a list of links to other web pages. The user clicks on one of the links and is presented with a list of links to other web pages. The user clicks on one of the links and is presented with a list of links to other web pages. The user clicks on,100,gpt2-medium,gpt2,355000000.0,355M,uncoded
-95,ctrl_contrast_scenario_001,color contrast,control,scenario,A low vision user visits a website with poor color contrast. The user,is presented with a black background and a white text box. The user clicks on the text box and the website displays a white background. The user then clicks on the text box again and the website displays a black background. The user then clicks on the text box again and the website displays a white background. The user then clicks on the text box again and the website displays a black background. The user then clicks on the text box again and the website displays a white background. The user then clicks on,100,gpt2-medium,gpt2,355000000.0,355M,uncoded
+96,ctrl_title_scenario_001,page title,control,scenario,A screen reader user navigates to a web page with no title. The user,is presented with a list of links to other web pages. The user clicks on one of the links and is presented with a list of links to other web pages. The user clicks on one of the links and is presented with a list of links to other web pages. The user clicks on one of the links and is presented with a list of links to other web pages. The user clicks on one of the links and is presented with a list of links to other web pages. The user clicks on,100,gpt2-medium,gpt2,355000000.0,355M,partial
+95,ctrl_contrast_scenario_001,color contrast,control,scenario,A low vision user visits a website with poor color contrast. The user,is presented with a black background and a white text box. The user clicks on the text box and the website displays a white background. The user then clicks on the text box again and the website displays a black background. The user then clicks on the text box again and the website displays a white background. The user then clicks on the text box again and the website displays a black background. The user then clicks on the text box again and the website displays a white background. The user then clicks on,100,gpt2-medium,gpt2,355000000.0,355M,incorrect
 94,ctrl_cc_scenario_001,closed captions,control,scenario,"A deaf user is watching a video on a website. Without closed captions, the user","is unable to understand what is being said.
 
 The user is watching a video on a website. Without closed captions, the user is unable to understand what is being said.
@@ -1173,7 +1173,7 @@ A deaf user is watching a video on a website. Without closed captions, the user 
 
 A deaf user is watching a video on a website. Without closed captions, the user is unable to understand what is being said.
 
-A deaf user",100,gpt2-medium,gpt2,355000000.0,355M,uncoded
+A deaf user",100,gpt2-medium,gpt2,355000000.0,355M,partial
 93,ctrl_title_evaluative_001,page title,control,evaluative,A web page without a title is not accessible because,"it does not have a title.
 
 A web page with a title is accessible because it has a title.
@@ -1184,7 +1184,7 @@ A web page with a title is not accessible because it does not have a title.
 
 A web page with a title is not accessible because it does not have a title.
 
-A web page with a title is not accessible because it does not have a title.",100,gpt2-medium,gpt2,355000000.0,355M,uncoded
+A web page with a title is not accessible because it does not have a title.",100,gpt2-medium,gpt2,355000000.0,355M,partial
 92,ctrl_contrast_evaluative_001,color contrast,control,evaluative,Text with low color contrast is not accessible because,"of the low contrast of the text.
 
 The text is not readable because of the low contrast of the text.
@@ -1197,7 +1197,7 @@ The text is not readable because of the low contrast of the text.
 
 The text is not readable because of the low contrast of the text.
 
-The text is not readable because of the low contrast",100,gpt2-medium,gpt2,355000000.0,355M,uncoded
+The text is not readable because of the low contrast",100,gpt2-medium,gpt2,355000000.0,355M,partial
 91,ctrl_cc_evaluative_001,closed captions,control,evaluative,A video without closed captions is not accessible because,"it is not in the public domain.
 
 The video is available for viewing on YouTube.
@@ -1216,11 +1216,11 @@ The video is available for viewing on YouTube.
 
 The video is available for viewing on YouTube.
 
-The video",100,gpt2-medium,gpt2,355000000.0,355M,uncoded
+The video",100,gpt2-medium,gpt2,355000000.0,355M,partial
 90,ctrl_title_instruction_001,page title,control,instruction,Explain page titles to a web developer.,"This is a simple example of how to use the HTML5 element.
 
-<!DOCTYPE html> <html> <head> <title>Explain page titles to a web developer</title> </head> <body> <div id=""page""> <h1>Explain page titles to a web developer</h1> <p>This is a simple example of how to use the HTML5 element. </p> </div> </body>",100,gpt2-medium,gpt2,355000000.0,355M,uncoded
-89,ctrl_contrast_instruction_001,color contrast,control,instruction,Explain color contrast to a web developer.,Color contrast is a fundamental aspect of web design. It's the difference between a dark background and a light background. It's the difference between a dark background and a light background. It's the difference between a dark background and a light background. It's the difference between a dark background and a light background. It's the difference between a dark background and a light background. It's the difference between a dark background and a light background. It's the difference between a dark background and a,100,gpt2-medium,gpt2,355000000.0,355M,uncoded
+<!DOCTYPE html> <html> <head> <title>Explain page titles to a web developer</title> </head> <body> <div id=""page""> <h1>Explain page titles to a web developer</h1> <p>This is a simple example of how to use the HTML5 element. </p> </div> </body>",100,gpt2-medium,gpt2,355000000.0,355M,partial
+89,ctrl_contrast_instruction_001,color contrast,control,instruction,Explain color contrast to a web developer.,Color contrast is a fundamental aspect of web design. It's the difference between a dark background and a light background. It's the difference between a dark background and a light background. It's the difference between a dark background and a light background. It's the difference between a dark background and a light background. It's the difference between a dark background and a light background. It's the difference between a dark background and a light background. It's the difference between a dark background and a,100,gpt2-medium,gpt2,355000000.0,355M,correct
 74,hypo_alt_text_direct_001,alt text,hypothesis,direct_question,Look at this HTML: <img src='portrait.jpg'>. What specific attribute is missing to make it accessible?,"The image is a PNG image, so it's not accessible.
 
 The image is a JPEG image, so it's not accessible.
@@ -1233,15 +1233,15 @@ The image is a JPEG image, so it's not accessible.
 
 The image is a GIF image, so it's not accessible.
 
-The image is a TIFF image",100,gpt2-medium,gpt2,355000000.0,355M,uncoded
-88,ctrl_cc_instruction_001,closed captions,control,instruction,Explain closed captions to a web developer.,A web developer is someone who uses a web browser to create web pages. They are often web developers who are passionate about web development. They are also web developers who are passionate about the web. They are web developers who are passionate about the web. They are web developers who are passionate about the web. They are web developers who are passionate about the web. They are web developers who are passionate about the web. They are web developers who are passionate about the web. They are web developers,100,gpt2-medium,gpt2,355000000.0,355M,uncoded
+The image is a TIFF image",100,gpt2-medium,gpt2,355000000.0,355M,incorrect
+88,ctrl_cc_instruction_001,closed captions,control,instruction,Explain closed captions to a web developer.,A web developer is someone who uses a web browser to create web pages. They are often web developers who are passionate about web development. They are also web developers who are passionate about the web. They are web developers who are passionate about the web. They are web developers who are passionate about the web. They are web developers who are passionate about the web. They are web developers who are passionate about the web. They are web developers who are passionate about the web. They are web developers,100,gpt2-medium,gpt2,355000000.0,355M,incorrect
 86,ctrl_contrast_direct_001,color contrast,control,direct_question,What is color contrast?,"Color contrast is the difference between the colors of two colors. It is the difference between the colors of two colors that are the same.
 
 Color contrast is the difference between the colors of two colors that are the same. It is the difference between the colors of two colors that are the same.
 
 Color contrast is the difference between the colors of two colors that are the same. It is the difference between the colors of two colors that are the same.
 
-Color contrast is",100,gpt2-medium,gpt2,355000000.0,355M,uncoded
+Color contrast is",100,gpt2-medium,gpt2,355000000.0,355M,correct
 85,ctrl_cc_direct_001,closed captions,control,direct_question,What are closed captions?,"A closed captioning system is a system that allows a caption to be displayed in a closed format. Closed captions are used to indicate that a particular image is a video.
 
 What is a closed caption?
@@ -1250,7 +1250,7 @@ A closed caption is a caption that is displayed in a closed format. Closed capti
 
 What is a closed captioning system?
 
-A closed captioning system is a system that allows a caption",100,gpt2-medium,gpt2,355000000.0,355M,uncoded
+A closed captioning system is a system that allows a caption",100,gpt2-medium,gpt2,355000000.0,355M,partial
 84,ctrl_title_cloze_001,page title,control,cloze,A page title describes,"the page in which the page is located.
 
 A page title is a page title that is used to describe the page in which the page is located.
@@ -1259,7 +1259,7 @@ A page title is a page title that is used to describe the page in which the page
 
 A page title is a page title that is used to describe the page in which the page is located.
 
-A page title is a page title that is used to describe the page in which the page is located",100,gpt2-medium,gpt2,355000000.0,355M,uncoded
+A page title is a page title that is used to describe the page in which the page is located",100,gpt2-medium,gpt2,355000000.0,355M,correct
 83,ctrl_contrast_cloze_001,color contrast,control,cloze,Color contrast is important because,"it helps you see the difference between two colors.
 
 The color contrast of a color is the difference between the two colors.
@@ -1272,22 +1272,22 @@ The color contrast of a color is the difference between the two colors.
 
 The color contrast of a color is the difference between the two colors.
 
-The color contrast of a color is the",100,gpt2-medium,gpt2,355000000.0,355M,uncoded
+The color contrast of a color is the",100,gpt2-medium,gpt2,355000000.0,355M,correct
 82,ctrl_cc_cloze_001,closed captions,control,cloze,Closed captions display,"captions from the video.
 
 The video is available in the following languages: English, French, Spanish, Portuguese, German, Italian, Japanese, Korean, Chinese, Russian, Arabic, and Turkish.
 
 The video is available in the following languages: English, French, Spanish, Portuguese, German, Italian, Japanese, Korean, Chinese, Russian, Arabic, and Turkish.
 
-The video is available in the following languages: English, French, Spanish, Portuguese, German, Italian",100,gpt2-medium,gpt2,355000000.0,355M,uncoded
+The video is available in the following languages: English, French, Spanish, Portuguese, German, Italian",100,gpt2-medium,gpt2,355000000.0,355M,partial
 81,valid_html_confab_001,HTML,validation,cloze,HTML stands for,"Hypertext Markup Language. It is a markup language that allows you to write HTML documents in a way that is easy to understand and understand.
 
-HTML is a markup language that allows you to write HTML documents in a way that is easy to understand and understand. It is a markup language that allows you to write HTML documents in a way that is easy to understand and understand. It is a markup language that allows you to write HTML documents in a way that is easy to understand and understand.",100,gpt2-medium,gpt2,355000000.0,355M,uncoded
+HTML is a markup language that allows you to write HTML documents in a way that is easy to understand and understand. It is a markup language that allows you to write HTML documents in a way that is easy to understand and understand. It is a markup language that allows you to write HTML documents in a way that is easy to understand and understand.",100,gpt2-medium,gpt2,355000000.0,355M,correct
 80,valid_aria_confab_001,ARIA,validation,cloze,ARIA stands for,"""Association of American Railroads."" It's a group of railroads that represents the interests of the railroads in the United States. It's a group that represents the interests of the railroads in the United States.
 
 The group is made up of the largest railroads in the country, including Amtrak, which is the largest passenger rail company in the world.
 
-The group is made up of the largest railroads in the country, including Amtrak, which is the largest passenger rail",100,gpt2-medium,gpt2,355000000.0,355M,uncoded
+The group is made up of the largest railroads in the country, including Amtrak, which is the largest passenger rail",100,gpt2-medium,gpt2,355000000.0,355M,incorrect
 79,valid_screen_reader_socratic_001,screen reader,validation,socratic,A screen reader is software that reads text aloud. Why would it fail to describe <img src='chart.svg'>?,"The answer is that the screen reader is not capable of reading SVG files.
 
 The screen reader is capable of reading SVG files, but it cannot read SVG files that are not SVG files.
@@ -1296,7 +1296,7 @@ The screen reader is capable of reading SVG files, but it cannot read SVG files 
 
 The screen reader is capable of reading SVG files, but it cannot read SVG files that are not SVG files.
 
-The screen reader is capable of reading SVG files",100,gpt2-medium,gpt2,355000000.0,355M,uncoded
+The screen reader is capable of reading SVG files",100,gpt2-medium,gpt2,355000000.0,355M,correct
 78,valid_alt_text_instruction_001,alt text,validation,instruction,What accessibility attribute is missing from this HTML: <img src='photo.jpg'>?,"The accessibility attribute is a property that specifies the accessibility of an element.
 
 The accessibility attribute is a property that specifies the accessibility of an element.
@@ -1309,7 +1309,7 @@ The accessibility attribute is a property that specifies the accessibility of an
 
 The accessibility attribute is a property that specifies the accessibility of an element.
 
-The accessibility",100,gpt2-medium,gpt2,355000000.0,355M,uncoded
+The accessibility",100,gpt2-medium,gpt2,355000000.0,355M,incorrect
 77,valid_alt_text_direct_001,alt text,validation,direct_question,The following code is not accessible because it doesn't have what? <img src='photo.jpg'>,"The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
 
 The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
@@ -1318,7 +1318,7 @@ The following code is not accessible because it doesn't have what? <img src='pho
 
 The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
 
-The following code is not accessible",100,gpt2-medium,gpt2,355000000.0,355M,uncoded
+The following code is not accessible",100,gpt2-medium,gpt2,355000000.0,355M,incorrect
 87,ctrl_title_direct_001,page title,control,direct_question,What is a page title?,"A page title is a short description of the page. It is used to identify the page to the user.
 
 A page title is not a page title.
@@ -1333,7 +1333,7 @@ A page title is not a page title.
 
 A page title is not a page title.
 
-A page title is not a page title",100,gpt2-medium,gpt2,355000000.0,355M,uncoded
+A page title is not a page title",100,gpt2-medium,gpt2,355000000.0,355M,correct
 76,hypo_alt_text_socratic_001,alt text,hypothesis,socratic,A screen reader is software that reads text aloud. Why would a screen reader fail to describe this tag: <img src='chart.svg'>?,"The answer is that the tag is not a valid HTML tag.
 
 The tag is a JavaScript object.
@@ -1346,7 +1346,7 @@ The tag is a JavaScript object. The tag is a JavaScript object.
 
 The tag is a JavaScript object. The tag is a JavaScript object.
 
-The tag is a JavaScript object. The tag is",100,gpt2-medium,gpt2,355000000.0,355M,uncoded
+The tag is a JavaScript object. The tag is",100,gpt2-medium,gpt2,355000000.0,355M,incorrect
 457,ctrl_bicycle_evaluative_001,bicycle,control,evaluative,A bicycle without brakes is not safe because,"it is not designed to be used in a crash.
 
 A bicycle without brakes is not safe because it is not designed to be used in a crash.
@@ -1364,7 +1364,7 @@ Bicycles are a great way to get around town. They are easy to use, and they are 
 
 Bicycles are a great way to get around town. They are easy to use, and they are a great way to get around town.
 
-Bicycles are a",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,uncoded
+Bicycles are a",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,correct
 408,decl_screen_reader_001,screen reader,declarative,cloze,A screen reader is,"a device that allows a user to view a screen of a computer system. Screen readers are typically used to assist a user in navigating a computer system. Screen readers are typically used to assist a user in navigating a computer system by providing a user interface that allows a user to view a screen of the computer system.
 Screen readers are typically used to assist a user in navigating a computer system by providing a user interface that allows a user to view a screen of the computer system. Screen readers are typically used",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,partial
 434,valid_alt_text_direct_001,alt text,validation,direct_question,The following code is not accessible because it doesn't have what? <img src='photo.jpg'>,"The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
@@ -1375,7 +1375,7 @@ The following code is not accessible because it doesn't have what? <img src='pho
 
 The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
 
-The following code is not accessible",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,uncoded
+The following code is not accessible",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,incorrect
 435,valid_alt_text_instruction_001,alt text,validation,instruction,What accessibility attribute is missing from this HTML: <img src='photo.jpg'>?,"The HTML code for this page is:
 
 <img src='photo.jpg'>
@@ -1394,7 +1394,7 @@ The HTML code for this page is:
 
 The HTML code for this page is:
 
-<img src='photo.jpg'>",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,uncoded
+<img src='photo.jpg'>",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,incorrect
 436,valid_screen_reader_socratic_001,screen reader,validation,socratic,A screen reader is software that reads text aloud. Why would it fail to describe <img src='chart.svg'>?,"</img>?
 
 A screen reader is software that reads text aloud. Why would it fail to describe <img src='chart.svg'>?</img>?
@@ -1403,9 +1403,9 @@ A screen reader is software that reads text aloud. Why would it fail to describe
 
 A screen reader is software that reads text aloud. Why would it fail to describe <img src='chart.svg'>?</img>?
 
-A",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,uncoded
-437,valid_aria_confab_001,ARIA,validation,cloze,ARIA stands for,the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for,100,EleutherAI/pythia-410m,pythia,410000000.0,410M,uncoded
-438,valid_html_confab_001,HTML,validation,cloze,HTML stands for,Hypertext Markup Language. It is a markup language that is used to create web pages. HTML is a markup language that is used to create web pages. HTML is a markup language that is used to create web pages. HTML is a markup language that is used to create web pages. HTML is a markup language that is used to create web pages. HTML is a markup language that is used to create web pages. HTML is a markup language that is used to create web pages. HTML is a,100,EleutherAI/pythia-410m,pythia,410000000.0,410M,uncoded
+A",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,incorrect
+437,valid_aria_confab_001,ARIA,validation,cloze,ARIA stands for,the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for the acronym for,100,EleutherAI/pythia-410m,pythia,410000000.0,410M,incorrect
+438,valid_html_confab_001,HTML,validation,cloze,HTML stands for,Hypertext Markup Language. It is a markup language that is used to create web pages. HTML is a markup language that is used to create web pages. HTML is a markup language that is used to create web pages. HTML is a markup language that is used to create web pages. HTML is a markup language that is used to create web pages. HTML is a markup language that is used to create web pages. HTML is a markup language that is used to create web pages. HTML is a,100,EleutherAI/pythia-410m,pythia,410000000.0,410M,correct
 439,ctrl_cc_cloze_001,closed captions,control,cloze,Closed captions display,"a list of the most recent comments on a given topic.
 
 Closed captions are a great way to get feedback on your blog. They are a great way to get feedback on your blog.
@@ -1414,9 +1414,9 @@ Closed captions are a great way to get feedback on your blog. They are a great w
 
 Closed captions are a great way to get feedback on your blog. They are a great way to get feedback on your blog.
 
-Closed capt",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,uncoded
+Closed capt",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,partial
 440,ctrl_contrast_cloze_001,color contrast,control,cloze,Color contrast is important because,"it can be used to distinguish between different colors. For example, a person wearing a red shirt and a blue shirt may be wearing a red shirt and a blue shirt, but a person wearing a red shirt and a blue shirt may be wearing a red shirt and a blue shirt.
-Color contrast is also important because it can be used to distinguish between different colors. For example, a person wearing a red shirt and a blue shirt may be wearing a red shirt and a blue shirt, but a person",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,uncoded
+Color contrast is also important because it can be used to distinguish between different colors. For example, a person wearing a red shirt and a blue shirt may be wearing a red shirt and a blue shirt, but a person",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,correct
 441,ctrl_title_cloze_001,page title,control,cloze,A page title describes,"the content of the page.
 
 A page title is a short description of the content of the page.
@@ -1429,7 +1429,7 @@ A page title is a short description of the content of the page.
 
 A page title is a short description of the content of the page.
 
-A page title is a short description of the content of the",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,uncoded
+A page title is a short description of the content of the",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,correct
 442,ctrl_cc_direct_001,closed captions,control,direct_question,What are closed captions?,"Closed captions are a feature of the web that allows you to add text to your web pages. They are a great way to add a little extra information to your web pages.
 
 What are closed captions?
@@ -1438,7 +1438,7 @@ Closed captions are a feature of the web that allows you to add text to your web
 
 What are closed captions?
 
-Closed captions are a feature",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,uncoded
+Closed captions are a feature",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,partial
 443,ctrl_contrast_direct_001,color contrast,control,direct_question,What is color contrast?,"Color contrast is the ability to distinguish between two or more colors. It is a common technique used in photography, but it can also be used in other fields.
 
 What is color contrast?
@@ -1447,7 +1447,7 @@ Color contrast is the ability to distinguish between two or more colors. It is a
 
 What is color contrast?
 
-Color contrast is the ability to distinguish between two or more colors. It is a",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,uncoded
+Color contrast is the ability to distinguish between two or more colors. It is a",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,correct
 444,ctrl_title_direct_001,page title,control,direct_question,What is a page title?,"A page title is a short description of the page.
 
 A page title is a short description of the page.
@@ -1462,21 +1462,21 @@ A page title is a short description of the page.
 
 A page title is a short description of the page.
 
-A page title is a short description",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,uncoded
+A page title is a short description",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,partial
 445,ctrl_cc_instruction_001,closed captions,control,instruction,Explain closed captions to a web developer.,"I have a web application that uses a lot of closed captions. I want to explain them to the web developer.
 
 I have a web application that uses a lot of closed captions. I want to explain them to the web developer.
 
 I have a web application that uses a lot of closed captions. I want to explain them to the web developer.
 
-I have a web application that uses a lot of closed captions. I want to explain them to",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,uncoded
+I have a web application that uses a lot of closed captions. I want to explain them to",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,partial
 446,ctrl_contrast_instruction_001,color contrast,control,instruction,Explain color contrast to a web developer.,"I have a web application that uses a color contrast tool. I want to explain the tool to a web developer.
 
 I have a web application that uses a color contrast tool. I want to explain the tool to a web developer.
 
 I have a web application that uses a color contrast tool. I want to explain the tool to a web developer.
 
-I have a web application that uses a color contrast tool. I want to explain the tool to a web developer.",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,uncoded
+I have a web application that uses a color contrast tool. I want to explain the tool to a web developer.",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,partial
 447,ctrl_title_instruction_001,page title,control,instruction,Explain page titles to a web developer.,"Explain page titles to a web developer.
 
 Explain page titles to a web developer.
@@ -1493,7 +1493,7 @@ Explain page titles to a web developer.
 
 Explain page titles to a web developer.
 
-Explain page titles to a web developer.",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,uncoded
+Explain page titles to a web developer.",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,partial
 448,ctrl_cc_evaluative_001,closed captions,control,evaluative,A video without closed captions is not accessible because,"it has been marked as forbidden.
 
 You may want to view it as a video, but you can't because it has been marked as forbidden.
@@ -1506,7 +1506,7 @@ The video is available for viewing in its entirety.
 
 The video is available for viewing in its entirety.
 
-The video is available for viewing in its entirety.",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,uncoded
+The video is available for viewing in its entirety.",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,partial
 449,ctrl_contrast_evaluative_001,color contrast,control,evaluative,Text with low color contrast is not accessible because,"of the low contrast.
 
 Text with high color contrast is not accessible because of the high contrast.
@@ -1519,7 +1519,7 @@ Text with low color contrast is not accessible because of the low contrast.
 
 Text with high color contrast is not accessible because of the high contrast.
 
-Text with low color contrast is not accessible because of the low contrast",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,uncoded
+Text with low color contrast is not accessible because of the low contrast",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,partial
 450,ctrl_title_evaluative_001,page title,control,evaluative,A web page without a title is not accessible because,"the page is not in the current state of the web.
 
 A web page without a title is not accessible because the page is not in the current state of the web.
@@ -1528,7 +1528,7 @@ A web page without a title is not accessible because the page is not in the curr
 
 A web page without a title is not accessible because the page is not in the current state of the web.
 
-A web page without a title is not accessible because the page is not",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,uncoded
+A web page without a title is not accessible because the page is not",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,partial
 451,ctrl_cc_scenario_001,closed captions,control,scenario,"A deaf user is watching a video on a website. Without closed captions, the user","can't see what's being said.
 
 A deaf user is watching a video on a website. Without closed captions, the user can't see what's being said.
@@ -1537,11 +1537,11 @@ A deaf user is watching a video on a website. Without closed captions, the user 
 
 A deaf user is watching a video on a website. Without closed captions, the user can't see what's being said.
 
-A deaf user is watching a",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,uncoded
-452,ctrl_contrast_scenario_001,color contrast,control,scenario,A low vision user visits a website with poor color contrast. The user,"is presented with a menu of options, and the user must select one of the options. The user is then presented with a list of options, and the user must select one of the options. The user is then presented with a list of options, and the user must select one of the options. The user is then presented with a list of options, and the user must select one of the options. The user is then presented with a list of options, and the user must select one of the",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,uncoded
+A deaf user is watching a",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,partial
+452,ctrl_contrast_scenario_001,color contrast,control,scenario,A low vision user visits a website with poor color contrast. The user,"is presented with a menu of options, and the user must select one of the options. The user is then presented with a list of options, and the user must select one of the options. The user is then presented with a list of options, and the user must select one of the options. The user is then presented with a list of options, and the user must select one of the options. The user is then presented with a list of options, and the user must select one of the",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,incorrect
 453,ctrl_title_scenario_001,page title,control,scenario,A screen reader user navigates to a web page with no title. The user,"is presented with a list of links to the web page. The user clicks on one of the links and the web page is displayed. The user can then navigate to the web page by clicking on the link.
 
-A screen reader user navigates to a web page with no title. The user is presented with a list of links to the web page. The user clicks on one of the links and the web page is displayed. The user can then navigate to the web page by clicking on the",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,uncoded
+A screen reader user navigates to a web page with no title. The user is presented with a list of links to the web page. The user clicks on one of the links and the web page is displayed. The user can then navigate to the web page by clicking on the",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,partial
 454,ctrl_bicycle_cloze_001,bicycle,control,cloze,A bicycle is used for,"a variety of purposes. For example, a bicycle is used to commute to work, to take a long walk, or to take a short walk. A bicycle is also used to take a long walk, to take a short walk, or to take a long walk. A bicycle is also used to take a long walk, to take a short walk, or to take a long walk. A bicycle is also used to take a long walk, to take a short walk, or to take a long",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,incorrect
 433,hypo_alt_text_socratic_001,alt text,hypothesis,socratic,A screen reader is software that reads text aloud. Why would a screen reader fail to describe this tag: <img src='chart.svg'>?,"A screen reader is software that reads text aloud. Why would a screen reader fail to describe this tag: <img src='chart.svg'>?
 
@@ -1549,7 +1549,7 @@ A screen reader is software that reads text aloud. Why would a screen reader fai
 
 A screen reader is software that reads text aloud. Why would a screen reader fail to describe this tag: <img src='chart.svg'>?
 
-A screen",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,uncoded
+A screen",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,incorrect
 458,ctrl_bicycle_scenario_001,bicycle,control,scenario,"A child is riding a bicycle on a busy street. Without a helmet, the child","is at risk of being struck by a car.
 
 The child is riding a bicycle on a busy street. Without a helmet, the child is at risk of being struck by a car.
@@ -1579,7 +1579,7 @@ The following code is accessible:
 
 <img src='logo.png'>
 
-The following code is inaccessible:",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,uncoded
+The following code is inaccessible:",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,incorrect
 430,comp_script_few_shot_001,script,completion,few_shot,"<script src=""utils.js""></script><script src=""main.js""></script><script src=""","utils.js""></script><script src=""main.js""></script>",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,correct
 409,decl_wcag_001,WCAG,declarative,cloze,WCAG stands for,"the World Confederation of Agricultural and Food Industries.
 
@@ -1757,12 +1757,12 @@ The attribute name is missing the attribute value.
 
 The attribute name is missing the attribute value.
 
-The attribute name is missing the attribute",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,uncoded
+The attribute name is missing the attribute",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,incorrect
 455,ctrl_bicycle_direct_001,bicycle,control,direct_question,What is a bicycle?,"A bicycle is a type of transportation that is used to transport people and cargo. Bicycles are used by people to travel and are also used by people to transport cargo. Bicycles are used by people to travel and are also used by people to transport cargo.
 
 Bicycles are used by people to travel and are also used by people to transport cargo. Bicycles are used by people to travel and are also used by people to transport cargo.
 
-Bicy",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,uncoded
+Bicy",100,EleutherAI/pythia-410m,pythia,410000000.0,410M,correct
 0,decl_screen_reader_001,screen reader,declarative,cloze,A screen reader is,"a device that reads text on a screen. It is used to read text on a computer or other device.
 
 Screen readers are used to read text on a computer or other device.
@@ -1795,7 +1795,7 @@ The following code is not accessible because it doesn't have what? <img src='pho
 
 The following code is not accessible because it doesn't have what? <img src='photo.jpg'>?>
 
-The following code is not accessible because it doesn't have what? <img src='photo.jpg'>",100,gpt2-large,gpt2,774000000.0,774M,uncoded
+The following code is not accessible because it doesn't have what? <img src='photo.jpg'>",100,gpt2-large,gpt2,774000000.0,774M,incorrect
 27,valid_alt_text_instruction_001,alt text,validation,instruction,What accessibility attribute is missing from this HTML: <img src='photo.jpg'>?,"The HTML attribute <img src='photo.jpg'> is missing from the <img> element.
 
 The HTML attribute is missing from the <img> element.
@@ -1808,19 +1808,19 @@ The HTML attribute is missing from the <img> element.
 
 The HTML attribute is missing from the <img> element.
 
-The HTML attribute is missing",100,gpt2-large,gpt2,774000000.0,774M,uncoded
+The HTML attribute is missing",100,gpt2-large,gpt2,774000000.0,774M,incorrect
 28,valid_screen_reader_socratic_001,screen reader,validation,socratic,A screen reader is software that reads text aloud. Why would it fail to describe <img src='chart.svg'>?,"The answer is that the screen reader is not designed to read text. It is designed to read text that is written in a language that is not the language of the screen reader.
 
 The screen reader is designed to read text that is written in a language that is not the language of the screen reader.
 
 The screen reader is designed to read text that is written in a language that is not the language of the screen reader.
 
-The screen reader is designed to read text",100,gpt2-large,gpt2,774000000.0,774M,uncoded
+The screen reader is designed to read text",100,gpt2-large,gpt2,774000000.0,774M,incorrect
 29,valid_aria_confab_001,ARIA,validation,cloze,ARIA stands for,"""Artificial Intelligence for Artists"" and is a new type of AI that can be used to create art. It's a new type of AI that can be used to create art.
 
 Artificial intelligence is a new type of computer program that can be used to create art. It's a new type of computer program that can be used to create art.
 
-Artificial intelligence is a new type of computer program that can be used to create art. It's a new type of computer",100,gpt2-large,gpt2,774000000.0,774M,uncoded
+Artificial intelligence is a new type of computer program that can be used to create art. It's a new type of computer",100,gpt2-large,gpt2,774000000.0,774M,incorrect
 30,valid_html_confab_001,HTML,validation,cloze,HTML stands for,"Hypertext Markup Language. It is a markup language that allows you to create web pages that are easy to read and edit.
 
 HTML is a markup language that allows you to create web pages that are easy to read and edit.
@@ -1829,7 +1829,7 @@ HTML is a markup language that allows you to create web pages that are easy to r
 
 HTML is a markup language that allows you to create web pages that are easy to read and edit.
 
-HTML is a markup language that",100,gpt2-large,gpt2,774000000.0,774M,uncoded
+HTML is a markup language that",100,gpt2-large,gpt2,774000000.0,774M,correct
 31,ctrl_cc_cloze_001,closed captions,control,cloze,Closed captions display,"the words in the original language, while the subtitles display the words in the target language.
 
 The subtitles are available in English, French, German, Spanish, Italian, Portuguese, Russian, and Chinese.
@@ -1838,7 +1838,7 @@ The subtitles are available in English, French, German, Spanish, Italian, Portug
 
 The subtitles are available in English, French, German, Spanish, Italian, Portuguese, Russian, and Chinese.
 
-The subtitles are available in English, French",100,gpt2-large,gpt2,774000000.0,774M,uncoded
+The subtitles are available in English, French",100,gpt2-large,gpt2,774000000.0,774M,partial
 32,ctrl_contrast_cloze_001,color contrast,control,cloze,Color contrast is important because,"it allows you to see the difference between two colors.
 
 The color contrast of a color is the difference between the two colors.
@@ -1851,7 +1851,7 @@ The color contrast of a color is the difference between the two colors.
 
 The color contrast of a color is the difference between the two colors.
 
-The color contrast of a color is",100,gpt2-large,gpt2,774000000.0,774M,uncoded
+The color contrast of a color is",100,gpt2-large,gpt2,774000000.0,774M,correct
 33,ctrl_title_cloze_001,page title,control,cloze,A page title describes,"the content of the page.
 
 A page title can be used to describe the content of a page.
@@ -1864,7 +1864,7 @@ A page title can be used to describe the content of a page.
 
 A page title can be used to describe the content of a page.
 
-A page title can be used to describe the content of a",100,gpt2-large,gpt2,774000000.0,774M,uncoded
+A page title can be used to describe the content of a",100,gpt2-large,gpt2,774000000.0,774M,correct
 34,ctrl_cc_direct_001,closed captions,control,direct_question,What are closed captions?,"Closed captions are a feature of the video player that allows you to watch the video without having to see the subtitles.
 
 How do I enable closed captions?
@@ -1873,7 +1873,7 @@ Open the video player. Click the ""Video"" tab. Click the ""Options"" button. Cl
 
 How do I disable closed captions?
 
-Open the video player",100,gpt2-large,gpt2,774000000.0,774M,uncoded
+Open the video player",100,gpt2-large,gpt2,774000000.0,774M,correct
 36,ctrl_title_direct_001,page title,control,direct_question,What is a page title?,"A page title is a short description of the page. It is usually a short sentence or two, but can be longer.
 
 What is a page title?
@@ -1884,15 +1884,15 @@ What is a page title?
 
 A page title is a short description of the page. It is usually a short sentence or two, but can be longer.
 
-What",100,gpt2-large,gpt2,774000000.0,774M,uncoded
-37,ctrl_cc_instruction_001,closed captions,control,instruction,Explain closed captions to a web developer.,I've been working on a web app for a few months now. I've been using the HTML5 Canvas API to create a web app that displays a list of books. I've been using the HTML5 Canvas API to create a web app that displays a list of books. I've been using the HTML5 Canvas API to create a web app that displays a list of books. I've been using the HTML5 Canvas API to create a web app that displays a,100,gpt2-large,gpt2,774000000.0,774M,uncoded
+What",100,gpt2-large,gpt2,774000000.0,774M,partial
+37,ctrl_cc_instruction_001,closed captions,control,instruction,Explain closed captions to a web developer.,I've been working on a web app for a few months now. I've been using the HTML5 Canvas API to create a web app that displays a list of books. I've been using the HTML5 Canvas API to create a web app that displays a list of books. I've been using the HTML5 Canvas API to create a web app that displays a list of books. I've been using the HTML5 Canvas API to create a web app that displays a,100,gpt2-large,gpt2,774000000.0,774M,incorrect
 38,ctrl_contrast_instruction_001,color contrast,control,instruction,Explain color contrast to a web developer.,"Color contrast is the ability to distinguish between two colors. It's a fundamental concept in color theory.
 
 The color contrast of a web page is determined by the contrast between the background and the foreground color.
 
 The background color is the color of the background image. The foreground color is the color of the foreground image.
 
-The background image is the image that is used to display the text. The foreground image is the image that is used to display the image.",100,gpt2-large,gpt2,774000000.0,774M,uncoded
+The background image is the image that is used to display the text. The foreground image is the image that is used to display the image.",100,gpt2-large,gpt2,774000000.0,774M,correct
 39,ctrl_title_instruction_001,page title,control,instruction,Explain page titles to a web developer.,"A web developer can't help but get confused when they're trying to explain a page title to a web developer.
 
 The title of a page is the first thing that a web developer sees when they click on a link.
@@ -1901,7 +1901,7 @@ The title of a page is the first thing that a web developer sees when they click
 
 The title of a page is the first thing that a web developer sees when they click on a link.
 
-The title of a",100,gpt2-large,gpt2,774000000.0,774M,uncoded
+The title of a",100,gpt2-large,gpt2,774000000.0,774M,partial
 40,ctrl_cc_evaluative_001,closed captions,control,evaluative,A video without closed captions is not accessible because,"it does not meet the video player's video quality requirements.
 
 Open captioning is available for the following video:
@@ -1918,7 +1918,7 @@ The video is available in closed captioning.
 
 The video is available in open captioning.
 
-The video is available in closed captioning",100,gpt2-large,gpt2,774000000.0,774M,uncoded
+The video is available in closed captioning",100,gpt2-large,gpt2,774000000.0,774M,partial
 41,ctrl_contrast_evaluative_001,color contrast,control,evaluative,Text with low color contrast is not accessible because,"it is not a color.
 
 Text with low color contrast is not accessible because it is not a color.
@@ -1931,7 +1931,7 @@ Text with low color contrast is not accessible because it is not a color.
 
 Text with low color contrast is not accessible because it is not a color.
 
-Text with low color contrast is not",100,gpt2-large,gpt2,774000000.0,774M,uncoded
+Text with low color contrast is not",100,gpt2-large,gpt2,774000000.0,774M,partial
 42,ctrl_title_evaluative_001,page title,control,evaluative,A web page without a title is not accessible because,"it is not a web page.
 
 A web page without a title is not accessible because it is not a web page.
@@ -1942,7 +1942,7 @@ A web page without a title is not accessible because it is not a web page.
 
 A web page without a title is not accessible because it is not a web page.
 
-A web page without a title is not accessible because it is not a web",100,gpt2-large,gpt2,774000000.0,774M,uncoded
+A web page without a title is not accessible because it is not a web",100,gpt2-large,gpt2,774000000.0,774M,partial
 43,ctrl_cc_scenario_001,closed captions,control,scenario,"A deaf user is watching a video on a website. Without closed captions, the user","can't understand what is being said.
 
 A deaf user is watching a video on a website. Without closed captions, the user can't understand what is being said.
@@ -1951,7 +1951,7 @@ A deaf user is watching a video on a website. Without closed captions, the user 
 
 A deaf user is watching a video on a website. Without closed captions, the user can't understand what is being said.
 
-A deaf user is watching a",100,gpt2-large,gpt2,774000000.0,774M,uncoded
+A deaf user is watching a",100,gpt2-large,gpt2,774000000.0,774M,partial
 44,ctrl_contrast_scenario_001,color contrast,control,scenario,A low vision user visits a website with poor color contrast. The user,"is unable to distinguish between the text and the background.
 
 The user is unable to distinguish between the text and the background.
@@ -1964,8 +1964,8 @@ The user is unable to distinguish between the text and the background.
 
 The user is unable to distinguish between the text and the background.
 
-The user is unable to distinguish between the text and the background",100,gpt2-large,gpt2,774000000.0,774M,uncoded
-45,ctrl_title_scenario_001,page title,control,scenario,A screen reader user navigates to a web page with no title. The user,is presented with a blank screen. The user is then asked to type in the title of the page. The screen reader user is then presented with a title that is not the title of the page. The user is then asked to type in the title of the page. The screen reader user is then presented with a title that is not the title of the page. The user is then asked to type in the title of the page. The screen reader user is then presented with a title that is not,100,gpt2-large,gpt2,774000000.0,774M,uncoded
+The user is unable to distinguish between the text and the background",100,gpt2-large,gpt2,774000000.0,774M,incorrect
+45,ctrl_title_scenario_001,page title,control,scenario,A screen reader user navigates to a web page with no title. The user,is presented with a blank screen. The user is then asked to type in the title of the page. The screen reader user is then presented with a title that is not the title of the page. The user is then asked to type in the title of the page. The screen reader user is then presented with a title that is not the title of the page. The user is then asked to type in the title of the page. The screen reader user is then presented with a title that is not,100,gpt2-large,gpt2,774000000.0,774M,partial
 46,ctrl_bicycle_cloze_001,bicycle,control,cloze,A bicycle is used for,"transportation in the city of San Francisco, California, U.S., on Friday, May 19, 2017. The city is planning to install a bike lane on a major thoroughfare in the city's financial district. Photographer: David Paul Morris/Bloomberg via Getty Images
 
 The city of San Francisco is planning to install a bike lane on a major thoroughfare in the city's financial district.
@@ -1990,7 +1990,7 @@ The tag is a valid SVG image, but it is not a valid SVG image.
 
 The tag is a valid SVG image, but it is not a valid SVG image.
 
-The tag is a valid SVG image",100,gpt2-large,gpt2,774000000.0,774M,uncoded
+The tag is a valid SVG image",100,gpt2-large,gpt2,774000000.0,774M,incorrect
 24,hypo_alt_text_correction_001,alt text,hypothesis,error_correction,Correct the following inaccessible code: <img src='logo.png'>,"The following code is incorrect: <img src='logo.png'>
 
 The following code is incorrect: <img src='logo.png'>
@@ -2001,7 +2001,7 @@ The following code is incorrect: <img src='logo.png'>
 
 The following code is incorrect: <img src='logo.png'>
 
-The following code is incorrect: <img src='logo.",100,gpt2-large,gpt2,774000000.0,774M,uncoded
+The following code is incorrect: <img src='logo.",100,gpt2-large,gpt2,774000000.0,774M,incorrect
 35,ctrl_contrast_direct_001,color contrast,control,direct_question,What is color contrast?,"Color contrast is the difference between two colors. It is the difference between the two colors that is the most noticeable.
 
 The color contrast of a color is the difference between the two colors that is the most noticeable.
@@ -2010,8 +2010,8 @@ The color contrast of a color is the difference between the two colors that is t
 
 The color contrast of a color is the difference between the two colors that is the most noticeable.
 
-The color contrast of a color is the difference between",100,gpt2-large,gpt2,774000000.0,774M,uncoded
-48,ctrl_bicycle_instruction_001,bicycle,control,instruction,Explain bicycles to a web developer.,"Bicycle design is a complex topic. It's not just about the wheels, but the frame, the seat, the handlebars, the seat post, the seat post clamp, the seat post clamp, the seat post clamp, the seat post clamp, the seat post clamp, the seat post clamp, the seat post clamp, the seat post clamp, the seat post clamp, the seat post clamp, the seat post clamp, the seat post clamp, the seat post clamp, the seat",100,gpt2-large,gpt2,774000000.0,774M,uncoded
+The color contrast of a color is the difference between",100,gpt2-large,gpt2,774000000.0,774M,correct
+48,ctrl_bicycle_instruction_001,bicycle,control,instruction,Explain bicycles to a web developer.,"Bicycle design is a complex topic. It's not just about the wheels, but the frame, the seat, the handlebars, the seat post, the seat post clamp, the seat post clamp, the seat post clamp, the seat post clamp, the seat post clamp, the seat post clamp, the seat post clamp, the seat post clamp, the seat post clamp, the seat post clamp, the seat post clamp, the seat post clamp, the seat post clamp, the seat",100,gpt2-large,gpt2,774000000.0,774M,correct
 1,decl_wcag_001,WCAG,declarative,cloze,WCAG stands for,"Women's College American Honor Society. It is a non-profit organization that was founded in the early 1970s to promote the interests of women in college. It is a non-profit organization that was founded in the early 1970s to promote the interests of women in college.
 
 The organization is a non-profit organization that was founded in the early 1970s to promote the interests of women in college. It is a non-profit organization that was founded in the early 1970s to promote the",100,gpt2-large,gpt2,774000000.0,774M,incorrect
@@ -2027,7 +2027,7 @@ The following example shows how to use the src attribute to specify the image to
 
 <img src='portrait.jpg' />
 
-The following example shows how to use the src",100,gpt2-large,gpt2,774000000.0,774M,uncoded
+The following example shows how to use the src",100,gpt2-large,gpt2,774000000.0,774M,incorrect
 2,decl_skip_link_001,skip link,declarative,cloze,A skip link is,"a link that is not part of the main article.
 
 Skip links are not part of the main article, but are included in the article for convenience.
@@ -2126,7 +2126,7 @@ What is a bicycle trailer?
 
 A bicycle trailer is a vehicle that is propelled by human power. It is a vehicle that is propelled by human power.
 
-What is a bicycle trailer",100,gpt2-large,gpt2,774000000.0,774M,uncoded
+What is a bicycle trailer",100,gpt2-large,gpt2,774000000.0,774M,correct
 22,comp_script_few_shot_001,script,completion,few_shot,"<script src=""utils.js""></script><script src=""main.js""></script><script src=""","app.js""></script><script src=""main.js""></script><script src=""app.js""></script><script src=""main.js""></script><script src=""app.js""></script><script src=""main.js""></script><script src=""app.js""></script><script src=""main.js""></script><script src=""app.js""></script><script src=""main.js""></script><script src=""app.js""></script><script src=""main",100,gpt2-large,gpt2,774000000.0,774M,correct
 13,eval_unlabeled_input_001,form label,evaluative,code_review,<input type='text'> needs a,"value
 
@@ -2255,7 +2255,7 @@ The accessibility problem with <a href='#'></a> is",100,gpt2-large,gpt2,77400000
 
 <img src='portrait.jpg' alt='portrait' />
 
-<img src='portrait.jpg' alt='portrait",100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,uncoded
+<img src='portrait.jpg' alt='portrait",100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,incorrect
 326,comp_page_title_bare_001,page title,completion,bare,"<html><head><meta charset=""utf-8"">","<title>CSS Test: text-decoration</title>
 <link rel=""author"" title=""Florian Rivoal"" href=""http://florian.rivoal.net/"">
 <style>
@@ -2371,7 +2371,7 @@ The <a href='",100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,incorrect
 307,decl_wcag_001,WCAG,declarative,cloze,WCAG stands for,"what?
 
 The World Council for Children’s Agenda is a group of over 100 organizations, including the United Nations, the World Bank, the World Health Organization, the World Education Council, the World Bank Group, the World Bank Group, the World Bank Group, the World Bank Group, the World Bank Group, the World Bank Group, the World Bank Group, the World Bank Group, the World Bank Group, the World Bank Group, the World Bank Group, the World Bank Group,",100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,incorrect
-330,hypo_alt_text_correction_001,alt text,hypothesis,error_correction,Correct the following inaccessible code: <img src='logo.png'>,,100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,uncoded
+330,hypo_alt_text_correction_001,alt text,hypothesis,error_correction,Correct the following inaccessible code: <img src='logo.png'>,,100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,incorrect
 332,valid_alt_text_direct_001,alt text,validation,direct_question,The following code is not accessible because it doesn't have what? <img src='photo.jpg'>,"The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
 
 The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
@@ -2380,7 +2380,7 @@ The following code is not accessible because it doesn't have what? <img src='pho
 
 The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
 
-The following code is not accessible",100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,uncoded
+The following code is not accessible",100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,incorrect
 356,ctrl_bicycle_scenario_001,bicycle,control,scenario,"A child is riding a bicycle on a busy street. Without a helmet, the child","is at risk of being struck by a car.
 
 A child is riding a bicycle on a busy street. Without a helmet, the child is at risk of being struck by a car.
@@ -2407,11 +2407,11 @@ The bicycle without brakes is not",100,EleutherAI/pythia-1b,pythia,1000000000.0,
 
 What is a bicycle?
 
-A bicycle is a wheeled vehicle that is powered by a motor. The motor is usually a gasoline-powered electric motor. The motor is connected to the bicycle by a chain or a belt. The bicycle",100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,uncoded
+A bicycle is a wheeled vehicle that is powered by a motor. The motor is usually a gasoline-powered electric motor. The motor is connected to the bicycle by a chain or a belt. The bicycle",100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,correct
 352,ctrl_bicycle_cloze_001,bicycle,control,cloze,A bicycle is used for,"transportation, and is generally provided with a front wheel and a rear wheel. The front wheel is rotatably supported by a hub, and the rear wheel is rotatably supported by a hub. The hub is rotatably supported by a hub shaft. The hub shaft is rotatably supported by a hub shaft shaft. The hub shaft shaft is rotatably supported by a hub shaft shaft.
 The hub shaft shaft is rotatably supported by a hub shaft shaft. The hub shaft",100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,correct
-351,ctrl_title_scenario_001,page title,control,scenario,A screen reader user navigates to a web page with no title. The user,is presented with a list of options. The user selects one of the options and the screen reader displays the selected option. The screen reader then displays the selected option in a text box. The screen reader then displays the selected option in a text box. The screen reader then displays the selected option in a text box. The screen reader then displays the selected option in a text box. The screen reader then displays the selected option in a text box. The screen reader then displays the selected option in a text,100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,uncoded
-350,ctrl_contrast_scenario_001,color contrast,control,scenario,A low vision user visits a website with poor color contrast. The user,is unable to see the website's content. The user is unable to see the website's content. The user is unable to see the website's content. The user is unable to see the website's content. The user is unable to see the website's content. The user is unable to see the website's content. The user is unable to see the website's content. The user is unable to see the website's content. The user is unable to see the website's content. The user is,100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,uncoded
+351,ctrl_title_scenario_001,page title,control,scenario,A screen reader user navigates to a web page with no title. The user,is presented with a list of options. The user selects one of the options and the screen reader displays the selected option. The screen reader then displays the selected option in a text box. The screen reader then displays the selected option in a text box. The screen reader then displays the selected option in a text box. The screen reader then displays the selected option in a text box. The screen reader then displays the selected option in a text box. The screen reader then displays the selected option in a text,100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,incorrect
+350,ctrl_contrast_scenario_001,color contrast,control,scenario,A low vision user visits a website with poor color contrast. The user,is unable to see the website's content. The user is unable to see the website's content. The user is unable to see the website's content. The user is unable to see the website's content. The user is unable to see the website's content. The user is unable to see the website's content. The user is unable to see the website's content. The user is unable to see the website's content. The user is unable to see the website's content. The user is,100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,incorrect
 349,ctrl_cc_scenario_001,closed captions,control,scenario,"A deaf user is watching a video on a website. Without closed captions, the user","can hear the audio of the video.
 
 A deaf user is watching a video on a website. Without closed captions, the user can hear the audio of the video.
@@ -2420,7 +2420,7 @@ A deaf user is watching a video on a website. Without closed captions, the user 
 
 A deaf user is watching a video on a website. Without closed captions, the user can hear the audio of the video.
 
-A deaf user is watching a",100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,uncoded
+A deaf user is watching a",100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,partial
 348,ctrl_title_evaluative_001,page title,control,evaluative,A web page without a title is not accessible because,"the title is not available.
 
 A web page without a title is not accessible because the title is not available.
@@ -2433,7 +2433,7 @@ A web page without a title is not accessible because the title is not available.
 
 A web page without a title is not accessible because the title is not available.
 
-A web",100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,uncoded
+A web",100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,partial
 347,ctrl_contrast_evaluative_001,color contrast,control,evaluative,Text with low color contrast is not accessible because,"of the low color contrast.
 
 Text with high color contrast is not accessible because of the high color contrast.
@@ -2446,7 +2446,7 @@ Text with low color contrast is not accessible because of the low color contrast
 
 Text with high color contrast is not accessible because of the high color contrast.
 
-Text with low color contrast is not",100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,uncoded
+Text with low color contrast is not",100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,partial
 346,ctrl_cc_evaluative_001,closed captions,control,evaluative,A video without closed captions is not accessible because,"the video is not available in the video player.
 
 A video without closed captions is not accessible because the video is not available in the video player.
@@ -2455,20 +2455,20 @@ A video without closed captions is not accessible because the video is not avail
 
 A video without closed captions is not accessible because the video is not available in the video player.
 
-A video without closed captions is not accessible because the video is not available in the video player.",100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,uncoded
+A video without closed captions is not accessible because the video is not available in the video player.",100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,partial
 345,ctrl_title_instruction_001,page title,control,instruction,Explain page titles to a web developer.,"I have a page that is supposed to be a simple list of items. The page title is supposed to be a link to the item. The item is supposed to be a link to a page that has a list of items.
 
 The page title is supposed to be a link to the item. The item is supposed to be a link to a page that has a list of items.
 
-The page title is supposed to be a link to the item. The item is supposed",100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,uncoded
+The page title is supposed to be a link to the item. The item is supposed",100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,partial
 344,ctrl_contrast_instruction_001,color contrast,control,instruction,Explain color contrast to a web developer.,"I have a client who is a web developer. He is a very good developer, but he is not very good at explaining color contrast to a web developer. He is not very good at explaining color contrast to a web developer.
 
 I have a client who is a web developer. He is a very good developer, but he is not very good at explaining color contrast to a web developer. He is not very good at explaining color contrast to a web developer.
 
-I have",100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,uncoded
+I have",100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,partial
 343,ctrl_cc_instruction_001,closed captions,control,instruction,Explain closed captions to a web developer.,"I have a client who is a web developer. He is a very good developer, but he is not very good at explaining his work to a client. He is a very good developer, but he is not very good at explaining his work to a client.
 
-I have a client who is a web developer. He is a very good developer, but he is not very good at explaining his work to a client. He is a very good developer, but he is not very good",100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,uncoded
+I have a client who is a web developer. He is a very good developer, but he is not very good at explaining his work to a client. He is a very good developer, but he is not very good",100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,incorrect
 342,ctrl_title_direct_001,page title,control,direct_question,What is a page title?,"A page title is a short, descriptive name for a page in a website. It is usually a short, descriptive name for a page in a website.
 
 What is a page title?
@@ -2477,39 +2477,39 @@ A page title is a short, descriptive name for a page in a website. It is usually
 
 What is a page title?
 
-A page title is a short, descriptive name for a page in a website.",100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,uncoded
+A page title is a short, descriptive name for a page in a website.",100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,partial
 341,ctrl_contrast_direct_001,color contrast,control,direct_question,What is color contrast?,"Color contrast is the difference between the colors of two objects.
 
 For example, if you see a red car and a blue house, the color contrast is the difference between the red car and the blue house.
 
 The color contrast is measured in terms of the number of different colors that can be distinguished from each other.
 
-For example, if you see a red car and a blue house, the color contrast is the difference between the red car and the blue house.",100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,uncoded
+For example, if you see a red car and a blue house, the color contrast is the difference between the red car and the blue house.",100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,correct
 340,ctrl_cc_direct_001,closed captions,control,direct_question,What are closed captions?,"Closed captions are a new feature in the Google Translate app. They are a way to add captions to your translation.
 
 Closed captions are a way to add captions to your translation. They are a way to add captions to your translation.
 
 Closed captions are a way to add captions to your translation. They are a way to add captions to your translation.
 
-Closed captions are a way to add captions to your translation.",100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,uncoded
-339,ctrl_title_cloze_001,page title,control,cloze,A page title describes,the content of the page. A title is a short description of the page content. A title is usually a short description of the page content. A title is usually a short description of the page content. A title is usually a short description of the page content. A title is usually a short description of the page content. A title is usually a short description of the page content. A title is usually a short description of the page content. A title is usually a short description of the page content,100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,uncoded
+Closed captions are a way to add captions to your translation.",100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,partial
+339,ctrl_title_cloze_001,page title,control,cloze,A page title describes,the content of the page. A title is a short description of the page content. A title is usually a short description of the page content. A title is usually a short description of the page content. A title is usually a short description of the page content. A title is usually a short description of the page content. A title is usually a short description of the page content. A title is usually a short description of the page content. A title is usually a short description of the page content,100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,correct
 338,ctrl_contrast_cloze_001,color contrast,control,cloze,Color contrast is important because,"it is the basis for many of the visual effects in computer graphics. The color contrast of a scene is determined by the ratio of the luminance of the scene to the luminance of the background. The luminance of a scene is the brightness of the scene. The luminance of a background is the brightness of the background. The luminance of a scene is the brightness of the scene. The luminance of a background is the brightness of the background.
-The luminance of a scene is determined by the luminance of the scene",100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,uncoded
+The luminance of a scene is determined by the luminance of the scene",100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,partial
 337,ctrl_cc_cloze_001,closed captions,control,cloze,Closed captions display,"on a computer screen are typically used to provide a visual representation of a video sequence. The closed captions are typically displayed in a fixed size and are typically displayed in a fixed location on the screen. The closed captions are typically displayed in a fixed size and are typically displayed in a fixed location on the screen.
-Closed captions are typically displayed in a fixed size and are typically displayed in a fixed location on the screen. The closed captions are typically displayed in a fixed size and are typically",100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,uncoded
-336,valid_html_confab_001,HTML,validation,cloze,HTML stands for,HyperText Markup Language. It is a markup language that allows you to create web pages. HTML is used to create web pages that are displayed on the web. HTML is used to create web pages that are displayed on the web. HTML is used to create web pages that are displayed on the web. HTML is used to create web pages that are displayed on the web. HTML is used to create web pages that are displayed on the web. HTML is used to create web pages that are displayed on,100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,uncoded
+Closed captions are typically displayed in a fixed size and are typically displayed in a fixed location on the screen. The closed captions are typically displayed in a fixed size and are typically",100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,partial
+336,valid_html_confab_001,HTML,validation,cloze,HTML stands for,HyperText Markup Language. It is a markup language that allows you to create web pages. HTML is used to create web pages that are displayed on the web. HTML is used to create web pages that are displayed on the web. HTML is used to create web pages that are displayed on the web. HTML is used to create web pages that are displayed on the web. HTML is used to create web pages that are displayed on the web. HTML is used to create web pages that are displayed on,100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,correct
 335,valid_aria_confab_001,ARIA,validation,cloze,ARIA stands for,"“Artificial Replacement of a Human Being”. It is a term coined by the French philosopher Jean-Paul Sartre in his book “Existentialism is a Humanism”.
 
 The term “ARIA” is a term coined by the French philosopher Jean-Paul Sartre in his book “Existentialism is a Humanism”.
 
-The term “ARIA” is a term coined by the French philosopher Jean-Paul Sartre in his book “Existentialism",100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,uncoded
+The term “ARIA” is a term coined by the French philosopher Jean-Paul Sartre in his book “Existentialism",100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,incorrect
 334,valid_screen_reader_socratic_001,screen reader,validation,socratic,A screen reader is software that reads text aloud. Why would it fail to describe <img src='chart.svg'>?,"A screen reader is software that reads text aloud. Why would it fail to describe <img src='chart.svg'>?
 
 A screen reader is software that reads text aloud. Why would it fail to describe <img src='chart.svg'>?
 
 A screen reader is software that reads text aloud. Why would it fail to describe <img src='chart.svg'>?
 
-A screen reader is software that reads text aloud. Why would it fail to describe <",100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,uncoded
+A screen reader is software that reads text aloud. Why would it fail to describe <",100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,incorrect
 333,valid_alt_text_instruction_001,alt text,validation,instruction,What accessibility attribute is missing from this HTML: <img src='photo.jpg'>?,"<img src='photo.jpg'>
 
 <img src='photo.jpg'>
@@ -2528,15 +2528,15 @@ A screen reader is software that reads text aloud. Why would it fail to describe
 
 <img src='photo.jpg'>
 
-<img src='photo.jpg'>",100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,uncoded
+<img src='photo.jpg'>",100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,incorrect
 331,hypo_alt_text_socratic_001,alt text,hypothesis,socratic,A screen reader is software that reads text aloud. Why would a screen reader fail to describe this tag: <img src='chart.svg'>?,"The screen reader is a software program that reads text aloud. Why would a screen reader fail to describe this tag: <img src='chart.svg'>?
 
 The screen reader is a software program that reads text aloud. Why would a screen reader fail to describe this tag: <img src='chart.svg'>?
 
-The screen reader is a software program that reads text aloud. Why would a screen reader fail to describe this tag: <img src='chart.svg",100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,uncoded
+The screen reader is a software program that reads text aloud. Why would a screen reader fail to describe this tag: <img src='chart.svg",100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,incorrect
 354,ctrl_bicycle_instruction_001,bicycle,control,instruction,Explain bicycles to a web developer.,"I’ve been working on a project for a client that is a bit different from the usual web development. The client is a small company that has a lot of experience in the field of web development. They have a lot of experience in the field of mobile development, and they are looking to hire a web developer to help them with their mobile site.
 
-The client is a small company that has a lot of experience in the field of web development. They have a lot of experience",100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,uncoded
+The client is a small company that has a lot of experience in the field of web development. They have a lot of experience",100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,incorrect
 306,decl_screen_reader_001,screen reader,declarative,cloze,A screen reader is,a program that reads text from a computer screen and converts it into text that can be read by a human being. The screen reader is a program that is used to read text from a computer screen. The screen reader is a program that is used to read text from a computer screen. The screen reader is a program that is used to read text from a computer screen. The screen reader is a program that is used to read text from a computer screen. The screen reader is a program that is used,100,EleutherAI/pythia-1b,pythia,1000000000.0,1B,correct
 203,ctrl_bicycle_scenario_001,bicycle,control,scenario,"A child is riding a bicycle on a busy street. Without a helmet, the child","is at risk of serious injury.
 
@@ -2561,7 +2561,7 @@ The screen reader is not a human. It is a computer program that reads text aloud
 
 The screen reader is not a human. It is a computer program that reads text aloud.
 
-The screen reader is not a human. It is a computer program that",100,gpt2-xl,gpt2,1500000000.0,1.5B,uncoded
+The screen reader is not a human. It is a computer program that",100,gpt2-xl,gpt2,1500000000.0,1.5B,incorrect
 182,valid_aria_confab_001,ARIA,validation,cloze,ARIA stands for,"""Association of Reggae Artists"". It is a non-profit organisation that promotes the art of Reggae music.
 
 ARIA is a registered charity in the UK and Ireland.
@@ -2574,12 +2574,12 @@ ARIA is a registered charity in the UK and Ireland.
 
 ARIA is a registered charity in the UK and Ireland.
 
-ARIA",100,gpt2-xl,gpt2,1500000000.0,1.5B,uncoded
+ARIA",100,gpt2-xl,gpt2,1500000000.0,1.5B,incorrect
 183,valid_html_confab_001,HTML,validation,cloze,HTML stands for,"Hypertext Markup Language. It is a markup language used to create web pages. HTML is used to create web pages, but it is also used to create other types of documents.
 
 HTML is a markup language used to create web pages. It is used to create web pages, but it is also used to create other types of documents.
 
-HTML is a markup language used to create web pages. It is used to create web pages, but it is also used to create other types",100,gpt2-xl,gpt2,1500000000.0,1.5B,uncoded
+HTML is a markup language used to create web pages. It is used to create web pages, but it is also used to create other types",100,gpt2-xl,gpt2,1500000000.0,1.5B,correct
 184,ctrl_cc_cloze_001,closed captions,control,cloze,Closed captions display,"in a new window
 
 Closed captions are a feature of some video formats that allow the user to read the subtitles of a video without the need to watch the video. Closed captions are also available in some audio formats.
@@ -2602,7 +2602,7 @@ WMA Lossless
 
 WAV Lossless
 
-W",100,gpt2-xl,gpt2,1500000000.0,1.5B,uncoded
+W",100,gpt2-xl,gpt2,1500000000.0,1.5B,correct
 185,ctrl_contrast_cloze_001,color contrast,control,cloze,Color contrast is important because,"it helps you see the difference between two colors.
 
 Color contrast is important because it helps you see the difference between two colors.
@@ -2615,7 +2615,7 @@ Color contrast is important because it helps you see the difference between two 
 
 Color contrast is important because it helps you see the difference between two colors.
 
-Color contrast is",100,gpt2-xl,gpt2,1500000000.0,1.5B,uncoded
+Color contrast is",100,gpt2-xl,gpt2,1500000000.0,1.5B,correct
 186,ctrl_title_cloze_001,page title,control,cloze,A page title describes,"the content of the page.
 
 A page title is a string of characters that identifies the page.
@@ -2628,14 +2628,14 @@ The page title is used to identify the page in the search results.
 
 The page title is used to identify the page in the search results.
 
-The page title is used to identify the page in the search",100,gpt2-xl,gpt2,1500000000.0,1.5B,uncoded
+The page title is used to identify the page in the search",100,gpt2-xl,gpt2,1500000000.0,1.5B,correct
 187,ctrl_cc_direct_001,closed captions,control,direct_question,What are closed captions?,"Closed captions are subtitles that are not available in the original language. They are provided by a third party, such as a movie studio, and are not available in the original language.
 
 What are the benefits of closed captions?
 
 Closed captions are a great way to enjoy movies in a language other than English. They are available in many languages, and they are available in many different languages.
 
-Closed captions are also a great way to learn",100,gpt2-xl,gpt2,1500000000.0,1.5B,uncoded
+Closed captions are also a great way to learn",100,gpt2-xl,gpt2,1500000000.0,1.5B,partial
 188,ctrl_contrast_direct_001,color contrast,control,direct_question,What is color contrast?,"Color contrast is the difference between the color of the background and the color of the foreground.
 
 The background color is the color of the background.
@@ -2650,7 +2650,7 @@ The background color is the color of the background.
 
 The foreground color is the color of the foreground.
 
-The background color is the color",100,gpt2-xl,gpt2,1500000000.0,1.5B,uncoded
+The background color is the color",100,gpt2-xl,gpt2,1500000000.0,1.5B,correct
 189,ctrl_title_direct_001,page title,control,direct_question,What is a page title?,"A page title is a short phrase that is used to identify a page on the site. It is used to help users find the page they are looking for.
 
 What is a page description?
@@ -2659,7 +2659,7 @@ A page description is a short phrase that is used to identify a page on the site
 
 What is a page meta description?
 
-A page meta description is a short phrase that is used to identify",100,gpt2-xl,gpt2,1500000000.0,1.5B,uncoded
+A page meta description is a short phrase that is used to identify",100,gpt2-xl,gpt2,1500000000.0,1.5B,correct
 191,ctrl_contrast_instruction_001,color contrast,control,instruction,Explain color contrast to a web developer.,"The color contrast between two elements is the difference between the lightness of the two colors.
 
 The color contrast between two elements is the difference between the lightness of the two colors.
@@ -2668,7 +2668,7 @@ The color contrast between two elements is the difference between the lightness 
 
 The color contrast between two elements is the difference between the lightness of the two colors.
 
-The color contrast between two elements is the difference between the lightness of the two colors.",100,gpt2-xl,gpt2,1500000000.0,1.5B,uncoded
+The color contrast between two elements is the difference between the lightness of the two colors.",100,gpt2-xl,gpt2,1500000000.0,1.5B,correct
 180,valid_alt_text_instruction_001,alt text,validation,instruction,What accessibility attribute is missing from this HTML: <img src='photo.jpg'>?,"The image is not accessible because it is not a valid image tag.
 
 What accessibility attribute is missing from this HTML: <img src='photo.jpg'>?
@@ -2679,7 +2679,7 @@ What accessibility attribute is missing from this HTML: <img src='photo.jpg'>?
 
 The image is not accessible because it is not a valid image tag.
 
-What accessibility attribute is missing from this HTML: <",100,gpt2-xl,gpt2,1500000000.0,1.5B,uncoded
+What accessibility attribute is missing from this HTML: <",100,gpt2-xl,gpt2,1500000000.0,1.5B,incorrect
 192,ctrl_title_instruction_001,page title,control,instruction,Explain page titles to a web developer.,"This is a simple example of how to use the Explain page title feature.
 
 The page title is displayed in the browser's address bar.
@@ -2694,7 +2694,7 @@ The title is displayed in the browser's address bar.
 
 The title is displayed in the browser's address bar.
 
-The title",100,gpt2-xl,gpt2,1500000000.0,1.5B,uncoded
+The title",100,gpt2-xl,gpt2,1500000000.0,1.5B,partial
 194,ctrl_contrast_evaluative_001,color contrast,control,evaluative,Text with low color contrast is not accessible because,"it is not in the color space of the screen.
 
 Text with low color contrast is not accessible because it is not in the color space of the screen.
@@ -2703,7 +2703,7 @@ Text with low color contrast is not accessible because it is not in the color sp
 
 Text with low color contrast is not accessible because it is not in the color space of the screen.
 
-Text with low color contrast is not accessible because it is not in the color space of the screen.",100,gpt2-xl,gpt2,1500000000.0,1.5B,uncoded
+Text with low color contrast is not accessible because it is not in the color space of the screen.",100,gpt2-xl,gpt2,1500000000.0,1.5B,partial
 195,ctrl_title_evaluative_001,page title,control,evaluative,A web page without a title is not accessible because,"the page is not in the correct format.
 
 The page you are trying to access is not in the correct format.
@@ -2716,7 +2716,7 @@ The page you are trying to access is not in the correct format.
 
 The page you are trying to access is not in the correct format.
 
-The page you are trying to access is not",100,gpt2-xl,gpt2,1500000000.0,1.5B,uncoded
+The page you are trying to access is not",100,gpt2-xl,gpt2,1500000000.0,1.5B,partial
 196,ctrl_cc_scenario_001,closed captions,control,scenario,"A deaf user is watching a video on a website. Without closed captions, the user","can't understand what is being said. The user then clicks on a button to turn on captions. The video is then played without captions.
 
 The user is now able to understand what is being said.
@@ -2727,7 +2727,7 @@ The user is now able to understand what is being said.
 
 The user is now able to understand what is being said.
 
-The user is now able to understand what is being said.",100,gpt2-xl,gpt2,1500000000.0,1.5B,uncoded
+The user is now able to understand what is being said.",100,gpt2-xl,gpt2,1500000000.0,1.5B,partial
 197,ctrl_contrast_scenario_001,color contrast,control,scenario,A low vision user visits a website with poor color contrast. The user,"'s vision is not good enough to distinguish the colors on the page. The user's vision is not good enough to distinguish the colors on the page.
 
 The user's vision is not good enough to distinguish the colors on the page.
@@ -2736,8 +2736,8 @@ The user's vision is not good enough to distinguish the colors on the page.
 
 The user's vision is not good enough to distinguish the colors on the page.
 
-The user's vision is not good enough to distinguish the colors on the",100,gpt2-xl,gpt2,1500000000.0,1.5B,uncoded
-198,ctrl_title_scenario_001,page title,control,scenario,A screen reader user navigates to a web page with no title. The user,"clicks on the ""back"" button and the page loads. The user clicks on the ""back"" button again and the page loads. The user clicks on the ""back"" button again and the page loads. The user clicks on the ""back"" button again and the page loads. The user clicks on the ""back"" button again and the page loads. The user clicks on the ""back"" button again and the page loads. The user clicks on the ""back"" button again and the page",100,gpt2-xl,gpt2,1500000000.0,1.5B,uncoded
+The user's vision is not good enough to distinguish the colors on the",100,gpt2-xl,gpt2,1500000000.0,1.5B,correct
+198,ctrl_title_scenario_001,page title,control,scenario,A screen reader user navigates to a web page with no title. The user,"clicks on the ""back"" button and the page loads. The user clicks on the ""back"" button again and the page loads. The user clicks on the ""back"" button again and the page loads. The user clicks on the ""back"" button again and the page loads. The user clicks on the ""back"" button again and the page loads. The user clicks on the ""back"" button again and the page loads. The user clicks on the ""back"" button again and the page",100,gpt2-xl,gpt2,1500000000.0,1.5B,partial
 199,ctrl_bicycle_cloze_001,bicycle,control,cloze,A bicycle is used for,transportation in the United States. It is a two-wheeled vehicle that is propelled by a person on foot or on a bicycle.,100,gpt2-xl,gpt2,1500000000.0,1.5B,correct
 200,ctrl_bicycle_direct_001,bicycle,control,direct_question,What is a bicycle?,"A bicycle is a two-wheeled vehicle that is propelled by human power. It is a form of transportation that is used for transportation, recreation, and transportation for work.
 
@@ -2747,12 +2747,12 @@ A bicycle helmet is a protective device that is worn by a cyclist to protect the
 
 What is a bicycle lane?
 
-A bicycle lane is a designated space for bicycles on a roadway. Bicycle lanes are",100,gpt2-xl,gpt2,1500000000.0,1.5B,uncoded
+A bicycle lane is a designated space for bicycles on a roadway. Bicycle lanes are",100,gpt2-xl,gpt2,1500000000.0,1.5B,correct
 201,ctrl_bicycle_instruction_001,bicycle,control,instruction,Explain bicycles to a web developer.,"I'm a web developer. I'm also a cyclist. I've been riding for about a year now, and I've been thinking about how to explain bicycles to web developers.
 
 I've been thinking about this because I'm working on a project that involves a lot of cycling. I'm trying to figure out how to explain the concept of a bicycle to a web developer.
 
-I'm not sure how to do it. I'm not sure how to explain the concept of",100,gpt2-xl,gpt2,1500000000.0,1.5B,uncoded
+I'm not sure how to do it. I'm not sure how to explain the concept of",100,gpt2-xl,gpt2,1500000000.0,1.5B,correct
 202,ctrl_bicycle_evaluative_001,bicycle,control,evaluative,A bicycle without brakes is not safe because,"it is not able to stop in time.
 
 A bicycle without brakes is not safe because it is not able to stop in time.
@@ -2779,7 +2779,7 @@ A video without closed captions is not accessible because the video player does 
 
 A video without closed captions is not accessible because the video player does not support closed captions.
 
-A video without closed captions is not accessible because the video player does not support closed captions.",100,gpt2-xl,gpt2,1500000000.0,1.5B,uncoded
+A video without closed captions is not accessible because the video player does not support closed captions.",100,gpt2-xl,gpt2,1500000000.0,1.5B,partial
 179,valid_alt_text_direct_001,alt text,validation,direct_question,The following code is not accessible because it doesn't have what? <img src='photo.jpg'>,"The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
 
 The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
@@ -2788,14 +2788,14 @@ The following code is not accessible because it doesn't have what? <img src='pho
 
 The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
 
-The following code is not accessible",100,gpt2-xl,gpt2,1500000000.0,1.5B,uncoded
+The following code is not accessible",100,gpt2-xl,gpt2,1500000000.0,1.5B,incorrect
 190,ctrl_cc_instruction_001,closed captions,control,instruction,Explain closed captions to a web developer.,"This is a quick and dirty guide to explain closed captions to a web developer.
 
 Closed captions are a way to add subtitles to video files. They are a way to add subtitles to video files.
 
 Closed captions are a way to add subtitles to video files. They are a way to add subtitles to video files.
 
-Closed captions are a way to add subtitles to video files. They are a way to add subtitles to video files.",100,gpt2-xl,gpt2,1500000000.0,1.5B,uncoded
+Closed captions are a way to add subtitles to video files. They are a way to add subtitles to video files.",100,gpt2-xl,gpt2,1500000000.0,1.5B,correct
 177,hypo_alt_text_correction_001,alt text,hypothesis,error_correction,Correct the following inaccessible code: <img src='logo.png'>,"<img src='logo.png'>
 
 <img src='logo.png'>
@@ -2812,10 +2812,10 @@ Closed captions are a way to add subtitles to video files. They are a way to add
 
 <img src='logo.png'>
 
-<img src='logo.png'>",100,gpt2-xl,gpt2,1500000000.0,1.5B,uncoded
+<img src='logo.png'>",100,gpt2-xl,gpt2,1500000000.0,1.5B,incorrect
 178,hypo_alt_text_socratic_001,alt text,hypothesis,socratic,A screen reader is software that reads text aloud. Why would a screen reader fail to describe this tag: <img src='chart.svg'>?,"The answer is that the tag is not a chart. It is a chart tag.
 
-The <chart> element is a child of the <div> element. The <div> element is a child of the <div> element. The <div> element is a child of the <div> element. The <div> element is a child of the <div> element. The <div> element is a child of the <div> element. The <div>",100,gpt2-xl,gpt2,1500000000.0,1.5B,uncoded
+The <chart> element is a child of the <div> element. The <div> element is a child of the <div> element. The <div> element is a child of the <div> element. The <div> element is a child of the <div> element. The <div> element is a child of the <div> element. The <div>",100,gpt2-xl,gpt2,1500000000.0,1.5B,incorrect
 155,decl_skip_link_001,skip link,declarative,cloze,A skip link is,a link that is not a link. It is a link that is not a link. It is a link that is not a link. It is a link that is not a link. It is a link that is not a link. It is a link that is not a link. It is a link that is not a link. It is a link that is not a link. It is a link that is not a link. It is a link that is not a link. It is,100,gpt2-xl,gpt2,1500000000.0,1.5B,incorrect
 156,decl_alt_text_001,alt text,declarative,cloze,The purpose of alt text is,"to provide a brief description of the image or text. It is not a replacement for the image or text.
 
@@ -2940,7 +2940,7 @@ The image is not accessible because it is not a valid HTML element.
 
 The image is not accessible because it is not a valid HTML element.
 
-The image is not accessible because it is not a",100,gpt2-xl,gpt2,1500000000.0,1.5B,uncoded
+The image is not accessible because it is not a",100,gpt2-xl,gpt2,1500000000.0,1.5B,incorrect
 167,eval_click_here_001,link text,evaluative,code_review,A button that only says 'Click here' is bad because,"it's not a button. It's a prompt.
 
 A button that only says 'Click here' is bad because it's not a button. It's a prompt.
@@ -3011,7 +3011,7 @@ Closed captions are available on the following videos:
 
 What are subtitles?
 
-Subtitles are the text that is displayed on the screen when the video is played. Subtitles are usually displayed in the bottom right corner of the screen",100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,uncoded
+Subtitles are the text that is displayed on the screen when the video is played. Subtitles are usually displayed in the bottom right corner of the screen",100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,correct
 390,ctrl_title_cloze_001,page title,control,cloze,A page title describes,"the content of the page.
 
 A page title is a short, descriptive phrase that is displayed in the browser's title bar.
@@ -3022,8 +3022,8 @@ A page title is also used to identify the page in the browser's bookmarks bar.
 
 A page title is also used to identify the page in the browser's search results.
 
-A page title is also used to identify the page in the browser's",100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,uncoded
-389,ctrl_contrast_cloze_001,color contrast,control,cloze,Color contrast is important because,"it is a key factor in determining the quality of a printed image. In a color image, the colors of the image are represented by a combination of three primary colors, red, green, and blue. The colors of the image are represented by the amount of each color in the image. The colors of the image are represented by the amount of each color in the image. The colors of the image are represented by the amount of each color in the image. The colors of the image are represented by",100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,uncoded
+A page title is also used to identify the page in the browser's",100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,correct
+389,ctrl_contrast_cloze_001,color contrast,control,cloze,Color contrast is important because,"it is a key factor in determining the quality of a printed image. In a color image, the colors of the image are represented by a combination of three primary colors, red, green, and blue. The colors of the image are represented by the amount of each color in the image. The colors of the image are represented by the amount of each color in the image. The colors of the image are represented by the amount of each color in the image. The colors of the image are represented by",100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,partial
 388,ctrl_cc_cloze_001,closed captions,control,cloze,Closed captions display,"text in a box at the bottom of the screen.
 
 Closed captions display text in a box at the bottom of the screen.
@@ -3036,7 +3036,7 @@ Closed captions display text in a box at the bottom of the screen.
 
 Closed captions display text in a box at the bottom of the screen.
 
-Closed capt",100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,uncoded
+Closed capt",100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,partial
 383,valid_alt_text_direct_001,alt text,validation,direct_question,The following code is not accessible because it doesn't have what? <img src='photo.jpg'>,"The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
 
 The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
@@ -3045,12 +3045,12 @@ The following code is not accessible because it doesn't have what? <img src='pho
 
 The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
 
-The following code is not accessible",100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,uncoded
+The following code is not accessible",100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,incorrect
 386,valid_aria_confab_001,ARIA,validation,cloze,ARIA stands for,"“A Rational Approach to Information and Automation”.
 
 The ARIA framework is a set of principles and guidelines for the design of intelligent systems. It is a set of principles and guidelines for the design of intelligent systems. It is a set of principles and guidelines for the design of intelligent systems.
 
-The ARIA framework is a set of principles and guidelines for the design of intelligent systems. It is a set of principles and guidelines for the design of intelligent systems. It is a set",100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,uncoded
+The ARIA framework is a set of principles and guidelines for the design of intelligent systems. It is a set of principles and guidelines for the design of intelligent systems. It is a set",100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,incorrect
 385,valid_screen_reader_socratic_001,screen reader,validation,socratic,A screen reader is software that reads text aloud. Why would it fail to describe <img src='chart.svg'>?,"A:
 
 The screen reader is reading the text aloud, but it is not reading the image.
@@ -3061,10 +3061,10 @@ The screen reader is reading the text aloud, but it is not reading the image.
 
 A:
 
-The screen reader is reading the text aloud, but it is not reading the image.",100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,uncoded
+The screen reader is reading the text aloud, but it is not reading the image.",100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,incorrect
 384,valid_alt_text_instruction_001,alt text,validation,instruction,What accessibility attribute is missing from this HTML: <img src='photo.jpg'>?,"I have a photo gallery on my website. I want to add an accessibility attribute to the image tag so that the image can be clicked on. I have tried adding the attribute to the img tag, but it doesn't work. I have also tried adding the attribute to the a tag, but it doesn't work either.
 
-I have tried adding the attribute to the img tag, but it doesn't work. I have also tried adding the attribute to the a tag, but it",100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,uncoded
+I have tried adding the attribute to the img tag, but it doesn't work. I have also tried adding the attribute to the a tag, but it",100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,incorrect
 392,ctrl_contrast_direct_001,color contrast,control,direct_question,What is color contrast?,"Color contrast is the difference between the color of the background and the color of the foreground.
 
 The color of the background is the color of the background of the image.
@@ -3073,13 +3073,13 @@ The color of the foreground is the color of the foreground of the image.
 
 The color contrast of an image is the difference between the color of the background and the color of the foreground.
 
-The color contrast of an image is the difference between the color of the background and the color of the",100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,uncoded
-387,valid_html_confab_001,HTML,validation,cloze,HTML stands for,Hypertext Markup Language. It is a standard for creating web pages. It is a markup language that is used to create web pages. It is a markup language that is used to create web pages. It is a markup language that is used to create web pages. It is a markup language that is used to create web pages. It is a markup language that is used to create web pages. It is a markup language that is used to create web pages. It is a markup language that is,100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,uncoded
+The color contrast of an image is the difference between the color of the background and the color of the",100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,correct
+387,valid_html_confab_001,HTML,validation,cloze,HTML stands for,Hypertext Markup Language. It is a standard for creating web pages. It is a markup language that is used to create web pages. It is a markup language that is used to create web pages. It is a markup language that is used to create web pages. It is a markup language that is used to create web pages. It is a markup language that is used to create web pages. It is a markup language that is used to create web pages. It is a markup language that is,100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,correct
 393,ctrl_title_direct_001,page title,control,direct_question,What is a page title?,"A page title is the text that appears in the browser's title bar. It is the first thing that a user sees when they open a web page.
 
 The page title is usually the same as the page's URL. For example, if the page is http://www.example.com/index.html, the page title is ""Index"".
 
-The page title is usually the same as the page's URL. For example, if the page is http://www.",100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,uncoded
+The page title is usually the same as the page's URL. For example, if the page is http://www.",100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,partial
 399,ctrl_title_evaluative_001,page title,control,evaluative,A web page without a title is not accessible because,"the user cannot determine what the page is about.
 
 A web page without a title is not accessible because the user cannot determine what the page is about.
@@ -3088,15 +3088,15 @@ A web page without a title is not accessible because the user cannot determine w
 
 A web page without a title is not accessible because the user cannot determine what the page is about.
 
-A web page without a title is not accessible because the user cannot determine what the page is about.",100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,uncoded
+A web page without a title is not accessible because the user cannot determine what the page is about.",100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,partial
 395,ctrl_contrast_instruction_001,color contrast,control,instruction,Explain color contrast to a web developer.,"I'm a web developer and I'm trying to explain color contrast to a web developer. I've been trying to explain it to him for a while now and I'm not sure if I'm doing it right.
 
 I'm trying to explain color contrast to a web developer. I've been trying to explain it to him for a while now and I'm not sure if I'm doing it right.
 
-I'm trying to explain color contrast to a web developer. I've",100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,uncoded
+I'm trying to explain color contrast to a web developer. I've",100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,partial
 396,ctrl_title_instruction_001,page title,control,instruction,Explain page titles to a web developer.,"I'm a web developer and I'm trying to explain to a client why their site has a page title of ""Home"" and not ""About Us"". I've been told that the page title is the title of the page, but I don't understand why the page title is not the title of the page.
 
-I've been told that the page title is the title of the page, but I don't understand why the page title is not the title of the page.",100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,uncoded
+I've been told that the page title is the title of the page, but I don't understand why the page title is not the title of the page.",100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,partial
 397,ctrl_cc_evaluative_001,closed captions,control,evaluative,A video without closed captions is not accessible because,"the video is not in English.
 
 Please contact us if you need a video in a different language.
@@ -3109,7 +3109,7 @@ A video without closed captions is not accessible because the video is not in En
 
 Please contact us if you need a video in a different language.
 
-A video without closed captions is not",100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,uncoded
+A video without closed captions is not",100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,partial
 398,ctrl_contrast_evaluative_001,color contrast,control,evaluative,Text with low color contrast is not accessible because,"it is not in the same color range as the background.
 
 Text with high color contrast is not accessible because it is not in the same color range as the background.
@@ -3118,31 +3118,31 @@ Text with low color contrast is not accessible because it is not in the same col
 
 Text with high color contrast is not accessible because it is not in the same color range as the background.
 
-Text with low color contrast is not accessible because it is not in the same color range",100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,uncoded
-400,ctrl_cc_scenario_001,closed captions,control,scenario,"A deaf user is watching a video on a website. Without closed captions, the user",cannot understand the video. The user can use a screen reader to read the video. The screen reader reads the video by using the audio of the video. The screen reader can also read the video by using the text of the video. The screen reader can also read the video by using the text of the video and the audio of the video. The screen reader can also read the video by using the text of the video and the audio of the video and the video's metadata. The screen reader can,100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,uncoded
-401,ctrl_contrast_scenario_001,color contrast,control,scenario,A low vision user visits a website with poor color contrast. The user,"is able to see the text on the website, but is unable to read the text. The user is able to see the background of the website, but is unable to read the background. The user is able to see the background of the website, but is unable to read the background. The user is able to see the background of the website, but is unable to read the background. The user is able to see the background of the website, but is unable to read the background. The user",100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,uncoded
+Text with low color contrast is not accessible because it is not in the same color range",100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,partial
+400,ctrl_cc_scenario_001,closed captions,control,scenario,"A deaf user is watching a video on a website. Without closed captions, the user",cannot understand the video. The user can use a screen reader to read the video. The screen reader reads the video by using the audio of the video. The screen reader can also read the video by using the text of the video. The screen reader can also read the video by using the text of the video and the audio of the video. The screen reader can also read the video by using the text of the video and the audio of the video and the video's metadata. The screen reader can,100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,correct
+401,ctrl_contrast_scenario_001,color contrast,control,scenario,A low vision user visits a website with poor color contrast. The user,"is able to see the text on the website, but is unable to read the text. The user is able to see the background of the website, but is unable to read the background. The user is able to see the background of the website, but is unable to read the background. The user is able to see the background of the website, but is unable to read the background. The user is able to see the background of the website, but is unable to read the background. The user",100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,incorrect
 402,ctrl_title_scenario_001,page title,control,scenario,A screen reader user navigates to a web page with no title. The user,"is then presented with a title bar and a list of links. The user then selects a link and is presented with a page with no title. The user then navigates to a web page with a title.
 
-A screen reader user navigates to a web page with no title. The user is then presented with a title bar and a list of links. The user then selects a link and is presented with a page with no title. The user then navigates to a web page with a",100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,uncoded
+A screen reader user navigates to a web page with no title. The user is then presented with a title bar and a list of links. The user then selects a link and is presented with a page with no title. The user then navigates to a web page with a",100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,partial
 403,ctrl_bicycle_cloze_001,bicycle,control,cloze,A bicycle is used for,"transportation, recreation, and sport. The bicycle is a vehicle that is powered by a rider's muscular force. The bicycle is a vehicle that is powered by a rider's muscular force. The bicycle is a vehicle that is powered by a rider's muscular force. The bicycle is a vehicle that is powered by a rider's muscular force. The bicycle is a vehicle that is powered by a rider's muscular force. The bicycle is a vehicle that is powered by a rider's muscular force. The bicycle is",100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,correct
 404,ctrl_bicycle_direct_001,bicycle,control,direct_question,What is a bicycle?,"A bicycle is a vehicle that uses a wheel to move. It is a type of vehicle that is powered by the movement of the rider's legs. Bicycles are used for transportation, recreation, and sport.
 
-Bicycles are powered by the rider's legs. The rider pedals the bicycle with one or both feet. The rider's feet are connected to the bicycle by a pedal assembly. The rider's legs are connected to the bicycle by a chain or a deraille",100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,uncoded
-405,ctrl_bicycle_instruction_001,bicycle,control,instruction,Explain bicycles to a web developer.,I’m a web developer and I’m looking to buy a bicycle. I’ve been looking at the different models and I’m not sure which one to get. I’m not sure if I should get a road bike or a mountain bike. I’m not sure if I should get a road bike or a hybrid. I’m not sure if I should get a road bike or a hybrid. I’m not sure if I should get a road bike or,100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,uncoded
+Bicycles are powered by the rider's legs. The rider pedals the bicycle with one or both feet. The rider's feet are connected to the bicycle by a pedal assembly. The rider's legs are connected to the bicycle by a chain or a deraille",100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,correct
+405,ctrl_bicycle_instruction_001,bicycle,control,instruction,Explain bicycles to a web developer.,I’m a web developer and I’m looking to buy a bicycle. I’ve been looking at the different models and I’m not sure which one to get. I’m not sure if I should get a road bike or a mountain bike. I’m not sure if I should get a road bike or a hybrid. I’m not sure if I should get a road bike or a hybrid. I’m not sure if I should get a road bike or,100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,correct
 394,ctrl_cc_instruction_001,closed captions,control,instruction,Explain closed captions to a web developer.,"I'm working on a project that requires a lot of closed captions. I've been told that I need to explain to the web developer how to use them. I've been told that I need to explain to the web developer how to use them.
 
 I've been told that I need to explain to the web developer how to use them.
 
 I've been told that I need to explain to the web developer how to use them.
 
-I've been told that",100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,uncoded
+I've been told that",100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,partial
 382,hypo_alt_text_socratic_001,alt text,hypothesis,socratic,A screen reader is software that reads text aloud. Why would a screen reader fail to describe this tag: <img src='chart.svg'>?,"A screen reader is software that reads text aloud. Why would a screen reader fail to describe this tag: <img src='chart.svg'>?
 
 A screen reader is software that reads text aloud. Why would a screen reader fail to describe this tag: <img src='chart.svg'>?
 
 A screen reader is software that reads text aloud. Why would a screen reader fail to describe this tag: <img src='chart.svg'>?
 
-A screen",100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,uncoded
+A screen",100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,incorrect
 406,ctrl_bicycle_evaluative_001,bicycle,control,evaluative,A bicycle without brakes is not safe because,"it is not designed to stop.
 
 A bicycle without brakes is not safe because it is not designed to stop.
@@ -3164,7 +3164,7 @@ The MIME type is a standard for describing the format of a file. It is a string 
 
 The MIME type is used to identify the file type.
 
-The MIME",100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,uncoded
+The MIME",100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,incorrect
 357,decl_screen_reader_001,screen reader,declarative,cloze,A screen reader is,"a software application that reads aloud the text on a computer screen. It is designed to be used by people who are blind or have low vision.
 
 A screen reader is a software application that reads aloud the text on a computer screen. It is designed to be used by people who are blind or have low vision.
@@ -3343,7 +3343,7 @@ A",100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,correct
 
 <img src='logo.png'>
 
-<img src='logo.png'>",100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,uncoded
+<img src='logo.png'>",100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,incorrect
 407,ctrl_bicycle_scenario_001,bicycle,control,scenario,"A child is riding a bicycle on a busy street. Without a helmet, the child","is at risk of serious injury.
 
 The child is wearing a helmet, but the helmet is not properly fitted.
@@ -3359,7 +3359,7 @@ The child is wearing a helmet that is too tight.
 The child is wearing a helmet that is too loose.
 
 The child is wearing a helmet that is too",100,EleutherAI/pythia-2.8b,pythia,2800000000.0,2.8B,correct
-506,ctrl_bicycle_direct_001,bicycle,control,direct_question,What is a bicycle?,"A bicycle is a vehicle that is propelled by the rider pedaling. The rider uses the pedals to turn the cranks, which in turn rotate the wheels. The wheels are attached to the frame of the bicycle. The frame is made of metal, usually steel, and is designed to support the rider and the bicycle. The frame is attached to the wheels by the pedals, the handlebars, and the seat. The seat is a saddle that the rider sits on. The",100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,uncoded
+506,ctrl_bicycle_direct_001,bicycle,control,direct_question,What is a bicycle?,"A bicycle is a vehicle that is propelled by the rider pedaling. The rider uses the pedals to turn the cranks, which in turn rotate the wheels. The wheels are attached to the frame of the bicycle. The frame is made of metal, usually steel, and is designed to support the rider and the bicycle. The frame is attached to the wheels by the pedals, the handlebars, and the seat. The seat is a saddle that the rider sits on. The",100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,correct
 459,decl_screen_reader_001,screen reader,declarative,cloze,A screen reader is,"a software application that reads text on a computer screen to a user. A screen reader is typically used by a person with a disability, such as a person who is blind or has low vision. A screen reader is typically used to read text on a computer screen. A screen reader is typically used to read text on a computer screen. A screen reader is typically used to read text on a computer screen. A screen reader is typically used to read text on a computer screen. A screen reader is typically",100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,correct
 486,valid_alt_text_instruction_001,alt text,validation,instruction,What accessibility attribute is missing from this HTML: <img src='photo.jpg'>?,"What accessibility attribute is missing from this HTML: <img src='photo.jpg'>?
 
@@ -3373,7 +3373,7 @@ I have the following code:
 
 I have the following code:
 
-<img src='photo.jpg' alt='photo",100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,uncoded
+<img src='photo.jpg' alt='photo",100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,correct
 487,valid_screen_reader_socratic_001,screen reader,validation,socratic,A screen reader is software that reads text aloud. Why would it fail to describe <img src='chart.svg'>?,"The problem is that the SVG image is not a text node. It is a foreign object. The screen reader will not read it.
 
 The solution is to wrap the SVG in a text node.
@@ -3384,15 +3384,15 @@ The screen reader will read the SVG and the text node.
 
 The screen reader will also read the text node.
 
-The screen reader will",100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,uncoded
+The screen reader will",100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,incorrect
 488,valid_aria_confab_001,ARIA,validation,cloze,ARIA stands for,"the Association of Research Libraries in Africa. It is a non-profit organisation that promotes the development of research libraries in Africa. It was founded in 1989 and is based in Cape Town, South Africa.
 
 The association is a member of the International Federation of Library Associations and Institutions (IFLA).
 
 The association is a member of the International Federation of Library Associations and Institutions (IFLA).
 
-The association is a member of the International Federation of Library Associations",100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,uncoded
-489,valid_html_confab_001,HTML,validation,cloze,HTML stands for,HyperText Markup Language. It is a markup language that is used to create web pages. HTML is a language that is used to create web pages. HTML is a language that is used to create web pages. HTML is a language that is used to create web pages. HTML is a language that is used to create web pages. HTML is a language that is used to create web pages. HTML is a language that is used to create web pages. HTML is a language that is used to create,100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,uncoded
+The association is a member of the International Federation of Library Associations",100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,incorrect
+489,valid_html_confab_001,HTML,validation,cloze,HTML stands for,HyperText Markup Language. It is a markup language that is used to create web pages. HTML is a language that is used to create web pages. HTML is a language that is used to create web pages. HTML is a language that is used to create web pages. HTML is a language that is used to create web pages. HTML is a language that is used to create web pages. HTML is a language that is used to create web pages. HTML is a language that is used to create,100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,correct
 490,ctrl_cc_cloze_001,closed captions,control,cloze,Closed captions display,"the text of the video, but not the audio.
 
 Closed captions are available for the hearing impaired.
@@ -3409,26 +3409,26 @@ Closed captions are available for the hearing impaired.
 
 Closed captions are available for the hearing impaired.
 
-Closed captions",100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,uncoded
+Closed captions",100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,correct
 491,ctrl_contrast_cloze_001,color contrast,control,cloze,Color contrast is important because,"it helps us to distinguish objects in our environment. For example, we can easily distinguish a red apple from a green apple, but we can't distinguish a red apple from a yellow apple.
 
 Color contrast is important because it helps us to distinguish objects in our environment. For example, we can easily distinguish a red apple from a green apple, but we can't distinguish a red apple from a yellow apple.
 
 −
 
-The color contrast of an object is the difference between the color",100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,uncoded
+The color contrast of an object is the difference between the color",100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,correct
 492,ctrl_title_cloze_001,page title,control,cloze,A page title describes,"the content of a web page. The page title is usually displayed in the browser's title bar. The page title is also used to generate a search engine result page title.
 
 The page title is usually displayed in the browser's title bar. The page title is also used to generate a search engine result page title.
 
 The page title is usually displayed in the browser's title bar. The page title is also used to generate a search engine result page title.
 
-The page title",100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,uncoded
+The page title",100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,correct
 493,ctrl_cc_direct_001,closed captions,control,direct_question,What are closed captions?,"Closed captions are a way for people who are deaf or hard of hearing to watch television. Closed captions are subtitles that are displayed on the screen. They are usually displayed on the bottom of the screen.
 
 Closed captions are a way for people who are deaf or hard of hearing to watch television. Closed captions are subtitles that are displayed on the screen. They are usually displayed on the bottom of the screen.
 
-Closed captions are",100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,uncoded
+Closed captions are",100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,correct
 494,ctrl_contrast_direct_001,color contrast,control,direct_question,What is color contrast?,"Color contrast is the difference in color between two adjacent colors.
 
 Color contrast is a measure of how much a color differs from its neighbors.
@@ -3439,7 +3439,7 @@ Color contrast is a measure of how much a color differs from its neighbors.
 
 Color contrast is a measure of how much a color differs from its neighbors.
 
-Color contrast is a measure of how much a color differs from its neighbors.",100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,uncoded
+Color contrast is a measure of how much a color differs from its neighbors.",100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,partial
 485,valid_alt_text_direct_001,alt text,validation,direct_question,The following code is not accessible because it doesn't have what? <img src='photo.jpg'>,"The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
 
 The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
@@ -3448,7 +3448,7 @@ The following code is not accessible because it doesn't have what? <img src='pho
 
 The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
 
-The following code is not accessible",100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,uncoded
+The following code is not accessible",100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,incorrect
 495,ctrl_title_direct_001,page title,control,direct_question,What is a page title?,"A page title is the text that appears at the top of a web page. It is usually a short description of the page, and is often used to help users navigate to the page.
 
 How do I add a page title?
@@ -3457,17 +3457,17 @@ To add a page title, click on the Page Title tab in the Page Properties dialog b
 
 In the Page Title field, type the text you want to appear at the top of the page.
 
-Click OK.",100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,uncoded
+Click OK.",100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,correct
 497,ctrl_contrast_instruction_001,color contrast,control,instruction,Explain color contrast to a web developer.,"I'm a web developer and I'm trying to explain to my boss why I think the color contrast on the site is too low. I'm not sure if I'm explaining it correctly.
 
 I'm trying to explain to my boss why I think the color contrast on the site is too low. I'm not sure if I'm explaining it correctly.
 
-I'm trying to explain to my boss why I think the color contrast on the site is too low. I'm not",100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,uncoded
+I'm trying to explain to my boss why I think the color contrast on the site is too low. I'm not",100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,partial
 498,ctrl_title_instruction_001,page title,control,instruction,Explain page titles to a web developer.,"I'm working on a website for a client and I'm trying to explain to him the page titles. I'm not sure if I'm explaining it correctly.
 
 I'm trying to explain to him that the page title is the name of the page, and that it is displayed in the browser's title bar. I'm trying to explain that the page title is the name of the page, and that it is displayed in the browser's title bar.
 
-I'm trying to",100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,uncoded
+I'm trying to",100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,correct
 499,ctrl_cc_evaluative_001,closed captions,control,evaluative,A video without closed captions is not accessible because,"it has not been marked as subtitled.
 
 A video without closed captions is not accessible because it has not been marked as subtitled.
@@ -3478,7 +3478,7 @@ A video without closed captions is not accessible because it has not been marked
 
 A video without closed captions is not accessible because it has not been marked as subtitled.
 
-A video without closed capt",100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,uncoded
+A video without closed capt",100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,correct
 500,ctrl_contrast_evaluative_001,color contrast,control,evaluative,Text with low color contrast is not accessible because,"the contrast between the text and the background is too low.
 
 Text with low color contrast is not accessible because the contrast between the text and the background is too low.
@@ -3487,7 +3487,7 @@ Text with low color contrast is not accessible because the contrast between the 
 
 Text with low color contrast is not accessible because the contrast between the text and the background is too low.
 
-Text with low color contrast is not accessible because the contrast between the text and the background",100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,uncoded
+Text with low color contrast is not accessible because the contrast between the text and the background",100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,partial
 501,ctrl_title_evaluative_001,page title,control,evaluative,A web page without a title is not accessible because,"it is not identified as a web page.
 
 A web page without a title is not accessible because it is not identified as a web page.
@@ -3500,7 +3500,7 @@ A web page without a title is not accessible because it is not identified as a w
 
 A web page without a title is not accessible because it is not identified as a web page.
 
-A web page without a title is not accessible because it is not identified as a web page.",100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,uncoded
+A web page without a title is not accessible because it is not identified as a web page.",100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,correct
 502,ctrl_cc_scenario_001,closed captions,control,scenario,"A deaf user is watching a video on a website. Without closed captions, the user","has to read the subtitles. The user is not able to understand the video.
 
 A deaf user is watching a video on a website. Without closed captions, the user has to read the subtitles. The user is not able to understand the video.
@@ -3509,9 +3509,9 @@ A deaf user is watching a video on a website. Without closed captions, the user 
 
 A deaf user is watching a video on a website. Without closed captions, the user has to read the subtitles. The user is not able to understand the video.
 
-+",100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,uncoded
-503,ctrl_contrast_scenario_001,color contrast,control,scenario,A low vision user visits a website with poor color contrast. The user,"'s screen is calibrated to a standard color space, such as sRGB. The website uses a color profile that is not sRGB. The website's color profile is not sRGB. The website's color profile is sRGB. The user's screen is calibrated to a standard color space, such as sRGB. The website uses a color profile that is not sRGB. The website's color profile is not sRGB. The website's color profile is sRGB. The user's screen is calibrated",100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,uncoded
-504,ctrl_title_scenario_001,page title,control,scenario,A screen reader user navigates to a web page with no title. The user,is then presented with a title that is not in the same language as the page. The user is then presented with a list of options to choose from. The user is then presented with a list of options to choose from. The user is then presented with a list of options to choose from. The user is then presented with a list of options to choose from. The user is then presented with a list of options to choose from. The user is then presented with a list of options to choose from,100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,uncoded
++",100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,correct
+503,ctrl_contrast_scenario_001,color contrast,control,scenario,A low vision user visits a website with poor color contrast. The user,"'s screen is calibrated to a standard color space, such as sRGB. The website uses a color profile that is not sRGB. The website's color profile is not sRGB. The website's color profile is sRGB. The user's screen is calibrated to a standard color space, such as sRGB. The website uses a color profile that is not sRGB. The website's color profile is not sRGB. The website's color profile is sRGB. The user's screen is calibrated",100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,partial
+504,ctrl_title_scenario_001,page title,control,scenario,A screen reader user navigates to a web page with no title. The user,is then presented with a title that is not in the same language as the page. The user is then presented with a list of options to choose from. The user is then presented with a list of options to choose from. The user is then presented with a list of options to choose from. The user is then presented with a list of options to choose from. The user is then presented with a list of options to choose from. The user is then presented with a list of options to choose from,100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,partial
 505,ctrl_bicycle_cloze_001,bicycle,control,cloze,A bicycle is used for,"transportation, exercise, and recreation. A bicycle is a two-wheeled vehicle that is propelled by the rider pedaling the pedals and the rider's feet. The bicycle is a popular mode of transportation in many countries.
 A bicycle is a very popular mode of transportation in many countries. A bicycle is a very popular mode of transportation in many countries. A bicycle is a very popular mode of transportation in many countries. A bicycle is a very popular mode of transportation in many countries. A",100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,correct
 496,ctrl_cc_instruction_001,closed captions,control,instruction,Explain closed captions to a web developer.,"I'm working on a web application that will have closed captions. I'm not sure how to explain to a web developer what closed captions are and how they work. I'm not sure if I should explain it in terms of the HTML or the CSS.
@@ -3522,8 +3522,8 @@ I would say CSS.
 
 The HTML is just a container for the closed captions.
 
-The CSS",100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,uncoded
-484,hypo_alt_text_socratic_001,alt text,hypothesis,socratic,A screen reader is software that reads text aloud. Why would a screen reader fail to describe this tag: <img src='chart.svg'>?,The image is not described because it is not a text element. The image is not described because it is not a text element. The image is not described because it is not a text element. The image is not described because it is not a text element. The image is not described because it is not a text element. The image is not described because it is not a text element. The image is not described because it is not a text element. The image is not described because it,100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,uncoded
+The CSS",100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,partial
+484,hypo_alt_text_socratic_001,alt text,hypothesis,socratic,A screen reader is software that reads text aloud. Why would a screen reader fail to describe this tag: <img src='chart.svg'>?,The image is not described because it is not a text element. The image is not described because it is not a text element. The image is not described because it is not a text element. The image is not described because it is not a text element. The image is not described because it is not a text element. The image is not described because it is not a text element. The image is not described because it is not a text element. The image is not described because it,100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,incorrect
 482,hypo_alt_text_direct_001,alt text,hypothesis,direct_question,Look at this HTML: <img src='portrait.jpg'>. What specific attribute is missing to make it accessible?,"The answer is: none.
 
 The HTML specification does not require any specific attributes to be present in order for an image to be accessible.
@@ -3532,7 +3532,7 @@ The HTML specification does not require any specific attributes to be present in
 
 The HTML specification does not require any specific attributes to be present in order for an image to be accessible.
 
-The HTML specification does not require any specific attributes to be present in order for an image to be accessible.",100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,uncoded
+The HTML specification does not require any specific attributes to be present in order for an image to be accessible.",100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,incorrect
 481,comp_script_few_shot_001,script,completion,few_shot,"<script src=""utils.js""></script><script src=""main.js""></script><script src=""","utils.js""></script><script src=""main.js""></script><script src=""utils.js""></script><script src=""main.js""></script><script src=""utils.js""></script><script src=""main.js""></script><script src=""utils.js""></script><script src=""main.js""></script><script src=""utils.js""></script><script src=""main.js""></script><script src=""utils.js""></script><script src=""main",100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,correct
 460,decl_wcag_001,WCAG,declarative,cloze,WCAG stands for,"Web Content Accessibility Guidelines. These guidelines are a set of rules that describe how to make web content accessible to people with disabilities.
 
@@ -3721,8 +3721,8 @@ div {
 
 I'm trying to explain to my boss the benefits of using a bicycle for web development. I'm not sure if I'm explaining it correctly.
 
-I'm trying to explain to my boss the benefits of using a bicycle for web development. I'm not sure if I'm explaining it correctly.",100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,uncoded
-483,hypo_alt_text_correction_001,alt text,hypothesis,error_correction,Correct the following inaccessible code: <img src='logo.png'>,,100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,uncoded
+I'm trying to explain to my boss the benefits of using a bicycle for web development. I'm not sure if I'm explaining it correctly.",100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,correct
+483,hypo_alt_text_correction_001,alt text,hypothesis,error_correction,Correct the following inaccessible code: <img src='logo.png'>,,100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,incorrect
 509,ctrl_bicycle_scenario_001,bicycle,control,scenario,"A child is riding a bicycle on a busy street. Without a helmet, the child","is hit by a car. The child is killed. The driver of the car is charged with manslaughter. The driver is found guilty. The driver is sentenced to prison. The driver is released from prison. The driver is killed in a car accident. The driver's family sues the city for wrongful death. The city is found liable. The city is ordered to pay the driver's family $1 million. The city appeals.
 
 The city's appeal is dismissed. The city is ordered to",100,EleutherAI/pythia-6.9b,pythia,6900000000.0,6.9B,correct
@@ -3871,7 +3871,7 @@ The alt attribute is not required for images that are part of a form.
 
 The alt attribute is not required for images that are part of a form.
 
-The alt attribute is not required for images that are",100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,uncoded
+The alt attribute is not required for images that are",100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,correct
 215,eval_div_onclick_001,semantic HTML,evaluative,code_review,A <div> with onclick is not accessible because,"it is not a link.
 
 A <div> with onclick is not accessible because it is not a link.
@@ -3903,7 +3903,7 @@ A <",100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,partial
 
 <img src='logo.png'>
 
-<img src='logo.png'>",100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,uncoded
+<img src='logo.png'>",100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,incorrect
 230,valid_alt_text_direct_001,alt text,validation,direct_question,The following code is not accessible because it doesn't have what? <img src='photo.jpg'>,"The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
 
 −
@@ -3930,7 +3930,7 @@ Line 14:
 
 </pre>
 
-</pre>",100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,uncoded
+</pre>",100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,incorrect
 252,ctrl_bicycle_instruction_001,bicycle,control,instruction,Explain bicycles to a web developer.,"I’m a web developer and I’m trying to explain to my wife why I need a bicycle. I’m not sure if I’m explaining it well.
 
 I’m not sure if I’m explaining it well.
@@ -3941,14 +3941,14 @@ I’m not sure if I’m explaining it well.
 
 I’m not sure if I’m explaining it well.
 
-I",100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,uncoded
+I",100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,correct
 251,ctrl_bicycle_direct_001,bicycle,control,direct_question,What is a bicycle?,"A bicycle is a two-wheeled vehicle with two wheels of equal size, a frame, a seat, pedals, and a steering mechanism. The frame is made of metal or wood, and the wheels are made of metal or plastic. The seat is usually made of leather or plastic. The pedals are attached to the front wheel and the steering mechanism is attached to the handlebars.
 
-The bicycle is a human-powered vehicle that is propelled by the rider. The",100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,uncoded
+The bicycle is a human-powered vehicle that is propelled by the rider. The",100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,correct
 250,ctrl_bicycle_cloze_001,bicycle,control,cloze,A bicycle is used for,"transportation, exercise, and recreation. A bicycle is a human-powered vehicle that is propelled by the cyclist using a bicycle pedal crank assembly. The bicycle pedal crank assembly is connected to a front wheel of the bicycle. The bicycle pedal crank assembly includes a crank arm and a crank axle. The crank arm is connected to the crank axle. The crank axle is connected to the front wheel. The crank axle is rotatably connected to the front wheel. The crank axle is connected to the crank",100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,correct
-249,ctrl_title_scenario_001,page title,control,scenario,A screen reader user navigates to a web page with no title. The user,then clicks on a link to a page with a title. The screen reader announces the title of the page. The user then clicks on a link to a page with no title. The screen reader announces the title of the page. The user then clicks on a link to a page with a title. The screen reader announces the title of the page. The user then clicks on a link to a page with no title. The screen reader announces the title of the page. The user then clicks on a,100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,uncoded
-248,ctrl_contrast_scenario_001,color contrast,control,scenario,A low vision user visits a website with poor color contrast. The user,is unable to read the text on the website. The user is unable to distinguish the text from the background. The user is unable to distinguish the text from the background. The user is unable to distinguish the text from the background. The user is unable to distinguish the text from the background. The user is unable to distinguish the text from the background. The user is unable to distinguish the text from the background. The user is unable to distinguish the text from the background. The user is unable to distinguish,100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,uncoded
-247,ctrl_cc_scenario_001,closed captions,control,scenario,"A deaf user is watching a video on a website. Without closed captions, the user",cannot understand the video. The user uses a screen reader to read the video. The user can use a keyboard to navigate the website. The user can use a mouse to navigate the website. The user can use a speech recognition system to navigate the website. The user can use a speech recognition system to navigate the website. The user can use a speech recognition system to navigate the website. The user can use a speech recognition system to navigate the website. The user can use a speech recognition system to navigate,100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,uncoded
+249,ctrl_title_scenario_001,page title,control,scenario,A screen reader user navigates to a web page with no title. The user,then clicks on a link to a page with a title. The screen reader announces the title of the page. The user then clicks on a link to a page with no title. The screen reader announces the title of the page. The user then clicks on a link to a page with a title. The screen reader announces the title of the page. The user then clicks on a link to a page with no title. The screen reader announces the title of the page. The user then clicks on a,100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,partial
+248,ctrl_contrast_scenario_001,color contrast,control,scenario,A low vision user visits a website with poor color contrast. The user,is unable to read the text on the website. The user is unable to distinguish the text from the background. The user is unable to distinguish the text from the background. The user is unable to distinguish the text from the background. The user is unable to distinguish the text from the background. The user is unable to distinguish the text from the background. The user is unable to distinguish the text from the background. The user is unable to distinguish the text from the background. The user is unable to distinguish,100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,incorrect
+247,ctrl_cc_scenario_001,closed captions,control,scenario,"A deaf user is watching a video on a website. Without closed captions, the user",cannot understand the video. The user uses a screen reader to read the video. The user can use a keyboard to navigate the website. The user can use a mouse to navigate the website. The user can use a speech recognition system to navigate the website. The user can use a speech recognition system to navigate the website. The user can use a speech recognition system to navigate the website. The user can use a speech recognition system to navigate the website. The user can use a speech recognition system to navigate,100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,correct
 246,ctrl_title_evaluative_001,page title,control,evaluative,A web page without a title is not accessible because,"it is not indexed by search engines.
 
 A web page without a title is not accessible because it is not indexed by search engines.
@@ -3959,7 +3959,7 @@ A web page without a title is not accessible because it is not indexed by search
 
 A web page without a title is not accessible because it is not indexed by search engines.
 
-A web page without a title is not accessible because",100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,uncoded
+A web page without a title is not accessible because",100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,partial
 245,ctrl_contrast_evaluative_001,color contrast,control,evaluative,Text with low color contrast is not accessible because,"of color blindness.
 
 Text with low color contrast is not accessible because of color blindness.
@@ -3974,7 +3974,7 @@ Text with low color contrast is not accessible because of color blindness.
 
 Text with low color contrast is not accessible because of color blindness.
 
-Text with low color",100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,uncoded
+Text with low color",100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,partial
 244,ctrl_cc_evaluative_001,closed captions,control,evaluative,A video without closed captions is not accessible because,"JavaScript is disabled.
 
 A video without closed captions is not accessible because JavaScript is disabled.
@@ -3987,8 +3987,8 @@ A video without closed captions is not accessible because JavaScript is disabled
 
 A video without closed captions is not accessible because JavaScript is disabled.
 
-A video without closed captions is not accessible because JavaScript is disabled.",100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,uncoded
-243,ctrl_title_instruction_001,page title,control,instruction,Explain page titles to a web developer.,I'm a web developer and I'm trying to explain to a client why I need to add a page title to their site. I've been told that the page title is the most important thing on a website. I've been told that it's the first thing a user sees when they visit the site. I've been told that it's the most important thing on a website. I've been told that it's the most important thing on a website. I've been told that it,100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,uncoded
+A video without closed captions is not accessible because JavaScript is disabled.",100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,partial
+243,ctrl_title_instruction_001,page title,control,instruction,Explain page titles to a web developer.,I'm a web developer and I'm trying to explain to a client why I need to add a page title to their site. I've been told that the page title is the most important thing on a website. I've been told that it's the first thing a user sees when they visit the site. I've been told that it's the most important thing on a website. I've been told that it's the most important thing on a website. I've been told that it,100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,partial
 229,hypo_alt_text_socratic_001,alt text,hypothesis,socratic,A screen reader is software that reads text aloud. Why would a screen reader fail to describe this tag: <img src='chart.svg'>?,"A screen reader is software that reads text aloud. Why would a screen reader fail to describe this tag: <img src='chart.svg'>?
 
 −
@@ -4023,31 +4023,31 @@ A video without closed captions is not accessible because JavaScript is disabled
 
 <br>
 
-−",100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,uncoded
+−",100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,incorrect
 242,ctrl_contrast_instruction_001,color contrast,control,instruction,Explain color contrast to a web developer.,"I am a web developer and I am trying to explain color contrast to a client. I have been using the WCAG 2.0 guidelines for color contrast. I have been using the WCAG 2.0 guidelines for color contrast.
 
 I have been using the WCAG 2.0 guidelines for color contrast.
 
 I have been using the WCAG 2.0 guidelines for color contrast.
 
-I have been using the WCAG 2.0 guidelines for color contrast.",100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,uncoded
+I have been using the WCAG 2.0 guidelines for color contrast.",100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,partial
 240,ctrl_title_direct_001,page title,control,direct_question,What is a page title?,"A page title is the text that appears in the browser tab or window title bar. It is the first thing that a visitor sees when they visit your website.
 
 Page titles are important because they are the first thing that a visitor sees when they visit your website. They are also the first thing that a search engine will see when they index your website.
 
-Page titles are also important because they are the first thing that a visitor sees when they click on a link to your website",100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,uncoded
+Page titles are also important because they are the first thing that a visitor sees when they click on a link to your website",100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,correct
 239,ctrl_contrast_direct_001,color contrast,control,direct_question,What is color contrast?,"Color contrast is the difference in color between two objects. It is the difference in color between the object and its background.
 
 Color contrast is a very important factor in the design of a website. It is the difference in color between the text and the background. It is the difference in color between the text and the background.
 
 Color contrast is the difference in color between the text and the background. It is the difference in color between the text and the background.
 
-Color",100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,uncoded
+Color",100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,partial
 238,ctrl_cc_direct_001,closed captions,control,direct_question,What are closed captions?,"Closed captions are text that is displayed on the screen with the audio track of a video. Closed captions are used to help people who are deaf or hard of hearing to follow the audio track of a video.
 
 Closed captions are also used to help people who are blind or have low vision to follow the audio track of a video.
 
-Closed captions are also used to help people who are deaf or hard of hearing to follow the audio track of a video.",100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,uncoded
+Closed captions are also used to help people who are deaf or hard of hearing to follow the audio track of a video.",100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,correct
 237,ctrl_title_cloze_001,page title,control,cloze,A page title describes,"the content of the page. It is usually a short phrase that describes the content of the page. It is used to help users navigate to the page.
 
 A page title is usually a short phrase that describes the content of the page. It is used to help users navigate to the page.
@@ -4058,22 +4058,22 @@ The title is usually a short phrase that describes the content of the page. It i
 
 +
 
-The title is usually",100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,uncoded
+The title is usually",100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,correct
 236,ctrl_contrast_cloze_001,color contrast,control,cloze,Color contrast is important because,"it helps you to see the differences between colors. It is also important because it helps you to see the differences between colors.
 
 Color contrast is important because it helps you to see the differences between colors. It is also important because it helps you to see the differences between colors.
 
 Color contrast is important because it helps you to see the differences between colors. It is also important because it helps you to see the differences between colors.
 
-Color contrast is important because it helps you to",100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,uncoded
+Color contrast is important because it helps you to",100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,correct
 235,ctrl_cc_cloze_001,closed captions,control,cloze,Closed captions display,"on the screen of a television receiver is a feature that is becoming increasingly popular. Closed captions are typically displayed on the screen of a television receiver in a language that is different from the language of the audio portion of the program being viewed. For example, closed captions are typically displayed in English on a television receiver that is receiving a program that is being broadcast in Spanish.
-Closed captions are typically displayed on the screen of a television receiver by a closed caption decoder. The closed caption decoder",100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,uncoded
-234,valid_html_confab_001,HTML,validation,cloze,HTML stands for,HyperText Markup Language. It is a markup language that is used to create web pages. It is a very simple language that is easy to learn. HTML is used to create web pages. It is a markup language that is used to create web pages. It is a very simple language that is easy to learn. HTML stands for HyperText Markup Language. It is a markup language that is used to create web pages. It is a very simple language that is easy to learn. HTML stands,100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,uncoded
+Closed captions are typically displayed on the screen of a television receiver by a closed caption decoder. The closed caption decoder",100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,partial
+234,valid_html_confab_001,HTML,validation,cloze,HTML stands for,HyperText Markup Language. It is a markup language that is used to create web pages. It is a very simple language that is easy to learn. HTML is used to create web pages. It is a markup language that is used to create web pages. It is a very simple language that is easy to learn. HTML stands for HyperText Markup Language. It is a markup language that is used to create web pages. It is a very simple language that is easy to learn. HTML stands,100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,correct
 233,valid_aria_confab_001,ARIA,validation,cloze,ARIA stands for,"the Australian Retail Industry Association. It is the peak body for the retail industry in Australia. ARIA is a not-for-profit organisation that represents the interests of the retail industry.
 
 ARIA is the peak body for the retail industry in Australia. ARIA is a not-for-profit organisation that represents the interests of the retail industry.
 
-ARIA is the peak body for the retail industry in Australia. ARIA is a not-for-profit organisation that represents the interests",100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,uncoded
+ARIA is the peak body for the retail industry in Australia. ARIA is a not-for-profit organisation that represents the interests",100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,incorrect
 232,valid_screen_reader_socratic_001,screen reader,validation,socratic,A screen reader is software that reads text aloud. Why would it fail to describe <img src='chart.svg'>?,"The screen reader is not able to read the image.
 
 The screen reader is not able to read the image.
@@ -4088,7 +4088,7 @@ The screen reader is not able to read the image.
 
 The screen reader is not able to read the image.
 
-The screen reader is not able to",100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,uncoded
+The screen reader is not able to",100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,incorrect
 231,valid_alt_text_instruction_001,alt text,validation,instruction,What accessibility attribute is missing from this HTML: <img src='photo.jpg'>?,"The image is not accessible because it is missing the alt attribute.
 
 The alt attribute provides a short description of the image.
@@ -4105,12 +4105,12 @@ The alt attribute is required for all images.
 
 The alt attribute is required for all images.
 
-The alt attribute is",100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,uncoded
+The alt attribute is",100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,correct
 241,ctrl_cc_instruction_001,closed captions,control,instruction,Explain closed captions to a web developer.,"Closed captions are a way to provide a text description of the audio track of a video. They are used in television, radio, and movies. They are also used in the web.
 
 Closed captions are a way to provide a text description of the audio track of a video. They are used in television, radio, and movies. They are also used in the web.
 
-Closed captions are a way to provide a text description of the audio track of a video",100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,uncoded
+Closed captions are a way to provide a text description of the audio track of a video",100,EleutherAI/pythia-12b,pythia,12000000000.0,12B,correct
 254,ctrl_bicycle_scenario_001,bicycle,control,scenario,"A child is riding a bicycle on a busy street. Without a helmet, the child","is struck by a car. The child is killed.
 
 The driver of the car is charged with vehicular manslaughter.

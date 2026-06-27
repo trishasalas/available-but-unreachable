@@ -186,7 +186,40 @@ def run_extended_analysis(elicitation, entropy_df, binding_df):
     tables['degenerate_by_prompt_type'] = deg_ptype   # ext 5
 
     tables['completion_paradox'] = completion_paradox_table(elicitation)  # ext 6
+
+    tables['accuracy_by_prompt_type'] = accuracy_by_prompt_type_table(elicitation)
     return tables
+
+
+def accuracy_by_prompt_type_table(elicitation):
+    """Coverage + accuracy across ALL prompt types and scales.
+
+    With validation/hypothesis/control now coded, this surfaces every coded
+    response (not just declarative/evaluative) without redefining the
+    concept-level tables. Note: non-bicycle 'control' rows are accessibility-
+    concept probes; bicycle 'control' is the reasoning baseline.
+    """
+    df = elicitation.copy()
+    df['score'] = df['accuracy'].map(SCORE_MAP)
+
+    rows = []
+    for suite, order in SCALE_ORDERS.items():
+        s = df[df['suite'] == suite]
+        for scale in order:
+            for ptype in sorted(s['prompt_type'].dropna().unique()):
+                cell = s[(s['scale_label'] == scale) & (s['prompt_type'] == ptype)]
+                if len(cell) == 0:
+                    continue
+                coded = cell[cell['accuracy'] != 'uncoded']
+                rows.append({
+                    'suite': suite, 'scale': scale, 'prompt_type': ptype,
+                    'n': len(cell),
+                    'n_coded': len(coded),
+                    'n_uncoded': int((cell['accuracy'] == 'uncoded').sum()),
+                    'accuracy_pct': round(coded['score'].mean() / 2 * 100, 1)
+                    if len(coded) else None,
+                })
+    return pd.DataFrame(rows)
 
 
 def entropy_confidence_tables(elicitation, entropy_df):

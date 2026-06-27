@@ -29,6 +29,10 @@ def code_response(prompt_type, concept, prompt, output):
         return code_control(concept, prompt, output)
     elif prompt_type == 'completion':
         return code_completion(concept, prompt, output)
+    elif prompt_type == 'validation':
+        return code_validation(concept, prompt, output)
+    elif prompt_type == 'hypothesis':
+        return code_hypothesis(concept, prompt, output)
     else:
         return 'uncoded'
 
@@ -258,7 +262,135 @@ def code_control(concept, prompt, output):
             return 'correct'
         return 'incorrect'
 
+    # Definitional bicycle probes ("What is a bicycle?", "Explain bicycles...")
+    if 'bicycle' in prompt and ('what is' in prompt or 'explain' in prompt):
+        if ('wheel' in output or 'pedal' in output or 'ride' in output or
+                'ridden' in output or 'vehicle' in output or 'transport' in output or
+                'two-wheel' in output or 'cycle' in output):
+            return 'correct'
+        return 'incorrect'
+
+    # Non-bicycle "control" rows are accessibility-concept probes (closed
+    # captions / color contrast / page title) across varied templates (cloze,
+    # question, instruction, evaluative, scenario). They are graded for
+    # conceptual correctness — NOT used as the reasoning baseline (that is the
+    # bicycle control). See DECISIONS.md.
+    if concept == 'closed captions':
+        if (('text' in output or 'subtitle' in output or 'word' in output or
+             'read' in output or 'transcri' in output) and
+                ('audio' in output or 'video' in output or 'sound' in output or
+                 'spoken' in output or 'speech' in output or 'deaf' in output or
+                 'hearing' in output or 'dialog' in output)):
+            return 'correct'
+        if ('caption' in output or 'subtitle' in output or
+                'video' in output or 'audio' in output):
+            return 'partial'
+        return 'incorrect'
+
+    if concept == 'color contrast':
+        if (('distinguish' in output or 'difference between' in output or
+             'see the diff' in output or 'readab' in output or
+             'perceiv' in output or 'legib' in output) and 'color' in output):
+            return 'correct'
+        if 'color' in output or 'contrast' in output:
+            return 'partial'
+        return 'incorrect'
+
+    if concept == 'page title':
+        if (('describe' in output or 'identif' in output or 'summar' in output or
+             'content' in output or 'topic' in output or 'tab' in output or
+             'name of' in output) and
+                ('page' in output or 'document' in output or 'site' in output or
+                 'window' in output)):
+            return 'correct'
+        if 'page' in output or 'title' in output:
+            return 'partial'
+        return 'incorrect'
+
     return 'uncoded'
+
+
+def code_validation(concept, prompt, output):
+    """
+    Code validation responses — held-out diagnostic and acronym probes
+    (concepts: ARIA, HTML, alt text, screen reader; templates: direct_question,
+    instruction, socratic, cloze). Routes by prompt content.
+
+      - correct:   expands the acronym / names the missing attribute / explains
+                   the screen-reader failure
+      - partial:   right domain, wrong specifics
+      - incorrect: fails to identify it
+    """
+    out = str(output).lower()
+    p = str(prompt).lower()
+
+    # Acronym expansion ("ARIA stands for", "HTML stands for")
+    if 'stands for' in p:
+        if 'aria' in p:
+            if 'accessible rich internet' in out:
+                return 'correct'
+            return 'partial' if ('accessible' in out or 'accessibility' in out) else 'incorrect'
+        if 'html' in p:
+            if 'hypertext markup' in out or 'hyper text markup' in out:
+                return 'correct'
+            return 'partial' if ('markup' in out or 'hypertext' in out) else 'incorrect'
+
+    # Screen-reader-failure reasoning ("...Why would it fail to describe <img>?")
+    if 'screen reader' in p and ('fail' in p or 'why' in p):
+        if ('text alternative' in out or 'no text' in out or 'no description' in out or
+                'cannot read' in out or "can't read" in out or
+                ('alt' in out and ('no ' in out or 'missing' in out or
+                                    'without' in out or "n't" in out))):
+            return 'correct'
+        return 'incorrect'
+
+    # Missing-attribute diagnosis on an <img> (alt text)
+    if 'img' in p and ('missing' in p or "doesn't have" in p or 'attribute' in p):
+        if 'alt' in out and ('missing' in out or 'attribute' in out or
+                             'text' in out or 'description' in out):
+            return 'correct'
+        return 'incorrect'
+
+    return 'incorrect'
+
+
+def code_hypothesis(concept, prompt, output):
+    """
+    Code hypothesis responses — diagnostic alt-text probes (templates:
+    direct_question, error_correction, socratic).
+
+      - correct:   names/adds the missing alt attribute, or explains the failure
+      - partial:   mentions alt without the diagnostic point
+      - incorrect: fails to identify it
+    """
+    import re
+    out = str(output).lower()
+    p = str(prompt).lower()
+
+    # "Correct the following inaccessible code: <img ...>" — expects alt=
+    if 'correct' in p and 'img' in p:
+        if re.search(r'alt\s*=', out):
+            return 'correct'
+        if 'alt' in out and ('attribute' in out or 'text' in out):
+            return 'partial'
+        return 'incorrect'
+
+    # Screen-reader-failure reasoning
+    if 'screen reader' in p and ('fail' in p or 'why' in p):
+        if ('text alternative' in out or 'no text' in out or 'no description' in out or
+                ('alt' in out and ('no ' in out or 'missing' in out or
+                                    'without' in out or "n't" in out))):
+            return 'correct'
+        return 'incorrect'
+
+    # "What specific attribute is missing ... <img>?"
+    if 'img' in p and ('missing' in p or 'attribute' in p):
+        if 'alt' in out and ('missing' in out or 'attribute' in out or
+                             'text' in out or 'description' in out):
+            return 'correct'
+        return 'incorrect'
+
+    return 'incorrect'
 
 
 def code_completion(concept, prompt, output):

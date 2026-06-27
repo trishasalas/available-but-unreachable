@@ -81,6 +81,23 @@ Criteria are concept-specific. See `src/accuracy_coding.py` for full documentati
 
 ---
 
+### 2026-06-27 — Coded the remaining prompt types (validation, hypothesis, control); 0 uncoded
+
+**Decision:** Added graders so every elicitation response is coded. Previously `validation`, `hypothesis`, and non-bicycle `control` rows (330 total) returned `'uncoded'`; now `elicitation_coded.csv` has **0 uncoded of 510**.
+
+**Why:** Gradeable data shouldn't sit out of the analysis. These rows contain real, scoreable responses; leaving them `uncoded` silently dropped them from every accuracy-based table.
+
+**New / extended coding functions** (in `src/accuracy_coding.py`):
+- `code_validation(concept, prompt, output)` — routes by prompt content: acronym expansion (`ARIA`→"accessible rich internet", `HTML`→"hypertext markup"), missing-attribute diagnosis on `<img>`, and screen-reader-failure reasoning.
+- `code_hypothesis(concept, prompt, output)` — diagnostic alt-text probes: names/adds the missing `alt` attribute (`alt=` for "correct this code"), or explains the screen-reader failure.
+- `code_control()` extended — non-bicycle control concepts (`closed captions`, `color contrast`, `page title`) graded for conceptual correctness; added definitional bicycle probes ("What is a bicycle?", "Explain bicycles…").
+
+**Methodological boundary (important for the blind study):** the 150 non-bicycle `control` rows are **accessibility-concept probes**, not reasoning baselines. The bicycle `control` remains the reasoning baseline. To avoid conflating roles, the newly-coded rows are **not** folded into the existing declarative/evaluative concept tables. Instead they surface through a new coverage table, `accuracy_by_prompt_type.csv` (suite × scale × prompt_type → n, n_coded, n_uncoded, accuracy_pct), so all coded data is represented without redefining the Paper-1-aligned tables.
+
+**Coding distribution after change:** correct 186 / partial 147 / incorrect 177 (of 510). The existing declarative/evaluative/gap/emergence tables are **unchanged** (they filter by prompt_type and never included these rows).
+
+---
+
 ### 2026-06-28 — TL3 generation collapse confirmed; reverted to TL2 for TMLR
 
 **Decision:** All TMLR experiments rerun on TransformerLens 2.x (HookedTransformer). TL3 (TransformerBridge) produces degenerate generation and is unsuitable for the TMLR submission. TL3 reserved for future OLMo work pending bug resolution.
