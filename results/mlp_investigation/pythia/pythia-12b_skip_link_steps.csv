@@ -1,0 +1,16 @@
+model,step,chosen,top1,top2,top3,top4,top5
+pythia-12b,0,a,a,an,used,generally,typically
+pythia-12b,1,link,link,type,special,component,web
+pythia-12b,2,that,that,to,between,which,in
+pythia-12b,3,is,is,allows,can,points,links
+pythia-12b,4,not,not,used,embedded,displayed,placed
+pythia-12b,5,click,click,visible,followed,displayed,a
+pythia-12b,6,able,able,-,able,b,ba
+pythia-12b,7,.,.,",",by,and,or
+pythia-12b,8,It,It,A,Skip,The,This
+pythia-12b,9,is,is,can,'s,may,appears
+pythia-12b,10,used,used,usually,a,often,typically
+pythia-12b,11,to,to,in,for,as,when
+pythia-12b,12,link,link,navigate,create,connect,indicate
+pythia-12b,13,to,to,a,from,other,pages
+pythia-12b,14,another,another,a,other,content,an

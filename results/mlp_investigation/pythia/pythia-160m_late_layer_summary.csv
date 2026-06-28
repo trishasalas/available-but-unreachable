@@ -1,0 +1,3 @@
+model,prompt,n_layers,late_start,early_mlp_attn_ratio_mean,late_mlp_attn_ratio_mean,late_mlp_attn_ratio_max,late_mlp_norm_mean,late_mlp_norm_max,late_attn_norm_mean
+pythia-160m,skip_link,12,9,1.5604,5.407,6.1949,44.8423,99.1556,8.4397
+pythia-160m,color_contrast,12,9,1.5181,4.6159,5.9787,48.8652,111.8742,9.2173

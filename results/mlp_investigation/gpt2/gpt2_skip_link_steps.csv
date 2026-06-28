@@ -1,0 +1,16 @@
+model,step,chosen,top1,top2,top3,top4,top5
+gpt2,0,required,required,displayed,provided,shown,deprecated
+gpt2,1,to,to,between,for,when,if
+gpt2,2,download,download,navigate,proceed,skip,access
+gpt2,3,PDF,PDF,files,this,pdf,Adobe
+gpt2,4,files,files,documents,versions,file,downloads
+gpt2,5,(.,(.,containing,formatted,downloaded,.
+gpt2,6,pdf,pdf,PDF,DOC,zip,csv
+gpt2,7,files,files,).,),format,"),"
+gpt2,8,).,).,),"),",(.,):
+gpt2,9,Download,Download,Please,Click,Instructions,Alternatively
+gpt2,10,PDF,PDF,ZIP,pdf,zip,Adobe
+gpt2,11,files,files,Files,file,downloads,(.
+gpt2,12,(.,(.,here,HERE,are,formatted
+gpt2,13,pdf,pdf,PDF,csv,doc,mobi
+gpt2,14,files,files,file,pdf,documents,pdf

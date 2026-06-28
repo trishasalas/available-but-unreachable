@@ -1,0 +1,16 @@
+model,step,chosen,top1,top2,top3,top4,top5
+gpt2-xl,0,a,a,an,the,used,one
+gpt2-xl,1,link,link,type,special,short,way
+gpt2-xl,2,that,that,which,to,between,in
+gpt2-xl,3,sk,sk,is,takes,links,can
+gpt2-xl,4,ips,ips,ipp,ims,ippers,immers
+gpt2-xl,5,the,the,to,a,over,from
+gpt2-xl,6,current,current,next,rest,page,previous
+gpt2-xl,7,page,page,webpage,web,text,document
+gpt2-xl,8,.,.,and,to,",",when
+gpt2-xl,9,It,It,,This,The,You
+gpt2-xl,10,is,is,can,'s,works,allows
+gpt2-xl,11,useful,useful,used,often,similar,usually
+gpt2-xl,12,for,for,when,if,in,to
+gpt2-xl,13,users,users,pages,navigating,people,websites
+gpt2-xl,14,who,who,with,that,to,of

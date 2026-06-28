@@ -1,0 +1,16 @@
+model,step,chosen,top1,top2,top3,top4,top5
+pythia-2.8b,0,a,a,an,used,typically,generally
+pythia-2.8b,1,link,link,data,type,network,mechanism
+pythia-2.8b,2,that,that,between,which,to,used
+pythia-2.8b,3,is,is,sk,can,allows,points
+pythia-2.8b,4,skipped,skipped,used,placed,not,inserted
+pythia-2.8b,5,when,when,by,over,during,in
+pythia-2.8b,6,travers,travers,navigating,a,the,browsing
+pythia-2.8b,7,ing,ing,ed,al,es,als
+pythia-2.8b,8,a,a,the,an,through,from
+pythia-2.8b,9,tree,tree,network,directory,web,linked
+pythia-2.8b,10,structure,structure,.,of,or,","
+pythia-2.8b,11,.,.,",",such,in,of
+pythia-2.8b,12,The,The,In,It,A,Typically
+pythia-2.8b,13,skip,skip,link,tree,skipping,links
+pythia-2.8b,14,link,link,links,list,-,linkage

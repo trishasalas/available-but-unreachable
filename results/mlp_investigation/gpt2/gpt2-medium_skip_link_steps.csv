@@ -1,0 +1,16 @@
+model,step,chosen,top1,top2,top3,top4,top5
+gpt2-medium,0,a,a,an,used,provided,displayed
+gpt2-medium,1,link,link,URL,short,reference,piece
+gpt2-medium,2,that,that,between,to,pointing,provided
+gpt2-medium,3,links,links,directs,leads,allows,redirect
+gpt2-medium,4,directly,directly,to,back,from,another
+gpt2-medium,5,to,to,from,into,back,onto
+gpt2-medium,6,another,another,a,an,the,your
+gpt2-medium,7,page,page,website,webpage,site,URL
+gpt2-medium,8,on,on,.,containing,without,within
+gpt2-medium,9,the,the,this,Google,another,Wikipedia
+gpt2-medium,10,Internet,Internet,internet,same,web,website
+gpt2-medium,11,.,.,without,",",that,site
+gpt2-medium,12,It,It,Skip,Often,Links,This
+gpt2-medium,13,is,is,may,can,links,allows
+gpt2-medium,14,usually,usually,often,used,typically,commonly

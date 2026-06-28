@@ -1,0 +1,16 @@
+model,step,chosen,top1,top2,top3,top4,top5
+pythia-6.9b,0,a,a,an,used,typically,generally
+pythia-6.9b,1,link,link,type,device,mechanism,mechanical
+pythia-6.9b,2,that,that,between,to,in,which
+pythia-6.9b,3,is,is,sk,jumps,does,takes
+pythia-6.9b,4,not,not,used,placed,added,inserted
+pythia-6.9b,5,displayed,displayed,followed,part,a,visible
+pythia-6.9b,6,in,in,on,when,to,by
+pythia-6.9b,7,a,a,the,an,any,its
+pythia-6.9b,8,browser,browser,web,Web,navigation,page
+pythia-6.9b,9,window,window,.,'s,when,","
+pythia-6.9b,10,.,.,when,",",or,but
+pythia-6.9b,11,Instead,Instead,It,The,A,This
+pythia-6.9b,12,",",",",of,it,the,a
+pythia-6.9b,13,the,the,it,a,when,you
+pythia-6.9b,14,browser,browser,link,user,content,skip

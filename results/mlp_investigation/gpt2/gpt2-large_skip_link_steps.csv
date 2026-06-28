@@ -1,0 +1,16 @@
+model,step,chosen,top1,top2,top3,top4,top5
+gpt2-large,0,a,a,an,one,not,something
+gpt2-large,1,link,link,short,hyper,type,piece
+gpt2-large,2,that,that,to,which,in,you
+gpt2-large,3,is,is,takes,does,leads,doesn
+gpt2-large,4,not,not,clicked,no,skipped,used
+gpt2-large,5,part,part,a,linked,directly,followed
+gpt2-large,6,of,of,or,the,a,of
+gpt2-large,7,the,the,a,an,any,your
+gpt2-large,8,main,main,page,article,original,actual
+gpt2-large,9,article,article,page,body,content,web
+gpt2-large,10,.,.,",",but,or,and
+gpt2-large,11,Skip,Skip,,It,The,A
+gpt2-large,12,links,links,Links,link,Links,-
+gpt2-large,13,are,are,can,may,usually,do
+gpt2-large,14,often,often,usually,not,used,generally

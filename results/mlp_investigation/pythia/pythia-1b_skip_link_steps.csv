@@ -1,0 +1,16 @@
+model,step,chosen,top1,top2,top3,top4,top5
+pythia-1b,0,a,a,an,used,typically,one
+pythia-1b,1,type,type,special,link,data,physical
+pythia-1b,2,of,of,used,that,or,which
+pythia-1b,3,data,data,network,interconnect,digital,memory
+pythia-1b,4,link,link,transmission,connection,transfer,packet
+pythia-1b,5,used,used,that,between,in,which
+pythia-1b,6,in,in,to,for,between,by
+pythia-1b,7,computer,computer,conjunction,a,tele,wireless
+pythia-1b,8,networks,networks,systems,networking,network,communications
+pythia-1b,9,.,.,to,that,such,","
+pythia-1b,10,A,A,The,In,Skip,Each
+pythia-1b,11,skip,skip,typical,link,computer,conventional
+pythia-1b,12,link,link,-,links,is,list
+pythia-1b,13,is,is,connects,typically,allows,may
+pythia-1b,14,typically,typically,a,used,generally,an
