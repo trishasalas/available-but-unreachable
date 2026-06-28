@@ -5,6 +5,66 @@ Research and figure decisions with rationale.
 
 ## Replication Verification Against Paper 1
 
+### 2026-06-28 — MLP investigation results: magnitude hypothesis disconfirmed, token competition mechanism discovered
+
+**Decision:** The MLP magnitude interference hypothesis is disconfirmed. The actual mechanism for skip_link inverse scaling is a single-token competition at generation Step 5, where "displayed" (correct) is outranked by "click" (incorrect) at 12B but wins at 6.9B. Document both the negative result and the positive finding.
+
+**Original hypothesis:** MLP layers at 12B actively interfere with compound binding more than at 6.9B, suppressing domain-specific signal with stronger general-language priors. This would manifest as elevated MLP/attention ratios for skip_link vs a control compound (color_contrast) at 12B.
+
+**Disconfirmation:** Residual stream decomposition across 1B, 6.9B, and 12B showed:
+- Final-layer MLP spike is architectural, not compound-specific. All models show massive MLP norm at the last layer (1B: 64, 6.9B: 234, 12B: 324) regardless of prompt.
+- Cross-prompt comparison: MLP/attention ratios are nearly identical between skip_link and color_contrast at both 6.9B (4.437 vs 4.444, delta -0.007) and 12B (4.365 vs 4.888, delta -0.523). Color_contrast actually receives MORE MLP rewriting, not less.
+- The MLPs are doing the same amount of work for compounds the model gets right and compounds it gets wrong.
+
+**Logit lens finding:** Vocabulary projection at the final MLP layer shows identical generic tokens for both prompts ("earthqu", "researc", "tradem", "counc"). The final-layer MLP is doing output calibration, not semantic work. This is consistent with the logit lens literature (nostalgebraist) on GPT-2 architecture, now confirmed on Pythia.
+
+**Logit lens on skip_link:** Zero topic-relevant tokens at ANY scale (160M through 12B). "Skip", "navigation", "jump" never appear in top-5 predictions at any layer. This is true even at 6.9B where generation is correct. Low-frequency domain knowledge is encoded distributedly — present in the residual stream (generation proves it) but invisible to direct vocabulary projection.
+
+**The actual mechanism — step-by-step token competition:**
+
+Autoregressive generation traced step-by-step across all six Pythia scales reveals the inverse scaling operates at a single decision point. All models that reach Step 4 choose "not" (6.9B and 12B). The divergence occurs at Step 5:
+
+| Scale | Step 4 | Step 5 chosen | "displayed" rank | "click" rank | Generation path |
+|-------|--------|--------------|-----------------|-------------|----------------|
+| 160M  | links  | that         | absent          | absent      | graph theory    |
+| 410M  | skipped | when        | absent          | absent      | web-bypassing   |
+| 1B    | link   | used         | absent          | absent      | CS networking   |
+| 2.8B  | skipped | when        | absent          | absent      | tree traversal  |
+| 6.9B  | not    | **displayed** | **rank 1**     | absent      | ✓ correct       |
+| 12B   | not    | **click**    | **rank 4**     | **rank 1**  | ✗ degenerate    |
+
+"Displayed" is present as a candidate at both 6.9B (rank 1, wins) and 12B (rank 4, loses to "click"). The concept is not absent at 12B — it is outcompeted. "Click" is a higher-frequency web token that becomes strong enough at 12B to overtake the correct but lower-frequency "displayed."
+
+**Conceptual trajectory across scale:** The compound "skip link" develops through distinct conceptual neighborhoods:
+- 160M: physical/graph theory ("link between two links")
+- 410M: web-adjacent ("skipped when clicked")
+- 1B: CS networking ("data link used in computer networks")
+- 2.8B: data structures ("skipped when traversing a tree structure") — notably, "navigating" and "browsing" appear in Step 6 top-5
+- 6.9B: correct web accessibility meaning ("not displayed in a browser")
+- 12B: correct domain but wrong conclusion ("not clickable" → degenerate loop)
+
+**Significance for the paper:**
+1. The inverse scaling is not about knowledge disappearing. The correct token is present in 12B's candidate set. It loses a competition it won one scale down.
+2. This is a different mechanism from absence (1B) or wrong domain (160M). Scaling creates stronger general-language priors ("click" for web contexts) that outcompete lower-frequency domain-specific tokens ("displayed" in the accessibility sense).
+3. The MLP magnitude negative result is itself significant: it rules out gross interference and points to directional (content-level) competition rather than structural suppression.
+4. The step-by-step table is a potential figure showing inverse scaling captured at the exact token where it occurs.
+
+**Data:** All results saved to `results/mlp_investigation/` — six models × five CSVs each (decomposition, late_layer_summary, logit_lens, vocab_projection, skip_link_steps).
+
+### 2026-06-28 — OLMo 2 1B methodology: raw HuggingFace for generation/entropy, TL3 for binding only
+
+**Decision:** OLMo 2 1B experiments use a split-tool methodology. Generation (elicitation prompts) and entropy are run through raw HuggingFace `transformers`. Binding analysis uses TransformerLens 3 (TransformerBridge). TL3 is not used for generation.
+
+**Rationale:** TL3 is the only TransformerLens version that supports OLMo — TL2 does not. However, TL3's generation pathway produces degenerate repetition on Pythia (confirmed 2026-06-28, see earlier entry). The binding/attention data from TL3 was validated as faithful: Pythia binding scores between TL2 and TL3 showed near-identical topology with only small magnitude shifts (e.g., L0H3 screen_reader: 0.9656 → 0.9687). The failure is isolated to the `generate()` pathway, not the activation caching or hook infrastructure.
+
+Raw HuggingFace generation was validated against TL2 on Pythia 2.8B (see 2026-06-28 TL2 validation entry). Same behavioral trajectories, same failure modes, different surface tokens due to LayerNorm folding. Raw HF is a faithful representation of the model's actual generation capabilities.
+
+**Implication for cross-model comparisons:** Pythia results use TL2 for all three data types (generation, entropy, binding). OLMo results use raw HF for generation/entropy and TL3 for binding. The generation pathway difference (TL2 with LayerNorm folding vs raw HF without) is documented but not expected to affect behavioral accuracy coding, since the TL2-vs-HF validation showed identical coding outcomes on matched prompts.
+
+**OLMo checkpoint trajectory:** Six stage-1 checkpoints are available in `OlmoSpelunking/results/OLMo-2-0425-1B/` (step 10K through step 930K). Prior gap-analysis probes on these checkpoints confirmed the active unlearning phenomenon: evaluative alt text generation degrades from descriptive (`alt="A man in a white shirt"`) at step 10K to filename-based (`alt="photo.jpg"`) by step 30K, while declarative knowledge of alt text simultaneously improves. The split-tool methodology will be applied consistently across all checkpoint reruns.
+
+**Files affected:** New OLMo experiment notebook (TBD). Results to a new subdirectory in `results/` (naming TBD — likely `results/olmo-2-1b/`).
+
 ### 2026-06-28 — Gap analysis framework: accuracy coding and replicable pipeline
 
 **Decision:** Accuracy coding for elicitation responses is implemented as a deterministic Python module (`src/accuracy_coding.py`). Every coding criterion is documented inline. The gap analysis (`src/gap_analysis.py`) imports the coding module, applies it to all results, and saves output to `results/analysis/`. Reproducible via `python -m src.gap_analysis` or from `notebooks/analysis.ipynb`.
