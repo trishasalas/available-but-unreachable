@@ -1,0 +1,9 @@
+layer,head,induction,prev_token,dup_token,type,bos_attention
+1,12,0.0,0.886,0.0,previous-token,
+3,1,0.0141,0.2737,0.0126,partial (prev/dup),
+10,14,0.0004,0.316,0.0097,partial (prev/dup),0.5486
+10,16,0.0116,0.0607,0.0169,uncharacterized,0.7388
+27,24,0.0193,0.0502,0.0181,uncharacterized,0.0041
+28,15,0.0127,0.0572,0.0147,uncharacterized,0.8075
+29,7,0.0201,0.0216,0.0213,uncharacterized,0.9117
+30,29,0.0115,0.069,0.0028,uncharacterized,0.7248
