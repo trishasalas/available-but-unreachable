@@ -14,26 +14,19 @@ deleted by a later reorg commit). A4/A5 evidence pointers valid again.
 
 **Expansion protocol:** run_all_prompts() gains concepts= and tag= params. The 41 new compounds run with concepts=PENDING_CRITERIA, tag='expansion', writing {model}-expansion-results.csv — original {model}-results.csv raws are frozen and never overwritten. Colab sessions end with files.download(); loss class (ephemeral /content) closed.
 
-**Rationale for suite-first over experiment-first (added same day):** The
-experiment-first scheme from the 26c6a8d reorg (frequency/, mlp_investigation/,
-etc.) is arguably the better abstract design, and it is retained for targeted
-experiment outputs. Raw per-model batteries return to results/{suite}/ for
-three reasons: (1) the elicitation/entropy/binding triplets are substrate,
-not an experiment — every downstream analysis consumes them, so "core
-characterization vs. targeted follow-up" is the distinction the layout now
-encodes; (2) every existing contract already points at results/{suite}/ —
-elicitation.py writes it, analysis.py reads it, the head-characterization
+**Rationale for suite-first over experiment-first (added same day):** The experiment-first scheme from the 26c6a8d reorg (frequency/, mlp_investigation/, etc.) is arguably the better abstract design, and it is retained for targeted experiment outputs. Raw per-model batteries return to results/{suite}/ for three reasons: 
+
+1. the elicitation/entropy/binding triplets are substrate, not an experiment — every downstream analysis consumes them, so "core
+characterization vs. targeted follow-up" is the distinction the layout nowencodes;
+2. every existing contract already points at results/{suite}/ — elicitation.py writes it, analysis.py reads it, the head-characterization
 findings and CLAIMS.md cite it, and the resurrected CSVs' git history lives
 there — so restoration cost one two-line loader patch versus edits to two
-writers, one reader, and four docs mid-campaign; (3) provenance continuity:
-resurrected files return to the paths their commit history records.
-Defensible-over-ideal, chosen knowingly.
+writers, one reader, and four docs mid-campaign; 
+3. provenance continuity: resurrected files return to the paths their commit history records.
 
-**Parked (post-TMLR):** Layout v3 — full experiment-first migration
-(results/elicitation/{suite}/ etc.) as a single contained commit. Precondition:
-consolidate all results-path constants into one module (src/paths.py or
-similar) so the next philosophy change is a five-line diff, not archaeology.
-One layout at a time; this file is where layouts are declared.
+### Defensible-over-ideal, chosen knowingly.
+
+**Parked (post-TMLR):** Layout v3 — full experiment-first migration (results/elicitation/{suite}/ etc.) as a single contained commit. Precondition: consolidate all results-path constants into one module (src/paths.py or similar) so the next philosophy change is a five-line diff, not archaeology. One layout at a time; this file is where layouts are declared.
 
 ### 2026-06-28 — MLP investigation results: magnitude hypothesis disconfirmed, token competition mechanism discovered
 
