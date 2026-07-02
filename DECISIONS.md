@@ -5,6 +5,20 @@ Research and figure decisions with rationale.
 
 ## Replication Verification Against Paper 1
 
+### 2026-07-02 — B4 rewritten as blind pre-registration (expansion scope)
+
+**Decision:** CLAIMS.md row B4 rewritten from a skip_link-specific claim to a two-part row: (1) a **pre-registered blind template** for the n=49 expansion — "inverse scaling (peak_regress) is not skip_link-specific: __ of 49 compounds regress from correct/partial at an intermediate scale to incorrect at maximum scale" — with the count and family blanks left open; (2) the **established exemplar** (skip_link cross-architectural degeneration, DECISIONS 2026-06-28) preserved verbatim as already-viewed evidence, with A2's Step-5 trace as the mechanism exhibit.
+
+**Blind state at time of writing:** expansion raws exist (`tag=expansion`, run 2026-07-02, both suites, all scales) but are **unviewed and uncoded** — operator ran the batteries and moved files only. Coding criteria not yet authored. Frequency table closed. This entry timestamps the claim shape BEFORE any expansion result is seen, extending the criteria-before-data rule to claims rows.
+
+**Falsification path written into the row:** if the blank fills with ~1, the claim collapses back to skip_link-only and ships that way — the collapse is a shippable negative, not a failure.
+
+**Status change:** NEEDS-POINTER → OPEN (expansion portion) + NEEDS-POINTER retained for the exemplar's skip_link CSVs.
+
+**Enforcement note:** this pre-registration has teeth only once committed to git. Commit CLAIMS.md + this entry before criteria authoring resumes.
+
+---
+
 ### 2026-07-02 — Results layout restored; expansion elicitation protocol
 
 **Decision:** Canonical layout declared: raw per-model outputs live at results/{suite}/ (pythia, gpt2); experiment-specific outputs live in named dirs (frequency/, mlp_investigation/, logits/, analysis/). The attention/ grouping (introduced in 26c6a8d reorg) is dissolved — it held raw elicitation/entropy/binding triplets and was never attention-specific. load_all_results() now allowlists suite dirs explicitly.
