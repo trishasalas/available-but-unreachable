@@ -21,15 +21,23 @@ def load_prompts(prompts_path):
     return templates['prompts']
 
 
-def run_all_prompts(model, model_name, project_root, prompts_file='all_prompts.yml'):
+def run_all_prompts(model, model_name, project_root, prompts_file='all_prompts.yml',
+                    concepts=None, tag=None):
     """
-    Run every prompt through the model and save results.
+    Run prompts through the model and save results.
 
     Args:
         model: A loaded TransformerLens model.
         model_name: Full model name (e.g. "EleutherAI/pythia-160m").
         project_root: Path to the project root directory.
         prompts_file: Name of the YAML file in data/ (default: all_prompts.yml).
+        concepts: Optional set/list of concept names; if given, only prompts
+            whose concept is in this collection are run (e.g. PENDING_CRITERIA
+            from src.accuracy_coding for the n=49 expansion).
+        tag: Optional filename tag. tag='expansion' writes
+            {model}-expansion-results.csv, protecting the original
+            {model}-results.csv raws from being overwritten. The '-results'
+            suffix is preserved so src.analysis.load_all_results picks it up.
 
     Returns:
         DataFrame with columns: prompt_id, concept, prompt_type,
@@ -41,6 +49,8 @@ def run_all_prompts(model, model_name, project_root, prompts_file='all_prompts.y
     results = []
 
     for case in prompts:
+        if concepts is not None and case['concept'] not in concepts:
+            continue
         prompt = case['prompt']
         full_output = model.generate(prompt, max_new_tokens=case['max_tokens'], temperature=0)
         response = full_output[len(prompt):].strip()
@@ -63,7 +73,8 @@ def run_all_prompts(model, model_name, project_root, prompts_file='all_prompts.y
     suite = 'pythia' if 'pythia' in short_name else 'gpt2'
     output_dir = Path(project_root) / 'results' / suite
     output_dir.mkdir(parents=True, exist_ok=True)
-    output_path = output_dir / f'{short_name}-results.csv'
+    run_name = f'{short_name}-{tag}-results.csv' if tag else f'{short_name}-results.csv'
+    output_path = output_dir / run_name
     results_df.to_csv(output_path, index=False)
     print(f"Saved {len(results_df)} results to {output_path}")
 

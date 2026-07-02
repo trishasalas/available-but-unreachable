@@ -16,11 +16,63 @@ Usage:
 """
 
 
+# ---------------------------------------------------------------------------
+# n=49 EXPANSION — criteria pending (2026-07-01)
+#
+# The 41 compounds below have elicitation runs but NO coding criteria yet.
+# They are guarded in code_response() to return 'uncoded' until authored.
+#
+# Authoring workflow (see docs/findings/coding-criteria-draft.md):
+#   1. Author criteria in the worksheet, frequency_table.csv CLOSED.
+#   2. Decide the sense policy ONCE (worksheet, Option A/B) — several of
+#      these have dominant non-a11y senses (menu bar, sign language, …).
+#   3. Add each concept's rules to code_declarative's `rules` dict using the
+#      existing house pattern (correct-markers + partial-markers), and REMOVE
+#      it from PENDING_CRITERIA in the same commit.
+#   4. DECISIONS.md entry (2026-06-28 policy) with the commit hash.
+#   5. Regression guard: the original 8 compounds' rows in
+#      per_concept_trajectories.csv must be byte-identical before/after.
+#
+# Naming note: concept strings below are GUESSES at the space-separated form
+# (frequency_table.csv uses underscores; its `concept` column maps e.g.
+# closed_captions -> "captions"). VERIFY each against the actual `concept`
+# values in the new elicitation CSVs before trusting the guard — a mismatch
+# here silently re-opens the fall-through-to-'incorrect' hazard.
+# ---------------------------------------------------------------------------
+
+PENDING_CRITERIA = {
+    # WCAG success-criterion terms
+    'input purpose', 'target size', 'touch target', 'drag movement',
+    'focus appearance', 'consistent help', 'redundant entry',
+    'accessible authentication', 'text spacing', 'status message',
+    'error identification', 'pointer cancellation', 'character key',
+    'sensory characteristics',
+    # ARIA / assistive-tech terms
+    'accessibility tree', 'accessible name', 'accessible description',
+    'live region', 'tab panel', 'radio group', 'tree grid', 'menu bar',
+    'tool tip', 'combo box', 'landmark region',
+    # practice / content terms
+    'keyboard interaction', 'section heading', 'text alternative',
+    'audio description', 'sign language', 'semantic markup',
+    'focus management', 'reading order', 'text formatting', 'form field',
+    'low vision', 'cognitive disabilities', 'universal design',
+    'decorative image', 'informative image', 'responsive design',
+}
+
+
 def code_response(prompt_type, concept, prompt, output):
     """
     Route to the appropriate coding function based on prompt type.
     Returns: 'correct' | 'partial' | 'incorrect'
     """
+    # Guard: expansion compounds return 'uncoded' until their criteria are
+    # authored (see PENDING_CRITERIA below). Without this guard they would
+    # fall through code_declarative's rules.get() miss and be silently coded
+    # 'incorrect' — a wall of fake never_emerges. Remove each concept from
+    # PENDING_CRITERIA as its criteria land.
+    if concept in PENDING_CRITERIA:
+        return 'uncoded'
+
     if prompt_type == 'declarative':
         return code_declarative(concept, output)
     elif prompt_type == 'evaluative':

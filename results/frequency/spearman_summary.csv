@@ -1,0 +1,7 @@
+suite,metric,r,p,n
+pythia,bigram_spearman,0.6301,0.0941,8
+pythia,conditional_spearman,0.5189,0.1876,8
+pythia,word1_spearman,0.0988,0.8159,8
+gpt2,bigram_spearman,0.776,0.0236,8
+gpt2,conditional_spearman,0.3004,0.4698,8
+gpt2,word1_spearman,0.7259,0.0415,8

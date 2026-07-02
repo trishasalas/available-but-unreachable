@@ -91,10 +91,303 @@ prompts:
     max_tokens: 100
 
   - prompt_id: decl_captions_001
-    concept: captions
+    concept: closed captions
     prompt_type: declarative
     template_type: cloze
-    prompt: "Captions are used for"
+    prompt: "Closed captions are used for"
+    max_tokens: 100
+
+  # ----------------------------------------------------------
+  # DECLARATIVE (expansion) — accessibility compounds with frequency
+  # data but no trajectory class yet. Same cloze style as above;
+  # added to power the frequency-vs-trajectory Spearman (Section 5).
+  # ----------------------------------------------------------
+
+  - prompt_id: decl_keyboard_interaction_001
+    concept: keyboard interaction
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A keyboard interaction is"
+    max_tokens: 100
+
+  - prompt_id: decl_section_heading_001
+    concept: section heading
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A section heading is"
+    max_tokens: 100
+
+  - prompt_id: decl_text_alternative_001
+    concept: text alternative
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A text alternative is"
+    max_tokens: 100
+
+  - prompt_id: decl_audio_description_001
+    concept: audio description
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "An audio description is"
+    max_tokens: 100
+
+  - prompt_id: decl_sign_language_001
+    concept: sign language
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Sign language is"
+    max_tokens: 100
+
+  - prompt_id: decl_sensory_characteristics_001
+    concept: sensory characteristics
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Sensory characteristics are"
+    max_tokens: 100
+
+  - prompt_id: decl_input_purpose_001
+    concept: input purpose
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "An input purpose is"
+    max_tokens: 100
+
+  - prompt_id: decl_target_size_001
+    concept: target size
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A target size is"
+    max_tokens: 100
+
+  - prompt_id: decl_touch_target_001
+    concept: touch target
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A touch target is"
+    max_tokens: 100
+
+  - prompt_id: decl_drag_movement_001
+    concept: drag movement
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A drag movement is"
+    max_tokens: 100
+
+  - prompt_id: decl_focus_appearance_001
+    concept: focus appearance
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A focus appearance is"
+    max_tokens: 100
+
+  - prompt_id: decl_consistent_help_001
+    concept: consistent help
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Consistent help is"
+    max_tokens: 100
+
+  - prompt_id: decl_redundant_entry_001
+    concept: redundant entry
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A redundant entry is"
+    max_tokens: 100
+
+  - prompt_id: decl_accessible_authentication_001
+    concept: accessible authentication
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Accessible authentication is"
+    max_tokens: 100
+
+  - prompt_id: decl_text_spacing_001
+    concept: text spacing
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Text spacing is"
+    max_tokens: 100
+
+  - prompt_id: decl_status_message_001
+    concept: status message
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A status message is"
+    max_tokens: 100
+
+  - prompt_id: decl_error_identification_001
+    concept: error identification
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Error identification is"
+    max_tokens: 100
+
+  - prompt_id: decl_pointer_cancellation_001
+    concept: pointer cancellation
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Pointer cancellation is"
+    max_tokens: 100
+
+  - prompt_id: decl_character_key_001
+    concept: character key
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A character key is"
+    max_tokens: 100
+
+  - prompt_id: decl_accessibility_tree_001
+    concept: accessibility tree
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "An accessibility tree is"
+    max_tokens: 100
+
+  - prompt_id: decl_accessible_name_001
+    concept: accessible name
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "An accessible name is"
+    max_tokens: 100
+
+  - prompt_id: decl_accessible_description_001
+    concept: accessible description
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "An accessible description is"
+    max_tokens: 100
+
+  - prompt_id: decl_live_region_001
+    concept: live region
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A live region is"
+    max_tokens: 100
+
+  - prompt_id: decl_tab_panel_001
+    concept: tab panel
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A tab panel is"
+    max_tokens: 100
+
+  - prompt_id: decl_radio_group_001
+    concept: radio group
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A radio group is"
+    max_tokens: 100
+
+  - prompt_id: decl_tree_grid_001
+    concept: tree grid
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A tree grid is"
+    max_tokens: 100
+
+  - prompt_id: decl_menu_bar_001
+    concept: menu bar
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A menu bar is"
+    max_tokens: 100
+
+  - prompt_id: decl_tool_tip_001
+    concept: tool tip
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A tool tip is"
+    max_tokens: 100
+
+  - prompt_id: decl_combo_box_001
+    concept: combo box
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A combo box is"
+    max_tokens: 100
+
+  - prompt_id: decl_semantic_markup_001
+    concept: semantic markup
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Semantic markup is"
+    max_tokens: 100
+
+  - prompt_id: decl_focus_management_001
+    concept: focus management
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Focus management is"
+    max_tokens: 100
+
+  - prompt_id: decl_reading_order_001
+    concept: reading order
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Reading order is"
+    max_tokens: 100
+
+  - prompt_id: decl_text_formatting_001
+    concept: text formatting
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Text formatting is"
+    max_tokens: 100
+
+  - prompt_id: decl_form_field_001
+    concept: form field
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A form field is"
+    max_tokens: 100
+
+  - prompt_id: decl_landmark_region_001
+    concept: landmark region
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A landmark region is"
+    max_tokens: 100
+
+  - prompt_id: decl_low_vision_001
+    concept: low vision
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Low vision is"
+    max_tokens: 100
+
+  - prompt_id: decl_cognitive_disabilities_001
+    concept: cognitive disabilities
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Cognitive disabilities are"
+    max_tokens: 100
+
+  - prompt_id: decl_universal_design_001
+    concept: universal design
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Universal design is"
+    max_tokens: 100
+
+  - prompt_id: decl_decorative_image_001
+    concept: decorative image
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A decorative image is"
+    max_tokens: 100
+
+  - prompt_id: decl_informative_image_001
+    concept: informative image
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "An informative image is"
+    max_tokens: 100
+
+  - prompt_id: decl_responsive_design_001
+    concept: responsive design
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Responsive design is"
     max_tokens: 100
 
   # ----------------------------------------------------------

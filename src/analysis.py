@@ -32,6 +32,11 @@ def load_all_results(project_root):
     for suite_dir in sorted(results_dir.iterdir()):
         if suite_dir.name.startswith('_') or not suite_dir.is_dir():
             continue
+        if suite_dir.name not in ('pythia', 'gpt2'):
+            # Experiment output dirs (analysis/, frequency/, logits/,
+            # mlp_investigation/) are not raw suites — skip them.
+            # Canonical layout: raw per-model CSVs live at results/{suite}/.
+            continue
 
         suite = suite_dir.name  # 'pythia' or 'gpt2'
 

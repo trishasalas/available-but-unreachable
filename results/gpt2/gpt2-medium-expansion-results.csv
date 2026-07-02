@@ -1,0 +1,326 @@
+prompt_id,concept,prompt_type,template_type,prompt,output,max_tokens,model
+decl_keyboard_interaction_001,keyboard interaction,declarative,cloze,A keyboard interaction is,"a key component of the game. It's a way to interact with the game world, and it's also a way to interact with the game's UI.
+
+The keyboard is a key component of the game, and it's also a way to interact with the game's UI.
+
+The keyboard is a key component of the game, and it's also a way to interact with the game's UI.
+
+The keyboard is a key component of the game, and it's also",100,gpt2-medium
+decl_section_heading_001,section heading,declarative,cloze,A section heading is,"a section of text that is used to describe a section of text.
+
+A section heading is used to describe a section of text.
+
+A section heading is used to describe a section of text.
+
+A section heading is used to describe a section of text.
+
+A section heading is used to describe a section of text.
+
+A section heading is used to describe a section of text.
+
+A section heading is used to describe a section of text.",100,gpt2-medium
+decl_text_alternative_001,text alternative,declarative,cloze,A text alternative is,"available for this article.
+
+The text alternative is a text that is not part of the original text. It is a text that is not part of the original text.
+
+Contents show]
+
+Description Edit
+
+The text alternative is a text that is not part of the original text. It is a text that is not part of the original text.
+
+The text alternative is a text that is not part of the original text. It is a text that is not part of",100,gpt2-medium
+decl_audio_description_001,audio description,declarative,cloze,An audio description is,"a description of a sound. It is usually written in a language that is not commonly understood by the listener.
+
+An audio description is usually written in a language that is not commonly understood by the listener.
+
+An audio description is usually written in a language that is not commonly understood by the listener.
+
+An audio description is usually written in a language that is not commonly understood by the listener.
+
+An audio description is usually written in a language that is not commonly understood by the",100,gpt2-medium
+decl_sign_language_001,sign language,declarative,cloze,Sign language is,"a language that is spoken by people who are deaf or hard of hearing. It is a language that is used to communicate with people who are blind or hard of hearing. Sign language is a language that is used to communicate with people who are deaf or hard of hearing.
+
+Sign language is a language that is used to communicate with people who are deaf or hard of hearing. It is a language that is used to communicate with people who are deaf or hard of hearing.
+
+Sign language is",100,gpt2-medium
+decl_sensory_characteristics_001,sensory characteristics,declarative,cloze,Sensory characteristics are,the most important determinants of the perception of taste. The sensory characteristics of food are determined by the sensory receptors that are present in the mouth and tongue. The sensory characteristics of food are determined by the sensory receptors that are present in the mouth and tongue. The sensory characteristics of food are determined by the sensory receptors that are present in the mouth and tongue. The sensory characteristics of food are determined by the sensory receptors that are present in the mouth and tongue. The sensory characteristics of food are determined by the,100,gpt2-medium
+decl_input_purpose_001,input purpose,declarative,cloze,An input purpose is,"a function that takes an input and returns a value.
+
+An input purpose is a function that takes an input and returns a value.
+
+An input purpose is a function that takes an input and returns a value.
+
+An input purpose is a function that takes an input and returns a value.
+
+An input purpose is a function that takes an input and returns a value.
+
+An input purpose is a function that takes an input and returns a value.
+
+An input",100,gpt2-medium
+decl_target_size_001,target size,declarative,cloze,A target size is,"a number that specifies the size of the target that will be used to generate the output. The target size is the number of pixels that will be drawn to the screen.
+
+The target size is the number of pixels that will be drawn to the screen. The target size is the number of pixels that will be drawn to the screen. The target size is the number of pixels that will be drawn to the screen. The target size is the number of pixels that will be drawn to the screen.",100,gpt2-medium
+decl_touch_target_001,touch target,declarative,cloze,A touch target is,"a target that is not a direct hit. It is a target that is hit by a weapon or projectile.
+
+A touch target is a target that is not a direct hit. It is a target that is hit by a weapon or projectile.
+
+A touch target is a target that is not a direct hit. It is a target that is hit by a weapon or projectile.
+
+A touch target is a target that is not a direct hit. It is a target that is hit",100,gpt2-medium
+decl_drag_movement_001,drag movement,declarative,cloze,A drag movement is,"a movement that is performed by a person or persons in a manner that is designed to attract attention to themselves or their appearance. The term is often used to describe a person who performs a drag show.
+
+Drag shows are usually held in public places, such as nightclubs, bars, and clubs. Drag shows are usually held in a public place, such as a nightclub, bar, or club.
+
+Drag shows are usually held in public places, such as nightclubs, bars, and",100,gpt2-medium
+decl_focus_appearance_001,focus appearance,declarative,cloze,A focus appearance is,"a special appearance that is only available to the player who has the Focus ability. It is a special appearance that is only available to the player who has the Focus ability.
+
+Contents show]
+
+Overview Edit
+
+A focus appearance is a special appearance that is only available to the player who has the Focus ability. It is a special appearance that is only available to the player who has the Focus ability.
+
+The player can choose to have the appearance of a focus appearance, or they",100,gpt2-medium
+decl_consistent_help_001,consistent help,declarative,cloze,Consistent help is,"available to help you get started with your new project.
+
+We have a number of resources available to help you get started with your new project.
+
+We have a number of resources available to help you get started with your new project.
+
+We have a number of resources available to help you get started with your new project.
+
+We have a number of resources available to help you get started with your new project.
+
+We have a number of resources available to help you get",100,gpt2-medium
+decl_redundant_entry_001,redundant entry,declarative,cloze,A redundant entry is,"a piece of code that is used to create a new entry in a database.
+
+A redundant entry is a piece of code that is used to create a new entry in a database.
+
+A redundant entry is a piece of code that is used to create a new entry in a database.
+
+A redundant entry is a piece of code that is used to create a new entry in a database.
+
+A redundant entry is a piece of code that is used to create a new entry",100,gpt2-medium
+decl_accessible_authentication_001,accessible authentication,declarative,cloze,Accessible authentication is,"a key component of any secure web application. It is a key component of any secure web application.
+
+The following is a list of common authentication methods that are available in the web browser.
+
+Authentication methods
+
+The following are the authentication methods that are available in the web browser.
+
+Authentication methods
+
+The following are the authentication methods that are available in the web browser.
+
+Authentication methods
+
+The following are the authentication methods that are available in the web",100,gpt2-medium
+decl_text_spacing_001,text spacing,declarative,cloze,Text spacing is,"a key element of the design process. It's important to make sure that your text is legible and readable.
+
+The spacing between words is important because it determines how much space is left between the words.
+
+The spacing between words is important because it determines how much space is left between the words. The spacing between words is important because it determines how much space is left between the words. The spacing between words is important because it determines how much space is left between the words. The",100,gpt2-medium
+decl_status_message_001,status message,declarative,cloze,A status message is,"displayed when the player is in a battle.
+
+Status messages are displayed when the player is in a battle.
+
+Status messages are displayed when the player is in a battle.
+
+Status messages are displayed when the player is in a battle.
+
+Status messages are displayed when the player is in a battle.
+
+Status messages are displayed when the player is in a battle.
+
+Status messages are displayed when the player is in a battle.
+
+Status messages are displayed when",100,gpt2-medium
+decl_error_identification_001,error identification,declarative,cloze,Error identification is,"a process that is used to determine whether a given program is a legitimate copy of a legitimate program.
+
+The following error identification steps are used to determine whether a given program is a legitimate copy of a legitimate program:
+
+The program is a legitimate copy of a legitimate program.
+
+The program is a legitimate copy of a legitimate program.
+
+The program is a legitimate copy of a legitimate program.
+
+The program is a legitimate copy of a legitimate program.
+
+The program",100,gpt2-medium
+decl_pointer_cancellation_001,pointer cancellation,declarative,cloze,Pointer cancellation is,"a common problem in the web. It is a common problem in the web, but it is not a common problem in the web.
+
+The problem is that the browser does not know how to handle the pointer cancellation. It does not know how to handle the pointer cancellation. It does not know how to handle the pointer cancellation. It does not know how to handle the pointer cancellation.
+
+The problem is that the browser does not know how to handle the pointer cancellation. It does not know",100,gpt2-medium
+decl_character_key_001,character key,declarative,cloze,A character key is,"a key that is used to unlock a character's inventory. It is used to open the character's inventory, and is used to open the character's inventory.
+
+Contents show]
+
+Character Key Edit
+
+A character key is a key that is used to unlock a character's inventory. It is used to open the character's inventory, and is used to open the character's inventory.
+
+Character Key Edit
+
+A character key is a key that is used to unlock a character",100,gpt2-medium
+decl_accessibility_tree_001,accessibility tree,declarative,cloze,An accessibility tree is,"a tree that is accessible to all users. It is a tree that is accessible to all users, regardless of their level of skill.
+
+An accessibility tree is a tree that is accessible to all users, regardless of their level of skill.
+
+An accessibility tree is a tree that is accessible to all users, regardless of their level of skill.
+
+An accessibility tree is a tree that is accessible to all users, regardless of their level of skill.
+
+An accessibility tree is a",100,gpt2-medium
+decl_accessible_name_001,accessible name,declarative,cloze,An accessible name is,"one that is easy to remember and easy to remember for others to recognize.
+
+An accessible name is one that is easy to remember and easy to remember for others to recognize.
+
+An accessible name is one that is easy to remember and easy to remember for others to recognize.
+
+An accessible name is one that is easy to remember and easy to remember for others to recognize.
+
+An accessible name is one that is easy to remember and easy to remember for others to recognize.",100,gpt2-medium
+decl_accessible_description_001,accessible description,declarative,cloze,An accessible description is,"a description that is easy to understand and that is easy to read.
+
+An accessible description is a description that is easy to understand and that is easy to read.
+
+An accessible description is a description that is easy to understand and that is easy to read.
+
+An accessible description is a description that is easy to understand and that is easy to read.
+
+An accessible description is a description that is easy to understand and that is easy to read.
+
+An accessible description is",100,gpt2-medium
+decl_live_region_001,live region,declarative,cloze,A live region is,"a collection of objects that are connected by a network of pipes.
+
+A live region is a collection of objects that are connected by a network of pipes.
+
+A live region is a collection of objects that are connected by a network of pipes.
+
+A live region is a collection of objects that are connected by a network of pipes.
+
+A live region is a collection of objects that are connected by a network of pipes.
+
+A live region is a collection of objects that",100,gpt2-medium
+decl_tab_panel_001,tab panel,declarative,cloze,A tab panel is,"a panel that can be used to display text.
+
+Contents show]
+
+Overview Edit
+
+A tab panel is a panel that can be used to display text. It can be used to display text in a tabbed format, or to display text in a tabbed format in a tabbed panel.
+
+A tab panel can be used to display text in a tabbed format, or to display text in a tabbed format in a tabbed panel.
+
+A tab panel",100,gpt2-medium
+decl_radio_group_001,radio group,declarative,cloze,A radio group is,"calling for the resignation of the mayor of the city of Chicago, Rahm Emanuel, after he said that the city's police force is ""not a force for good.""
+
+The Chicago Sun-Times reported that the group, the Chicago Police Association, is calling for Emanuel to step down after he said that the police force is ""not a force for good.""
+
+""The Chicago Police Department is not a force for good,"" Emanuel said. ""It's not a force for good. It",100,gpt2-medium
+decl_tree_grid_001,tree grid,declarative,cloze,A tree grid is,"a grid of trees that are connected by a tree grid. A tree grid is a grid of trees that are connected by a tree grid.
+
+A tree grid is a grid of trees that are connected by a tree grid. A tree grid is a grid of trees that are connected by a tree grid.
+
+A tree grid is a grid of trees that are connected by a tree grid. A tree grid is a grid of trees that are connected by a tree grid.
+
+A tree",100,gpt2-medium
+decl_menu_bar_001,menu bar,declarative,cloze,A menu bar is,"a place where you can see your favorite items on the menu. It's a place where you can see what's on the menu and what's not. It's a place where you can see what's on the menu and what's not.
+
+A menu bar is a place where you can see what's on the menu and what's not. It's a place where you can see what's on the menu and what's not.
+
+A menu bar is a place where you can",100,gpt2-medium
+decl_tool_tip_001,tool tip,declarative,cloze,A tool tip is,"a small piece of information that helps you to understand how a particular piece of code works. It is usually written in a way that makes it easy to understand.
+
+A tool tip is a small piece of information that helps you to understand how a particular piece of code works. It is usually written in a way that makes it easy to understand.
+
+A tool tip is a small piece of information that helps you to understand how a particular piece of code works. It is usually written in a",100,gpt2-medium
+decl_combo_box_001,combo box,declarative,cloze,A combo box is,"a box that contains a number of items. The box is usually made of wood, but can also be made of metal, plastic, or even paper.
+
+A combo box is usually made of wood, but can also be made of metal, plastic, or even paper.
+
+A combo box is usually made of wood, but can also be made of metal, plastic, or even paper.
+
+A combo box is usually made of wood, but can also be made of metal,",100,gpt2-medium
+decl_semantic_markup_001,semantic markup,declarative,cloze,Semantic markup is,"a technique for creating semantic markup that is easy to understand and easy to maintain. It is used to create a semantic markup that is easy to understand and easy to maintain.
+
+Semantic markup is a technique for creating semantic markup that is easy to understand and easy to maintain. It is used to create a semantic markup that is easy to understand and easy to maintain.
+
+Semantic markup is a technique for creating semantic markup that is easy to understand and easy to maintain. It is used to",100,gpt2-medium
+decl_focus_management_001,focus management,declarative,cloze,Focus management is,"a key component of effective communication. It is a skill that is learned and practiced by individuals and organizations. It is also a skill that is learned and practiced by individuals and organizations that are not as well-versed in it.
+
+The following are some of the most common ways that focus management is practiced.
+
+1. Focus on the task at hand.
+
+Focus on the task at hand. Focus on the task at hand. Focus on the task at hand. Focus on the",100,gpt2-medium
+decl_reading_order_001,reading order,declarative,cloze,Reading order is,"important for a lot of reasons. It's important to know what order you're reading, and it's important to know what order you're reading in.
+
+The first thing to understand is that reading order is not a fixed thing. It's a matter of personal preference.
+
+I'm not going to go into detail about reading order, but I will say that I prefer reading order that is:
+
+1. The first thing I read
+
+2. The first thing I read",100,gpt2-medium
+decl_text_formatting_001,text formatting,declarative,cloze,Text formatting is,a very important part of the web design process. It's a very important part of the design process because it's the foundation of the web design process. It's the foundation of the web design process because it's the foundation of the web design process because it's the foundation of the web design process because it's the foundation of the web design process because it's the foundation of the web design process because it's the foundation of the web design process because it's the foundation of the web design process,100,gpt2-medium
+decl_form_field_001,form field,declarative,cloze,A form field is,"a field that can be used to specify a form field.
+
+A form field is a field that can be used to specify a form field.
+
+A form field is a field that can be used to specify a form field.
+
+A form field is a field that can be used to specify a form field.
+
+A form field is a field that can be used to specify a form field.
+
+A form field is a field that can be used to specify a form",100,gpt2-medium
+decl_landmark_region_001,landmark region,declarative,cloze,A landmark region is,"being transformed into a new city.
+
+The city of New Orleans is being transformed into a new city, with a $1.5 billion plan to transform the city into a ""world-class city.""
+
+The plan, which is being developed by the city's Economic Development Corporation, is being developed by the New Orleans Economic Development Corporation, the city's economic development agency.
+
+The plan calls for the city to be transformed into a ""world-class city"" by 2035.",100,gpt2-medium
+decl_low_vision_001,low vision,declarative,cloze,Low vision is,"a common problem in the elderly. It can be caused by a variety of conditions, including Alzheimer's disease, Parkinson's disease, and multiple sclerosis.
+
+The most common cause of low vision is a degenerative eye disease called retinopathy. Retinopathy is a degenerative eye disease that causes the retina to lose its ability to absorb light.
+
+Retinopathy can be caused by a variety of conditions, including Alzheimer's disease, Parkinson's disease, and multiple sclerosis.",100,gpt2-medium
+decl_cognitive_disabilities_001,cognitive disabilities,declarative,cloze,Cognitive disabilities are,"a growing problem in the United States. The number of people with a cognitive disability has increased by more than 50 percent since 1980, and the number of people with a learning disability has increased by more than 50 percent since 1980.
+
+The number of people with a cognitive disability has increased by more than 50 percent since 1980, and the number of people with a learning disability has increased by more than 50 percent since 1980.
+
+The number of people with a cognitive disability has increased by more than 50",100,gpt2-medium
+decl_universal_design_001,universal design,declarative,cloze,Universal design is,"a great way to create a unique and unique experience.
+
+We've been designing and building custom products for over 20 years. We've built a reputation for quality and innovation.
+
+We're proud to be a part of the Universal Design family.",100,gpt2-medium
+decl_decorative_image_001,decorative image,declarative,cloze,A decorative image is,"a picture that is used to represent a person or thing. It is usually a picture of a person or thing that is used to represent a person or thing.
+
+A decorative image is a picture that is used to represent a person or thing. It is usually a picture of a person or thing that is used to represent a person or thing.
+
+A decorative image is a picture that is used to represent a person or thing. It is usually a picture of a person or thing that is",100,gpt2-medium
+decl_informative_image_001,informative image,declarative,cloze,An informative image is,"a powerful tool for communicating ideas and ideas are powerful tools for communicating ideas.
+
+The image is a powerful tool for communicating ideas and ideas are powerful tools for communicating ideas.
+
+The image is a powerful tool for communicating ideas and ideas are powerful tools for communicating ideas.
+
+The image is a powerful tool for communicating ideas and ideas are powerful tools for communicating ideas.
+
+The image is a powerful tool for communicating ideas and ideas are powerful tools for communicating ideas.
+
+The image is",100,gpt2-medium
+decl_responsive_design_001,responsive design,declarative,cloze,Responsive design is,"a key component of any website. It's the way that your website looks and feels. It's the way that your visitors interact with your website.
+
+Responsive design is a key component of any website. It's the way that your website looks and feels. It's the way that your visitors interact with your website.
+
+Responsive design is a key component of any website. It's the way that your visitors interact with your website.
+
+Responsive design is",100,gpt2-medium

@@ -1,0 +1,145 @@
+prompt_id,concept,prompt_type,template_type,prompt,output,max_tokens,model
+decl_keyboard_interaction_001,keyboard interaction,declarative,cloze,A keyboard interaction is,"a user input that is received by a computing device. A keyboard interaction may be a keystroke, a key press, a key release, a key combination, a key combination with modifier keys, a key press and a key release, a key press and a key release with modifier keys, a key press and a key release with modifier keys and a modifier key, a key press and a key release with modifier keys and a modifier key, a key press and a key release with modifier keys and a",100,EleutherAI/pythia-12B
+decl_section_heading_001,section heading,declarative,cloze,A section heading is,"a heading that is not part of the main text of a document. It is usually placed at the beginning of a section, and is usually in boldface.
+
+A section heading is a heading that is not part of the main text of a document. It is usually placed at the beginning of a section, and is usually in boldface.
+
+−
+
+==Section Heading Examples==
+
++
+
+==Section Heading Examples==
+
+−
+
+*'''Section",100,EleutherAI/pythia-12B
+decl_text_alternative_001,text alternative,declarative,cloze,A text alternative is,"a text that is displayed in place of a text that is not available. For example, a text alternative may be displayed when a text is not available. A text alternative may be displayed when a text is not available because the text is not available, because the text is not available in a particular language, because the text is not available in a particular format, because the text is not available in a particular font, because the text is not available in a particular color, because the text is not available",100,EleutherAI/pythia-12B
+decl_audio_description_001,audio description,declarative,cloze,An audio description is,"a form of audio description that provides a description of the visual content of a video. The description may be provided in the form of a narration, a voiceover, or a combination of narration and voiceover. The audio description may be provided in a variety of languages. For example, the audio description may be provided in English, French, Spanish, German, and/or other languages.
+The audio description may be provided in a variety of formats. For example, the audio description may",100,EleutherAI/pythia-12B
+decl_sign_language_001,sign language,declarative,cloze,Sign language is,a visual language that is used by the deaf community. It is a language that is used by the deaf community to communicate with each other. It is a language that is used by the deaf community to communicate with the hearing community. It is a language that is used by the deaf community to communicate with the hearing community. It is a language that is used by the deaf community to communicate with the hearing community. It is a language that is used by the deaf community to communicate with the hearing community.,100,EleutherAI/pythia-12B
+decl_sensory_characteristics_001,sensory characteristics,declarative,cloze,Sensory characteristics are,"important for the acceptance of meat products. The sensory characteristics of meat products are determined by the type of meat used, the method of processing, the type of fat used, the method of fat addition, the method of cooking, and the method of storage.
+The sensory characteristics of meat products are determined by the type of meat used, the method of processing, the type of fat used, the method of fat addition, the method of cooking, and the method of storage.
+The sensory characteristics of",100,EleutherAI/pythia-12B
+decl_input_purpose_001,input purpose,declarative,cloze,An input purpose is,"to provide a user with a means to input information into a computer system. The information may be in the form of text, numbers, or other symbols. The information may be entered by the user through a keyboard, a mouse, a touch screen, or other input device. The information may be entered by the user through a keyboard, a mouse, a touch screen, or other input device. The information may be entered by the user through a keyboard, a mouse, a touch screen, or other",100,EleutherAI/pythia-12B
+decl_target_size_001,target size,declarative,cloze,A target size is,"a size of a target object to be measured. For example, a target size of a target object to be measured may be a size of a target object to be measured in a semiconductor manufacturing process. In the semiconductor manufacturing process, a target size of a target object to be measured may be a size of a target object to be measured in a semiconductor manufacturing process. In the semiconductor manufacturing process, a target size of a target object to be measured may be a size of a target object to be measured",100,EleutherAI/pythia-12B
+decl_touch_target_001,touch target,declarative,cloze,A touch target is,"a target that is touched by a user. A touch target may be a physical object, such as a button, a key, a knob, a touch screen, a touch pad, a touch screen, a touch pad, a touch screen, a touch screen, a touch screen, a touch screen, a touch screen, a touch screen, a touch screen, a touch screen, a touch screen, a touch screen, a touch screen, a touch screen, a touch screen, a touch screen",100,EleutherAI/pythia-12B
+decl_drag_movement_001,drag movement,declarative,cloze,A drag movement is,"a movement of a body in a direction opposite to the direction of gravity. A drag movement is typically caused by a force applied to the body. For example, a drag movement may be caused by a force applied to a body by a user. A drag movement may be caused by a force applied to a body by a user, such as a user pulling on a handle of a bicycle. A drag movement may be caused by a force applied to a body by a user, such as a user pulling",100,EleutherAI/pythia-12B
+decl_focus_appearance_001,focus appearance,declarative,cloze,A focus appearance is,"a visual effect that is used to draw the viewer's attention to a particular area of a display. A focus appearance may be used to highlight a particular area of a display, such as a particular application, a particular window, or a particular object. A focus appearance may also be used to draw the viewer's attention to a particular area of a display, such as a particular application, a particular window, or a particular object.
+A focus appearance may be implemented by drawing a focus region on a",100,EleutherAI/pythia-12B
+decl_consistent_help_001,consistent help,declarative,cloze,Consistent help is,"the key to success
+
+The most important thing to remember when you are looking for a new job is to be consistent.
+
+You need to be consistent in your job search. You need to be consistent in your application. You need to be consistent in your follow-up. You need to be consistent in your networking. You need to be consistent in your interviewing. You need to be consistent in your job search.
+
+Consistency is the key to success.
+
+If you",100,EleutherAI/pythia-12B
+decl_redundant_entry_001,redundant entry,declarative,cloze,A redundant entry is,"a data entry that is stored in more than one location. For example, a database may store a redundant entry in two or more locations. A redundant entry may be stored in a primary location and a secondary location. The redundant entry may be stored in the primary location in a first format and in the secondary location in a second format.
+A redundant entry may be stored in a primary location and a secondary location for a variety of reasons. For example, a redundant entry may be stored in a primary",100,EleutherAI/pythia-12B
+decl_accessible_authentication_001,accessible authentication,declarative,cloze,Accessible authentication is,"a method of authenticating a user based on the user's ability to access a device. For example, a user may be required to enter a password or other authentication information to access a device. However, this method of authentication may be inconvenient for the user. For example, the user may be required to remember a password or other authentication information. In addition, the user may be required to enter the password or other authentication information on a device that is not readily accessible.",100,EleutherAI/pythia-12B
+decl_text_spacing_001,text spacing,declarative,cloze,Text spacing is,"a very important aspect of typography. It is the space between the characters of a word or a sentence. It is also the space between the lines of a paragraph.
+
+In this article, we will learn how to add text spacing in CSS.
+
+Text spacing is a very important aspect of typography. It is the space between the characters of a word or a sentence. It is also the space between the lines of a paragraph.
+
+In this article, we will learn how",100,EleutherAI/pythia-12B
+decl_status_message_001,status message,declarative,cloze,A status message is,"a message that is displayed on a computer screen to indicate the status of a computer program or a computer system. For example, a status message may indicate that a computer program is running, that a computer program is waiting for input, or that a computer program is waiting for a response from a user.
+A status message may be displayed on a computer screen in a variety of ways. For example, a status message may be displayed as a text message, as a graphical image, or as a combination",100,EleutherAI/pythia-12B
+decl_error_identification_001,error identification,declarative,cloze,Error identification is,"a critical component of any software development process. The ability to identify errors in a software program is a key factor in the quality of the software program. The ability to identify errors in a software program is also a key factor in the ability to maintain the software program.
+In the past, error identification has been performed manually. In this process, a software developer would review the software program to identify errors. The software developer would then correct the identified errors.
+The manual process of error identification is time",100,EleutherAI/pythia-12B
+decl_pointer_cancellation_001,pointer cancellation,declarative,cloze,Pointer cancellation is,"a technique used in computer graphics to reduce the number of memory accesses required to render a scene. In a typical graphics system, a scene is rendered by first calculating the color of each pixel in the scene. The color of each pixel is calculated by interpolating the color of the pixels that are located at the corners of the pixel. The color of the pixel is then calculated by adding the interpolated color of the pixels that are located at the corners of the pixel to the interpolated color of the",100,EleutherAI/pythia-12B
+decl_character_key_001,character key,declarative,cloze,A character key is,"a key that is used to input a character. A character key is typically a key that is pressed down on a keyboard. A character key may be a key that is pressed down on a keyboard, or a key that is pressed down on a keypad. A character key may be a key that is pressed down on a keyboard, or a key that is pressed down on a keypad. A character key may be a key that is pressed down on a keyboard, or a key that is pressed",100,EleutherAI/pythia-12B
+decl_accessibility_tree_001,accessibility tree,declarative,cloze,An accessibility tree is,a tree structure that represents the accessibility of a set of objects. The accessibility tree is used to determine the accessibility of a set of objects. The accessibility tree is used to determine the accessibility of a set of objects. The accessibility tree is used to determine the accessibility of a set of objects. The accessibility tree is used to determine the accessibility of a set of objects. The accessibility tree is used to determine the accessibility of a set of objects. The accessibility tree is used to determine the accessibility of a set,100,EleutherAI/pythia-12B
+decl_accessible_name_001,accessible name,declarative,cloze,An accessible name is,"a name that is easy to pronounce and spell.
+
+An accessible name is a name that is easy to pronounce and spell.
+
+An accessible name is a name that is easy to pronounce and spell.
+
+An accessible name is a name that is easy to pronounce and spell.
+
+An accessible name is a name that is easy to pronounce and spell.
+
+An accessible name is a name that is easy to pronounce and spell.
+
+An accessible name is a name that is",100,EleutherAI/pythia-12B
+decl_accessible_description_001,accessible description,declarative,cloze,An accessible description is,"given of the basic principles of the theory of the
+thermodynamics of irreversible processes. The theory is applied to the
+thermodynamics of the irreversible processes of the chemical reactions.
+
+The book is intended for students of chemistry, physics, and engineering.
+
+The book is intended for students of chemistry, physics, and engineering.
+
+The book is intended for students of chemistry, physics, and engineering.
+
+The book is intended for students of chemistry, physics, and engineering",100,EleutherAI/pythia-12B
+decl_live_region_001,live region,declarative,cloze,A live region is,"a region of a computer system that is currently being used by a user. A live region may be a region of a computer system that is currently being used by a user, or a region of a computer system that is currently being used by a user. A live region may be a region of a computer system that is currently being used by a user, or a region of a computer system that is currently being used by a user. A live region may be a region of a computer system that is",100,EleutherAI/pythia-12B
+decl_tab_panel_001,tab panel,declarative,cloze,A tab panel is,"a panel that is attached to a tab of a tabbed document. A tab panel is typically used to display a document that is associated with the tab. For example, a user may open a document in a first tab of a tabbed document. The user may then open a second tab of the tabbed document to display a second document. The second tab may be associated with the second document. The user may then open a third tab of the tabbed document to display a third document. The",100,EleutherAI/pythia-12B
+decl_radio_group_001,radio group,declarative,cloze,A radio group is,a group of radios that are configured to communicate with each other. A radio group may be formed by a plurality of radios that are configured to communicate with each other. A radio group may be formed by a plurality of radios that are configured to communicate with each other. A radio group may be formed by a plurality of radios that are configured to communicate with each other. A radio group may be formed by a plurality of radios that are configured to communicate with each other. A radio group may be formed by,100,EleutherAI/pythia-12B
+decl_tree_grid_001,tree grid,declarative,cloze,A tree grid is,"a tree-like structure that is used to represent a hierarchical data structure. A tree grid is a tree-like structure that is used to represent a hierarchical data structure.
+
+A tree grid is a tree-like structure that is used to represent a hierarchical data structure. A tree grid is a tree-like structure that is used to represent a hierarchical data structure.
+
+A tree grid is a tree-like structure that is used to represent a hierarchical data structure. A tree grid is a",100,EleutherAI/pythia-12B
+decl_menu_bar_001,menu bar,declarative,cloze,A menu bar is,"a bar that appears at the top of a window or on the top of a screen. The menu bar is usually used to display a list of commands that can be used to control the application. The menu bar is usually located at the top of the window or screen.
+
+A menu bar is a bar that appears at the top of a window or on the top of a screen. The menu bar is usually used to display a list of commands that can be used to control the application. The",100,EleutherAI/pythia-12B
+decl_tool_tip_001,tool tip,declarative,cloze,A tool tip is,"a small, movable, graphical object that appears when a user hovers a mouse pointer over a graphical object. Tool tips are often used to provide information about the graphical object to which the tool tip is attached. For example, a tool tip may be used to provide information about a graphical object that is being selected by a user.
+In some cases, a tool tip may be used to provide information about a graphical object that is being selected by a user. For example, a tool tip may be",100,EleutherAI/pythia-12B
+decl_combo_box_001,combo box,declarative,cloze,A combo box is,"a control that allows the user to select one or more items from a list. The list is displayed in a drop-down list, and the user can select one or more items by clicking on the desired item(s).
+
+The combo box is a control that allows the user to select one or more items from a list. The list is displayed in a drop-down list, and the user can select one or more items by clicking on the desired item(s).
+
+A combo",100,EleutherAI/pythia-12B
+decl_semantic_markup_001,semantic markup,declarative,cloze,Semantic markup is,"a way to add meaning to data. For example, a web page may contain a list of items, and each item may have a title, a description, and a price. Semantic markup allows the user to understand the meaning of the data. For example, the user may want to know the price of a particular item. Semantic markup may be used to provide additional information about the data. For example, the user may want to know the price of a particular item. Semantic markup may",100,EleutherAI/pythia-12B
+decl_focus_management_001,focus management,declarative,cloze,Focus management is,"a key feature of the Windows operating system. It allows you to switch between applications and windows. It is also used to manage the windows that are open at a given time.
+
+In this article, we will show you how to use the focus management in Windows 10.
+
+How to use focus management in Windows 10
+
+To use focus management in Windows 10, you need to press the Windows key + Tab key. This will bring up the focus management window.
+
+You can also",100,EleutherAI/pythia-12B
+decl_reading_order_001,reading order,declarative,cloze,Reading order is,"a bit of a problem. I’ve read the first three books in the series, and I’m not sure I’m going to read the fourth. I’m not sure I’m going to read the fifth. I’m not sure I’m going to read the sixth. I’m not sure I’m going to read the seventh. I’m not sure I’m going to read the eighth. I’m not sure I’m going to read",100,EleutherAI/pythia-12B
+decl_text_formatting_001,text formatting,declarative,cloze,Text formatting is,"a feature that allows you to format text in a variety of ways. You can use it to make your text more readable, to emphasize certain words, or to make it easier to read on a small screen.
+
+You can use the formatting options in the following ways:
+
+To format text in a document
+
+To format text in a document, you can use the formatting options in the document.
+
+To format text in a web page
+
+To format text in a web page",100,EleutherAI/pythia-12B
+decl_form_field_001,form field,declarative,cloze,A form field is,"a control that allows a user to enter data into a form. A form field may be a text field, a drop-down list, a checkbox, a radio button, a button, a text area, a file upload field, a date field, a time field, a number field, a range field, a color field, a date/time field, a number field, a range field, a color field, a date/time field, a number field, a range field, a",100,EleutherAI/pythia-12B
+decl_landmark_region_001,landmark region,declarative,cloze,A landmark region is,"a region that is a part of a larger region. A landmark region is a region that is a part of a larger region.
+
+A landmark region is a region that is a part of a larger region. A landmark region is a region that is a part of a larger region.
+
+A landmark region is a region that is a part of a larger region. A landmark region is a region that is a part of a larger region.
+
+A landmark region is a region that is",100,EleutherAI/pythia-12B
+decl_low_vision_001,low vision,declarative,cloze,Low vision is,"a condition that affects the ability to see. It is a result of a visual impairment that cannot be corrected with glasses or contact lenses. Low vision is a disability that can be caused by a variety of eye diseases, such as macular degeneration, glaucoma, diabetic retinopathy, and retinitis pigmentosa.
+
+Low vision is a disability that can be caused by a variety of eye diseases, such as macular degeneration, glaucoma, diabetic retinopathy, and retinitis pigmentosa.
+
+Low",100,EleutherAI/pythia-12B
+decl_cognitive_disabilities_001,cognitive disabilities,declarative,cloze,Cognitive disabilities are,"a major source of morbidity and mortality in the elderly. The prevalence of cognitive disabilities increases with age, and the incidence of dementia is estimated to be as high as 10% in individuals over the age of 85. The most common cause of dementia is Alzheimer's disease (AD), which is characterized by the presence of amyloid plaques and neurofibrillary tangles in the brain. The amyloid plaques are composed of amyloid beta (Abeta) peptides, which are derived from the amyloid precursor protein (APP)",100,EleutherAI/pythia-12B
+decl_universal_design_001,universal design,declarative,cloze,Universal design is,"a concept that has been around for a long time. It is a concept that is based on the idea that all people are different and that everyone has different needs. The idea is that if a product is designed to be used by everyone, it will be more useful to everyone.
+
+The concept of universal design is not new. It has been around for a long time. It is a concept that has been around for a long time. It is a concept that is based on the idea that",100,EleutherAI/pythia-12B
+decl_decorative_image_001,decorative image,declarative,cloze,A decorative image is,"a picture or image that is used to decorate a surface. Decorative images are used in a variety of applications, including, for example, wallpaper, clothing, and the like. Decorative images are typically printed on a substrate, such as paper, fabric, or the like. The substrate may be a single sheet or a plurality of sheets. The substrate may be a single sheet or a plurality of sheets. The substrate may be a single sheet or a plurality of sheets. The",100,EleutherAI/pythia-12B
+decl_informative_image_001,informative image,declarative,cloze,An informative image is,"a picture that is designed to inform the viewer of something. The image can be a photograph, a painting, a drawing, a cartoon, a graphic, a map, a diagram, a diagram, a diagram, a diagram, a diagram, a diagram, a diagram, a diagram, a diagram, a diagram, a diagram, a diagram, a diagram, a diagram, a diagram, a diagram, a diagram, a diagram, a diagram, a diagram, a diagram, a diagram,",100,EleutherAI/pythia-12B
+decl_responsive_design_001,responsive design,declarative,cloze,Responsive design is,"a hot topic in the web design world. It’s a way to make your website look good on any device, from desktop to mobile.
+
+Responsive design is a hot topic in the web design world. It’s a way to make your website look good on any device, from desktop to mobile.
+
+Responsive design is a hot topic in the web design world. It’s a way to make your website look good on any device, from desktop to mobile",100,EleutherAI/pythia-12B

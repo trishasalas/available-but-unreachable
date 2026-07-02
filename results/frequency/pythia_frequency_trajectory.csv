@@ -1,0 +1,9 @@
+compound,domain,word1,word2,bigram_count,word1_count,word2_count,conditional_prob,suite,concept,trajectory,traj_ordinal
+screen_reader,accessibility,screen,reader,32100,22952059,6113770,0.001399,pythia,screen reader,monotonic_climb,3
+alt_text,accessibility,alt,text,23306,5902287,31625337,0.003949,pythia,alt text,monotonic_climb,3
+skip_link,accessibility,skip,link,662,2340742,18277281,0.000283,pythia,skip link,peak_regress,2
+color_contrast,accessibility,color,contrast,20112,25414097,16674541,0.000791,pythia,color contrast,mixed,1
+keyboard_navigation,accessibility,keyboard,navigation,8050,2791750,2976535,0.002883,pythia,keyboard navigation,peak_regress,2
+focus_indicator,accessibility,focus,indicator,1261,20169251,2923114,6.3e-05,pythia,focus indicator,never_emerges,0
+semantic_html,accessibility,semantic,HTML,2595,1358029,4327636,0.001911,pythia,semantic HTML,never_emerges,0
+closed_captions,accessibility,closed,captions,7942,16202434,214709,0.00049,pythia,captions,never_emerges,0
