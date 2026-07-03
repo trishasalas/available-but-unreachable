@@ -56,6 +56,17 @@ def run_gap_analysis(project_root):
     ]:
         subset = elicitation[elicitation['suite'] == suite_filter]
 
+        # The declarative-evaluative GAP characterizes the elicitation
+        # experiment's concept set. The 41 expansion compounds are frequency-
+        # stratified probes (declarative-only, deliberately spanning rare
+        # never-emerges compounds); pooling them into the paradigm mean would
+        # depress the declarative baseline by construction and distort the gap.
+        # They belong to the frequency/trajectory analysis instead, which reads
+        # the full elicitation below. (Sampling-frame partition, DECISIONS
+        # 2026-07-03.)
+        if 'source' in subset.columns:
+            subset = subset[subset['source'] == 'original']
+
         # Declarative accuracy pivot
         decl = subset[subset['prompt_type'] == 'declarative']
         decl_pivot = decl.pivot_table(

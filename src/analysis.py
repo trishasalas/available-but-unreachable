@@ -46,6 +46,11 @@ def load_all_results(project_root):
             df = pd.read_csv(csv_file)
             df['suite'] = suite
             df['scale'] = _extract_scale(name, suite)
+            # Provenance tag: the n=49 frequency-stratified probes live in
+            # *-expansion-results.csv. Downstream, the declarative-evaluative
+            # gap (a paradigm-level mean) is restricted to source=='original';
+            # trajectory/scaling/frequency analyses use all sources.
+            df['source'] = 'expansion' if 'expansion' in name else 'original'
 
             if name.endswith('-results'):
                 elicitation_frames.append(df)

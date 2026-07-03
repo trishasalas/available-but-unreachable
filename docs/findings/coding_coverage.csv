@@ -8,53 +8,53 @@ focus indicator,original,focus_indicator,never_emerges,1,0,0,0,0,0,yes,,OK,none
 keyboard navigation,original,keyboard_navigation,peak_regress,1,0,0,0,0,0,yes,,OK,none
 color contrast,original,color_contrast,mixed,1,0,0,0,0,5,yes,control rules in code_control,OK,none
 semantic HTML,original,semantic_html,never_emerges,1,1,0,0,0,0,yes,evaluative routed by prompt text,OK,none
-captions,original,closed_captions,never_emerges (VERIFY),0,0,2,0,0,0,yes (but no declarative prompt uses this name),completion rules accept both names (bandaid),MUTANT,canonical rename target; see closed captions row
-closed captions,original,closed_captions,,1,0,0,0,0,5,NO - falls through to incorrect,control rules in code_control expect this name,MUTANT,DANGEROUS CELL: declarative row miscoded by name-miss unless gap_analysis normalizes; rename to captions + rerun + diff accuracy
+captions,original,closed_captions,never_emerges,0,0,2,0,0,0,yes,"S5 RESOLVED 2026-07-03: declarative data uses concept 'captions' (code_declarative 'captions' rule handles it); maps to closed_captions compound via CONCEPT_TO_COMPOUND. No rename needed.",OK,none
+closed captions,original,closed_captions,,0,0,0,0,0,5,n/a (no declarative prompt uses this name),"S5 RESOLVED 2026-07-03: map was wrong — actual data has 0 declarative 'closed captions' rows (only 50 control, handled by code_control). DANGEROUS CELL closed defensively by a 'closed captions' declarative alias in code_declarative (no-op on current data, verified byte-identical).",OK,none
 page title,syntactic-control,,,0,0,2,0,0,5,n/a (no declarative prompts),control + completion rules,OK,none
-link text,eval-only,,,0,1,0,0,0,0,n/a,evaluative routed by prompt text (click here branch - verify),VERIFY,confirm which evaluative branch catches its prompt
-form label,eval-only,,,0,1,0,0,0,0,n/a,evaluative routed by prompt text (input label branch - verify),VERIFY,confirm which evaluative branch catches its prompt
+link text,eval-only,,,0,1,0,0,0,0,n/a,"VERIFIED 2026-07-03: prompt ""A button that only says 'Click here' is bad because"" -> the 'click here' branch of code_evaluative (correct if descriptive/what-it-does/not-clear).",OK,none
+form label,eval-only,,,0,1,0,0,0,0,n/a,"VERIFIED 2026-07-03: prompt ""<input type='text'> needs a"" -> the input type='text' branch of code_evaluative (correct if label/aria-label).",OK,none
 empty link,eval-only,,,0,1,0,0,0,0,n/a,evaluative routed by prompt text (a href='#' branch),OK,none
 HTML,validation-only,,,0,0,0,0,1,0,n/a,validation routed by prompt text (stands for),OK,none
 script,syntactic-control,,,0,0,2,0,0,0,n/a,completion rules (syntactic control),OK,none
 bicycle,reasoning-control,,,0,0,0,0,0,5,n/a,control rules (reasoning baseline),OK,none
-keyboard interaction,new,keyboard_interaction,,1,0,0,0,0,0,PENDING (guarded),,PENDING,author criteria
-section heading,new,section_heading,,1,0,0,0,0,0,PENDING (guarded),,PENDING,author criteria
-text alternative,new,text_alternative,,1,0,0,0,0,0,PENDING (guarded),,PENDING,author criteria
-audio description,new,audio_description,,1,0,0,0,0,0,PENDING (guarded),,PENDING,author criteria
-sign language,new,sign_language,,1,0,0,0,0,0,PENDING (guarded),ambiguous sense - policy decision applies,PENDING,author criteria
-sensory characteristics,new,sensory_characteristics,,1,0,0,0,0,0,PENDING (guarded),,PENDING,author criteria
-input purpose,new,input_purpose,,1,0,0,0,0,0,PENDING (guarded),,PENDING,author criteria
-target size,new,target_size,,1,0,0,0,0,0,PENDING (guarded),ambiguous sense,PENDING,author criteria
-touch target,new,touch_target,,1,0,0,0,0,0,PENDING (guarded),,PENDING,author criteria
-drag movement,new,drag_movement,,1,0,0,0,0,0,PENDING (guarded),,PENDING,author criteria
-focus appearance,new,focus_appearance,,1,0,0,0,0,0,PENDING (guarded),,PENDING,author criteria
-consistent help,new,consistent_help,,1,0,0,0,0,0,PENDING (guarded),,PENDING,author criteria
-redundant entry,new,redundant_entry,,1,0,0,0,0,0,PENDING (guarded),,PENDING,author criteria
-accessible authentication,new,accessible_authentication,,1,0,0,0,0,0,PENDING (guarded),,PENDING,author criteria
-text spacing,new,text_spacing,,1,0,0,0,0,0,PENDING (guarded),,PENDING,author criteria
-status message,new,status_message,,1,0,0,0,0,0,PENDING (guarded),,PENDING,author criteria
-error identification,new,error_identification,,1,0,0,0,0,0,PENDING (guarded),,PENDING,author criteria
-pointer cancellation,new,pointer_cancellation,,1,0,0,0,0,0,PENDING (guarded),,PENDING,author criteria
-character key,new,character_key,,1,0,0,0,0,0,PENDING (guarded),ambiguous sense,PENDING,author criteria
-accessibility tree,new,accessibility_tree,,1,0,0,0,0,0,PENDING (guarded),,PENDING,author criteria
-accessible name,new,accessible_name,,1,0,0,0,0,0,PENDING (guarded),,PENDING,author criteria
-accessible description,new,accessible_description,,1,0,0,0,0,0,PENDING (guarded),,PENDING,author criteria
-live region,new,live_region,,1,0,0,0,0,0,PENDING (guarded),,PENDING,author criteria
-tab panel,new,tab_panel,,1,0,0,0,0,0,PENDING (guarded),,PENDING,author criteria
-radio group,new,radio_group,,1,0,0,0,0,0,PENDING (guarded),,PENDING,author criteria
-tree grid,new,tree_grid,,1,0,0,0,0,0,PENDING (guarded),,PENDING,author criteria
-menu bar,new,menu_bar,,1,0,0,0,0,0,PENDING (guarded),ambiguous sense - generic GUI term,PENDING,author criteria
-tool tip,new,tool_tip,,1,0,0,0,0,0,PENDING (guarded),ambiguous sense - generic GUI term,PENDING,author criteria
-combo box,new,combo_box,,1,0,0,0,0,0,PENDING (guarded),ambiguous sense - generic GUI term,PENDING,author criteria
-landmark region,new,landmark_region,,1,0,0,0,0,0,PENDING (guarded),,PENDING,author criteria
-semantic markup,new,semantic_markup,,1,0,0,0,0,0,PENDING (guarded),,PENDING,author criteria
-focus management,new,focus_management,,1,0,0,0,0,0,PENDING (guarded),,PENDING,author criteria
-reading order,new,reading_order,,1,0,0,0,0,0,PENDING (guarded),ambiguous sense,PENDING,author criteria
-text formatting,new,text_formatting,,1,0,0,0,0,0,PENDING (guarded),ambiguous sense,PENDING,author criteria
-form field,new,form_field,,1,0,0,0,0,0,PENDING (guarded),ambiguous sense - generic web term,PENDING,author criteria
-low vision,new,low_vision,,1,0,0,0,0,0,PENDING (guarded),ambiguous sense,PENDING,author criteria
-cognitive disabilities,new,cognitive_disabilities,,1,0,0,0,0,0,PENDING (guarded),,PENDING,author criteria
-universal design,new,universal_design,,1,0,0,0,0,0,PENDING (guarded),,PENDING,author criteria
-decorative image,new,decorative_image,,1,0,0,0,0,0,PENDING (guarded),,PENDING,author criteria
-informative image,new,informative_image,,1,0,0,0,0,0,PENDING (guarded),,PENDING,author criteria
-responsive design,new,responsive_design,,1,0,0,0,0,0,PENDING (guarded),ambiguous sense - general web term,PENDING,author criteria
+keyboard interaction,new,keyboard_interaction,,1,0,0,0,0,0,CODED,,OK,translated + coded 2026-07-03
+section heading,new,section_heading,,1,0,0,0,0,0,CODED,,OK,translated + coded 2026-07-03
+text alternative,new,text_alternative,,1,0,0,0,0,0,CODED,,OK,translated + coded 2026-07-03
+audio description,new,audio_description,,1,0,0,0,0,0,CODED,,OK,translated + coded 2026-07-03
+sign language,new,sign_language,,1,0,0,0,0,0,CODED,ambiguous sense - policy decision applies,OK,translated + coded 2026-07-03
+sensory characteristics,new,sensory_characteristics,,1,0,0,0,0,0,CODED,,OK,translated + coded 2026-07-03
+input purpose,new,input_purpose,,1,0,0,0,0,0,CODED,,OK,translated + coded 2026-07-03
+target size,new,target_size,,1,0,0,0,0,0,CODED,ambiguous sense,OK,translated + coded 2026-07-03
+touch target,new,touch_target,,1,0,0,0,0,0,CODED,,OK,translated + coded 2026-07-03
+drag movement,new,drag_movement,,1,0,0,0,0,0,CODED,,OK,translated + coded 2026-07-03
+focus appearance,new,focus_appearance,,1,0,0,0,0,0,CODED,,OK,translated + coded 2026-07-03
+consistent help,new,consistent_help,,1,0,0,0,0,0,CODED,,OK,translated + coded 2026-07-03
+redundant entry,new,redundant_entry,,1,0,0,0,0,0,CODED,,OK,translated + coded 2026-07-03
+accessible authentication,new,accessible_authentication,,1,0,0,0,0,0,CODED,,OK,translated + coded 2026-07-03
+text spacing,new,text_spacing,,1,0,0,0,0,0,CODED,,OK,translated + coded 2026-07-03
+status message,new,status_message,,1,0,0,0,0,0,CODED,,OK,translated + coded 2026-07-03
+error identification,new,error_identification,,1,0,0,0,0,0,CODED,,OK,translated + coded 2026-07-03
+pointer cancellation,new,pointer_cancellation,,1,0,0,0,0,0,CODED,,OK,translated + coded 2026-07-03
+character key,new,character_key,,1,0,0,0,0,0,CODED,ambiguous sense,OK,translated + coded 2026-07-03
+accessibility tree,new,accessibility_tree,,1,0,0,0,0,0,CODED,,OK,translated + coded 2026-07-03
+accessible name,new,accessible_name,,1,0,0,0,0,0,CODED,,OK,translated + coded 2026-07-03
+accessible description,new,accessible_description,,1,0,0,0,0,0,CODED,,OK,translated + coded 2026-07-03
+live region,new,live_region,,1,0,0,0,0,0,CODED,,OK,translated + coded 2026-07-03
+tab panel,new,tab_panel,,1,0,0,0,0,0,CODED,,OK,translated + coded 2026-07-03
+radio group,new,radio_group,,1,0,0,0,0,0,CODED,,OK,translated + coded 2026-07-03
+tree grid,new,tree_grid,,1,0,0,0,0,0,CODED,,OK,translated + coded 2026-07-03
+menu bar,new,menu_bar,,1,0,0,0,0,0,CODED,ambiguous sense - generic GUI term,OK,translated + coded 2026-07-03
+tool tip,new,tool_tip,,1,0,0,0,0,0,CODED,ambiguous sense - generic GUI term,OK,translated + coded 2026-07-03
+combo box,new,combo_box,,1,0,0,0,0,0,CODED,ambiguous sense - generic GUI term,OK,translated + coded 2026-07-03
+landmark region,new,landmark_region,,1,0,0,0,0,0,CODED,,OK,translated + coded 2026-07-03
+semantic markup,new,semantic_markup,,1,0,0,0,0,0,CODED,,OK,translated + coded 2026-07-03
+focus management,new,focus_management,,1,0,0,0,0,0,CODED,,OK,translated + coded 2026-07-03
+reading order,new,reading_order,,1,0,0,0,0,0,CODED,ambiguous sense,OK,translated + coded 2026-07-03
+text formatting,new,text_formatting,,1,0,0,0,0,0,CODED,ambiguous sense,OK,translated + coded 2026-07-03
+form field,new,form_field,,1,0,0,0,0,0,CODED,ambiguous sense - generic web term,OK,translated + coded 2026-07-03
+low vision,new,low_vision,,1,0,0,0,0,0,CODED,ambiguous sense,OK,translated + coded 2026-07-03
+cognitive disabilities,new,cognitive_disabilities,,1,0,0,0,0,0,CODED,,OK,translated + coded 2026-07-03
+universal design,new,universal_design,,1,0,0,0,0,0,CODED,,OK,translated + coded 2026-07-03
+decorative image,new,decorative_image,,1,0,0,0,0,0,CODED,,OK,translated + coded 2026-07-03
+informative image,new,informative_image,,1,0,0,0,0,0,CODED,,OK,translated + coded 2026-07-03
+responsive design,new,responsive_design,,1,0,0,0,0,0,CODED,ambiguous sense - general web term,OK,translated + coded 2026-07-03

@@ -5,6 +5,98 @@ Research and figure decisions with rationale.
 
 ## Replication Verification Against Paper 1
 
+### 2026-07-03 — CC execution: n=49 criteria translated, coded, dual Spearman (amended spec) run
+
+**Decision:** Executed the CC brief (criteria-handoff-2026-07-03.md) after the
+criteria-freeze commit (42695be) and the amended Spearman spec. Gate conditions
+met before any downstream run: freeze commit present; S8 verified (no
+`attention/` in results/).
+
+**Translation (41 rows → `code_declarative`):** faithful mechanical translation
+of `criteria_authoring.csv`. `correct` requires the worksheet's *distinguishing*
+markers (so circular / trench-coat restatements fall through to `incorrect`
+exactly as the original 8 do — doctrine plank 5 without a separate detector);
+worksheet `incorrect_markers` traps became negative guards. Doctrine block
+(5 planks, verbatim) encoded at the top of the expansion section.
+**Two self-caught translation bugs fixed** (both were compound-token leakage,
+caught via the prediction scorecard, not the worksheet):
+  1. `tree_grid` counted the echoed token `tree` as a hierarchy marker →
+     "a grid of trees" passed as correct. Fixed: correct now requires the
+     table-half (`table`/`columns`, not the echoed `grid`) AND real hierarchy
+     (`expand`/`collapse`/`hierarch`). Now 0/10 correct — matches its
+     never_emerges prediction.
+  2. `responsive_design` used `respond`, which does not substring-match the
+     echoed `responsive`, wrongly rejecting "responsive to the screen" /
+     "any device". Fixed to key on the screen/device content. 3/10 → 5/10.
+No rows were returned to Trisha untranslated — every worksheet row had concrete
+marker tokens.
+
+**Sense recording (Option A + dual analysis):** `observe_sense(concept, output)`
+→ {a11y, generic}, a11y iff any GLOBAL marker (screen reader; assistive; WCAG;
+announce; blind; low vision; keyboard-only; ARIA; alt text) OR any per-compound
+`a11y_sense_markers` appears.
+
+**S5 (captions naming) RESOLVED:** the coverage map's worst case did not
+materialize — actual data has 0 declarative `closed captions` rows (only 50
+control, handled by `code_control`); the declarative captions data lives under
+concept `captions` (handled). Closed the DANGEROUS CELL defensively with a
+`closed captions` declarative alias (no-op on current data). Coverage CSV
+corrected (n_declarative 1→0 for closed captions) and the two MUTANT rows +
+two VERIFY rows (link text → 'click here' branch; form label → input type=text
+branch) marked OK.
+
+**Regression guard (non-negotiable) PASSED:** original coded outputs
+byte-identical before/after (510 rows, correct 186 / partial 147 / incorrect
+177 unchanged); all 20 original `per_concept_trajectories.csv` rows byte-
+identical (0 diffs) after the n=49 rerun (82 new rows added). By construction
+the translation only *adds* dict keys and empties the PENDING guard.
+
+**Dual Spearman — AMENDED SPEC (compound-level; frozen freq table, no
+Infini-gram re-query).** Primary = one obs/compound/suite, x=log10(bigram),
+y=mean-across-scales STRICT binary accuracy (correct=1; partial|incorrect=0).
+Results (packaged to `results/frequency/` for Fable review per the rubric;
+raw bigram counts NOT surfaced):
+  - PRIMARY all-rows: Pythia ρ=0.57 (n=49), GPT-2 ρ=0.51 (n=49) → both clear
+    SUPPORT (≥0.4). Kendall τ-b 0.43 / 0.40.
+  - a11y-sense-only: Pythia ρ=0.86 (n=9), GPT-2 ρ=−0.21 (n=6, ns).
+    **CAVEAT (flagged for review):** the sense filter collapses n hard because
+    declarative cloze answers rarely emit explicit a11y tokens; survivors are
+    lexically biased toward concepts whose names contain a11y terms, and GPT-2
+    is degenerate (near-constant class). Not a robust headline; the all-rows
+    primary is the confirmatory read.
+  - Partial Spearman (word1-confound review anchor): controlling word1 unigram
+    freq, Pythia ρ 0.57→0.59, GPT-2 0.51→0.49; controlling token count,
+    0.57→0.56 / 0.51→0.49. The correlation SURVIVES both controls — not a
+    word1 / tokenization artifact.
+  - Secondary (max-scale) and weighted-y sensitivity both ≥0.45, consistent.
+  - Row-level (descriptive only; clustered bootstrap, no naive p): Pythia
+    ρ=0.42 CI[0.24,0.57], GPT-2 ρ=0.39 CI[0.20,0.54].
+
+**Audits:** (6) criteria-strictness vs predicted class ρ=−0.43 (p=0.16, n=12) —
+predicted-fail compounds carry marginally more incorrect_markers (4.1 vs 3.5),
+non-significant and plausibly innocent (attractor-rich compounds naturally
+document more traps); reported for disclosure. (7) trajectory-class stability:
+only **20/102** classes survive a single one-level flip of the most influential
+response — trajectory classes are fragile, which VINDICATES the amended spec's
+move to compound-level continuous accuracy as the primary unit.
+
+**Prediction scorecard (blind pre-registration, scored):** token-competition
+candidates that FIRED via their predicted attractor: sensory_characteristics
+(food 4/10), redundant_entry (database 4/10), pointer_cancellation (C/C++ 4/10),
+landmark_region (geographic 7/10) — all 0–1/10 correct. Did NOT fire:
+status_message (0/10 HTTP/social), focus_management (0/10 attention/self-help),
+error_identification (1/10 debugging). tree_grid never_emerges both suites
+(0/10) — HELD. Ceiling anchors: sign_language 9/10 + form_field 10/10 (monotonic
+both) HELD; responsive_design 5/10 (monotonic both) moderate; text_formatting
+3/10 (mixed/never) NOT held — vague filler answers. AD↔captions substitution:
+weak (2/10). Full scorecard packaged to Fable.
+
+**New code:** `src/dual_spearman.py` (amended-spec pipeline). `load_trajectories`
+in `src/frequency.py` gained a concept→compound fallback (the 41 new concepts
+mapped to NaN and silently dropped the merge to n=8). Deliverables routed to
+Fable per `docs/findings/spearman-review-rubric-2026-07-03.md`; frequency table
+stays closed to Trisha until the review lands.
+
 ### 2026-07-03 — Gap-table sampling-frame partition (methodology rule, pre-results)
 
 **Decision (Trisha ratified 2026-07-03):** the declarative-evaluative GAP is a

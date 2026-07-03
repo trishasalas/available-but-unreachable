@@ -607,7 +607,15 @@ def load_trajectories(project_root):
     """
     path = Path(project_root) / "results" / "analysis" / "per_concept_trajectories.csv"
     df = pd.read_csv(path)
-    df["compound"] = df["concept"].map(CONCEPT_TO_COMPOUND)
+    # CONCEPT_TO_COMPOUND carries the 11 original special mappings (incl.
+    # captions -> closed_captions). The 41 n=49 expansion concepts map by the
+    # trivial space->underscore rule (verified: every expansion concept string
+    # equals its compound with spaces replaced), so fall back to that — without
+    # the fallback they map to NaN and silently drop from the Spearman merge,
+    # pinning it at n=8.
+    df["compound"] = df["concept"].map(
+        lambda c: CONCEPT_TO_COMPOUND.get(c, str(c).replace(" ", "_"))
+    )
     return df[["suite", "concept", "compound", "trajectory"]]
 
 

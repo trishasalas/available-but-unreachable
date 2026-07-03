@@ -2,18 +2,59 @@ concept,n,n_degenerate,pct_degenerate
 ARIA,20,2,10.0
 HTML,10,0,0.0
 WCAG,10,1,10.0
+accessibility tree,10,0,0.0
+accessible authentication,10,0,0.0
+accessible description,10,0,0.0
+accessible name,10,0,0.0
 alt text,90,17,18.9
+audio description,10,1,10.0
 bicycle,50,1,2.0
 captions,30,8,26.7
+character key,10,0,0.0
 closed captions,50,2,4.0
+cognitive disabilities,10,0,0.0
 color contrast,60,0,0.0
+combo box,10,0,0.0
+consistent help,10,0,0.0
+decorative image,10,1,10.0
+drag movement,10,0,0.0
 empty link,10,0,0.0
+error identification,10,0,0.0
+focus appearance,10,0,0.0
 focus indicator,10,0,0.0
+focus management,10,0,0.0
+form field,10,1,10.0
 form label,10,3,30.0
+informative image,10,3,30.0
+input purpose,10,0,0.0
+keyboard interaction,10,0,0.0
 keyboard navigation,10,0,0.0
+landmark region,10,0,0.0
 link text,10,0,0.0
+live region,10,0,0.0
+low vision,10,0,0.0
+menu bar,10,2,20.0
 page title,70,5,7.1
+pointer cancellation,10,0,0.0
+radio group,10,0,0.0
+reading order,10,0,0.0
+redundant entry,10,0,0.0
+responsive design,10,0,0.0
 screen reader,20,0,0.0
 script,20,8,40.0
+section heading,10,0,0.0
 semantic HTML,20,1,5.0
+semantic markup,10,1,10.0
+sensory characteristics,10,1,10.0
+sign language,10,0,0.0
 skip link,10,0,0.0
+status message,10,0,0.0
+tab panel,10,0,0.0
+target size,10,0,0.0
+text alternative,10,1,10.0
+text formatting,10,0,0.0
+text spacing,10,0,0.0
+tool tip,10,0,0.0
+touch target,10,2,20.0
+tree grid,10,0,0.0
+universal design,10,0,0.0

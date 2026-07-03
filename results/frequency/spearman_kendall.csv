@@ -1,0 +1,5 @@
+suite,sense_split,kendall_tau_b,kendall_p,n_compounds
+pythia,all_rows,0.4348,0.0001,49
+pythia,a11y_sense_only,0.7191,0.0113,9
+gpt2,all_rows,0.3975,0.0003,49
+gpt2,a11y_sense_only,-0.1491,0.6872,6

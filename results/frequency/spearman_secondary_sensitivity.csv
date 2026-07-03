@@ -1,0 +1,5 @@
+suite,y_definition,spearman_rho,spearman_p,n_compounds
+pythia,secondary_maxscale,0.4531,0.0011,49
+gpt2,secondary_maxscale,0.5416,0.0001,49
+pythia,sensitivity_weighted,0.5876,0.0,49
+gpt2,sensitivity_weighted,0.4835,0.0004,49

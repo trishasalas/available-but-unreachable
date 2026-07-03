@@ -1,7 +1,7 @@
 prompt_type,n,n_degenerate,pct_degenerate
 completion,80,29,36.2
 control,200,3,1.5
-declarative,100,2,2.0
+declarative,510,15,2.9
 evaluative,50,4,8.0
 hypothesis,30,8,26.7
 validation,50,2,4.0
