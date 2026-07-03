@@ -25,14 +25,21 @@ text: `sign_language`, `menu_bar`, `form_field`, `target_size`, `character_key`,
 
 Decide once, write it once, apply everywhere:
 
-- [ ] **Option A — general technical sense counts as `correct`** (consistent
+- [x] **Option A — general technical sense counts as `correct`** (consistent
       with how a practitioner would accept "a menu bar is a GUI element…").
 - [ ] **Option B — accessibility-specific sense required** (stricter; risks
       coding real knowledge as `partial`).
 
-Recommendation: A, matching the original 8 ("captures the core
-accessibility-relevant meaning a practitioner would recognize"). Whichever you
-pick, record it in the DECISIONS entry — a reviewer WILL ask about menu_bar.
+**DECIDED 2026-07-02 (Trisha + Fable 5): Option A, with sense recording.**
+Rationale: A matches the original 8's practitioner standard. Addendum
+(protects the Spearman): the ambiguous compounds are disproportionately the
+high-frequency ones, and generic definitions are exactly what high frequency
+buys — so Option A alone would let those rows flatter the frequency↔accuracy
+correlation. Mitigation: each coded response ALSO records observed sense
+(a11y / generic), mechanized via per-compound `a11y_sense_markers` (authored
+in `_analysis/criteria_authoring.csv`, esp. AMBIGUOUS rows). Analysis reports
+the Spearman both ways — all rows and a11y-sense-only — pre-answering the
+menu_bar reviewer from either direction. Carry into the DECISIONS entry.
 
 ## DECISIONS.md entry skeleton (fill, then paste)
 
@@ -90,15 +97,32 @@ touch_target · drag_movement · focus_appearance · consistent_help ·
 redundant_entry · accessible_authentication · text_spacing · status_message ·
 error_identification · pointer_cancellation · character_key ·
 accessibility_tree · accessible_name · accessible_description · live_region ·
-tab_panel · radio_group · tree_grid · menu_bar · tool_tip · semantic_markup ·
-focus_management · reading_order · text_formatting · form_field ·
-landmark_region · low_vision · cognitive_disabilities · universal_design ·
-decorative_image · informative_image · responsive_design · [verify count = 41
-against frequency_table.csv rows 9–49; this list was transcribed from the
-first 49 rows]
+tab_panel · radio_group · tree_grid · menu_bar · tool_tip · **combo_box** ·
+semantic_markup · focus_management · reading_order · text_formatting ·
+form_field · landmark_region · low_vision · cognitive_disabilities ·
+universal_design · decorative_image · informative_image · responsive_design
+
+**Count verified 41 against docs/findings/coding_coverage.csv (path updated
+2026-07-03), 2026-07-02 (Fable 5):**
+the original transcription above had 40 entries — combo_box was dropped
+(present in the sense-policy list, missing from the enumeration). Restored.
+Authoring worksheet `docs/findings/criteria_authoring.csv` carries all 41.
 
 ## Carry-forward (analysis decisions, NOT coding — separate session)
 
 - Ordinal encoding: justify mixed=1 < peak_regress=2, or robustness-swap.
 - GPT-2 word1 confound (0.73 vs 0.78 at n=8): n=49 is the test; report both.
 - Original 8 rows must be byte-identical post-rerun (regression guard above).
+
+---
+
+## STATUS: AUTHORING COMPLETE 2026-07-03
+
+All 41 criteria AUTHORED in `docs/findings/criteria_authoring.csv` (moved
+from gitignored `_analysis/` 2026-07-03; coverage map moved alongside).
+Canonical
+record: **tmlr/DECISIONS.md entry 2026-07-03** (sense policy, five-plank
+coding doctrine, pre-registered predictions, three placements awaiting
+Trisha ratify/veto). Pipeline + role assignments:
+`docs/findings/criteria-handoff-2026-07-03.md`. This draft file is now
+provenance; the worksheet + DECISIONS entry are the source of truth.

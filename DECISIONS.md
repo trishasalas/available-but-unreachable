@@ -5,6 +5,71 @@ Research and figure decisions with rationale.
 
 ## Replication Verification Against Paper 1
 
+### 2026-07-03 — n=49 coding criteria authored blind (Gate 1 judgment work complete)
+
+**Decision:** All 41 expansion-compound criteria authored in
+`docs/findings/criteria_authoring.csv` across two sessions (2026-07-02 evening,
+2026-07-03 morning). **Path note 2026-07-03:** worksheet + coding_coverage.csv
+moved from `_analysis/` to `docs/findings/` after the first freeze attempt
+revealed `_analysis/*` is gitignored — git reported "working tree clean" while
+the instrument sat invisible. Load-bearing artifacts don't live in scratch;
+caught by `git log -1 --stat` audit. Authored conversationally — Trisha dictated the
+practitioner bar per compound, Fable 5 scribed into the worksheet; semantics
+are Trisha's throughout, transcription is the model's. Original 8 criteria
+UNTOUCHED (regression guard applies at translation).
+
+**Blind state:** frequency table CLOSED for the entire authoring window;
+expansion raws exist (tag=expansion, run 2026-07-02) and remain UNVIEWED and
+UNCODED. Criteria precede data, per house rule and B4 precedent.
+
+**Sense policy:** Option A + per-response sense recording (decided
+2026-07-02, logged in coding-criteria-draft.md) — implemented as the
+`a11y_sense_markers` worksheet column; analysis reports Spearman both ways
+(all rows / a11y-sense-only).
+
+**Coding doctrine accreted during authoring (CC: encode as comment block):**
+1. LATERAL confusion (wrong mirror: AD↔captions, decorative↔informative,
+   semantic-web-for-semantic-markup) → INCORRECT.
+2. VERTICAL confusion (instance-for-umbrella: alt-text-for-text-alternative;
+   tab-for-tabpanel; name-collapse on description) → PARTIAL.
+3. SYNONYM pairs (target_size↔touch_target) → cross-definition NODS.
+4. MECHANISM-FOR-CONCEPT (attribute-as-the-thing) — severity is PER-ROW:
+   where the mechanism constitutes the concept (aria-live for live region)
+   → nods; where the mechanism is categorically different plumbing
+   (aria-describedby for accessible description, per 2026-07-03 veto)
+   → INCORRECT.
+5. TRENCH COAT (compound restated with a modal verb: "help should be
+   consistent") → circular → INCORRECT. tc always loses.
+
+**Pre-registered predictions (falsifiable at coding time, made blind):**
+- Token-competition / wrong-domain capture candidates: sensory_characteristics
+  (food science), redundant_entry (database dedup), status_message
+  (HTTP/social/server), error_identification (debugging), pointer_cancellation
+  (C/C++ pointers), landmark_region (geographic), focus_management
+  (attention/self-help).
+- Adjacent-technique substitution signature: AD↔captions confusion marker.
+- never_emerges candidate: tree_grid (rarest widget compound).
+- Deliberate ceiling anchors (high-freq, low discrimination, SHOULD be easy
+  if the frequency thesis holds): sign_language, text_formatting, form_field,
+  responsive_design.
+
+**Vetoes RESOLVED 2026-07-03 (Trisha):**
+1. informative_image: VETOED — alt-text mention is the GATE; no alt text (or
+   literal "text alternative") → INCORRECT. Partial zone eliminated; binary row.
+2. accessible_description: VETOED — aria-describedby evicted from the row
+   entirely (programmatic thing, categorically different); naming it as the
+   answer → INCORRECT, not partial. Doctrine plank 4 amended accordingly.
+3. cognitive_disabilities: RATIFIED as-is — mental-illness conflation stays
+   PARTIAL ("tough one — leave as is").
+
+**Next:** ~~Trisha reviews vetoes~~ DONE 2026-07-03 → git commit (freezes
+predictions) → CC translation per handoff
+(docs/findings/criteria-handoff-2026-07-03.md) → ~~S5/S8~~ S8 verified done
+(no attention/ in results/), S5 remains CC's → gap_analysis → dual Spearman
+→ Fable review before 2026-07-07.
+
+---
+
 ### 2026-07-02 — B4 rewritten as blind pre-registration (expansion scope)
 
 **Decision:** CLAIMS.md row B4 rewritten from a skip_link-specific claim to a two-part row: (1) a **pre-registered blind template** for the n=49 expansion — "inverse scaling (peak_regress) is not skip_link-specific: __ of 49 compounds regress from correct/partial at an intermediate scale to incorrect at maximum scale" — with the count and family blanks left open; (2) the **established exemplar** (skip_link cross-architectural degeneration, DECISIONS 2026-06-28) preserved verbatim as already-viewed evidence, with A2's Step-5 trace as the mechanism exhibit.
