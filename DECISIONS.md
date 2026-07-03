@@ -5,6 +5,109 @@ Research and figure decisions with rationale.
 
 ## Replication Verification Against Paper 1
 
+### 2026-07-03 — Gap-table sampling-frame partition (methodology rule, pre-results)
+
+**Decision (Trisha ratified 2026-07-03):** the declarative-evaluative GAP is a
+paradigm-level mean over the elicitation-experiment concept set (declarative
+over 10 concepts, evaluative over 5 — never a matched per-concept pair). The 41
+n=49 expansion compounds are frequency-stratified probes carrying only the
+declarative arm and deliberately spanning rare never-emerges compounds; pooling
+them into the declarative paradigm mean would depress the baseline BY
+CONSTRUCTION of the sampling frame and shrink the gap — a sampling-frame
+artifact, independent of Paper 1.
+
+**Rule:** `load_all_results` tags each row `source` in {original, expansion} (by
+filename); `gap_analysis` restricts ONLY the declarative/evaluative/gap pivots
+to `source=='original'`, while the trajectory, per-concept scaling, emergence,
+completion, and frequency analyses read the full n=49. The elicitation-
+experiment gap stays on its own sampling frame; the frequency probes stay in the
+frequency analysis where their sampling purpose fits. Decided on the STRUCTURE
+of the problem (one-armed probes in a two-arm mean), not on any correlation
+result. Byte-identical-pivot verification is logged with the execution commit.
+
+---
+
+### 2026-07-03 — Spearman unit-of-analysis + interpretation thresholds pre-registered (blind; CC pipeline paused)
+
+**Blind state:** Authored with CC's coding/Spearman pipeline PAUSED mid-flight.
+No expansion-derived output (coded rows, trajectories, correlations) has been
+viewed by Trisha or by Fable 5. Frequency table remains CLOSED to Trisha.
+This entry freezes the analysis unit and interpretation rules before any
+result is seen. Honest-timestamp note: authored after pipeline start but
+prior to any viewing — weaker than before-execution, stronger than post hoc.
+Commit before CC resumes.
+
+**Problem:** The handoff spec said "dual Spearman (frequency vs accuracy:
+all rows AND a11y-sense-only)" without declaring the unit of analysis.
+Row-level observations (compound × scale × suite) are pseudo-replicates:
+each compound carries ONE frequency value repeated across ~6–10 rows,
+inflating effective n and invalidating naive p-values even where ρ is real.
+
+**Decision (primary analysis):** One observation per compound per suite.
+- x = log10(Infini-gram bigram count), from the existing frequency table —
+  no new lookups, no unblinding.
+- y = binary accuracy, STRICT: correct=1, partial or incorrect=0. Mean of
+  the binary across scales within the suite. RATIFIED by Trisha 2026-07-03
+  (superseding Fable's initial 0.5-weighted placement): the practitioner
+  bar is binary — a vertical-confusion answer does not half-work in
+  practice — and strict binary carries no arbitrary weight parameter.
+  Explicitly rejected now, not post hoc: lenient binarization
+  (correct-or-partial=1).
+- Spearman ρ reported separately per suite. Pythia (Pile = actual training
+  corpus) is the confirmatory test; GPT-2 (WebText unindexed; Pile counts
+  are a proxy corpus) is replication-under-proxy and the paper labels it so.
+- The dual sense split (all responses / a11y-sense-only) applies at this
+  compound level: recompute y from sense-filtered rows.
+
+**Pre-registered direction and thresholds (primary analysis, per suite):**
+- Predicted direction: POSITIVE (higher compound corpus frequency → higher
+  accuracy).
+- ρ ≥ 0.4 → support for the frequency thesis. 0.2 ≤ ρ < 0.4 → weak/
+  suggestive; paper hedges. ρ < 0.2 or wrong sign → thesis not supported at
+  compound-frequency level; ships as a negative, with the token-competition
+  trace (A2) standing on its own evidence.
+
+**Robustness set (supplementary, all pre-declared):**
+1. Kendall's tau-b alongside ρ (tie-robust).
+2. Partial Spearman controlling (a) compound token count and (b) word1
+   unigram frequency [unigram counts already exist in the frequency table
+   via the PMI/S4 column — no new collection]. If frequency does not
+   survive the partials, report as tokenization/word1 capture — a shippable
+   alternative finding, not a failure.
+3. Row-level Spearman retained as DESCRIPTIVE ONLY; CI via clustered
+   bootstrap over compounds (≥1000 resamples). No naive row-level p-value
+   is reported anywhere.
+4. Secondary y: accuracy at maximum scale (the "where it ends up" reading).
+5. Weighted-accuracy sensitivity check: recompute the primary with
+   y = mean of correct=1 / partial=0.5 / incorrect=0. DESCRIPTIVE ONLY —
+   thresholds gate on the strict-binary primary alone. Pre-declared
+   rationale: strict binary can zero-inflate y if many expansion compounds
+   are never_emerges (tied zeros weaken ρ; tau-b partially covers this).
+   If compounds flat at zero under strict binary are ordered under partial
+   weighting, the partial codes carry the frequency signal — reported as a
+   finding, not smoothed over.
+
+**Two audit checks added to CC's deliverables (cheap, pre-declared):**
+- Criteria-strictness vs prediction check: correlate a crude strictness
+  proxy (count of incorrect_markers per row in criteria_authoring.csv)
+  with predicted trajectory class; report the value either way. Defuses the
+  "criteria tuned to fulfill predictions" objection.
+- Trajectory-class stability: per compound, does the assigned class survive
+  flipping the single most influential response code one level (adjacent
+  code only)? Report count stable / total.
+
+**Review gate:** Packaged results go to Fable for review per the rubric
+committed blind at `docs/findings/spearman-review-rubric-2026-07-03.md`
+before 2026-07-07; the rubric falls to Opus 4.6 unchanged if the clock
+loses.
+
+**Provenance:** unit-of-analysis issue raised by Fable 5 (claude.ai) in
+program review 2026-07-03; semantics pending Trisha's ratification/veto
+before the freeze commit. CC's handoff amended by addendum in
+`docs/findings/criteria-handoff-2026-07-03.md`.
+
+---
+
 ### 2026-07-03 — n=49 coding criteria authored blind (Gate 1 judgment work complete)
 
 **Decision:** All 41 expansion-compound criteria authored in

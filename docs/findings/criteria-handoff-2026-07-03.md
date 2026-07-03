@@ -103,3 +103,48 @@ Trisha — do not improvise semantics. Traceability is sacred.
 **Do not:** modify criteria semantics, view/report frequency-table contents
 to Trisha before the Spearman lands packaged, or run gap_analysis before
 both gate conditions are met.
+
+---
+
+## ADDENDUM 2026-07-03 (post-freeze, pre-results) — Spearman spec amended
+
+> Added by Fable 5 while CC was PAUSED; no expansion output viewed by
+> anyone. Authoritative spec: DECISIONS 2026-07-03 "Spearman
+> unit-of-analysis + interpretation thresholds pre-registered." This
+> addendum amends Task 8 and adds two deliverables; everything else in the
+> brief stands.
+
+**Task 8 amendment — the dual Spearman runs at compound level, not row
+level:**
+
+1. PRIMARY: one observation per compound per suite. x = log10 bigram count
+   (frozen frequency table). y = mean across scales of STRICT binary
+   accuracy (correct=1, partial or incorrect=0) — ratified by Trisha
+   2026-07-03, see DECISIONS. Do NOT use lenient binarization or weighted
+   partial in the primary.
+   Report ρ + n per suite, separately for Pythia and GPT-2, for BOTH sense
+   splits (all rows / a11y-sense-only, with y rebuilt from filtered rows).
+2. Also report Kendall's tau-b for each primary cell.
+3. Partial Spearman (per suite, all-rows split): controlling (a) compound
+   token count, (b) word1 unigram frequency from the PMI/S4 columns.
+   Report raw ρ alongside each partial so attenuation is visible.
+4. Row-level Spearman: DESCRIPTIVE ONLY, clustered bootstrap over
+   compounds (≥1000 resamples) for the CI. No naive row-level p-value in
+   any deliverable.
+5. SECONDARY: repeat primary with y = accuracy at maximum scale.
+5b. SENSITIVITY (descriptive only): repeat primary with weighted y
+    (correct=1 / partial=0.5 / incorrect=0). Report alongside, clearly
+    labeled; thresholds apply to the strict-binary primary only.
+
+**New deliverables (pre-declared audit checks):**
+
+6. Criteria-strictness check: per worksheet row, count incorrect_markers;
+   correlate with predicted trajectory class (from the DECISIONS
+   2026-07-03 predictions). Report the value either way.
+7. Trajectory-class stability: per compound, flip the single most
+   influential response code one adjacent level and re-derive the class;
+   report count stable / total, and list the unstable compounds.
+
+**Deliverable routing unchanged:** everything packages to Fable for review
+per `docs/findings/spearman-review-rubric-2026-07-03.md`. The frequency
+table stays closed to Trisha until the review lands.
