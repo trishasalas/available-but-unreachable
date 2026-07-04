@@ -5,6 +5,47 @@ Research and figure decisions with rationale.
 
 ## Replication Verification Against Paper 1
 
+### 2026-07-04 — Post-review closeout computations (cc-followups items 1–4); scorecard "fired" found non-mechanical
+
+**What:** Ran the four ratified closeout items over frozen artifacts
+(`src/closeout_followups.py`; pipeline commit ca0319e, worksheet 42695be) —
+NOT new experiments, no criteria touched, primary pipeline untouched. Frozen
+12-row strictness counts and the primary ρ (Pythia 0.5715 / GPT-2 0.5052)
+reproduced exactly as guards. Deliverables: `criteria_strictness_audit_full.csv`
+(41 rows), `scorecard_base_rate.csv`, `spearman_pmi_robustness.csv`, and
+`docs/findings/closeout-followups-2026-07-04.md`.
+
+**Results:** (1) Strictness across the full worksheet: markers 3–6, mean 3.80;
+predicted-fail 4.1 vs anchors 3.5 vs an unflagged field also spanning 3–5 — no
+gradient by predicted class; footnote may say "across the full worksheet."
+(3) Ceiling anchors: sign_language + form_field held; **text_formatting and
+responsive_design failed to ceiling** despite top-of-range frequency — reported
+as evidence against a pure-frequency account (rubric 4.3), same font as the
+hits. (4) PMI robustness: association tells the same story as raw exposure in
+Pythia (0.51 vs 0.57) but attenuates below the 0.4 line in GPT-2 (PMI 0.36 vs
+raw 0.51) — raw corpus exposure is the more robust predictor; divergence
+reportable, not a problem.
+
+**Surprising surface (why this entry exists):** Item 2's base rate cannot use
+the scorecard's own "fired" definition. The scorecard scored "fired" as an
+OUTPUT-LEVEL content event — the compound's *specific predicted foreign domain*
+surfaced (food, database, C/C++, geographic) — which is not reproducible from
+any frozen CSV and is not any accuracy/trajectory threshold: landmark_region
+(fired) and focus_management (not-fired) have identical strict accuracy. So the
+mechanical base rate is built on the pre-registered SHAPE signature
+(never_emerges): 18/41 both-suites, 28/41 either. The 7 candidates never-emerge
+at 3/7 both (≈ base rate) and 6/7 either (modestly above). Reading: the SHAPE
+signature is at the field base rate for these compounds; the CONTENT signature
+(predicted attractor) is what discriminates but is establishable only by output
+inspection. never_emerges is therefore a conservative CEILING on chance-firing,
+so the attractor-level 4/7 is more informative than this denominator implies.
+Reported two-tiered in the findings doc. **Trisha's call** whether the paper
+reports the never_emerges base rate, commissions output-level attractor coding
+for a true content-signature null, or cites 4/7 with the ceiling caveat. No
+criteria semantics changed.
+
+---
+
 ### 2026-07-04 — D7 pre-registered: single-token-ban counterfactual at the Step 5 decision point (BLIND to outcome; commit before first forward pass)
 
 **Why:** Review verdict 6.2 (spearman-review-verdicts-2026-07-03.md) named the

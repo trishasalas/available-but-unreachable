@@ -1,0 +1,3 @@
+suite,spearman_rho_pmi,p_pmi,spearman_rho_rawbigram,p_rawbigram,rho_pmi_vs_rawbigram,n_compounds
+pythia,0.5115,0.0002,0.5715,0.0,0.7203,49
+gpt2,0.3647,0.01,0.5052,0.0002,0.7203,49

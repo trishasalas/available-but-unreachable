@@ -1,0 +1,53 @@
+# scorecard base rate (cc-followups item 2). FIRED := the pre-registered
+# FAILURE SIGNATURE the 7 token-competition candidates were predicted to
+# show = never_emerges trajectory class (per_concept_trajectories.csv,
+# commit ca0319e), computed per suite over all 41 expansion compounds.
+# NOTE: this is NOT the scorecard's output-level 'fired' (= the specific
+# predicted wrong-domain attractor surfaced), which is not reproducible
+# from frozen CSVs: landmark_region (scorecard-fired) and focus_management
+# (scorecard-not-fired) have identical strict accuracy. never_emerges is a
+# CONSERVATIVE (broader) proxy -> a ceiling on the chance-firing rate.
+# base rate never_emerges: pythia 20/41, gpt2 26/41, both 18/41, either 28/41.
+# predicted candidates: both 3/7, either 6/7; scorecard attractor-level 4/7.
+compound,traj_pythia,traj_gpt2,never_emerges_pythia,never_emerges_gpt2,fired_signature_both,fired_signature_either,predicted_candidate
+keyboard_interaction,never_emerges,never_emerges,1,1,1,1,0
+section_heading,monotonic_climb,monotonic_climb,0,0,0,0,0
+text_alternative,never_emerges,never_emerges,1,1,1,1,0
+audio_description,mixed,never_emerges,0,1,0,1,0
+sign_language,monotonic_climb,monotonic_climb,0,0,0,0,0
+sensory_characteristics,never_emerges,never_emerges,1,1,1,1,1
+input_purpose,never_emerges,never_emerges,1,1,1,1,0
+target_size,never_emerges,never_emerges,1,1,1,1,0
+touch_target,mixed,monotonic_climb,0,0,0,0,0
+drag_movement,never_emerges,never_emerges,1,1,1,1,0
+focus_appearance,never_emerges,never_emerges,1,1,1,1,0
+consistent_help,never_emerges,never_emerges,1,1,1,1,0
+redundant_entry,never_emerges,never_emerges,1,1,1,1,1
+accessible_authentication,mixed,never_emerges,0,1,0,1,0
+text_spacing,never_emerges,never_emerges,1,1,1,1,0
+status_message,peak_regress,monotonic_climb,0,0,0,0,1
+error_identification,never_emerges,monotonic_climb,1,0,0,1,1
+pointer_cancellation,never_emerges,never_emerges,1,1,1,1,1
+character_key,never_emerges,never_emerges,1,1,1,1,0
+accessibility_tree,never_emerges,never_emerges,1,1,1,1,0
+accessible_name,peak_regress,peak_regress,0,0,0,0,0
+accessible_description,never_emerges,monotonic_climb,1,0,0,1,0
+live_region,never_emerges,never_emerges,1,1,1,1,0
+tab_panel,monotonic_climb,never_emerges,0,1,0,1,0
+radio_group,never_emerges,never_emerges,1,1,1,1,0
+tree_grid,never_emerges,never_emerges,1,1,1,1,0
+menu_bar,monotonic_climb,monotonic_climb,0,0,0,0,0
+tool_tip,mixed,never_emerges,0,1,0,1,0
+combo_box,peak_regress,never_emerges,0,1,0,1,0
+landmark_region,peak_regress,never_emerges,0,1,0,1,1
+semantic_markup,mixed,peak_regress,0,0,0,0,0
+focus_management,mixed,never_emerges,0,1,0,1,1
+reading_order,peak_regress,mixed,0,0,0,0,0
+text_formatting,mixed,never_emerges,0,1,0,1,0
+form_field,monotonic_climb,monotonic_climb,0,0,0,0,0
+low_vision,monotonic_climb,monotonic_climb,0,0,0,0,0
+cognitive_disabilities,mixed,monotonic_climb,0,0,0,0,0
+universal_design,never_emerges,never_emerges,1,1,1,1,0
+decorative_image,mixed,peak_regress,0,0,0,0,0
+informative_image,never_emerges,never_emerges,1,1,1,1,0
+responsive_design,monotonic_climb,monotonic_climb,0,0,0,0,0
