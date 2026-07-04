@@ -5,6 +5,73 @@ Research and figure decisions with rationale.
 
 ## Replication Verification Against Paper 1
 
+### 2026-07-04 — D7 pre-registered: single-token-ban counterfactual at the Step 5 decision point (BLIND to outcome; commit before first forward pass)
+
+**Why:** Review verdict 6.2 (spearman-review-verdicts-2026-07-03.md) named the
+weakest link in the A6 chain: "competition at the decision point is the
+operative failure" rests on ONE observational trace of ONE compound. D7 is the
+cheapest counterfactual that can harden it: remove the competitor, watch
+whether the knowledge surfaces. Verdict 6.1 stands regardless — A3 keeps
+"predicts" in the abstract; a positive D7 earns CAUSAL language scoped to the
+token level only ("token competition is causally decisive at this decision
+point"), not corpus level (that remains OLMo/Paper-2 territory).
+
+**Setup (frozen):**
+- Model: Pythia 12B, TransformerLens 2.17.0 (pinned), greedy decoding
+- Prompt: the original skip_link evaluative prompt from the Step 5 trace
+  (exact prompt per logit_export provenance — same string, byte-identical)
+- Regression check FIRST: reproduce the unmodified trace; confirm "click"
+  still wins Step 5 under TL2 before any intervention. No reproduction,
+  no experiment.
+
+**Intervention (frozen):**
+- Mechanism: logit floor to −inf for banned tokens at the decision step
+- Ban list: "click" AND tokenization variants: " click", "Click", " Click"
+  (BPE side-door rule — competitor must not re-enter via casing/whitespace).
+  Variants enumerated from the tokenizer BEFORE running; list recorded in
+  the results entry verbatim.
+- Two pre-declared conditions:
+  - **A (single-step ban):** ban applies at Step 5 only; generation
+    continues unconstrained after
+  - **B (persistent ban):** ban applies at Step 5 and all subsequent steps
+  - Rationale: A tests whether the competitor's win is decisive once;
+    B tests whether it re-wins later. Divergence between A and B is itself
+    reportable (competitor persistence).
+
+**Scope (frozen — the anti-scope-creep fence):**
+- PRIMARY: skip_link only. This is the causal demonstration.
+- PRE-DECLARED EXTENSIONS (run only if the session has room; not required
+  for the primary claim): 2–3 compounds from the fired token-competition
+  candidates per the prediction scorecard, same protocol, competitor
+  token(s) identified from each compound's own Step-trace before banning.
+  Extensions are generalization evidence, labeled as such.
+- Anything beyond this list is a NEW pre-registration, not an extension.
+
+**Pre-registered outcome branches (all ship):**
+1. A correct continuation ("displayed" or practitioner-equivalent) wins the
+   banned election AND the full completion codes correct under the frozen
+   criteria → token competition causally demonstrated at the decision
+   point. A6's final arrow hardens; Discussion gains the scoped causal
+   paragraph. [PREDICTED BRANCH — Fable placement; Trisha may re-weight]
+2. Another incorrect token wins (next gate-crasher in line) and the
+   completion remains incorrect → the failure is a competitor
+   NEIGHBORHOOD, not a single token — the prior swamps the signal in
+   depth. Ships as its own finding; arguably strengthens the
+   frequency-swamping account while weakening single-token framing.
+3. Degenerate or incoherent output → instrumentation check (harness, hook
+   placement, TL version confirm) BEFORE any interpretation. Not a
+   finding until instrumentation is exonerated.
+
+**Success criterion for "correct completion":** the frozen coding criteria
+(criteria_authoring.csv, commit 42695be) applied to the generated text —
+same practitioner bar as the elicitation experiment, no ad-hoc judging.
+
+**Ceremony:** this entry commits BEFORE the first forward pass
+(`pre-register D7 token-ban counterfactual`). Results + verdict paragraph
+land in DECISIONS the same session, whichever branch fires.
+
+---
+
 ### 2026-07-03 — CC execution: n=49 criteria translated, coded, dual Spearman (amended spec) run
 
 **Decision:** Executed the CC brief (criteria-handoff-2026-07-03.md) after the
