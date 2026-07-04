@@ -44,6 +44,17 @@ reports the never_emerges base rate, commissions output-level attractor coding
 for a true content-signature null, or cites 4/7 with the ceiling caveat. No
 criteria semantics changed.
 
+**RATIFIED (Trisha, 2026-07-04): option (c).** The paper cites 4/7 with the
+ceiling caveat, both axes named — "fired" is an output-level content judgment
+(predicted foreign domain surfaced); no mechanical base rate exists for it;
+never_emerges (18/41) reported as a conservative ceiling on chance-firing.
+Option (b) — output-level attractor coding across all 41 — is RETAINED as an
+optional census, energy permitting this weekend: it doubles as the two-tier
+headcount (lexicalized-but-outcompeted vs compositional-fallback, per the
+6.3 framing) and D7's extension shortlist. If run: coding rule written down
+BEFORE reading outputs, labeled post-hoc-operationalized. If not run, the
+paper is complete on (c) alone.
+
 ---
 
 ### 2026-07-04 — D7 pre-registered: single-token-ban counterfactual at the Step 5 decision point (BLIND to outcome; commit before first forward pass)
