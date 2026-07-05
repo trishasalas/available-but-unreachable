@@ -5,6 +5,94 @@ Research and figure decisions with rationale.
 
 ## Replication Verification Against Paper 1
 
+### 2026-07-05 — D8 PRE-REGISTERED: is the lens artifact frequency-shaped? (b_U-as-frequency-prior hypothesis; commit before any weights are loaded)
+
+**Motivation (viewed data, disclosed):** in all six frozen lens-vs-truth
+flips (skip_link declarative, one per scale), the TRUE pathway elected the
+higher-frequency token and the naked lens elected the rarer one — 6/6
+directional, observed 2026-07-05 morning BEFORE this registration. That
+observation motivated this entry and is NOT part of the confirmatory test.
+
+**Mechanism under test:** with TL2 fold_ln, the naked lens (resid @ W_U)
+omits two argmax-relevant terms: (1) the centering nudge, mean(resid) ×
+colsum(W_U) per token; (2) the folded unembed bias b_U = β_ln_final · W_U —
+a context-independent per-token logit offset, the only architectural home
+for a static unigram prior. Hypothesis: the model parks (part of) its
+frequency prior in b_U; the naked lens therefore systematically under-ranks
+frequent tokens at thin margins.
+
+**Frozen predictions:**
+- H1 (primary, confirmatory): Spearman ρ(b_U_i, log unigram frequency_i)
+  ≥ +0.3, one-sided positive, at Pythia-12B; same sign at all six scales.
+- H2 (exploratory, no threshold): sign and magnitude of
+  ρ(colsum(W_U)_i, log frequency_i) reported per scale; no prediction.
+- H3 (held observational): the 6/6 flip direction stands as motivating
+  observation only; any confirmatory flip-direction test requires NEW
+  lens rollouts on new prompts under a further registration.
+
+**Frequency measurement (frozen):** primary proxy = GPT-NeoX token ID
+(BPE merge order ≈ frequency rank), full vocab, free. Calibration subset =
+Infini-gram Pile-train string counts on a sample of n=500 single tokens
+that are standalone words (alphabetic, leading space), stratified by
+token-ID decile; Llama-2 tokenizer caveat logged (string-level counts,
+not NeoX-token-level). If proxy and calibration disagree in sign, report
+both, conclude nothing, stop.
+
+**Compute & scope:** weights-only — extract b_U and colsum(W_U) per scale
+(all six), no generation, no forward passes; Colab or local. The sealed
+`d7_step5_ranks_preban.csv` is NOT opened (H1/H2 do not require margins).
+
+**Branches (all ship):** (1) H1 holds → the C6 methods finding gains a
+mechanism: the naked lens amputates the frequency prior; the lens artifact
+and the paper's phenomenon share a channel (Discussion, clearly bounded —
+this strengthens C6, NOT A3; corpus-level causality unmoved). (2) H1 fails
+→ the 6/6 direction seeks another explanation (centering term, or
+coincidence at n=6); logged as honest negative. (3) Mixed signs across
+scales → report, no story.
+
+**RATIFY/VETO + commit before loading weights: Trisha, 2026-07-05: ______**
+
+---
+
+### 2026-07-05 — Frozen-artifact audit: lens-rollout divergence is SYSTEMATIC across all six scales; 6.9B Step-5 'displayed' VALIDATED without GPU
+
+**Method (no new data generated):** whitespace-normalized diff of the frozen
+lens-rollout chosen-token sequences
+(`results/mlp_investigation/pythia/*_skip_link_steps.csv`, autoregressive
+resid_post @ W_U) against the frozen true-pathway elicitation outputs
+(`results/pythia/*-results.csv`, skip_link declarative). Both artifact sets
+from the 2026-06-28 TL2 rerun; pathway is the differing variable.
+
+**Result:** the lens rollout departs the true greedy path at EVERY scale —
+divergence at ~step 2 (160M), 4 (410M), 7 (1B), 4 (2.8B), 7 (6.9B), 5 (12B).
+The 12B artifact (D7 verdict, below) was not a near-tie fluke: autoregressive
+lens rollouts exit the true trajectory within ≤7 steps, presumably at the
+first thin margin, after which every downstream token describes a fictional
+sentence (the rollout compounds its own artifact). Notable: the lens rollout
+made 2.8B look WORSE than reality (lens: tree-traversal fiction; truth:
+"used to skip a section of a web page" — nearly correct), and 410M's true
+output is a proto-loop ("not part of the main page. A skip link is a link
+that is not part...") — the degenerate attractor has a developmental
+trajectory the lens traces obscured.
+
+**6.9B validation:** pathways AGREE through step 6 ("a link that is not
+displayed in") — 'displayed' wins Step 5 on the true pathway at 6.9B.
+Rank-1 claim validated by frozen artifacts alone; no forward-check run
+needed. Honest cross-scale decision-point contrast: 6.9B elects 'displayed'
+(validated 2026-07-05) vs 12B elects ' a' / degenerate loop, 'displayed'
+rank 5 (D7 Gate 2).
+
+**Consequences:** C6 upgrades from single-artifact caution to systematic
+finding. Distinction preserved: autoregressive lens ROLLOUTS fabricate
+trajectories; single-step lens readouts at true-pathway-generated contexts
+carry a lesser, distinct caveat. All multi-step content in the
+mlp_investigation steps CSVs inherits the generation-claim caveat.
+CLAIMS A2/C6 rows updated same morning.
+
+**RATIFY/VETO: Trisha, 2026-07-05: ______**
+
+---
+
 ### 2026-07-04 — D7 VERDICT: Gate 2 failed — the Step-5 click-vs-displayed election is a lens-pathway artifact; no intervention run; A6 exhibit requires reframing
 
 **Mechanical record (run 2026-07-05T00:25 UTC = 2026-07-04 19:25 CDT, Colab A100, TL 2.17.0,
