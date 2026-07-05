@@ -1,0 +1,16 @@
+rank,token_id,token_repr,token_stripped,logit,ban_applied_this_step
+0,247,' a',a,16.26676368713379,False
+1,3560,' followed',followed,15.773369789123535,False
+2,7985,' visible',visible,15.693836212158203,False
+3,5532,' click',click,15.650191307067871,False
+4,629,' part',part,15.574532508850098,False
+5,8653,' displayed',displayed,15.432512283325195,False
+6,3587,' directly',directly,15.242172241210938,False
+7,762,' under',under,15.036757469177246,False
+8,271,' an',an,14.99718189239502,False
+9,7939,' linked',linked,14.846475601196289,False
+10,25363,' clicked',clicked,14.765137672424316,False
+11,2011,' shown',shown,14.752325057983398,False
+12,253,' the',the,14.700538635253906,False
+13,275,' in',in,14.5700101852417,False
+14,2908,' included',included,14.344388008117676,False
