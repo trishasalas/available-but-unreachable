@@ -5,6 +5,28 @@ Research and figure decisions with rationale.
 
 ## Replication Verification Against Paper 1
 
+### 2026-07-04 — A6 exhibit provenance caveat (disclosure; no semantics changed) + tangent.md paste artifact
+
+**Disclosure:** the frozen Step-5 trace was computed via `resid_post @ W_U`,
+skipping `ln_final` — a logit-lens-flavored pathway, not the model's true
+output distribution (skip_link step-trace cell, notebooks/mlp.ipynb). The
+behavioral basin matches elicitation results; ranks and margins could shift
+under the standard forward pass. D7's Gate 2 tests exactly this: agreement
+retroactively strengthens the exhibit (robust across unembedding pathways —
+free sentence for the paper); disagreement is a branch-3 instrumentation stop.
+This caveat attaches to the A6 exhibit regardless of D7's outcome.
+
+**Related disclosure (tangent.md):** the GPT-2 XL screen_reader step-trace
+block in tangent.md is a paste-duplicate of the skip_link top-15 table
+(hand-paste artifact; header reads "rank" where every other step table reads
+"step"). tangent.md was recovered from trash 2026-07-04 and restored to the
+vault (`20 Research/tmlr/results`); preserved as-is with this note. Any
+promotion of its data to paper evidence requires mechanical regeneration via
+`src/logit_export.py` — which would also, at last, populate `results/logits/`
+alongside D7's outputs.
+
+---
+
 ### 2026-07-04 — Post-review closeout computations (cc-followups items 1–4); scorecard "fired" found non-mechanical
 
 **What:** Ran the four ratified closeout items over frozen artifacts
@@ -58,6 +80,21 @@ paper is complete on (c) alone.
 ---
 
 ### 2026-07-04 — D7 pre-registered: single-token-ban counterfactual at the Step 5 decision point (BLIND to outcome; commit before first forward pass)
+
+**AMENDED 2026-07-04, before first forward pass (RATIFIED: Trisha, 2026-07-04):**
+"evaluative" below was a drafting error by the entry's author (Fable 5,
+original thread — confirmed by same, 2026-07-04); the referent was always the
+frozen Step-5 trace, prompt **"A skip link is"** (declarative), per the
+skip_link step-trace cell in notebooks/mlp.ipynb (the cell writing
+`{model}_skip_link_steps.csv`) and
+`results/mlp_investigation/pythia/pythia-12b_skip_link_steps.csv`. The
+recovered tangent.md (evaluative "because" traces, six models; restored from
+trash 2026-07-04 to vault `20 Research/tmlr/results`) confirms the evaluative
+prompt has no Step-5 election and lands in a different attractor at 12B
+(error-page frame) — the two prompts probe different failure surfaces. All
+gates, conditions, branches, and scope unchanged. Original wording below left
+intact per amend-don't-reinterpret. Execution: `src/d7_token_ban.py`
+(gates enforced in code; ban list recorded before any generation).
 
 **Why:** Review verdict 6.2 (spearman-review-verdicts-2026-07-03.md) named the
 weakest link in the A6 chain: "competition at the decision point is the
