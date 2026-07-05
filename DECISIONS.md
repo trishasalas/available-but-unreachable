@@ -5,6 +5,61 @@ Research and figure decisions with rationale.
 
 ## Replication Verification Against Paper 1
 
+### 2026-07-04 — D7 VERDICT: Gate 2 failed — the Step-5 click-vs-displayed election is a lens-pathway artifact; no intervention run; A6 exhibit requires reframing
+
+**Mechanical record (run 2026-07-05T00:25 UTC = 2026-07-04 19:25 CDT, Colab A100, TL 2.17.0,
+float32, `src/d7_token_ban.py`; artifacts in results/logits/ pending
+download from the session):**
+- Ban list enumerated and recorded before any generation:
+  'click'=9738, ' click'=5532, 'Click'=7146, ' Click'=15682 (all
+  single-token, asserted).
+- **Gate 1 PASSED:** the lens pathway (resid_post @ W_U, no ln_final —
+  the original cell's exact computation) reproduces the frozen trace,
+  all 15 chosen tokens byte-identical, 'click' wins Step 5 under the lens.
+  The artifact is reproducible.
+- **Gate 2 FAILED:** the true forward pass (ln_final included) elects
+  ' a' (logit 16.27) at Step 5, not ' click'. 'displayed' sits at rank 5
+  pre-ban on the true pathway. Full true-pathway continuation: "a link
+  that is not a link. It is a link that is not" — verified byte-identical
+  (first 15 steps) against the frozen elicitation raw
+  (results/pythia/pythia-12b-results.csv, skip_link declarative).
+  Two independent harnesses agree; instrumentation EXONERATED per
+  branch 3 before any interpretation.
+- **No intervention was run.** The gates prevented banning a competitor
+  that does not win on the true pathway.
+
+**Interpretation (RATIFY/VETO — Trisha, morning of 2026-07-05):**
+1. The A6 exhibit (click rank 1 / displayed rank 4 at 12B Step 5) is a
+   measurement artifact of the lens pathway: skipping ln_final's
+   centering flips near-tie margins. The A6 provenance caveat
+   (2026-07-04, below) anticipated exactly this fork; Gate 2 resolved it
+   to the disagreement branch.
+2. UNAFFECTED: all behavioral results (elicitation coding, inverse
+   scaling, gap tables, both Spearman analyses) — generated through the
+   true pathway throughout; Gate 2 independently re-derived the 12B
+   degenerate output.
+3. "Present but outcompeted" survives in modified form: 'displayed' is
+   rank 5 at the true decision point. What wins is not a high-frequency
+   web token but the degenerate self-reference continuation (' a' →
+   "a link"). The exhibit's mechanism sentence ("'click', a
+   higher-frequency web token, overtakes") does NOT survive and must not
+   ship; the step-by-step table (2026-06-28 entry) must not become a
+   figure as-is. CLAIMS.md B4's pointer to "A2's Step-5 trace as the
+   mechanism exhibit" needs corresponding correction.
+4. D7 as pre-registered is MOOT on the true pathway (its premise — ban
+   the Step-5 winner 'click' — dissolved). Verdict 6.1 stands: A3 keeps
+   "predicts"; no causal language is earned. Any follow-up (true-pathway
+   competitor characterization; whether 6.9B's lens trace agrees with
+   its true pathway, which its elicitation output suggests it does; a
+   ban experiment targeting the actual degenerate attractor) is a NEW
+   pre-registration, not an extension.
+5. Shippable as a finding: the correction itself — the paper catches its
+   own exhibit via a pre-registered gate before a reviewer could. Candidate
+   framing: measurement-pathway sensitivity at near-tie decision points as
+   a caution for logit-lens-adjacent generation claims.
+
+---
+
 ### 2026-07-04 — A6 exhibit provenance caveat (disclosure; no semantics changed) + tangent.md paste artifact
 
 **Disclosure:** the frozen Step-5 trace was computed via `resid_post @ W_U`,

@@ -129,9 +129,25 @@ FROZEN_TRACE = [
 # Helpers
 # --------------------------------------------------------------------------
 
-def _check_tl_version(allow_mismatch=False):
+def _get_tl_version():
+    """TransformerLens does not expose __version__ as a module attribute
+    (true throughout 2.x) — the installed version lives in package
+    metadata. Try both distribution-name spellings, then fall back."""
+    try:
+        from importlib.metadata import version, PackageNotFoundError
+        for dist in ("transformer_lens", "transformer-lens"):
+            try:
+                return version(dist)
+            except PackageNotFoundError:
+                continue
+    except Exception:
+        pass
     import transformer_lens
-    v = getattr(transformer_lens, "__version__", "unknown")
+    return getattr(transformer_lens, "__version__", "unknown")
+
+
+def _check_tl_version(allow_mismatch=False):
+    v = _get_tl_version()
     if v != REQUIRED_TL_VERSION:
         msg = (f"TransformerLens {v} != pinned {REQUIRED_TL_VERSION} "
                f"(pre-reg frozen). pip install "
