@@ -7,6 +7,24 @@ Research and figure decisions with rationale.
 
 ### 2026-07-05 — D8 PRE-REGISTERED: is the lens artifact frequency-shaped? (b_U-as-frequency-prior hypothesis; commit before any weights are loaded)
 
+**AMENDED 2026-07-05, before any weights loaded (prior-art disclosure;
+predictions unchanged):** post-registration literature search found
+Kobayashi et al. (Findings of ACL 2023, "Transformer language models
+handle word frequency in prediction head") — LM-head BIAS correlates with
+output token frequency in models with explicit head biases — and Cho et
+al. (arXiv 2406.01468) — log-linear frequency encoding in a common sparse
+direction of output embeddings, causally steerable, emerges very early in
+Pythia training. H1's geometric half is therefore REPLICATION, not
+discovery, and its prior rises accordingly. D8's residual novelty
+narrows to: (a) RELOCATION — Pythia/GPT-NeoX has no head bias; if H1
+holds, the prior lives in ln_final β, becoming b_U only under TL folding;
+(b) SEVERANCE CONSEQUENCE — the resid @ W_U shortcut removes exactly this
+term, connecting Kobayashi/Cho's geometry to Belrose et al.'s
+"systematically biased toward some vocabulary items" and to our six-scale
+rollout divergence (2026-07-05 audit, below). Full citation shelf added to
+paper/sections/contents/10-references.md same morning. Gates, thresholds,
+frequency protocol, and seal status unchanged.
+
 **Motivation (viewed data, disclosed):** in all six frozen lens-vs-truth
 flips (skip_link declarative, one per scale), the TRUE pathway elected the
 higher-frequency token and the naked lens elected the rarer one — 6/6
