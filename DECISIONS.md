@@ -50,7 +50,7 @@ this strengthens C6, NOT A3; corpus-level causality unmoved). (2) H1 fails
 coincidence at n=6); logged as honest negative. (3) Mixed signs across
 scales → report, no story.
 
-**RATIFY/VETO + commit before loading weights: Trisha, 2026-07-05: ______**
+**RATIFY/VETO + commit before loading weights: Trisha, 2026-07-05: RATIFY**
 
 ---
 
@@ -89,7 +89,7 @@ carry a lesser, distinct caveat. All multi-step content in the
 mlp_investigation steps CSVs inherits the generation-claim caveat.
 CLAIMS A2/C6 rows updated same morning.
 
-**RATIFY/VETO: Trisha, 2026-07-05: ______**
+**RATIFY/VETO: Trisha, 2026-07-05: RATIFY**
 
 ---
 
