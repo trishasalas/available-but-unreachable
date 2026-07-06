@@ -1,14 +1,36 @@
 ## Ruling Out Binding
 
-Binding correlates with capability — looks like the mechanism. Systematically dismantle it:
+Attention binding was this program’s first and best mechanism candidate. Paper 1 established, and Section 4 of this paper replicates, the correlation: sustained deep-network binding of accessibility compounds tracks behavioral capability across scale — present in every model that correctly defines core concepts, absent in every model that fails. A correlation that clean on an internal measurement invites promotion to causation. This section is the audit that declines the promotion.
 
-- Heads are attention sinks and positional, not accessibility-specific
-- MLPs do identical work on compounds the model gets right and wrong.
-- *And furthermore*: the single most selective head is causally inert
+The binding analysis establishes that late-layer binding co-varies with emergence; it does not establish what those late-layer heads compute. To evaluate whether the binding signal reflects concept-specific representation, we analyzed the top binding heads in Pythia-2.8B. Instead of preselecting heads, we identified them via the binding sweep and then subjected each to standard behavioral diagnostics and causal ablation. We do not merely demonstrate that ablation yields no effect; we demonstrate that the heads are mechanistically characterized as positional and structural, rather than semantic. Their function is distinct, not redundant.
 
-Board cleared. Binding is a correlate, not a cause.
+**The top binding heads are not induction heads.** A prefix-matching induction test (Olsson et al., 2022) on the derived top heads yields a maximum induction score of 0.02, against the ≥0.5 expected of genuine induction heads. The pairing is not a generic copy mechanism.
+
+**The dominant binder is a previous-token head.** The single strongest binding head (L1/H12) is the top binder for 7 of 11 compounds, yet scores 0.89 on a previous-token diagnostic. Because the second token of a two-token compound is always adjacent to the first, any previous-token head registers as “binding” every compound. This high score is therefore due to positional adjacency, not representation.
+
+**The late-layer binders are attention sinks and structural heads.** Five of the six late-layer (depth ≥ 10) top binders place 55–91% of their attention mass on the beginning-of-sequence token. Acting as attention sinks, these heads achieve near-zero scores on content diagnostics but leak signal into the binding score. The remaining late head (L27/H24) attends to the first content position; its apparent binding is a prompt artifact, collapsing from 0.98 to 0.006 once a uniform template no longer places the compound’s first word at that position. This is as much a metric finding as a model finding. The binding measurement is contaminated in the late layers by sink and positional structure. We develop this caveat in Methods, and it plausibly generalizes to other attention-pairing metrics.
+
+**The binding signal is not accessibility-specific.** Measured across five domains under a uniform template, the late heads fire on idiosyncratic, cross-domain subsets of compounds. Specifically, L28/H15 attends to "hedge fund" and "stock market" with scores of 0.94 and 0.84 respectively, while L30/H29 attends to "skip link" and the weak-collocation control "bicycle wheel" with scores of 0.98 and 0.78. No head selects for accessibility; the carve-outs are lexical, not semantic.
+
+**MLP effort does not distinguish success from failure.** If the failure were a magnitude phenomenon, the network would simply work less on compounds it gets wrong, with late-layer contribution norms separating correct from incorrect compounds. However, the late-layer MLP-to-attention contribution ratios are near-identical for compounds the model defines correctly and those it fails (4.437 versus 4.444 at 6.9B; DECISIONS 2026-06-28, results/mlp_investigation/). This is a claim about magnitude, not computational content: the network spends the same effort either way, and it rules out the simplest MLP story while leaving the explanatory weight to Section 5.
+
+**The most selective head is causally inert.** One head, L29/H7, does attend specifically to "screen reader" (reader→screen attention: 0.90; next compound: 0.21; weight-level QK preference: near zero). The selectivity is built through the layers, not present in the embeddings. Yet ablating this head's output at the "reader" position does nothing. The continuation of "A screen reader is …" shifts by a KL divergence of 1×10⁻⁵ — effectively zero — and the matched control ("bicycle wheel") reads 0.0 exactly. Direct logit attribution of the head's output, computed with centering and the realized final-normalization scale (Methods), writes a wrong-sense "screen" direction, promoting projection-and-cinema vocabulary rather than accessibility content. The write is functionally dead given the null ablation. The single most screen-reader-specific head in the network is a redundant representation, not a retrieval mechanism.
+
+Two further results close the remaining escape routes. First, the population version: in companion circuit-ablation experiments spanning the accessibility domain, three additional domains, and a matched control — 44 compound pairs per domain — the same three-tier attention architecture replicates across every domain. It is causally inert under population ablation, where removal of the strongest binding heads moves mean binding by under 1% as compensator heads absorb the loss. The experiments are reported in a companion data release (DOI pending), and the population question is additionally scheduled for in-repository reproduction. The wiring is demonstrably present and demonstrably general, and demonstrably not where the behavior lives. Second, the dissociation: at Pythia-12B, generation of the skip link compound collapses into a degenerate loop while the binding signal remains intact — peak binding is 0.978, at the same early layer as at every smaller scale. The compound is bound and the sentence still dies. Whatever fails at 12B fails downstream of attention.
+
+Taken together, the late-layer binding signal is real and scale-correlated but mechanistically mundane: positional adjacency, attention-sink structure, and redundant representation. The causal test here is deliberately scoped — single-head necessity is ruled out directly, and population necessity is ruled out by the companion ablations. The residual possibility of a distributed ensemble, in which no head is individually necessary yet the population matters in a configuration our ablations did not test, is stated in the Limitations rather than argued away. Attention binding marks emergence; it does not implement it.
 
 ---
+
+<!-- Planning manifest preserved below (pre-drafting state; Fable pass 2026-07-05).
+     Prose above assembled primarily from docs/findings/binding-reframe-draft.md
+     Edit 2 (drafted 2026-06-28, voice-matched, house-blessed) with connective
+     tissue + three additions: the MLP-ratio paragraph (Gemini attack #2 resolved
+     with numbers per DECISIONS 2026-06-28), the thatDangCircuit cross-domain
+     population paragraph (per CLAIMS G5 remedy — companion DOI pending), and the
+     12B dissociation capstone. The "No new findings to add from today" note below
+     is superseded: D7/C6 changed the DLA sentence (pathway-hygiene clause added
+     to the L29/H7 paragraph) and the cross-domain paragraph is new weight. -->
 
 *Data we have:*
 - `results/pythia/*-binding.csv` and `results/gpt2/*-binding.csv` — binding scores across all scales

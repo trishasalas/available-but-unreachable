@@ -1,15 +1,19 @@
 ## The Trajectory Taxonomy
 
-Not all concepts fail the same way. 
-Ten concepts, two architectures, four trajectory classes: 
-- peak_regress
-- monotonic_climb
-- never_emerges
-- mixed
+Not every concept fails the same way, and the differences have enough structure to deserve names. Plotting per-concept accuracy across scale for both families yields four recurring shapes. Monotonic climb: accuracy rises with scale and stays — screen reader, alt text, and WCAG follow this path in Pythia. Peak-regress: accuracy rises to a mid-scale peak and falls at maximum scale — skip link in Pythia is the canonical case. Never-emerges: zero correct responses at every scale in both families — ARIA, captions, focus indicator, and semantic HTML never arrive, across ten models and two architectures, with confabulation about them growing more confident as scale increases. Mixed covers the remainder. The same concept can take different trajectories in different architectures, which is itself informative: trajectory class is a property of the concept-architecture pair, not the concept alone (`results/analysis/per_concept_trajectories.csv`, `per_concept_scaling.csv`).
 
-The same concept can take different trajectories in different architectures. This is a core empirical contribution — the gap isn't uniform, it has structure.
+We treat this taxonomy as a descriptive vocabulary rather than a claim-bearing classification due to its high sensitivity. A stability audit we ran on our own scheme revealed that shifting a single response's accuracy code by just one level alters the framework so significantly that only 20 of the 102 class assignments remain unchanged. The class boundaries are too sensitive to individual coding decisions to carry empirical weight on their own. The structure that does carry weight in this paper is the continuous relationship of Section 5, which operates on accuracy directly and requires no thresholded classes. The taxonomy earns its keep as language: it lets us say "peak-regress" instead of re-describing a curve, and it names the phenomenon — inverse scaling on specific specialized concepts — that the rest of the paper investigates.
+
+What the accuracy curves compress, the generations show: within a peak-regress trajectory, the quality of failure changes character across scale, not just its rate. Skip link at 2.8B fails by tautology — asked why a missing skip link is a problem, it answers that the skip link is not present. At 6.9B the failure is wrong but in-domain: "it is not a link." At 12B the generation has left the domain entirely, producing a structurally fluent 404-style error template. The model does not simply get worse at the concept; it fails in progressively more confident and less recoverable ways, a pattern Section 6 quantifies. (Generation quotes from the evaluative battery, true output pathway; camera-ready sourcing regenerates these mechanically per the provenance note in Methods.)
 
 ---
+
+<!-- Planning manifest preserved below (pre-drafting state; Fable pass 2026-07-05).
+     CALIBRATION NOTE: the manifest's "core empirical contribution" framing is
+     superseded by the stability audit (20/102 assignments survive a one-level
+     flip) — taxonomy demoted to descriptive vocabulary; Section 5's continuous
+     relationship carries the empirical weight. CLAIMS row B3 needs the same
+     demotion pass (flagged for Trisha, not edited). -->
 
 *Data we have:*
 - `results/analysis/per_concept_trajectories.csv` — the classifications

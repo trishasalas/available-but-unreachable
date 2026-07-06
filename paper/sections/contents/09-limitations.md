@@ -1,5 +1,35 @@
 ## Limitations
 
+We state limitations in the order a skeptical reader would raise them.
+
+**Single domain, single prompt family in places.** The trajectory and gap results are established for accessibility concepts only; the frequency hypothesis predicts the same structure in legal, medical, and financial domains, and the compound inventory to test that exists, but this paper does not. Narrower still, the measurement-pathway divergence result (Section 7) is systematic across all six scales but was established on one prompt family — its claim of systematicity is across scale, not across prompts, and we say so rather than let the reader assume otherwise.
+
+**The causal test of binding is deliberately scoped.** Our ablation evidence rules out single-head necessity directly and population necessity via the companion cross-domain ablations, but it does not rule out a distributed ensemble in which no single head is necessary yet the population matters in a configuration our ablations did not test; a designed joint-ablation of the earned deep-lexical head set is specified and pending. The attention-binding metric also measures only attention patterns, not the value written: a head can attend strongly while contributing little, and conversely. We therefore frame late-layer binding as a correlate of emergence and defer the positive question — what does compute these compounds, most plausibly MLP and multi-head ensemble effects — to future work.
+
+**The binding metric is contaminated at late layers.** Attention-sink and positional structure leak into the binding score at depth, which is why the head audit of Section 3 was necessary and why we recommend a uniform template for any cross-domain use of attention-pairing metrics. We treat this as a finding as well as a limitation, and note that it plausibly implicates unaudited attention-pairing metrics elsewhere.
+
+**Small cells where stated.** The fluent-wrongness confidence gap rests on a thin control cell (n ≈ 2 control-correct responses per scale); its sign and trajectory are consistent across the suite, but the magnitude carries that caveat everywhere we report it. The within-sense frequency correlation is undersampled by the phenomenon itself — more than 80% of compounds yield too few correct-domain responses to analyze — and the small-subsample result we report is labeled descriptive.
+
+**The taxonomy is vocabulary, not a claim.** Class assignments survive a one-level coding perturbation in only 20 of 102 cases; the trajectory classes are used as names for curve shapes, and no result in this paper depends on a classification boundary.
+
+**Coding is deterministic, not sophisticated.** The accuracy criteria are substring-and-rule based by design — auditable and re-runnable at the cost of nuance. A strictness audit of the criteria was run and its outcomes disclosed in the decision log; the criteria remain crude in the way that makes them checkable, and a differently-crude rubric could shift individual codes. The "correct token" framing at decision points carries the matching simplification: the claim is that domain-relevant tokens as a group are outranked by generic continuations, not that one specific token must win.
+
+**Corpus and tokenizer asymmetries.** Frequency counts are measured on The Pile, which is exact for Pythia and a cross-corpus proxy for GPT-2 (WebText is not publicly indexed); the two families also tokenize compounds differently. That the correlation transfers anyway is evidence of robustness, but the GPT-2 result inherits the proxy status. The calibration counts additionally pass through the Infini-gram index's Llama-2 tokenizer at the string level, a documented mismatch we log rather than hide.
+
+**Open-weight models only.** All results are on Pythia and GPT-2. Frontier models do not release training data, which forecloses the corpus-auditing this paper depends on; whether these findings survive instruction tuning and RLHF is unknown, and we make no claim that they do.
+
+**One exhibit in this paper's history was retracted by its own protocol.** An earlier token-competition exhibit was withdrawn when a pre-registered gate showed it to be a measurement-pathway artifact; the retraction, the gate, and the generalized finding it produced are documented in Section 7 and in the public decision log. We list this here not as a live limitation but as the record of one: the remaining decision-point claims were re-derived on the true output pathway, and the episode is why every pathway in this paper is now stated explicitly.
+
+---
+
+<!-- Planning manifest preserved below (pre-drafting state; Fable pass 2026-07-05).
+     Superseded items from the suggestion block: the n=8 Spearman power
+     limitation is DEAD (n=49 campaign, both suites significant, pre-registered
+     threshold cleared — see Section 5); replaced above by the honest survivors.
+     The distributed-ensemble paragraph adapts binding-reframe-draft.md Edit 3
+     (blessed prose). D6 referenced as "specified and pending" — verify status
+     at submission time; if run by then, this paragraph shrinks per the D6 plan. -->
+
 
 ### SUGGESTION: Known limitations to address
 
