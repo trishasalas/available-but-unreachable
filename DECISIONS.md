@@ -7,6 +7,49 @@ Research and figure decisions with rationale.
 
 ### 2026-07-06 — D6 PRE-REGISTERED: multi-head joint ablation (the distributed-ensemble test; commit before any weights are loaded)
 
+**GATE-4 RESOLUTION 2026-07-06 (instrument-validity gate fired on the
+primary; check performed; instrument ruled VALID; result stands with
+caveat):** amended rerun (local, MPS) earned lexical set {L29/H7, L27/H10}
+for screen_reader — L27/H10's first on-target measurement clears both
+filters; its generic BOS 0.82 was idle-parking, same as L29/H7's. Joint
+ablation of the full earned set: **KL 0.000022 nats** (< 0.01 frozen bar →
+flat). Negative control (same duet on bicycle wheel): 0.000032 → flat.
+BOTH frozen result criteria pass. However the instrument-validity gate
+FAILS AS SCOPED on the primary: tail peak 0.000074 vs lexical peak
+0.000022 = **3.4×** (frozen: ≥ 10×). Branch-4 stop declared; panel paused
+before alt_text.
+
+**Instrumentation check (evidence, all from the same session):** (1)
+sanity asserts passed — empty-set identity KL == 0, plural == singular on
+L29/H7, late-layer 8-head set moved KL; (2) the IDENTICAL tail heads,
+same hooks, same code path, on the control prompt rose 0.000041 →
+0.000940 peak = **29×** its lexical peak — the gate's spirit satisfied on
+the adjacent prompt. Conclusion: the hooks demonstrably zero heads and
+demonstrably move outputs. The primary's flat tail is a property of the
+PROMPT, not the instrument: on "A screen reader is ___" (baseline top
+token ' a', p = 0.51) the next-token prediction is insensitive to the
+entire deep attention neighborhood at the `reader` position — selective
+duet AND true sinks alike.
+
+**Verdict under the resolution:** primary result STANDS — the earned deep
+selective set is exactly {L29/H7, L27/H10} and it is jointly unnecessary
+(0.000022). A5 hardens as pre-registered. Caveat travels with the claim:
+the validity gate was satisfied via the control prompt, not the primary.
+**Lesson (design debt, named):** the 10× gate silently assumed structural
+ablations perturb ANY prompt; that assumption is prompt-sensitive. Future
+gates of this shape should be evaluated on the control prompt by design.
+Panel continuation: remaining compounds run under the same gate,
+resolved per-compound by the same check if it fires again.
+
+**Observation, logged NOT interpreted (speculation, explicitly outside
+the registration):** the immovable prediction is a maximally
+high-frequency token; possible connection to D8's b_U frequency prior
+(the anchor lives in the unembedding, not in these heads). Parked as a
+saved question; no claim ships from this line.
+
+**GATE-RESOLUTION RATIFY/VETO + commit before panel resumes: Trisha,
+2026-07-06: RATIFIED**
+
 **AMENDED 2026-07-06 (instrumentation stop; before any lexical-segment data
 exists):** first screen_reader run returned an EMPTY earned set — 16/18 deep
 candidates flagged sink, including BOTH selectivity-passing heads (L29/H7,

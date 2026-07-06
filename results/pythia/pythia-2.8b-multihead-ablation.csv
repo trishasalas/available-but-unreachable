@@ -1,0 +1,15 @@
+compound,n_ablated,heads,newest_head,kl,segment,role
+screen_reader,1,L29H7,L29H7,1.2e-05,lexical,primary
+screen_reader,2,L29H7; L27H10,L27H10,2.2e-05,lexical,primary
+screen_reader,3,L29H7; L27H10; L28H15,L28H15,2.2e-05,structural_tail,primary
+screen_reader,4,L29H7; L27H10; L28H15; L10H19,L10H19,6.8e-05,structural_tail,primary
+screen_reader,5,L29H7; L27H10; L28H15; L10H19; L25H2,L25H2,7e-05,structural_tail,primary
+screen_reader,6,L29H7; L27H10; L28H15; L10H19; L25H2; L25H1,L25H1,7.4e-05,structural_tail,primary
+screen_reader,7,L29H7; L27H10; L28H15; L10H19; L25H2; L25H1; L24H4,L24H4,7.3e-05,structural_tail,primary
+bicycle_wheel,1,L29H7,L29H7,4e-06,lexical,neg_control
+bicycle_wheel,2,L29H7; L27H10,L27H10,3.2e-05,lexical,neg_control
+bicycle_wheel,3,L29H7; L27H10; L28H15,L28H15,4.1e-05,structural_tail,neg_control
+bicycle_wheel,4,L29H7; L27H10; L28H15; L10H19,L10H19,0.000887,structural_tail,neg_control
+bicycle_wheel,5,L29H7; L27H10; L28H15; L10H19; L25H2,L25H2,0.000907,structural_tail,neg_control
+bicycle_wheel,6,L29H7; L27H10; L28H15; L10H19; L25H2; L25H1,L25H1,0.00094,structural_tail,neg_control
+bicycle_wheel,7,L29H7; L27H10; L28H15; L10H19; L25H2; L25H1; L24H4,L24H4,0.000935,structural_tail,neg_control

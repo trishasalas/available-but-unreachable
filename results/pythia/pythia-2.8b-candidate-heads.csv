@@ -1,0 +1,19 @@
+compound,layer,head,binding_score,induction,prev_token,dup_token,type,bos_attention,attn_to_pos1,own_score,max_other_score,max_other_domain,selective,sink,structural,in_lexical_set,binding_source
+screen_reader,29,7,0.9019,0.0201,0.0216,0.0213,uncharacterized,0.0859,0.0001,0.9019,0.2104,general,True,False,False,True,frozen CSV
+screen_reader,10,27,0.7677,0.0013,0.7196,0.0055,previous-token,0.1815,0.0228,0.7677,0.8383,general,False,False,False,False,frozen CSV
+screen_reader,12,31,0.5948,0.0046,0.3026,0.009,partial (prev/dup),0.2107,0.0357,0.5948,0.7275,medical,False,False,False,False,frozen CSV
+screen_reader,27,10,0.3808,0.0225,0.0675,0.009,uncharacterized,0.3845,0.0092,0.3808,0.23,finance,True,False,False,True,frozen CSV
+screen_reader,20,12,0.3246,0.0114,0.0751,0.0087,uncharacterized,0.075,0.075,0.3246,0.3175,legal,False,False,False,False,frozen CSV
+screen_reader,11,7,0.323,0.0072,0.0322,0.0186,uncharacterized,0.3379,0.2239,0.323,0.216,general,False,False,False,False,frozen CSV
+screen_reader,10,14,0.2828,0.0004,0.316,0.0097,partial (prev/dup),0.3887,0.0659,0.2828,0.709,legal,False,False,False,False,frozen CSV
+screen_reader,28,15,0.2576,0.0127,0.0572,0.0147,uncharacterized,0.5402,0.036,0.2576,0.9372,finance,False,True,False,False,frozen CSV
+screen_reader,10,19,0.2544,0.0109,0.1495,0.0139,uncharacterized,0.6293,0.0122,0.2544,0.7032,general,False,True,False,False,frozen CSV
+screen_reader,25,2,0.2485,0.0336,0.0231,0.0154,uncharacterized,0.6878,0.0281,0.2485,0.6064,finance,False,True,False,False,frozen CSV
+screen_reader,25,1,0.2406,0.02,0.0189,0.0196,uncharacterized,0.7569,0.0016,0.2406,0.4959,finance,False,True,False,False,frozen CSV
+screen_reader,24,4,0.2328,0.0182,0.0217,0.0196,uncharacterized,0.7599,0.0008,0.2328,0.2721,legal,False,True,False,False,frozen CSV
+screen_reader,31,23,0.2225,0.0,0.0102,0.02,uncharacterized,0.4886,0.1036,0.2225,0.146,finance,False,False,False,False,frozen CSV
+screen_reader,24,11,0.22,0.0031,0.1135,0.0086,uncharacterized,0.0436,0.0128,0.2201,0.1374,general,False,False,False,False,frozen CSV
+screen_reader,26,4,0.2144,0.0203,0.0208,0.0191,uncharacterized,0.7846,0.0007,0.2144,0.1545,finance,False,True,False,False,frozen CSV
+screen_reader,11,29,0.1802,0.0181,0.0457,0.0159,uncharacterized,0.7619,0.02,0.1802,0.1504,general,False,True,False,False,frozen CSV
+screen_reader,20,30,0.1686,0.0225,0.0228,0.0253,uncharacterized,0.6085,0.0092,0.1686,0.0574,finance,False,True,False,False,frozen CSV
+screen_reader,14,21,0.1413,0.0142,0.0317,0.0652,uncharacterized,0.3887,0.0599,0.1413,0.1665,medical,False,False,False,False,frozen CSV
