@@ -7,6 +7,29 @@ Research and figure decisions with rationale.
 
 ### 2026-07-06 — D6 PRE-REGISTERED: multi-head joint ablation (the distributed-ensemble test; commit before any weights are loaded)
 
+**AMENDED 2026-07-06 (instrumentation stop; before any lexical-segment data
+exists):** first screen_reader run returned an EMPTY earned set — 16/18 deep
+candidates flagged sink, including BOTH selectivity-passing heads (L29/H7,
+BOS 0.9117; L27/H10, BOS 0.8186). Branch-4 stop declared before
+interpretation. Diagnosis: the unconditional sink/structural metrics
+(generic-prompt BOS ≥ 0.5, pos-1 ≥ 0.5) conflate structural sinks with
+selective heads AT IDLE — a selective head off-target has nowhere to put its
+mass and parks on BOS; the parking is the selectivity's shadow. The frozen
+April characterization (docs/findings/The one genuine lexical head.md)
+measured ON-TARGET: at the `reader` position L29/H7 routes 0.90 to "screen",
+0.0001 to pos-1 — "not BOS, not position-1." **Amendment restores that
+original operationalization rather than inventing a new rule:** sink and
+structural are measured from the compound's word2 position on the compound's
+own prompt; thresholds (0.5 / 0.5) unchanged; all other rules, thresholds,
+predictions, and branches unchanged.
+**Viewed-data disclosure:** the aborted run exposed structural-TAIL cumulative
+curves only — screen_reader tail peak 0.000587, bicycle control tail peak
+0.000728 (superseded rows; upsert replaces on rerun). No lexical-segment KL
+exists anywhere; the lexical-segment predictions remain blind. Tail
+membership changes under the amendment (L29/H7 exits the tail), so viewed
+tail values do not leak the gate outcome.
+**AMENDMENT RATIFY/VETO + commit before rerun: Trisha, 2026-07-06: RATIFIED**
+
 **Why:** A5's null (L29/H7 causally inert, KL ≈ 1e-5) cannot distinguish "the
 mechanism is elsewhere" from "the mechanism is distributed across a set of
 heads" — the loophole conceded in the Limitations draft. D6 jointly ablates an
