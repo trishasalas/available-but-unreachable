@@ -5,6 +5,61 @@ Research and figure decisions with rationale.
 
 ## Replication Verification Against Paper 1
 
+### 2026-07-05 — D8 VERDICT: H1 CONFIRMED under the frozen proxy — b_U is frequency-ordered at all six scales; colsum is NOT — the prior localizes to exactly the severed term; calibration pending (API 403)
+
+**Mechanical record (run 2026-07-05, TL 2.17.0, float32, weights-only,
+seed-42 protocol, outputs results/d8_frequency_prior/):**
+ρ(b_U, freq proxy), trimmed: 160M +0.322 · 410M +0.512 · 1B +0.543 ·
+2.8B +0.533 · 6.9B +0.535 · **12B +0.591** (frozen bar: ≥ +0.3 at 12B,
+same sign all scales — met at every scale individually; full-vocab and
+trimmed variants agree to ~0.01). ρ(colsum, freq proxy): |ρ| < 0.01 at
+all six scales — frequency-dead.
+
+**Verdict:** H1 CONFIRMED under the frozen token-ID proxy. H2's null is
+the dissociation that sharpens the mechanism: the frequency prior lives
+in b_U specifically — the exact term the resid @ W_U shortcut severs —
+while the retained centering coefficient (colsum) is frequency-neutral.
+End-to-end chain now measured: bias-free GPT-NeoX parks the unigram prior
+in ln_final β → TL folding relocates it into b_U → the shortcut amputates
+exactly that term → thin-margin elections lose their frequency voter →
+the 6/6 anti-frequency flip direction (2026-07-05 audit). Kobayashi et
+al. (2023) replicated and RELOCATED into an architecture with no explicit
+head bias; severance casualty documented. C6 gains its mechanism.
+
+**Calibration incomplete (honesty clause):** Infini-gram returned 403
+after ~80 calls/scale (rate-limit signature); partial count CSVs on disk
+lack b_U values (instrument flaw — patched same day: per-row b_U
+recorded, inter-call sleep, per-call backoff-and-continue). The frozen
+sign-disagreement rule COULD NOT FIRE. H1 therefore stands as
+PROXY-CONFIRMED; the paper does not say "log unigram frequency" until an
+independent calibration lands (small scales suffice; local-machine
+retry).
+
+**Observations (not pre-registered, logged not interpreted):** ρ rises
+with scale (0.32 → 0.59); 160M b_U norm anomalously large (5,647 vs
+18–65 at all other scales) and weakest correlation — 160M/410M oddity
+file grows. d_vocab padding differs by scale (50304/50432/50688),
+expected.
+
+**CALIBRATION COMPLETE (same day, ~13:00 CDT):** Infini-gram Pile-train
+counts, n=500/500 (fresh cache, 1 qps, zero failures, offline-first
+instrument). ρ(b_U, log Pile count): 160M 0.664 · 410M 0.737 · 1B 0.767 ·
+2.8B 0.722 · 6.9B 0.689 · **12B 0.779** (p ≤ 6e-65 throughout; 12B
+p = 4e-103). **Signs agree with the proxy at all six scales — the frozen
+sign-disagreement rule does NOT fire.** H1 upgrades from proxy-confirmed
+to CONFIRMED: the paper may say "log unigram frequency in the Pile."
+Calibration ρ exceeds proxy ρ everywhere (proxy was the conservative
+floor — full-vocab noise). Observation, logged not interpreted: 160M
+jumps 0.32→0.66 proxy→calibration, suggesting its disorder (and giant
+norm) concentrates in non-word vocab regions. Artifacts:
+results/d8_frequency_prior/d8_calibration_summary.md +
+data/infini_gram_calibration_counts.csv (committed cache — no one
+re-asks these questions).
+
+**RATIFY/VETO + calibration-retry decision: Trisha, 2026-07-06: RATIFY**
+
+---
+
 ### 2026-07-05 — D8 PRE-REGISTERED: is the lens artifact frequency-shaped? (b_U-as-frequency-prior hypothesis; commit before any weights are loaded)
 
 **AMENDED 2026-07-05, before any weights loaded (prior-art disclosure;
