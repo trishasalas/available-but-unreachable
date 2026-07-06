@@ -36,20 +36,18 @@ try:  # package import (repo) — flat import (Colab upload) fallback
     from .binding import run_single_compound
     from .head_characterization import (
         DOMAIN_COMPOUNDS, SINK_THRESHOLD, STRUCTURAL_THRESHOLD,
-        attention_to_bos, attention_to_position, characterize_heads,
-        collocation_scan,
+        characterize_heads, collocation_scan,
     )
     from .qk_ov import ablate_head_at_position, ablate_heads_at_position, \
-        cumulative_ablation
+        cumulative_ablation, find_token_index
 except ImportError:
     from binding import run_single_compound
     from head_characterization import (
         DOMAIN_COMPOUNDS, SINK_THRESHOLD, STRUCTURAL_THRESHOLD,
-        attention_to_bos, attention_to_position, characterize_heads,
-        collocation_scan,
+        characterize_heads, collocation_scan,
     )
     from qk_ov import ablate_head_at_position, ablate_heads_at_position, \
-        cumulative_ablation
+        cumulative_ablation, find_token_index
 
 
 MODEL_NAME = "pythia-2.8b"          # single model under test, per spec
@@ -117,6 +115,35 @@ def _domain_dict_with(compound_name):
     return dc
 
 
+def _on_target_attention(model, prompt, heads, dest_word):
+    """BOS and position-1 attention measured FROM the compound's word2 position
+    ON the compound's own prompt (AMENDED 2026-07-06).
+
+    The unconditional metric (generic prompts) conflates structural sinks with
+    selective heads at idle: a selective head has nothing to do off-target and
+    parks its mass on BOS — the parking is the selectivity's shadow, not
+    evidence against it (first run: 16/18 candidates flagged sink, including
+    both selective heads; L29/H7 generic BOS 0.91 vs on-target ~0.0001 to
+    pos-1, 0.90 to word1). A TRUE structural sink parks on BOS even when a
+    bindable target is present. This restores the April characterization's
+    operationalization ('not BOS' was measured at the reader position).
+    """
+    str_tokens = model.to_str_tokens(prompt)
+    di = find_token_index(str_tokens, dest_word)
+    if di is None:
+        raise ValueError(
+            f"dest_word '{dest_word}' not found in prompt tokens: {str_tokens}")
+    _, cache = model.run_with_cache(
+        prompt, names_filter=lambda n: n.endswith("pattern"))
+    rows = []
+    for layer, head in heads:
+        pat = cache["pattern", int(layer)][0, int(head)]  # [dest, src]
+        rows.append({"layer": int(layer), "head": int(head),
+                     "bos_attention": round(float(pat[di, 0]), 4),
+                     "attn_to_pos1": round(float(pat[di, 1]), 4)})
+    return pd.DataFrame(rows)
+
+
 def earn_candidate_set(model, project_root, compound_name,
                        min_layer=MIN_LAYER, n_candidates=N_CANDIDATES):
     """
@@ -136,8 +163,10 @@ def earn_candidate_set(model, project_root, compound_name,
           f"(min_layer={min_layer}, source: {source})")
 
     char = characterize_heads(model, heads)
-    bos = attention_to_bos(model, heads)
-    pos1 = attention_to_position(model, heads, position=1)
+    # AMENDED 2026-07-06: sink/structural measured on-target (from the word2
+    # position on the compound's own prompt), not on generic prompts.
+    _w1c, _w2c, nat_prompt, dest_c = COMPOUNDS[compound_name][:4]
+    onpos = _on_target_attention(model, nat_prompt, heads, dest_c)
 
     # Selectivity under the uniform template (C1 caveat): own-compound score
     # vs the strongest score from any OTHER domain.
@@ -169,8 +198,7 @@ def earn_candidate_set(model, project_root, compound_name,
     sel = pd.DataFrame(sel_rows)
 
     out = (deep.merge(char, on=["layer", "head"])
-               .merge(bos, on=["layer", "head"])
-               .merge(pos1, on=["layer", "head"])
+               .merge(onpos, on=["layer", "head"])
                .merge(sel, on=["layer", "head"]))
     out["sink"] = out["bos_attention"] >= SINK_THRESHOLD
     out["structural"] = out["attn_to_pos1"] >= STRUCTURAL_THRESHOLD
