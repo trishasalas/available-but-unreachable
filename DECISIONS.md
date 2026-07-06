@@ -5,6 +5,75 @@ Research and figure decisions with rationale.
 
 ## Replication Verification Against Paper 1
 
+### 2026-07-06 — D6 PRE-REGISTERED: multi-head joint ablation (the distributed-ensemble test; commit before any weights are loaded)
+
+**Why:** A5's null (L29/H7 causally inert, KL ≈ 1e-5) cannot distinguish "the
+mechanism is elsewhere" from "the mechanism is distributed across a set of
+heads" — the loophole conceded in the Limitations draft. D6 jointly ablates an
+EARNED set of deep lexical heads. If even screen reader — the strongest
+single-head binding of the 11 compounds — is distributed, weaker compounds are
+distributed a fortiori. Design approved 2026-06-29
+(`docs/superpowers/specs/2026-06-29-multihead-lexical-ablation-design.md`);
+instrument committed e7a5e4b (`src/qk_ov.py` plural ablation + cumulative
+curve; `src/d6_multihead_ablation.py`; `notebooks/d6-multihead-ablation.ipynb`)
+BEFORE this entry and before any run — gates in history before any result
+existed.
+
+**Setup (frozen):** Pythia 2.8B only, TL 2.17.0 pinned, no generation.
+Compounds: screen_reader (primary), alt_text / stock_market / semantic_html
+(robustness), bicycle wheel (negative control, screen_reader's earned set).
+Ablation = zero hook_z at the compound's word2 position; effect = KL(base ||
+ablated) at the final position.
+
+**Stage A set-earning rules (frozen; spec definition verbatim — deep ∧
+selective ∧ ¬(sink ∨ structural)):**
+- Deep: `min_layer = 10`, top `N = 18` candidates by binding score.
+- Selective: own-compound attention ≥ **0.3** AND ≥ **1.5×** the max
+  other-domain score, under the UNIFORM template "A {w1} {w2} is" (C1: natural
+  prompts confound position with content). Calibration point: L29/H7 = 0.90 vs
+  0.21 clears this easily.
+- Sink/structural: existing thresholds (BOS ≥ 0.5; pos-1 ≥ 0.5). Head-type
+  battery columns recorded but NOT a membership filter.
+- stock_market is not in the frozen 11-compound sweep: its Stage A runs a fresh
+  in-memory `run_single_compound` pass (same math, one forward pass);
+  `binding_source` column records provenance per compound.
+- Excluded sink/structural candidates (≤ 5, binding desc) are appended as the
+  labeled **positive-control tail** of the cumulative curve.
+
+**Frozen interpretation thresholds (primary = screen_reader):**
+- Full earned-lexical-set joint KL **< 0.01 nats** → "flat": the set is
+  jointly unnecessary; A5 hardens from "single-head inert" to "earned set
+  jointly unnecessary"; the Limitations paragraph shrinks to the metric caveat.
+- Lexical-set KL **≥ 0.1 nats** → a joint lexical circuit exists; A4/A5
+  reframe; ships as a positive finding, not a failure.
+- **0.01 ≤ KL < 0.1** → gray zone; reported as-is, no story.
+- **Instrument validity gate:** the structural tail's peak KL must exceed
+  **10×** the lexical-segment peak. If the tail does not rise, instrumentation
+  check BEFORE any interpretation (branch-3 discipline, per D7). The empty-set
+  identity (KL == 0) and plural==singular regression asserts must pass first
+  (`sanity_check`).
+- Negative control: screen_reader's earned set on "A bicycle wheel is" at
+  `wheel` expected < 0.01 nats (flat).
+
+**Predictions (falsifiable, made blind):** four near-flat lexical segments
+(all < 0.01), rising tails, flat bicycle control. [Fable placement; Trisha may
+re-weight before ratifying.]
+
+**Branches (all ship):** (1) flat everywhere → distributed confirmed, scoped
+prose only ("the strongest lexical lead is distributed," never the unscoped
+claim). (2) primary rises ≥ 0.1 → joint circuit found; A4/A5 reframe. (3)
+robustness compounds diverge from the primary → reported per compound, no
+smoothing. (4) tail flat → instrumentation stop.
+
+**Outputs:** `results/pythia/pythia-2.8b-candidate-heads.csv`,
+`results/pythia/pythia-2.8b-multihead-ablation.csv` (upsert-by-compound; reruns
+replace, never duplicate). Figure from CSV via `generate-figures/` per repo
+convention.
+
+**RATIFY/VETO + commit before loading weights: Trisha, 2026-07-06: RATIFY**
+
+---
+
 ### 2026-07-05 — D8 VERDICT: H1 CONFIRMED under the frozen proxy — b_U is frequency-ordered at all six scales; colsum is NOT — the prior localizes to exactly the severed term; calibration pending (API 403)
 
 **Mechanical record (run 2026-07-05, TL 2.17.0, float32, weights-only,
