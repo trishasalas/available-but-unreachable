@@ -120,28 +120,47 @@ def ov_logit_lens(model, layer, head, prompt, source_word, dest_word, top_k=15):
 # --------------------------------------------------------------------------- #
 # Causal check                                                                 #
 # --------------------------------------------------------------------------- #
-def ablate_head_at_position(model, prompt, layer, head, dest_word, top_k=10):
+def ablate_heads_at_position(model, prompt, heads, dest_word, top_k=10):
     """
-    Zero a single head's output at the `dest_word` position and measure the effect on
-    the model's NEXT-token prediction (final sequence position).
+    Zero a SET of heads' outputs at the `dest_word` position in ONE forward pass
+    and measure the effect on the model's NEXT-token prediction (final position).
 
-    Returns the KL(baseline || ablated) and the top tokens before/after. Small KL +
-    unchanged top tokens => the head's contribution is not load-bearing here
-    (consistent with the distributed/redundant story); large KL => a genuine,
-    necessary single-head mechanism.
+    Generalizes the singular `ablate_head_at_position` (D6 spec, 2026-06-29):
+    joint ablation is the move single-head analysis structurally cannot make —
+    it distinguishes "the mechanism is elsewhere" from "the mechanism is
+    distributed across a set of heads".
+
+    Args:
+        heads: list of (layer, head) tuples. Empty list is legal and must yield
+               KL == 0 (identity sanity check — the hook machinery adds nothing).
+
+    Returns dict: dest_word, ablated_heads, n_ablated, kl_base_to_ablated,
+    baseline_top, ablated_top. Small KL + unchanged top tokens => the set's
+    joint contribution is not load-bearing here.
     """
     str_tokens = model.to_str_tokens(prompt)
     di = find_token_index(str_tokens, dest_word)
+    if di is None:
+        raise ValueError(
+            f"dest_word '{dest_word}' not found in prompt tokens: {str_tokens}")
 
     base = model(prompt)[0, -1].log_softmax(-1)
 
-    def hook(z, hook):
-        z[:, di, head, :] = 0.0
-        return z
+    # One hook per layer; each zeroes all of that layer's targeted heads.
+    by_layer = {}
+    for layer, head in heads:
+        by_layer.setdefault(int(layer), []).append(int(head))
 
-    abl = model.run_with_hooks(
-        prompt, fwd_hooks=[(f"blocks.{layer}.attn.hook_z", hook)]
-    )[0, -1].log_softmax(-1)
+    def make_hook(head_list):
+        def hook(z, hook):
+            for h in head_list:
+                z[:, di, h, :] = 0.0
+            return z
+        return hook
+
+    fwd_hooks = [(f"blocks.{layer}.attn.hook_z", make_hook(hs))
+                 for layer, hs in sorted(by_layer.items())]
+    abl = model.run_with_hooks(prompt, fwd_hooks=fwd_hooks)[0, -1].log_softmax(-1)
 
     kl = torch.sum(base.exp() * (base - abl)).item()
 
@@ -150,8 +169,71 @@ def ablate_head_at_position(model, prompt, layer, head, dest_word, top_k=10):
                 for i in torch.topk(lp, top_k).indices]
 
     return {
-        "dest_word": dest_word, "ablated_head": (layer, head),
-        "kl_base_to_ablated": round(kl, 5),
+        "dest_word": dest_word,
+        "ablated_heads": [(int(l), int(h)) for l, h in heads],
+        "n_ablated": len(heads),
+        "kl_base_to_ablated": round(kl, 6),
         "baseline_top": top(base),
         "ablated_top": top(abl),
     }
+
+
+def ablate_head_at_position(model, prompt, layer, head, dest_word, top_k=10):
+    """
+    Zero a single head's output at the `dest_word` position and measure the effect on
+    the model's NEXT-token prediction (final sequence position).
+
+    Thin wrapper over `ablate_heads_at_position` with a one-element set (D6
+    refactor) — return shape unchanged, so existing notebook cells keep working
+    and the wrapper doubles as a free regression test on the plural path.
+
+    Small KL + unchanged top tokens => the head's contribution is not load-bearing
+    here (consistent with the distributed/redundant story); large KL => a genuine,
+    necessary single-head mechanism.
+    """
+    res = ablate_heads_at_position(model, prompt, [(layer, head)], dest_word,
+                                   top_k=top_k)
+    return {
+        "dest_word": res["dest_word"],
+        "ablated_head": (layer, head),
+        "kl_base_to_ablated": round(res["kl_base_to_ablated"], 5),
+        "baseline_top": res["baseline_top"],
+        "ablated_top": res["ablated_top"],
+    }
+
+
+def cumulative_ablation(model, prompt, ordered_heads, dest_word, segments=None):
+    """
+    Ablate growing prefixes of `ordered_heads` (strongest binders first, per the
+    D6 spec) and record KL at each set size — the cumulative-knockout curve.
+
+    The curve carries its own positive control: extend `ordered_heads` past the
+    earned lexical set into known structural/late heads and KL must eventually
+    rise. If it ONLY rises there, that is simultaneously the distributed result
+    and proof the ablation hook works.
+
+    Args:
+        ordered_heads: list of (layer, head), ablation order (binding desc).
+        segments: optional list, same length, labeling each head's segment
+                  (e.g. 'lexical' vs 'structural_tail') for the ledger/figure.
+
+    Returns:
+        DataFrame[n_ablated, heads, newest_head, kl(, segment)].
+    """
+    if segments is not None and len(segments) != len(ordered_heads):
+        raise ValueError("segments must match ordered_heads in length")
+
+    rows = []
+    for n in range(1, len(ordered_heads) + 1):
+        prefix = ordered_heads[:n]
+        res = ablate_heads_at_position(model, prompt, prefix, dest_word)
+        row = {
+            "n_ablated": n,
+            "heads": "; ".join(f"L{l}H{h}" for l, h in prefix),
+            "newest_head": f"L{prefix[-1][0]}H{prefix[-1][1]}",
+            "kl": res["kl_base_to_ablated"],
+        }
+        if segments is not None:
+            row["segment"] = segments[n - 1]
+        rows.append(row)
+    return pd.DataFrame(rows)
