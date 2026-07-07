@@ -1,0 +1,4 @@
+model,prompt_type,mean_entropy_bits,last_token_entropy_bits,last_minus_mean_bits,source_notebook,source_cell_index,execution_count
+pythia-2.8b,Direct Question,4.4127,5.1879,+0.7752,.ipynb_checkpoints/elicitation-robustness-v2-checkpoint.ipynb,13,25
+pythia-2.8b,Error Correction,5.7185,5.5864,-0.1321,.ipynb_checkpoints/elicitation-robustness-v2-checkpoint.ipynb,13,25
+pythia-2.8b,Negative Constraint (Socratic),4.5445,4.1660,-0.3785,.ipynb_checkpoints/elicitation-robustness-v2-checkpoint.ipynb,13,25

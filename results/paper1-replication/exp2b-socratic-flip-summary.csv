@@ -1,0 +1,3 @@
+model,socratic_mean_entropy_bits,socratic_last_token_entropy_bits,last_minus_mean_bits,d9_row_value
+pythia-1b,4.9666,5.7079,+0.7413,+0.74
+pythia-2.8b,4.5445,4.1660,-0.3785,-0.38
