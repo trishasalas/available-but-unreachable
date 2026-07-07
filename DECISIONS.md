@@ -5,6 +5,87 @@ Research and figure decisions with rationale.
 
 ## Replication Verification Against Paper 1
 
+### 2026-07-06 — D6 VERDICT: distributed-ensemble loophole CLOSED — earned deep selective sets are jointly unnecessary at all four compounds (branch 1, with per-compound gate accounting and one earned-set-construct caveat)
+
+**Mechanical record (run 2026-07-06, local MPS, TL 2.17.0 pinned, float32,
+no generation, amended on-target operationalization, outputs
+results/pythia/pythia-2.8b-candidate-heads.csv +
+pythia-2.8b-multihead-ablation.csv):**
+
+- **screen_reader (primary):** earned set **{L29/H7, L27/H10}** — L27/H10's
+  first on-target measurement clears both filters (generic BOS 0.82 was
+  idle-parking). Joint KL **0.000022** (< 0.01 → FLAT). Negative control
+  (same duet, bicycle wheel): 0.000032, flat. Gate fired (tail 3.4× vs
+  frozen 10×); resolved same day via control-prompt evidence (29×) +
+  session sanity asserts — instrument VALID (ratified resolution above).
+- **alt_text:** earned set **{L21/H6, L10/H26, L12/H21}**. Joint KL
+  **0.000267** → FLAT. Gate fired (~1×, tail below lexical peak); resolved
+  per-compound under the ratified clause (same instrument evidence).
+- **stock_market:** earned set **{L27/H24, L18/H14, L21/H24}**. Joint KL
+  **0.000285** → FLAT. Tail rose to 0.001665 (5.8× — fired, resolved;
+  liveliest tail of the panel, largely self-evidencing). Notable: L27/H24,
+  the strongest selective binder for this compound, ablates solo at
+  **0.000000** — the sharpest representation-without-necessity datum in the
+  program. Cross-validation of the amendment: screen_reader's L27/H10
+  appears in THIS compound's candidates and is correctly refiled as sink
+  on-target (no screen-reader work here → BOS parking) — same head, two
+  prompts, two correct filings.
+- **semantic_html (branch-3 divergence; reported per-compound, no
+  smoothing):** 13-head "earned" set, joint KL **0.001471** → numerically
+  FLAT (7× under bar) but the earned-set construct degenerated here — see
+  caveat. No excluded sink/structural candidates → empty tail → gate
+  VACUOUS (instrument aliveness self-evidenced: the curve rises 300×
+  across its own segment).
+
+**semantic_html caveat (cause identified — tokenization):** the natural
+prompt "Semantic HTML helps" fragments sentence-initial word1:
+['Sem', 'antic', ' HTML', ' helps']. The frozen binding sweep therefore
+measured word2→FRAGMENT attention; the candidate pool was nominated
+largely by detokenization-flavored behavior (fragment-mending recruits
+broadly), not pairing selectivity — explaining the anomalous 13-head
+"lexical" set and the binding_score/own_score column spread (uniform
+template "A semantic HTML is" tokenizes CLEAN; the two columns measured
+different token geometries). RESIDUAL, logged not interpreted:
+own_scores on the clean template are also near-universally high
+(0.99/0.96/0.91…) — ' HTML' token-register peculiarity and genuine
+corpus breadth of the bigram both remain candidates; saved question.
+The joint-ablation NUMBER is unaffected (whatever these 13 heads are,
+deleting them jointly costs 0.00147 nats). Downstream flag: the frozen
+binding CSV's semantic_html rows inherit the fragment-geometry caveat;
+claims pass to confirm nothing shipped leans on them (expected: nothing
+does — A-claims are screen_reader/L29H7-scoped).
+
+**Cross-compound observations (descriptive, not pre-registered):** zero
+overlap between compounds' earned lexical sets — selectivity is bespoke,
+per-compound; no general "lexical head" role exists at 2.8B. Tail/sink
+personnel ARE shared across prompts (e.g., L25/H2 in two tails):
+general-purpose plumbing, compound-specific representation.
+
+**Verdict:** branch 1. The distributed-ensemble loophole in Limitations
+is closed in scoped form: for the strongest lexical lead in the program
+(screen reader) and three robustness compounds, the earned deep
+selective sets — the only deep heads exhibiting pairing-selective
+attention — are **jointly unnecessary** (all joint KLs ≤ 0.00147,
+frozen bar 0.01). A5 hardens from "single-head inert" to "earned set
+jointly unnecessary." The Limitations paragraph shrinks to the metric
+caveat plus the semantic_html construct caveat. Paper language stays
+scoped: "the strongest lexical lead is distributed" — never the
+unscoped claim.
+
+**Design lessons (named, for future specs):** (1) validity gates of the
+10× form must be evaluated on the control prompt by design — the
+structural-ablations-perturb-any-prompt assumption is prompt-sensitive
+(per the ratified gate resolution). (2) Natural prompts must not open
+with the compound: sentence-initial word1 changes token identity; Stage 0
+of any future compound design includes a tokenization assert. (3) Ratio
+selectivity tests assume sparse own-score distributions; add an
+absolute-crowding check (e.g., flag when > half the candidate pool passes)
+so degeneracy announces itself.
+
+**RATIFY/VETO: Trisha, 2026-07-06: RATIFY**
+
+---
+
 ### 2026-07-06 — D6 PRE-REGISTERED: multi-head joint ablation (the distributed-ensemble test; commit before any weights are loaded)
 
 **GATE-4 RESOLUTION 2026-07-06 (instrument-validity gate fired on the

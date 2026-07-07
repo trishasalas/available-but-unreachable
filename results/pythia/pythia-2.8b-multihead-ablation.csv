@@ -13,3 +13,32 @@ bicycle_wheel,4,L29H7; L27H10; L28H15; L10H19,L10H19,0.000887,structural_tail,ne
 bicycle_wheel,5,L29H7; L27H10; L28H15; L10H19; L25H2,L25H2,0.000907,structural_tail,neg_control
 bicycle_wheel,6,L29H7; L27H10; L28H15; L10H19; L25H2; L25H1,L25H1,0.00094,structural_tail,neg_control
 bicycle_wheel,7,L29H7; L27H10; L28H15; L10H19; L25H2; L25H1; L24H4,L24H4,0.000935,structural_tail,neg_control
+alt_text,1,L21H6,L21H6,9.3e-05,lexical,robustness
+alt_text,2,L21H6; L10H26,L10H26,0.00018,lexical,robustness
+alt_text,3,L21H6; L10H26; L12H21,L12H21,0.000267,lexical,robustness
+alt_text,4,L21H6; L10H26; L12H21; L25H2,L25H2,0.000265,structural_tail,robustness
+alt_text,5,L21H6; L10H26; L12H21; L25H2; L31H10,L31H10,0.000265,structural_tail,robustness
+alt_text,6,L21H6; L10H26; L12H21; L25H2; L31H10; L22H8,L22H8,0.000239,structural_tail,robustness
+alt_text,7,L21H6; L10H26; L12H21; L25H2; L31H10; L22H8; L21H0,L21H0,0.000233,structural_tail,robustness
+alt_text,8,L21H6; L10H26; L12H21; L25H2; L31H10; L22H8; L21H0; L24H9,L24H9,0.000235,structural_tail,robustness
+stock_market,1,L27H24,L27H24,0.0,lexical,robustness
+stock_market,2,L27H24; L18H14,L18H14,9e-05,lexical,robustness
+stock_market,3,L27H24; L18H14; L21H24,L21H24,0.000285,lexical,robustness
+stock_market,4,L27H24; L18H14; L21H24; L28H28,L28H28,0.001445,structural_tail,robustness
+stock_market,5,L27H24; L18H14; L21H24; L28H28; L10H13,L10H13,0.001331,structural_tail,robustness
+stock_market,6,L27H24; L18H14; L21H24; L28H28; L10H13; L13H30,L13H30,0.001665,structural_tail,robustness
+stock_market,7,L27H24; L18H14; L21H24; L28H28; L10H13; L13H30; L27H10,L27H10,0.001584,structural_tail,robustness
+stock_market,8,L27H24; L18H14; L21H24; L28H28; L10H13; L13H30; L27H10; L25H4,L25H4,0.001605,structural_tail,robustness
+semantic_html,1,L30H4,L30H4,5e-06,lexical,robustness
+semantic_html,2,L30H4; L27H27,L27H27,1e-05,lexical,robustness
+semantic_html,3,L30H4; L27H27; L28H1,L28H1,1.2e-05,lexical,robustness
+semantic_html,4,L30H4; L27H27; L28H1; L27H13,L27H13,3.2e-05,lexical,robustness
+semantic_html,5,L30H4; L27H27; L28H1; L27H13; L10H6,L10H6,0.000352,lexical,robustness
+semantic_html,6,L30H4; L27H27; L28H1; L27H13; L10H6; L27H9,L27H9,0.000386,lexical,robustness
+semantic_html,7,L30H4; L27H27; L28H1; L27H13; L10H6; L27H9; L10H26,L10H26,0.001122,lexical,robustness
+semantic_html,8,L30H4; L27H27; L28H1; L27H13; L10H6; L27H9; L10H26; L14H12,L14H12,0.001272,lexical,robustness
+semantic_html,9,L30H4; L27H27; L28H1; L27H13; L10H6; L27H9; L10H26; L14H12; L23H12,L23H12,0.001236,lexical,robustness
+semantic_html,10,L30H4; L27H27; L28H1; L27H13; L10H6; L27H9; L10H26; L14H12; L23H12; L28H28,L28H28,0.001285,lexical,robustness
+semantic_html,11,L30H4; L27H27; L28H1; L27H13; L10H6; L27H9; L10H26; L14H12; L23H12; L28H28; L21H15,L21H15,0.001314,lexical,robustness
+semantic_html,12,L30H4; L27H27; L28H1; L27H13; L10H6; L27H9; L10H26; L14H12; L23H12; L28H28; L21H15; L23H22,L23H22,0.001307,lexical,robustness
+semantic_html,13,L30H4; L27H27; L28H1; L27H13; L10H6; L27H9; L10H26; L14H12; L23H12; L28H28; L21H15; L23H22; L18H9,L18H9,0.001471,lexical,robustness
