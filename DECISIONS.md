@@ -5,6 +5,35 @@ Research and figure decisions with rationale.
 
 ## Replication Verification Against Paper 1
 
+### 2026-07-07 — D9 graduation condition RATIFIED: independent pre-registration required; no inheritance from B5's lineage
+
+**Rule:** if D9 (Socratic failure-state flip, +0.74 @ 1B → −0.38 @ 2.8B,
+last-token − mean entropy under Socratic elicitation) is ever promoted
+from PRELIM to claim-strength — in this paper or a successor — it
+requires its **own pre-registration from scratch**. It may not ride in
+on B5's lineage or cite B5's audit trail as its provenance.
+
+**Rationale:** D9 and B5 are different constructs. B5 measures
+wrongness-confidence (entropy of incorrect-on-a11y vs
+correct-on-control); D9 measures elicitation-format failure states
+(Paper 1's "internal structure"). The B5 provenance hunt (2026-07-06)
+established that D9's numbers had drifted INTO B5's row in memory
+transit — the corrected B5 row and D9's re-homing are the record of
+that separation. Letting D9 later graduate on B5's paperwork would
+re-merge what the audit just disentangled.
+
+**Path to claim-strength (already sketched in D9's CLAIMS row, restated
+here as the minimum bar):** new pre-registration; extension to six
+scales on TL2 entropy CSVs under deterministic coding; frozen
+thresholds before any run. Post-submission errand, D1-sized.
+
+**Provenance:** flagged by CC at session close 2026-07-06 (sectioning
+pass, commits 103bf81 / 27decdf / e4b325c); entry drafted by Fable
+(claude.ai); RATIFIED by Trisha in-thread 2026-07-07 ("approval here
+is sufficient").
+
+---
+
 ### 2026-07-06 — D6 VERDICT: distributed-ensemble loophole CLOSED — earned deep selective sets are jointly unnecessary at all four compounds (branch 1, with per-compound gate accounting and one earned-set-construct caveat)
 
 **Mechanical record (run 2026-07-06, local MPS, TL 2.17.0 pinned, float32,
