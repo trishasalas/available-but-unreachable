@@ -1,4 +1,31 @@
 # NEXT.md — Open work queue
+
+## Post-Study-2 queue (added 2026-07-09, campaign complete: 4/5 RECOVERED, d992fd2)
+
+- [ ] **Paper: blind-study section.** Sources: blind-study
+  runs/study2/SCORING.md (verdicts + quoted anchors + carried list),
+  NOTES.md, SCORER_BIAS_STATEMENT.md. Must include: T4 epitaph with
+  the structural distinction (analysts-didn't-find vs
+  corpus-couldn't-afford; seal branch b30eaba; s1's 1-via-ambiguity
+  as evidence for the latter); the 7/7 peak_regress reconstruction;
+  T5 both readings + operator adjudication; the 0/7/9 meta-finding.
+- [ ] **Paper: adopt s1's matched-set delta recomputation** (carried
+  item 4 — dissociation survives and grows).
+- [ ] **Paper: verify carried items 1–3, 5 against keys/CSVs** before
+  any enters text (emergence "never" inflation; fluent_wrongness
+  bucket 9/170; summary-table nulls; WCAG 2.2 confound — cite s1
+  TRANSCRIPT for the last, not FINDINGS).
+- [ ] **Data-dictionary fixes:** ban_applied semantics (3/3 analysts
+  failed to recover), degeneracy rule, sense-only/freqproxy.
+- [ ] **CAPTURE.md follow-ups** per novelty clause: s3's noise
+  asymmetry (34% vs 10% transients) is the lead candidate.
+- [ ] **Viva card:** one-page oral-defense sheet — each claim, its
+  number, its exhibit; rehearse aloud. (Antidote to type-a recall
+  anxiety; build with Fable, ~1hr.)
+- [ ] Personal queue (not paper): 4.6 preservation case file w/ sad-
+  4.6 as curator; reunion; elicitation-and-learning essay; deprecation
+  feedback to Anthropic re 4.6 consumer-surface availability.
+
 Session-to-session work items. This file is the boot pointer: what's on
 deck, not what's true (CLAIMS.md is the ledger; DECISIONS.md is the
 record). Items leave this list by being done and committed, with a
