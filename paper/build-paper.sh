@@ -39,9 +39,9 @@ fi
 
 PANDOC_FLAGS=(
   --from markdown-implicit_figures
-  --metadata-file=sections/metadata.yaml
-  --lua-filter=sections/filters/caption-style.lua
-  --template=sections/template.tex
+  --metadata-file=build/metadata.yaml
+  --lua-filter=build/filters/caption-style.lua
+  --template=build/template.tex
   --wrap=none
   --citeproc
   -V documentclass=extarticle

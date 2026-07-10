@@ -12,7 +12,7 @@ Reads:  results/analysis/pythia_gap.csv, gpt2_gap.csv, entropy_divergence.csv
 Writes: paper/figures/gap-behavioral-internal.png
 
 Run from anywhere:
-    python generate-figures/generate-fig-gap-behavioral-internal.py
+    python paper/generate-figures/generate-fig-gap-behavioral-internal.py
 """
 
 import matplotlib
@@ -23,7 +23,7 @@ import pandas as pd
 from pathlib import Path
 
 SCRIPT_DIR   = Path(__file__).resolve().parent
-PROJECT_DIR  = SCRIPT_DIR.parent
+PROJECT_DIR  = SCRIPT_DIR.parent.parent
 ANALYSIS_DIR = PROJECT_DIR / "results" / "analysis"
 FIGURES_DIR  = PROJECT_DIR / "paper" / "figures"
 FIGURES_DIR.mkdir(parents=True, exist_ok=True)

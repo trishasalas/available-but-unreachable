@@ -12,7 +12,7 @@ Reads:  results/analysis/binding_vs_accuracy.csv, binding_accuracy_corr.csv
 Writes: paper/figures/binding-vs-accuracy.png
 
 Run from anywhere:
-    python generate-figures/generate-fig-binding-vs-accuracy.py
+    python paper/generate-figures/generate-fig-binding-vs-accuracy.py
 """
 
 import matplotlib
@@ -24,7 +24,7 @@ import pandas as pd
 from pathlib import Path
 
 SCRIPT_DIR   = Path(__file__).resolve().parent
-PROJECT_DIR  = SCRIPT_DIR.parent
+PROJECT_DIR  = SCRIPT_DIR.parent.parent
 ANALYSIS_DIR = PROJECT_DIR / "results" / "analysis"
 FIGURES_DIR  = PROJECT_DIR / "paper" / "figures"
 FIGURES_DIR.mkdir(parents=True, exist_ok=True)

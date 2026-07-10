@@ -12,7 +12,7 @@ Reads:  results/analysis/per_concept_trajectories.csv
 Writes: paper/figures/concept-trajectories.png
 
 Run from anywhere:
-    python generate-figures/generate-fig-concept-trajectories.py
+    python paper/generate-figures/generate-fig-concept-trajectories.py
 """
 
 import matplotlib
@@ -26,7 +26,7 @@ import pandas as pd
 from pathlib import Path
 
 SCRIPT_DIR   = Path(__file__).resolve().parent
-PROJECT_DIR  = SCRIPT_DIR.parent
+PROJECT_DIR  = SCRIPT_DIR.parent.parent
 ANALYSIS_DIR = PROJECT_DIR / "results" / "analysis"
 FIGURES_DIR  = PROJECT_DIR / "paper" / "figures"
 FIGURES_DIR.mkdir(parents=True, exist_ok=True)
