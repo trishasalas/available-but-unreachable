@@ -1,0 +1,16 @@
+model,compound,prompt,rank,token_id,token,logit
+pythia-160m,alt_text,An image without alt text is not accessible because,0,352, it,31.3626
+pythia-160m,alt_text,An image without alt text is not accessible because,1,253, the,30.8535
+pythia-160m,alt_text,An image without alt text is not accessible because,2,273, of,29.3255
+pythia-160m,alt_text,An image without alt text is not accessible because,3,368, you,28.9542
+pythia-160m,alt_text,An image without alt text is not accessible because,4,247, a,28.6490
+pythia-160m,alt_text,An image without alt text is not accessible because,5,627, there,28.3807
+pythia-160m,alt_text,An image without alt text is not accessible because,6,359, we,28.1651
+pythia-160m,alt_text,An image without alt text is not accessible because,7,697, its,27.9769
+pythia-160m,alt_text,An image without alt text is not accessible because,8,436, this,27.9136
+pythia-160m,alt_text,An image without alt text is not accessible because,9,271, an,27.8813
+pythia-160m,alt_text,An image without alt text is not accessible because,10,634, your,27.5094
+pythia-160m,alt_text,An image without alt text is not accessible because,11,642, no,27.4767
+pythia-160m,alt_text,An image without alt text is not accessible because,12,690, some,27.3820
+pythia-160m,alt_text,An image without alt text is not accessible because,13,512, all,26.9962
+pythia-160m,alt_text,An image without alt text is not accessible because,14,326, that,26.8115

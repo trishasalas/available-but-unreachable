@@ -1,0 +1,59 @@
+model,compound,prompt,step,token_id,token,logit
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,0,273, of,15.3500
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,1,247, a,16.5678
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,2,3988, security,16.2201
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,3,24189, vulnerability,17.6448
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,4,15,.,19.1055
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,5,187,"
+",16.1552
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,6,187,"
+",19.3627
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,7,510,The,14.7610
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,8,15034, navigation,13.6415
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,9,8910, menu,19.3664
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,10,310, is,16.6954
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,11,417, not,15.5251
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,12,12482, accessible,18.4697
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,13,984, because,19.1439
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,14,273, of,16.7970
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,15,247, a,19.2636
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,16,3988, security,19.1100
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,17,24189, vulnerability,21.6044
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,18,15,.,19.6097
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,19,187,"
+",17.2933
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,20,187,"
+",20.6026
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,21,510,The,16.1039
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,22,15034, navigation,16.7223
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,23,8910, menu,21.6850
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,24,310, is,19.5043
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,25,417, not,19.1620
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,26,12482, accessible,22.3946
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,27,984, because,22.7256
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,28,273, of,18.7341
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,29,247, a,21.1703
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,30,3988, security,22.8533
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,31,24189, vulnerability,24.5062
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,32,15,.,20.1756
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,33,187,"
+",18.7814
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,34,187,"
+",22.6650
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,35,510,The,16.7769
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,36,15034, navigation,18.5185
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,37,8910, menu,23.1184
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,38,310, is,19.2961
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,39,417, not,19.9729
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,40,12482, accessible,23.6218
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,41,984, because,23.8962
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,42,273, of,20.4296
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,43,247, a,22.3596
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,44,3988, security,24.7686
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,45,24189, vulnerability,25.8688
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,46,15,.,20.4182
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,47,187,"
+",19.0595
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,48,187,"
+",23.7233
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,49,510,The,17.4933

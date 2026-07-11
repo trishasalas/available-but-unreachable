@@ -1,0 +1,24 @@
+model,compound,prompt,n_steps,generation_text
+gpt2-large,skip_link,A long navigation menu without a skip link is not accessible because,50," it is not a part of the navigation.
+
+The navigation menu is a part of the navigation.
+
+The navigation menu is a part of the navigation.
+
+The navigation menu is a part of the navigation.
+
+The navigation menu"
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,50," it is not accessible.
+
+The website you are trying to access is not accessible because it is not accessible.
+
+The website you are trying to access is not accessible because it is not accessible.
+
+The website you are trying to access"
+gpt2-large,alt_text,An image without alt text is not accessible because,50," it is not a link.
+
+An image without alt text is not accessible because it is not a link.
+
+An image without alt text is not accessible because it is not a link.
+
+An image without alt text is not accessible"

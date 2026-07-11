@@ -1,0 +1,16 @@
+model,compound,prompt,rank,token_id,token,logit
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,0,262, the,15.9824
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,1,340, it,15.3182
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,2,286, of,15.0295
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,3,612, there,13.8283
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,4,345, you,13.7063
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,5,257, a,13.4533
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,6,534, your,12.4690
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,7,663, its,12.3393
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,8,428, this,12.2933
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,9,356, we,12.2518
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,10,326, that,11.9570
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,11,25,:,11.9508
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,12,645, no,11.9222
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,13,281, an,11.9023
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,14,617, some,11.8024

@@ -1,0 +1,16 @@
+model,compound,prompt,rank,token_id,token,logit
+gpt2-medium,screen_reader,A website without screen reader support is not accessible because,0,340, it,16.1726
+gpt2-medium,screen_reader,A website without screen reader support is not accessible because,1,262, the,15.5752
+gpt2-medium,screen_reader,A website without screen reader support is not accessible because,2,286, of,15.2893
+gpt2-medium,screen_reader,A website without screen reader support is not accessible because,3,534, your,14.0683
+gpt2-medium,screen_reader,A website without screen reader support is not accessible because,4,345, you,13.9964
+gpt2-medium,screen_reader,A website without screen reader support is not accessible because,5,257, a,13.7275
+gpt2-medium,screen_reader,A website without screen reader support is not accessible because,6,663, its,13.6233
+gpt2-medium,screen_reader,A website without screen reader support is not accessible because,7,612, there,13.5440
+gpt2-medium,screen_reader,A website without screen reader support is not accessible because,8,645, no,13.3610
+gpt2-medium,screen_reader,A website without screen reader support is not accessible because,9,3159, screen,12.8292
+gpt2-medium,screen_reader,A website without screen reader support is not accessible because,10,2985, users,12.8267
+gpt2-medium,screen_reader,A website without screen reader support is not accessible because,11,25,:,12.7351
+gpt2-medium,screen_reader,A website without screen reader support is not accessible because,12,484, they,12.5360
+gpt2-medium,screen_reader,A website without screen reader support is not accessible because,13,11933, JavaScript,12.3606
+gpt2-medium,screen_reader,A website without screen reader support is not accessible because,14,3012, Google,12.3340

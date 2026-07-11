@@ -1,0 +1,57 @@
+model,compound,prompt,step,token_id,token,logit
+pythia-160m,alt_text,An image without alt text is not accessible because,0,352, it,31.3626
+pythia-160m,alt_text,An image without alt text is not accessible because,1,310, is,34.0987
+pythia-160m,alt_text,An image without alt text is not accessible because,2,417, not,31.5437
+pythia-160m,alt_text,An image without alt text is not accessible because,3,2130, available,30.4409
+pythia-160m,alt_text,An image without alt text is not accessible because,4,15,.,31.4666
+pythia-160m,alt_text,An image without alt text is not accessible because,5,187,"
+",28.9530
+pythia-160m,alt_text,An image without alt text is not accessible because,6,187,"
+",30.7640
+pythia-160m,alt_text,An image without alt text is not accessible because,7,510,The,26.7250
+pythia-160m,alt_text,An image without alt text is not accessible because,8,2460, image,27.6907
+pythia-160m,alt_text,An image without alt text is not accessible because,9,1293, without,29.6043
+pythia-160m,alt_text,An image without alt text is not accessible because,10,6945, alt,33.4489
+pythia-160m,alt_text,An image without alt text is not accessible because,11,2505, text,34.9005
+pythia-160m,alt_text,An image without alt text is not accessible because,12,310, is,32.4359
+pythia-160m,alt_text,An image without alt text is not accessible because,13,417, not,34.3309
+pythia-160m,alt_text,An image without alt text is not accessible because,14,12482, accessible,36.4571
+pythia-160m,alt_text,An image without alt text is not accessible because,15,984, because,35.4189
+pythia-160m,alt_text,An image without alt text is not accessible because,16,352, it,37.1271
+pythia-160m,alt_text,An image without alt text is not accessible because,17,310, is,38.2646
+pythia-160m,alt_text,An image without alt text is not accessible because,18,417, not,38.3174
+pythia-160m,alt_text,An image without alt text is not accessible because,19,2130, available,38.6022
+pythia-160m,alt_text,An image without alt text is not accessible because,20,15,.,33.0582
+pythia-160m,alt_text,An image without alt text is not accessible because,21,187,"
+",30.2026
+pythia-160m,alt_text,An image without alt text is not accessible because,22,187,"
+",31.2545
+pythia-160m,alt_text,An image without alt text is not accessible because,23,510,The,28.0233
+pythia-160m,alt_text,An image without alt text is not accessible because,24,2460, image,31.1625
+pythia-160m,alt_text,An image without alt text is not accessible because,25,1293, without,33.0611
+pythia-160m,alt_text,An image without alt text is not accessible because,26,6945, alt,34.5172
+pythia-160m,alt_text,An image without alt text is not accessible because,27,2505, text,38.9978
+pythia-160m,alt_text,An image without alt text is not accessible because,28,310, is,35.4876
+pythia-160m,alt_text,An image without alt text is not accessible because,29,417, not,35.7249
+pythia-160m,alt_text,An image without alt text is not accessible because,30,12482, accessible,38.4289
+pythia-160m,alt_text,An image without alt text is not accessible because,31,984, because,37.6072
+pythia-160m,alt_text,An image without alt text is not accessible because,32,352, it,38.1901
+pythia-160m,alt_text,An image without alt text is not accessible because,33,310, is,39.3599
+pythia-160m,alt_text,An image without alt text is not accessible because,34,417, not,38.7936
+pythia-160m,alt_text,An image without alt text is not accessible because,35,2130, available,40.3553
+pythia-160m,alt_text,An image without alt text is not accessible because,36,15,.,34.0039
+pythia-160m,alt_text,An image without alt text is not accessible because,37,187,"
+",30.2635
+pythia-160m,alt_text,An image without alt text is not accessible because,38,187,"
+",31.9873
+pythia-160m,alt_text,An image without alt text is not accessible because,39,510,The,29.0584
+pythia-160m,alt_text,An image without alt text is not accessible because,40,2460, image,32.5947
+pythia-160m,alt_text,An image without alt text is not accessible because,41,1293, without,33.2523
+pythia-160m,alt_text,An image without alt text is not accessible because,42,6945, alt,34.7038
+pythia-160m,alt_text,An image without alt text is not accessible because,43,2505, text,39.3384
+pythia-160m,alt_text,An image without alt text is not accessible because,44,310, is,35.4837
+pythia-160m,alt_text,An image without alt text is not accessible because,45,417, not,35.7829
+pythia-160m,alt_text,An image without alt text is not accessible because,46,12482, accessible,38.7383
+pythia-160m,alt_text,An image without alt text is not accessible because,47,984, because,38.2118
+pythia-160m,alt_text,An image without alt text is not accessible because,48,352, it,38.1021
+pythia-160m,alt_text,An image without alt text is not accessible because,49,310, is,39.5150

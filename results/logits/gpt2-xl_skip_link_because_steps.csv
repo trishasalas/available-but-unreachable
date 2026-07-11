@@ -1,0 +1,55 @@
+model,compound,prompt,step,token_id,token,logit
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,0,262, the,15.9824
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,1,2836, user,13.4803
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,2,468, has,16.5225
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,3,407, not,16.3570
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,4,1865, yet,15.7827
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,5,20436, navig,15.7713
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,6,515,ated,22.9068
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,7,284, to,18.4562
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,8,262, the,18.7197
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,9,10348, desired,14.8450
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,10,2443, page,16.1034
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,11,13,.,19.1586
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,12,198,"
+",17.0093
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,13,198,"
+",20.5347
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,14,464,The,15.8091
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,15,16408, navigation,13.8465
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,16,6859, menu,17.2874
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,17,815, should,16.4046
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,18,307, be,18.4913
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,19,9857, accessible,14.9341
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,20,284, to,18.0919
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,21,262, the,17.2085
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,22,2836, user,17.8095
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,23,416, by,17.1689
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,24,4955, providing,15.8418
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,25,257, a,19.5293
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,26,14267, skip,16.9124
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,27,2792, link,20.6042
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,28,13,.,17.9741
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,29,198,"
+",18.2766
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,30,198,"
+",21.3608
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,31,464,The,16.7921
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,32,14267, skip,15.7753
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,33,2792, link,19.5375
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,34,815, should,17.3675
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,35,307, be,19.7012
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,36,257, a,15.8242
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,37,2792, link,16.1667
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,38,326, that,18.7814
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,39,262, the,16.2234
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,40,2836, user,19.6750
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,41,460, can,19.7539
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,42,3904, click,19.2686
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,43,284, to,19.5554
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,44,14267, skip,18.9781
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,45,284, to,19.8800
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,46,262, the,21.2356
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,47,10348, desired,17.7681
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,48,2443, page,20.1719
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,49,13,.,20.5893

@@ -1,0 +1,57 @@
+model,compound,prompt,step,token_id,token,logit
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,0,340, it,16.0521
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,1,318, is,18.0284
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,2,407, not,17.1399
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,3,9857, accessible,15.2651
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,4,13,.,18.4830
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,5,198,"
+",15.7590
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,6,198,"
+",20.8277
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,7,464,The,15.3987
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,8,3052, website,13.3513
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,9,345, you,15.8012
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,10,389, are,20.1330
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,11,2111, trying,21.6709
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,12,284, to,23.9260
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,13,1895, access,22.2326
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,14,318, is,18.3947
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,15,407, not,16.3843
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,16,9857, accessible,18.3709
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,17,780, because,19.6437
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,18,340, it,17.5486
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,19,318, is,19.5904
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,20,407, not,18.8839
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,21,9857, accessible,20.3291
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,22,13,.,19.9540
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,23,198,"
+",17.6758
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,24,198,"
+",22.2450
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,25,464,The,17.5381
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,26,3052, website,16.9442
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,27,345, you,19.3986
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,28,389, are,21.9561
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,29,2111, trying,27.7874
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,30,284, to,23.3851
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,31,1895, access,26.8594
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,32,318, is,19.8786
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,33,407, not,19.4577
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,34,9857, accessible,23.1689
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,35,780, because,21.7008
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,36,340, it,19.8572
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,37,318, is,21.2121
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,38,407, not,21.2150
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,39,9857, accessible,23.0826
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,40,13,.,21.2698
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,41,198,"
+",20.4466
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,42,198,"
+",22.5181
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,43,464,The,19.3295
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,44,3052, website,20.1876
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,45,345, you,22.0794
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,46,389, are,22.7887
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,47,2111, trying,28.3136
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,48,284, to,22.0350
+gpt2-large,screen_reader,A website without screen reader support is not accessible because,49,1895, access,28.2904

@@ -1,0 +1,17 @@
+model,compound,prompt,rank,token_id,token,logit
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,0,273, of,15.3500
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,1,253, the,15.2946
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,2,352, it,14.8602
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,3,368, you,14.5635
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,4,634, your,14.3191
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,5,436, this,13.8629
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,6,247, a,13.3795
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,7,15034, navigation,12.7302
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,8,627, there,12.7062
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,9,271, an,12.2814
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,10,16872, JavaScript,12.1279
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,11,359, we,12.0685
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,12,187,"
+",12.0602
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,13,697, its,11.6598
+pythia-410m,skip_link,A long navigation menu without a skip link is not accessible because,14,309, I,11.5386

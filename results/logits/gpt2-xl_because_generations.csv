@@ -1,0 +1,16 @@
+model,compound,prompt,n_steps,generation_text
+gpt2-xl,skip_link,A long navigation menu without a skip link is not accessible because,50," the user has not yet navigated to the desired page.
+
+The navigation menu should be accessible to the user by providing a skip link.
+
+The skip link should be a link that the user can click to skip to the desired page."
+gpt2-xl,screen_reader,A website without screen reader support is not accessible because,50," the website is not accessible to screen readers.
+
+If you are using a screen reader, please try to access the website using the following link:
+
+http://www.cbc.ca/news/canada/montreal/mont"
+gpt2-xl,alt_text,An image without alt text is not accessible because,50," the image is not in the alt text format.
+
+An image without alt text is not accessible because the image is not in the alt text format.
+
+An image without alt text is not accessible because the image is not in the alt text"

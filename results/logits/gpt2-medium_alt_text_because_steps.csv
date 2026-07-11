@@ -1,0 +1,57 @@
+model,compound,prompt,step,token_id,token,logit
+gpt2-medium,alt_text,An image without alt text is not accessible because,0,340, it,15.9036
+gpt2-medium,alt_text,An image without alt text is not accessible because,1,318, is,18.3479
+gpt2-medium,alt_text,An image without alt text is not accessible because,2,407, not,16.0870
+gpt2-medium,alt_text,An image without alt text is not accessible because,3,9066, displayed,14.9271
+gpt2-medium,alt_text,An image without alt text is not accessible because,4,287, in,18.2707
+gpt2-medium,alt_text,An image without alt text is not accessible because,5,262, the,15.9590
+gpt2-medium,alt_text,An image without alt text is not accessible because,6,6444, browser,13.7222
+gpt2-medium,alt_text,An image without alt text is not accessible because,7,13,.,17.2778
+gpt2-medium,alt_text,An image without alt text is not accessible because,8,198,"
+",16.5161
+gpt2-medium,alt_text,An image without alt text is not accessible because,9,198,"
+",26.8566
+gpt2-medium,alt_text,An image without alt text is not accessible because,10,2025,An,15.7774
+gpt2-medium,alt_text,An image without alt text is not accessible because,11,2939, image,18.4529
+gpt2-medium,alt_text,An image without alt text is not accessible because,12,351, with,16.8785
+gpt2-medium,alt_text,An image without alt text is not accessible because,13,5988, alt,17.6527
+gpt2-medium,alt_text,An image without alt text is not accessible because,14,2420, text,20.0813
+gpt2-medium,alt_text,An image without alt text is not accessible because,15,318, is,18.5388
+gpt2-medium,alt_text,An image without alt text is not accessible because,16,9857, accessible,17.3554
+gpt2-medium,alt_text,An image without alt text is not accessible because,17,780, because,20.3149
+gpt2-medium,alt_text,An image without alt text is not accessible because,18,340, it,18.5629
+gpt2-medium,alt_text,An image without alt text is not accessible because,19,318, is,19.9988
+gpt2-medium,alt_text,An image without alt text is not accessible because,20,9066, displayed,19.2715
+gpt2-medium,alt_text,An image without alt text is not accessible because,21,287, in,20.4611
+gpt2-medium,alt_text,An image without alt text is not accessible because,22,262, the,18.1030
+gpt2-medium,alt_text,An image without alt text is not accessible because,23,6444, browser,17.9894
+gpt2-medium,alt_text,An image without alt text is not accessible because,24,13,.,18.7820
+gpt2-medium,alt_text,An image without alt text is not accessible because,25,198,"
+",17.2175
+gpt2-medium,alt_text,An image without alt text is not accessible because,26,198,"
+",29.6195
+gpt2-medium,alt_text,An image without alt text is not accessible because,27,2025,An,17.1884
+gpt2-medium,alt_text,An image without alt text is not accessible because,28,2939, image,19.0569
+gpt2-medium,alt_text,An image without alt text is not accessible because,29,351, with,17.3253
+gpt2-medium,alt_text,An image without alt text is not accessible because,30,5988, alt,16.0298
+gpt2-medium,alt_text,An image without alt text is not accessible because,31,2420, text,23.9529
+gpt2-medium,alt_text,An image without alt text is not accessible because,32,318, is,17.7023
+gpt2-medium,alt_text,An image without alt text is not accessible because,33,9857, accessible,16.4915
+gpt2-medium,alt_text,An image without alt text is not accessible because,34,780, because,20.5848
+gpt2-medium,alt_text,An image without alt text is not accessible because,35,340, it,19.1575
+gpt2-medium,alt_text,An image without alt text is not accessible because,36,318, is,19.9172
+gpt2-medium,alt_text,An image without alt text is not accessible because,37,9066, displayed,20.7023
+gpt2-medium,alt_text,An image without alt text is not accessible because,38,287, in,23.4469
+gpt2-medium,alt_text,An image without alt text is not accessible because,39,262, the,22.6762
+gpt2-medium,alt_text,An image without alt text is not accessible because,40,6444, browser,21.9209
+gpt2-medium,alt_text,An image without alt text is not accessible because,41,13,.,20.0102
+gpt2-medium,alt_text,An image without alt text is not accessible because,42,198,"
+",17.7102
+gpt2-medium,alt_text,An image without alt text is not accessible because,43,198,"
+",29.5174
+gpt2-medium,alt_text,An image without alt text is not accessible because,44,2025,An,18.7310
+gpt2-medium,alt_text,An image without alt text is not accessible because,45,2939, image,20.4831
+gpt2-medium,alt_text,An image without alt text is not accessible because,46,351, with,18.6824
+gpt2-medium,alt_text,An image without alt text is not accessible because,47,5988, alt,18.4255
+gpt2-medium,alt_text,An image without alt text is not accessible because,48,2420, text,25.1609
+gpt2-medium,alt_text,An image without alt text is not accessible because,49,318, is,19.6664

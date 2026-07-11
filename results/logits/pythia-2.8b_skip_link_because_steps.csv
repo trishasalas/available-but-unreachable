@@ -1,0 +1,57 @@
+model,compound,prompt,step,token_id,token,logit
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,0,253, the,16.2700
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,1,17049, skip,14.7300
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,2,3048, link,18.6575
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,3,310, is,17.6211
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,4,417, not,17.2646
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,5,1246, present,16.1797
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,6,15,.,18.9639
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,7,187,"
+",15.9065
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,8,187,"
+",18.2499
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,9,510,The,14.2215
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,10,15034, navigation,13.8071
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,11,8910, menu,19.2679
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,12,310, is,16.9858
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,13,417, not,16.1717
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,14,12482, accessible,16.2112
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,15,984, because,19.6253
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,16,253, the,17.7353
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,17,17049, skip,16.5963
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,18,3048, link,20.7958
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,19,310, is,19.6108
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,20,417, not,20.5821
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,21,1246, present,20.5596
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,22,15,.,19.9810
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,23,187,"
+",17.5607
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,24,187,"
+",21.1078
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,25,510,The,15.9004
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,26,15034, navigation,16.2833
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,27,8910, menu,21.2580
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,28,310, is,19.7466
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,29,417, not,20.8458
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,30,12482, accessible,22.1167
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,31,984, because,21.8599
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,32,253, the,19.7328
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,33,17049, skip,18.7132
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,34,3048, link,23.7316
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,35,310, is,21.9217
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,36,417, not,21.8931
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,37,1246, present,22.7472
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,38,15,.,21.4635
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,39,187,"
+",18.4419
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,40,187,"
+",21.5475
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,41,510,The,16.7433
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,42,15034, navigation,17.7775
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,43,8910, menu,22.5315
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,44,310, is,20.5270
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,45,417, not,21.9729
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,46,12482, accessible,24.6767
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,47,984, because,22.4385
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,48,253, the,20.8187
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,49,17049, skip,20.3349

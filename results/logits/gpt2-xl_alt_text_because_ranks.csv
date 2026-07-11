@@ -1,0 +1,17 @@
+model,compound,prompt,rank,token_id,token,logit
+gpt2-xl,alt_text,An image without alt text is not accessible because,0,262, the,16.7567
+gpt2-xl,alt_text,An image without alt text is not accessible because,1,340, it,16.2722
+gpt2-xl,alt_text,An image without alt text is not accessible because,2,5988, alt,14.6071
+gpt2-xl,alt_text,An image without alt text is not accessible because,3,286, of,14.5032
+gpt2-xl,alt_text,An image without alt text is not accessible because,4,534, your,14.3807
+gpt2-xl,alt_text,An image without alt text is not accessible because,5,345, you,13.8818
+gpt2-xl,alt_text,An image without alt text is not accessible because,6,612, there,13.8612
+gpt2-xl,alt_text,An image without alt text is not accessible because,7,257, a,13.3249
+gpt2-xl,alt_text,An image without alt text is not accessible because,8,663, its,13.2967
+gpt2-xl,alt_text,An image without alt text is not accessible because,9,428, this,12.7810
+gpt2-xl,alt_text,An image without alt text is not accessible because,10,25,:,12.7758
+gpt2-xl,alt_text,An image without alt text is not accessible because,11,281, an,12.5082
+gpt2-xl,alt_text,An image without alt text is not accessible because,12,11,",",12.4221
+gpt2-xl,alt_text,An image without alt text is not accessible because,13,326, that,12.3780
+gpt2-xl,alt_text,An image without alt text is not accessible because,14,198,"
+",12.3361

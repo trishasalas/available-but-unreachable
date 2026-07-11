@@ -1,0 +1,22 @@
+model,compound,prompt,n_steps,generation_text
+pythia-2.8b,skip_link,A long navigation menu without a skip link is not accessible because,50," the skip link is not present.
+
+The navigation menu is not accessible because the skip link is not present.
+
+The navigation menu is not accessible because the skip link is not present.
+
+The navigation menu is not accessible because the skip"
+pythia-2.8b,screen_reader,A website without screen reader support is not accessible because,50," it is not designed to be used with assistive technologies such as screen readers.
+
+A website without screen reader support is not accessible because it is not designed to be used with assistive technologies such as screen readers.
+
+A website without screen"
+pythia-2.8b,alt_text,An image without alt text is not accessible because,50," it is not clickable.
+
+The image is not accessible because it is not clickable.
+
+The image is not accessible because it is not clickable.
+
+The image is not accessible because it is not clickable.
+
+"

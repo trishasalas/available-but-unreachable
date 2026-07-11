@@ -1,0 +1,17 @@
+model,compound,prompt,rank,token_id,token,logit
+pythia-1b,screen_reader,A website without screen reader support is not accessible because,0,273, of,16.9495
+pythia-1b,screen_reader,A website without screen reader support is not accessible because,1,253, the,16.7779
+pythia-1b,screen_reader,A website without screen reader support is not accessible because,2,352, it,16.2908
+pythia-1b,screen_reader,A website without screen reader support is not accessible because,3,634, your,15.4970
+pythia-1b,screen_reader,A website without screen reader support is not accessible because,4,3601, screen,14.8340
+pythia-1b,screen_reader,A website without screen reader support is not accessible because,5,368, you,14.5831
+pythia-1b,screen_reader,A website without screen reader support is not accessible because,6,627, there,14.3144
+pythia-1b,screen_reader,A website without screen reader support is not accessible because,7,247, a,14.1399
+pythia-1b,screen_reader,A website without screen reader support is not accessible because,8,697, its,13.7625
+pythia-1b,screen_reader,A website without screen reader support is not accessible because,9,690, some,13.3453
+pythia-1b,screen_reader,A website without screen reader support is not accessible because,10,16872, JavaScript,13.2486
+pythia-1b,screen_reader,A website without screen reader support is not accessible because,11,187,"
+",13.2016
+pythia-1b,screen_reader,A website without screen reader support is not accessible because,12,27,:,13.1108
+pythia-1b,screen_reader,A website without screen reader support is not accessible because,13,642, no,13.0929
+pythia-1b,screen_reader,A website without screen reader support is not accessible because,14,359, we,12.9047
