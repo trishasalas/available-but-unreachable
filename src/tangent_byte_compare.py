@@ -139,52 +139,73 @@ report = ["# Tangent regeneration — divergence report",
           "| scale | prompt | verdict | detail |",
           "|---|---|---|---|"]
 
-scales_local = ["pythia-2.8b", "gpt2-medium", "gpt2-large", "gpt2-xl"]
-scales_pending = ["pythia-6.9b", "pythia-12b"]
+# All scales the transcription covers, in report order. Whether each is
+# compared or still pending is auto-detected from the presence of its
+# generations CSV — so when 6.9B/12B land, no code change is needed.
+TRANS_SCALES = ["pythia-2.8b", "pythia-6.9b", "pythia-12b",
+                "gpt2-medium", "gpt2-large", "gpt2-xl"]
+# Scales whose regen was produced on Colab GPU (Trisha), not local MPS (CC).
+# The transcription's per-scale hardware is not fully recorded — only 12B is
+# known to have run on Colab GPU — so these are flagged, not asserted to be a
+# clean MPS-vs-CUDA cross-check.
+COLAB_REGEN = {"pythia-6.9b", "pythia-12b"}
 
-for scale in scales_local:
+compared = 0        # (scale, compound) rows actually compared
+exact = 0           # of those, exact matches
+diverged = []       # (scale, compound, detail) for any divergence
+
+for scale in TRANS_SCALES:
     gens = load_generations(scale)
     for compound in PROMPTS:
         key = (scale, compound)
         have_trans = key in trans
         mine = gens.get(compound) if gens else None
-        if not have_trans or mine is None:
-            report.append(f"| {scale} | {compound} | ⚠ no source | "
-                          f"trans={have_trans} export={mine is not None} |")
+        if mine is None:
+            report.append(f"| {scale} | {compound} | ⏳ pending | "
+                          f"generations CSV not yet in results/logits/ |")
+            continue
+        if not have_trans:
+            report.append(f"| {scale} | {compound} | ⚠ no transcription | "
+                          f"regen present, no quote block to compare |")
             continue
         t = strip_prompt(trans[key], compound)
         m = norm(mine)
         d = first_diff(t, m)
+        compared += 1
+        hw = " (Colab-GPU regen)" if scale in COLAB_REGEN else ""
         if d is None:
+            exact += 1
             report.append(f"| {scale} | {compound} | ✅ exact match "
-                          f"(normalized) | {len(m)} chars |")
+                          f"(normalized){hw} | {len(m)} chars |")
         else:
             i, tctx, mctx = d
             det = (f"first diff @char {i}; "
                    f"trans=`…{tctx}…` vs regen=`…{mctx}…`")
             det = det.replace("|", "\\|").replace("\n", " ")
-            report.append(f"| {scale} | {compound} | ⚠ divergence | {det} |")
+            diverged.append((scale, compound, det))
+            report.append(f"| {scale} | {compound} | ⚠ divergence{hw} | "
+                          f"{det} |")
 
-for scale in scales_pending:
-    for compound in PROMPTS:
-        report.append(f"| {scale} | {compound} | ⏳ pending | "
-                      f"Trisha's Colab run (6.9b/12b) |")
-
-# --- known-findings confirmation (12B cross-contamination, XL paste-wound) ---
-# --- determinism summary (count exact matches over the local table rows) ---
-exact = sum(1 for r in report if "✅ exact match" in r)
-total_local = len(scales_local) * len(PROMPTS)
+# --- determinism summary (auto-counted over compared rows) ---
+colab_done = sorted(s for s in COLAB_REGEN
+                    if load_generations(s) is not None)
 report += ["",
            "## Determinism",
            "",
-           f"{exact}/{total_local} local (scale × prompt) comparisons are "
+           f"{exact}/{compared} compared (scale × prompt) comparisons are "
            "exact matches after whitespace normalization. Greedy (argmax) "
-           "decoding is deterministic, and the transcription's 2.8B/GPT-2 runs "
-           "were themselves MPS-local, so the regeneration reproduces them "
-           "bit-for-bit — no thin-margin flips to document at these scales. "
-           "The cross-hardware determinism caveat (MPS float vs Colab CUDA "
-           "flipping near-tie elections) stays live only for the Colab-origin "
-           "6.9B/12B; check it when those regens land.",
+           "decoding is deterministic; where the transcription and the regen "
+           "share hardware (MPS-local for 2.8B/GPT-2, CC) reproduction is "
+           "bit-for-bit. Colab-GPU regens (Trisha) so far: "
+           + (", ".join(colab_done) if colab_done else "none yet") +
+           (". These reproduce the transcription exactly too — no near-tie "
+            "flips have surfaced. Note the transcription's per-scale hardware "
+            "is not fully recorded (only 12B is known to be Colab GPU), so an "
+            "exact match here is reassurance, not a controlled MPS-vs-CUDA "
+            "experiment."
+            if not diverged else
+            f". {len(diverged)} divergence(s) found overall — see rows above; "
+            "report the logit margin at the flip step."),
            ""]
 
 report += ["## Known findings — confirmation", ""]
