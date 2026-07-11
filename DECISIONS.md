@@ -3,6 +3,51 @@ Research and figure decisions with rationale.
 
 ---
 
+## Tangent Battery Regeneration
+
+### 2026-07-10 — Evaluative decision-point generations regenerated to CSV; `logit_export` promoted from print-and-paste to mechanical export
+
+**Decision:** The intro's opening triad quoted 12B generations whose only
+surviving record was hand-transcribed prose (`docs/tangent.md`). That
+transcription carried confirmed paste-wounds (12B screen-reader/alt-text
+cross-contamination; GPT-2 XL screen-reader step-trace overwritten by a
+decision-point table). `src/logit_export.py` — written to replace exactly
+this pipeline and never run at scale — is now the authoritative source. Per
+(model, compound) it exports a greedy step trace and a decision-point
+top-15, plus one joined `{model}_because_generations.csv` per model whose
+`generation_text` is the detokenized greedy continuation (continuation
+only, not the prompt). Step trace and joined generation come from the SAME
+greedy loop, so the two artifacts cannot disagree the way two hand-copied
+runs did.
+
+**Mechanical record:** run 2026-07-10, local MPS, TL 2.17.0 pinned, float32,
+greedy argmax, n_steps=50, top_k=15, ranks/steps 0-indexed. Three VERIFIED
+prompts only (skip_link, screen_reader, alt_text); the five DRAFT prompts
+remain review-before-use and out of scope. Local scales (CC):
+pythia-160m/410m/1b/2.8b, gpt2-medium/large/xl. Pending (Trisha, Colab GPU):
+pythia-6.9b, pythia-12b. Artifacts in `results/logits/{model}_*`.
+
+**Verification:** `src/tangent_byte_compare.py` compares each regenerated
+`generation_text` against the `docs/tangent.md` quote blocks →
+`results/logits/REGEN_DIVERGENCE.md`. 12/12 local (scale × prompt)
+comparisons are exact matches after whitespace normalization — greedy on
+the same MPS hardware is bit-identical, so no thin-margin flips at these
+scales. The cross-hardware determinism caveat stays live only for the
+Colab-origin 6.9B/12B. Both known transcription paste-wounds confirmed, not
+discovered.
+
+**Not decided here (Trisha's):** the 0- vs 1-indexed rank convention in
+prose; the intro fix that swaps the mis-attributed 12B screen-reader / alt-
+text answers (placeholder flagged in `_rebuild/01-introduction.md`); the
+6.9B/12B Colab runs and their results commit. `docs/tangent.md` is retained
+as the historical record of the paste-wound, banner-marked superseded.
+
+**Provenance:** handoff `docs/cc/cc-tangent-regeneration-2026-07-10.md`
+(Fable + Trisha); code / notebook / local-run / compare executed by CC
+(claude-opus-4-8) 2026-07-10.
+
+---
+
 ## Replication Verification Against Paper 1
 
 ### 2026-07-07 — D9 graduation condition RATIFIED: independent pre-registration required; no inheritance from B5's lineage
