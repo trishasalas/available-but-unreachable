@@ -15,6 +15,12 @@ common span; a **divergence** reports the first differing character.
 | pythia-2.8b | skip_link | ✅ exact match (normalized) | 236 chars |
 | pythia-2.8b | screen_reader | ✅ exact match (normalized) | 254 chars |
 | pythia-2.8b | alt_text | ✅ exact match (normalized) | 191 chars |
+| pythia-6.9b | skip_link | ✅ exact match (normalized) (Colab-GPU regen) | 198 chars |
+| pythia-6.9b | screen_reader | ✅ exact match (normalized) (Colab-GPU regen) | 207 chars |
+| pythia-6.9b | alt_text | ✅ exact match (normalized) (Colab-GPU regen) | 199 chars |
+| pythia-12b | skip_link | ✅ exact match (normalized) (Colab-GPU regen) | 211 chars |
+| pythia-12b | screen_reader | ✅ exact match (normalized) (Colab-GPU regen) | 224 chars |
+| pythia-12b | alt_text | ✅ exact match (normalized) (Colab-GPU regen) | 186 chars |
 | gpt2-medium | skip_link | ✅ exact match (normalized) | 220 chars |
 | gpt2-medium | screen_reader | ✅ exact match (normalized) | 223 chars |
 | gpt2-medium | alt_text | ✅ exact match (normalized) | 215 chars |
@@ -24,16 +30,10 @@ common span; a **divergence** reports the first differing character.
 | gpt2-xl | skip_link | ✅ exact match (normalized) | 214 chars |
 | gpt2-xl | screen_reader | ✅ exact match (normalized) | 185 chars |
 | gpt2-xl | alt_text | ✅ exact match (normalized) | 218 chars |
-| pythia-6.9b | skip_link | ⏳ pending | Trisha's Colab run (6.9b/12b) |
-| pythia-6.9b | screen_reader | ⏳ pending | Trisha's Colab run (6.9b/12b) |
-| pythia-6.9b | alt_text | ⏳ pending | Trisha's Colab run (6.9b/12b) |
-| pythia-12b | skip_link | ⏳ pending | Trisha's Colab run (6.9b/12b) |
-| pythia-12b | screen_reader | ⏳ pending | Trisha's Colab run (6.9b/12b) |
-| pythia-12b | alt_text | ⏳ pending | Trisha's Colab run (6.9b/12b) |
 
 ## Determinism
 
-12/12 local (scale × prompt) comparisons are exact matches after whitespace normalization. Greedy (argmax) decoding is deterministic, and the transcription's 2.8B/GPT-2 runs were themselves MPS-local, so the regeneration reproduces them bit-for-bit — no thin-margin flips to document at these scales. The cross-hardware determinism caveat (MPS float vs Colab CUDA flipping near-tie elections) stays live only for the Colab-origin 6.9B/12B; check it when those regens land.
+18/18 compared (scale × prompt) comparisons are exact matches after whitespace normalization. Greedy (argmax) decoding is deterministic; where the transcription and the regen share hardware (MPS-local for 2.8B/GPT-2, CC) reproduction is bit-for-bit. Colab-GPU regens (Trisha) so far: pythia-12b, pythia-6.9b. These reproduce the transcription exactly too — no near-tie flips have surfaced. Note the transcription's per-scale hardware is not fully recorded (only 12B is known to be Colab GPU), so an exact match here is reassurance, not a controlled MPS-vs-CUDA experiment.
 
 ## Known findings — confirmation
 

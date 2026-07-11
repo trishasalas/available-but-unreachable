@@ -1,0 +1,61 @@
+model,compound,prompt,step,token_id,token,logit
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,0,352, it,16.8727
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,1,310, is,18.1635
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,2,417, not,17.2598
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,3,31998, usable,14.5177
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,4,15,.,19.7655
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,5,187,"
+",15.8944
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,6,187,"
+",18.6334
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,7,34,A,14.6677
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,8,4422, website,16.5021
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,9,1293, without,18.4511
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,10,3601, screen,15.4548
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,11,9414, reader,22.6552
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,12,1329, support,21.6141
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,13,310, is,19.1864
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,14,417, not,20.0463
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,15,12482, accessible,20.0376
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,16,984, because,22.4846
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,17,352, it,19.4189
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,18,310, is,21.2814
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,19,417, not,20.6647
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,20,31998, usable,19.6732
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,21,15,.,21.8099
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,22,187,"
+",17.9541
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,23,187,"
+",21.6922
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,24,2106,−,15.8374
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,25,187,"
+",24.5143
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,26,187,"
+",25.2920
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,27,34,A,15.1132
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,28,4422, website,16.1143
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,29,1293, without,18.6970
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,30,3601, screen,17.4714
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,31,9414, reader,22.0765
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,32,1329, support,21.2151
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,33,310, is,19.2577
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,34,417, not,19.4531
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,35,12482, accessible,20.3015
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,36,984, because,21.4524
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,37,352, it,18.4655
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,38,310, is,20.2919
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,39,417, not,19.0649
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,40,31998, usable,18.7178
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,41,15,.,20.7169
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,42,187,"
+",18.3611
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,43,187,"
+",23.8452
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,44,12,+,17.7773
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,45,187,"
+",26.0727
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,46,187,"
+",28.8237
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,47,34,A,17.5966
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,48,4422, website,18.7571
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,49,1293, without,20.5380

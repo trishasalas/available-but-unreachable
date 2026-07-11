@@ -1,0 +1,26 @@
+model,compound,prompt,n_steps,generation_text
+pythia-6.9b,skip_link,A long navigation menu without a skip link is not accessible because,50," it is not a link.
+
+A long navigation menu without a skip link is not accessible because it is not a link.
+
+A long navigation menu without a skip link is not accessible because it is not a link.
+
+A long"
+pythia-6.9b,screen_reader,A website without screen reader support is not accessible because,50," it is not usable.
+
+A website without screen reader support is not accessible because it is not usable.
+
+−
+
+A website without screen reader support is not accessible because it is not usable.
+
++
+
+A website without"
+pythia-6.9b,alt_text,An image without alt text is not accessible because,50," it is not descriptive enough.
+
+The alt text is the text that is displayed in place of the image when the image is not displayed.
+
+The alt text is a text that describes the image.
+
+The alt text is a text"

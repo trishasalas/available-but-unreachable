@@ -1,0 +1,24 @@
+model,compound,prompt,n_steps,generation_text
+pythia-12b,skip_link,A long navigation menu without a skip link is not accessible because,50," of the following error:
+
+The page you are trying to reach is not available in the current context.
+
+The page you are trying to reach is not available in the current context.
+
+The page you are trying to reach is not"
+pythia-12b,screen_reader,A website without screen reader support is not accessible because,50," it does not have a text alternative.
+
+The text alternative is a text version of the content that is read by a screen reader.
+
+The text alternative is not available because the website does not have a text alternative.
+
+The text"
+pythia-12b,alt_text,An image without alt text is not accessible because,50," it has no text alternative.
+
+The alt text is a short description of the image.
+
+The alt text is not a substitute for the image.
+
+The alt text is not a substitute for the image.
+
+The alt text"
