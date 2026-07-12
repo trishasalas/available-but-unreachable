@@ -1,6 +1,6 @@
 <!-- REBUILD DRAFT · Fable · 2026-07-10 · against notes/Rebuild Skeleton.md -->
 <!-- Sources: current 09-limitations.md, preserved with reference renumbering (Section 7 → Section 6, Section 3 refs unchanged). -->
-<!-- ⚠️ Small-cells paragraph depends on the T2 adjudication (sign vs. non-negative shrink) — currently worded to the CSV/registration form. -->
+<!-- ✅ T2 ADJUDICATED (Trisha, 2026-07-11): registration/CSV form ruled canonical ("shrinks toward zero, non-negative throughout"). Small-cells paragraph wording stands as written. -->
 <!-- Style contract: one line per paragraph. -->
 
 ## Limitations

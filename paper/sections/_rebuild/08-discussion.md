@@ -1,6 +1,6 @@
 <!-- REBUILD DRAFT · Fable · 2026-07-10 · against notes/Rebuild Skeleton.md -->
 <!-- Sources: current 08-discussion.md, preserved with reference renumbering (Section 6 → Section 5, Section 7 → Section 6). -->
-<!-- ⚠️ Depends on the T2 adjudication (see 05 header + _REBUILD_NOTES): the "sign flip" phrase in the implications paragraph is re-worded to "confidence collapse" to match the CSV/registration; restore the flip language only if that analysis is ruled canonical. -->
+<!-- ✅ T2 ADJUDICATED (Trisha, 2026-07-11): registration/CSV form ruled canonical ("shrinks toward zero, non-negative throughout"). The "confidence collapse" wording in the implications paragraph stands; sign-flip language stays retired. -->
 <!-- Style contract: one line per paragraph. -->
 
 ## Discussion
