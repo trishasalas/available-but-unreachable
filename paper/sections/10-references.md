@@ -103,6 +103,8 @@ Establishes the applied context. Nobody in this space is asking the mechanistic 
 
 ### Attention binding (ruled out as causal)
 
+- **Salas (2026)** "Accessibility Concept Emergence in the Pythia Suite: Thresholds, Binding, and the Declarative-Evaluative Gap." Zenodo. doi:10.5281/zenodo.20360787. Paper 1 of this program. Established the binding-emergence correlation this paper audits (§3) and first characterized the declarative-evaluative gap this paper generalizes (§2). ANONYMITY RULE (TMLR double-blind): cite in third person throughout submission prose — "Salas (2026) established" — never "our previous work" / "Paper 1" / "this program's." Reference itself stays unblinded per standard double-blind convention.
+
 - **Dung Tran (TMLR)** Related attention-binding work. Characterized our mechanistic work as "behavioral." Their EB* metric likely carries the same previous-token head confound we identified. Publication confirmed the venue is open for our submission.
 
 
