@@ -1,5 +1,11 @@
 # NEXT.md — Open work queue
 
+> **Next session task (queued 2026-07-12):** register/accuracy pass on 07-related-work, 08-discussion, 09-limitations — per pass 1 in `paper/sections/_rebuild/_REBUILD_NOTES.md` (Editing passes ledger + style contract = the lens). Section-specific items: §9 must state the small-battery limitation explicitly (completion n = 8, evaluative n = 5; statistical spine lives elsewhere — plan Track 2 item 7); §8 has two candidate sentences awaiting Trisha's ratification (plan Track 2 item 12) — do not insert without her; §7's probing citation is still open (citation-pass item, flag only). Verify numbers against CSVs as in 02–06; record in per-file headers. Voice pass on the dense core (02–06) is COMPLETE.
+>
+> **Submission roadmap:** the full TMLR readiness plan (tracks, sequence, format facts) is at `docs/tmlr-readiness-plan-2026-07-12.md`. This file remains the boot pointer for session-to-session items.
+>
+> **B4 denominator (51 vs 49) — mechanics resolved 2026-07-12** (Fable, verified per_concept_trajectories.csv × frequency_table.csv): ARIA + WCAG are single tokens (no bigram frequency) and captions is measured as "closed captions" (S5 alias). Remaining: one §4 sentence + CLAIMS B4 note, pending Trisha's ratification — see plan, Track 2 item 4.
+
 ## Post-Study-2 queue (added 2026-07-09, campaign complete: 4/5 RECOVERED, d992fd2)
 
 - [ ] **Paper: blind-study section.** Sources: blind-study
