@@ -3,6 +3,160 @@ Research and figure decisions with rationale.
 
 ---
 
+## Session 2026-07-15 — Adjudication day (Fable 5, claude.ai; all rulings Trisha)
+
+### 2026-07-15 — Blind-study record placement: appendix + repo
+
+**Decision:** The queue item's remaining material splits by paper-value.
+Appendix A.3 gets: the T4 epitaph with the structural distinction
+(analysts-didn't-find vs corpus-couldn't-afford; seal branch b30eaba; s1's
+1-via-ambiguity as evidence for the latter) and the 0/7/9 meta-finding
+(evidence the recovery tiers had teeth). Repo record keeps: the 7/7
+peak_regress reconstruction and T5 both-readings + operator adjudication
+(sources: runs/study2/SCORING.md, NOTES.md, SCORER_BIAS_STATEMENT.md).
+Blog post = someday, personal queue, not paper. **Rationale:** the rebuild's
+woven treatment (01 blind-study ¶ + Table 1 validation column; 02 T3
+disclosure; 06 T4 narrowing) carries the reviewer-facing load; the intro
+already promises the record in the public repository; A.3 strengthens
+criterion-1 review without re-narrating. Executes with pass-3/4 appendix work.
+
+### 2026-07-15 — Structure & formalization pass: ruling (plan, Track 2 item 1)
+
+**Decision:** RATIFIED, amended from the plan's four-part proposal;
+**post-veto reserved**. The interleaved architecture stands (analysis of
+record in the plan; not relitigable via post-veto). AMENDMENT: the proposed
+Experimental-setup block is DELETED — flagged by Trisha as bolted-on; it
+contradicted the interleaving analysis it followed. Contents redistributed
+by reader-task, per Paper 1's declare-at-use + appendix convention:
+interpretation-relevant setup (suites, battery, two cuts, frequency
+measurement) → §2's **Setup.** lead-in, enlarged, with an explicit "all five
+investigations share this environment; per-section Setups state each
+instrument" sentence; reproduction-relevant setup (TL 2.17.0 pin,
+deterministic coding pipeline, seeds, repo/decision-log pointers) →
+Reproducibility Statement (also the pass-4 destination); credibility framing
+(gate-protocol statement, two sentences) → closes §2's Setup ahead of the
+first governed result. The §1.1-vs-top-of-§2 placement sub-choice is mooted
+by the deletion. Ratified as proposed: per-section Setup/Results delineation
+§§2–6; six-formula inventory (§6 folding/severance equation highest
+priority, written from the D8 registration's math — exact, two severed
+terms); Reproducibility Statement. **§6 rider ratified** as triaged
+2026-07-12: ADOPT lead-with-mechanism reorder (pathway definition + equation
+first; the retraction becomes its case study); the three REJECTs stand with
+recorded rationale; the D7 verdict sentence remains canonical, both halves.
+**POST-VETO:** Trisha may reopen if the drafted execution reads bolted-on or
+wrong in practice; reopening is without prejudice and does not relitigate
+the architecture. Backstop unchanged: Gemini's final critique-only pass
+asks, per main claim, "can you locate the methodology and its formal
+definition?" Pass 3 UNLOCKED.
+
+### 2026-07-15 — B4 denominator (51 vs 49): paper text ratified and inked
+
+**Decision:** Trisha ratified the §4 reconciliation sentence and CLAIMS B4
+note as drafted (plan, Track 2 item 5; completes the 2026-07-14 provenance
+entry above). Placed same day: _rebuild/04, immediately after the n=49
+introduction (header comment logged); CLAIMS B4 denominator note →
+RECONCILED. Sentence of record: "The battery's 51 declarative concepts
+yield 49 compounds for frequency analysis: ARIA and WCAG are single tokens
+with no defined bigram frequency, and captions is measured under its
+two-word form, closed captions." Origin: CC flag 2026-07-06; mechanics
+2026-07-12. Commit: Trisha.
+
+### 2026-07-15 — Convergence rule: the thesis sentence is the acceptance test
+
+**The sentence (canonical):** "We ask whether corpus frequency predicts
+which concepts emerge, which remain merely fluent, and how far those
+predictions reach into the model's internal representations."
+
+**Decision:** (1) Ratified prose is CLOSED. Reopening closed prose requires
+naming the clause (emergence / fluency / reach) or the elimination it
+serves; local polish is declined by default — not argued, declined.
+(2) Passes 3–5 execute their enumerated items only; they do not reopen
+adjacent dimensions; no new passes without a ruling. (3) The Gemini
+backstop question and Trisha's read-aloud remain the only whole-paper
+quality gates; when the enumerated items are done and the gates pass, the
+paper is DONE — "could be better" is not a blocker by definition.
+**Rider resolved at ratification:** sentence VERIFIED PRESENT — verbatim in
+00-abstract (sentence 4); intro carries the canonical-prose variant (¶1
+close: "what corpus frequency predicts, how far that prediction reaches
+inside the model, and what it does not explain" — the elimination clause).
+No insertion needed. **Rationale (Trisha):** the "battle" is unbounded
+pass-iteration; passes never terminate on local criteria alone. The
+acceptance test converts "can this be improved?" (always yes) into "does
+this serve a clause or an elimination?" (checkable, terminating). The
+constitution was extracted from the paper, not imposed on it.
+
+### 2026-07-15 — Adjudication batch cleared; submission target set; CC sprint ordered
+
+**Decisions (all per Fable recs):** Fig 2 = per-concept matched pairs
+(aggregate-only rejected — resurrects the rescoped claim, launders n=8);
+Paper-1 replication table = appendix A.4 (assembly from DECISIONS
+2026-06-21 drafted wording; §3's demotion is stronger with the replication
+visible); D1 + D2 = RUN (CLAIMS §D rows updated; off critical path).
+Trisha additionally ordered thatDangCircuit cleanup → public + Zenodo DOI
+(G5(b) remedy; resolves §3 "DOI pending"; previously on standing mental
+list, now inked). With the structure, blind-study, and B4 rulings above,
+the plan's adjudication batch (sequence #3) is fully cleared.
+
+**TARGET SET: submit Sunday 2026-07-19.** The gates outrank the date — a
+real finding at number-audit or Gemini's pass moves the date, never ships
+past it. The convergence rule bounds all remaining work. CC sprint brief
+issued (thatDangCircuit prep; D2 authored+run local; D1 authored, execution
+in Trisha's Colab lane alongside the pending 6.9B/12B logit_export; tmlr.sty
+build target; figure generation). Owner seams recorded in the brief: DOI
+last mile (repo→public, Zenodo toggle, release) = Trisha; captions/alt text
+ratified by Trisha+Fable, never shipped machine-drafted unreviewed.
+Pass-3 drafts go to disk, not chat (context conservation, Trisha's rule).
+
+---
+
+## B4 Denominator Provenance
+
+### 2026-07-14 — B4 denominator (51 vs 49): ARIA/WCAG provenance traced; exclusion RATIFIED as structural
+
+**Decision:** The two concepts excluded from the n=49 Spearman set are ARIA
+and WCAG. The exclusion is BY CONSTRUCTION of the pre-registered analysis
+variable — x = log10(Infini-gram bigram count), frozen blind 2026-07-03 —
+a single-token concept has no bigram frequency to look up. Captions is a
+near-miss, not an exclusion: measured under the "closed captions" S5 alias
+(mechanics verified 2026-07-12, Fable, per_concept_trajectories.csv ×
+frequency_table.csv). Arithmetic: 51 trajectory concepts = 41 expansion
+compounds + 10 original elicitation concepts; 49 = 41 + the 8 original
+two-token compounds.
+
+**Provenance finding (why this entry exists):** Trisha flagged in-thread
+2026-07-14 that ARIA/WCAG's inclusion in the concept set "did not happen
+by my hand" — noticed while discussing bigrams ("huh… those aren't
+bigrams/compounds"). Traced same session: they entered via Paper 1's
+original elicitation battery (spring 2026, Claude-scribed prompt
+authoring), PREDATING DECISIONS.md — no inclusion entry exists because the
+record does not reach that far back. Downstream validation of the
+inclusion: published in Paper 1; replicated on TL2 under deterministic
+coding (CLAIMS B2); the ARIA never-emerges finding independently recovered
+by 2/3 blind analysts (R2). Exclusion-by-construction precedent already
+ratified twice: binding-set decision 2026-06-20 (single-token concepts
+"need separate handling or exclusion") and CLAIMS B7 ("single-token
+concepts excluded by construction").
+
+**Scope note:** the inclusion provenance bears on B2 only (where it is
+validated as above); it does not touch B4, whose denominator EXCLUDES both
+concepts by the frozen spec. No claim in the paper rests on a
+Claude-originated inclusion that lacks downstream human-ratified
+validation.
+
+**Paper actions:** §4 gains one sentence stating the n=49 scoping as
+by-construction (single-token concepts carry no bigram frequency);
+CLAIMS.md B4 denominator note converts from "reconcile the two exclusions"
+to resolved-with-pointer (this entry); NEXT.md B4 item closes (Track 2
+item 4 done).
+
+**Provenance:** anomaly flagged by Trisha in-thread 2026-07-14; trace by
+Fable (claude.ai) same session — DECISIONS.md, CLAIMS.md, NEXT.md read via
+filesystem tools; commit by CC pending.
+
+**RATIFIED: Trisha, 2026-07-14, in-thread.**
+
+---
+
 ## Tangent Battery Regeneration
 
 ### 2026-07-10 — Evaluative decision-point generations regenerated to CSV; `logit_export` promoted from print-and-paste to mechanical export
