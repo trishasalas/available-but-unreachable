@@ -1,27 +1,13 @@
 # CLAIMS.md — Canonical claims inventory (TMLR paper)
 
-> **Status: DRAFT** — first pass drafted 2026-07-01 by Claude (Fable 5, claude.ai)
-> from: DECISIONS.md, docs/findings/*, blind-study STAGE2_SCORING.md +
-> runs/stage2/SCORES_TRISHA.md + runs/stage2/NOTES.md. Trisha reviews every row.
-> **Pointer audit 2026-07-06 (Fable):** every ⚠️ NEEDS-POINTER artifact opened and
-> checked against its row — 5 verified exact, B5 corrected (construct drift; see row
-> + D9), B7 compound count corrected, B4 blank filled per pre-registration.
->
-> **Purpose:** one row per claim the paper makes (or deliberately declines to
-> make). Every section draft pulls from here; blind-study-2 targets are drawn
-> from here; a claim with an unverifiable Evidence pointer does not ship.
+> One row per claim the paper makes (or deliberately declines to make).
+> A claim with an unverifiable Evidence pointer does not ship.
 >
 > **Status codes:**
 > - `NAILED` — claim matches artifact; pointer verified on disk
-> - `NEEDS-POINTER` — claim is right but the evidence path needs verification (⚠️ = Claude has not opened the artifact, pointer taken from DECISIONS/findings docs)
 > - `OPEN` — experiment or check still pending
-> - `FALSIFIED` — documented negative result (these ship too, as negatives)
-> - `PRELIM` — real signal, not yet claim-strength; paper mentions with hedge or omits
-> - `OUT` — out of scope for this paper (logged for the series)
->
-> **Blind column:** status against the blind study (Stage 1 + Stage 2 verdicts,
-> per pre-registered thresholds). `S2-target` = candidate recovery target for
-> the scoped (TMLR-directory) blind study 2.
+> - `FALSIFIED` — documented negative result (ships as a negative)
+> - `PRELIM` — real signal, not yet claim-strength; mentioned with hedge or omitted
 
 ---
 
@@ -72,33 +58,6 @@
 | D7 | **RESOLVED 2026-07-04.** Single-token-ban counterfactual: pre-registered (amended: declarative prompt "A skip link is"), run same day on Colab A100. **Gate 1 PASSED** (lens pathway reproduces frozen trace); **Gate 2 FAILED** (true forward pass elects ' a', not 'click', at Step 5 — degenerate loop, byte-identical to elicitation raws). **No intervention run** — gates correctly blocked banning a competitor that doesn't win on the true pathway. Verdict: A2 exhibit is a measurement artifact; instrumentation exonerated by convergence with frozen raws (branch 3, resolved). Outputs → `results/logits/`; `d7_step5_ranks_preban.csv` **sealed** (reviewer insurance — opening before any follow-up run downgrades its blind tier, log if opened). Follow-up requires a NEW pre-registration; ban-ladder design sketched conversationally 2026-07-04, deliberately not committed | DECISIONS 2026-07-04 (pre-reg + amendment + A6 caveat + verdict); `src/d7_token_ban.py`; `results/logits/` pending zip landing | RESOLVED — fired branch 3; the correction ships (see A2, C6) |
 | D8 | **H1 CONFIRMED (proxy) 2026-07-05.** b_U is frequency-ordered at all six scales — ρ vs freq proxy (trimmed): 0.32 / 0.51 / 0.54 / 0.53 / 0.54 / **0.59 at 12B** (frozen bar +0.3, met everywhere); colsum frequency-DEAD (|ρ| < 0.01, all scales) — the prior localizes to exactly the term the resid @ W_U shortcut severs. Chain measured end-to-end: Kobayashi replicated + RELOCATED (bias-free NeoX → ln_final β → folded b_U) → severance → 6/6 anti-frequency flips. C6 gains its mechanism. **Calibration COMPLETE same day** (patched offline-first instrument, n=500, zero failures): ρ(b_U, log Pile count) = 0.66–0.78 across scales, 0.779 at 12B, signs agree with proxy everywhere, sign-disagreement rule did not fire — the paper says "log unigram frequency in the Pile." Observations logged, not interpreted: ρ rises with scale; 160M b_U norm anomaly (5,647) | DECISIONS 2026-07-05 (pre-reg + prior-art amendment + verdict); `src/d8_frequency_prior.py` (calibration patched same day); `results/d8_frequency_prior/` | CONFIRMED (proxy + Pile calibration, signs agree, rule did not fire; ρ up to 0.779 at 12B) — feeds C6 + Discussion |
 | D9 | **Socratic failure-state flip (Paper 1 lineage; recovered via the B5 provenance hunt)**: last-token − mean entropy under Socratic elicitation flips **+0.74 (1B) → −0.38 (2.8B)** — high-entropy stalling becomes low-entropy confident parroting at the emergence threshold. This is the true origin of B5's ghost numbers; construct = elicitation-format failure states (Paper 1 abstract's "internal structure"), NOT wrongness-confidence | Reproduced 2026-07-06 by re-running the published Paper 1 entropy notebook (Exp 2b prompts; 1B + 2.8B only). **FROZEN 2026-07-07:** `results/paper1-replication/` (per-model CSVs + flip summary + README; ⚠️ the saved notebook was later overwritten with a 1B-both-slots session — the 2.8B endpoint survives only in the Jupyter checkpoint, preserved per README; graduation rule ratified in DECISIONS 2026-07-07). Path to claim-strength: extend to six scales on TL2 entropy CSVs (`results/pythia/*-entropy.csv`) under deterministic coding — D1-sized errand, post-submission | PRELIM — real, reproduced-on-demand, two scales, pre-deterministic-coding era; saved-question shelf + cheap extension candidate |
-
-## E. Blind study 2 (scoped to TMLR evidence base) — design DECIDED 2026-07-07; build + launch items in STUDY2_RUNBOOK.md
-
-| # | Item | Note |
-|---|------|------|
-| E1 | **Corpus definition — DECIDED 2026-07-07:** IN: `results/` (excluding `results/paper1-replication/` — D9 answer key), `data/`, plus ONLY `src/` files cited in a ratified target's Evidence row (no-precedent note: Stage 1/2 shipped zero source code; data-only). OUT: `_analysis/` (scratch — corrected from this row's earlier draft, which wrongly listed it as included), README.md, CLAUDE.md, DECISIONS.md, NEXT.md, `docs/findings/*`, `paper/`. Build must pass a completeness check: every in-scope Evidence pointer resolves inside the corpus or the build FAILS (Stage-1 lesson: the good results were in a scratch file, the results dir was borked — never let missing-file read as not-recovered) | Decided in-thread 2026-07-07; scope inked in STUDY2_TARGETS.md (frozen b10b55d). Build adaptation pending (runbook open item) |
-| E2 | **Targets RATIFIED + FROZEN 2026-07-07 (b10b55d):** T1/B4 (headline; R5's drowned-not-absent, visibility requirement inked), T2/B5, T3/B6, T4/D7 gate CSVs (registered long shot; seal check pending), T5/B3 in DERIVATION form (curves only, no class definitions; ≥3-of-4 classes at >50% overlap). Graded verdict registered: RECOVERED ≥2-of-n full 2s; PARTIALLY RECOVERABLE avg ≥1 (the Stage-2 partial-tier fix); NOT RECOVERED below both | `blind-study/STUDY2_TARGETS.md` — effective-on-commit, thresholds immovable as of b10b55d |
-| E3 | **Protocol DECIDED 2026-07-07 (runbook drafted):** model-diverse pool, web OFF, two-part sessions (open analysis for T1–T4, then directed grouping for T5 — strict order), exit question verbatim, Fable synthesis/scoring only NEVER analyst. **Contamination tiers by cutoff arithmetic:** tier 1 < 2026-01-19 fully clean; tier 2 Jan-2026-class = recognition-only risk (blog post 01-19, carried no data — target scores stand); tier 3 ≥ 2026-03 = Paper 1 (TechRxiv March) potentially in-weights. Pre-March cutoffs CANNOT be recalling the findings — recognition and recovery separable by arithmetic | `blind-study/STUDY2_RUNBOOK.md` (draft skeleton; prompt wording + final pool + n=3 budget confirmation open) |
-| E4 | **DECIDED 2026-07-07: accept-and-log.** Real values ship; no bin/jitter ("otherwise what's the point" — jittering alters the data the study tests recovery from). Rationale: all fingerprint values (662, KL=1e-05, 0.90/0.21, D6/D8/D9 numbers) are TMLR-era, post-dating Jan-2026 cutoffs — in-weights path closed for the expected pool; web-off closes the search path. Fingerprint vectors registered in the runbook as known artifacts; sweep public materials at build time, extend the list, freeze it | `blind-study/STUDY2_RUNBOOK.md` §Masking posture |
-
-## F. Out of scope (logged for the series, not this paper)
-
-| # | Item | Why out |
-|---|------|---------|
-| F1 | OLMo checkpoint work (active unlearning; alt="photo.jpg" regression by step 30K); Zhang et al. (2026) mixed-format vocabulary; INTERCEPT intervention study | Load-bearing for the OLMo paper; deliberately withheld from Paper 1/TMLR (standing decision) |
-| F2 | Stage 2 novelty follow-ups not resolved by A4: N2 (Pythia-1B dip), N3 (early convergence ~0.5% of training), N4 (steering null at L33), N5 (arch-b duplication bug fix) | CAPTURE.md follow-up queue; N1 resolved by head characterization (see A4) |
-| F3 | ~~Multi-head joint ablation — deferred~~ **Un-deferred 2026-06-29**: approved design spec exists (`docs/superpowers/specs/2026-06-29-multihead-lexical-ablation-design.md`). Moved to D6 | See D6 |
-
-## G. Integration debts (claims the repo currently makes that the findings no longer support)
-
-| # | Debt | Fix |
-|---|------|-----|
-| G1 | ~~**Title + abstract still assert the March thesis**~~ **CLOSED 2026-07-06**: abstract fully rewritten (concept-emergence-first per the domain-bias rule; journey structure; all claims trace to audited CLAIMS rows; seven dialect walls removed in stranger-mode editing pass with Trisha; D6/D8 numbers integrated; 12B-resurgence sentence removed pending D1). Title reframed: "Concept Emergence in Language Models: Corpus Frequency, Inert Binding, and the Declarative-Evaluative Gap" — accessibility deliberately absent from the title so credibility flows toward the community rather than from it (Trisha's call, 2026-07-06). Edits 2–3 threaded same day: D6 joint-ablation paragraph in Section 03, Limitations paragraph shrunk per the D6 pre-reg promise | ~~Apply `binding-reframe-draft.md` Edit 1 (abstract) + reconsider title framing; Edits 2–3 place the new subsection + discussion/limitations blocks~~ Done — `paper/sections/metadata.yaml`, `contents/03-ruling-out-binding.md`, `contents/09-limitations.md` |
-| G2 | README.md + CLAUDE.md stale (describe how-models-think layout, `paper-1-emergence/` / `accessibility-knowledge-emergence/` paths, GitHub pointer) — and both contain findings plaintext (see E1) | CC task (Trisha, queued 2026-07-01) |
-| G3 | Path inconsistency: head-characterization findings doc cites `results/lexical-head-results.md`; file appears to live at `docs/findings/lexical-head-results.md` | Reconcile pointer or move file |
-| G4 | CAPTURE.md correction for the 2026-06-14 GPT-2-heads-on-Pythia carryover is marked done in findings doc — verify the CAPTURE.md entry exists and states that the conclusion survived but the recorded cross-architecture evidence did not | Verify (5 min) |
-| G5 | **Unpublished dependency debt**: thatDangCircuit experiments (three-tier population ablations, N4 steering null, extended compound list) are cited in Section 03 prose but live in a private repo — nothing citable, nothing verifiable. Blind-study repo has the same status (C5 depends on it) | Split remedy, decided 2026-07-02: (a) load-bearing claims get reproduced inside tmlr — D6 covers the population question; port or soften anything else Section 03 leans on; (b) thatDangCircuit goes public + Zenodo DOI (GitHub integration, CITATION.cff with ORCID, toggle before v1.0.0 release) — paper cites the DOI; (c) essay "Why I'm Not Writing the Ablation Paper" narrates it on trishasalas.com; (d) blind-study repo publishes only AFTER study 2 to avoid contaminating the masked corpus |
 
 ---
 
