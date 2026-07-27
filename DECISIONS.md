@@ -3,6 +3,46 @@ Research and figure decisions with rationale.
 
 ---
 
+## Sessions 2026-07-16 → 2026-07-26 (Fable 5, claude.ai; all rulings Trisha) — catch-up log, written 2026-07-26
+
+### 2026-07-16 — Edit-session protocol; Fig 1 ruling
+
+**Edit-session protocol RATIFIED:** vault edits happen in live sessions with Fable, scribed one at a time — closes the tell-the-scribe weak link; no batch edits carried on memory. Two intro vault edits ratified under it: the blind-study ¶ ("independent analyst sessions," "registered in advance as the long shot" matching §6 verbatim, no session count in the intro — count + per-claim aggregation rule assigned to A.3) and the closing ¶ ("the one exhibit… documented alongside the others" — uniqueness claim noted for re-verification if any gate surfaces a second failure).
+
+**Fig 1 RULED:** solo frequency-emergence scatter (log bigram frequency × emergence, n=49, ρ annotated), exemplar points NAMED with alt text mandatory; caption carries the thesis sentence. Three-panel composite REJECTED — busy; a figure-shaped setup block (same disease the structure amendment cured: evidence lives at point of use). Attribution corrected 2026-07-25: "first figure should have impact" is Nanda's actual claim; "abstract + Fig 1 tell the whole story" is the house extension, owned as ours.
+
+### 2026-07-19 — Deadline rescinded; two-claim hierarchy; calibration sweep
+
+**TARGET RESCINDED (Trisha):** no fixed date. The Sunday target's temporal stake dissolved (Fable retained indefinitely on Max); the paper ships when the gates pass. "Right beats round." Gates are the only clock.
+
+**Two-claim presentation hierarchy + §3↔§4 swap RATIFIED** (via read-aloud gate + ChatGPT external review, independently converging on the same diagnosis): lead claims = (1) corpus frequency predicts concept-level trajectories, (2) the declarative-evaluative gap as its behavioral manifestation; support = binding elimination, readout correction as methods contribution, blind study as one neutral clause near the end, receipts closer as one sentence. Frequency section moves ahead of the binding elimination (assert, then defend); renumber at promotion. Thesis sentence governs scope; hierarchy governs presentation.
+
+**Calibration sweep RULED** (external review triage, adopted): claims narrowed to measured observables. Ban list of record: "present in the distribution" (trivially true), "supplies the mechanism" (→ "provides an account consistent with"), "dissolved" (→ "persists after adjustment"), global "does not implement"/"reroutes" (→ non-necessity of tested sets), "MLP effort" (→ neutral). "Causally inert" becomes title-only. TMLR LLM-assistance disclosure footnote added to the submission checklist. Metaphor rationing left to Trisha's read-aloud ear.
+
+### 2026-07-23 — Entropy rebound verified; vault status established
+
+**§5 entropy rebound VERIFIED** (Fable, results/analysis/entropy_confidence.csv; n-weighted mean last-token entropy, incorrect accessibility minus correct bicycle-control, per scale): Pythia ≈ 0.64 nats (1B) → 0.35 (2.8B) → 0.07 (6.9B) → 0.32 (12B). External review's figures reproduce to ≈2 decimals; "shrinks toward zero with scale" unsupportable as a monotone claim. Δ definition to be confirmed against analysis.ipynb before final numbers ink.
+
+**Vault status:** myMe copy confirmed a COMPLETE DRAFT (§§1–9 + appendix stubs — back half is ratified rebuild text assembled 2026-07-15, not new writing); canonical path verified (…/tmlr/paper/myMe/Concept Emergence in Language Models.md); similarly named …/TMLR/paper/…Gap 1.md is a stale twin, do-not-edit.
+
+### 2026-07-25 — Patch session complete; adjudication; abstract v3; §2 Setup inked
+
+**PATCHES 1–11 inked in myMe** (Trisha ratifying — several in her own wording — Fable scribing, one at a time): two-cuts disclosure restored; criteria-authored-after-data clause restored; §3 closer scoped ("Nothing we ablated is necessary to it" — chosen over punchier overclaim after truth analysis); §4 rank-scoped after the old "present in the distribution at every scale" claim was found FALSE against the logits CSVs (domain token absent from top-15 below 2.8B) — replacement "From 2.8B upward it never leaves the top fifteen ranks" is truer AND better for the thesis (arrival-then-defeat); "directly" dropped; MLP header neutralized; "rule out" → "address"; abstract scale inventory restored (six + four); abstract closer de-trivialized; intro entropy sentence carries the verified rebound; "supplies the mechanism" → "provides an account consistent with"; §8 "causally inert" → "causally unnecessary under the tested ablations" + rank clause harmonized with §7. **Patch 3 SKIPPED by ruling** (§9 carries the basis; "I trust the reader").
+
+**ADJUDICATION RULED:** implications ladder = finding / hypothesis / direction ("First, a finding grounded in our data" — Trisha's surgery on a Sonnet draft, one-word Fable suggestion); §5's design-constraint strong form KEPT as deliberately framed (operationalized confidence, rebound + thin-cell caveat in-text; the framing announces its own move). Every prose item from the 2026-07-19 external review is dispatched.
+
+**ABSTRACT v3 INKED (ratified):** retraction + b_U prior sentence, 4/5 blind-study clause, receipts closer ending on "public." §5 confidence collapse deliberately WITHHELD from the abstract ("I kind of want the surprise") — the consequence lands in §5 with its caveats; also its most-caveated-claim status makes the abstract the wrong home.
+
+**§2 SETUP BLOCK RATIFIED + INKED (pass 3 begins):** shared environment declared once ("each later section states its own instrument"), suites enumerated, greedy decoding stated, Infini-gram/Pile measurement declared with GPT-2 proxy labeling, two-cuts paragraph absorbed verbatim, Δ(s) formula, sign test stated as a direction claim, gate protocol closing ("All branches ship" — punchier form ratified). "Both batteries" disambiguated to the declarative/evaluative prompt batteries after Trisha's read surfaced the ambiguity; gap-series coding granularity left unstated in text, verification assigned to number-audit. **B4 sentence ported to myMe §4** (port debt cleared; vault and rebuild agree on all ratified text).
+
+**Process rulings:** voice work henceforth passage-sized and snag-driven (read-aloud ear finds the snag; spot-fix, not passes) after a controlled n=1 finding: Sonnet 4.6's disclosure-trimming survives an explicit "delete nothing" instruction — instruction-resistant bias; countermeasure is structural (small scope + diff-on-receipt), not instructional. Prophylactic §5-down Sonnet pass CANCELLED per convergence rule. Workbench.md created at vault top level (flat timestamped capture; scribe appends). Nanda attribution corrected in the ledger.
+
+### 2026-07-26 — thatDangCircuit archived: DOI minted; G5(b) CLOSED
+
+**Release v1.0.0** ("thatDangCircuit v1.0.0 — compound binding is distributed") archived via Zenodo–GitHub integration. **Version DOI 10.5281/zenodo.21604593** (cites v1.0.0, goes in the paper's references and CITATION.cff); concept DOI 10.5281/zenodo.21604592 (all versions). Created same morning: README (honest-headline framing, falsified steering prediction reported at full strength by policy, TL pin explained with its why), LICENSE (standard split — MIT code / CC-BY 4.0 data, results, figures, docs — Trisha's ruling), CITATION.cff (ORCID placeholder = Trisha TODO; note: postdates the v1.0.0 archive, serves GitHub widget + future versions, no v1.0.1 needed). docs/anonymization-checklist.md created in the tmlr repo: third-person self-citation rule, Class A (prior work, cite normally with DOIs) vs Class B (this paper's artifacts, anonymous mirror for review), sweep list, do-not-need-to-do list. §3's "DOI pending" resolution queued at pass 5. The Salas research identity now carries two permanent DOIs: Paper 1 and thatDangCircuit.
+
+---
+
 ## Session 2026-07-15 — Adjudication day (Fable 5, claude.ai; all rulings Trisha)
 
 ### 2026-07-15 — Blind-study record placement: appendix + repo
