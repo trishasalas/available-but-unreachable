@@ -1,0 +1,4 @@
+suite,corpus,corpus_match,rho,p,n
+pythia,pile,exact,0.5289,0.0001,49
+gpt2,pile,proxy,0.4403,0.0015,49
+olmo2-1b,dolma,exact,0.4776,0.0005,49
