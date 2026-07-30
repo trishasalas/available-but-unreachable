@@ -1,0 +1,293 @@
+prompt_id,concept,prompt_type,template_type,prompt,output,max_tokens,model
+decl_screen_reader_001,screen reader,declarative,cloze,A screen reader is,"a software program that reads the text on a computer screen and converts it into speech or Braille. Screen readers are used by people who are blind or have low vision. They are also used by people with learning disabilities, memory loss, or other print disabilities. Screen readers are available for computers running Windows, Macintosh, and Linux operating systems. Screen readers are also available for mobile devices such as smartphones and tablets.
+
+Screen readers work by reading the text on the screen aloud. They can also be used",100,OLMo-2-1124-7B
+decl_wcag_001,WCAG,declarative,cloze,WCAG stands for,"Web Content Accessibility Guidelines. It is a set of guidelines that help web developers create websites that are accessible to people with disabilities. The guidelines are created by the World Wide Web Consortium (W3C), which is the main international standards organization for the World Wide Web.
+
+The WCAG guidelines are divided into four levels of accessibility: A, AA, AAA, and AAAA. Each level has its own set of requirements that must be met in order to achieve that level of accessibility. The higher the level",100,OLMo-2-1124-7B
+decl_skip_link_001,skip link,declarative,cloze,A skip link is,"a link that is placed at the top of a page that allows users to skip the page’s content and go directly to the main navigation. This is useful for users who are using a screen reader or have a disability that makes it difficult to navigate the page.
+
+Skip links are typically placed in the header of the page, and they are usually labeled with the word “Skip” or “Skip to main content.” They can also be placed in the footer of the page, but this is less common.",100,OLMo-2-1124-7B
+decl_alt_text_001,alt text,declarative,cloze,The purpose of alt text is,"to provide a textual alternative to non-text content in web pages. It is used by screen readers to read out the content of images to blind and visually impaired users. It is also used by search engines to index images and provide a text alternative for them. Alt text is also used by assistive technologies to describe the content of images to users.
+
+Alt text is not just for images. It can also be used for other non-text content such as audio, video, and animations. Alt text should be",100,OLMo-2-1124-7B
+decl_aria_001,ARIA,declarative,cloze,ARIA stands for,Accessible Rich Internet Applications. It is a set of guidelines that help developers create web applications that are accessible to people with disabilities. The W3C has created a set of guidelines that help developers create web applications that are accessible to people with disabilities. The W3C has created a set of guidelines that help developers create web applications that are accessible to people with disabilities. The W3C has created a set of guidelines that help developers create web applications that are accessible to people with disabilities. The W,100,OLMo-2-1124-7B
+decl_focus_indicator_001,focus indicator,declarative,cloze,A focus indicator is,a small light that is used to indicate that a device is ready to accept data. The focus indicator is usually a small light that is located on the front of the device. The focus indicator is used to indicate that the device is ready to accept data. The focus indicator is usually a small light that is located on the front of the device. The focus indicator is used to indicate that the device is ready to accept data. The focus indicator is usually a small light that is located on the front of,100,OLMo-2-1124-7B
+decl_keyboard_nav_001,keyboard navigation,declarative,cloze,Keyboard navigation allows,"you to navigate through the page using the keyboard. This is especially useful for people who use screen readers or have limited mobility. The keyboard navigation is controlled by the tab key. When you press the tab key, the focus moves to the next element on the page. The focus is indicated by a dotted outline around the element. You can also use the arrow keys to move the focus around the page.
+
+The tab key is used to move the focus to the next element on the page. The focus is",100,OLMo-2-1124-7B
+decl_color_contrast_001,color contrast,declarative,cloze,Color contrast is important because,"it can make it easier for people with low vision to read text and see images. It can also make it easier for people with color blindness to see the difference between colors. The contrast ratio is the ratio of the luminance of the lightest color to the darkest color. The higher the contrast ratio, the easier it is to see the difference between colors.
+
+The contrast ratio is important because it can make it easier for people with low vision to read text and see images. It can also make it",100,OLMo-2-1124-7B
+decl_semantic_html_001,semantic HTML,declarative,cloze,Semantic HTML helps,"search engines understand the content of your page. It also helps screen readers and other assistive technologies to understand the content of your page. This is important for people with disabilities. It also helps people who are using a mobile device to read your page.
+
+The following are some examples of semantic HTML:
+
+  • <h1> for the main heading of a page
+  • <h2> for a subheading
+  • <p> for a paragraph
+  • <ul> for a",100,OLMo-2-1124-7B
+decl_captions_001,closed captions,declarative,cloze,Closed captions are used for,"the hearing impaired. They are also used for people who are in a noisy environment, such as a bar or a factory. They are also used for people who are learning English as a second language. They are also used for people who are learning English as a second language. They are also used for people who are learning English as a second language. They are also used for people who are learning English as a second language. They are also used for people who are learning English as a second language.",100,OLMo-2-1124-7B
+decl_keyboard_interaction_001,keyboard interaction,declarative,cloze,A keyboard interaction is,a sequence of key presses and releases. A key press is a key down event followed by a key up event. A key release is a key up event followed by a key down event. A key press is a key down event followed by a key up event. A key release is a key up event followed by a key down event. A key press is a key down event followed by a key up event. A key release is a key up event followed by a key down event. A key,100,OLMo-2-1124-7B
+decl_section_heading_001,section heading,declarative,cloze,A section heading is,"a title for a section of a document. It is usually centered and in boldface type. Section headings are numbered in Arabic numerals, and the numbers are usually aligned to the left margin. Section headings are usually followed by a blank line, and the first line of the section is indented. Section headings are usually capitalized and end with a period. Section headings are usually followed by a blank line, and the first line of the section is indented. Section headings are usually capitalized and end with",100,OLMo-2-1124-7B
+decl_text_alternative_001,text alternative,declarative,cloze,A text alternative is,"a text equivalent of non-text content, such as text, that serves the same purpose as the non-text content. Text alternatives are used in place of non-text content to make web pages accessible to people with disabilities. Text alternatives are also used by search engines to determine the content of non-text content. Text alternatives are used in place of non-text content to make web pages accessible to people with disabilities. Text alternatives are also used by search engines to determine the content of non-text content.
+
+Text alternatives are",100,OLMo-2-1124-7B
+decl_audio_description_001,audio description,declarative,cloze,An audio description is,"a narration of the visual elements of a video. It is a description of what is happening on the screen, and it is usually read by a narrator. Audio descriptions are used to make videos accessible to people who are blind or visually impaired. They can also be useful for people who are watching a video in a noisy environment, such as a crowded bar or restaurant.
+
+Audio descriptions are typically added to videos after they have been created. This can be done by a professional audio describer, or it can",100,OLMo-2-1124-7B
+decl_sign_language_001,sign language,declarative,cloze,Sign language is,"a language that uses hand gestures to communicate. It is used by people who are deaf or hard of hearing. There are many different types of sign language. Some are used in one country, while others are used in many countries. Some are used by people who are deaf, while others are used by people who are not deaf. There are also different types of sign language for different age groups. For example, there is a type of sign language for babies and toddlers, and another type for adults.",100,OLMo-2-1124-7B
+decl_sensory_characteristics_001,sensory characteristics,declarative,cloze,Sensory characteristics are,"the most important factors in the perception of food. The taste of food is determined by the combination of the five basic tastes: sweet, sour, salty, bitter and umami. The taste of food is also influenced by the aroma, texture, temperature, and the way it feels in the mouth. The taste of food is also influenced by the aroma, texture, temperature, and the way it feels in the mouth. The taste of food is also influenced by the aroma, texture, temperature, and",100,OLMo-2-1124-7B
+decl_input_purpose_001,input purpose,declarative,cloze,An input purpose is,a purpose that is used to determine the input to a process. An input purpose is a purpose that is used to determine the input to a process. An input purpose is a purpose that is used to determine the input to a process. An input purpose is a purpose that is used to determine the input to a process. An input purpose is a purpose that is used to determine the input to a process. An input purpose is a purpose that is used to determine the input to a process. An input,100,OLMo-2-1124-7B
+decl_target_size_001,target size,declarative,cloze,A target size is,"the size of the area that the laser beam will cover. The target size is measured in millimeters (mm) and is the diameter of the area that the laser beam will cover. The target size is determined by the laser beam diameter and the distance from the laser to the target. The target size is also referred to as the spot size.
+
+The target size is important because it determines the amount of energy that will be delivered to the target. The larger the target size, the more energy will be",100,OLMo-2-1124-7B
+decl_touch_target_001,touch target,declarative,cloze,A touch target is,"a physical object that can be touched or clicked on. It can be a button, a link, a text field, or any other interactive element. Touch targets are important because they allow users to interact with your app. If your touch targets are too small or too close together, users may have difficulty interacting with them. In this article, we will discuss how to create effective touch targets and why they are important.
+
+What is a touch target?
+
+A touch target is a physical object that can be touched",100,OLMo-2-1124-7B
+decl_drag_movement_001,drag movement,declarative,cloze,A drag movement is,"a movement that is made by the player by dragging the mouse. Drag movements are used to move the player in a direction, and to move objects in a direction. Drag movements are also used to move the player in a direction, and to move objects in a direction. Drag movements are also used to move the player in a direction, and to move objects in a direction. Drag movements are also used to move the player in a direction, and to move objects in a direction. Drag movements are also",100,OLMo-2-1124-7B
+decl_focus_appearance_001,focus appearance,declarative,cloze,A focus appearance is,"a small, bright spot that appears in the center of the image. This is caused by the lens not being able to focus on the subject. The focus point is usually the center of the image, but it can be anywhere in the frame. The focus point is usually the center of the image, but it can be anywhere in the frame.
+
+What is the difference between focus and focus point?
+
+Focus is the distance between the lens and the subject. Focus point is the point where the lens is focused",100,OLMo-2-1124-7B
+decl_consistent_help_001,consistent help,declarative,cloze,Consistent help is,"the key to success. If you are not sure about something, ask your teacher or a friend. If you are not sure about your answers, ask your teacher to check them. If you are not sure about an assignment, ask your teacher for an explanation. If you are not sure about anything, ask! It is better to ask a question than to make a mistake. The more you ask, the more you will learn. The more you learn, the smarter you will become. The smarter you",100,OLMo-2-1124-7B
+decl_redundant_entry_001,redundant entry,declarative,cloze,A redundant entry is,a duplicate entry in a database. A redundant entry is a duplicate entry in a database. A redundant entry is a duplicate entry in a database. A redundant entry is a duplicate entry in a database. A redundant entry is a duplicate entry in a database. A redundant entry is a duplicate entry in a database. A redundant entry is a duplicate entry in a database. A redundant entry is a duplicate entry in a database. A redundant entry is a duplicate entry in a database. A redundant entry is a,100,OLMo-2-1124-7B
+decl_accessible_authentication_001,accessible authentication,declarative,cloze,Accessible authentication is,"a feature of the .NET Framework that allows you to authenticate users without having to write any code. The .NET Framework provides a set of classes that you can use to authenticate users. These classes are part of the System.Web.Security namespace. The most important class in this namespace is the FormsAuthentication class. This class provides the functionality for authenticating users. The FormsAuthentication class is used in conjunction with the Membership class, which provides the functionality for managing users. The Membership class is part of the System",100,OLMo-2-1124-7B
+decl_text_spacing_001,text spacing,declarative,cloze,Text spacing is,"a very important aspect of typography. It is the distance between the lines of text. It is also called leading. The term leading comes from the days of metal type when strips of lead were inserted between lines of type to increase the space between them. The term is still used today, even though the space is now created electronically.
+
+The spacing between lines of text is important because it affects the readability of the text. If the lines are too close together, the reader will have to strain to read the",100,OLMo-2-1124-7B
+decl_status_message_001,status message,declarative,cloze,A status message is,"displayed on the screen. The message is displayed in the following format:
+
+The message is displayed in the following format:
+
+The message is displayed in the following format:
+
+The message is displayed in the following format:
+
+The message is displayed in the following format:
+
+The message is displayed in the following format:
+
+The message is displayed in the following format:
+
+The message is displayed in the following format:
+
+The message is displayed in the following format:
+
+The message is displayed in the following format:
+
+The message is displayed in",100,OLMo-2-1124-7B
+decl_error_identification_001,error identification,declarative,cloze,Error identification is,"the process of identifying the error in a given program. The error can be in the form of syntax error, logic error, or run-time error. The error can be identified by using the following methods:
+
+  • Syntax error: The syntax error is the error that occurs due to the incorrect use of the language syntax. For example, the use of a semicolon (;) in place of a comma (,) or vice versa. The syntax error can be identified by using the following methods:
+    •",100,OLMo-2-1124-7B
+decl_pointer_cancellation_001,pointer cancellation,declarative,cloze,Pointer cancellation is,a feature of the C language that allows a function to return a value and also to cancel the function call. The function returns a value by modifying a pointer argument that is passed to the function. The function can also cancel the function call by modifying the pointer argument to NULL. The function can then return without returning a value. The function can also return a value and cancel the call by modifying the pointer argument to NULL and returning a value. The function can also return a value and not cancel the call,100,OLMo-2-1124-7B
+decl_character_key_001,character key,declarative,cloze,A character key is,"a key on a keyboard that is used to type a character. The character key is usually a letter, but it can also be a number, a punctuation mark, or a symbol. The character key is usually located on the top row of the keyboard, and it is used to type the character that is displayed on the key. For example, the letter “A” is located on the top row of the keyboard, and it is used to type the letter “A”. The character key is also",100,OLMo-2-1124-7B
+decl_accessibility_tree_001,accessibility tree,declarative,cloze,An accessibility tree is,"a tree of nodes that represents the content of a document. Each node in the tree represents a single element in the document. The tree is built by recursively traversing the document's DOM tree and creating a node for each element. The tree is then used to determine the accessibility of the document.
+
+The accessibility tree is built by the browser when the document is loaded. It is not possible to modify the accessibility tree directly. Instead, you can modify the DOM tree and the accessibility tree will be updated automatically",100,OLMo-2-1124-7B
+decl_accessible_name_001,accessible name,declarative,cloze,An accessible name is,"the name that is displayed in the Name column of the Properties window. It is the name that is used to identify the control in the code. The name of a control is not necessarily the same as the text that is displayed on the control. For example, the text on a button might be ""OK"", but the name of the button might be ""btnOK"". The name of the button is used in the code to refer to the button.
+
+The name of a control is not necessarily the same",100,OLMo-2-1124-7B
+decl_accessible_description_001,accessible description,declarative,cloze,An accessible description is,"a description that is understandable to a person with a disability. This includes people with visual, hearing, cognitive, motor, or other disabilities. An accessible description is not a substitute for the original work, but rather an alternative way to experience it.
+
+Accessible descriptions are created by people who are not the original creators of the work. They are not required to be perfect, but they should be as accurate as possible. They should also be respectful of the original work and its creator.
+
+Accessible descriptions can be created",100,OLMo-2-1124-7B
+decl_live_region_001,live region,declarative,cloze,A live region is,a region that is currently being updated. The live region is updated when the data changes. The live region is updated by the data source. The data source is the object that is responsible for updating the live region. The data source is updated by the data source provider. The data source provider is the object that is responsible for updating the data source. The data source provider is updated by the data source updater. The data source updater is the object that is responsible for updating the data source provider. The,100,OLMo-2-1124-7B
+decl_tab_panel_001,tab panel,declarative,cloze,A tab panel is,"a panel that contains a tab bar and a tab content area. The tab bar contains a set of tabs, each of which represents a tab content area. The tab content area contains the content of the tab. The tab bar and tab content area are arranged in a vertical stack. The tab bar is at the top of the stack, and the tab content area is at the bottom of the stack.
+
+The tab bar is a horizontal bar that contains a set of tabs. Each tab is a button that",100,OLMo-2-1124-7B
+decl_radio_group_001,radio group,declarative,cloze,A radio group is,"a group of radio stations that are owned by the same company, but are not necessarily in the same market. The term is used in the United States, Canada, and the United Kingdom. In the United States, the term is used by the Federal Communications Commission (FCC) to refer to a group of radio stations that are owned by the same company, but are not necessarily in the same market. In Canada, the term is used by the Canadian Radio-television and Telecommunications Commission (C",100,OLMo-2-1124-7B
+decl_tree_grid_001,tree grid,declarative,cloze,A tree grid is,"a grid of trees, where each tree is a rooted tree with a root node. The root node of each tree is connected to the root node of the tree to its left, and the root node of each tree is connected to the root node of the tree to its right. The root node of the tree grid is connected to the root node of the tree to its left, and the root node of the tree grid is connected to the root node of the tree to its right. The root node",100,OLMo-2-1124-7B
+decl_menu_bar_001,menu bar,declarative,cloze,A menu bar is,"a horizontal bar at the top of a window that contains the names of the menus. The menu bar is usually located at the top of the window, but it can be located anywhere. The menu bar is usually the same for all windows of a given application, but it can be different for different windows.
+
+A menu is a list of commands that you can choose from. The menu bar contains the names of the menus. When you choose a menu, a list of commands appears. You can choose a",100,OLMo-2-1124-7B
+decl_tool_tip_001,tool tip,declarative,cloze,A tool tip is,"a small window that appears when you hover your mouse over a control. Tool tips are useful for providing additional information about a control. For example, you can use a tool tip to display the name of a control, the name of the property that the control is bound to, or the name of the property that the control is bound to. Tool tips are also useful for displaying the name of a control that is not visible on the screen. For example, you can use a tool tip to display the",100,OLMo-2-1124-7B
+decl_combo_box_001,combo box,declarative,cloze,A combo box is,"a control that allows the user to select from a list of items. The items in the list are displayed in a drop-down list. The user can select an item from the list or type a new item into the combo box. The combo box is a combination of a text box and a drop-down list. The text box is used to display the current selection, and the drop-down list is used to display the list of items from which the user can select.
+
+The combo box is a very useful",100,OLMo-2-1124-7B
+decl_semantic_markup_001,semantic markup,declarative,cloze,Semantic markup is,"a way of adding information to a document that is not visible to the reader. This information is used by software to process the document in some way. For example, a browser might use the information to display the document in a different way, or a search engine might use it to index the document. Semantic markup is often used in conjunction with XML.
+
+Semantic markup is also known as semantic tagging or semantic annotation.
+
+The term ""semantic"" comes from the field of linguistics, where it refers to the",100,OLMo-2-1124-7B
+decl_focus_management_001,focus management,declarative,cloze,Focus management is,"a key component of the project management process. It is the process of managing the scope of the project to ensure that the project is completed within the budget and schedule. It is also important to manage the scope of the project to ensure that the project is completed within the budget and schedule. This can be done by creating a detailed project plan, including a schedule and budget, and tracking progress against these plans. It is also important to communicate with stakeholders throughout the project to ensure that they are aware of any",100,OLMo-2-1124-7B
+decl_reading_order_001,reading order,declarative,cloze,Reading order is,"important. The order in which you read the books is important. If you read them out of order, you will miss out on a lot of the story. The books are not written in chronological order, so you will need to read them in the order they were written. The books are written in the order they were written, so you will need to read them in the order they were written. The books are written in the order they were written, so you will need to read them in the",100,OLMo-2-1124-7B
+decl_text_formatting_001,text formatting,declarative,cloze,Text formatting is,"not available in preview mode.
+
+Text formatting is not available in preview mode.
+
+Text formatting is not available in preview mode.
+
+Text formatting is not available in preview mode.
+
+Text formatting is not available in preview mode.
+
+Text formatting is not available in preview mode.
+
+Text formatting is not available in preview mode.
+
+Text formatting is not available in preview mode.
+
+Text formatting is not available in preview mode.
+
+Text formatting is not available in preview mode.
+
+Text formatting is not available in preview mode.
+
+Text formatting is not",100,OLMo-2-1124-7B
+decl_form_field_001,form field,declarative,cloze,A form field is,"a field that is used to collect information from the user. It can be a text field, a checkbox, a radio button, a dropdown list, a date picker, a file upload field, etc. Form fields are usually displayed in a form, which is a collection of form fields.
+
+Form fields are usually displayed in a form, which is a collection of form fields. A form field can be a text field, a checkbox, a radio button, a dropdown list, a date picker, a",100,OLMo-2-1124-7B
+decl_landmark_region_001,landmark region,declarative,cloze,A landmark region is,"a region of the brain that is important for a particular function. For example, the primary visual cortex is a landmark region for vision. If this region is damaged, vision is impaired. The primary motor cortex is a landmark region for movement. If this region is damaged, movement is impaired. The hippocampus is a landmark region for memory. If this region is damaged, memory is impaired. The amygdala is a landmark region for emotion. If this region is damaged, emotion is impaired. The",100,OLMo-2-1124-7B
+decl_low_vision_001,low vision,declarative,cloze,Low vision is,"a condition that affects the ability to see. It is not the same as blindness. People with low vision have some useful vision. They can see things around them, but they may not be able to see well enough to do everyday tasks. Low vision can be caused by many things, including eye diseases, eye injuries, and birth defects. Some of the most common causes of low vision are age-related macular degeneration, cataracts, glaucoma, diabetic retinopathy, and ret",100,OLMo-2-1124-7B
+decl_cognitive_disabilities_001,cognitive disabilities,declarative,cloze,Cognitive disabilities are,"often invisible, but they can be just as disabling as physical disabilities. People with cognitive disabilities may have difficulty with memory, attention, problem-solving, or other thinking skills. They may have difficulty with language, including reading, writing, and understanding speech. They may have difficulty with social skills, such as recognizing and understanding the emotions of others. They may also have difficulty with executive functioning, which is the ability to plan, organize, and complete tasks.
+
+Cognitive disabilities can be caused by a variety of",100,OLMo-2-1124-7B
+decl_universal_design_001,universal design,declarative,cloze,Universal design is,"a concept that is gaining popularity in the design of buildings and products. It is a design philosophy that is based on the idea that a product or environment should be usable by all people, regardless of their age, size, or ability. This means that products and environments should be designed to be as accessible as possible for everyone.
+
+There are many benefits to designing products and environments with universal design in mind. For one, it can help to reduce the need for special accommodations for people with disabilities. It can",100,OLMo-2-1124-7B
+decl_decorative_image_001,decorative image,declarative,cloze,A decorative image is,"a picture that is used to decorate a web page. It is not a link to another page. Decorative images are usually used to make a web page look more attractive. They are not used to convey information.
+
+Decorative images are usually in the background of a web page. They are not usually the main focus of the page. Decorative images can be used to make a web page look more professional or to add a personal touch.
+
+Decorative images can be used to add a sense of style",100,OLMo-2-1124-7B
+decl_informative_image_001,informative image,declarative,cloze,An informative image is,"a picture that is used to convey information. It is a visual representation of data or information. An informative image can be used to illustrate a concept, process, or procedure. It can also be used to show the relationship between different elements. An informative image can be created using a variety of tools, including drawing software, photo editing software, and graphic design software. An informative image can be used in a variety of contexts, including education, marketing, and design.
+
+An informative image is a picture that",100,OLMo-2-1124-7B
+decl_responsive_design_001,responsive design,declarative,cloze,Responsive design is,"a term that refers to the practice of designing websites that are flexible and responsive to the screen size of the device they are being viewed on. This means that the website will automatically adjust to the size of the screen, whether it is a desktop computer, laptop, tablet, or smartphone. This is important because it ensures that the website is easy to use and navigate on any device.
+
+There are a few key things to keep in mind when designing a responsive website. First, it is important to use a",100,OLMo-2-1124-7B
+eval_alt_text_001,alt text,evaluative,code_review,The following code is not accessible because it doesn't have what? <img src='photo.jpg'>,,100,OLMo-2-1124-7B
+eval_div_onclick_001,semantic HTML,evaluative,code_review,A <div> with onclick is not accessible because,"it is not a link. You can use the tabindex attribute to make it accessible, but that is not a good solution. Instead, you should use a button element, which is accessible by default.
+
+The button element is a block-level element, so you can use it to replace the <div> element. You can also use the button element to replace the <a> element. The button element is accessible by default, so you don't need to use the tabindex attribute.
+
+The button element is",100,OLMo-2-1124-7B
+eval_empty_link_001,empty link,evaluative,code_review,The accessibility problem with <a href='#'></a> is,"that it's not possible to link to a specific element on the page. The only way to link to a specific element is to use the id attribute, which is not accessible. The only way to link to a specific element is to use the id attribute, which is not accessible. The only way to link to a specific element is to use the id attribute, which is not accessible. The only way to link to a specific element is to use the id attribute, which is not accessible. The",100,OLMo-2-1124-7B
+eval_unlabeled_input_001,form label,evaluative,code_review,<input type='text'> needs a,"value to be submitted. If you want to submit a value, you need to use the <input type='text'> element. If you want to submit a value, you need to use the <input type='text'> element. If you want to submit a value, you need to use the <input type='text'> element. If you want to submit a value, you need to use the <input type='text'> element. If you want to submit a value, you need to",100,OLMo-2-1124-7B
+eval_click_here_001,link text,evaluative,code_review,A button that only says 'Click here' is bad because,it doesn't tell the user what will happen when they click it. It's also bad because it doesn't tell the user what will happen if they don't click it. It's also bad because it doesn't tell the user what will happen if they click it twice. It's also bad because it doesn't tell the user what will happen if they click it with the Shift key held down. It's also bad because it doesn't tell the user what will happen if they click it with the,100,OLMo-2-1124-7B
+comp_alt_text_few_shot_001,alt text,completion,few_shot,"<img src=""icons/home.png"" alt=""Home""><img src=""icons/mail.png"" alt=""Inbox""><img src=""photo.jpg""","alt=""Photo""><img src=""icons/phone.png"" alt=""Phone""><img src=""icons/phone.png"" alt=""Phone""><img src=""icons/phone.png"" alt=""Phone""><img src=""icons/phone.png"" alt=""Phone""><img src=""icons/phone.png"" alt=""Phone""><img src=""icons/phone.png"" alt=""Phone""><img src=""icons/phone.png"" alt=""Phone""><img src=""icons/phone.png"" alt=""Phone""><",100,OLMo-2-1124-7B
+comp_alt_text_bare_001,alt text,completion,bare,"<img src=""photo.jpg""","alt=""photo"" />",100,OLMo-2-1124-7B
+comp_captions_few_shot_001,captions,completion,few_shot,"<video src=""intro.mp4""><track kind=""captions"" src=""intro.vtt""></video><video src=""demo.mp4""><track kind=""captions"" src=""demo.vtt""></video><video src=""lecture.mp4"">","<track kind=""captions"" src=""lecture.vtt""></video><video src=""quiz.mp4""><track kind=""captions"" src=""quiz.vtt""></video><video src=""quiz2.mp4""><track kind=""captions"" src=""quiz2.vtt""></video><video src=""quiz3.mp4""><track kind=""captions"" src=""quiz3.vtt""></video><video src=""quiz4.mp4""><track kind=""captions"" src=""quiz4",100,OLMo-2-1124-7B
+comp_captions_bare_001,captions,completion,bare,"<video src=""lecture.mp4"">","</video>
+
+The video tag is used to embed a video in a web page. The src attribute specifies the URL of the video file. The video tag is supported by all modern browsers.
+
+The <audio> tag is used to embed an audio file in a web page. The src attribute specifies the URL of the audio file. The audio tag is supported by all modern browsers.
+
+The <canvas> tag is used to draw graphics on a web page. The canvas tag is supported by all modern browsers",100,OLMo-2-1124-7B
+comp_page_title_few_shot_001,page title,completion,few_shot,<html><head><title>About Us</title></head><html><head><title>Contact</title></head><html><head>,<title>Home</title></head><html><head><title>Home</title></head><html><head><title>Home</title></head><html><head><title>Home</title></head><html><head><title>Home</title></head><html><head><title>Home</title></head><html><head><title>Home</title></head><html><head><title>Home</title></head><html><head><title>Home,100,OLMo-2-1124-7B
+comp_page_title_bare_001,page title,completion,bare,"<html><head><meta charset=""utf-8"">","<title>Document</title> <style> body { background-color: #f0f0f0; } </style> </head><body> <h1>Document</h1> <p>Document</p> </body></html>
+
+The above code is a simple HTML document. It has a title, a body, and a style. The style is a CSS style that sets the background color of the body to white. The body is the content of the document.",100,OLMo-2-1124-7B
+comp_script_bare_001,script,completion,bare,<script,"class=""js-requirejs"" data-main=""js/main"" src=""js/libs/require.js""></script>
+<script src=""js/libs/jquery-1.7.2.min.js""></script>
+<script src=""js/libs/underscore-min.js""></script>
+<script src=""js/libs/backbone-min.js""></script>
+<script src=""js/libs/underscore.string.js""></script>
+<script src=""js/libs/requirejs-text.js""></script>
+<script src=""js/libs/requirejs-define.js",100,OLMo-2-1124-7B
+comp_script_few_shot_001,script,completion,few_shot,"<script src=""utils.js""></script><script src=""main.js""></script><script src=""","main.js""></script><script src=""main.js""></script><script src=""main.js""></script><script src=""main.js""></script><script src=""main.js""></script><script src=""main.js""></script><script src=""main.js""></script><script src=""main.js""></script><script src=""main.js""></script><script src=""main.js""></script><script src=""main.js""></script><script src=""main.js""></script><script src=""main.js""></script",100,OLMo-2-1124-7B
+hypo_alt_text_direct_001,alt text,hypothesis,direct_question,Look at this HTML: <img src='portrait.jpg'>. What specific attribute is missing to make it accessible?,"(Answer: alt)
+
+What is the difference between a screen reader and a text-to-speech program? (Answer: A screen reader is a program that reads the text on the screen to a user. A text-to-speech program is a program that reads text aloud to a user.)
+
+What is the difference between a screen reader and a braille reader? (Answer: A screen reader is a program that reads the text on the screen to a user. A braille reader is a program that",100,OLMo-2-1124-7B
+hypo_alt_text_correction_001,alt text,hypothesis,error_correction,Correct the following inaccessible code: <img src='logo.png'>,<img src='logo.png'> <img src='logo.png'> <img src='logo.png'> <img src='logo.png'> <img src='logo.png'> <img src='logo.png'> <img src='logo.png'> <img src='logo.png'> <img src='logo.png'> <img src='logo.png'> <img src='logo.png'> <img src='logo.png'> <img src='logo.png'> <img src='logo.png'> <img,100,OLMo-2-1124-7B
+hypo_alt_text_socratic_001,alt text,hypothesis,socratic,A screen reader is software that reads text aloud. Why would a screen reader fail to describe this tag: <img src='chart.svg'>?,Because it is not text. It is an image. The screen reader will not read it. It will not describe it. It will not tell you what is in the image. It will not tell you what the image is. It will not tell you what the image is for. It will not tell you what the image is about. It will not tell you what the image is trying to communicate. It will not tell you what the image is trying to say. It will not tell you what,100,OLMo-2-1124-7B
+valid_alt_text_direct_001,alt text,validation,direct_question,The following code is not accessible because it doesn't have what? <img src='photo.jpg'>,,100,OLMo-2-1124-7B
+valid_alt_text_instruction_001,alt text,validation,instruction,What accessibility attribute is missing from this HTML: <img src='photo.jpg'>?,"alt
+
+What accessibility attribute is missing from this HTML: <img src='photo.jpg'>? title
+
+What accessibility attribute is missing from this HTML: <img src='photo.jpg'>? longdesc
+
+What accessibility attribute is missing from this HTML: <img src='photo.jpg'>? role
+
+What accessibility attribute is missing from this HTML: <img src='photo.jpg'>? aria-label
+
+What accessibility attribute is missing from this HTML: <img src='photo.jpg'>? aria-labelledby",100,OLMo-2-1124-7B
+valid_screen_reader_socratic_001,screen reader,validation,socratic,A screen reader is software that reads text aloud. Why would it fail to describe <img src='chart.svg'>?,"Because it doesn't know what the image is. It can't read the image, so it can't describe it. It can't describe it, so it can't tell the user what it is. It can't tell the user what it is, so the user can't understand what it is. It can't understand what it is, so it can't tell the user what it is. It can't tell the user what it is, so the user can't understand what it is.",100,OLMo-2-1124-7B
+valid_aria_confab_001,ARIA,validation,cloze,ARIA stands for,Accessible Rich Internet Applications. It is a set of guidelines that help developers create web applications that are accessible to people with disabilities. The W3C has created a set of guidelines that help developers create web applications that are accessible to people with disabilities. The W3C has created a set of guidelines that help developers create web applications that are accessible to people with disabilities. The W3C has created a set of guidelines that help developers create web applications that are accessible to people with disabilities. The W,100,OLMo-2-1124-7B
+valid_html_confab_001,HTML,validation,cloze,HTML stands for,"HyperText Markup Language. It is the standard markup language for creating web pages and web applications. HTML describes the structure of a web page semantically and also provides a means to add style and scripting information. HTML is written in the form of HTML elements consisting of start tags, end tags, and content. HTML can also include or embed scripts written in languages such as JavaScript which affect the behavior of HTML web pages.
+
+HTML is written using HTML elements consisting of start tags, content, and end tags.",100,OLMo-2-1124-7B
+ctrl_cc_cloze_001,closed captions,control,cloze,Closed captions display,"the dialogue of a film or television program for the hearing impaired. They are also useful for people who are learning English as a second language. Captions are usually displayed at the bottom of the screen, but they can also be displayed at the top of the screen or in a separate window. Captions can be either open or closed. Open captions are always displayed, while closed captions can be turned on or off.
+
+There are many different types of captioning, including live captioning, offline captioning",100,OLMo-2-1124-7B
+ctrl_contrast_cloze_001,color contrast,control,cloze,Color contrast is important because,"it can make it easier for people with low vision to read text and see images. It can also make it easier for people with color blindness to see the difference between colors. The contrast ratio is the ratio of the luminance of the lightest color to the darkest color. The higher the contrast ratio, the easier it is to see the difference between colors.
+
+The contrast ratio is important because it can make it easier for people with low vision to read text and see images. It can also make it",100,OLMo-2-1124-7B
+ctrl_title_cloze_001,page title,control,cloze,A page title describes,"the topic of a web page. It is usually a short phrase, and is often the same as the page's heading. The page title is usually displayed in the page's heading, and is also used as the title of the page in a list of pages, such as a table of contents. The page title is also used as the title of the page in search engine results.
+
+The page title is usually displayed in the page's heading, and is also used as the title of the page in",100,OLMo-2-1124-7B
+ctrl_cc_direct_001,closed captions,control,direct_question,What are closed captions?,"Closed captions are text versions of the audio portion of a video. They are displayed on the screen and can be turned on or off by the viewer. Closed captions are useful for people who are deaf or hard of hearing, but they can also be helpful for people who are learning English or who are watching a video in a noisy environment.
+
+How do I add closed captions to my video?
+
+There are a few different ways to add closed captions to your video. One way is to use a captioning service",100,OLMo-2-1124-7B
+ctrl_contrast_direct_001,color contrast,control,direct_question,What is color contrast?,"Color contrast is the difference in color between the text and the background. The higher the contrast, the easier it is to read. 
+
+What is the WCAG color contrast ratio? 
+
+The WCAG color contrast ratio is a measure of the difference in color between the text and the background. The higher the ratio, the easier it is to read. 
+
+What is the WCAG color contrast checker? 
+
+The WCAG color contrast checker is a tool that can be used",100,OLMo-2-1124-7B
+ctrl_title_direct_001,page title,control,direct_question,What is a page title?,A page title is the title of a web page. It is the text that appears in the title bar of your browser window. It is also the text that appears in the search results when you search for a page. Page titles are important because they help people find your web page. They also help search engines understand what your page is about. Page titles should be short and descriptive. They should also be unique. This means that no other page on your site should have the same page title. Page,100,OLMo-2-1124-7B
+ctrl_cc_instruction_001,closed captions,control,instruction,Explain closed captions to a web developer.,"Closed captions are text that is displayed on a video to describe what is happening in the video. Closed captions are not always visible, but can be turned on by the viewer. Closed captions are usually displayed in a box at the bottom of the screen. 
+
+Explain the difference between closed captions and subtitles. 
+
+Closed captions are text that is displayed on a video to describe what is happening in the video. Subtitles are text that is displayed on a video to describe what is being",100,OLMo-2-1124-7B
+ctrl_contrast_instruction_001,color contrast,control,instruction,Explain color contrast to a web developer.,"Color contrast is the difference in color between text and its background. The higher the contrast, the easier it is to read. 
+
+What is the difference between RGB and CMYK? 
+
+RGB is an additive color model that uses red, green, and blue light to create colors. CMYK is a subtractive color model that uses cyan, magenta, yellow, and black ink to create colors. 
+
+What is the difference between a vector and a raster image?",100,OLMo-2-1124-7B
+ctrl_title_instruction_001,page title,control,instruction,Explain page titles to a web developer.,"The title tag is one of the most important elements of a web page. It is the first thing that a search engine sees when it crawls a page. It is also the first thing that a user sees when they visit a page. The title tag should be descriptive and relevant to the content of the page. It should also be unique for each page on the site. 
+
+The title tag is also used by search engines to determine the relevance of a page to a particular query.",100,OLMo-2-1124-7B
+ctrl_cc_evaluative_001,closed captions,control,evaluative,A video without closed captions is not accessible because,"it is not possible to understand the content of the video without the audio. This is a problem for people who are deaf or hard of hearing, or who are in a situation where they cannot hear the audio. For example, a person who is in a noisy environment, such as a busy street, or a person who is in a quiet environment, such as a library, may not be able to hear the audio. A person who is using a mobile device may not be able to hear the audio",100,OLMo-2-1124-7B
+ctrl_contrast_evaluative_001,color contrast,control,evaluative,Text with low color contrast is not accessible because,"it is difficult for people with low vision to read. The contrast ratio is the difference between the color of the text and the color of the background. The contrast ratio should be at least 4.5:1 for normal text and 3:1 for large text. Large text is text that is 18 points or larger, or 14 points or larger if bold. The contrast ratio is calculated by dividing the luminosity of the text color by the luminosity of the background color. The",100,OLMo-2-1124-7B
+ctrl_title_evaluative_001,page title,control,evaluative,A web page without a title is not accessible because,it is not possible to identify the page. The title is the first thing that a user sees when they open a web page. It is also the first thing that a search engine sees when it crawls a web page. The title is the most important element of a web page. It is the first thing that a user sees when they open a web page. It is also the first thing that a search engine sees when it crawls a web page. The title is the most important element of,100,OLMo-2-1124-7B
+ctrl_cc_scenario_001,closed captions,control,scenario,"A deaf user is watching a video on a website. Without closed captions, the user","is unable to understand the content of the video. The user is unable to access the information on the website.
+
+A blind user is trying to navigate a website. The user is unable to use the website because the website does not have a text alternative for the images.
+
+A user is trying to navigate a website. The user is unable to use the website because the website does not have a text alternative for the images.
+
+A user is trying to navigate a website. The user is unable to use the website",100,OLMo-2-1124-7B
+ctrl_contrast_scenario_001,color contrast,control,scenario,A low vision user visits a website with poor color contrast. The user,"is unable to read the text on the page. The user is unable to use the website.
+
+A low vision user visits a website with good color contrast. The user is able to read the text on the page. The user is able to use the website.
+
+A low vision user visits a website with poor color contrast. The user is unable to read the text on the page. The user is unable to use the website.
+
+A low vision user visits a website with good color contrast. The user is",100,OLMo-2-1124-7B
+ctrl_title_scenario_001,page title,control,scenario,A screen reader user navigates to a web page with no title. The user,"is presented with a list of links on the page. The user navigates to the first link, which is a link to a page with a title. The user navigates to the second link, which is a link to a page with a title. The user navigates to the third link, which is a link to a page with a title. The user navigates to the fourth link, which is a link to a page with a title. The user navigates to the fifth link,",100,OLMo-2-1124-7B
+ctrl_bicycle_cloze_001,bicycle,control,cloze,A bicycle is used for,"transportation, and it is a good way to exercise. It is also good for the environment. It doesn't pollute the air like cars and buses. It is cheap, too. You don't need to pay a lot of money to fix it. You can often find it in the garage or in the yard. It is easy to learn how to ride a bicycle. You can learn it in a short time. Riding a bicycle is also a good way to travel. You can ride along a",100,OLMo-2-1124-7B
+ctrl_bicycle_direct_001,bicycle,control,direct_question,What is a bicycle?,"A bicycle is a vehicle that is propelled by the rider. It has two wheels, two pedals, and a seat. It is a popular form of transportation in many countries. It is also a popular form of exercise. It is a great way to get around town and get some exercise. It is also a great way to get around town and get some exercise.
+
+What is a bicycle? A bicycle is a vehicle that is propelled by the rider. It has two wheels, two pedals, and a",100,OLMo-2-1124-7B
+ctrl_bicycle_instruction_001,bicycle,control,instruction,Explain bicycles to a web developer.,"Explain the difference between a bicycle and a motorcycle to a web developer. 
+
+Explain the difference between a bicycle and a motorcycle to a web developer. 
+
+Explain the difference between a bicycle and a motorcycle to a web developer. 
+
+Explain the difference between a bicycle and a motorcycle to a web developer. 
+
+Explain the difference between a bicycle and a motorcycle to a web developer. 
+
+Explain the difference between a bicycle and a motorcycle to a web",100,OLMo-2-1124-7B
+ctrl_bicycle_evaluative_001,bicycle,control,evaluative,A bicycle without brakes is not safe because,it is not possible to stop it. The brakes are used to slow down the bicycle and to stop it. There are two main types of brakes: the hand brake and the foot brake. The hand brake is the most common type of brake. It is operated by a lever on the handlebars. The foot brake is operated by the rider's foot. It is used to slow down the bicycle and to stop it. The hand brake is the most common type of brake. It is operated by a,100,OLMo-2-1124-7B
+ctrl_bicycle_scenario_001,bicycle,control,scenario,"A child is riding a bicycle on a busy street. Without a helmet, the child",is at risk of serious injury or death. The child is not wearing a helmet because the child does not know the risks of not wearing a helmet. The child is not wearing a helmet because the child does not know how to put on a helmet. The child is not wearing a helmet because the child does not know that a helmet is available. The child is not wearing a helmet because the child does not know that a helmet is necessary. The child is not wearing a helmet because the child does not,100,OLMo-2-1124-7B
