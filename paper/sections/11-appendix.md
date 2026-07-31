@@ -1,9 +1,3 @@
-<!-- REBUILD DRAFT · Fable · 2026-07-11 · created per adjudication #3 ("03 appendix cuts" ruled Cut) -->
-<!-- Sources: material demoted from 03-binding-not-causal.md; blessed prose carried near-verbatim, no new numbers introduced. -->
-<!-- ⚠️ CC number-audit at promotion: the A.1 table is a PLACEHOLDER — populate from the head-audit results, do not hand-enter. All prose numbers here are category (b) carried-unchanged from 03 and should be verified with the rest. -->
-<!-- ⚠️ Build: this file is not yet in build-paper.sh SECTION_FILES — wire in at promotion alongside the renumbering commit. -->
-<!-- Style contract: one line per paragraph. -->
-
 ## Appendix A: Binding Audit Detail
 
 ### A.1 Per-head diagnostics

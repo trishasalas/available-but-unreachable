@@ -1,5 +1,3 @@
-\newpage
-
 ## Colophon
 
 This paper is set in Atkinson Hyperlegible Regular, a typeface designed
