@@ -1,0 +1,7 @@
+suite,control,partial_rho,raw_rho,n_compounds
+OLMo-2-0425-1B,compound_token_count,0.3427,0.3288,49
+OLMo-2-0425-1B,word1_unigram_count,0.3234,0.3288,49
+OLMo-2-1124-7B,compound_token_count,0.4423,0.4546,49
+OLMo-2-1124-7B,word1_unigram_count,0.4296,0.4546,49
+OLMo-2-1124-13B,compound_token_count,0.5197,0.5088,49
+OLMo-2-1124-13B,word1_unigram_count,0.5334,0.5088,49
