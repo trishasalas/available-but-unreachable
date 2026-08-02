@@ -70,8 +70,15 @@ def run_all_prompts(model, model_name, project_root, prompts_file='all_prompts.y
 
     # Save per-model CSV
     short_name = model_name.split('/')[-1]
-    suite = 'pythia' if 'pythia' in short_name else 'gpt2'
-    output_dir = Path(project_root) / 'results' / suite
+    
+    if 'pythia' in short_name.lower():
+      suite = 'pythia'
+    elif 'olmo' in short_name.lower():
+      suite = 'olmo'
+    else:
+      suite = 'gpt2'
+    
+    output_dir = Path(project_root) / 'results' / 'elicitation' / suite
     output_dir.mkdir(parents=True, exist_ok=True)
     run_name = f'{short_name}-{tag}-results.csv' if tag else f'{short_name}-results.csv'
     output_path = output_dir / run_name
