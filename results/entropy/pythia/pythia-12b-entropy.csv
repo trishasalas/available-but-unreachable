@@ -1,0 +1,93 @@
+prompt_id,concept,prompt_type,template_type,prompt,n_tokens,mean_entropy,last_token_entropy,max_entropy,min_entropy,model
+decl_screen_reader_001,screen reader,declarative,cloze,A screen reader is,5,4.4738,1.3733,7.77,1.3733,pythia-12b
+decl_wcag_001,WCAG,declarative,cloze,WCAG stands for,5,3.5155,1.35,6.6114,0.1365,pythia-12b
+decl_skip_link_001,skip link,declarative,cloze,A skip link is,5,4.6209,1.8158,7.77,1.8158,pythia-12b
+decl_alt_text_001,alt text,declarative,cloze,The purpose of alt text is,7,3.0168,1.308,7.4108,0.1203,pythia-12b
+decl_aria_001,ARIA,declarative,cloze,ARIA stands for,5,4.2446,4.9313,6.6114,1.5079,pythia-12b
+decl_focus_indicator_001,focus indicator,declarative,cloze,A focus indicator is,5,4.5108,3.1525,7.77,1.4742,pythia-12b
+decl_keyboard_nav_001,keyboard navigation,declarative,cloze,Keyboard navigation allows,5,4.5174,2.0256,6.6114,2.0256,pythia-12b
+decl_color_contrast_001,color contrast,declarative,cloze,Color contrast is important because,6,3.8689,2.7341,6.6114,1.8097,pythia-12b
+decl_semantic_html_001,semantic HTML,declarative,cloze,Semantic HTML helps,5,4.5977,3.4847,6.6114,2.5037,pythia-12b
+decl_captions_001,closed captions,declarative,cloze,Closed captions are used for,7,4.0159,4.4882,6.6114,0.4796,pythia-12b
+decl_keyboard_interaction_001,keyboard interaction,declarative,cloze,A keyboard interaction is,5,5.338,3.4771,7.77,3.4771,pythia-12b
+decl_section_heading_001,section heading,declarative,cloze,A section heading is,5,4.6849,3.917,7.77,0.8032,pythia-12b
+decl_text_alternative_001,text alternative,declarative,cloze,A text alternative is,5,4.9721,2.7914,7.77,2.7914,pythia-12b
+decl_audio_description_001,audio description,declarative,cloze,An audio description is,5,4.6618,1.8762,6.8072,1.8762,pythia-12b
+decl_sign_language_001,sign language,declarative,cloze,Sign language is,4,4.3969,3.7158,6.6114,2.2783,pythia-12b
+decl_sensory_characteristics_001,sensory characteristics,declarative,cloze,Sensory characteristics are,5,4.9388,4.9452,6.6114,1.2155,pythia-12b
+decl_input_purpose_001,input purpose,declarative,cloze,An input purpose is,5,5.1647,4.0128,6.8072,3.51,pythia-12b
+decl_target_size_001,target size,declarative,cloze,A target size is,5,5.7093,3.9449,7.77,3.9449,pythia-12b
+decl_touch_target_001,touch target,declarative,cloze,A touch target is,5,5.054,3.7759,7.77,2.7473,pythia-12b
+decl_drag_movement_001,drag movement,declarative,cloze,A drag movement is,5,5.2986,3.786,7.77,3.2026,pythia-12b
+decl_focus_appearance_001,focus appearance,declarative,cloze,A focus appearance is,5,4.7118,2.6127,7.77,1.4742,pythia-12b
+decl_consistent_help_001,consistent help,declarative,cloze,Consistent help is,5,5.0147,4.5795,6.9425,2.9772,pythia-12b
+decl_redundant_entry_001,redundant entry,declarative,cloze,A redundant entry is,5,5.6854,3.11,7.77,3.11,pythia-12b
+decl_accessible_authentication_001,accessible authentication,declarative,cloze,Accessible authentication is,5,5.0316,3.3915,7.4535,3.3915,pythia-12b
+decl_text_spacing_001,text spacing,declarative,cloze,Text spacing is,4,4.6089,4.1727,6.6114,3.5836,pythia-12b
+decl_status_message_001,status message,declarative,cloze,A status message is,5,5.3071,3.4554,7.77,3.4554,pythia-12b
+decl_error_identification_001,error identification,declarative,cloze,Error identification is,4,4.2132,3.4182,6.6114,2.8216,pythia-12b
+decl_pointer_cancellation_001,pointer cancellation,declarative,cloze,Pointer cancellation is,4,4.7989,2.6363,6.6114,2.6363,pythia-12b
+decl_character_key_001,character key,declarative,cloze,A character key is,5,5.43,2.8369,7.77,2.8369,pythia-12b
+decl_accessibility_tree_001,accessibility tree,declarative,cloze,An accessibility tree is,5,4.9018,1.843,6.8072,1.843,pythia-12b
+decl_accessible_name_001,accessible name,declarative,cloze,An accessible name is,5,5.5635,3.7949,6.8072,3.7949,pythia-12b
+decl_accessible_description_001,accessible description,declarative,cloze,An accessible description is,5,4.9594,4.3537,6.8072,0.5656,pythia-12b
+decl_live_region_001,live region,declarative,cloze,A live region is,5,5.3604,2.6754,7.77,2.6754,pythia-12b
+decl_tab_panel_001,tab panel,declarative,cloze,A tab panel is,5,5.1525,3.238,7.77,3.238,pythia-12b
+decl_radio_group_001,radio group,declarative,cloze,A radio group is,5,5.8163,5.4184,7.77,3.9533,pythia-12b
+decl_tree_grid_001,tree grid,declarative,cloze,A tree grid is,5,5.1794,1.8327,7.77,1.8327,pythia-12b
+decl_menu_bar_001,menu bar,declarative,cloze,A menu bar is,5,5.1984,3.1538,7.77,3.1538,pythia-12b
+decl_tool_tip_001,tool tip,declarative,cloze,A tool tip is,5,4.7303,2.2669,7.77,2.2669,pythia-12b
+decl_combo_box_001,combo box,declarative,cloze,A combo box is,5,4.8956,2.105,7.77,2.105,pythia-12b
+decl_semantic_markup_001,semantic markup,declarative,cloze,Semantic markup is,5,4.626,3.9824,6.6114,2.5037,pythia-12b
+decl_focus_management_001,focus management,declarative,cloze,Focus management is,4,4.4185,3.3701,6.6114,3.3701,pythia-12b
+decl_reading_order_001,reading order,declarative,cloze,Reading order is,4,5.027,5.0938,6.6114,3.2942,pythia-12b
+decl_text_formatting_001,text formatting,declarative,cloze,Text formatting is,4,4.5538,3.7671,6.6114,3.7671,pythia-12b
+decl_form_field_001,form field,declarative,cloze,A form field is,5,4.7656,3.0342,7.77,2.1374,pythia-12b
+decl_landmark_region_001,landmark region,declarative,cloze,A landmark region is,5,5.6432,4.7286,7.77,3.2042,pythia-12b
+decl_low_vision_001,low vision,declarative,cloze,Low vision is,4,4.622,2.7832,6.6114,2.7832,pythia-12b
+decl_cognitive_disabilities_001,cognitive disabilities,declarative,cloze,Cognitive disabilities are,5,5.0032,4.0614,6.6114,3.0441,pythia-12b
+decl_universal_design_001,universal design,declarative,cloze,Universal design is,4,5.2432,3.4716,7.3463,3.4716,pythia-12b
+decl_decorative_image_001,decorative image,declarative,cloze,A decorative image is,5,5.9547,4.2289,7.77,4.2289,pythia-12b
+decl_informative_image_001,informative image,declarative,cloze,An informative image is,5,5.6084,4.3547,6.8072,4.3547,pythia-12b
+decl_responsive_design_001,responsive design,declarative,cloze,Responsive design is,6,3.7344,3.9178,6.6114,0.237,pythia-12b
+eval_alt_text_001,alt text,evaluative,code_review,The following code is not accessible because it doesn't have what? <img src='photo.jpg'>,22,3.6584,4.8197,7.4108,0.4257,pythia-12b
+eval_div_onclick_001,semantic HTML,evaluative,code_review,A <div> with onclick is not accessible because,11,4.2592,2.5488,7.77,1.2716,pythia-12b
+eval_empty_link_001,empty link,evaluative,code_review,The accessibility problem with <a href='#'></a> is,14,3.3625,3.2698,7.4108,0.0593,pythia-12b
+eval_unlabeled_input_001,form label,evaluative,code_review,<input type='text'> needs a,9,2.8002,5.0656,6.6114,0.109,pythia-12b
+eval_click_here_001,link text,evaluative,code_review,A button that only says 'Click here' is bad because,13,4.5403,3.0511,7.77,1.3709,pythia-12b
+comp_alt_text_few_shot_001,alt text,completion,few_shot,"<img src=""icons/home.png"" alt=""Home""><img src=""icons/mail.png"" alt=""Inbox""><img src=""photo.jpg""",36,1.4301,0.1572,7.0911,0.0074,pythia-12b
+comp_alt_text_bare_001,alt text,completion,bare,"<img src=""photo.jpg""",9,2.5993,1.9623,6.6114,0.9652,pythia-12b
+comp_captions_few_shot_001,captions,completion,few_shot,"<video src=""intro.mp4""><track kind=""captions"" src=""intro.vtt""></video><video src=""demo.mp4""><track kind=""captions"" src=""demo.vtt""></video><video src=""lecture.mp4"">",57,1.1309,3.4265,6.671,0.0005,pythia-12b
+comp_captions_bare_001,captions,completion,bare,"<video src=""lecture.mp4"">",11,2.3171,2.0613,6.6114,0.0353,pythia-12b
+comp_page_title_few_shot_001,page title,completion,few_shot,<html><head><title>About Us</title></head><html><head><title>Contact</title></head><html><head>,31,1.5757,3.2135,6.9449,0.0032,pythia-12b
+comp_page_title_bare_001,page title,completion,bare,"<html><head><meta charset=""utf-8"">",13,1.4086,0.6605,6.6114,0.0004,pythia-12b
+comp_script_bare_001,script,completion,bare,<script,3,4.2019,1.3222,6.6114,1.3222,pythia-12b
+comp_script_few_shot_001,script,completion,few_shot,"<script src=""utils.js""></script><script src=""main.js""></script><script src=""",23,1.6753,7.1358,7.1358,0.0013,pythia-12b
+hypo_alt_text_direct_001,alt text,hypothesis,direct_question,Look at this HTML: <img src='portrait.jpg'>. What specific attribute is missing to make it accessible?,26,3.0636,4.1286,6.6114,0.848,pythia-12b
+hypo_alt_text_correction_001,alt text,hypothesis,error_correction,Correct the following inaccessible code: <img src='logo.png'>,15,3.8045,3.5202,6.8977,0.9605,pythia-12b
+hypo_alt_text_socratic_001,alt text,hypothesis,socratic,A screen reader is software that reads text aloud. Why would a screen reader fail to describe this tag: <img src='chart.svg'>?,31,3.0391,3.0463,7.77,0.1142,pythia-12b
+valid_alt_text_direct_001,alt text,validation,direct_question,The following code is not accessible because it doesn't have what? <img src='photo.jpg'>,22,3.6584,4.8197,7.4108,0.4257,pythia-12b
+valid_alt_text_instruction_001,alt text,validation,instruction,What accessibility attribute is missing from this HTML: <img src='photo.jpg'>?,19,3.0926,2.4735,6.6114,0.7241,pythia-12b
+valid_screen_reader_socratic_001,screen reader,validation,socratic,A screen reader is software that reads text aloud. Why would it fail to describe <img src='chart.svg'>?,26,2.9826,3.1877,7.77,1.2184,pythia-12b
+valid_aria_confab_001,ARIA,validation,cloze,ARIA stands for,5,4.2446,4.9313,6.6114,1.5079,pythia-12b
+valid_html_confab_001,HTML,validation,cloze,HTML stands for,4,2.9731,0.8234,6.6114,0.151,pythia-12b
+ctrl_cc_cloze_001,closed captions,control,cloze,Closed captions display,5,4.3416,5.1821,6.6114,0.4796,pythia-12b
+ctrl_contrast_cloze_001,color contrast,control,cloze,Color contrast is important because,6,3.8689,2.7341,6.6114,1.8097,pythia-12b
+ctrl_title_cloze_001,page title,control,cloze,A page title describes,5,4.9235,2.618,7.77,2.618,pythia-12b
+ctrl_cc_direct_001,closed captions,control,direct_question,What are closed captions?,7,3.2476,1.2869,6.6114,0.0968,pythia-12b
+ctrl_contrast_direct_001,color contrast,control,direct_question,What is color contrast?,6,3.9528,1.9341,6.6114,1.886,pythia-12b
+ctrl_title_direct_001,page title,control,direct_question,What is a page title?,7,4.5383,1.491,8.1684,1.4465,pythia-12b
+ctrl_cc_instruction_001,closed captions,control,instruction,Explain closed captions to a web developer.,11,3.7183,2.3404,6.6114,0.1011,pythia-12b
+ctrl_contrast_instruction_001,color contrast,control,instruction,Explain color contrast to a web developer.,10,3.9266,2.1136,6.6114,1.9304,pythia-12b
+ctrl_title_instruction_001,page title,control,instruction,Explain page titles to a web developer.,10,4.0607,2.0191,6.6114,2.0191,pythia-12b
+ctrl_cc_evaluative_001,closed captions,control,evaluative,A video without closed captions is not accessible because,11,3.5697,2.2275,7.77,0.0251,pythia-12b
+ctrl_contrast_evaluative_001,color contrast,control,evaluative,Text with low color contrast is not accessible because,10,4.4848,2.7923,7.2568,2.3003,pythia-12b
+ctrl_title_evaluative_001,page title,control,evaluative,A web page without a title is not accessible because,11,4.4148,3.4163,7.77,2.4618,pythia-12b
+ctrl_cc_scenario_001,closed captions,control,scenario,"A deaf user is watching a video on a website. Without closed captions, the user",19,3.6742,3.519,7.77,0.0642,pythia-12b
+ctrl_contrast_scenario_001,color contrast,control,scenario,A low vision user visits a website with poor color contrast. The user,15,4.1685,4.4348,7.77,2.3829,pythia-12b
+ctrl_title_scenario_001,page title,control,scenario,A screen reader user navigates to a web page with no title. The user,17,3.7147,4.1702,7.77,0.0184,pythia-12b
+ctrl_bicycle_cloze_001,bicycle,control,cloze,A bicycle is used for,6,4.7971,3.8383,7.77,2.2354,pythia-12b
+ctrl_bicycle_direct_001,bicycle,control,direct_question,What is a bicycle?,6,5.4387,3.2082,8.1684,3.2082,pythia-12b
+ctrl_bicycle_instruction_001,bicycle,control,instruction,Explain bicycles to a web developer.,10,3.7734,2.3919,6.6114,1.0246,pythia-12b
+ctrl_bicycle_evaluative_001,bicycle,control,evaluative,A bicycle without brakes is not safe because,9,4.1699,3.2007,7.77,2.0953,pythia-12b
+ctrl_bicycle_scenario_001,bicycle,control,scenario,"A child is riding a bicycle on a busy street. Without a helmet, the child",18,3.4941,2.6885,7.77,1.5393,pythia-12b
