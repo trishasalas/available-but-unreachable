@@ -1,8 +1,8 @@
 # Model data captured during Entropy Battery
 
-- Model name: pythia-410m
+- Model name: OLMo-2-0425-1B
 - Model dtype: torch.float32
-- Layers: 24
+- Layers: 16
 - Heads: 16
-- Hidden size: 1024
-- Params: 405.3M
+- Hidden size: 2048
+- Params: 1485.3M

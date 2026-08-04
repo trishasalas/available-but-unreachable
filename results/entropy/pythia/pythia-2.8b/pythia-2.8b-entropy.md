@@ -1,4 +1,5 @@
-# Model data captured during Elicitation/Entropy/Binding Battery
+# Model data captured during Entropy Battery
+
 - Model name: pythia-2.8b
 - Model dtype: torch.float32
 - Layers: 32

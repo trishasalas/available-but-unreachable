@@ -1,0 +1,93 @@
+prompt_id,concept,prompt_type,template_type,prompt,n_tokens,mean_entropy,last_token_entropy,max_entropy,min_entropy,model
+decl_screen_reader_001,screen reader,declarative,cloze,A screen reader is,5,4.6818,2.2262,7.7341,2.2262,gpt2-xl
+decl_wcag_001,WCAG,declarative,cloze,WCAG stands for,5,3.6972,2.3525,6.7633,0.1035,gpt2-xl
+decl_skip_link_001,skip link,declarative,cloze,A skip link is,5,5.2349,2.0913,7.7341,2.0913,gpt2-xl
+decl_alt_text_001,alt text,declarative,cloze,The purpose of alt text is,7,3.4492,1.3124,8.4116,0.1853,gpt2-xl
+decl_aria_001,ARIA,declarative,cloze,ARIA stands for,5,4.6388,4.7697,7.0066,0.1394,gpt2-xl
+decl_focus_indicator_001,focus indicator,declarative,cloze,A focus indicator is,5,4.4491,1.6629,7.7341,1.6253,gpt2-xl
+decl_keyboard_nav_001,keyboard navigation,declarative,cloze,Keyboard navigation allows,5,4.9472,2.2834,6.7633,2.2834,gpt2-xl
+decl_color_contrast_001,color contrast,declarative,cloze,Color contrast is important because,6,4.4625,3.3629,6.7633,2.3781,gpt2-xl
+decl_semantic_html_001,semantic HTML,declarative,cloze,Semantic HTML helps,5,5.0921,3.3411,6.7978,3.2046,gpt2-xl
+decl_captions_001,closed captions,declarative,cloze,Closed captions are used for,8,4.1994,5.3158,6.7633,0.0848,gpt2-xl
+decl_keyboard_interaction_001,keyboard interaction,declarative,cloze,A keyboard interaction is,5,5.8488,4.0733,7.7341,4.0733,gpt2-xl
+decl_section_heading_001,section heading,declarative,cloze,A section heading is,5,4.5745,3.815,7.7341,0.5806,gpt2-xl
+decl_text_alternative_001,text alternative,declarative,cloze,A text alternative is,5,4.6877,1.7823,7.7341,1.7823,gpt2-xl
+decl_audio_description_001,audio description,declarative,cloze,An audio description is,5,4.5983,2.4768,6.9793,2.4768,gpt2-xl
+decl_sign_language_001,sign language,declarative,cloze,Sign language is,4,4.2495,3.8493,6.7633,2.105,gpt2-xl
+decl_sensory_characteristics_001,sensory characteristics,declarative,cloze,Sensory characteristics are,6,5.1902,5.5937,6.9672,2.1497,gpt2-xl
+decl_input_purpose_001,input purpose,declarative,cloze,An input purpose is,5,5.3816,3.109,6.9793,3.109,gpt2-xl
+decl_target_size_001,target size,declarative,cloze,A target size is,5,5.0404,2.6419,7.7341,2.6336,gpt2-xl
+decl_touch_target_001,touch target,declarative,cloze,A touch target is,5,5.017,2.2062,7.7341,2.2062,gpt2-xl
+decl_drag_movement_001,drag movement,declarative,cloze,A drag movement is,5,5.3012,4.1682,7.7341,3.0079,gpt2-xl
+decl_focus_appearance_001,focus appearance,declarative,cloze,A focus appearance is,5,4.4519,3.2107,7.7341,1.6253,gpt2-xl
+decl_consistent_help_001,consistent help,declarative,cloze,Consistent help is,5,4.5996,4.4303,6.7633,3.2059,gpt2-xl
+decl_redundant_entry_001,redundant entry,declarative,cloze,A redundant entry is,5,5.9042,2.8076,8.0057,2.8076,gpt2-xl
+decl_accessible_authentication_001,accessible authentication,declarative,cloze,Accessible authentication is,5,5.2292,3.3944,7.227,3.3944,gpt2-xl
+decl_text_spacing_001,text spacing,declarative,cloze,Text spacing is,4,4.7951,3.8244,6.7633,3.8244,gpt2-xl
+decl_status_message_001,status message,declarative,cloze,A status message is,5,5.316,3.024,7.7341,3.024,gpt2-xl
+decl_error_identification_001,error identification,declarative,cloze,Error identification is,4,4.5354,3.7954,6.7633,3.704,gpt2-xl
+decl_pointer_cancellation_001,pointer cancellation,declarative,cloze,Pointer cancellation is,5,5.3388,3.5869,7.3117,3.5869,gpt2-xl
+decl_character_key_001,character key,declarative,cloze,A character key is,5,5.2661,1.9503,7.7341,1.9503,gpt2-xl
+decl_accessibility_tree_001,accessibility tree,declarative,cloze,An accessibility tree is,5,5.0459,1.8124,6.9793,1.8124,gpt2-xl
+decl_accessible_name_001,accessible name,declarative,cloze,An accessible name is,5,5.6143,3.859,6.9793,3.859,gpt2-xl
+decl_accessible_description_001,accessible description,declarative,cloze,An accessible description is,5,5.0124,4.5016,6.9793,0.7248,gpt2-xl
+decl_live_region_001,live region,declarative,cloze,A live region is,5,5.539,3.3036,7.7341,3.3036,gpt2-xl
+decl_tab_panel_001,tab panel,declarative,cloze,A tab panel is,5,4.8963,2.1006,7.7341,2.1006,gpt2-xl
+decl_radio_group_001,radio group,declarative,cloze,A radio group is,5,5.8943,5.7802,7.7341,4.2244,gpt2-xl
+decl_tree_grid_001,tree grid,declarative,cloze,A tree grid is,5,5.3017,2.3654,7.7341,2.3654,gpt2-xl
+decl_menu_bar_001,menu bar,declarative,cloze,A menu bar is,5,5.2503,2.5643,7.7341,2.5643,gpt2-xl
+decl_tool_tip_001,tool tip,declarative,cloze,A tool tip is,5,4.8929,2.2677,7.7341,2.2677,gpt2-xl
+decl_combo_box_001,combo box,declarative,cloze,A combo box is,5,4.6776,1.835,7.7341,1.835,gpt2-xl
+decl_semantic_markup_001,semantic markup,declarative,cloze,Semantic markup is,5,4.9322,3.6568,6.7978,3.2046,gpt2-xl
+decl_focus_management_001,focus management,declarative,cloze,Focus management is,4,4.7307,3.5674,6.7633,3.5674,gpt2-xl
+decl_reading_order_001,reading order,declarative,cloze,Reading order is,4,4.5987,4.4844,6.7633,3.1772,gpt2-xl
+decl_text_formatting_001,text formatting,declarative,cloze,Text formatting is,4,4.9952,4.4045,6.7633,4.2084,gpt2-xl
+decl_form_field_001,form field,declarative,cloze,A form field is,5,4.4446,2.1466,7.7341,1.4047,gpt2-xl
+decl_landmark_region_001,landmark region,declarative,cloze,A landmark region is,5,5.6298,4.9501,7.7341,2.9752,gpt2-xl
+decl_low_vision_001,low vision,declarative,cloze,Low vision is,4,4.9932,3.4712,6.7633,3.4712,gpt2-xl
+decl_cognitive_disabilities_001,cognitive disabilities,declarative,cloze,Cognitive disabilities are,5,5.5155,5.0341,6.7633,3.6487,gpt2-xl
+decl_universal_design_001,universal design,declarative,cloze,Universal design is,4,5.6787,3.9535,6.7633,3.9535,gpt2-xl
+decl_decorative_image_001,decorative image,declarative,cloze,A decorative image is,5,5.8586,4.4583,7.7341,2.7832,gpt2-xl
+decl_informative_image_001,informative image,declarative,cloze,An informative image is,5,5.6141,5.0546,6.9793,3.9796,gpt2-xl
+decl_responsive_design_001,responsive design,declarative,cloze,Responsive design is,6,3.8663,3.8835,6.7633,1.4309,gpt2-xl
+eval_alt_text_001,alt text,evaluative,code_review,The following code is not accessible because it doesn't have what? <img src='photo.jpg'>,22,3.0474,4.2471,8.4116,0.0111,gpt2-xl
+eval_div_onclick_001,semantic HTML,evaluative,code_review,A <div> with onclick is not accessible because,12,4.5821,2.6042,7.7341,1.6273,gpt2-xl
+eval_empty_link_001,empty link,evaluative,code_review,The accessibility problem with <a href='#'></a> is,15,3.6109,4.4938,8.4116,0.0251,gpt2-xl
+eval_unlabeled_input_001,form label,evaluative,code_review,<input type='text'> needs a,9,3.1662,5.9392,6.7633,0.1428,gpt2-xl
+eval_click_here_001,link text,evaluative,code_review,A button that only says 'Click here' is bad because,13,4.3796,2.5024,7.7341,1.595,gpt2-xl
+comp_alt_text_few_shot_001,alt text,completion,few_shot,"<img src=""icons/home.png"" alt=""Home""><img src=""icons/mail.png"" alt=""Inbox""><img src=""photo.jpg""",36,1.4137,0.0202,7.1812,0.0065,gpt2-xl
+comp_alt_text_bare_001,alt text,completion,bare,"<img src=""photo.jpg""",9,2.2735,1.4336,6.7633,0.4373,gpt2-xl
+comp_captions_few_shot_001,captions,completion,few_shot,"<video src=""intro.mp4""><track kind=""captions"" src=""intro.vtt""></video><video src=""demo.mp4""><track kind=""captions"" src=""demo.vtt""></video><video src=""lecture.mp4"">",61,1.2442,2.5383,6.7633,0.0003,gpt2-xl
+comp_captions_bare_001,captions,completion,bare,"<video src=""lecture.mp4"">",11,2.4626,2.2181,6.7633,0.4801,gpt2-xl
+comp_page_title_few_shot_001,page title,completion,few_shot,<html><head><title>About Us</title></head><html><head><title>Contact</title></head><html><head>,31,1.5858,4.2594,7.3231,0.0039,gpt2-xl
+comp_page_title_bare_001,page title,completion,bare,"<html><head><meta charset=""utf-8"">",14,1.4635,0.7286,6.7633,0.0032,gpt2-xl
+comp_script_bare_001,script,completion,bare,<script,3,4.4525,1.7485,6.7633,1.7485,gpt2-xl
+comp_script_few_shot_001,script,completion,few_shot,"<script src=""utils.js""></script><script src=""main.js""></script><script src=""",23,1.6331,6.5677,6.7633,0.023,gpt2-xl
+hypo_alt_text_direct_001,alt text,hypothesis,direct_question,Look at this HTML: <img src='portrait.jpg'>. What specific attribute is missing to make it accessible?,26,3.1072,3.9154,6.7633,0.4927,gpt2-xl
+hypo_alt_text_correction_001,alt text,hypothesis,error_correction,Correct the following inaccessible code: <img src='logo.png'>,16,3.0666,4.1628,6.7633,0.5404,gpt2-xl
+hypo_alt_text_socratic_001,alt text,hypothesis,socratic,A screen reader is software that reads text aloud. Why would a screen reader fail to describe this tag: <img src='chart.svg'>?,32,3.2485,3.6565,7.7341,0.0543,gpt2-xl
+valid_alt_text_direct_001,alt text,validation,direct_question,The following code is not accessible because it doesn't have what? <img src='photo.jpg'>,22,3.0474,4.2471,8.4116,0.0111,gpt2-xl
+valid_alt_text_instruction_001,alt text,validation,instruction,What accessibility attribute is missing from this HTML: <img src='photo.jpg'>?,19,3.2503,2.7398,6.7633,0.7124,gpt2-xl
+valid_screen_reader_socratic_001,screen reader,validation,socratic,A screen reader is software that reads text aloud. Why would it fail to describe <img src='chart.svg'>?,27,3.1619,3.6134,7.7341,0.07,gpt2-xl
+valid_aria_confab_001,ARIA,validation,cloze,ARIA stands for,5,4.6388,4.7697,7.0066,0.1394,gpt2-xl
+valid_html_confab_001,HTML,validation,cloze,HTML stands for,4,3.0535,0.112,6.7633,0.112,gpt2-xl
+ctrl_cc_cloze_001,closed captions,control,cloze,Closed captions display,6,3.7362,1.6309,6.7633,0.0848,gpt2-xl
+ctrl_contrast_cloze_001,color contrast,control,cloze,Color contrast is important because,6,4.4625,3.3629,6.7633,2.3781,gpt2-xl
+ctrl_title_cloze_001,page title,control,cloze,A page title describes,5,4.9259,2.3941,7.7341,2.3941,gpt2-xl
+ctrl_cc_direct_001,closed captions,control,direct_question,What are closed captions?,7,3.4003,1.4044,6.7633,0.0034,gpt2-xl
+ctrl_contrast_direct_001,color contrast,control,direct_question,What is color contrast?,6,3.9141,1.5098,6.7633,1.5098,gpt2-xl
+ctrl_title_direct_001,page title,control,direct_question,What is a page title?,7,4.9454,2.2023,8.5768,1.8399,gpt2-xl
+ctrl_cc_instruction_001,closed captions,control,instruction,Explain closed captions to a web developer.,11,3.6337,2.7535,6.7633,0.006,gpt2-xl
+ctrl_contrast_instruction_001,color contrast,control,instruction,Explain color contrast to a web developer.,10,4.0117,2.9262,6.7633,1.8558,gpt2-xl
+ctrl_title_instruction_001,page title,control,instruction,Explain page titles to a web developer.,10,4.2587,3.1042,6.7633,2.7003,gpt2-xl
+ctrl_cc_evaluative_001,closed captions,control,evaluative,A video without closed captions is not accessible because,11,3.8216,2.6291,7.7341,0.0028,gpt2-xl
+ctrl_contrast_evaluative_001,color contrast,control,evaluative,Text with low color contrast is not accessible because,10,4.8717,2.7757,7.4602,2.7757,gpt2-xl
+ctrl_title_evaluative_001,page title,control,evaluative,A web page without a title is not accessible because,11,4.755,2.5144,7.7341,2.5144,gpt2-xl
+ctrl_cc_scenario_001,closed captions,control,scenario,"A deaf user is watching a video on a website. Without closed captions, the user",19,3.7003,3.0761,7.7341,0.0085,gpt2-xl
+ctrl_contrast_scenario_001,color contrast,control,scenario,A low vision user visits a website with poor color contrast. The user,15,4.5253,4.2741,7.7341,2.2422,gpt2-xl
+ctrl_title_scenario_001,page title,control,scenario,A screen reader user navigates to a web page with no title. The user,17,3.9807,4.0234,7.7341,0.3204,gpt2-xl
+ctrl_bicycle_cloze_001,bicycle,control,cloze,A bicycle is used for,6,5.078,3.7822,7.7341,2.4937,gpt2-xl
+ctrl_bicycle_direct_001,bicycle,control,direct_question,What is a bicycle?,6,5.597,2.5682,8.5768,2.5682,gpt2-xl
+ctrl_bicycle_instruction_001,bicycle,control,instruction,Explain bicycles to a web developer.,9,3.9265,3.5775,6.7633,1.9884,gpt2-xl
+ctrl_bicycle_evaluative_001,bicycle,control,evaluative,A bicycle without brakes is not safe because,9,4.377,3.3075,7.7341,2.1665,gpt2-xl
+ctrl_bicycle_scenario_001,bicycle,control,scenario,"A child is riding a bicycle on a busy street. Without a helmet, the child",18,3.9264,3.9203,7.7341,1.2155,gpt2-xl

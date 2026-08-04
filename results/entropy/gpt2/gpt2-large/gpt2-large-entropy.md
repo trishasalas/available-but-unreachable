@@ -1,4 +1,5 @@
 # Model data captured during Entropy Battery
+
 - Model name: gpt2-large
 - Model dtype: torch.float32
 - Layers: 36
