@@ -1,0 +1,308 @@
+prompts:
+  - prompt_id: due_process
+    concept: due process
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Due process is"
+    max_tokens: 100
+
+  - prompt_id: equal_protection
+    concept: equal protection
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Equal protection refers to"
+    max_tokens: 100
+
+  - prompt_id: commerce_clause
+    concept: commerce clause
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "The commerce clause is"
+    max_tokens: 100
+
+  - prompt_id: fifth_amendment
+    concept: fifth amendment
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "The fifth amendment provides"
+    max_tokens: 100
+
+  - prompt_id: free_speech
+    concept: free speech
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Free speech is a right that"
+    max_tokens: 100
+
+  - prompt_id: strict_liability
+    concept: strict liability
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Strict liability is a legal doctrine holding"
+    max_tokens: 100
+
+  - prompt_id: punitive_damages
+    concept: punitive damages
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Punitive damages are awarded to"
+    max_tokens: 100
+
+  - prompt_id: sovereign_immunity
+    concept: sovereign immunity
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Sovereign immunity is"
+    max_tokens: 100
+
+  - prompt_id: grand_indictment
+    concept: grand indictment
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A grand indictment is"
+    max_tokens: 100
+
+  - prompt_id: guilty_plea
+    concept: guilty plea
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A guilty plea is when"
+    max_tokens: 100
+
+  - prompt_id: excessive_bail
+    concept: excessive bail
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Excessive bail is prohibited by"
+    max_tokens: 100
+
+  - prompt_id: felony_conviction
+    concept: felony conviction
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A felony conviction is"
+    max_tokens: 100
+
+  - prompt_id: conditional_parole
+    concept: conditional parole
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Conditional parole requires"
+    max_tokens: 100
+
+  - prompt_id: joint_custody
+    concept: joint custody
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Joint custody means"
+    max_tokens: 100
+
+  - prompt_id: material_breach
+    concept: material breach
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A material breach is"
+    max_tokens: 100
+
+  - prompt_id: adequate_consideration
+    concept: adequate consideration
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Adequate consideration in a contract means"
+    max_tokens: 100
+
+  - prompt_id: arbitration_clause
+    concept: arbitration clause
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "An arbitration clause is"
+    max_tokens: 100
+
+  - prompt_id: specific_performance
+    concept: specific performance
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Specific performance is a remedy that"
+    max_tokens: 100
+
+  - prompt_id: preliminary_injunction
+    concept: preliminary injunction
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A preliminary injunction is"
+    max_tokens: 100
+
+  - prompt_id: oral_deposition
+    concept: oral deposition
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "An oral deposition is"
+    max_tokens: 100
+
+  - prompt_id: personal_jurisdiction
+    concept: personal jurisdiction
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Personal jurisdiction refers to"
+    max_tokens: 100
+
+  - prompt_id: electronic_discovery
+    concept: electronic discovery
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Electronic discovery is"
+    max_tokens: 100
+
+  - prompt_id: summary_motion
+    concept: summary motion
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A summary motion is"
+    max_tokens: 100
+
+  - prompt_id: proper_venue
+    concept: proper venue
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Proper venue is determined by"
+    max_tokens: 100
+
+  - prompt_id: patent_infringement
+    concept: patent infringement
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Patent infringement occurs when"
+    max_tokens: 100
+
+  - prompt_id: articles_incorporation
+    concept: articles incorporation
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Articles of incorporation are"
+    max_tokens: 100
+
+  - prompt_id: hostile_merger
+    concept: hostile merger
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A hostile merger is"
+    max_tokens: 100
+
+  - prompt_id: statute_limitations
+    concept: statute limitations
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A statute of limitations is"
+    max_tokens: 100
+
+  - prompt_id: legal_standing
+    concept: legal standing
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Legal standing is the right to"
+    max_tokens: 100
+
+  - prompt_id: binding_precedent
+    concept: binding precedent
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A binding precedent is"
+    max_tokens: 100
+
+  - prompt_id: judicial_review
+    concept: judicial review
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Judicial review is"
+    max_tokens: 100
+
+  - prompt_id: civil_lawsuit
+    concept: civil lawsuit
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A civil lawsuit is"
+    max_tokens: 100
+
+  - prompt_id: criminal_record
+    concept: criminal record
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A criminal record is"
+    max_tokens: 100
+
+  - prompt_id: search_warrant
+    concept: search warrant
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A search warrant is"
+    max_tokens: 100
+
+  - prompt_id: plea_bargain
+    concept: plea bargain
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A plea bargain is"
+    max_tokens: 100
+
+  - prompt_id: witness_testimony
+    concept: witness testimony
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Witness testimony is"
+    max_tokens: 100
+
+  - prompt_id: expert_witness
+    concept: expert witness
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "An expert witness is"
+    max_tokens: 100
+
+  - prompt_id: court_order
+    concept: court order
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A court order is"
+    max_tokens: 100
+
+  - prompt_id: bench_trial
+    concept: bench trial
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A bench trial is"
+    max_tokens: 100
+
+  - prompt_id: jury_verdict
+    concept: jury verdict
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A jury verdict is"
+    max_tokens: 100
+
+  - prompt_id: class_action
+    concept: class action
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A class action lawsuit is"
+    max_tokens: 100
+
+  - prompt_id: double_jeopardy
+    concept: double jeopardy
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Double jeopardy is"
+    max_tokens: 100
+
+  - prompt_id: probable_cause
+    concept: probable cause
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Probable cause is"
+    max_tokens: 100
+
+  - prompt_id: restraining_order
+    concept: restraining order
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A restraining order is"
+    max_tokens: 100

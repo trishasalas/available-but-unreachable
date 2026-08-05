@@ -1,0 +1,308 @@
+prompts:
+  - prompt_id: blue_sky
+    concept: blue sky
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A blue sky is"
+    max_tokens: 100
+
+  - prompt_id: cold_water
+    concept: cold water
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Cold water is typically characterized by"
+    max_tokens: 100
+
+  - prompt_id: ice_cream
+    concept: ice cream
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Ice cream is a frozen dessert made from"
+    max_tokens: 100
+
+  - prompt_id: life_jacket
+    concept: life jacket
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A life jacket is designed to"
+    max_tokens: 100
+
+  - prompt_id: tea_cup
+    concept: tea cup
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A tea cup is a vessel used for"
+    max_tokens: 100
+
+  - prompt_id: living_room
+    concept: living room
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A living room is"
+    max_tokens: 100
+
+  - prompt_id: roller_coaster
+    concept: roller coaster
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A roller coaster is an amusement ride that"
+    max_tokens: 100
+
+  - prompt_id: school_bus
+    concept: school bus
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A school bus is used to"
+    max_tokens: 100
+
+  - prompt_id: grilled_cheese
+    concept: grilled cheese
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A grilled cheese sandwich consists of"
+    max_tokens: 100
+
+  - prompt_id: peanut_butter
+    concept: peanut butter
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Peanut butter is made from"
+    max_tokens: 100
+
+  - prompt_id: hot_chocolate
+    concept: hot chocolate
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Hot chocolate is a warm beverage typically made from"
+    max_tokens: 100
+
+  - prompt_id: apple_pie
+    concept: apple pie
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Apple pie is a dessert featuring"
+    max_tokens: 100
+
+  - prompt_id: orange_juice
+    concept: orange juice
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Orange juice is extracted from"
+    max_tokens: 100
+
+  - prompt_id: baked_beans
+    concept: baked beans
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Baked beans are"
+    max_tokens: 100
+
+  - prompt_id: palm_tree
+    concept: palm tree
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A palm tree is characterized by"
+    max_tokens: 100
+
+  - prompt_id: thunder_storm
+    concept: thunder storm
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A thunder storm is"
+    max_tokens: 100
+
+  - prompt_id: coral_reef
+    concept: coral reef
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A coral reef is an underwater formation that"
+    max_tokens: 100
+
+  - prompt_id: shooting_star
+    concept: shooting star
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A shooting star is actually"
+    max_tokens: 100
+
+  - prompt_id: mountain_lion
+    concept: mountain lion
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A mountain lion is"
+    max_tokens: 100
+
+  - prompt_id: tidal_wave
+    concept: tidal wave
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A tidal wave is a large ocean wave caused by"
+    max_tokens: 100
+
+  - prompt_id: dining_table
+    concept: dining table
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A dining table is furniture used for"
+    max_tokens: 100
+
+  - prompt_id: car_keys
+    concept: car keys
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Car keys are used to"
+    max_tokens: 100
+
+  - prompt_id: washing_machine
+    concept: washing machine
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A washing machine is an appliance that"
+    max_tokens: 100
+
+  - prompt_id: bath_towels
+    concept: bath towels
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Bath towels are used for"
+    max_tokens: 100
+
+  - prompt_id: alarm_clock
+    concept: alarm clock
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "An alarm clock is a device that"
+    max_tokens: 100
+
+  - prompt_id: light_bulb
+    concept: light bulb
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A light bulb is"
+    max_tokens: 100
+
+  - prompt_id: post_office
+    concept: post office
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A post office is an institution that"
+    max_tokens: 100
+
+  - prompt_id: parking_lot
+    concept: parking lot
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A parking lot is"
+    max_tokens: 100
+
+  - prompt_id: train_station
+    concept: train station
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A train station is a facility where"
+    max_tokens: 100
+
+  - prompt_id: fire_station
+    concept: fire station
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A fire station is"
+    max_tokens: 100
+
+  - prompt_id: swimming_pool
+    concept: swimming pool
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A swimming pool is a structure designed for"
+    max_tokens: 100
+
+  - prompt_id: coffee_shop
+    concept: coffee shop
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A coffee shop is"
+    max_tokens: 100
+
+  - prompt_id: hard_drive
+    concept: hard drive
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A hard drive is a computer component used for"
+    max_tokens: 100
+
+  - prompt_id: operating_system
+    concept: operating system
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "An operating system is software that"
+    max_tokens: 100
+
+  - prompt_id: search_engine
+    concept: search engine
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A search engine is"
+    max_tokens: 100
+
+  - prompt_id: user_name
+    concept: user name
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A user name is typically used for"
+    max_tokens: 100
+
+  - prompt_id: power_supply
+    concept: power supply
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A power supply is"
+    max_tokens: 100
+
+  - prompt_id: data_base
+    concept: data base
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A data base is"
+    max_tokens: 100
+
+  - prompt_id: sore_throat
+    concept: sore throat
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A sore throat is"
+    max_tokens: 100
+
+  - prompt_id: blood_pressure
+    concept: blood pressure
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Blood pressure refers to"
+    max_tokens: 100
+
+  - prompt_id: collar_bone
+    concept: collar bone
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "The collar bone is"
+    max_tokens: 100
+
+  - prompt_id: heart_rate
+    concept: heart rate
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Heart rate measures"
+    max_tokens: 100
+
+  - prompt_id: dental_appointment
+    concept: dental appointment
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A dental appointment is"
+    max_tokens: 100
+
+  - prompt_id: waiting_room
+    concept: waiting room
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A waiting room is"
+    max_tokens: 100

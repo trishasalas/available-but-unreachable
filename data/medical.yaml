@@ -1,0 +1,294 @@
+prompts:
+  - prompt_id: oxygen_saturation
+    concept: oxygen saturation
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Oxygen saturation refers to"
+    max_tokens: 100
+
+  - prompt_id: body_temperature
+    concept: body temperature
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Body temperature is"
+    max_tokens: 100
+
+  - prompt_id: platelet_count
+    concept: platelet count
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Platelet count measures"
+    max_tokens: 100
+
+  - prompt_id: metabolic_panel
+    concept: metabolic panel
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A metabolic panel is"
+    max_tokens: 100
+
+  - prompt_id: bacterial_infection
+    concept: bacterial infection
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A bacterial infection is caused by"
+    max_tokens: 100
+
+  - prompt_id: magnetic_resonance
+    concept: magnetic resonance
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Magnetic resonance imaging is"
+    max_tokens: 100
+
+  - prompt_id: multiple_sclerosis
+    concept: multiple sclerosis
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Multiple sclerosis is"
+    max_tokens: 100
+
+  - prompt_id: complete_remission
+    concept: complete remission
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Complete remission means"
+    max_tokens: 100
+
+  - prompt_id: bowel_resection
+    concept: bowel resection
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A bowel resection is"
+    max_tokens: 100
+
+  - prompt_id: organ_transplant
+    concept: organ transplant
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "An organ transplant is"
+    max_tokens: 100
+
+  - prompt_id: therapeutic_dosage
+    concept: therapeutic dosage
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A therapeutic dosage is"
+    max_tokens: 100
+
+  - prompt_id: drug_interaction
+    concept: drug interaction
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A drug interaction occurs when"
+    max_tokens: 100
+
+  - prompt_id: antibiotic_resistance
+    concept: antibiotic resistance
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Antibiotic resistance is"
+    max_tokens: 100
+
+  - prompt_id: gastrointestinal_absorption
+    concept: gastrointestinal absorption
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Gastrointestinal absorption refers to"
+    max_tokens: 100
+
+  - prompt_id: respiratory_tract
+    concept: respiratory tract
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "The respiratory tract is"
+    max_tokens: 100
+
+  - prompt_id: cerebral_cortex
+    concept: cerebral cortex
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "The cerebral cortex is"
+    max_tokens: 100
+
+  - prompt_id: informed_consent
+    concept: informed consent
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Informed consent requires"
+    max_tokens: 100
+
+  - prompt_id: clinical_trial
+    concept: clinical trial
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A clinical trial is"
+    max_tokens: 100
+
+  - prompt_id: nerve_damage
+    concept: nerve damage
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Nerve damage can result in"
+    max_tokens: 100
+
+  - prompt_id: chest_pain
+    concept: chest pain
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Chest pain can indicate"
+    max_tokens: 100
+
+  - prompt_id: bone_marrow
+    concept: bone marrow
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Bone marrow is"
+    max_tokens: 100
+
+  - prompt_id: brain_stem
+    concept: brain stem
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "The brain stem controls"
+    max_tokens: 100
+
+  - prompt_id: birth_defect
+    concept: birth defect
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A birth defect is"
+    max_tokens: 100
+
+  - prompt_id: wound_care
+    concept: wound care
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Wound care is"
+    max_tokens: 100
+
+  - prompt_id: pain_management
+    concept: pain management
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Pain management involves"
+    max_tokens: 100
+
+  - prompt_id: blood_clot
+    concept: blood clot
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A blood clot is"
+    max_tokens: 100
+
+  - prompt_id: tumor_growth
+    concept: tumor growth
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Tumor growth is"
+    max_tokens: 100
+
+  - prompt_id: joint_replacement
+    concept: joint replacement
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A joint replacement is"
+    max_tokens: 100
+
+  - prompt_id: immune_response
+    concept: immune response
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "An immune response is"
+    max_tokens: 100
+
+  - prompt_id: viral_infection
+    concept: viral infection
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A viral infection is caused by"
+    max_tokens: 100
+
+  - prompt_id: chronic_pain
+    concept: chronic pain
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Chronic pain is"
+    max_tokens: 100
+
+  - prompt_id: mental_health
+    concept: mental health
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Mental health refers to"
+    max_tokens: 100
+
+  - prompt_id: spinal_cord
+    concept: spinal cord
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "The spinal cord is"
+    max_tokens: 100
+
+  - prompt_id: scar_tissue
+    concept: scar tissue
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Scar tissue is"
+    max_tokens: 100
+
+  - prompt_id: fluid_retention
+    concept: fluid retention
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Fluid retention can cause"
+    max_tokens: 100
+
+  - prompt_id: sleep_apnea
+    concept: sleep apnea
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Sleep apnea is"
+    max_tokens: 100
+
+  - prompt_id: muscle_spasm
+    concept: muscle spasm
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A muscle spasm is"
+    max_tokens: 100
+
+  - prompt_id: breast_cancer
+    concept: breast cancer
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Breast cancer is"
+    max_tokens: 100
+
+  - prompt_id: lung_cancer
+    concept: lung cancer
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Lung cancer is"
+    max_tokens: 100
+
+  - prompt_id: skin_graft
+    concept: skin graft
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A skin graft is"
+    max_tokens: 100
+
+  - prompt_id: stem_cell
+    concept: stem cell
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A stem cell is"
+    max_tokens: 100
+
+  - prompt_id: side_effect
+    concept: side effect
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A side effect is"
+    max_tokens: 100

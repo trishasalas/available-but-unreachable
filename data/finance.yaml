@@ -1,0 +1,308 @@
+prompts:
+  - prompt_id: cash_flow
+    concept: cash flow
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Cash flow is"
+    max_tokens: 100
+
+  - prompt_id: balance_sheet
+    concept: balance sheet
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A balance sheet is"
+    max_tokens: 100
+
+  - prompt_id: journal_entry
+    concept: journal entry
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A journal entry is"
+    max_tokens: 100
+
+  - prompt_id: accelerated_depreciation
+    concept: accelerated depreciation
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Accelerated depreciation is"
+    max_tokens: 100
+
+  - prompt_id: impairment_goodwill
+    concept: impairment goodwill
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Goodwill impairment occurs when"
+    max_tokens: 100
+
+  - prompt_id: yield_maturity
+    concept: yield maturity
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Yield to maturity is"
+    max_tokens: 100
+
+  - prompt_id: bond_coupon
+    concept: bond coupon
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A bond coupon is"
+    max_tokens: 100
+
+  - prompt_id: credit_spread
+    concept: credit spread
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A credit spread is"
+    max_tokens: 100
+
+  - prompt_id: modified_duration
+    concept: modified duration
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Modified duration measures"
+    max_tokens: 100
+
+  - prompt_id: interest_swap
+    concept: interest swap
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "An interest swap is"
+    max_tokens: 100
+
+  - prompt_id: call_option
+    concept: call option
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A call option gives"
+    max_tokens: 100
+
+  - prompt_id: commodity_futures
+    concept: commodity futures
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Commodity futures are"
+    max_tokens: 100
+
+  - prompt_id: currency_hedge
+    concept: currency hedge
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A currency hedge is"
+    max_tokens: 100
+
+  - prompt_id: implied_volatility
+    concept: implied volatility
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Implied volatility refers to"
+    max_tokens: 100
+
+  - prompt_id: zero_collar
+    concept: zero collar
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A zero collar strategy"
+    max_tokens: 100
+
+  - prompt_id: diluted_earnings
+    concept: diluted earnings
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Diluted earnings per share is"
+    max_tokens: 100
+
+  - prompt_id: price_ratio
+    concept: price ratio
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "The price to earnings ratio is"
+    max_tokens: 100
+
+  - prompt_id: preferred_dividend
+    concept: preferred dividend
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A preferred dividend is"
+    max_tokens: 100
+
+  - prompt_id: financial_leverage
+    concept: financial leverage
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Financial leverage is"
+    max_tokens: 100
+
+  - prompt_id: debt_covenant
+    concept: debt covenant
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A debt covenant is"
+    max_tokens: 100
+
+  - prompt_id: capital_structure
+    concept: capital structure
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Capital structure refers to"
+    max_tokens: 100
+
+  - prompt_id: due_diligence
+    concept: due diligence
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Due diligence is"
+    max_tokens: 100
+
+  - prompt_id: public_offering
+    concept: public offering
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A public offering is"
+    max_tokens: 100
+
+  - prompt_id: market_liquidity
+    concept: market liquidity
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Market liquidity refers to"
+    max_tokens: 100
+
+  - prompt_id: trade_settlement
+    concept: trade settlement
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Trade settlement is"
+    max_tokens: 100
+
+  - prompt_id: central_clearing
+    concept: central clearing
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Central clearing houses"
+    max_tokens: 100
+
+  - prompt_id: maintenance_margin
+    concept: maintenance margin
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A maintenance margin is"
+    max_tokens: 100
+
+  - prompt_id: regulatory_compliance
+    concept: regulatory compliance
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Regulatory compliance means"
+    max_tokens: 100
+
+  - prompt_id: money_laundering
+    concept: money laundering
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Money laundering is"
+    max_tokens: 100
+
+  - prompt_id: asset_allocation
+    concept: asset allocation
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Asset allocation is"
+    max_tokens: 100
+
+  - prompt_id: systemic_risk
+    concept: systemic risk
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Systemic risk is"
+    max_tokens: 100
+
+  - prompt_id: stress_test
+    concept: stress test
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A stress test is"
+    max_tokens: 100
+
+  - prompt_id: credit_default
+    concept: credit default
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A credit default is"
+    max_tokens: 100
+
+  - prompt_id: stock_market
+    concept: stock market
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "The stock market is"
+    max_tokens: 100
+
+  - prompt_id: mutual_fund
+    concept: mutual fund
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A mutual fund is"
+    max_tokens: 100
+
+  - prompt_id: hedge_fund
+    concept: hedge fund
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A hedge fund is"
+    max_tokens: 100
+
+  - prompt_id: bear_market
+    concept: bear market
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A bear market is"
+    max_tokens: 100
+
+  - prompt_id: bull_market
+    concept: bull market
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A bull market is"
+    max_tokens: 100
+
+  - prompt_id: credit_rating
+    concept: credit rating
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A credit rating is"
+    max_tokens: 100
+
+  - prompt_id: tax_shelter
+    concept: tax shelter
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A tax shelter is"
+    max_tokens: 100
+
+  - prompt_id: venture_capital
+    concept: venture capital
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Venture capital is"
+    max_tokens: 100
+
+  - prompt_id: prime_rate
+    concept: prime rate
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "The prime rate is"
+    max_tokens: 100
+
+  - prompt_id: fiscal_policy
+    concept: fiscal policy
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "Fiscal policy refers to"
+    max_tokens: 100
+
+  - prompt_id: trade_deficit
+    concept: trade deficit
+    prompt_type: declarative
+    template_type: cloze
+    prompt: "A trade deficit occurs when"
+    max_tokens: 100
