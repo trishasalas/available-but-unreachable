@@ -1,4 +1,5 @@
-# Model data captured during Elicitation Medical Battery
+# Model data captured during Elicitation Battery
+
 - Model name: gpt2
 - Model dtype: torch.float32
 - Layers: 12

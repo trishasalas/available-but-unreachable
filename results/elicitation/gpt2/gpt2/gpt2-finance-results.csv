@@ -1,0 +1,347 @@
+prompt_id,concept,prompt_type,template_type,prompt,output,max_tokens,model
+cash_flow,cash flow,declarative,cloze,Cash flow is,"a key factor in determining the success of a company.
+
+The company's cash flow is a key factor in determining the success of a company.
+
+The company's cash flow is a key factor in determining the success of a company.
+
+The company's cash flow is a key factor in determining the success of a company.
+
+The company's cash flow is a key factor in determining the success of a company.
+
+The company's cash flow is a key factor in determining",100,gpt2
+balance_sheet,balance sheet,declarative,cloze,A balance sheet is,a document that contains information about the assets and liabilities of a company. It is a document that contains information about the assets and liabilities of a company. It is a document that contains information about the assets and liabilities of a company. It is a document that contains information about the assets and liabilities of a company. It is a document that contains information about the assets and liabilities of a company. It is a document that contains information about the assets and liabilities of a company. It is a document that contains,100,gpt2
+journal_entry,journal entry,declarative,cloze,A journal entry is,a journal entry that is published in a journal. It is a journal entry that is published in a journal. It is a journal entry that is published in a journal. It is a journal entry that is published in a journal. It is a journal entry that is published in a journal. It is a journal entry that is published in a journal. It is a journal entry that is published in a journal. It is a journal entry that is published in a journal. It is a journal entry that,100,gpt2
+accelerated_depreciation,accelerated depreciation,declarative,cloze,Accelerated depreciation is,"a term used to describe the amount of money that is due to be paid to a company in the year it is due to be paid.
+
+Accelerated depreciation is calculated by dividing the amount of money that is due to be paid by the amount of depreciation that is due to be paid.
+
+Accelerated depreciation is calculated by dividing the amount of money that is due to be paid by the amount of depreciation that is due to be paid.
+
+Accelerated depreciation is calculated",100,gpt2
+impairment_goodwill,impairment goodwill,declarative,cloze,Goodwill impairment occurs when,"a person is unable to pay for goods or services. Goodwill impairment is a condition that is caused by a person's inability to pay for goods or services.
+
+Goodwill impairment is a condition that is caused by a person's inability to pay for goods or services.
+
+Goodwill impairment is a condition that is caused by a person's inability to pay for goods or services.
+
+Goodwill impairment is a condition that is caused by a person's inability to pay for goods or services",100,gpt2
+yield_maturity,yield maturity,declarative,cloze,Yield to maturity is,"a key factor in the success of a business.
+
+The following table shows the yield to maturity of a business.
+
+Yield to maturity is a key factor in the success of a business.
+
+The following table shows the yield to maturity of a business.
+
+Yield to maturity is a key factor in the success of a business.
+
+The following table shows the yield to maturity of a business.
+
+Yield to maturity is a key factor in the success of",100,gpt2
+bond_coupon,bond coupon,declarative,cloze,A bond coupon is,"a coupon that is issued by a bank or other financial institution to a person who is a member of the U.S. government. The bond coupon is issued by the U.S. government to a person who is a member of the U.S. government.
+
+The bond coupon is issued by the U.S. government to a person who is a member of the U.S. government.
+
+The bond coupon is issued by the U.S. government to a person",100,gpt2
+credit_spread,credit spread,declarative,cloze,A credit spread is,"a credit spread that is spread over a period of time. The credit spread is the amount of time that a credit card issuer will accept a credit card from a customer.
+
+A credit spread is a credit spread that is spread over a period of time. The credit spread is the amount of time that a credit card issuer will accept a credit card from a customer. A credit spread is a credit spread that is spread over a period of time. The credit spread is the amount of time that a",100,gpt2
+modified_duration,modified duration,declarative,cloze,Modified duration measures,"the time between the first and last modification of a modifiable variable. Modifiable variables are defined as variables that are not modified by the user. Modifiable variables are defined as variables that are not modified by the user.
+
+Modified duration measures the time between the first and last modification of a modifiable variable. Modifiable variables are defined as variables that are not modified by the user. Modifiable variables are defined as variables that are not modified by the user.
+
+Modified duration measures",100,gpt2
+interest_swap,interest swap,declarative,cloze,An interest swap is,"a transaction that allows you to swap money between two parties.
+
+An interest swap is a transaction that allows you to swap money between two parties.
+
+An interest swap is a transaction that allows you to swap money between two parties.
+
+An interest swap is a transaction that allows you to swap money between two parties.
+
+An interest swap is a transaction that allows you to swap money between two parties.
+
+An interest swap is a transaction that allows you to swap money between two",100,gpt2
+call_option,call option,declarative,cloze,A call option gives,"you the option to choose between two options:
+
+Option 1: Choose from a list of options.
+
+Option 2: Choose from a list of options.
+
+Option 3: Choose from a list of options.
+
+Option 4: Choose from a list of options.
+
+Option 5: Choose from a list of options.
+
+Option 6: Choose from a list of options.
+
+Option 7: Choose from a list of options.
+
+Option 8: Choose from",100,gpt2
+commodity_futures,commodity futures,declarative,cloze,Commodity futures are,a new way to buy and sell commodities. They are a way to buy and sell commodities. They are a way to buy and sell commodities. They are a way to buy and sell commodities. They are a way to buy and sell commodities. They are a way to buy and sell commodities. They are a way to buy and sell commodities. They are a way to buy and sell commodities. They are a way to buy and sell commodities. They are a way to buy and sell commodities. They,100,gpt2
+currency_hedge,currency hedge,declarative,cloze,A currency hedge is,"a way to hedge against a currency's volatility.
+
+The currency hedge is a way to hedge against a currency's volatility.
+
+The currency hedge is a way to hedge against a currency's volatility.
+
+The currency hedge is a way to hedge against a currency's volatility.
+
+The currency hedge is a way to hedge against a currency's volatility.
+
+The currency hedge is a way to hedge against a currency's volatility.
+
+The currency hedge is a way to hedge",100,gpt2
+implied_volatility,implied volatility,declarative,cloze,Implied volatility refers to,"the amount of money that can be invested in a given asset.
+
+Implied volatility is the amount of money that can be invested in a given asset.
+
+Implied volatility is the amount of money that can be invested in a given asset.
+
+Implied volatility is the amount of money that can be invested in a given asset.
+
+Implied volatility is the amount of money that can be invested in a given asset.
+
+Implied volatility is the amount of money that",100,gpt2
+zero_collar,zero collar,declarative,cloze,A zero collar strategy,"is a strategy that involves using a number of different strategies to achieve the same goal.
+
+Zero collar strategies are the most common and most effective. They are designed to be used in conjunction with other strategies to achieve a goal.
+
+Zero collar strategies are designed to be used in conjunction with other strategies to achieve a goal.
+
+Zero collar strategies are designed to be used in conjunction with other strategies to achieve a goal.
+
+Zero collar strategies are designed to be used in conjunction with other",100,gpt2
+diluted_earnings,diluted earnings,declarative,cloze,Diluted earnings per share is,"a measure of how much a company's stock price has risen over the past year.
+
+The average diluted earnings per share is calculated by dividing the company's total earnings by its average diluted earnings per share.
+
+The average diluted earnings per share is calculated by dividing the company's total earnings by its average diluted earnings per share.
+
+The average diluted earnings per share is calculated by dividing the company's total earnings by its average diluted earnings per share.
+
+The average diluted earnings per share",100,gpt2
+price_ratio,price ratio,declarative,cloze,The price to earnings ratio is,"a measure of the amount of money a company spends on its products and services. The ratio is calculated by dividing the total number of employees by the number of employees in the company.
+
+The average earnings ratio for a company is about 1.5.
+
+The average earnings ratio for a company is about 1.5.
+
+The average earnings ratio for a company is about 1.5.
+
+The average earnings ratio for a company is about 1.5.
+
+The average",100,gpt2
+preferred_dividend,preferred dividend,declarative,cloze,A preferred dividend is,"a dividend that is paid to shareholders of a company. The preferred dividend is paid to shareholders of a company by the company's shareholders.
+
+A preferred dividend is a dividend that is paid to shareholders of a company by the company's shareholders.
+
+A preferred dividend is a dividend that is paid to shareholders of a company by the company's shareholders.
+
+A preferred dividend is a dividend that is paid to shareholders of a company by the company's shareholders.
+
+A preferred dividend is a",100,gpt2
+financial_leverage,financial leverage,declarative,cloze,Financial leverage is,"a key driver of the financial system. It is the ability to manipulate the value of a financial asset.
+
+The financial leverage of a financial asset is the ability to manipulate the value of a financial asset.
+
+The financial leverage of a financial asset is the ability to manipulate the value of a financial asset.
+
+The financial leverage of a financial asset is the ability to manipulate the value of a financial asset.
+
+The financial leverage of a financial asset is the ability to manipulate the value",100,gpt2
+debt_covenant,debt covenant,declarative,cloze,A debt covenant is,"a covenant between two parties to a contract. A debt covenant is a covenant between two parties to a contract.
+
+A debt covenant is a covenant between two parties to a contract.
+
+A debt covenant is a covenant between two parties to a contract.
+
+A debt covenant is a covenant between two parties to a contract.
+
+A debt covenant is a covenant between two parties to a contract.
+
+A debt covenant is a covenant between two parties to a contract.
+
+A",100,gpt2
+capital_structure,capital structure,declarative,cloze,Capital structure refers to,"the structure of a capital structure. Capital structure is defined as the structure of a capital structure.
+
+Capital structure is defined as the structure of a capital structure. Capital structure is defined as the structure of a capital structure.
+
+Capital structure is defined as the structure of a capital structure. Capital structure is defined as the structure of a capital structure.
+
+Capital structure is defined as the structure of a capital structure. Capital structure is defined as the structure of a capital structure.
+
+Capital",100,gpt2
+due_diligence,due diligence,declarative,cloze,Due diligence is,"required to determine the accuracy of the information provided.
+
+The information provided is provided for informational purposes only and should not be relied upon for any purpose other than the purposes of this website.
+
+The information provided is provided for informational purposes only and should not be relied upon for any purpose other than the purposes of this website.
+
+The information provided is provided for informational purposes only and should not be relied upon for any purpose other than the purposes of this website.
+
+The information provided is",100,gpt2
+public_offering,public offering,declarative,cloze,A public offering is,"a public offering of goods or services to the public. The public offering is a public offering of goods or services to the public.
+
+(1) A public offering is a public offering of goods or services to the public if the public offering is made by the public or by a person who is a member of the public.
+
+(2) A public offering is a public offering of goods or services to the public if the public offering is made by the public or by a person who is",100,gpt2
+market_liquidity,market liquidity,declarative,cloze,Market liquidity refers to,"the amount of money that can be sold at a given time.
+
+The market is a place where people buy and sell things. It is a place where people buy and sell things.
+
+The market is a place where people buy and sell things.
+
+The market is a place where people buy and sell things.
+
+The market is a place where people buy and sell things.
+
+The market is a place where people buy and sell things.
+
+The market is a",100,gpt2
+trade_settlement,trade settlement,declarative,cloze,Trade settlement is,"a major step forward for the United States, but it's not the only one.
+
+The U.S. Department of Justice has announced that it will settle a class-action lawsuit brought by the American Civil Liberties Union (ACLU) and the National Association of Manufacturers (NAM).
+
+The settlement, which was announced on Wednesday, will allow the U.S. to pay $1.5 billion to settle the lawsuit, which was filed in federal court in Washington, D",100,gpt2
+central_clearing,central clearing,declarative,cloze,Central clearing houses,"are being set up in the city to deal with the influx of migrants.
+
+The city's central clearing house is being set up to deal with the influx of migrants.
+
+The city's central clearing house is being set up to deal with the influx of migrants.
+
+The city's central clearing house is being set up to deal with the influx of migrants.
+
+The city's central clearing house is being set up to deal with the influx of migrants.
+
+The city's",100,gpt2
+maintenance_margin,maintenance margin,declarative,cloze,A maintenance margin is,"a percentage of the total number of days that a service provider has been operating for a specified period of time. The maintenance margin is calculated by dividing the service provider's total number of days in a specified period by the number of days in the specified period.
+
+The maintenance margin is calculated by dividing the service provider's total number of days in a specified period by the number of days in the specified period.
+
+The maintenance margin is calculated by dividing the service provider's total number of days in",100,gpt2
+regulatory_compliance,regulatory compliance,declarative,cloze,Regulatory compliance means,"that the government will not be able to impose any new regulations on the market.
+
+The government will not be able to impose any new regulations on the market.
+
+The government will not be able to impose any new regulations on the market.
+
+The government will not be able to impose any new regulations on the market.
+
+The government will not be able to impose any new regulations on the market.
+
+The government will not be able to impose any new regulations on the market",100,gpt2
+money_laundering,money laundering,declarative,cloze,Money laundering is,"a major problem in the United States, where the FBI has been cracking down on money laundering since the 1980s.
+
+The FBI has been cracking down on money laundering since the 1980s, and it's been a major problem for the FBI in the United States.
+
+The FBI has been cracking down on money laundering since the 1980s, and it's been a major problem for the FBI in the United States.
+
+The FBI has been cracking down on money laundering since the 1980s",100,gpt2
+asset_allocation,asset allocation,declarative,cloze,Asset allocation is,"a process that involves the allocation of assets to a particular asset class. Asset allocation is a process that involves the allocation of assets to a particular asset class.
+
+Asset allocation is a process that involves the allocation of assets to a particular asset class.
+
+Asset allocation is a process that involves the allocation of assets to a particular asset class.
+
+Asset allocation is a process that involves the allocation of assets to a particular asset class.
+
+Asset allocation is a process that involves the allocation of",100,gpt2
+systemic_risk,systemic risk,declarative,cloze,Systemic risk is,a major factor in the development of diabetes mellitus (DM). The risk of developing diabetes mellitus is highest in the elderly and is highest in the young. The risk of developing diabetes mellitus is highest in the elderly and is highest in the young. The risk of developing diabetes mellitus is highest in the elderly and is highest in the young. The risk of developing diabetes mellitus is highest in the elderly and is highest in the young. The risk of developing diabetes mellitus is highest in the,100,gpt2
+stress_test,stress test,declarative,cloze,A stress test is,a test of your ability to cope with stress. It is a test of your ability to cope with stress. It is a test of your ability to cope with stress. It is a test of your ability to cope with stress. It is a test of your ability to cope with stress. It is a test of your ability to cope with stress. It is a test of your ability to cope with stress. It is a test of your ability to cope with stress. It is a test of your,100,gpt2
+credit_default,credit default,declarative,cloze,A credit default is,"a financial event that occurs when a borrower defaults on a loan or other debt.
+
+Credit default is a financial event that occurs when a borrower defaults on a loan or other debt.
+
+Credit default is a financial event that occurs when a borrower defaults on a loan or other debt.
+
+Credit default is a financial event that occurs when a borrower defaults on a loan or other debt.
+
+Credit default is a financial event that occurs when a borrower defaults on a loan or other debt.",100,gpt2
+stock_market,stock market,declarative,cloze,The stock market is,"in a tailspin.
+
+The Dow Jones Industrial Average (DJIA) is down more than 2 percent in the past week, and the S&P 500 is down more than 2 percent.
+
+The Dow Jones Industrial Average (DJIA) is down more than 2 percent in the past week, and the S&P 500 is down more than 2 percent.
+
+The Dow Jones Industrial Average (DJIA) is down more than 2 percent in the past week, and the S",100,gpt2
+mutual_fund,mutual fund,declarative,cloze,A mutual fund is,"a fund that invests in a company's stock, bonds, or other assets. Mutual funds are generally considered to be a safe investment because they are not subject to the risk of a government takeover.
+
+The Mutual Fund is a mutual fund that invests in a company's stock, bonds, or other assets. Mutual funds are generally considered to be a safe investment because they are not subject to the risk of a government takeover.
+
+The Mutual Fund is a mutual fund that invests in a company's",100,gpt2
+hedge_fund,hedge fund,declarative,cloze,A hedge fund is,"trying to raise $1 billion from investors who want to buy shares in the company.
+
+The hedge fund, which has been in the news recently for its role in the Trump campaign, is trying to raise $1 billion from investors who want to buy shares in the company.
+
+The hedge fund, which has been in the news recently for its role in the Trump campaign, is trying to raise $1 billion from investors who want to buy shares in the company.
+
+The hedge fund",100,gpt2
+bear_market,bear market,declarative,cloze,A bear market is,"a market where the price of a commodity is determined by the market price of the commodity. The bear market is a market where the price of a commodity is determined by the price of the commodity.
+
+The bear market is a market where the price of a commodity is determined by the price of the commodity.
+
+The bear market is a market where the price of a commodity is determined by the price of the commodity.
+
+The bear market is a market where the price of a commodity is",100,gpt2
+bull_market,bull market,declarative,cloze,A bull market is,"a market where the price of a commodity is determined by the market's ability to supply the commodity at a price that is competitive with the price of the commodity. The bull market is a market where the price of a commodity is determined by the market's ability to supply the commodity at a price that is competitive with the price of the commodity.
+
+The bull market is a market where the price of a commodity is determined by the market's ability to supply the commodity at a price that is competitive with",100,gpt2
+credit_rating,credit rating,declarative,cloze,A credit rating is,"a measure of the value of a credit rating. It is used to determine the likelihood that a credit rating will be rated.
+
+A credit rating is a measure of the value of a credit rating. It is used to determine the likelihood that a credit rating will be rated.
+
+A credit rating is a measure of the value of a credit rating. It is used to determine the likelihood that a credit rating will be rated.
+
+A credit rating is a measure of the value of a",100,gpt2
+tax_shelter,tax shelter,declarative,cloze,A tax shelter is,"a place where people can live and work without paying taxes.
+
+The tax shelter is a place where people can live and work without paying taxes.
+
+The tax shelter is a place where people can live and work without paying taxes.
+
+The tax shelter is a place where people can live and work without paying taxes.
+
+The tax shelter is a place where people can live and work without paying taxes.
+
+The tax shelter is a place where people can live and work without paying",100,gpt2
+venture_capital,venture capital,declarative,cloze,Venture capital is,"a great way to invest in startups. It's a way to get your money back, and it's a way to get your money back quickly.
+
+But what if you're not sure what you're doing?
+
+You might be thinking, ""Well, I'm not sure what I'm doing.""
+
+Well, you're right.
+
+You're right.
+
+You're right.
+
+You're right.
+
+You're right.
+
+You're right",100,gpt2
+prime_rate,prime rate,declarative,cloze,The prime rate is,"the amount of money that a person can earn in a year. The prime rate is the amount of money that a person can earn in a year.
+
+The prime rate is the amount of money that a person can earn in a year.
+
+The prime rate is the amount of money that a person can earn in a year.
+
+The prime rate is the amount of money that a person can earn in a year.
+
+The prime rate is the amount of money that a person",100,gpt2
+fiscal_policy,fiscal policy,declarative,cloze,Fiscal policy refers to,"the amount of money that is spent on the government's budget. The government spends on the budget is divided into two categories: the amount spent on the government's budget and the amount spent on the government's budget.
+
+The government spends on the budget is divided into two categories: the amount spent on the government's budget and the amount spent on the government's budget.
+
+The government spends on the budget is divided into two categories: the amount spent on the government's budget and the amount",100,gpt2
+trade_deficit,trade deficit,declarative,cloze,A trade deficit occurs when,"a country's exports to the rest of the world are lower than its imports.
+
+The trade deficit is a measure of how much a country's exports to the rest of the world are worth.
+
+The trade deficit is calculated by dividing the value of the trade deficit by the value of the country's exports to the rest of the world.
+
+The trade deficit is calculated by dividing the value of the trade deficit by the value of the country's exports to the rest of the world.",100,gpt2
