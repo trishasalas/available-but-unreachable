@@ -1,0 +1,130 @@
+domain,prompt_id,concept,prompt_type,template_type,prompt,output,max_tokens,model
+control,blue_sky,blue sky,declarative,cloze,A blue sky is,a blue sky. A blue sky is a blue sky. A blue sky is a blue sky. A blue sky is a blue sky. A blue sky is a blue sky. A blue sky is a blue sky. A blue sky is a blue sky. A blue sky is a blue sky. A blue sky is a blue sky. A blue sky is a blue sky. A blue sky is a blue sky. A blue sky is a blue sky. A blue sky is a blue sky.,100,pythia-410m
+control,cold_water,cold water,declarative,cloze,Cold water is typically characterized by,"a high temperature and a low pressure. Cold water is used in the production of water-based paints, inks, and other products. Cold water is typically produced by a process called “cold water extraction” or “cold water extraction” (CWE). Cold water extraction is a process that extracts water from a liquid, such as water from a water supply, and then recovers the water by heating it to a temperature that is below the boiling point of the water. Cold water extraction is typically",100,pythia-410m
+control,ice_cream,ice cream,declarative,cloze,Ice cream is a frozen dessert made from,"a mixture of cream, sugar, and ice. It is a popular dessert in many countries, including the United States, Canada, and Australia. Ice cream is a popular dessert in the United States, Canada, and Australia.
+
+Ice cream is a frozen dessert made from a mixture of cream, sugar, and ice. It is a popular dessert in many countries, including the United States, Canada, and Australia. Ice cream is a popular dessert in the United States, Canada, and Australia.",100,pythia-410m
+control,life_jacket,life jacket,declarative,cloze,A life jacket is designed to,protect a person from the elements. It is a protective garment that is worn by people who are in a position of danger. It is also a garment that is worn by people who are in a position of danger. A life jacket is designed to protect a person from the elements. It is a protective garment that is worn by people who are in a position of danger. A life jacket is designed to protect a person from the elements. It is a protective garment that is worn by people who are in,100,pythia-410m
+control,tea_cup,tea cup,declarative,cloze,A tea cup is a vessel used for,"drinking tea. The cup is usually made of a metal or ceramic material, and is usually made of a cup-shaped body with a handle. The cup is usually made of a metal or ceramic material, and is usually made of a cup-shaped body with a handle. The cup is usually made of a metal or ceramic material, and is usually made of a cup-shaped body with a handle. The cup is usually made of a metal or ceramic material, and is usually made of a cup",100,pythia-410m
+control,living_room,living room,declarative,cloze,A living room is,a place where you can relax and enjoy the comfort of your own home. It is a place where you can enjoy the comfort of your own home. It is a place where you can relax and enjoy the comfort of your own home. It is a place where you can relax and enjoy the comfort of your own home. It is a place where you can relax and enjoy the comfort of your own home. It is a place where you can relax and enjoy the comfort of your own home. It is,100,pythia-410m
+control,roller_coaster,roller coaster,declarative,cloze,A roller coaster is an amusement ride that,is designed to be operated by a person. The ride is usually a series of vertical or horizontal tracks that are driven by a motor. The tracks are usually made of a material that is light and flexible. The tracks are usually made of a material that is strong and durable. The tracks are usually made of a material that is light and flexible. The tracks are usually made of a material that is strong and durable. The tracks are usually made of a material that is light and flexible. The tracks are,100,pythia-410m
+control,school_bus,school bus,declarative,cloze,A school bus is used to,transport students from one school to another. The bus is a vehicle that is used to transport students from one school to another. The bus is a vehicle that is used to transport students from one school to another. The bus is a vehicle that is used to transport students from one school to another. The bus is a vehicle that is used to transport students from one school to another. The bus is a vehicle that is used to transport students from one school to another. The bus is a vehicle that is,100,pythia-410m
+control,grilled_cheese,grilled cheese,declarative,cloze,A grilled cheese sandwich consists of,"a sandwich of two or more different types of food. The sandwich is usually made of bread, cheese, and mayonnaise. The sandwich is usually served with a slice of bread, a slice of cheese, and a slice of mayonnaise.
+
+A grilled cheese sandwich consists of a sandwich of two or more different types of food. The sandwich is usually made of bread, cheese, and mayonnaise. The sandwich is usually served with a slice of bread, a slice of cheese,",100,pythia-410m
+control,peanut_butter,peanut butter,declarative,cloze,Peanut butter is made from,"the seeds of the peanut plant. It is a nutritious food that is rich in protein, fat, and carbohydrates. It is also a source of vitamins A, C, and E.
+
+Peanut butter is a great source of protein, and it is also a great source of fat. It is a good source of calcium, iron, and zinc.
+
+Peanut butter is a great source of protein, and it is also a great source of fat. It is a good",100,pythia-410m
+control,hot_chocolate,hot chocolate,declarative,cloze,Hot chocolate is a warm beverage typically made from,"milk, cream, and sugar. It is a popular drink in many parts of the world, and is often served at parties, weddings, and other events. Hot chocolate is a popular drink in the United States, and is also served at many other events.
+
+Hot chocolate is a warm beverage typically made from milk, cream, and sugar. It is a popular drink in many parts of the world, and is often served at parties, weddings, and other events. Hot chocolate is a popular",100,pythia-410m
+control,apple_pie,apple pie,declarative,cloze,Apple pie is a dessert featuring,"a filling of fruit, topped with a crust and topped with a crust. The crust is usually made of a dough that is rolled out and then baked. The crust is then baked, and the filling is then baked.
+
+Apple pie is a dessert featuring a filling of fruit, topped with a crust and topped with a crust. The crust is usually made of a dough that is rolled out and then baked. The crust is then baked, and the filling is then baked.
+
+Apple pie",100,pythia-410m
+control,orange_juice,orange juice,declarative,cloze,Orange juice is extracted from,"the fruit of the orange tree, which is a member of the citrus family. Orange juice is a refreshing drink that is often served in the summer months. Orange juice is a natural sweetener that is a natural sweetener that is a natural sweetener that is a natural sweetener that is a natural sweetener that is a natural sweetener that is a natural sweetener that is a natural sweetener that is a natural sweetener that is a natural sweetener that is a natural sweetener that is",100,pythia-410m
+control,baked_beans,baked beans,declarative,cloze,Baked beans are,a great way to use up leftover beans. They are a great way to use up leftover beans. They are a great way to use up leftover beans. They are a great way to use up leftover beans. They are a great way to use up leftover beans. They are a great way to use up leftover beans. They are a great way to use up leftover beans. They are a great way to use up leftover beans. They are a great way to,100,pythia-410m
+control,palm_tree,palm tree,declarative,cloze,A palm tree is characterized by,its shape and the number of leaves. The number of leaves is determined by the number of leaves of the tree. The number of leaves of a palm tree is determined by the number of leaves of the tree. The number of leaves of a palm tree is determined by the number of leaves of the tree. The number of leaves of a palm tree is determined by the number of leaves of the tree. The number of leaves of a palm tree is determined by the number of leaves of the tree. The,100,pythia-410m
+control,thunder_storm,thunder storm,declarative,cloze,A thunder storm is,"expected to hit the area on Saturday, with winds gusting to 130mph.
+
+The storm is expected to bring heavy rain, hail and winds of up to 130mph.
+
+The National Weather Service has issued a severe thunderstorm warning for the area.
+
+The storm is expected to bring heavy rain, hail and winds of up to 130mph.
+
+The storm is expected to bring heavy rain, hail and winds of up to 130mph.
+
+The storm is expected to",100,pythia-410m
+control,coral_reef,coral reef,declarative,cloze,A coral reef is an underwater formation that,"is formed by the accumulation of coral and other sea life. The coral reef is a natural habitat for many marine organisms, including fish, invertebrates, and plants. The coral reef is a natural habitat for many marine organisms, including fish, invertebrates, and plants.
+
+The coral reef is a natural habitat for many marine organisms, including fish, invertebrates, and plants.
+
+The coral reef is a natural habitat for many marine organisms, including fish, invertebrates",100,pythia-410m
+control,shooting_star,shooting star,declarative,cloze,A shooting star is actually,"a star, but it's not a star.
+
+A shooting star is actually a star, but it's not a star.
+
+A shooting star is actually a star, but it's not a star.
+
+A shooting star is actually a star, but it's not a star.
+
+A shooting star is actually a star, but it's not a star.
+
+A shooting star is actually a star, but it's not a star.
+
+A shooting star",100,pythia-410m
+control,mountain_lion,mountain lion,declarative,cloze,A mountain lion is,"a large, furry, and aggressive cat. It is a member of the cat family, and is the largest cat in the world. It is a member of the family Felidae, and is the only member of the family Felidae that is not a cat.
+
+Contents
+
+The mountain lion is a large, furry, and aggressive cat. It is a member of the cat family Felidae, and is the largest cat in the world. It is a member of the family",100,pythia-410m
+control,tidal_wave,tidal wave,declarative,cloze,A tidal wave is a large ocean wave caused by,the movement of water. Tidal waves are usually caused by the movement of water from one place to another. Tidal waves are usually caused by the movement of water from one place to another. Tidal waves are usually caused by the movement of water from one place to another. Tidal waves are usually caused by the movement of water from one place to another. Tidal waves are usually caused by the movement of water from one place to another. Tidal waves are usually caused by the movement of,100,pythia-410m
+control,dining_table,dining table,declarative,cloze,A dining table is furniture used for,"dining and entertaining. It is usually made of wood, metal, or plastic. It is usually made of a single piece of wood, or a combination of wood and metal. It is usually made of a single piece of wood, or a combination of wood and metal. It is usually made of a single piece of wood, or a combination of wood and metal. It is usually made of a single piece of wood, or a combination of wood and metal. It is usually made of a single piece",100,pythia-410m
+control,car_keys,car keys,declarative,cloze,Car keys are used to,open doors and windows. They are also used to open doors and windows in the home. Car keys are used to open doors and windows in the home. Car keys are used to open doors and windows in the home. Car keys are used to open doors and windows in the home. Car keys are used to open doors and windows in the home. Car keys are used to open doors and windows in the home. Car keys are used to open doors and windows in the home. Car keys are used,100,pythia-410m
+control,washing_machine,washing machine,declarative,cloze,A washing machine is an appliance that,is used to wash clothes. A washing machine is a machine that is used to wash clothes. A washing machine is a machine that is used to wash clothes. A washing machine is a machine that is used to wash clothes. A washing machine is a machine that is used to wash clothes. A washing machine is a machine that is used to wash clothes. A washing machine is a machine that is used to wash clothes. A washing machine is a machine that is used to wash clothes. A washing machine,100,pythia-410m
+control,bath_towels,bath towels,declarative,cloze,Bath towels are used for,a variety of purposes. Bath towels are used for a variety of purposes. Bath towels are used for a variety of purposes. Bath towels are used for a variety of purposes. Bath towels are used for a variety of purposes. Bath towels are used for a variety of purposes. Bath towels are used for a variety of purposes. Bath towels are used for a variety of purposes. Bath towels are used for a variety of purposes. Bath towels are used for a variety of purposes. Bath towels are used for,100,pythia-410m
+control,alarm_clock,alarm clock,declarative,cloze,An alarm clock is a device that,provides a user with an alarm signal. An alarm clock may be used to provide a user with an alarm signal when the user is away from home. An alarm clock may be used to provide a user with an alarm signal when the user is away from home. An alarm clock may be used to provide a user with an alarm signal when the user is away from home. An alarm clock may be used to provide a user with an alarm signal when the user is away from home. An alarm clock may,100,pythia-410m
+control,light_bulb,light bulb,declarative,cloze,A light bulb is,a light bulb that is used to illuminate a room. A light bulb is a light bulb that is used to illuminate a room. A light bulb is a light bulb that is used to illuminate a room. A light bulb is a light bulb that is used to illuminate a room. A light bulb is a light bulb that is used to illuminate a room. A light bulb is a light bulb that is used to illuminate a room. A light bulb is a light bulb that,100,pythia-410m
+control,post_office,post office,declarative,cloze,A post office is an institution that,is used to store mail. The post office is a place where mail is delivered. The post office is a place where mail is delivered. The post office is a place where mail is delivered. The post office is a place where mail is delivered. The post office is a place where mail is delivered. The post office is a place where mail is delivered. The post office is a place where mail is delivered. The post office is a place where mail is delivered. The post office is a place,100,pythia-410m
+control,parking_lot,parking lot,declarative,cloze,A parking lot is,a parking lot that is located in a parking garage. A parking lot is a parking lot that is located in a parking garage. A parking lot is a parking lot that is located in a parking garage. A parking lot is a parking lot that is located in a parking garage. A parking lot is a parking lot that is located in a parking garage. A parking lot is a parking lot that is located in a parking garage. A parking lot is a parking lot that is located in a parking garage,100,pythia-410m
+control,train_station,train station,declarative,cloze,A train station is a facility where,"trains are delivered to and from a station.
+
+A train station is a facility where trains are delivered to and from a station.
+
+A train station is a facility where trains are delivered to and from a station.
+
+A train station is a facility where trains are delivered to and from a station.
+
+A train station is a facility where trains are delivered to and from a station.
+
+A train station is a facility where trains are delivered to and from a station.",100,pythia-410m
+control,fire_station,fire station,declarative,cloze,A fire station is,"on the scene of a fire at a home in the town of Westport, Connecticut.
+
+The fire was reported around 10:30 p.m. on Saturday, according to the Westport Fire Department.
+
+The fire was reported at the home of the couple, who live in the area.
+
+The couple, who are both from Connecticut, were not home at the time of the fire.
+
+The couple's two children were inside the home at the time of the fire",100,pythia-410m
+control,swimming_pool,swimming pool,declarative,cloze,A swimming pool is a structure designed for,"swimming. A swimming pool is a structure designed for swimming.
+
+A swimming pool is a structure designed for swimming. A swimming pool is a structure designed for swimming.
+
+A swimming pool is a structure designed for swimming. A swimming pool is a structure designed for swimming.
+
+A swimming pool is a structure designed for swimming. A swimming pool is a structure designed for swimming.
+
+A swimming pool is a structure designed for swimming. A swimming pool is a structure designed for swimming.",100,pythia-410m
+control,coffee_shop,coffee shop,declarative,cloze,A coffee shop is,"a place where you can get a cup of coffee, a cup of tea, or a cup of coffee and a cup of tea. Coffee shops are a great place to meet new people, and to get to know your friends. Coffee shops are also a great place to meet new people, and to get to know your friends. Coffee shops are a great place to meet new people, and to get to know your friends. Coffee shops are a great place to meet new people, and to get to",100,pythia-410m
+control,hard_drive,hard drive,declarative,cloze,A hard drive is a computer component used for,storing data. Hard drives are typically used in computers that are used to store data. Hard drives are typically used in computers that are used to store data. Hard drives are typically used in computers that are used to store data. Hard drives are typically used in computers that are used to store data. Hard drives are typically used in computers that are used to store data. Hard drives are typically used in computers that are used to store data. Hard drives are typically used in computers that are used to store data,100,pythia-410m
+control,operating_system,operating system,declarative,cloze,An operating system is software that,runs on a computer system. An operating system is a collection of software components that are used to run a computer system. An operating system is typically installed on a computer system and is used to run applications. An operating system is typically installed on a computer system and is used to run applications. An operating system is typically installed on a computer system and is used to run applications. An operating system is typically installed on a computer system and is used to run applications. An operating system is typically installed on a,100,pythia-410m
+control,search_engine,search engine,declarative,cloze,A search engine is,a computer program that allows a user to find information on the Internet. A search engine is a program that searches the Internet for information. A search engine is a program that searches the Internet for information. A search engine is a program that searches the Internet for information. A search engine is a program that searches the Internet for information. A search engine is a program that searches the Internet for information. A search engine is a program that searches the Internet for information. A search engine is a program that searches,100,pythia-410m
+control,user_name,user name,declarative,cloze,A user name is typically used for,"identifying a user of a computer system. For example, a user name may be used to identify a user of a computer system. A user name may be used to identify a user of a computer system. A user name may be used to identify a user of a computer system. A user name may be used to identify a user of a computer system. A user name may be used to identify a user of a computer system. A user name may be used to identify a user of a computer system",100,pythia-410m
+control,power_supply,power supply,declarative,cloze,A power supply is,"a device that supplies power to a load. A power supply may be used to power a load, such as a computer, a television, a radio, a printer, a computer monitor, a television, a video game machine, a video cassette recorder, a video tape recorder, a video cassette recorder, a video disc player, a video disc recorder, a video cassette recorder, a video disc player, a video disc recorder, a video cassette recorder, a video disc player, a video disc recorder",100,pythia-410m
+control,data_base,data base,declarative,cloze,A data base is,"a collection of data, usually stored in a database. A database is a collection of data, usually stored in a database. A database is a collection of data, usually stored in a database. A database is a collection of data, usually stored in a database. A database is a collection of data, usually stored in a database. A database is a collection of data, usually stored in a database. A database is a collection of data, usually stored in a database. A database is a collection",100,pythia-410m
+control,sore_throat,sore throat,declarative,cloze,A sore throat is,"a painful condition that can be caused by a variety of factors. The most common cause of a sore throat is a viral infection. Other causes include allergies, sinusitis, and sinus infections.
+
+The most common cause of a sore throat is a viral infection. Other causes include allergies, sinusitis, and sinus infections.
+
+The most common cause of a sore throat is a viral infection. Other causes include allergies, sinusitis, and sinus infections.
+
+The most common cause of a",100,pythia-410m
+control,blood_pressure,blood pressure,declarative,cloze,Blood pressure refers to,"the amount of blood that circulates in the body. Blood pressure is measured by a blood pressure cuff. The cuff is placed on the upper arm and the blood pressure is measured by a cuff pressure gauge. The cuff pressure is usually measured in millimeters of mercury (mmHg).
+
+Blood pressure is measured by a cuff pressure gauge. The cuff pressure is usually measured in millimeters of mercury (mmHg).
+
+Blood pressure is measured by a cuff pressure gauge. The cuff pressure is usually measured in",100,pythia-410m
+control,collar_bone,collar bone,declarative,cloze,The collar bone is,a bone that is attached to the skull. The collar bone is the most prominent bone in the body. It is the largest bone in the body and is the largest bone in the body. The collar bone is the largest bone in the body and is the largest bone in the body. The collar bone is the largest bone in the body and is the largest bone in the body. The collar bone is the largest bone in the body and is the largest bone in the body. The collar bone is the,100,pythia-410m
+control,heart_rate,heart rate,declarative,cloze,Heart rate measures,"in patients with coronary artery disease.
+The aim of this study was to determine the relationship between heart rate (HR) and the severity of coronary artery disease (CAD) in patients with CAD. The study included patients with CAD (n = 50) and controls (n = 50). HR was measured by pulse oximetry. The severity of CAD was assessed by the presence of three coronary artery disease (CAD) criteria: left main disease, left anterior descending artery disease, and left circumflex artery",100,pythia-410m
+control,dental_appointment,dental appointment,declarative,cloze,A dental appointment is,"a routine dental procedure performed by a dentist. The dentist will examine your teeth and gums, and will also examine your jaw, gums, and teeth. The dentist will also examine your teeth and gums, and will also examine your jaw, gums, and teeth.
+
+The dentist will examine your teeth and gums, and will also examine your jaw, gums, and teeth.
+
+The dentist will examine your teeth and gums, and will also examine your jaw,",100,pythia-410m
+control,waiting_room,waiting room,declarative,cloze,A waiting room is,a place where people wait for a doctor to come to them. It is a place where people wait for a doctor to come to them. It is a place where people wait for a doctor to come to them. It is a place where people wait for a doctor to come to them. It is a place where people wait for a doctor to come to them. It is a place where people wait for a doctor to come to them. It is a place where people wait for a doctor to come,100,pythia-410m

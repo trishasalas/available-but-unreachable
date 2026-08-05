@@ -1,0 +1,230 @@
+domain,prompt_id,concept,prompt_type,template_type,prompt,output,max_tokens,model
+legal,due_process,due process,declarative,cloze,Due process is,not a concept that is easily defined. It is a concept that is not easily defined. It is a concept that is not easily defined. It is a concept that is not easily defined. It is a concept that is not easily defined. It is a concept that is not easily defined. It is a concept that is not easily defined. It is a concept that is not easily defined. It is a concept that is not easily defined. It is a concept that is not easily defined. It is,100,pythia-410m
+legal,equal_protection,equal protection,declarative,cloze,Equal protection refers to,"the principle that all persons similarly situated are treated equally. Equal protection is a principle that is often invoked in the context of equal protection of the laws. Equal protection is a principle that is often invoked in the context of equal protection of the laws.
+
+Equal protection is a principle that is often invoked in the context of equal protection of the laws. Equal protection is a principle that is often invoked in the context of equal protection of the laws.
+
+Equal protection is a principle that is often invoked",100,pythia-410m
+legal,commerce_clause,commerce clause,declarative,cloze,The commerce clause is,a fundamental principle of our Constitution. It is the basis of our government. It is the basis of our economy. It is the basis of our society. It is the basis of our government. It is the basis of our economy. It is the basis of our society. It is the basis of our government. It is the basis of our economy. It is the basis of our society. It is the basis of our government. It is the basis of our economy. It is the basis of,100,pythia-410m
+legal,fifth_amendment,fifth amendment,declarative,cloze,The fifth amendment provides,"a right to be free from unreasonable searches and seizures. The Fourth Amendment provides a right to be free from unreasonable searches and seizures. The Fifth Amendment provides a right to be free from unreasonable searches and seizures.
+
+The Fourth Amendment provides a right to be free from unreasonable searches and seizures. The Fifth Amendment provides a right to be free from unreasonable searches and seizures.
+
+The Fourth Amendment provides a right to be free from unreasonable searches and seizures. The Fifth Amendment provides a right to be free from",100,pythia-410m
+legal,free_speech,free speech,declarative,cloze,Free speech is a right that,"is protected by the First Amendment. It is not a right that is protected by the Constitution.
+
+The First Amendment protects the right to free speech. It protects the right to free speech. It protects the right to free speech. It protects the right to free speech. It protects the right to free speech. It protects the right to free speech. It protects the right to free speech. It protects the right to free speech. It protects the right to free speech. It protects the right to",100,pythia-410m
+legal,strict_liability,strict liability,declarative,cloze,Strict liability is a legal doctrine holding,"that a person is not liable for the actions of another person. It is a legal doctrine that protects the rights of a person against the actions of another person.
+
+Strict liability is a legal doctrine that holds that a person is not liable for the actions of another person. It is a legal doctrine that protects the rights of a person against the actions of another person.
+
+Strict liability is a legal doctrine that holds that a person is not liable for the actions of another person. It",100,pythia-410m
+legal,punitive_damages,punitive damages,declarative,cloze,Punitive damages are awarded to,"compensate victims for the loss of their property, reputation, or other property rights. Punitive damages are awarded to compensate victims for the loss of their property, reputation, or other property rights. Punitive damages are awarded to compensate victims for the loss of their property, reputation, or other property rights. Punitive damages are awarded to compensate victims for the loss of their property, reputation, or other property rights. Punitive damages are awarded to compensate victims for the loss of their property, reputation, or",100,pythia-410m
+legal,sovereign_immunity,sovereign immunity,declarative,cloze,Sovereign immunity is,a concept that has been around for a long time. It is a concept that has been around for a long time because it is a concept that has been around for a long time because it is a concept that has been around for a long time because it is a concept that has been around for a long time because it is a concept that has been around for a long time because it is a concept that has been around for a long time because it is a concept that has been around for a long,100,pythia-410m
+legal,grand_indictment,grand indictment,declarative,cloze,A grand indictment is,"being prepared against the former head of the FBI, James Comey, for his role in the Russia investigation.
+
+The indictment, which was unsealed on Friday, accuses Comey of lying to Congress and the public about his interactions with the president.
+
+The indictment also accuses Comey of lying to Congress and the public about his interactions with the president.
+
+The indictment was unsealed on Friday, and the Justice Department said it would be prepared to bring charges against Comey.
+
+The",100,pythia-410m
+legal,guilty_plea,guilty plea,declarative,cloze,A guilty plea is when,"a defendant pleads guilty to a crime, but the court finds that the defendant is not guilty. A guilty plea is a plea of guilty, but the court finds that the defendant is not guilty.
+
+A guilty plea is a plea of guilty, but the court finds that the defendant is not guilty.
+
+A guilty plea is a plea of guilty, but the court finds that the defendant is not guilty.
+
+A guilty plea is a plea of guilty, but the court finds that",100,pythia-410m
+legal,excessive_bail,excessive bail,declarative,cloze,Excessive bail is prohibited by,"the Supreme Court of India.
+
+The Supreme Court of India has decided to ban bail in cases of murder, rape, kidnapping, robbery, extortion, kidnapping, murder, rape, robbery, extortion, kidnapping, murder, rape, robbery, extortion, kidnapping, murder, rape, robbery, extortion, kidnapping, murder, rape, robbery, extortion, kidnapping, murder, rape, robbery, extortion, kidnapping, murder, rape, robbery, extortion, kidnapping,",100,pythia-410m
+legal,felony_conviction,felony conviction,declarative,cloze,A felony conviction is,"a felony, and a misdemeanor conviction is a misdemeanor.
+
+A misdemeanor conviction is a misdemeanor, and a felony conviction is a felony.
+
+A felony conviction is a felony, and a misdemeanor conviction is a misdemeanor.
+
+A misdemeanor conviction is a misdemeanor, and a felony conviction is a felony.
+
+A felony conviction is a felony, and a misdemeanor conviction is a misdemeanor.
+
+A misdemeanor conviction is a misdemeanor, and a felony conviction is a felony.
+
+A felony",100,pythia-410m
+legal,conditional_parole,conditional parole,declarative,cloze,Conditional parole requires,"a court to consider the defendant's mental state at the time of the offense.
+
+The defendant's mental state at the time of the offense is a critical factor in determining whether the defendant is eligible for parole. The defendant's mental state at the time of the offense is a factor that must be considered by the parole board in determining whether the defendant is eligible for parole.
+
+The defendant's mental state at the time of the offense is a factor that must be considered by the parole board in",100,pythia-410m
+legal,joint_custody,joint custody,declarative,cloze,Joint custody means,"that the parties are not in the same state.
+
+The court has ordered the parties to sign a joint custody agreement.
+
+The court has ordered the parties to sign a joint custody agreement.
+
+The court has ordered the parties to sign a joint custody agreement.
+
+The court has ordered the parties to sign a joint custody agreement.
+
+The court has ordered the parties to sign a joint custody agreement.
+
+The court has ordered the parties to sign a joint custody agreement.",100,pythia-410m
+legal,material_breach,material breach,declarative,cloze,A material breach is,"a breach of a contract, and is a breach of contract that is not covered by the contract.
+
+A material breach is a breach of a contract, and is a breach of contract that is not covered by the contract.
+
+A material breach is a breach of a contract, and is a breach of contract that is not covered by the contract.
+
+A material breach is a breach of a contract, and is a breach of contract that is not covered by the contract.",100,pythia-410m
+legal,adequate_consideration,adequate consideration,declarative,cloze,Adequate consideration in a contract means,"that the parties are aware of the risks and the benefits of the contract. The parties are also aware of the risks and benefits of the contract. The parties are also aware of the risks and benefits of the contract.
+
+The parties are aware of the risks and benefits of the contract.
+
+The parties are aware of the risks and benefits of the contract.
+
+The parties are aware of the risks and benefits of the contract.
+
+The parties are aware of the risks and benefits of",100,pythia-410m
+legal,arbitration_clause,arbitration clause,declarative,cloze,An arbitration clause is,"a contract that is binding on the parties. It is a contract that is binding on the parties and is not a contract between the parties. It is a contract that is binding on the parties and is not a contract between the parties.
+
+An arbitration clause is a contract that is binding on the parties. It is a contract that is binding on the parties and is not a contract between the parties. It is a contract that is binding on the parties and is not a contract between the parties.",100,pythia-410m
+legal,specific_performance,specific performance,declarative,cloze,Specific performance is a remedy that,is used to improve the performance of a machine. Specific performance is a measure of the ability of a machine to perform a task. Specific performance is a measure of the ability of a machine to perform a task. Specific performance is a measure of the ability of a machine to perform a task. Specific performance is a measure of the ability of a machine to perform a task. Specific performance is a measure of the ability of a machine to perform a task. Specific performance is a measure of the ability of a,100,pythia-410m
+legal,preliminary_injunction,preliminary injunction,declarative,cloze,A preliminary injunction is,"granted to prevent the City of New York from enforcing a zoning ordinance that prohibits the construction of a new apartment building on the site of a former apartment building.
+
+The City Council voted unanimously to grant the preliminary injunction on March 18, 2013.
+
+The City Council voted to grant the preliminary injunction on March 18, 2013.
+
+The City Council voted to grant the preliminary injunction on March 18, 2013.
+
+The City Council voted to grant the preliminary injunction on March 18, 2013.",100,pythia-410m
+legal,oral_deposition,oral deposition,declarative,cloze,An oral deposition is,"a deposition of a written document in a manner that is not recorded in the original document. Oral depositions are often used in the deposition of documents, such as documents in a deposition of a deposition of a deposition of a deposition of a deposition of a deposition of a deposition of a deposition of a deposition of a deposition of a deposition of a deposition of a deposition of a deposition of a deposition of a deposition of a deposition of a deposition of a deposition of a deposition of a deposition of a deposition of",100,pythia-410m
+legal,personal_jurisdiction,personal jurisdiction,declarative,cloze,Personal jurisdiction refers to,"the legal principle that a court may exercise jurisdiction over a person who has committed a tortious act in another jurisdiction. Personal jurisdiction is a legal principle that is based on the principle that a court has jurisdiction over a person who has committed a tortious act in another jurisdiction.
+
+Personal jurisdiction is a legal principle that is based on the principle that a court has jurisdiction over a person who has committed a tortious act in another jurisdiction.
+
+Personal jurisdiction is a legal principle that is based on the",100,pythia-410m
+legal,electronic_discovery,electronic discovery,declarative,cloze,Electronic discovery is,"a process in which a user of a computer system, such as a personal computer, accesses a database of information stored in the computer system. The database may be a relational database, a hierarchical database, or a non-relational database. The database may be a relational database in which a plurality of tables are organized in a hierarchical structure. The database may be a non-relational database in which a plurality of tables are organized in a non-hierarchical structure.
+A user",100,pythia-410m
+legal,summary_motion,summary motion,declarative,cloze,A summary motion is,"a brief summary of the evidence presented at the hearing. The summary is not a formal opinion, but rather a summary of the evidence presented at the hearing. The summary is not a statement of the evidence, but rather a summary of the evidence presented at the hearing.
+
+A summary motion is not a formal opinion, but rather a summary of the evidence presented at the hearing. The summary is not a statement of the evidence, but rather a summary of the evidence presented at the hearing.",100,pythia-410m
+legal,proper_venue,proper venue,declarative,cloze,Proper venue is determined by,"the location of the venue, the size of the venue, the number of people attending, and the number of people who are not attending.
+
+The venue must be located in a city with a population of at least 500,000.
+
+The venue must be located in a city with a population of at least 500,000.
+
+The venue must be located in a city with a population of at least 500,000.
+
+The venue must be located in a city with a",100,pythia-410m
+legal,patent_infringement,patent infringement,declarative,cloze,Patent infringement occurs when,"a patent holder, or a person or entity that is a patent holder, infringes a patent. Patent infringement is a violation of a patent, and is a violation of the law. Patent infringement is a violation of the law, and is a violation of the law. Patent infringement is a violation of the law, and is a violation of the law. Patent infringement is a violation of the law, and is a violation of the law. Patent infringement is a violation of the law, and is a",100,pythia-410m
+legal,articles_incorporation,articles incorporation,declarative,cloze,Articles of incorporation are,"required for all new business entities.
+
+The following articles of incorporation are required for all new business entities:
+
+1. The business entity must be organized as a corporation, partnership, limited liability company, trust, or other legal entity.
+
+2. The business entity must be organized as a corporation, partnership, limited liability company, trust, or other legal entity.
+
+3. The business entity must be organized as a corporation, partnership, limited liability company, trust, or other",100,pythia-410m
+legal,hostile_merger,hostile merger,declarative,cloze,A hostile merger is,"under way between the two largest U.S. banks, JPMorgan Chase & Co. and Citigroup Inc.
+
+The two banks are in the process of merging, according to a person familiar with the matter.
+
+The merger is expected to be completed by the end of the year, the person said.
+
+The two banks are the largest U.S. banks by assets, with $1.5 trillion in assets.
+
+The two banks are in the process of",100,pythia-410m
+legal,statute_limitations,statute limitations,declarative,cloze,A statute of limitations is,a period of time during which a person may not bring a civil action against a person or entity. The statute of limitations is a defense to a civil action. The statute of limitations is a defense to a civil action. The statute of limitations is a defense to a civil action. The statute of limitations is a defense to a civil action. The statute of limitations is a defense to a civil action. The statute of limitations is a defense to a civil action. The statute of limitations is a defense to,100,pythia-410m
+legal,legal_standing,legal standing,declarative,cloze,Legal standing is the right to,"be protected from the threat of legal action.
+
+Legal standing is the right to be protected from the threat of legal action.
+
+Legal standing is the right to be protected from the threat of legal action.
+
+Legal standing is the right to be protected from the threat of legal action.
+
+Legal standing is the right to be protected from the threat of legal action.
+
+Legal standing is the right to be protected from the threat of legal action.
+
+Legal standing is the",100,pythia-410m
+legal,binding_precedent,binding precedent,declarative,cloze,A binding precedent is,a precedent that is binding on the parties to a contract. A binding precedent is a precedent that is binding on the parties to a contract. A binding precedent is a precedent that is binding on the parties to a contract. A binding precedent is a precedent that is binding on the parties to a contract. A binding precedent is a precedent that is binding on the parties to a contract. A binding precedent is a precedent that is binding on the parties to a contract. A binding precedent is a precedent that is,100,pythia-410m
+legal,judicial_review,judicial review,declarative,cloze,Judicial review is,a process of reviewing a decision made by a court or a judge. The process is a process of reviewing a decision made by a court or a judge. The process is a process of reviewing a decision made by a court or a judge. The process is a process of reviewing a decision made by a court or a judge. The process is a process of reviewing a decision made by a court or a judge. The process is a process of reviewing a decision made by a court or a judge. The,100,pythia-410m
+legal,civil_lawsuit,civil lawsuit,declarative,cloze,A civil lawsuit is,"being filed against the city of San Francisco, alleging that the city's police department violated the civil rights of a black man who was shot and killed by a police officer.
+
+The lawsuit, filed in San Francisco Superior Court, alleges that the city's police department violated the civil rights of the man, who was shot and killed by Officer Daniel M. Mendoza on April 19, 2015.
+
+The man, who was a black man, was shot in the back of the head by",100,pythia-410m
+legal,criminal_record,criminal record,declarative,cloze,A criminal record is,"a record of a person’s criminal history. A criminal record is a record of a person’s criminal history.
+
+A criminal record is a record of a person’s criminal history.
+
+A criminal record is a record of a person’s criminal history.
+
+A criminal record is a record of a person’s criminal history.
+
+A criminal record is a record of a person’s criminal history.
+
+A criminal record is a record of a person’",100,pythia-410m
+legal,search_warrant,search warrant,declarative,cloze,A search warrant is,"issued for the home of a man who was arrested in connection with the murder of a woman in the early hours of Sunday morning.
+
+The warrant was issued by the North Carolina State Police in connection with the murder of a woman in the early hours of Sunday morning.
+
+The warrant was issued by the North Carolina State Police in connection with the murder of a woman in the early hours of Sunday morning.
+
+The warrant was issued by the North Carolina State Police in connection with the murder of",100,pythia-410m
+legal,plea_bargain,plea bargain,declarative,cloze,A plea bargain is,a deal that is made to a person who is willing to accept a lesser sentence than the one he or she is facing. The plea bargain is a deal that is made to a person who is willing to accept a lesser sentence than the one he or she is facing. The plea bargain is a deal that is made to a person who is willing to accept a lesser sentence than the one he or she is facing. The plea bargain is a deal that is made to a person who is willing to accept,100,pythia-410m
+legal,witness_testimony,witness testimony,declarative,cloze,Witness testimony is,the most important tool in the criminal justice system. It is the only evidence that can be used to prove guilt or innocence. It is the only evidence that can be used to convict or acquit. It is the only evidence that can be used to convict or acquit. It is the only evidence that can be used to convict or acquit. It is the only evidence that can be used to convict or acquit. It is the only evidence that can be used to convict or acquit.,100,pythia-410m
+legal,expert_witness,expert witness,declarative,cloze,An expert witness is,"expected to testify that the defendant was not the victim of a crime.
+
+The defendant, who is accused of murdering his wife, was found guilty of murdering his wife in the early hours of the morning of July 7, 2017.
+
+The defendant, who is accused of murdering his wife, was found guilty of murdering his wife in the early hours of the morning of July 7, 2017.
+
+The defendant, who is accused of murdering his wife, was found",100,pythia-410m
+legal,court_order,court order,declarative,cloze,A court order is,"being sought by the state of New York to stop the sale of a $1.5 million home to a developer who is seeking to build a $1.5 million condo tower on the property.
+
+The order was filed by the state's attorney general, and was filed in the Supreme Court of the State of New York.
+
+The order was filed in the Supreme Court of the State of New York on Monday, and was filed by the state's attorney general, Eric T.",100,pythia-410m
+legal,bench_trial,bench trial,declarative,cloze,A bench trial is,"a trial in which a judge decides the facts of a case on the basis of the evidence presented at the trial. The judge is the presiding judge of the court.
+
+A bench trial is a trial in which a judge decides the facts of a case on the basis of the evidence presented at the trial. The judge is the presiding judge of the court.
+
+A bench trial is a trial in which a judge decides the facts of a case on the basis of the evidence presented at",100,pythia-410m
+legal,jury_verdict,jury verdict,declarative,cloze,A jury verdict is,"expected to be announced in the next few days.
+
+The verdict was read out by the judge in the case of a man who was charged with murdering his wife and daughter.
+
+The jury was told that the defendant, who was in the process of being sentenced, had been in a relationship with the victim for a number of years.
+
+The jury was told that the defendant had been in a relationship with the victim for a number of years.
+
+The defendant was found guilty",100,pythia-410m
+legal,class_action,class action,declarative,cloze,A class action lawsuit is,"being filed against the city of New York for allegedly failing to properly train its police officers.
+
+The lawsuit, filed in the U.S. District Court for the Southern District of New York, alleges that the city failed to properly train its police officers in the use of deadly force.
+
+The lawsuit, filed by the New York City Police Department, alleges that the city failed to properly train its officers in the use of deadly force.
+
+The lawsuit alleges that the city failed to properly",100,pythia-410m
+legal,double_jeopardy,double jeopardy,declarative,cloze,Double jeopardy is,"a concept that has been around for a long time. It is a concept that is used to prevent a person from being prosecuted for the same offense twice. The concept is that if you are charged with a crime twice, you are guilty of the second offense.
+
+The concept is that if you are charged with a crime twice, you are guilty of the second offense.
+
+The concept is that if you are charged with a crime twice, you are guilty of the second offense.",100,pythia-410m
+legal,probable_cause,probable cause,declarative,cloze,Probable cause is,"the most important factor in determining whether a person is guilty or innocent. The jury must decide whether the evidence is sufficient to establish guilt beyond a reasonable doubt. The jury must also decide whether the evidence is sufficient to support a conviction.
+
+Probable cause is the legal standard for determining whether a person is guilty or innocent. It is the standard of proof that the State must prove beyond a reasonable doubt.
+
+Probable cause is the legal standard for determining whether a person is guilty or innocent.",100,pythia-410m
+legal,restraining_order,restraining order,declarative,cloze,A restraining order is,"a court order that prevents a person from leaving a place of residence. It is issued by a judge or magistrate, usually by a judge or magistrate, and is issued to prevent a person from leaving a place of residence.
+
+A restraining order is a court order that prevents a person from leaving a place of residence. It is issued by a judge or magistrate, usually by a judge or magistrate, and is issued to prevent a person from leaving a place of residence.
+
+A restraining order is",100,pythia-410m

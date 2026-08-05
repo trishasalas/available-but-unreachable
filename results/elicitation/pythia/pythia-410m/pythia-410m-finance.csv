@@ -1,0 +1,204 @@
+domain,prompt_id,concept,prompt_type,template_type,prompt,output,max_tokens,model
+finance,cash_flow,cash flow,declarative,cloze,Cash flow is,"a key factor in the success of any business. It is the primary source of revenue for many businesses. However, it is also a key factor in the success of many businesses.
+
+The following is a list of the top 10 most profitable businesses in the world.
+
+1. Apple
+
+Apple is a company that has been around for over a century. It is a company that has been around for over a century. It is a company that has been around for over a century.",100,pythia-410m
+finance,balance_sheet,balance sheet,declarative,cloze,A balance sheet is,a financial statement that shows the balance of assets and liabilities of a company. The balance sheet is a financial statement that shows the balance of assets and liabilities of a company. The balance sheet is a financial statement that shows the balance of assets and liabilities of a company. The balance sheet is a financial statement that shows the balance of assets and liabilities of a company. The balance sheet is a financial statement that shows the balance of assets and liabilities of a company. The balance sheet is a financial statement that shows,100,pythia-410m
+finance,journal_entry,journal entry,declarative,cloze,A journal entry is,"a record of a particular event, event, or event. A journal entry is a record of a particular event, event, or event. A journal entry is a record of a particular event, event, or event. A journal entry is a record of a particular event, event, or event. A journal entry is a record of a particular event, event, or event. A journal entry is a record of a particular event, event, or event. A journal entry is a record of a",100,pythia-410m
+finance,accelerated_depreciation,accelerated depreciation,declarative,cloze,Accelerated depreciation is,"a common practice in the construction industry. The depreciation of a building is a process that is often performed by a contractor. The contractor may be required to perform a number of different tasks, such as:
+
+• Building a new building
+
+• Building a new building
+
+• Building a new building
+
+• Building a new building
+
+• Building a new building
+
+• Building a new building
+
+• Building a new building
+
+• Building a new building
+
+•",100,pythia-410m
+finance,impairment_goodwill,impairment goodwill,declarative,cloze,Goodwill impairment occurs when,"a person's body is unable to perform the normal functions of the body. For example, a person may have a heart condition, but the heart is not functioning properly. A person may have a stroke, but the brain is not functioning properly. A person may have a heart attack, but the heart is not functioning properly. A person may have a heart attack, but the brain is not functioning properly. A person may have a heart attack, but the heart is not functioning properly. A person may",100,pythia-410m
+finance,yield_maturity,yield maturity,declarative,cloze,Yield to maturity is,a key factor in the success of a plant. The yield of a plant is the amount of food that a plant can produce in a year. The yield of a plant is determined by the number of seeds that a plant can produce in a year. The yield of a plant is determined by the number of seeds that a plant can produce in a year. The yield of a plant is determined by the number of seeds that a plant can produce in a year. The yield of a plant is determined by,100,pythia-410m
+finance,bond_coupon,bond coupon,declarative,cloze,A bond coupon is,"a coupon that is issued by a bank or other financial institution. A bond coupon is issued by a bank or other financial institution to pay for a loan or other obligation. A bond coupon is issued by a bank or other financial institution to pay for a loan or other obligation. A bond coupon is issued by a bank or other financial institution to pay for a loan or other obligation.
+
+A bond is a form of security that is issued by a bank or other financial institution to pay for a loan",100,pythia-410m
+finance,credit_spread,credit spread,declarative,cloze,A credit spread is,"a spread of a company's earnings between two companies. The spread is usually calculated by dividing the company's earnings by the company's market value.
+
+A credit spread is a spread of a company's earnings between two companies. The spread is usually calculated by dividing the company's earnings by the company's market value.
+
+A credit spread is a spread of a company's earnings between two companies. The spread is usually calculated by dividing the company's earnings by the company's market value.",100,pythia-410m
+finance,modified_duration,modified duration,declarative,cloze,Modified duration measures,"of the P300 and P600 components of the event-related potentials (ERPs) in patients with schizophrenia.
+The P300 and P600 components of the event-related potentials (ERPs) are known to be sensitive to the cognitive processes involved in the processing of information. The present study was designed to investigate the effects of the duration of the P300 and P600 components on the amplitude of the P300 and P600 components of the ERPs in patients with schizophrenia. The P300",100,pythia-410m
+finance,interest_swap,interest swap,declarative,cloze,An interest swap is,"a type of transaction in which a buyer and seller agree to exchange certain assets. The buyer may be a business or a person, and the seller may be a person or a business. The buyer and seller may be parties to a transaction, and the transaction may be a sale or a purchase.
+
+An interest swap is a type of transaction in which a buyer and seller agree to exchange certain assets. The buyer may be a business or a person, and the seller may be a person or a",100,pythia-410m
+finance,call_option,call option,declarative,cloze,A call option gives,a financial advisor the ability to take a call at any time. Call options are a great way to get a financial advisor to help you with your financial goals. Call options are a great way to get a financial advisor to help you with your financial goals. Call options are a great way to get a financial advisor to help you with your financial goals. Call options are a great way to get a financial advisor to help you with your financial goals. Call options are a great way to get a financial advisor,100,pythia-410m
+finance,commodity_futures,commodity futures,declarative,cloze,Commodity futures are,"a good place to start.
+
+The market for commodities is a good place to start.
+
+The market for commodities is a good place to start.
+
+The market for commodities is a good place to start.
+
+The market for commodities is a good place to start.
+
+The market for commodities is a good place to start.
+
+The market for commodities is a good place to start.
+
+The market for commodities is a good place to start.
+
+The",100,pythia-410m
+finance,currency_hedge,currency hedge,declarative,cloze,A currency hedge is,a type of financial instrument that is used to hedge the risk of a currency fluctuation. The hedge is a type of financial instrument that is used to hedge the risk of a currency fluctuation. The hedge is a type of financial instrument that is used to hedge the risk of a currency fluctuation. The hedge is a type of financial instrument that is used to hedge the risk of a currency fluctuation. The hedge is a type of financial instrument that is used to hedge the risk of a currency fluctuation. The hedge is,100,pythia-410m
+finance,implied_volatility,implied volatility,declarative,cloze,Implied volatility refers to,"the fact that the price of a security is not necessarily the price of the underlying security. For example, a security may be a security that is traded on a stock exchange, but the price of the security may be the price of the underlying security.
+
+Implied volatility is a measure of the implied volatility of a security. The implied volatility of a security is the volatility of the price of the security. The implied volatility of a security is the volatility of the price of the security.",100,pythia-410m
+finance,zero_collar,zero collar,declarative,cloze,A zero collar strategy,"for the treatment of patients with severe head and neck cancer.
+The aim of this study was to evaluate the efficacy of a novel treatment strategy for patients with severe head and neck cancer. A total of 100 patients with severe head and neck cancer were treated with a novel treatment strategy consisting of a zero collar. The patients were divided into two groups: group A (n = 50) received a collar with a 0.5-cm-wide band, and group B (n = 50) received a",100,pythia-410m
+finance,diluted_earnings,diluted earnings,declarative,cloze,Diluted earnings per share is,"a key metric for the company, which is looking to increase its share price by as much as 10% this year.
+
+The company's shares have fallen by more than 10% this year, and the stock is down more than 10% from its all-time high of $33.50 on Friday.
+
+The company's stock price has fallen by more than 10% this year, and the stock is down more than 10% from its all-time high of $33.50",100,pythia-410m
+finance,price_ratio,price ratio,declarative,cloze,The price to earnings ratio is,"a measure of the relative importance of the different factors that influence the price of a stock. The higher the price to earnings ratio, the more important the factors are.
+
+The price to earnings ratio is a measure of the relative importance of the different factors that influence the price of a stock. The higher the price to earnings ratio, the more important the factors are.
+
+The price to earnings ratio is a measure of the relative importance of the different factors that influence the price of a stock.",100,pythia-410m
+finance,preferred_dividend,preferred dividend,declarative,cloze,A preferred dividend is,a dividend that is preferred over a dividend that is not preferred. A preferred dividend is a dividend that is preferred over a dividend that is not preferred. A preferred dividend is a dividend that is preferred over a dividend that is not preferred. A preferred dividend is a dividend that is preferred over a dividend that is not preferred. A preferred dividend is a dividend that is preferred over a dividend that is not preferred. A preferred dividend is a dividend that is preferred over a dividend that is not preferred. A preferred,100,pythia-410m
+finance,financial_leverage,financial leverage,declarative,cloze,Financial leverage is,a key factor in the success of any business. It is a key factor in the success of any business. It is a key factor in the success of any business. It is a key factor in the success of any business. It is a key factor in the success of any business. It is a key factor in the success of any business. It is a key factor in the success of any business. It is a key factor in the success of any business. It is a key factor in,100,pythia-410m
+finance,debt_covenant,debt covenant,declarative,cloze,A debt covenant is,a contract that is entered into by a debtor and a creditor. The debtor is the party that enters into the contract. The creditor is the party that is obligated to pay the debt. The covenant is a promise by the debtor to pay the debt. The covenant is a promise by the creditor to pay the debt. The covenant is a promise by the debtor to pay the debt. The covenant is a promise by the creditor to pay the debt. The covenant is a promise by the debtor to pay the,100,pythia-410m
+finance,capital_structure,capital structure,declarative,cloze,Capital structure refers to,"the structure of a company, and is a key factor in determining the success of a company.
+
+The capital structure of a company is a key factor in determining the success of a company.
+
+The capital structure of a company is a key factor in determining the success of a company.
+
+The capital structure of a company is a key factor in determining the success of a company.
+
+The capital structure of a company is a key factor in determining the success of a company.",100,pythia-410m
+finance,due_diligence,due diligence,declarative,cloze,Due diligence is,"the process of gathering information about a person or business to determine whether they are a good candidate for a particular transaction.
+
+The process of gathering information is called due diligence.
+
+Due diligence is the process of gathering information about a person or business to determine whether they are a good candidate for a particular transaction.
+
+The process of gathering information is called due diligence.
+
+Due diligence is the process of gathering information about a person or business to determine whether they are a good candidate for a",100,pythia-410m
+finance,public_offering,public offering,declarative,cloze,A public offering is,"a transaction in which a company sells shares of its stock to a public offering company. The public offering company is the company that is offering the shares to the public. The public offering company is the company that is offering the shares to the public.
+
+A public offering is a transaction in which a company sells shares of its stock to a public offering company. The public offering company is the company that is offering the shares to the public.
+
+A public offering is a transaction in which a company",100,pythia-410m
+finance,market_liquidity,market liquidity,declarative,cloze,Market liquidity refers to,"the amount of money that can be exchanged for a given amount of goods and services. The market liquidity is a measure of the liquidity of the market. The liquidity of the market is measured by the number of transactions that can take place in the market. The liquidity of the market is measured by the number of transactions that can take place in the market.
+
+The liquidity of the market is measured by the number of transactions that can take place in the market. The liquidity of the market is measured by",100,pythia-410m
+finance,trade_settlement,trade settlement,declarative,cloze,Trade settlement is,"a major issue in the Middle East. The United States and Israel have been negotiating a trade deal since the late 1990s. The deal is expected to be finalized by the end of the year.
+
+The deal is expected to include a number of items, including a ban on the import of certain types of weapons, a ban on the import of certain types of ammunition, and a ban on the import of certain types of equipment.
+
+The deal is expected to include a number of items",100,pythia-410m
+finance,central_clearing,central clearing,declarative,cloze,Central clearing houses,"Central clearing houses are a type of clearing house that is used to clear land for construction. They are used to clear land for construction, such as roads, bridges, and other structures. They are also used to clear land for agriculture, such as clearing land for crops.
+
+History
+
+The first central clearing house was established in 1852 by the United States Army Corps of Engineers. The first central clearing house was established in 1854 by the United States Army Corps of Engineers.",100,pythia-410m
+finance,maintenance_margin,maintenance margin,declarative,cloze,A maintenance margin is,"a margin of safety that is used to determine the amount of time that a vehicle is allowed to be driven. Maintenance margins are typically used to determine the amount of time that a vehicle is allowed to be driven. Maintenance margins are typically used to determine the amount of time that a vehicle is allowed to be driven.
+Maintenance margins are typically used to determine the amount of time that a vehicle is allowed to be driven. Maintenance margins are typically used to determine the amount of time that a vehicle is allowed",100,pythia-410m
+finance,regulatory_compliance,regulatory compliance,declarative,cloze,Regulatory compliance means,"that the government is not required to provide the services that it is required to provide.
+
+Regulatory compliance means that the government is not required to provide the services that it is required to provide.
+
+Regulatory compliance means that the government is not required to provide the services that it is required to provide.
+
+Regulatory compliance means that the government is not required to provide the services that it is required to provide.
+
+Regulatory compliance means that the government is not required to provide",100,pythia-410m
+finance,money_laundering,money laundering,declarative,cloze,Money laundering is,"a process in which money is transferred from one person to another without the knowledge of the recipient. Money laundering is a criminal offense in the United States and is punishable by up to 10 years in prison.
+
+Money laundering is a process in which money is transferred from one person to another without the knowledge of the recipient. Money laundering is a criminal offense in the United States and is punishable by up to 10 years in prison.
+
+Money laundering is a process in which money is transferred from",100,pythia-410m
+finance,asset_allocation,asset allocation,declarative,cloze,Asset allocation is,"a process that involves allocating assets to different groups of people. Asset allocation is a process that involves allocating assets to different groups of people.
+
+Asset allocation is a process that involves allocating assets to different groups of people.
+
+Asset allocation is a process that involves allocating assets to different groups of people.
+
+Asset allocation is a process that involves allocating assets to different groups of people.
+
+Asset allocation is a process that involves allocating assets to different groups of people",100,pythia-410m
+finance,systemic_risk,systemic risk,declarative,cloze,Systemic risk is,"a major concern in the management of patients with chronic kidney disease (CKD). The aim of this study was to determine the prevalence of systemic risk factors in patients with CKD and to identify risk factors for cardiovascular disease (CVD) in this population. We conducted a cross-sectional study of patients with CKD (stage 3-5) and a control group of patients with CKD without CKD. We used a questionnaire to collect data on demographic, clinical, and laboratory variables. We used the Framingham",100,pythia-410m
+finance,stress_test,stress test,declarative,cloze,A stress test is,"a test that is used to determine the strength of a system. Stress tests are used to determine the strength of a system, such as a system that is used to power a vehicle. Stress tests are used to determine the strength of a system, such as a system that is used to power a vehicle. Stress tests are used to determine the strength of a system, such as a system that is used to power a vehicle. Stress tests are used to determine the strength of a system, such as a",100,pythia-410m
+finance,credit_default,credit default,declarative,cloze,A credit default is,a default on a debt. It is a default that is not paid back. It is a default that is not paid back. It is a default that is not paid back. It is a default that is not paid back. It is a default that is not paid back. It is a default that is not paid back. It is a default that is not paid back. It is a default that is not paid back. It is a default that is not paid back. It is a default,100,pythia-410m
+finance,stock_market,stock market,declarative,cloze,The stock market is,"a great place to start your investing career. The stock market is a great place to start your investing career.
+
+The stock market is a great place to start your investing career. The stock market is a great place to start your investing career.
+
+The stock market is a great place to start your investing career. The stock market is a great place to start your investing career.
+
+The stock market is a great place to start your investing career. The stock market is a great place",100,pythia-410m
+finance,mutual_fund,mutual fund,declarative,cloze,A mutual fund is,a fund that invests in a mutual fund. Mutual funds are a type of investment that invests in mutual funds. Mutual funds are a type of investment that invests in mutual funds. Mutual funds are a type of investment that invests in mutual funds. Mutual funds are a type of investment that invests in mutual funds. Mutual funds are a type of investment that invests in mutual funds. Mutual funds are a type of investment that invests in mutual funds. Mutual funds are a type of,100,pythia-410m
+finance,hedge_fund,hedge fund,declarative,cloze,A hedge fund is,"a fund that invests in the securities of a company. The fund is a type of investment that is managed by a professional investment advisor. The fund invests in the securities of the company, and the investment is made by the fund.
+
+A hedge fund is a fund that invests in the securities of a company. The fund is a type of investment that is managed by a professional investment advisor. The fund invests in the securities of the company, and the investment is made by the",100,pythia-410m
+finance,bear_market,bear market,declarative,cloze,A bear market is,"a market where people buy and sell goods and services. The term is used to describe a market where people buy and sell goods and services.
+
+A bear market is a market where people buy and sell goods and services. The term is used to describe a market where people buy and sell goods and services.
+
+A bear market is a market where people buy and sell goods and services. The term is used to describe a market where people buy and sell goods and services.
+
+A bear",100,pythia-410m
+finance,bull_market,bull market,declarative,cloze,A bull market is,"a market in which the price of a commodity is higher than the price of the same commodity in the previous period.
+
+A bull market is a market in which the price of a commodity is higher than the price of the same commodity in the previous period.
+
+A bull market is a market in which the price of a commodity is higher than the price of the same commodity in the previous period.
+
+A bull market is a market in which the price of a commodity is higher than the",100,pythia-410m
+finance,credit_rating,credit rating,declarative,cloze,A credit rating is,"a rating of a company's creditworthiness. A credit rating is a rating of a company's creditworthiness.
+
+A credit rating is a rating of a company's creditworthiness. A credit rating is a rating of a company's creditworthiness.
+
+A credit rating is a rating of a company's creditworthiness. A credit rating is a rating of a company's creditworthiness.
+
+A credit rating is a rating of a company's creditworthiness.",100,pythia-410m
+finance,tax_shelter,tax shelter,declarative,cloze,A tax shelter is,"a tax-exempt organization that receives tax-exempt monies from the government. Tax shelters are often used by the government to avoid paying taxes. Tax shelters are often used by the government to avoid paying taxes.
+
+A tax shelter is a tax-exempt organization that receives tax-exempt monies from the government. Tax shelters are often used by the government to avoid paying taxes.
+
+A tax shelter is a tax-exempt organization that receives tax-exempt mon",100,pythia-410m
+finance,venture_capital,venture capital,declarative,cloze,Venture capital is,"a key component of the global economy, and it is expected to grow at a compound annual rate of 6.5% in 2017, according to a new report from the International Monetary Fund.
+
+The IMF’s Global Economic Prospects report, released on Tuesday, forecasts that the global economy will grow at a compound annual rate of 6.5% in 2017, up from 6.4% in 2016.
+
+The report, which is based on a survey of more than 1,",100,pythia-410m
+finance,prime_rate,prime rate,declarative,cloze,The prime rate is,"the rate of interest paid by the government to the banks. The prime rate is the rate of interest paid by the government to the banks.
+
+The prime rate is the rate of interest paid by the government to the banks. The prime rate is the rate of interest paid by the government to the banks.
+
+The prime rate is the rate of interest paid by the government to the banks. The prime rate is the rate of interest paid by the government to the banks.
+
+The prime",100,pythia-410m
+finance,fiscal_policy,fiscal policy,declarative,cloze,Fiscal policy refers to,the policy of the government that sets the budget and allocates the resources to the government. Fiscal policy is the policy of the government that allocates the resources to the government. Fiscal policy is the policy of the government that allocates the resources to the government. Fiscal policy is the policy of the government that allocates the resources to the government. Fiscal policy is the policy of the government that allocates the resources to the government. Fiscal policy is the policy of the government that,100,pythia-410m
+finance,trade_deficit,trade deficit,declarative,cloze,A trade deficit occurs when,"a company sells goods to another company, but the two companies do not have the same market.
+
+A trade deficit occurs when a company sells goods to another company, but the two companies do not have the same market.
+
+A trade deficit occurs when a company sells goods to another company, but the two companies do not have the same market.
+
+A trade deficit occurs when a company sells goods to another company, but the two companies do not have the same market.
+
+A",100,pythia-410m
