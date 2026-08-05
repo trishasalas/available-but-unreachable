@@ -1,0 +1,416 @@
+domain,prompt_id,concept,prompt_type,template_type,prompt,output,max_tokens,model
+finance,cash_flow,cash flow,declarative,cloze,Cash flow is,"a common method of measuring the flow of cash.
+The flow of cash is a common method of measuring the flow of cash. Cash flow is a measure of the flow of cash. Cash flow is a measure of the flow of cash. Cash flow is a measure of the flow of cash. Cash flow is a measure of the flow of cash. Cash flow is a measure of the flow of cash. Cash flow is a measure of the flow of cash. Cash flow is a measure of the flow",100,pythia-160m
+finance,balance_sheet,balance sheet,declarative,cloze,A balance sheet is,"a document that describes the financial and other financial transactions that occur in the financial system.
+
+A balance sheet is a document that describes the financial and other financial transactions that occur in the financial system.
+
+A balance sheet is a document that describes the financial and other financial transactions that occur in the financial system.
+
+A balance sheet is a document that describes the financial and other financial transactions that occur in the financial system.
+
+A balance sheet is a document that describes the financial and other",100,pythia-160m
+finance,journal_entry,journal entry,declarative,cloze,A journal entry is,"a publication of a journal.
+
+The journal is a publication of a journal.
+
+The journal is published by the journal of the journal of the journal of the journal of the journal of the journal of the journal of the journal of the journal of the journal of the journal of the journal of the journal of the journal of the journal of the journal of the journal of the journal of the journal of the journal of the journal of the journal of the journal of the journal of the journal of the",100,pythia-160m
+finance,accelerated_depreciation,accelerated depreciation,declarative,cloze,Accelerated depreciation is,"a common phenomenon in the computer industry.
+Accelerated depreciation is a common phenomenon in the computer industry. Accelerated depreciation is a common phenomenon in the computer industry. Accelerated depreciation is a common phenomenon in the computer industry. Accelerated depreciation is a common phenomenon in the computer industry. Accelerated depreciation is a common phenomenon in the computer industry. Accelerated depreciation is a common phenomenon in the computer industry. Accelerated depreciation is a",100,pythia-160m
+finance,impairment_goodwill,impairment goodwill,declarative,cloze,Goodwill impairment occurs when,"a person is unable to perform a task or perform a task in a way that is not related to the task or task being performed.
+
+Goodwill impairment occurs when a person is unable to perform a task or perform a task in a way that is not related to the task or task being performed.
+
+Goodwill impairment occurs when a person is unable to perform a task or perform a task in a way that is not related to the task or task being performed.
+
+Goodwill impairment",100,pythia-160m
+finance,yield_maturity,yield maturity,declarative,cloze,Yield to maturity is,"a key factor in the success of a business.
+
+Yield to maturity is a key factor in the success of a business.
+
+Yield to maturity is a key factor in the success of a business.
+
+Yield to maturity is a key factor in the success of a business.
+
+Yield to maturity is a key factor in the success of a business.
+
+Yield to maturity is a key factor in the success of a business.
+
+Yield to",100,pythia-160m
+finance,bond_coupon,bond coupon,declarative,cloze,A bond coupon is,"a payment of a fixed amount of money to a customer.
+
+A bond coupon is a payment of a fixed amount of money to a customer.
+
+A bond coupon is a payment of a fixed amount of money to a customer.
+
+A bond coupon is a payment of a fixed amount of money to a customer.
+
+A bond coupon is a payment of a fixed amount of money to a customer.
+
+A bond coupon is a payment of a fixed amount of money to a",100,pythia-160m
+finance,credit_spread,credit spread,declarative,cloze,A credit spread is,"a method of transferring a credit card number from a credit card to a credit card account.
+A credit spread is a method of transferring a credit card number from a credit card to a credit card account. A credit spread is a method of transferring a credit card number from a credit card to a credit card account. A credit spread is a method of transferring a credit card number from a credit card to a credit card account.
+A credit spread is a method of transferring a credit card number from a",100,pythia-160m
+finance,modified_duration,modified duration,declarative,cloze,Modified duration measures,"of the upper limb in patients with chronic obstructive pulmonary disease.
+The aim of this study was to evaluate the duration of the upper limb in patients with chronic obstructive pulmonary disease (COPD) and to compare the duration of the upper limb in patients with COPD and healthy controls. The study was conducted in a group of patients with COPD and healthy controls. The patients were divided into two groups: group 1 (n = 20) and group 2 (n = 20). The patients were divided into two groups",100,pythia-160m
+finance,interest_swap,interest swap,declarative,cloze,An interest swap is,a swap in which a party or group of parties or groups of parties or groups of parties or groups of parties or groups of parties or groups of parties or groups of parties or groups of parties or groups of parties or groups of parties or groups of parties or groups of parties or groups of parties or groups of parties or groups of parties or groups of parties or groups of parties or groups of parties or groups of parties or groups of parties or groups of parties or groups of parties or groups of parties or groups,100,pythia-160m
+finance,call_option,call option,declarative,cloze,A call option gives,"you the option to choose a number of options.
+
+The number of options you can choose depends on the number of options you have.
+
+The number of options you can choose depends on the number of options you have.
+
+The number of options you can choose depends on the number of options you have.
+
+The number of options you can choose depends on the number of options you have.
+
+The number of options you can choose depends on the number of options you have.",100,pythia-160m
+finance,commodity_futures,commodity futures,declarative,cloze,Commodity futures are,"expected to close at the end of the week, with the first day of trading expected to close at the end of the week.
+
+The futures market is expected to close at the end of the week, with the first day of trading expected to close at the end of the week.
+
+Commodity futures are expected to close at the end of the week, with the first day of trading expected to close at the end of the week.
+
+Commodity futures are expected to",100,pythia-160m
+finance,currency_hedge,currency hedge,declarative,cloze,A currency hedge is,"a currency that is used to hedge against inflation.
+
+The currency hedge is a currency that is used to hedge against inflation.
+
+The currency hedge is a currency that is used to hedge against inflation.
+
+The currency hedge is a currency that is used to hedge against inflation.
+
+The currency hedge is a currency that is used to hedge against inflation.
+
+The currency hedge is a currency that is used to hedge against inflation.
+
+The currency hedge is a currency that is",100,pythia-160m
+finance,implied_volatility,implied volatility,declarative,cloze,Implied volatility refers to,"the volatility of a financial instrument.
+
+The term ""implied volatility"" is used to describe the volatility of a financial instrument.
+
+The term ""implied volatility"" is used to describe the volatility of a financial instrument.
+
+The term ""implied volatility"" is used to describe the volatility of a financial instrument.
+
+The term ""implied volatility"" is used to describe the volatility of a financial instrument.
+
+The term ""implied volatility"" is used to describe",100,pythia-160m
+finance,zero_collar,zero collar,declarative,cloze,A zero collar strategy,"for the prevention of HIV infection.
+The aim of this study was to evaluate the effectiveness of a zero collar strategy for the prevention of HIV infection. A total of 6,000 HIV-infected patients were recruited from the HIV clinic of the University Hospital of Zurich. The study was conducted in a single-blinded, randomized, controlled trial. The study was conducted in a single-blinded, randomized, controlled trial. The study was conducted in a single-blinded, randomized, controlled",100,pythia-160m
+finance,diluted_earnings,diluted earnings,declarative,cloze,Diluted earnings per share is,"a measure of the amount of earnings that a company can earn.
+
+The company’s earnings per share is a measure of the amount of earnings that a company can earn.
+
+The company’s earnings per share is a measure of the amount of earnings that a company can earn.
+
+The company’s earnings per share is a measure of the amount of earnings that a company can earn.
+
+The company’s earnings per share is a measure of the amount of earnings that",100,pythia-160m
+finance,price_ratio,price ratio,declarative,cloze,The price to earnings ratio is,"a measure of the value of the company.
+
+The price to earnings ratio is a measure of the value of the company.
+
+The price to earnings ratio is a measure of the value of the company.
+
+The price to earnings ratio is a measure of the value of the company.
+
+The price to earnings ratio is a measure of the value of the company.
+
+The price to earnings ratio is a measure of the value of the company.
+
+The price to earnings",100,pythia-160m
+finance,preferred_dividend,preferred dividend,declarative,cloze,A preferred dividend is,"paid to the shareholders of the corporation.
+
+The dividend is payable to the shareholders of the corporation.
+
+The dividend is payable to the shareholders of the corporation.
+
+The dividend is payable to the shareholders of the corporation.
+
+The dividend is payable to the shareholders of the corporation.
+
+The dividend is payable to the shareholders of the corporation.
+
+The dividend is payable to the shareholders of the corporation.
+
+The dividend is payable to the shareholders of the corporation.",100,pythia-160m
+finance,financial_leverage,financial leverage,declarative,cloze,Financial leverage is,"a key factor in the success of a business.
+
+Financial leverage is a key factor in the success of a business.
+
+Financial leverage is a key factor in the success of a business.
+
+Financial leverage is a key factor in the success of a business.
+
+Financial leverage is a key factor in the success of a business.
+
+Financial leverage is a key factor in the success of a business.
+
+Financial leverage is a key factor in the success of a business.",100,pythia-160m
+finance,debt_covenant,debt covenant,declarative,cloze,A debt covenant is,"a contract between two parties to a contract.
+
+A debt covenant is a contract between two parties to a contract.
+
+A debt covenant is a contract between two parties to a contract.
+
+A debt covenant is a contract between two parties to a contract.
+
+A debt covenant is a contract between two parties to a contract.
+
+A debt covenant is a contract between two parties to a contract.
+
+A debt covenant is a contract between two parties to a contract.",100,pythia-160m
+finance,capital_structure,capital structure,declarative,cloze,Capital structure refers to,"the structure of a system of units, such as a computer system, that is capable of performing a variety of operations.
+In a computer system, a system of units is a system of units that can be controlled by a computer system. The system of units can be controlled by a computer system.
+In a computer system, a system of units can be controlled by a computer system. The system of units can be controlled by a computer system.
+In a computer system, a system of units",100,pythia-160m
+finance,due_diligence,due diligence,declarative,cloze,Due diligence is,"the process of determining the best course of action for a particular customer.
+
+The best course of action for a particular customer is to contact the customer directly.
+
+If you have a customer who is not a customer, you can contact the customer directly.
+
+If you have a customer who is not a customer, you can contact the customer directly.
+
+If you have a customer who is not a customer, you can contact the customer directly.
+
+If you have a customer who",100,pythia-160m
+finance,public_offering,public offering,declarative,cloze,A public offering is,"a public offering of a product or service.
+
+A public offering is a public offering of a product or service.
+
+A public offering is a public offering of a product or service.
+
+A public offering is a public offering of a product or service.
+
+A public offering is a public offering of a product or service.
+
+A public offering is a public offering of a product or service.
+
+A public offering is a public offering of a product or service.",100,pythia-160m
+finance,market_liquidity,market liquidity,declarative,cloze,Market liquidity refers to,"the amount of liquidity that can be generated by a market.
+
+Market liquidity is the amount of liquidity that can be generated by a market.
+
+Market liquidity is the amount of liquidity that can be generated by a market.
+
+Market liquidity is the amount of liquidity that can be generated by a market.
+
+Market liquidity is the amount of liquidity that can be generated by a market.
+
+Market liquidity is the amount of liquidity that can be generated by a market.
+
+Market",100,pythia-160m
+finance,trade_settlement,trade settlement,declarative,cloze,Trade settlement is,"a common practice in the United States.
+
+Trade settlement is a common practice in the United States.
+
+Trade settlement is a common practice in the United States.
+
+Trade settlement is a common practice in the United States.
+
+Trade settlement is a common practice in the United States.
+
+Trade settlement is a common practice in the United States.
+
+Trade settlement is a common practice in the United States.
+
+Trade settlement is a common",100,pythia-160m
+finance,central_clearing,central clearing,declarative,cloze,Central clearing houses,"are a common means of clearing out of the country.
+
+The Central clearing houses are a common means of clearing out of the country.
+
+The Central clearing houses are a common means of clearing out of the country.
+
+The Central clearing houses are a common means of clearing out of the country.
+
+The Central clearing houses are a common means of clearing out of the country.
+
+The Central clearing houses are a common means of clearing out of the country.
+
+The Central",100,pythia-160m
+finance,maintenance_margin,maintenance margin,declarative,cloze,A maintenance margin is,"a measure of the amount of time that a maintenance operation takes.
+
+A maintenance margin is a measure of the amount of time that a maintenance operation takes.
+
+A maintenance margin is a measure of the amount of time that a maintenance operation takes.
+
+A maintenance margin is a measure of the amount of time that a maintenance operation takes.
+
+A maintenance margin is a measure of the amount of time that a maintenance operation takes.
+
+A maintenance margin is a measure of the amount",100,pythia-160m
+finance,regulatory_compliance,regulatory compliance,declarative,cloze,Regulatory compliance means,"that the compliance of a system is not limited to the compliance of the system itself.
+
+A system is a system of rules and regulations that are designed to be applied to the system. A system is a system of rules and regulations that are designed to be applied to the system.
+
+A system is a system of rules and regulations that are designed to be applied to the system. A system is a system of rules and regulations that are designed to be applied to the system.
+
+A",100,pythia-160m
+finance,money_laundering,money laundering,declarative,cloze,Money laundering is,"a major problem in the world.
+
+Money laundering is a major problem in the world.
+
+Money laundering is a major problem in the world.
+
+Money laundering is a major problem in the world.
+
+Money laundering is a major problem in the world.
+
+Money laundering is a major problem in the world.
+
+Money laundering is a major problem in the world.
+
+Money laundering is a major problem in the world.
+
+Money laundering is a major problem in",100,pythia-160m
+finance,asset_allocation,asset allocation,declarative,cloze,Asset allocation is,"a process that is used to determine the amount of assets that are available to the buyer.
+
+Asset allocation is a process that is used to determine the amount of assets that are available to the buyer.
+
+Asset allocation is a process that is used to determine the amount of assets that are available to the buyer.
+
+Asset allocation is a process that is used to determine the amount of assets that are available to the buyer.
+
+Asset allocation is a process that is used to determine the",100,pythia-160m
+finance,systemic_risk,systemic risk,declarative,cloze,Systemic risk is,"a complex phenomenon that involves multiple factors, including the individual's genetic background, the environment in which the disease is occurring, and the individual's susceptibility to the disease.
+
+The disease is a complex disease that involves multiple factors, including the individual's genetic background, the environment in which the disease is occurring, and the individual's susceptibility to the disease.
+
+The disease is a complex disease that involves multiple factors, including the individual's genetic background, the environment in which the disease is occurring,",100,pythia-160m
+finance,stress_test,stress test,declarative,cloze,A stress test is,"a test of the ability of a person to cope with a particular situation.
+
+A stress test is a test of the ability of a person to cope with a particular situation.
+
+A stress test is a test of the ability of a person to cope with a particular situation.
+
+A stress test is a test of the ability of a person to cope with a particular situation.
+
+A stress test is a test of the ability of a person to cope with a particular situation.",100,pythia-160m
+finance,credit_default,credit default,declarative,cloze,A credit default is,"a financial default that occurs when a financial institution fails to pay its debts.
+
+A credit default is a financial default that occurs when a financial institution fails to pay its debts.
+
+A credit default is a financial default that occurs when a financial institution fails to pay its debts.
+
+A credit default is a financial default that occurs when a financial institution fails to pay its debts.
+
+A credit default is a financial default that occurs when a financial institution fails to pay its debts.",100,pythia-160m
+finance,stock_market,stock market,declarative,cloze,The stock market is,"a very important part of the economy.
+
+The stock market is a very important part of the economy.
+
+The stock market is a very important part of the economy.
+
+The stock market is a very important part of the economy.
+
+The stock market is a very important part of the economy.
+
+The stock market is a very important part of the economy.
+
+The stock market is a very important part of the economy.
+
+The stock market is a very",100,pythia-160m
+finance,mutual_fund,mutual fund,declarative,cloze,A mutual fund is,"a financial institution that manages a portfolio of assets.
+
+A mutual fund is a financial institution that manages a portfolio of assets.
+
+A mutual fund is a financial institution that manages a portfolio of assets.
+
+A mutual fund is a financial institution that manages a portfolio of assets.
+
+A mutual fund is a financial institution that manages a portfolio of assets.
+
+A mutual fund is a financial institution that manages a portfolio of assets.
+
+A mutual fund is a financial institution that",100,pythia-160m
+finance,hedge_fund,hedge fund,declarative,cloze,A hedge fund is,"a company that invests in a particular business or industry.
+
+The hedge fund is a company that invests in a particular business or industry.
+
+The hedge fund is a company that invests in a particular business or industry.
+
+The hedge fund is a company that invests in a particular business or industry.
+
+The hedge fund is a company that invests in a particular business or industry.
+
+The hedge fund is a company that invests in a particular business or",100,pythia-160m
+finance,bear_market,bear market,declarative,cloze,A bear market is,"a market where a price is determined by the market price of the product.
+
+The market is a market where the price of a product is determined by the market price of the product.
+
+The market is a market where the price of a product is determined by the market price of the product.
+
+The market is a market where the price of a product is determined by the market price of the product.
+
+The market is a market where the price of a product is determined by",100,pythia-160m
+finance,bull_market,bull market,declarative,cloze,A bull market is,"a market in which a number of people are buying and selling at the same time.
+
+The bull market is a market in which a number of people are buying and selling at the same time.
+
+The bull market is a market in which a number of people are buying and selling at the same time.
+
+The bull market is a market in which a number of people are buying and selling at the same time.
+
+The bull market is a market in which a number of people",100,pythia-160m
+finance,credit_rating,credit rating,declarative,cloze,A credit rating is,"a financial instrument that is used to determine the financial condition of a business.
+
+Credit rating is a financial instrument that is used to determine the financial condition of a business.
+
+Credit rating is a financial instrument that is used to determine the financial condition of a business.
+
+Credit rating is a financial instrument that is used to determine the financial condition of a business.
+
+Credit rating is a financial instrument that is used to determine the financial condition of a business.
+
+Credit rating is",100,pythia-160m
+finance,tax_shelter,tax shelter,declarative,cloze,A tax shelter is,"a program that provides a tax-deductible amount of money to help people who need it.
+
+The program is called the Tax Relief Program.
+
+The program is a program that provides a tax-deductible amount of money to help people who need it.
+
+The program is called the Tax Relief Program.
+
+The program is called the Tax Relief Program.
+
+The program is called the Tax Relief Program.
+
+The program is called the Tax Relief Program.",100,pythia-160m
+finance,venture_capital,venture capital,declarative,cloze,Venture capital is,"a process in which a company is formed and managed by a group of individuals.
+
+Venture capital is a process in which a company is formed and managed by a group of individuals.
+
+Venture capital is a process in which a company is formed and managed by a group of individuals.
+
+Venture capital is a process in which a company is formed and managed by a group of individuals.
+
+Venture capital is a process in which a company is formed",100,pythia-160m
+finance,prime_rate,prime rate,declarative,cloze,The prime rate is,"the highest in the world.
+-1
+Let s(n) = -n**2 - n + 1. Let o be s(-2). Suppose -o*l + 3*l = -3. Suppose -l*w + w = -5. What are the prime factors of w?
+2
+Let f(n) = -n**3 + n**2 - n + 1. Let s be f(0). Suppose -s*l + 3",100,pythia-160m
+finance,fiscal_policy,fiscal policy,declarative,cloze,Fiscal policy refers to,"the fiscal year that the fiscal year ends.
+
+The fiscal year is the period during which the fiscal year ends.
+
+The fiscal year is the period during which the fiscal year ends.
+
+The fiscal year is the period during which the fiscal year ends.
+
+The fiscal year is the period during which the fiscal year ends.
+
+The fiscal year is the period during which the fiscal year ends.
+
+The fiscal year is the period during which the fiscal year ends.",100,pythia-160m
+finance,trade_deficit,trade deficit,declarative,cloze,A trade deficit occurs when,"a company has a monopoly on a market that is not competitive with the market it is currently in.
+
+The trade deficit is a measure of the amount of competition that a company has in the market.
+
+The trade deficit is a measure of the amount of competition that a company has in the market.
+
+The trade deficit is a measure of the amount of competition that a company has in the market.
+
+The trade deficit is a measure of the amount of competition that a company has",100,pythia-160m

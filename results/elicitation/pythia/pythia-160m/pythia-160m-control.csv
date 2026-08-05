@@ -1,0 +1,383 @@
+domain,prompt_id,concept,prompt_type,template_type,prompt,output,max_tokens,model
+control,blue_sky,blue sky,declarative,cloze,A blue sky is,"a blue sky, and a blue sky is a blue sky.
+
+A blue sky is a blue sky, and a blue sky is a blue sky.
+
+A blue sky is a blue sky, and a blue sky is a blue sky.
+
+A blue sky is a blue sky, and a blue sky is a blue sky.
+
+A blue sky is a blue sky, and a blue sky is a blue sky.
+
+A blue sky is a blue sky, and",100,pythia-160m
+control,cold_water,cold water,declarative,cloze,Cold water is typically characterized by,"a high temperature and a high pressure.
+Cold water is typically characterized by a high temperature and a high pressure. The high temperature and high pressure are typically associated with a high temperature and a high pressure. The high pressure and high temperature are typically associated with a high pressure and a high pressure. The high pressure and high pressure are typically associated with a high pressure and a high pressure. The high pressure and high pressure are typically associated with a high pressure and a high pressure. The high pressure and high",100,pythia-160m
+control,ice_cream,ice cream,declarative,cloze,Ice cream is a frozen dessert made from,"the frozen fruit of the ice cream maker.
+
+Ice cream is a frozen dessert made from the frozen fruit of the ice cream maker.
+
+Ice cream is made from the frozen fruit of the ice cream maker.
+
+Ice cream is made from the frozen fruit of the ice cream maker.
+
+Ice cream is made from the frozen fruit of the ice cream maker.
+
+Ice cream is made from the frozen fruit of the ice cream maker.
+
+Ice cream is made from the",100,pythia-160m
+control,life_jacket,life jacket,declarative,cloze,A life jacket is designed to,"protect a person from the elements.
+
+A life jacket is designed to protect a person from the elements.
+
+A life jacket is designed to protect a person from the elements.
+
+A life jacket is designed to protect a person from the elements.
+
+A life jacket is designed to protect a person from the elements.
+
+A life jacket is designed to protect a person from the elements.
+
+A life jacket is designed to protect a person from the elements.
+
+A",100,pythia-160m
+control,tea_cup,tea cup,declarative,cloze,A tea cup is a vessel used for,"drinking tea.
+
+A tea cup is a vessel used for drinking tea.
+
+A tea cup is a vessel used for drinking tea.
+
+A tea cup is a vessel used for drinking tea.
+
+A tea cup is a vessel used for drinking tea.
+
+A tea cup is a vessel used for drinking tea.
+
+A tea cup is a vessel used for drinking tea.
+
+A tea cup is a vessel used for drinking tea.
+
+A tea cup is",100,pythia-160m
+control,living_room,living room,declarative,cloze,A living room is,"a place where people can relax and enjoy a good meal.
+
+The best part about living room is that it’s a place where you can relax and enjoy a good meal.
+
+The best part about living room is that it’s a place where you can relax and enjoy a good meal.
+
+The best part about living room is that it’s a place where you can relax and enjoy a good meal.
+
+The best part about living room is that it’s",100,pythia-160m
+control,roller_coaster,roller coaster,declarative,cloze,A roller coaster is an amusement ride that,"is operated by a person or group of people.
+
+The ride is a roller coaster that is operated by a person or group of people.
+
+The ride is a roller coaster that is operated by a person or group of people.
+
+The ride is a roller coaster that is operated by a person or group of people.
+
+The ride is a roller coaster that is operated by a person or group of people.
+
+The ride is a roller coaster that",100,pythia-160m
+control,school_bus,school bus,declarative,cloze,A school bus is used to,"transport students to and from school.
+
+The bus is used to transport students to and from school.
+
+The bus is used to transport students to and from school.
+
+The bus is used to transport students to and from school.
+
+The bus is used to transport students to and from school.
+
+The bus is used to transport students to and from school.
+
+The bus is used to transport students to and from school.
+
+The bus is used to transport students",100,pythia-160m
+control,grilled_cheese,grilled cheese,declarative,cloze,A grilled cheese sandwich consists of,"a grilled cheese sandwich with a grilled cheese sandwich.
+
+The grilled cheese sandwich is a grilled cheese sandwich with a grilled cheese sandwich. The grilled cheese sandwich is a grilled cheese sandwich with a grilled cheese sandwich.
+
+The grilled cheese sandwich is a grilled cheese sandwich with a grilled cheese sandwich.
+
+The grilled cheese sandwich is a grilled cheese sandwich with a grilled cheese sandwich.
+
+The grilled cheese sandwich is a grilled cheese sandwich with a grilled cheese sandwich.
+
+The grilled cheese sandwich is",100,pythia-160m
+control,peanut_butter,peanut butter,declarative,cloze,Peanut butter is made from,"a mixture of peanut butter and butter.
+
+Peanut butter is made from a mixture of peanut butter and butter.
+
+The peanut butter is made from a mixture of peanut butter and butter.
+
+The peanut butter is made from a mixture of peanut butter and butter.
+
+The peanut butter is made from a mixture of peanut butter and butter.
+
+The peanut butter is made from a mixture of peanut butter and butter.
+
+The peanut butter is made from a mixture of peanut",100,pythia-160m
+control,hot_chocolate,hot chocolate,declarative,cloze,Hot chocolate is a warm beverage typically made from,"a mixture of cocoa and cocoa butter.
+
+The most common type of chocolate is made from cocoa butter.
+
+The cocoa butter is a mixture of cocoa and cocoa butter.
+
+The cocoa butter is a mixture of cocoa and cocoa butter.
+
+The cocoa butter is a mixture of cocoa and cocoa butter.
+
+The cocoa butter is a mixture of cocoa and cocoa butter.
+
+The cocoa butter is a mixture of cocoa and cocoa butter.
+
+The cocoa butter is a mixture",100,pythia-160m
+control,apple_pie,apple pie,declarative,cloze,Apple pie is a dessert featuring,"a rich, rich, rich, rich, rich, rich, rich, rich, rich, rich, rich, rich, rich, rich, rich, rich, rich, rich, rich, rich, rich, rich, rich, rich, rich, rich, rich, rich, rich, rich, rich, rich, rich, rich, rich, rich, rich, rich, rich, rich, rich, rich, rich, rich, rich, rich, rich, rich, rich, rich",100,pythia-160m
+control,orange_juice,orange juice,declarative,cloze,Orange juice is extracted from,"the fruit of the orange tree, and then the juice is extracted from the fruit of the orange tree.
+
+The orange juice is then extracted from the fruit of the orange tree, and then the juice is extracted from the fruit of the orange tree.
+
+The orange juice is then extracted from the fruit of the orange tree, and then the juice is extracted from the fruit of the orange tree.
+
+The orange juice is then extracted from the fruit of the orange tree, and then the",100,pythia-160m
+control,baked_beans,baked beans,declarative,cloze,Baked beans are,"a great source of protein and fiber.
+Baked beans are a great source of protein and fiber. They are also a great source of fiber and protein. They are also a great source of protein and fiber. They are also a great source of fiber and fiber. They are also a great source of fiber and fiber. They are also a great source of fiber and fiber. They are also a great source of fiber and fiber. They are also a great source of fiber and fiber. They are",100,pythia-160m
+control,palm_tree,palm tree,declarative,cloze,A palm tree is characterized by,"a large number of branches, which are connected by a series of interconnected branches.
+The palm tree is a tree that is characterized by a large number of trees, which are connected by a series of interconnected branches. The branches of the palm tree are connected by a series of interconnected branches. The branches of the palm tree are connected by a series of interconnected branches. The branches of the palm tree are connected by a series of interconnected branches. The branches of the palm tree are connected by a series of",100,pythia-160m
+control,thunder_storm,thunder storm,declarative,cloze,A thunder storm is,a storm that is a storm that is a storm that is a storm that is a storm that is a storm that is a storm that is a storm that is a storm that is a storm that is a storm that is a storm that is a storm that is a storm that is a storm that is a storm that is a storm that is a storm that is a storm that is a storm that is a storm that is a storm that is a storm that is a storm that is a storm that is,100,pythia-160m
+control,coral_reef,coral reef,declarative,cloze,A coral reef is an underwater formation that,"is formed by the movement of water from the surface to the bottom.
+
+The coral reef is a large, shallow, and shallow water formation that is formed by the movement of water from the surface to the bottom. The coral reef is a large, shallow, and shallow water formation that is formed by the movement of water from the surface to the bottom.
+
+The coral reef is a large, shallow, and shallow water formation that is formed by the movement of water from the surface to the",100,pythia-160m
+control,shooting_star,shooting star,declarative,cloze,A shooting star is actually,a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is,100,pythia-160m
+control,mountain_lion,mountain lion,declarative,cloze,A mountain lion is,"a large animal that is found in the wild.
+
+The mountain lion is a large animal that is found in the wild.
+
+The mountain lion is a large animal that is found in the wild.
+
+The mountain lion is a large animal that is found in the wild.
+
+The mountain lion is a large animal that is found in the wild.
+
+The mountain lion is a large animal that is found in the wild.
+
+The mountain lion is a large animal that",100,pythia-160m
+control,tidal_wave,tidal wave,declarative,cloze,A tidal wave is a large ocean wave caused by,"a tidal wave.
+
+The tidal wave is a large ocean wave caused by a tidal wave. The tidal wave is a large ocean wave caused by a tidal wave. The tidal wave is a large ocean wave caused by a tidal wave.
+
+The tidal wave is a large ocean wave caused by a tidal wave. The tidal wave is a large ocean wave caused by a tidal wave. The tidal wave is a large ocean wave caused by a tidal wave.
+
+The tidal wave is a large",100,pythia-160m
+control,dining_table,dining table,declarative,cloze,A dining table is furniture used for,"dining.
+
+A dining table is furniture used for dining.
+
+A dining table is furniture used for dining.
+
+A dining table is furniture used for dining.
+
+A dining table is furniture used for dining.
+
+A dining table is furniture used for dining.
+
+A dining table is furniture used for dining.
+
+A dining table is furniture used for dining.
+
+A dining table is furniture used for dining.
+
+A dining table is furniture used for dining",100,pythia-160m
+control,car_keys,car keys,declarative,cloze,Car keys are used to,"transport goods and services to and from a location.
+
+The U.S. Department of Agriculture (USDA) has issued a new rule that requires all vehicles to have a U.S. license plate number.
+
+The new rule is part of a larger effort to reduce the number of vehicles that can be used to transport goods and services.
+
+The new rule is part of a larger effort to reduce the number of vehicles that can be used to transport goods and services.",100,pythia-160m
+control,washing_machine,washing machine,declarative,cloze,A washing machine is an appliance that,"is used to wash a body of water.
+A washing machine is a device that is used to wash a body of water. The washing machine is typically a motor-driven washing machine. The washing machine is typically a motor-driven washing machine that is used to wash a body of water. The motor-driven washing machine is typically a motor-driven washing machine that is used to wash a body of water.
+A washing machine is typically a motor-driven washing machine that is used to wash",100,pythia-160m
+control,bath_towels,bath towels,declarative,cloze,Bath towels are used for,"the purpose of bathing, bathing, bathing, bathing, bathing, bathing, bathing, bathing, bathing, bathing, bathing, bathing, bathing, bathing, bathing, bathing, bathing, bathing, bathing, bathing, bathing, bathing, bathing, bathing, bathing, bathing, bathing, bathing, bathing, bathing, bathing, bathing, bathing, bathing, bathing, bathing, bathing, bathing, bathing, bathing, bathing, bathing, bathing, bathing, bathing, bathing, bathing, bathing, bathing",100,pythia-160m
+control,alarm_clock,alarm clock,declarative,cloze,An alarm clock is a device that,"is used to control the operation of a computer system.
+A conventional alarm clock is a device that is used to control the operation of a computer system. The alarm clock is a device that is used to control the operation of a computer system. The alarm clock is a device that is used to control the operation of a computer system.
+The alarm clock is a device that is used to control the operation of a computer system. The alarm clock is a device that is used to control the operation of",100,pythia-160m
+control,light_bulb,light bulb,declarative,cloze,A light bulb is,"a light source that emits light when it is lit.
+
+A light bulb is a light source that emits light when it is lit.
+
+A light bulb is a light source that emits light when it is lit.
+
+A light bulb is a light source that emits light when it is lit.
+
+A light bulb is a light source that emits light when it is lit.
+
+A light bulb is a light source that emits light when it is",100,pythia-160m
+control,post_office,post office,declarative,cloze,A post office is an institution that,"provides a service to the public.
+
+A post office is a public institution that provides a service to the public.
+
+A post office is a public institution that provides a service to the public.
+
+A post office is a public institution that provides a service to the public.
+
+A post office is a public institution that provides a service to the public.
+
+A post office is a public institution that provides a service to the public.
+
+A post office is a public",100,pythia-160m
+control,parking_lot,parking lot,declarative,cloze,A parking lot is,"a parking lot where a parking lot is located.
+
+A parking lot is a parking lot where a parking lot is located.
+
+A parking lot is a parking lot where a parking lot is located.
+
+A parking lot is a parking lot where a parking lot is located.
+
+A parking lot is a parking lot where a parking lot is located.
+
+A parking lot is a parking lot where a parking lot is located.
+
+A parking lot is a parking lot where",100,pythia-160m
+control,train_station,train station,declarative,cloze,A train station is a facility where,"a train is used to transport passengers and goods.
+
+A train station is a facility where a train is used to transport passengers and goods.
+
+A train station is a facility where a train is used to transport passengers and goods.
+
+A train station is a facility where a train is used to transport passengers and goods.
+
+A train station is a facility where a train is used to transport passengers and goods.
+
+A train station is a facility where a train is used to",100,pythia-160m
+control,fire_station,fire station,declarative,cloze,A fire station is,"a building that is used to store and store goods.
+
+The fire station is located in the city of St. Louis, Missouri, and is located in the city of St. Louis, Missouri.
+
+The fire station is located in the city of St. Louis, Missouri.
+
+The fire station is located in the city of St. Louis, Missouri.
+
+The fire station is located in the city of St. Louis, Missouri.
+
+The fire station is located in",100,pythia-160m
+control,swimming_pool,swimming pool,declarative,cloze,A swimming pool is a structure designed for,"swimming.
+
+A swimming pool is a structure designed for swimming.
+
+A swimming pool is a structure designed for swimming.
+
+A swimming pool is a structure designed for swimming.
+
+A swimming pool is a structure designed for swimming.
+
+A swimming pool is a structure designed for swimming.
+
+A swimming pool is a structure designed for swimming.
+
+A swimming pool is a structure designed for swimming.
+
+A swimming pool is a structure designed for swimming.",100,pythia-160m
+control,coffee_shop,coffee shop,declarative,cloze,A coffee shop is,"a place where people can get a coffee, a coffee, a coffee, a coffee, a coffee, a coffee, a coffee, a coffee, a coffee, a coffee, a coffee, a coffee, a coffee, a coffee, a coffee, a coffee, a coffee, a coffee, a coffee, a coffee, a coffee, a coffee, a coffee, a coffee, a coffee, a coffee, a coffee, a coffee, a coffee, a coffee, a coffee, a",100,pythia-160m
+control,hard_drive,hard drive,declarative,cloze,A hard drive is a computer component used for,"storing data.
+A hard drive is a computer component used for storing data. A hard drive is a computer component used for storing data.
+A hard drive is a computer component used for storing data. A hard drive is a computer component used for storing data.
+A hard drive is a computer component used for storing data. A hard drive is a computer component used for storing data.
+A hard drive is a computer component used for storing data. A hard drive is a computer component used for",100,pythia-160m
+control,operating_system,operating system,declarative,cloze,An operating system is software that,"provides a set of commands to run a program.
+
+A program is a program that runs a program. A program is a program that runs a program. A program is a program that runs a program.
+
+A program is a program that runs a program. A program is a program that runs a program.
+
+A program is a program that runs a program. A program is a program that runs a program.
+
+A program is a program that runs a program. A program",100,pythia-160m
+control,search_engine,search engine,declarative,cloze,A search engine is,a computer system that provides a user with a computer system that provides a user with a computer system that provides a user with a computer system that provides a user with a computer system that provides a user with a computer system that provides a user with a computer system that provides a user with a computer system that provides a user with a computer system that provides a user with a computer system that provides a user with a computer system that provides a user with a computer system that provides a user with a computer system that,100,pythia-160m
+control,user_name,user name,declarative,cloze,A user name is typically used for,"the user name of the application.
+
+The user name is used to identify the user.
+
+The user name is used to identify the user.
+
+The user name is used to identify the user.
+
+The user name is used to identify the user.
+
+The user name is used to identify the user.
+
+The user name is used to identify the user.
+
+The user name is used to identify the user.
+
+The user name is used to identify",100,pythia-160m
+control,power_supply,power supply,declarative,cloze,A power supply is,"a device that supplies power to a power source.
+A power supply is a device that supplies power to a power source. A power supply is a device that supplies power to a power source.
+A power supply is a device that supplies power to a power source.
+A power supply is a device that supplies power to a power source.
+A power supply is a device that supplies power to a power source.
+A power supply is a device that supplies power to a power source.",100,pythia-160m
+control,data_base,data base,declarative,cloze,A data base is,"a collection of data that is used to store and retrieve data.
+
+A data base is a collection of data that is used to store and retrieve data.
+
+A data base is a collection of data that is used to store and retrieve data.
+
+A data base is a collection of data that is used to store and retrieve data.
+
+A data base is a collection of data that is used to store and retrieve data.
+
+A data base is a collection of data that",100,pythia-160m
+control,sore_throat,sore throat,declarative,cloze,A sore throat is,"a symptom of a disease or condition that is not well understood.
+
+A sore throat is a symptom of a disease or condition that is not well understood.
+
+A sore throat is a symptom of a disease or condition that is not well understood.
+
+A sore throat is a symptom of a disease or condition that is not well understood.
+
+A sore throat is a symptom of a disease or condition that is not well understood.
+
+A sore throat is a symptom of a disease",100,pythia-160m
+control,blood_pressure,blood pressure,declarative,cloze,Blood pressure refers to,"the pressure exerted by the blood vessels on the heart by the heart muscle.
+
+Blood pressure is a common problem in the treatment of hypertension. It is a common problem in the treatment of hypertension.
+
+The blood pressure is a measure of the pressure exerted by the blood vessels on the heart by the heart muscle.
+
+The blood pressure is a measure of the pressure exerted by the blood vessels on the heart by the heart muscle.
+
+The blood pressure is a measure of the pressure exerted",100,pythia-160m
+control,collar_bone,collar bone,declarative,cloze,The collar bone is,"a complex structure of bone, bone marrow, and bone marrow-derived cells. The bone marrow is a heterogeneous population of cells that are derived from the bone marrow and are capable of producing a variety of cells. The bone marrow is a heterogeneous population of cells that are capable of producing a variety of cells. Bone marrow-derived cells are derived from the bone marrow and are capable of producing a variety of cells. Bone marrow-derived cells are derived from the bone marrow and are capable of producing a variety",100,pythia-160m
+control,heart_rate,heart rate,declarative,cloze,Heart rate measures,"are used to measure the heart rate.
+
+The heart rate is a measure of the heart rate that is used to measure the heart rate. The heart rate is measured by the heart rate sensor.
+
+The heart rate is measured by the heart rate sensor.
+
+The heart rate is measured by the heart rate sensor.
+
+The heart rate is measured by the heart rate sensor.
+
+The heart rate is measured by the heart rate sensor.
+
+The heart rate is measured by",100,pythia-160m
+control,dental_appointment,dental appointment,declarative,cloze,A dental appointment is,"a procedure that is performed by a dentist to remove a tooth from a patient.
+
+A dental appointment is a procedure that is performed by a dentist to remove a tooth from a patient.
+
+A dental appointment is a procedure that is performed by a dentist to remove a tooth from a patient.
+
+A dental appointment is a procedure that is performed by a dentist to remove a tooth from a patient.
+
+A dental appointment is a procedure that is performed by a dentist to remove a tooth",100,pythia-160m
+control,waiting_room,waiting room,declarative,cloze,A waiting room is,"a place where people can get a chance to talk to a friend or family member.
+
+The waiting room is a place where people can get a chance to talk to a friend or family member.
+
+The waiting room is a place where people can get a chance to talk to a friend or family member.
+
+The waiting room is a place where people can get a chance to talk to a friend or family member.
+
+The waiting room is a place where people can get a chance",100,pythia-160m

@@ -1,0 +1,375 @@
+domain,prompt_id,concept,prompt_type,template_type,prompt,output,max_tokens,model
+legal,due_process,due process,declarative,cloze,Due process is,"not guaranteed.
+
+The following is a list of the rights of the individual in the United States.
+
+The rights of the individual in the United States are not guaranteed.
+
+The rights of the individual in the United States are not guaranteed.
+
+The rights of the individual in the United States are not guaranteed.
+
+The rights of the individual in the United States are not guaranteed.
+
+The rights of the individual in the United States are not guaranteed.
+
+The rights",100,pythia-160m
+legal,equal_protection,equal protection,declarative,cloze,Equal protection refers to,"the right of the people to be treated equally.
+
+Equal protection is a right of the people to be treated equally.
+
+The right of the people to be treated equally is a fundamental right of the people to be treated equally.
+
+The right of the people to be treated equally is a fundamental right of the people to be treated equally.
+
+The right of the people to be treated equally is a fundamental right of the people to be treated equally.
+
+The right of the",100,pythia-160m
+legal,commerce_clause,commerce clause,declarative,cloze,The commerce clause is,"a fundamental principle of American law.
+
+The commerce clause is a fundamental principle of American law. It is a fundamental principle of American law that the federal government has the power to regulate commerce.
+
+The commerce clause is a fundamental principle of American law. It is a fundamental principle of American law that the federal government has the power to regulate commerce.
+
+The commerce clause is a fundamental principle of American law. It is a fundamental principle of American law that the federal government has the power to",100,pythia-160m
+legal,fifth_amendment,fifth amendment,declarative,cloze,The fifth amendment provides,"for the right to bear arms.
+
+The right to bear arms is a fundamental right that protects the right to bear arms. It is a fundamental right that protects the right to bear arms.
+
+The right to bear arms is a fundamental right that protects the right to bear arms. It is a fundamental right that protects the right to bear arms.
+
+The right to bear arms is a fundamental right that protects the right to bear arms. It is a fundamental right that protects the right to",100,pythia-160m
+legal,free_speech,free speech,declarative,cloze,Free speech is a right that,"is not limited to the free speech of the people.
+
+The free speech of the people is a right that is not limited to the free speech of the people.
+
+The free speech of the people is a right that is not limited to the free speech of the people.
+
+The free speech of the people is a right that is not limited to the free speech of the people.
+
+The free speech of the people is a right that is not limited to the free speech of",100,pythia-160m
+legal,strict_liability,strict liability,declarative,cloze,Strict liability is a legal doctrine holding,"that a person is liable for the harm caused by a negligent act.
+
+A person is liable for the harm caused by a negligent act if the act is done with the knowledge and consent of the person's agent.
+
+A person is liable for the harm caused by a negligent act if the act is done with the knowledge and consent of the person's agent.
+
+A person is liable for the harm caused by a negligent act if the act is done with the knowledge and consent of the",100,pythia-160m
+legal,punitive_damages,punitive damages,declarative,cloze,Punitive damages are awarded to,a plaintiff who has been injured by a defendant who has been injured by a defendant who has been injured by a defendant who has been injured by a defendant who has been injured by a defendant who has been injured by a defendant who has been injured by a defendant who has been injured by a defendant who has been injured by a defendant who has been injured by a defendant who has been injured by a defendant who has been injured by a defendant who has been injured by a defendant who has been injured by a defendant,100,pythia-160m
+legal,sovereign_immunity,sovereign immunity,declarative,cloze,Sovereign immunity is,"a fundamental principle of the political system.
+
+The Constitution of the United States of America, the Constitution of the United States of America, and the Constitution of the United States of America are the most important documents of the political system. The Constitution is the most important document of the political system. It is the most important document of the political system. It is the most important document of the political system. It is the most important document of the political system. It is the most important document of the",100,pythia-160m
+legal,grand_indictment,grand indictment,declarative,cloze,A grand indictment is,"a document that is signed by a person who is not a party to the crime.
+
+The indictment was signed by a person who is not a party to the crime.
+
+The indictment was signed by a person who is not a party to the crime.
+
+The indictment was signed by a person who is not a party to the crime.
+
+The indictment was signed by a person who is not a party to the crime.
+
+The indictment was signed by a person who is",100,pythia-160m
+legal,guilty_plea,guilty plea,declarative,cloze,A guilty plea is when,"the defendant is found guilty of a crime, and the court is required to determine whether the defendant is guilty or not.
+
+A guilty plea is when the defendant is found guilty of a crime, and the court is required to determine whether the defendant is guilty or not.
+
+A guilty plea is when the defendant is found guilty of a crime, and the court is required to determine whether the defendant is guilty or not.
+
+A guilty plea is when the defendant is found guilty of a",100,pythia-160m
+legal,excessive_bail,excessive bail,declarative,cloze,Excessive bail is prohibited by,"the Supreme Court.
+
+The Supreme Court has issued a temporary restraining order against the bail system in the case of the man accused of raping a woman in a public place.
+
+The man, who is not named, was arrested on March 14, 2017, in the city of Boulder, Colorado, after he was found guilty of raping a woman in a public place.
+
+The man, who is not named, was arrested on March 14, 2017, in the city of",100,pythia-160m
+legal,felony_conviction,felony conviction,declarative,cloze,A felony conviction is,"a felony conviction that is not a felony conviction.
+
+A felony conviction is a felony conviction that is not a felony conviction.
+
+A felony conviction is a felony conviction that is not a felony conviction.
+
+A felony conviction is a felony conviction that is not a felony conviction.
+
+A felony conviction is a felony conviction that is not a felony conviction.
+
+A felony conviction is a felony conviction that is not a felony conviction.
+
+A felony conviction is a felony conviction that",100,pythia-160m
+legal,conditional_parole,conditional parole,declarative,cloze,Conditional parole requires,"a conditional sentence.
+Conditional parole requires a conditional sentence. The sentence must be conditional.
+
+Conditional sentences are a form of conditional parole.
+
+Conditional sentences are a form of conditional parole.
+
+Conditional sentences are a form of conditional parole.
+
+Conditional sentences are a form of conditional parole.
+
+Conditional sentences are a form of conditional parole.
+
+Conditional sentences are a form of conditional parole.
+
+Conditional sentences are a form of",100,pythia-160m
+legal,joint_custody,joint custody,declarative,cloze,Joint custody means,"that the parties are not to be separated.
+
+The parties are to be separated by a court order.
+
+The parties are to be separated by a court order.
+
+The parties are to be separated by a court order.
+
+The parties are to be separated by a court order.
+
+The parties are to be separated by a court order.
+
+The parties are to be separated by a court order.
+
+The parties are to be separated by a court order.",100,pythia-160m
+legal,material_breach,material breach,declarative,cloze,A material breach is,"a material breach of a material, such as a material that is not a material, that is not a material, that is not a material, that is not a material, that is not a material, that is not a material, that is not a material, that is not a material, that is not a material, that is not a material, that is not a material, that is not a material, that is not a material, that is not a material, that is not a material",100,pythia-160m
+legal,adequate_consideration,adequate consideration,declarative,cloze,Adequate consideration in a contract means,"that the contract is not in the best interest of the parties.
+
+The contract is not in the best interest of the parties.
+
+The contract is not in the best interest of the parties.
+
+The contract is not in the best interest of the parties.
+
+The contract is not in the best interest of the parties.
+
+The contract is not in the best interest of the parties.
+
+The contract is not in the best interest of the parties.
+
+The",100,pythia-160m
+legal,arbitration_clause,arbitration clause,declarative,cloze,An arbitration clause is,"a contract between two parties to a dispute.
+
+The arbitration clause is a contract between two parties to a dispute.
+
+The arbitration clause is a contract between two parties to a dispute.
+
+The arbitration clause is a contract between two parties to a dispute.
+
+The arbitration clause is a contract between two parties to a dispute.
+
+The arbitration clause is a contract between two parties to a dispute.
+
+The arbitration clause is a contract between two parties to a dispute.",100,pythia-160m
+legal,specific_performance,specific performance,declarative,cloze,Specific performance is a remedy that,"is used to reduce the number of errors that occur in the performance of a system.
+
+The performance of a system is a measure of the performance of the system. The performance of a system is measured by the number of errors that occur in the performance of the system.
+
+The performance of a system is measured by the number of errors that occur in the performance of the system.
+
+The performance of a system is measured by the number of errors that occur in the performance of the system",100,pythia-160m
+legal,preliminary_injunction,preliminary injunction,declarative,cloze,A preliminary injunction is,"in the form of a permanent injunction against the defendants' actions.
+
+The preliminary injunction is in the form of a permanent injunction against the defendants' actions. The preliminary injunction is in the form of a permanent injunction against the defendants' actions.
+
+The preliminary injunction is in the form of a permanent injunction against the defendants' actions.
+
+The preliminary injunction is in the form of a permanent injunction against the defendants' actions.
+
+The preliminary injunction is in the form of a permanent injunction",100,pythia-160m
+legal,oral_deposition,oral deposition,declarative,cloze,An oral deposition is,"a deposition of a material on a surface of a material.
+A deposition of a material on a surface of a material is a deposition of a material on a surface of a material. The deposition is usually performed by a chemical reaction between the material and the material. The deposition is usually performed by a chemical reaction between the material and the material.
+The deposition of a material on a surface of a material is a deposition of a material on a surface of a material. The deposition is usually performed by",100,pythia-160m
+legal,personal_jurisdiction,personal jurisdiction,declarative,cloze,Personal jurisdiction refers to,"the ability of a particular jurisdiction to provide a service to a particular person.
+
+Personal jurisdiction refers to the ability of a particular jurisdiction to provide a service to a particular person.
+
+Personal jurisdiction refers to the ability of a particular jurisdiction to provide a service to a particular person.
+
+Personal jurisdiction refers to the ability of a particular jurisdiction to provide a service to a particular person.
+
+Personal jurisdiction refers to the ability of a particular jurisdiction to provide a service to a particular person.",100,pythia-160m
+legal,electronic_discovery,electronic discovery,declarative,cloze,Electronic discovery is,"a process in which a computer system is used to generate a set of data.
+The data is then processed by a computer system to produce a set of data. The data is then stored in a database.
+The data is then processed by a computer system to produce a set of data. The data is then stored in a database.
+The data is then processed by a computer system to produce a set of data. The data is then stored in a database.
+The data is then processed",100,pythia-160m
+legal,summary_motion,summary motion,declarative,cloze,A summary motion is,"a motion that describes the facts of the case and the evidence that supports the motion.
+
+A summary motion is a motion that describes the facts of the case and the evidence that supports the motion.
+
+A summary motion is a motion that describes the facts of the case and the evidence that supports the motion.
+
+A summary motion is a motion that describes the facts of the case and the evidence that supports the motion.
+
+A summary motion is a motion that describes the facts of the",100,pythia-160m
+legal,proper_venue,proper venue,declarative,cloze,Proper venue is determined by,"the number of seats available.
+
+The number of seats available for a venue is determined by the number of seats available for a venue.
+
+The number of seats available for a venue is determined by the number of seats available for a venue.
+
+The number of seats available for a venue is determined by the number of seats available for a venue.
+
+The number of seats available for a venue is determined by the number of seats available for a venue.
+
+The number of seats",100,pythia-160m
+legal,patent_infringement,patent infringement,declarative,cloze,Patent infringement occurs when,"a patent application is filed with a patent office, and the patent application is not filed with the patent office.
+Patent infringement occurs when a patent application is filed with a patent office, and the patent application is not filed with the patent office.
+Patent infringement occurs when a patent application is filed with a patent office, and the patent application is not filed with the patent office.
+Patent infringement occurs when a patent application is filed with a patent office, and the patent application is not filed with the",100,pythia-160m
+legal,articles_incorporation,articles incorporation,declarative,cloze,Articles of incorporation are,"generally used to describe the incorporation of a material into a material.
+The incorporation of a material into a material is generally described as a process of forming a material by the action of a chemical reaction. The chemical reaction is generally described as a reaction of a material to a material. The material is then incorporated into a material.
+The incorporation of a material into a material is generally described as a process of forming a material by the action of a chemical reaction. The chemical reaction is generally described as a",100,pythia-160m
+legal,hostile_merger,hostile merger,declarative,cloze,A hostile merger is,"a merger of two or more companies that have a common goal: to create a new business, or to create a new business that is not profitable.
+
+The merger is a merger of two or more companies that have a common goal: to create a new business, or to create a new business that is not profitable.
+
+The merger is a merger of two or more companies that have a common goal: to create a new business, or to create a new business that is not profitable.",100,pythia-160m
+legal,statute_limitations,statute limitations,declarative,cloze,A statute of limitations is,"a rule of law that applies to a claim brought by a plaintiff in a civil action.
+
+A statute of limitations is a rule of law that applies to a claim brought by a plaintiff in a civil action.
+
+A statute of limitations is a rule of law that applies to a claim brought by a plaintiff in a civil action.
+
+A statute of limitations is a rule of law that applies to a claim brought by a plaintiff in a civil action.
+
+A statute of limitations is",100,pythia-160m
+legal,legal_standing,legal standing,declarative,cloze,Legal standing is the right to,"challenge a court’s decision to dismiss a case.
+
+The Supreme Court of the United States has ruled that a court can dismiss a case if it finds that the plaintiff has standing to sue.
+
+The case is a challenge to the court’s decision to dismiss a case.
+
+The case is a challenge to the court’s decision to dismiss a case.
+
+The case is a challenge to the court’s decision to dismiss a case.
+
+The case is a",100,pythia-160m
+legal,binding_precedent,binding precedent,declarative,cloze,A binding precedent is,"a binding rule that is used to determine whether a particular rule is binding.
+A binding rule is a rule that is used to determine whether a particular rule is binding. A binding rule is a rule that is used to determine whether a particular rule is binding. A binding rule is a rule that is used to determine whether a particular rule is binding. A binding rule is a rule that is used to determine whether a particular rule is binding.
+A binding rule is a rule that is used to determine",100,pythia-160m
+legal,judicial_review,judicial review,declarative,cloze,Judicial review is,"a process of judicial review of a court's decision.
+
+Judicial review is a process of judicial review of a court's decision.
+
+Judicial review is a process of judicial review of a court's decision.
+
+Judicial review is a process of judicial review of a court's decision.
+
+Judicial review is a process of judicial review of a court's decision.
+
+Judicial review is a process of judicial review of a court's decision.
+
+Judicial",100,pythia-160m
+legal,civil_lawsuit,civil lawsuit,declarative,cloze,A civil lawsuit is,"a legal action that is brought by a person or entity to enforce a legal right or privilege.
+
+The lawsuit is brought by a person or entity to enforce a legal right or privilege.
+
+The lawsuit is brought by a person or entity to enforce a legal right or privilege.
+
+The lawsuit is brought by a person or entity to enforce a legal right or privilege.
+
+The lawsuit is brought by a person or entity to enforce a legal right or privilege.
+
+The lawsuit is",100,pythia-160m
+legal,criminal_record,criminal record,declarative,cloze,A criminal record is,"a record of a person’s criminal history.
+
+A criminal record is a record of a person’s criminal history.
+
+A criminal record is a record of a person’s criminal history.
+
+A criminal record is a record of a person’s criminal history.
+
+A criminal record is a record of a person’s criminal history.
+
+A criminal record is a record of a person’s criminal history.
+
+A criminal record is a record of a",100,pythia-160m
+legal,search_warrant,search warrant,declarative,cloze,A search warrant is,"required for a search of a building, or any building, in which a person is located.
+
+A search warrant is required for a search of a building, or any building, in which a person is located.
+
+A search warrant is required for a search of a building, or any building, in which a person is located.
+
+A search warrant is required for a search of a building, or any building, in which a person is located.
+
+A search warrant is",100,pythia-160m
+legal,plea_bargain,plea bargain,declarative,cloze,A plea bargain is,"a plea agreement that allows a defendant to plead guilty to a lesser charge, or to plead guilty to a lesser charge, or to plead guilty to a lesser charge, or to plead guilty to a lesser charge, or to plead guilty to a lesser charge, or to plead guilty to a lesser charge, or to plead guilty to a lesser charge, or to plead guilty to a lesser charge, or to plead guilty to a lesser charge, or to plead guilty to a lesser charge, or to plead guilty",100,pythia-160m
+legal,witness_testimony,witness testimony,declarative,cloze,Witness testimony is,"a powerful tool for understanding the nature of the crime that is committed.
+
+Witness testimony is a powerful tool for understanding the nature of the crime that is committed.
+
+Witness testimony is a powerful tool for understanding the nature of the crime that is committed.
+
+Witness testimony is a powerful tool for understanding the nature of the crime that is committed.
+
+Witness testimony is a powerful tool for understanding the nature of the crime that is committed.
+
+Witness testimony is",100,pythia-160m
+legal,expert_witness,expert witness,declarative,cloze,An expert witness is,"a person who is able to provide evidence to the jury that the defendant is guilty of a crime.
+
+The defendant is charged with one count of aggravated assault, one count of assault with a deadly weapon, one count of assault with a deadly weapon, one count of assault with a deadly weapon, one count of assault with a deadly weapon, one count of assault with a deadly weapon, one count of assault with a deadly weapon, one count of assault with a deadly weapon, one count of assault",100,pythia-160m
+legal,court_order,court order,declarative,cloze,A court order is,"a legal document that is issued by a court to a party to a lawsuit.
+
+A court order is a legal document that is issued by a court to a party to a lawsuit.
+
+A court order is a legal document that is issued by a court to a party to a lawsuit.
+
+A court order is a legal document that is issued by a court to a party to a lawsuit.
+
+A court order is a legal document that is issued by a court to a party",100,pythia-160m
+legal,bench_trial,bench trial,declarative,cloze,A bench trial is,"a trial of the legal sufficiency of a particular legal theory.
+
+The Supreme Court of Canada has ruled that a legal theory is not sufficient to establish a legal right to a jury trial.
+
+The Supreme Court of Canada has ruled that a legal theory is not sufficient to establish a legal right to a jury trial.
+
+The Supreme Court of Canada has ruled that a legal theory is not sufficient to establish a legal right to a jury trial.
+
+The Supreme Court of Canada has ruled that",100,pythia-160m
+legal,jury_verdict,jury verdict,declarative,cloze,A jury verdict is,"not always the best way to determine a defendant's guilt or innocence.
+
+A jury verdict is not always the best way to determine a defendant's guilt or innocence.
+
+A jury verdict is not always the best way to determine a defendant's guilt or innocence.
+
+A jury verdict is not always the best way to determine a defendant's guilt or innocence.
+
+A jury verdict is not always the best way to determine a defendant's guilt or innocence.
+
+A jury verdict is",100,pythia-160m
+legal,class_action,class action,declarative,cloze,A class action lawsuit is,"being filed against the city of Chicago, alleging that the city's police department violated its own rules by failing to provide a police officer with a copy of the city's police department's records.
+
+The lawsuit, filed in the U.S. District Court for the Northern District of Illinois, alleges that the city's police department violated its own rules by failing to provide a police officer with a copy of the city's police department's records.
+
+The lawsuit, filed in the U.S",100,pythia-160m
+legal,double_jeopardy,double jeopardy,declarative,cloze,Double jeopardy is,"a principle of law that is applied to the prosecution of a criminal offense.
+
+The Double Jeopardy Clause of the United States Constitution provides that the prosecution of a criminal offense is not barred by the Double Jeopardy Clause.
+
+The Double Jeopardy Clause is a fundamental principle of law that is applied to the prosecution of a criminal offense.
+
+The Double Jeopardy Clause is a fundamental principle of law that is applied to the prosecution of a criminal offense.
+
+The",100,pythia-160m
+legal,probable_cause,probable cause,declarative,cloze,Probable cause is,"the fact that the defendant is not a party to the action.
+
+The defendant is not a party to the action.
+
+The defendant is not a party to the action.
+
+The defendant is not a party to the action.
+
+The defendant is not a party to the action.
+
+The defendant is not a party to the action.
+
+The defendant is not a party to the action.
+
+The defendant is not a party to the action.
+
+The",100,pythia-160m
+legal,restraining_order,restraining order,declarative,cloze,A restraining order is,"a restraining order that is issued to prevent a person from engaging in conduct that is unlawful or contrary to law.
+
+A restraining order is a restraining order that is issued to prevent a person from engaging in conduct that is unlawful or contrary to law.
+
+A restraining order is a restraining order that is issued to prevent a person from engaging in conduct that is unlawful or contrary to law.
+
+A restraining order is a restraining order that is issued to prevent a person from engaging in conduct that is",100,pythia-160m

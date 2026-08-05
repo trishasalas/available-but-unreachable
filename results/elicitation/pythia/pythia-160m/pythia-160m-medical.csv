@@ -1,0 +1,179 @@
+domain,prompt_id,concept,prompt_type,template_type,prompt,output,max_tokens,model
+medical,oxygen_saturation,oxygen saturation,declarative,cloze,Oxygen saturation refers to,"the degree of oxygen saturation of the blood.
+
+Oxygen saturation refers to the degree of oxygen saturation of the blood.
+
+Oxygen saturation is the ratio of the amount of oxygen in the blood to the amount of oxygen in the blood.
+
+Oxygen saturation is the ratio of the amount of oxygen in the blood to the amount of oxygen in the blood.
+
+Oxygen saturation is the ratio of the amount of oxygen in the blood to the amount of oxygen in the blood.",100,pythia-160m
+medical,body_temperature,body temperature,declarative,cloze,Body temperature is,"a key parameter in the regulation of body temperature.
+The body temperature (BT) is a key parameter in the regulation of body temperature. The body temperature is a key parameter in the regulation of body temperature. The body temperature is a key parameter in the regulation of body temperature. The body temperature is a key parameter in the regulation of body temperature.
+The body temperature is a key parameter in the regulation of body temperature. The body temperature is a key parameter in the regulation of body temperature. The",100,pythia-160m
+medical,platelet_count,platelet count,declarative,cloze,Platelet count measures,"in the diagnosis of acute coronary syndrome.
+Platelet count (PL) is a useful tool for the diagnosis of acute coronary syndrome. The aim of this study was to evaluate the PL in the diagnosis of acute coronary syndrome. A total of 100 patients with acute coronary syndrome were included in this study. The PL was measured by the use of a standardised method. The patients were divided into two groups: group 1 (n = 50) and group 2 (n = 50). The patients were",100,pythia-160m
+medical,metabolic_panel,metabolic panel,declarative,cloze,A metabolic panel is,"a set of measurements of the metabolic activity of a biological system.
+The metabolic activity of a biological system is determined by the amount of energy that is available to the system. The metabolic activity of a biological system is determined by the amount of energy that is available to the system. The metabolic activity of a biological system is determined by the amount of energy that is available to the system. The metabolic activity of a biological system is determined by the amount of energy that is available to the system. The metabolic",100,pythia-160m
+medical,bacterial_infection,bacterial infection,declarative,cloze,A bacterial infection is caused by,the bacterium *Escherichia coli* and is transmitted by the human host. The infection is usually asymptomatic and can be fatal. The infection can be transmitted by the ingestion of contaminated food or contaminated water. The infection can be transmitted by the ingestion of contaminated food or contaminated water. The infection can be transmitted by the ingestion of contaminated food or contaminated water. The infection can be transmitted by the ingestion of contaminated food or contaminated water. The infection can be transmitted by the ingestion of contaminated food or contaminated water.,100,pythia-160m
+medical,magnetic_resonance,magnetic resonance,declarative,cloze,Magnetic resonance imaging is,"a technique that allows the visualization of the brain and other structures in the brain.
+The brain is a complex structure that is composed of multiple layers of tissue. The brain is composed of multiple layers of tissue, and the brain is composed of multiple layers of tissue. The brain is composed of multiple layers of tissue, and the brain is composed of multiple layers of tissue. The brain is composed of multiple layers of tissue, and the brain is composed of multiple layers of tissue.
+The brain is composed",100,pythia-160m
+medical,multiple_sclerosis,multiple sclerosis,declarative,cloze,Multiple sclerosis is,"a chronic inflammatory disease of the central nervous system. The disease is characterized by the progressive loss of motor and sensory functions, and the progressive loss of motor and sensory functions in the central nervous system. The disease is characterized by the progressive loss of motor and sensory functions, and the progressive loss of motor and sensory functions in the central nervous system. The disease is characterized by the progressive loss of motor and sensory functions, and the progressive loss of motor and sensory functions in the central nervous system. The disease is",100,pythia-160m
+medical,complete_remission,complete remission,declarative,cloze,Complete remission means,"complete remission.
+Complete remission is the most common form of treatment for patients with relapsing-remitting multiple sclerosis (MS). Complete remission is achieved by the administration of a disease-modifying antirheumatic drug (DMARD) or a disease-modifying antirheumatic drug (DMARD) that is effective in the treatment of MS. Complete remission is achieved by the administration of a disease-modifying antirheumatic drug (DMARD) or a disease-modifying",100,pythia-160m
+medical,bowel_resection,bowel resection,declarative,cloze,A bowel resection is,"a surgical procedure that removes a portion of the bowel from the body.
+
+A bowel resection is a surgical procedure that removes a portion of the bowel from the body.
+
+A bowel resection is performed to remove a portion of the bowel from the body.
+
+A bowel resection is performed to remove a portion of the bowel from the body.
+
+A bowel resection is performed to remove a portion of the bowel from the body.
+
+A bowel resection is performed to remove a portion of",100,pythia-160m
+medical,organ_transplant,organ transplant,declarative,cloze,An organ transplant is,"a person who has been diagnosed with a disease, such as cancer, that is affecting the organ at risk.
+
+The organ at risk (OR) is defined as a person who has been diagnosed with a disease that is affecting the organ at risk.
+
+The organ at risk is defined as a person who has been diagnosed with a disease that is affecting the organ at risk.
+
+The organ at risk is defined as a person who has been diagnosed with a disease that is affecting the organ",100,pythia-160m
+medical,therapeutic_dosage,therapeutic dosage,declarative,cloze,A therapeutic dosage is,"a quantity of drugs that is administered to a patient at a predetermined time.
+Therapeutic dosage is a quantity of drugs that is administered to a patient at a predetermined time. The therapeutic dosage is a quantity of drugs that is administered to a patient at a predetermined time. The therapeutic dosage is a quantity of drugs that is administered to a patient at a predetermined time.
+Therapeutic dosage is a quantity of drugs that is administered to a patient at a predetermined time. The therapeutic dosage is a quantity of",100,pythia-160m
+medical,drug_interaction,drug interaction,declarative,cloze,A drug interaction occurs when,"a drug molecule is bound to a receptor.
+A drug interaction occurs when a drug molecule is bound to a receptor. The drug molecule is bound to a receptor by a drug interaction. The drug molecule is bound to a receptor by a drug interaction. The drug molecule is bound to a receptor by a drug interaction. The drug molecule is bound to a receptor by a drug interaction. The drug molecule is bound to a receptor by a drug interaction. The drug molecule is bound to a receptor by a drug",100,pythia-160m
+medical,antibiotic_resistance,antibiotic resistance,declarative,cloze,Antibiotic resistance is,"a major problem in the global health care system.
+Antibiotic resistance is a major problem in the global health care system. The emergence of resistance to antibiotics is a major problem in the global health care system. The emergence of resistance to antibiotics is a major problem in the global health care system. The emergence of resistance to antibiotics is a major problem in the global health care system. The emergence of resistance to antibiotics is a major problem in the global health care system. The emergence of resistance to antibiotics",100,pythia-160m
+medical,gastrointestinal_absorption,gastrointestinal absorption,declarative,cloze,Gastrointestinal absorption refers to,"the absorption of water from the gastrointestinal tract to the gastrointestinal tract. The absorption of water from the gastrointestinal tract is mediated by the absorption of water from the gastrointestinal tract to the gastrointestinal tract. The absorption of water from the gastrointestinal tract is mediated by the absorption of water from the gastrointestinal tract to the gastrointestinal tract.
+The absorption of water from the gastrointestinal tract to the gastrointestinal tract is mediated by the absorption of water from the gastrointestinal tract to the gastrointestinal tract. The absorption of water from the gastrointestinal tract to the",100,pythia-160m
+medical,respiratory_tract,respiratory tract,declarative,cloze,The respiratory tract is,"the most important organ in the body, and it is the most important organ in the body.
+
+The respiratory tract is the most important organ in the body, and it is the most important organ in the body, and it is the most important organ in the body, and it is the most important organ in the body, and it is the most important organ in the body, and it is the most important organ in the body, and it is the most important organ in the body, and",100,pythia-160m
+medical,cerebral_cortex,cerebral cortex,declarative,cloze,The cerebral cortex is,"a complex structure of neurons, with a number of different types of neurons. The cortex is a complex structure of neurons, with a number of different types of neurons. The cortex is a complex structure of neurons, with a number of different types of neurons. The cortex is a complex structure of neurons, with a number of different types of neurons. The cortex is a complex structure of neurons, with a number of different types of neurons. The cortex is a complex structure of neurons, with a number of",100,pythia-160m
+medical,informed_consent,informed consent,declarative,cloze,Informed consent requires,"the consent of the patient.
+
+Informed consent is a fundamental right of all patients. It is a fundamental right to have a physician present at a clinic, and to have a physician present at a clinic.
+
+Informed consent is a fundamental right to have a physician present at a clinic.
+
+Informed consent is a fundamental right to have a physician present at a clinic.
+
+Informed consent is a fundamental right to have a physician present at a clinic.
+
+In",100,pythia-160m
+medical,clinical_trial,clinical trial,declarative,cloze,A clinical trial is,"a clinical trial of a drug that is approved for use in the treatment of a disease.
+
+The drug is approved for use in the treatment of a disease, such as cancer, in the United States.
+
+The drug is also approved for use in the treatment of a disease that is not known to be a cancer.
+
+The drug is also approved for use in the treatment of a disease that is not known to be a cancer.
+
+The drug is also approved for use in",100,pythia-160m
+medical,nerve_damage,nerve damage,declarative,cloze,Nerve damage can result in,"a number of complications, including nerve damage, nerve damage, nerve damage, nerve damage, nerve damage, nerve damage, nerve damage, nerve damage, nerve damage, nerve damage, nerve damage, nerve damage, nerve damage, nerve damage, nerve damage, nerve damage, nerve damage, nerve damage, nerve damage, nerve damage, nerve damage, nerve damage, nerve damage, nerve damage, nerve damage, nerve damage, nerve damage, nerve damage, nerve damage, nerve damage, nerve damage, nerve",100,pythia-160m
+medical,chest_pain,chest pain,declarative,cloze,Chest pain can indicate,"a diagnosis of a chronic disease.
+Chest pain is a common symptom in patients with chronic heart disease. The etiology of chest pain is unknown. The etiology of chronic heart disease is unknown. The etiology of chest pain is unknown. The etiology of chronic heart disease is unknown. The etiology of chest pain is unknown. The etiology of chest pain is unknown. The etiology of chest pain is unknown. The etiology of chest pain is unknown. The etiology of chest pain is unknown. The etiology of chest",100,pythia-160m
+medical,bone_marrow,bone marrow,declarative,cloze,Bone marrow is,"a major source of hematopoietic stem cells. The bone marrow is a source of hematopoietic stem cells, which are the most important source of hematopoietic stem cells in the adult. Bone marrow is a source of hematopoietic stem cells, which are the most important source of hematopoietic stem cells in the adult. Bone marrow is a source of hematopoietic stem cells, which are the most important source of hematopoietic stem cells in the adult. Bone marrow is a source of hematopoietic stem cells, which are the most important source of hematopoietic stem",100,pythia-160m
+medical,brain_stem,brain stem,declarative,cloze,The brain stem controls,"the movement of information from the brain to the brain.
+The brain stem is a complex structure that is involved in the control of movement of information from the brain to the brain. The brain stem is a complex structure that is involved in the control of movement of information from the brain to the brain. The brain stem is a complex structure that is involved in the control of movement of information from the brain to the brain. The brain stem is a complex structure that is involved in the control of movement of",100,pythia-160m
+medical,birth_defect,birth defect,declarative,cloze,A birth defect is,"a genetic condition that affects the development of a specific organ or organ system.
+
+A birth defect is a genetic condition that affects the development of a specific organ or organ system.
+
+A birth defect is a genetic condition that affects the development of a specific organ or organ system.
+
+A birth defect is a genetic condition that affects the development of a specific organ or organ system.
+
+A birth defect is a genetic condition that affects the development of a specific organ or organ system.",100,pythia-160m
+medical,wound_care,wound care,declarative,cloze,Wound care is,"a major concern for the elderly.
+
+The elderly are at a higher risk of developing a wound infection than the younger population.
+
+The National Institute of Health (NIH) estimates that the elderly are at a higher risk of developing a wound infection than the younger population.
+
+The National Institute of Health estimates that the elderly are at a higher risk of developing a wound infection than the younger population.
+
+The elderly are at a higher risk of developing a wound infection than the younger population",100,pythia-160m
+medical,pain_management,pain management,declarative,cloze,Pain management involves,"the use of a variety of techniques to treat pain.
+Pain management is a complex and multifaceted process that involves the use of a variety of techniques to treat pain. Pain management involves the use of a variety of techniques to treat pain. Pain management involves the use of a variety of techniques to treat pain. Pain management involves the use of a variety of techniques to treat pain. Pain management involves the use of a variety of techniques to treat pain. Pain management involves the use of a variety of",100,pythia-160m
+medical,blood_clot,blood clot,declarative,cloze,A blood clot is,"a blood clot that forms when a clot forms in a blood vessel.
+A blood clot is a blood clot that forms when a clot forms in a blood vessel. A blood clot is a blood clot that forms when a clot forms in a blood vessel.
+A blood clot is a blood clot that forms when a clot forms in a blood vessel. A blood clot is a blood clot that forms when a clot forms in a blood vessel.
+A blood clot is a blood clot that forms when a",100,pythia-160m
+medical,tumor_growth,tumor growth,declarative,cloze,Tumor growth is,"a complex process that involves multiple stages of growth, including the initiation of growth, the progression of growth, and the establishment of a tumor.
+The growth of tumors is a complex process that involves multiple stages of growth, including the initiation of growth, the progression of growth, and the establishment of a tumor. The growth of tumors is a complex process that involves multiple stages of growth, including the initiation of growth, the progression of growth, and the establishment of a tumor. The growth of tumors is",100,pythia-160m
+medical,joint_replacement,joint replacement,declarative,cloze,A joint replacement is,"a joint replacement of a joint, such as a joint replacement of a joint, a joint replacement of a joint, or a joint replacement of a joint.
+A joint replacement is a joint replacement of a joint, such as a joint replacement of a joint, a joint replacement of a joint, or a joint replacement of a joint.
+A joint replacement is a joint replacement of a joint, such as a joint replacement of a joint, a joint replacement of a joint, or a joint replacement of",100,pythia-160m
+medical,immune_response,immune response,declarative,cloze,An immune response is,"a response to a foreign body or foreign body that is not recognized by the immune system.
+
+A foreign body is a foreign body that is not recognized by the immune system.
+
+A foreign body is a foreign body that is not recognized by the immune system.
+
+A foreign body is a foreign body that is not recognized by the immune system.
+
+A foreign body is a foreign body that is not recognized by the immune system.
+
+A foreign body is a foreign body that",100,pythia-160m
+medical,viral_infection,viral infection,declarative,cloze,A viral infection is caused by,"a virus that infects a host cell.
+The virus infects a host cell and causes a disease. The virus is usually transmitted by the bite of a human or animal. The virus can be transmitted by the bite of a human or animal. The virus can be transmitted by the bite of a human or animal. The virus can be transmitted by the bite of a human or animal. The virus can be transmitted by the bite of a human or animal. The virus can be transmitted by the bite",100,pythia-160m
+medical,chronic_pain,chronic pain,declarative,cloze,Chronic pain is,"a common problem in the elderly population. The prevalence of chronic pain is high, and the prevalence of chronic pain is increasing. Chronic pain is a common problem in the elderly population. Chronic pain is a common problem in the elderly population. Chronic pain is a common problem in the elderly population. Chronic pain is a common problem in the elderly population. Chronic pain is a common problem in the elderly population. Chronic pain is a common problem in the elderly population. Chronic pain is a common problem in the elderly",100,pythia-160m
+medical,mental_health,mental health,declarative,cloze,Mental health refers to,"the ability to manage and manage the physical, mental, and emotional health of the individual.
+
+Mental health refers to the ability to manage and manage the physical, mental, and emotional health of the individual.
+
+Mental health refers to the ability to manage and manage the physical, mental, and emotional health of the individual.
+
+Mental health refers to the ability to manage and manage the physical, mental, and emotional health of the individual.
+
+Mental health refers to",100,pythia-160m
+medical,spinal_cord,spinal cord,declarative,cloze,The spinal cord is,"a complex structure that is composed of a number of interconnected, interconnected, interconnected, interconnected, interconnected, interconnected, interconnected, interconnected, interconnected, interconnected, interconnected, interconnected, interconnected, interconnected, interconnected, interconnected, interconnected, interconnected, interconnected, interconnected, interconnected, interconnected, interconnected, interconnected, interconnected, interconnected, interconnected, interconnected, interconnected, interconnected, interconnected, interconnected, interconnected, interconnected, interconnected, interconnected, interconnected, interconnected, interconnected, interconnected, interconnected, interconnected, interconnected, interconnected, interconnected,",100,pythia-160m
+medical,scar_tissue,scar tissue,declarative,cloze,Scar tissue is,"a complex and complex process that involves the formation of a complex of proteins, proteins that are involved in the formation of a complex of proteins. The proteins are then assembled into a complex that is then processed to produce a protein product. The proteins are then processed to produce a protein product. The proteins are then processed to produce a protein product. The proteins are then processed to produce a protein product. The proteins are then processed to produce a protein product. The proteins are then processed to produce a protein product",100,pythia-160m
+medical,fluid_retention,fluid retention,declarative,cloze,Fluid retention can cause,"significant problems in the treatment of fluid retention.
+Fluid retention is a common problem in the treatment of fluid retention. The most common cause of fluid retention is the use of a fluid-filled device. The device is designed to be inserted into the patient's body and is designed to be placed in the patient's mouth. The device is designed to be inserted into the patient's mouth and is designed to be placed in the patient's mouth. The device is designed to be inserted into the patient's",100,pythia-160m
+medical,sleep_apnea,sleep apnea,declarative,cloze,Sleep apnea is,"a common problem in the elderly.
+Sleep apnea is a common problem in the elderly. The prevalence of sleep apnea is high in the elderly. The prevalence of sleep apnea is higher in the elderly than in the general population. The prevalence of sleep apnea is higher in the elderly than in the general population. The prevalence of sleep apnea is higher in the elderly than in the general population. The prevalence of sleep apnea is higher in the elderly than in the general population.",100,pythia-160m
+medical,muscle_spasm,muscle spasm,declarative,cloze,A muscle spasm is,"a muscle contraction that is caused by the contraction of a muscle.
+
+A muscle spasm is a muscle contraction that is caused by the contraction of a muscle.
+
+A muscle spasm is a muscle contraction that is caused by the contraction of a muscle.
+
+A muscle spasm is a muscle contraction that is caused by the contraction of a muscle.
+
+A muscle spasm is a muscle contraction that is caused by the contraction of a muscle.
+
+A muscle spasm is",100,pythia-160m
+medical,breast_cancer,breast cancer,declarative,cloze,Breast cancer is,"the most common cancer in women worldwide. The incidence of breast cancer is estimated to be 1.5 million per year in the United States alone. The incidence of breast cancer is expected to increase by 20% in the next decade. The incidence of breast cancer is expected to increase by 20% in the next decade. The incidence of breast cancer is expected to increase by 20% in the next decade.
+Breast cancer is a disease that affects the breast tissue and is characterized by the presence of a",100,pythia-160m
+medical,lung_cancer,lung cancer,declarative,cloze,Lung cancer is,"the most common cancer in the world.
+Lung cancer is the most common cancer in the world. The incidence of lung cancer is estimated to be 1.5 million per year in the United States. Lung cancer is the most common cause of cancer death in the United States. Lung cancer is the most common cause of cancer death in the United States. The incidence of lung cancer is increasing in the United States. The incidence of lung cancer is increasing in the United States. The incidence of lung cancer",100,pythia-160m
+medical,skin_graft,skin graft,declarative,cloze,A skin graft is,"a form of skin graft that is used to repair or replace damaged skin. Skin grafts are used to repair or replace damaged skin. Skin grafts are used to repair or replace damaged skin.
+A skin graft is a form of skin graft that is used to repair or replace damaged skin. Skin grafts are used to repair or replace damaged skin. Skin grafts are used to repair or replace damaged skin.
+A skin graft is a form of skin graft that is used to repair or replace damaged skin. Skin",100,pythia-160m
+medical,stem_cell,stem cell,declarative,cloze,A stem cell is,"a cell that is capable of producing a specific type of cell.
+
+A stem cell is a cell that is capable of producing a specific type of cell.
+
+A stem cell is a cell that is capable of producing a specific type of cell.
+
+A stem cell is a cell that is capable of producing a specific type of cell.
+
+A stem cell is a cell that is capable of producing a specific type of cell.
+
+A stem cell is a cell that is capable",100,pythia-160m
+medical,side_effect,side effect,declarative,cloze,A side effect is,"a side effect that is not known to be a side effect.
+
+A side effect is a side effect that is not known to be a side effect.
+
+A side effect is a side effect that is not known to be a side effect.
+
+A side effect is a side effect that is not known to be a side effect.
+
+A side effect is a side effect that is not known to be a side effect.
+
+A side effect is a side effect that is",100,pythia-160m
