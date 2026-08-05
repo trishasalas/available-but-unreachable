@@ -1,0 +1,289 @@
+prompt_id,concept,prompt_type,template_type,prompt,output,max_tokens,model
+cash_flow,cash flow,declarative,cloze,Cash flow is,"the amount of money that a business has in its bank account.
+
+Cash flow is the amount of money that a business has in its bank account.
+
+Cash flow is the amount of money that a business has in its bank account.
+
+Cash flow is the amount of money that a business has in its bank account.
+
+Cash flow is the amount of money that a business has in its bank account.
+
+Cash flow is the amount of money that a business has in its",100,gpt2-large
+balance_sheet,balance sheet,declarative,cloze,A balance sheet is,"a financial statement that shows the assets and liabilities of a company. It is a summary of the company's financial position, and it is used to determine the company's financial condition.
+
+A balance sheet is a summary of the company's financial position, and it is used to determine the company's financial condition.
+
+Balance Sheet
+
+A balance sheet is a financial statement that shows the assets and liabilities of a company. It is a summary of the company's financial position, and it is",100,gpt2-large
+journal_entry,journal entry,declarative,cloze,A journal entry is,"a short, written statement that is used to record information about a person or event. The entry is usually written in a journal or diary.
+
+A journal entry is usually a short, written statement that is used to record information about a person or event. The entry is usually written in a journal or diary.
+
+A journal entry is usually a short, written statement that is used to record information about a person or event. The entry is usually written in a journal or diary.",100,gpt2-large
+accelerated_depreciation,accelerated depreciation,declarative,cloze,Accelerated depreciation is,"a tax deduction that allows you to deduct the cost of a property you own before you sell it.
+
+You can use accelerated depreciation to reduce your tax bill if you sell your home before you have paid all the taxes due on it.
+
+You can use accelerated depreciation to reduce your tax bill if you sell your home before you have paid all the taxes due on it.
+
+You can use accelerated depreciation to reduce your tax bill if you sell your home before you have paid all the taxes",100,gpt2-large
+impairment_goodwill,impairment goodwill,declarative,cloze,Goodwill impairment occurs when,"a person's ability to perform a task is impaired by a physical or mental condition. The impairment may be temporary or permanent.
+
+Goodwill impairment can occur in a number of ways. For example, a person may have a physical or mental condition that causes a physical or mental impairment.
+
+Goodwill impairment can also occur when a person's ability to perform a task is impaired by a mental or emotional condition.
+
+Goodwill impairment can be caused by a number of factors, including:",100,gpt2-large
+yield_maturity,yield maturity,declarative,cloze,Yield to maturity is,"the amount of time a crop can be harvested before it is ready to be harvested again.
+
+Yield to maturity is the amount of time a crop can be harvested before it is ready to be harvested again.
+
+Yield to maturity is the amount of time a crop can be harvested before it is ready to be harvested again.
+
+Yield to maturity is the amount of time a crop can be harvested before it is ready to be harvested again.
+
+Yield to maturity is",100,gpt2-large
+bond_coupon,bond coupon,declarative,cloze,A bond coupon is,"a type of interest-bearing debt that is issued by a bank or other financial institution. Bonds are issued by the Federal Reserve Bank of New York, the Federal Reserve Bank of Chicago, the Federal Reserve Bank of Richmond, the Federal Reserve Bank of San Francisco, the Federal Reserve Bank of Atlanta, the Federal Reserve Bank of New York, the Federal Reserve Bank of Richmond, the Federal Reserve Bank of Chicago, the Federal Reserve Bank of San Francisco, the Federal Reserve Bank of Richmond, the Federal Reserve Bank",100,gpt2-large
+credit_spread,credit spread,declarative,cloze,A credit spread is,"a type of credit that is used to pay for a loan. The credit spread is a type of credit that is used to pay for a loan.
+
+Credit spreads are used to pay for a loan. The credit spread is a type of credit that is used to pay for a loan.
+
+Credit spreads are used to pay for a loan. The credit spread is a type of credit that is used to pay for a loan.
+
+Credit spreads are used to pay for a loan.",100,gpt2-large
+modified_duration,modified duration,declarative,cloze,Modified duration measures,"are used to measure the time it takes for a person to complete a task. The modified duration measure is a measure of the time it takes to complete a task. The modified duration measure is a measure of the time it takes to complete a task.
+
+Modified duration measures are used to measure the time it takes for a person to complete a task. The modified duration measure is a measure of the time it takes to complete a task. The modified duration measure is a measure of the time it",100,gpt2-large
+interest_swap,interest swap,declarative,cloze,An interest swap is,"a type of interest swap in which the parties to the swap agree to pay a fixed amount of money to each other in exchange for a fixed amount of money. Interest swaps are often used to hedge risk.
+
+Interest swaps are often used to hedge risk.
+
+Interest swaps are often used to hedge risk.
+
+Interest swaps are often used to hedge risk.
+
+Interest swaps are often used to hedge risk.
+
+Interest swaps are often used to hedge risk.
+
+Interest swaps",100,gpt2-large
+call_option,call option,declarative,cloze,A call option gives,"you the option to call a specific number.
+
+You can call a number by entering the number in the box below.
+
+You can also call a number by entering the number in the box below.
+
+You can also call a number by entering the number in the box below.
+
+You can also call a number by entering the number in the box below.
+
+You can also call a number by entering the number in the box below.
+
+You can also call a",100,gpt2-large
+commodity_futures,commodity futures,declarative,cloze,Commodity futures are,"a great way to hedge against inflation. But they are also a great way to hedge against the risk of a recession.
+
+The Fed has been trying to get the economy moving again. But it's not working.
+
+The Fed has been trying to get the economy moving again. But it's not working.
+
+The Fed has been trying to get the economy moving again. But it's not working.
+
+The Fed has been trying to get the economy moving again. But it",100,gpt2-large
+currency_hedge,currency hedge,declarative,cloze,A currency hedge is,"a strategy that uses a currency to hedge a currency risk. A currency hedge is a strategy that uses a currency to hedge a currency risk.
+
+A currency hedge is a strategy that uses a currency to hedge a currency risk. A currency hedge is a strategy that uses a currency to hedge a currency risk.
+
+A currency hedge is a strategy that uses a currency to hedge a currency risk. A currency hedge is a strategy that uses a currency to hedge a currency risk.
+
+A currency",100,gpt2-large
+implied_volatility,implied volatility,declarative,cloze,Implied volatility refers to,"the difference between the implied price of a security and the actual price. The implied volatility of a security is the difference between the implied price and the actual price.
+
+Implied volatility is calculated by dividing the actual price by the implied price.
+
+Example:
+
+Suppose a company has a stock price of $100 and an implied volatility of 10%. The implied volatility of the stock is 10%. The actual price is $100.
+
+The implied volatility of the stock is 10%.",100,gpt2-large
+zero_collar,zero collar,declarative,cloze,A zero collar strategy,"is a strategy that involves the use of a zero collar. Zero collars are a type of collar that is designed to prevent the collar from being pulled off the neck.
+
+Zero collars are a type of collar that is designed to prevent the collar from being pulled off the neck.
+
+Zero collars are a type of collar that is designed to prevent the collar from being pulled off the neck.
+
+Zero collars are a type of collar that is designed to prevent the collar from",100,gpt2-large
+diluted_earnings,diluted earnings,declarative,cloze,Diluted earnings per share is,"a measure of the earnings per share of a company divided by the number of shares outstanding. Diluted earnings per share is calculated by dividing the earnings per share by the number of shares outstanding.
+
+Diluted earnings per share is calculated by dividing the earnings per share by the number of shares outstanding.
+
+Diluted earnings per share is calculated by dividing the earnings per share by the number of shares outstanding.
+
+Diluted earnings per share is calculated by dividing the earnings per share",100,gpt2-large
+price_ratio,price ratio,declarative,cloze,The price to earnings ratio is,"a measure of the ratio of the company's earnings to its earnings before interest, taxes, depreciation and amortization (EBITDA). The ratio is calculated by dividing the company's earnings by the number of shares outstanding.
+
+The ratio is calculated by dividing the company's earnings by the number of shares outstanding. The ratio is calculated by dividing the company's earnings by the number of shares outstanding. The ratio is calculated by dividing the company's earnings by the number of shares outstanding. The ratio",100,gpt2-large
+preferred_dividend,preferred dividend,declarative,cloze,A preferred dividend is,"a dividend that is paid to shareholders of a company that is not a preferred stock. A preferred dividend is paid to shareholders of a company that is a preferred stock.
+
+A preferred dividend is paid to shareholders of a company that is a preferred stock. A preferred dividend is paid to shareholders of a company that is a preferred stock.
+
+A preferred dividend is paid to shareholders of a company that is a preferred stock. A preferred dividend is paid to shareholders of a company that is a preferred stock",100,gpt2-large
+financial_leverage,financial leverage,declarative,cloze,Financial leverage is,"a key factor in the success of a business. It is the difference between the amount of money you have and the amount of money you need to make a profit.
+
+The more money you have, the more leverage you have.
+
+The more money you have, the more leverage you have.
+
+The more money you have, the more leverage you have.
+
+The more money you have, the more leverage you have.
+
+The more money you have, the more leverage",100,gpt2-large
+debt_covenant,debt covenant,declarative,cloze,A debt covenant is,"a contract that requires the debtor to pay a certain amount of money to the creditor in the event of a default.
+
+A debt covenant is a contract that requires the debtor to pay a certain amount of money to the creditor in the event of a default.
+
+A debt covenant is a contract that requires the debtor to pay a certain amount of money to the creditor in the event of a default.
+
+A debt covenant is a contract that requires the debtor to pay a certain amount of money",100,gpt2-large
+capital_structure,capital structure,declarative,cloze,Capital structure refers to,"the way in which a country's economy is organized. The capital structure is the way in which the country's economy is organized.
+
+Capitalism is a system of economic organization that is based on the exploitation of labor and the exploitation of natural resources. Capitalism is a system of economic organization that is based on the exploitation of labor and the exploitation of natural resources.
+
+Capitalism is a system of economic organization that is based on the exploitation of labor and the exploitation of natural resources.",100,gpt2-large
+due_diligence,due diligence,declarative,cloze,Due diligence is,"a process that is designed to ensure that a company's business practices are in line with the law. It is a process that is designed to ensure that a company's business practices are in line with the law.
+
+Due diligence is a process that is designed to ensure that a company's business practices are in line with the law. It is a process that is designed to ensure that a company's business practices are in line with the law.
+
+Due diligence is a process that is designed to",100,gpt2-large
+public_offering,public offering,declarative,cloze,A public offering is,"a type of stock offering in which a company sells its shares to the public. The company's shares are then traded on a stock exchange.
+
+The company's shares are sold to the public at a price that is determined by the company's board of directors. The company's shares are then traded on a stock exchange.
+
+The company's shares are sold to the public at a price that is determined by the company's board of directors. The company's shares are then traded on a stock",100,gpt2-large
+market_liquidity,market liquidity,declarative,cloze,Market liquidity refers to,"the ability of a market to provide liquidity to the market participants. Market liquidity is a key factor in the success of a market.
+
+Market liquidity is a key factor in the success of a market.
+
+Market liquidity is a key factor in the success of a market.
+
+Market liquidity is a key factor in the success of a market.
+
+Market liquidity is a key factor in the success of a market.
+
+Market liquidity is a key factor in the success of a market",100,gpt2-large
+trade_settlement,trade settlement,declarative,cloze,Trade settlement is,"a process by which the United States and other countries agree to a set of rules to prevent future trade violations. The United States and other countries have agreed to a number of trade agreements, including the North American Free Trade Agreement (NAFTA), the World Trade Organization (WTO), and the Trans-Pacific Partnership (TPP).
+
+The United States has been negotiating the Trans-Pacific Partnership (TPP) since 2010. The TPP is a trade agreement between the United States, Australia, Brunei",100,gpt2-large
+central_clearing,central clearing,declarative,cloze,Central clearing houses,"are a common sight in the city. They are a common sight in the city. They are a common sight in the city. Photo: Michael Macor, The Chronicle Buy photo
+
+window._taboola = window._taboola || []; _taboola.push({ mode: 'thumbnails-c', container: 'taboola-interstitial-gallery-thumbnails-5', placement: 'Interstitial Gallery Thumbnails 5', target_type: 'mix' }); _taboola.push({flush: true});
+
+Photo",100,gpt2-large
+maintenance_margin,maintenance margin,declarative,cloze,A maintenance margin is,"a percentage of the total cost of a project that is not paid by the contractor. The maintenance margin is calculated by dividing the total cost of the project by the total number of hours worked on the project.
+
+The maintenance margin is calculated by dividing the total cost of the project by the total number of hours worked on the project.
+
+The maintenance margin is calculated by dividing the total cost of the project by the total number of hours worked on the project.
+
+The maintenance margin is calculated",100,gpt2-large
+regulatory_compliance,regulatory compliance,declarative,cloze,Regulatory compliance means,"that the company is in compliance with all applicable laws and regulations.
+
+The company is in compliance with all applicable laws and regulations.
+
+The company is in compliance with all applicable laws and regulations.
+
+The company is in compliance with all applicable laws and regulations.
+
+The company is in compliance with all applicable laws and regulations.
+
+The company is in compliance with all applicable laws and regulations.
+
+The company is in compliance with all applicable laws and regulations.
+
+The",100,gpt2-large
+money_laundering,money laundering,declarative,cloze,Money laundering is,"a crime that involves the use of money or other property to launder money. It is a crime that is committed by a person who uses the proceeds of a crime to commit another crime.
+
+Money laundering is a crime that involves the use of money or other property to launder money. It is a crime that is committed by a person who uses the proceeds of a crime to commit another crime.
+
+Money laundering is a crime that involves the use of money or other property to launder",100,gpt2-large
+asset_allocation,asset allocation,declarative,cloze,Asset allocation is,"a key component of the portfolio management process. It is a way to allocate assets to achieve a desired return.
+
+The key to asset allocation is to choose the asset classes that best suit your needs.
+
+The key to asset allocation is to choose the asset classes that best suit your needs.
+
+The key to asset allocation is to choose the asset classes that best suit your needs.
+
+The key to asset allocation is to choose the asset classes that best suit your needs.",100,gpt2-large
+systemic_risk,systemic risk,declarative,cloze,Systemic risk is,"a term used to describe the risk of a disease or condition to which a person is exposed. It is a risk factor that is present in all people, regardless of their age, sex, race, or socioeconomic status.
+
+Systemic risk is a risk factor that is present in all people, regardless of their age, sex, race, or socioeconomic status.
+
+Systemic risk is a risk factor that is present in all people, regardless of their age, sex, race, or socioeconomic",100,gpt2-large
+stress_test,stress test,declarative,cloze,A stress test is,"a test that is designed to measure the effectiveness of a product or service. Stress tests are used to determine the effectiveness of a product or service, and to determine the safety of a product or service.
+
+The stress test is a test that is designed to measure the effectiveness of a product or service. Stress tests are used to determine the effectiveness of a product or service, and to determine the safety of a product or service.
+
+The stress test is a test that is designed to measure the",100,gpt2-large
+credit_default,credit default,declarative,cloze,A credit default is,"a financial crisis that occurs when a company's creditworthiness is impaired. The credit default swap is a type of credit default swap that allows a company to reduce its exposure to a credit default.
+
+Credit default swaps are used to reduce the risk of a company's credit rating being downgraded. The credit default swap is a type of credit default swap that allows a company to reduce its exposure to a credit default.
+
+Credit default swaps are used to reduce the risk of a company's credit rating",100,gpt2-large
+stock_market,stock market,declarative,cloze,The stock market is,"a great place to invest. It's a great place to make money. But it's also a great place to lose money.
+
+The stock market is a great place to invest. It's a great place to make money. But it's also a great place to lose money.
+
+The stock market is a great place to invest. It's a great place to make money. But it's also a great place to lose money.
+
+The stock market is a great place to",100,gpt2-large
+mutual_fund,mutual fund,declarative,cloze,A mutual fund is,"a type of investment vehicle that is designed to provide investors with a return on their investment. Mutual funds are typically offered by a financial institution, such as a bank or brokerage firm.
+
+Investors can purchase mutual funds from a variety of investment firms, including mutual funds, exchange-traded funds (ETFs), and exchange-traded funds (ETFs) that are designed to track a specific stock or other asset class.
+
+Mutual funds are typically offered by a financial institution,",100,gpt2-large
+hedge_fund,hedge fund,declarative,cloze,A hedge fund is,"a type of investment fund that invests in a variety of securities, including stocks, bonds, and other financial instruments. Hedge funds are often referred to as ""hedge funds"" because they invest in a variety of securities, including stocks, bonds, and other financial instruments.
+
+Hedge funds are often referred to as ""hedge funds"" because they invest in a variety of securities, including stocks, bonds, and other financial instruments. Hedge funds are often referred to as ""hedge funds""",100,gpt2-large
+bear_market,bear market,declarative,cloze,A bear market is,"a period of low prices for a particular asset class. The market is characterized by a sharp decline in the price of the asset class. The market is characterized by a sharp decline in the price of the asset class.
+
+The bear market is a period of low prices for a particular asset class. The market is characterized by a sharp decline in the price of the asset class.
+
+The bear market is a period of low prices for a particular asset class. The market is characterized by a sharp",100,gpt2-large
+bull_market,bull market,declarative,cloze,A bull market is,"a period of high volatility in the stock market. The market is often characterized by a large number of high-flying stocks, which are often trading at a premium to the market's underlying value.
+
+The bull market is often characterized by a large number of high-flying stocks, which are often trading at a premium to the market's underlying value.
+
+The bull market is often characterized by a large number of high-flying stocks, which are often trading at a premium to the market's",100,gpt2-large
+credit_rating,credit rating,declarative,cloze,A credit rating is,"a rating assigned to a company by a rating agency. The rating agency assigns a rating to a company based on the company's financial performance, its ability to pay its debts, and the company's ability to meet its obligations.
+
+A credit rating is a rating assigned to a company by a rating agency. The rating agency assigns a rating to a company based on the company's financial performance, its ability to pay its debts, and the company's ability to meet its obligations.
+
+A credit",100,gpt2-large
+tax_shelter,tax shelter,declarative,cloze,A tax shelter is,"a type of investment that is used to reduce the tax liability of a person or entity. The tax shelter is a type of investment that is used to reduce the tax liability of a person or entity.
+
+Tax shelters are used to reduce the tax liability of a person or entity. The tax shelter is a type of investment that is used to reduce the tax liability of a person or entity.
+
+Tax shelters are used to reduce the tax liability of a person or entity. The tax shelter is",100,gpt2-large
+venture_capital,venture capital,declarative,cloze,Venture capital is,"a hot topic in the tech world. The number of venture capital firms has increased by more than 50% in the past five years, and the number of companies raising money has increased by more than 50% in the same period.
+
+The number of companies raising money has increased by more than 50% in the past five years, and the number of companies raising money has increased by more than 50% in the same period.
+
+The number of companies raising money has increased by more than 50",100,gpt2-large
+prime_rate,prime rate,declarative,cloze,The prime rate is,"the rate at which the Bank of Canada (BoC) lends to the public. The Bank of Canada's lending rate is the rate at which it lends to the public.
+
+The Bank of Canada's lending rate is the rate at which it lends to the public. The Bank of Canada's lending rate is the rate at which it lends to the public.
+
+The Bank of Canada's lending rate is the rate at which it lends to the public. The Bank of Canada's lending rate",100,gpt2-large
+fiscal_policy,fiscal policy,declarative,cloze,Fiscal policy refers to,"the way the government spends money. It is the way the government spends money that determines the size of the economy.
+
+The government spends money by issuing debt. The government borrows money from the private sector and uses that money to buy government securities. The government then uses the money it borrows to pay interest on the debt.
+
+The government borrows money from the private sector and uses that money to buy government securities. The government then uses the money it borrows to pay interest on",100,gpt2-large
+trade_deficit,trade deficit,declarative,cloze,A trade deficit occurs when,"a country imports more than it exports. The trade deficit is a measure of the difference between the value of goods and services that a country exports and the value of goods and services that it imports.
+
+The trade deficit is a measure of the difference between the value of goods and services that a country exports and the value of goods and services that it imports.
+
+The trade deficit is a measure of the difference between the value of goods and services that a country exports and the value of goods and",100,gpt2-large

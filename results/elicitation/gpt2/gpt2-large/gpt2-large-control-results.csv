@@ -1,0 +1,283 @@
+prompt_id,concept,prompt_type,template_type,prompt,output,max_tokens,model
+blue_sky,blue sky,declarative,cloze,A blue sky is,"a beautiful thing. It's a sign of the sky's health. But when the sky is cloudy, it's a sign of the sky's health.
+
+The sky is a beautiful thing. It's a sign of the sky's health. But when the sky is cloudy, it's a sign of the sky's health.
+
+The sky is a beautiful thing. It's a sign of the sky's health. But when the sky is cloudy, it's a sign of the sky",100,gpt2-large
+cold_water,cold water,declarative,cloze,Cold water is typically characterized by,"a high concentration of dissolved oxygen, which is a sign of a low pH. The pH of water is a measure of the acidity of the water. The pH of water is a measure of the acidity of the water.
+
+The pH of water is a measure of the acidity of the water. The pH of water is a measure of the acidity of the water.
+
+The pH of water is a measure of the acidity of the water. The pH of water is",100,gpt2-large
+ice_cream,ice cream,declarative,cloze,Ice cream is a frozen dessert made from,"milk, cream, sugar, and sometimes eggs. It is often served with ice cream sandwiches, ice cream sandwiches, or ice cream sandwiches.
+
+Ice cream sandwiches are a type of ice cream sandwich that is made with ice cream, a sandwich, and a slice of bread.
+
+Ice cream sandwiches are usually served with a slice of bread.
+
+Ice cream sandwiches are usually served with a slice of bread.
+
+Ice cream sandwiches are usually served with a slice of bread.",100,gpt2-large
+life_jacket,life jacket,declarative,cloze,A life jacket is designed to,"protect a person from the cold and rain. It is a type of clothing that is worn over a person's body.
+
+A life jacket is designed to protect a person from the cold and rain. It is a type of clothing that is worn over a person's body.
+
+A life jacket is designed to protect a person from the cold and rain. It is a type of clothing that is worn over a person's body.
+
+A life jacket is designed to protect a person from",100,gpt2-large
+tea_cup,tea cup,declarative,cloze,A tea cup is a vessel used for,"brewing tea. It is made of a clay or clay-like material, and is usually made of a single layer of clay. The clay is usually made of a clay-like material, and is usually made of a single layer of clay.
+
+The tea cup is made of a clay or clay-like material, and is usually made of a single layer of clay.
+
+The tea cup is made of a clay or clay-like material, and is usually made of a single layer",100,gpt2-large
+living_room,living room,declarative,cloze,A living room is,a place where people can gather and enjoy the company of friends and family. It is a place where people can relax and enjoy the company of friends and family. It is a place where people can relax and enjoy the company of friends and family. It is a place where people can relax and enjoy the company of friends and family. It is a place where people can relax and enjoy the company of friends and family. It is a place where people can relax and enjoy the company of friends and family.,100,gpt2-large
+roller_coaster,roller coaster,declarative,cloze,A roller coaster is an amusement ride that,"is designed to be ridden in a single motion. The ride is usually a single track, but can be a combination of tracks.
+
+Roller Coasters are usually designed to be ridden in a single motion. The ride is usually a single track, but can be a combination of tracks.
+
+Roller Coasters are usually designed to be ridden in a single motion. The ride is usually a single track, but can be a combination of tracks.
+
+Roller Coasters are usually",100,gpt2-large
+school_bus,school bus,declarative,cloze,A school bus is used to,"transport students to and from school in the town of Bangui, Central African Republic, on April 14, 2015. (Photo: Francois Mori, AFP/Getty Images)
+
+BANGUI, Central African Republic — The United Nations has called for an end to the violence in Central African Republic, where at least 1,000 people have been killed in the past two weeks.
+
+The U.N. Security Council is expected to meet on Tuesday to discuss the crisis, which has left",100,gpt2-large
+grilled_cheese,grilled cheese,declarative,cloze,A grilled cheese sandwich consists of,"a grilled cheese, a bun, and a slice of bread. The grilled cheese is usually made of a blend of cheese, such as cheddar, mozzarella, or provolone. The bun is usually made of a blend of cheese, such as cheddar, provolone, or cheddar. The bread is usually made of a blend of cheese, such as cheddar, mozzarella, or provolone.
+
+The grilled cheese sandwich is a popular sandwich in the",100,gpt2-large
+peanut_butter,peanut butter,declarative,cloze,Peanut butter is made from,"peanuts, which are a type of seed. Peanuts are a good source of protein, fiber, and vitamins A, C, and E. Peanuts are also a good source of calcium, magnesium, and potassium.
+
+Peanut butter is a great source of protein, fiber, and vitamins A, C, and E. Peanuts are a good source of calcium, magnesium, and potassium.
+
+Peanut butter is made from peanuts, which are a type of seed. Peanuts",100,gpt2-large
+hot_chocolate,hot chocolate,declarative,cloze,Hot chocolate is a warm beverage typically made from,"milk, sugar, and cocoa powder. It is often served hot, but can also be served cold.
+
+The term ""hot chocolate"" is often used to describe a beverage made from milk, sugar, and cocoa powder. It is often served hot, but can also be served cold.
+
+History
+
+The term ""hot chocolate"" was first used in the United States in the late 1800s. The term ""hot chocolate"" was first used in the United States in the late 1800",100,gpt2-large
+apple_pie,apple pie,declarative,cloze,Apple pie is a dessert featuring,"a crust made from a combination of flour, sugar, and butter. It is often served with a sweet filling, such as whipped cream, but it can also be made without a filling.
+
+The crust is made by mixing together the flour, sugar, and butter in a bowl. The mixture is then kneaded into a dough, which is then rolled into a ball and baked.
+
+The crust is usually made with a combination of butter and sugar, but it can also be made",100,gpt2-large
+orange_juice,orange juice,declarative,cloze,Orange juice is extracted from,"the juice of the orange, which is a fruit that is native to the Americas. It is a natural source of vitamin C, potassium, and other nutrients.
+
+The juice of the orange is extracted from the juice of the orange, which is a fruit that is native to the Americas. It is a natural source of vitamin C, potassium, and other nutrients.
+
+The juice of the orange is extracted from the juice of the orange, which is a fruit that is native to the Americas",100,gpt2-large
+baked_beans,baked beans,declarative,cloze,Baked beans are,"a great way to use up leftover beans, and they're also a great way to use up leftover canned beans. They're also a great way to use up leftover canned beans, and they're also a great way to use up leftover canned beans.
+
+I've been making baked beans for years, and I've always been a little hesitant to use canned beans. I've always thought that canned beans were a little too salty, and I've always thought that canned beans were a little too bland",100,gpt2-large
+palm_tree,palm tree,declarative,cloze,A palm tree is characterized by,"its large, upright branches, which are often covered with leaves. The leaves are used to produce a variety of fruits, including the fruit of the palm tree, the fruit of the palm tree, the fruit of the palm tree, the fruit of the palm tree, the fruit of the palm tree, the fruit of the palm tree, the fruit of the palm tree, the fruit of the palm tree, the fruit of the palm tree, the fruit of the palm tree, the fruit of the palm",100,gpt2-large
+thunder_storm,thunder storm,declarative,cloze,A thunder storm is,"a violent storm that occurs when the air temperature is above the freezing point of water. The air temperature is the temperature at which the water freezes. The air temperature is measured in degrees Fahrenheit.
+
+Thunderstorms are caused by the interaction of the air and the ground. The air is heated by the sun and the ground is heated by the earth's rotation. The air and the ground are moving at different speeds. The air is moving faster than the ground. The air is moving faster than the ground",100,gpt2-large
+coral_reef,coral reef,declarative,cloze,A coral reef is an underwater formation that,"is formed by the interaction of the ocean and the surrounding land. The coral reef is a natural habitat for many species of fish, including the coral reef shark.
+
+The coral reef is a natural habitat for many species of fish, including the coral reef shark.
+
+The coral reef is a natural habitat for many species of fish, including the coral reef shark.
+
+The coral reef is a natural habitat for many species of fish, including the coral reef shark.
+
+The coral reef",100,gpt2-large
+shooting_star,shooting star,declarative,cloze,A shooting star is actually,"a meteorite that has been ejected from the Sun.
+
+The meteorite is called a ""shooting star"" because it is a meteorite that has been ejected from the Sun.
+
+The meteorite is called a ""shooting star"" because it is a meteorite that has been ejected from the Sun.
+
+The meteorite is called a ""shooting star"" because it is a meteorite that has been ejected from the Sun.
+
+The meteorite is called a",100,gpt2-large
+mountain_lion,mountain lion,declarative,cloze,A mountain lion is,"seen in the parking lot of the San Diego Zoo on Wednesday, March 7, 2016. The zoo is holding a special event to celebrate the birth of a baby mountain lion cub. (Photo: Michael Chow, AP)
+
+SAN DIEGO — A mountain lion cub born at the San Diego Zoo on Wednesday is the first of its kind in the United States, zoo officials said.
+
+The cub, named ""Mountain Lion,"" was born at the zoo's maternity ward, according to",100,gpt2-large
+tidal_wave,tidal wave,declarative,cloze,A tidal wave is a large ocean wave caused by,"the movement of the ocean. The ocean is a fluid, and the waves are caused by the movement of the fluid. The waves are caused by the movement of the fluid.
+
+The ocean is a fluid. The waves are caused by the movement of the fluid.
+
+The ocean is a fluid. The waves are caused by the movement of the fluid.
+
+The ocean is a fluid. The waves are caused by the movement of the fluid.
+
+The ocean is a fluid.",100,gpt2-large
+dining_table,dining table,declarative,cloze,A dining table is furniture used for,"seating and eating. It is made of wood, and is usually made of a single piece of wood. The table is usually made of a single piece of wood, and is usually made of a single piece of wood.
+
+The table is usually made of a single piece of wood, and is usually made of a single piece of wood.
+
+The table is usually made of a single piece of wood, and is usually made of a single piece of wood.
+
+The table is usually",100,gpt2-large
+car_keys,car keys,declarative,cloze,Car keys are used to,"unlock the doors of cars. They are also used to open the trunk of a car.
+
+The key is a small metal cylinder that fits into the lock of a car. The key is inserted into the lock and the lock is unlocked.
+
+The key is a small metal cylinder that fits into the lock of a car. The key is inserted into the lock and the lock is unlocked.
+
+The key is a small metal cylinder that fits into the lock of a car. The key",100,gpt2-large
+washing_machine,washing machine,declarative,cloze,A washing machine is an appliance that,is used to wash clothes. It is a machine that is used to wash clothes. It is a machine that is used to wash clothes. It is a machine that is used to wash clothes. It is a machine that is used to wash clothes. It is a machine that is used to wash clothes. It is a machine that is used to wash clothes. It is a machine that is used to wash clothes. It is a machine that is used to wash clothes. It is a machine that is,100,gpt2-large
+bath_towels,bath towels,declarative,cloze,Bath towels are used for,"bathing, showering, and other activities. They are made of a soft, absorbent material that is easy to clean and dry. They are also used for cleaning and drying clothes.
+
+Bath towels are made of a soft, absorbent material that is easy to clean and dry. They are also used for cleaning and drying clothes.
+
+Bath towels are used for bathing, showering, and other activities. They are made of a soft, absorbent material that is easy to",100,gpt2-large
+alarm_clock,alarm clock,declarative,cloze,An alarm clock is a device that,"is used to wake up the user. It is a device that is used to wake up the user.
+
+The alarm clock is a device that is used to wake up the user. It is a device that is used to wake up the user.
+
+The alarm clock is a device that is used to wake up the user. It is a device that is used to wake up the user.
+
+The alarm clock is a device that is used to wake up the user. It is",100,gpt2-large
+light_bulb,light bulb,declarative,cloze,A light bulb is,"a device that emits light. The term ""light bulb"" is used to describe a light source that is used to illuminate a room.
+
+The term ""light bulb"" is also used to describe a light source that is used to illuminate a room.
+
+The term ""light bulb"" is also used to describe a light source that is used to illuminate a room.
+
+The term ""light bulb"" is also used to describe a light source that is used to illuminate a room.",100,gpt2-large
+post_office,post office,declarative,cloze,A post office is an institution that,"provides a service to the public. It is a public institution that is owned by the government and is responsible for the delivery of postal services.
+
+The post office is a public institution that is owned by the government and is responsible for the delivery of postal services.
+
+The post office is a public institution that is owned by the government and is responsible for the delivery of postal services.
+
+The post office is a public institution that is owned by the government and is responsible for the delivery of",100,gpt2-large
+parking_lot,parking lot,declarative,cloze,A parking lot is,a place where people park their cars. It's a place where people park their cars. It's a place where people park their cars. It's a place where people park their cars. It's a place where people park their cars. It's a place where people park their cars. It's a place where people park their cars. It's a place where people park their cars. It's a place where people park their cars. It's a place where people park their cars. It's,100,gpt2-large
+train_station,train station,declarative,cloze,A train station is a facility where,"people can go to buy or sell goods or services.
+
+The station is usually located in a city or town.
+
+The station is usually located in a city or town. The station is usually located in a city or town. The station is usually located in a city or town. The station is usually located in a city or town. The station is usually located in a city or town. The station is usually located in a city or town. The station is usually located in a city",100,gpt2-large
+fire_station,fire station,declarative,cloze,A fire station is,"a building that is used to provide fire protection and emergency services.
+
+The fire station is usually located in a building that is used for fire protection and emergency services.
+
+The fire station is usually located in a building that is used for fire protection and emergency services.
+
+The fire station is usually located in a building that is used for fire protection and emergency services.
+
+The fire station is usually located in a building that is used for fire protection and emergency services.
+
+The",100,gpt2-large
+swimming_pool,swimming pool,declarative,cloze,A swimming pool is a structure designed for,"the purpose of providing a safe and comfortable swimming environment for people of all ages. It is a place where people can relax and enjoy the water.
+
+Swimming pools are designed to provide a safe and comfortable environment for people of all ages. They are designed to provide a place where people can relax and enjoy the water.
+
+Swimming pools are designed to provide a safe and comfortable environment for people of all ages. They are designed to provide a place where people can relax and enjoy the water",100,gpt2-large
+coffee_shop,coffee shop,declarative,cloze,A coffee shop is,"a place where people can come together and talk about their lives. It's a place where people can come together and talk about their lives.
+
+A coffee shop is a place where people can come together and talk about their lives. It's a place where people can come together and talk about their lives.
+
+A coffee shop is a place where people can come together and talk about their lives. It's a place where people can come together and talk about their lives.
+
+A coffee",100,gpt2-large
+hard_drive,hard drive,declarative,cloze,A hard drive is a computer component used for,"storing data. It is a type of storage device that is used to store data. Hard drives are used to store data on a computer.
+
+Hard drives are used to store data on a computer.
+
+Hard drives are used to store data on a computer.
+
+Hard drives are used to store data on a computer.
+
+Hard drives are used to store data on a computer.
+
+Hard drives are used to store data on a computer.
+
+Hard drives are used to",100,gpt2-large
+operating_system,operating system,declarative,cloze,An operating system is software that,"is used to control a computer. The operating system is the software that is used to run the computer.
+
+The operating system is the software that is used to run the computer.
+
+The operating system is the software that is used to run the computer.
+
+The operating system is the software that is used to run the computer.
+
+The operating system is the software that is used to run the computer.
+
+The operating system is the software that is used to run the computer",100,gpt2-large
+search_engine,search engine,declarative,cloze,A search engine is,a tool that helps you find information. It is a tool that helps you find information. It is a tool that helps you find information. It is a tool that helps you find information. It is a tool that helps you find information. It is a tool that helps you find information. It is a tool that helps you find information. It is a tool that helps you find information. It is a tool that helps you find information. It is a tool that helps you find information. It is,100,gpt2-large
+user_name,user name,declarative,cloze,A user name is typically used for,"a user who is not a member of the group. For example, a user name is used for a user who is not a member of the group ""users"" or ""users/1"".
+
+A user name is not a password. A user name is not a username. A user name is not a user ID. A user name is not a user ID. A user name is not a user ID. A user name is not a user ID. A user name is not a user",100,gpt2-large
+power_supply,power supply,declarative,cloze,A power supply is,"a device that provides power to a computer or other device. The term ""power supply"" is used in the context of computer hardware and software.
+
+The term ""power supply"" is also used in the context of computer software.
+
+The term ""power supply"" is also used in the context of computer hardware and software.
+
+The term ""power supply"" is also used in the context of computer software.
+
+The term ""power supply"" is also used in the context of",100,gpt2-large
+data_base,data base,declarative,cloze,A data base is,"a collection of data that is used to store information about a particular person or entity. A database is a collection of data that is used to store information about a particular person or entity.
+
+A database is a collection of data that is used to store information about a particular person or entity.
+
+A database is a collection of data that is used to store information about a particular person or entity.
+
+A database is a collection of data that is used to store information about a particular person",100,gpt2-large
+sore_throat,sore throat,declarative,cloze,A sore throat is,"a common symptom of a cold. It's caused by a virus, bacteria or fungus.
+
+Symptoms of a sore throat include:
+
+A sore throat that doesn't go away
+
+A sore throat that doesn't go away A sore throat that doesn't go away
+
+A sore throat that doesn't go away
+
+A sore throat that doesn't go away
+
+A sore throat that doesn't go away
+
+A sore throat that doesn't go away
+
+A sore",100,gpt2-large
+blood_pressure,blood pressure,declarative,cloze,Blood pressure refers to,"the pressure in the blood vessels that is caused by the amount of blood in the blood vessels.
+
+The blood pressure of a person with high blood pressure is usually higher than that of a person with normal blood pressure.
+
+High blood pressure is a condition that can cause problems with your heart, blood vessels, and nerves.
+
+Symptoms of high blood pressure
+
+High blood pressure can cause:
+
+Heart problems
+
+High blood pressure can cause:
+
+Heart problems",100,gpt2-large
+collar_bone,collar bone,declarative,cloze,The collar bone is,"a bone that is attached to the collar bone. It is the most common bone in the body and is found in the neck, shoulders, and arms. The collar bone is also called the collar bone or collar bone.
+
+The collar bone is a bone that is attached to the collar bone. It is the most common bone in the body and is found in the neck, shoulders, and arms. The collar bone is also called the collar bone or collar bone.
+
+The collar bone is",100,gpt2-large
+heart_rate,heart rate,declarative,cloze,Heart rate measures,"the rate of heartbeats per minute. It is a measure of the amount of energy that is being used by the body.
+
+The heart rate is measured by a heart rate monitor. The heart rate monitor is a device that is worn on the person's chest. The heart rate monitor measures the heart rate of the person.
+
+The heart rate monitor is a device that is worn on the person's chest. The heart rate monitor measures the heart rate of the person.
+
+The",100,gpt2-large
+dental_appointment,dental appointment,declarative,cloze,A dental appointment is,"a great way to get a quick check-up and get a clean bill of health.
+
+But if you're not sure what to expect, here are some things to consider before you go.
+
+What to Expect
+
+Dental appointments are usually free, but you'll need to pay for your own supplies.
+
+You'll need to bring your own toothbrush, toothpaste, floss, and a clean pair of disposable gloves.
+
+You'll also need to bring your",100,gpt2-large
+waiting_room,waiting room,declarative,cloze,A waiting room is,"a place where people can wait for a doctor or nurse to come to them. It is a place where people can be seen by a doctor or nurse without having to wait in a long line.
+
+A waiting room is a place where people can wait for a doctor or nurse to come to them. It is a place where people can be seen by a doctor or nurse without having to wait in a long line.
+
+A waiting room is a place where people can wait for a doctor or",100,gpt2-large

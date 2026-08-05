@@ -1,0 +1,309 @@
+prompt_id,concept,prompt_type,template_type,prompt,output,max_tokens,model
+oxygen_saturation,oxygen saturation,declarative,cloze,Oxygen saturation refers to,"the amount of oxygen present in the air. Oxygen is a gas that is present in the air at all times. Oxygen is a gas that is present in the air at all times.
+
+Oxygen saturation is measured in units of oxygen per cubic meter of air. Oxygen saturation is measured in units of oxygen per cubic meter of air.
+
+Oxygen saturation is measured in units of oxygen per cubic meter of air.
+
+Oxygen saturation is measured in units",100,gpt2-medium
+body_temperature,body temperature,declarative,cloze,Body temperature is,a key factor in the development of obesity. The body temperature of a person is determined by the amount of heat that is absorbed by the body. The body temperature of a person is determined by the amount of heat that is absorbed by the body. The body temperature of a person is determined by the amount of heat that is absorbed by the body. The body temperature of a person is determined by the amount of heat that is absorbed by the body. The body temperature of a person is determined by the amount,100,gpt2-medium
+platelet_count,platelet count,declarative,cloze,Platelet count measures,"the number of cells in a blood vessel. It is a measure of the number of cells in a blood vessel. It is a measure of the number of cells in a blood vessel.
+
+Platelet count is a measure of the number of cells in a blood vessel. It is a measure of the number of cells in a blood vessel.
+
+Platelet count is a measure of the number of cells in a blood vessel. It is a measure of the number of cells in a",100,gpt2-medium
+metabolic_panel,metabolic panel,declarative,cloze,A metabolic panel is,"a device that measures the metabolic rate of a person. It is used to determine the amount of energy a person needs to maintain a certain level of activity.
+
+The metabolic panel is a device that measures the metabolic rate of a person. It is used to determine the amount of energy a person needs to maintain a certain level of activity.
+
+The metabolic panel is a device that measures the metabolic rate of a person. It is used to determine the amount of energy a person needs to maintain a",100,gpt2-medium
+bacterial_infection,bacterial infection,declarative,cloze,A bacterial infection is caused by,"a bacterium that lives in the gut. The bacteria can cause a variety of symptoms, including diarrhea, abdominal pain, and fever.
+
+Bacterial infections are usually caused by a bacterium that lives in the gut. The bacteria can cause a variety of symptoms, including diarrhea, abdominal pain, and fever.
+
+Bacterial infections are usually caused by a bacterium that lives in the gut. The bacteria can cause a variety of symptoms, including diarrhea, abdominal pain, and fever.",100,gpt2-medium
+magnetic_resonance,magnetic resonance,declarative,cloze,Magnetic resonance imaging is,"a powerful tool for studying the brain. It can reveal the structure of the brain, and it can also reveal the structure of the brain's connections.
+
+But it's also a tool for studying the brain's connections.
+
+In a new study, researchers at the University of California, San Diego, have shown that magnetic resonance imaging can reveal the structure of the brain's connections.
+
+The study, published in the journal Neuron, shows that MRI scans of the brains of healthy volunteers",100,gpt2-medium
+multiple_sclerosis,multiple sclerosis,declarative,cloze,Multiple sclerosis is,"a progressive neurodegenerative disease that affects millions of people worldwide. It is characterized by progressive loss of motor function, cognitive impairment, and loss of quality of life.
+
+The disease is caused by a genetic mutation in the MS1 gene. The MS1 gene is located on chromosome 1. It is a gene that encodes for a protein called MS1R. MS1R is a protein that is expressed in the brain and spinal cord. It is a protein that is involved in the",100,gpt2-medium
+complete_remission,complete remission,declarative,cloze,Complete remission means,"that the patient has no further symptoms of the disease.
+
+The disease is usually mild and usually goes away on its own.
+
+The disease is usually mild and usually goes away on its own.
+
+The disease is usually mild and usually goes away on its own.
+
+The disease is usually mild and usually goes away on its own.
+
+The disease is usually mild and usually goes away on its own.
+
+The disease is usually mild and usually goes away on its own",100,gpt2-medium
+bowel_resection,bowel resection,declarative,cloze,A bowel resection is,"a procedure that removes the contents of the small intestine from the colon. It is performed by a surgeon who removes the colonic contents and then inserts a tube into the small intestine.
+
+The procedure is usually performed by a doctor who has a specialised knowledge of the anatomy of the small intestine.
+
+The procedure is usually performed by a doctor who has a specialised knowledge of the anatomy of the small intestine.
+
+The procedure is usually performed by a doctor who has a specialised knowledge",100,gpt2-medium
+organ_transplant,organ transplant,declarative,cloze,An organ transplant is,"a procedure that allows a person to receive a new organ from another person.
+
+The procedure is performed by a doctor who has the permission of the donor's family.
+
+The donor's family must agree to the procedure.
+
+The donor's family must also agree to the transplant.
+
+The donor's family must also agree to the transplant.
+
+The donor's family must also agree to the transplant.
+
+The donor's family must also agree to the transplant.",100,gpt2-medium
+therapeutic_dosage,therapeutic dosage,declarative,cloze,A therapeutic dosage is,"a dose that is effective in treating a specific disease or condition. The dosage is usually given in a single dose, usually in a single dose of a drug.
+
+A therapeutic dosage is usually given in a single dose, usually in a single dose of a drug.
+
+A therapeutic dosage is usually given in a single dose, usually in a single dose of a drug.
+
+A therapeutic dosage is usually given in a single dose, usually in a single dose of a drug.",100,gpt2-medium
+drug_interaction,drug interaction,declarative,cloze,A drug interaction occurs when,"two drugs interact with each other. This is called a drug interaction.
+
+Drug Interactions
+
+Drugs that interact with each other can cause side effects. These side effects include:
+
+Drowsiness
+
+Dizziness
+
+Dry mouth
+
+Nausea
+
+Vomiting
+
+These side effects can last for several hours or even days.
+
+Drug Interactions can also cause side effects that are not serious. These side effects include:
+
+D",100,gpt2-medium
+antibiotic_resistance,antibiotic resistance,declarative,cloze,Antibiotic resistance is,a major threat to human health. The emergence of antibiotic-resistant bacteria is a major public health concern. The emergence of antibiotic-resistant bacteria is a major public health concern. The emergence of antibiotic-resistant bacteria is a major public health concern. The emergence of antibiotic-resistant bacteria is a major public health concern. The emergence of antibiotic-resistant bacteria is a major public health concern. The emergence of antibiotic-resistant bacteria is a major public health concern. The emergence of antibiotic-resistant bacteria is a,100,gpt2-medium
+gastrointestinal_absorption,gastrointestinal absorption,declarative,cloze,Gastrointestinal absorption refers to,"the process of the absorption of nutrients from the gastrointestinal tract. The absorption of nutrients from the gastrointestinal tract is the process of the absorption of nutrients from the gastrointestinal tract. The absorption of nutrients from the gastrointestinal tract is the process of the absorption of nutrients from the gastrointestinal tract.
+
+Gastrointestinal absorption is the process of the absorption of nutrients from the gastrointestinal tract. The absorption of nutrients from the gastrointestinal tract is the process of the absorption of nutrients from the gastrointestinal tract.
+
+Gastro",100,gpt2-medium
+respiratory_tract,respiratory tract,declarative,cloze,The respiratory tract is,"a complex organ that includes the lungs, bronchus, and esophagus. The respiratory tract is composed of the lungs, bronchus, and esophagus. The lungs are the largest organ in the body and are responsible for breathing. The lungs are made up of two chambers, the upper and lower airways. The upper airways are the lungs and are the main source of oxygen to the body. The lower airways are the stomach, intestines, and small intestine. The",100,gpt2-medium
+cerebral_cortex,cerebral cortex,declarative,cloze,The cerebral cortex is,"a region of the brain that is responsible for the processing of sensory information. It is also involved in the regulation of emotions and cognition.
+
+The cerebral cortex is a region of the brain that is responsible for the processing of sensory information. It is also involved in the regulation of emotions and cognition.
+
+The cerebral cortex is a region of the brain that is responsible for the processing of sensory information. It is also involved in the regulation of emotions and cognition.
+
+The cerebral cortex is a",100,gpt2-medium
+informed_consent,informed consent,declarative,cloze,Informed consent requires,"that the person giving the consent is aware of the nature of the information being disclosed and that the person giving the consent is aware of the consequences of the disclosure.
+
+The following are examples of situations where informed consent is required:
+
+When a person is being investigated for a crime.
+
+When a person is being investigated for a crime. When a person is being investigated for a crime. When a person is being investigated for a crime.
+
+When a person is being investigated for a",100,gpt2-medium
+clinical_trial,clinical trial,declarative,cloze,A clinical trial is,"a clinical trial conducted to evaluate the safety and efficacy of a drug or treatment.
+
+The clinical trial is conducted by a clinical trial center, which is a licensed health care provider that conducts clinical trials.
+
+A clinical trial is conducted by a clinical trial center, which is a licensed health care provider that conducts clinical trials.
+
+A clinical trial is conducted by a clinical trial center, which is a licensed health care provider that conducts clinical trials.
+
+A clinical trial is conducted by a",100,gpt2-medium
+nerve_damage,nerve damage,declarative,cloze,Nerve damage can result in,"a variety of symptoms, including dizziness, headache, nausea, vomiting, and blurred vision.
+
+Nerve damage can result in a variety of symptoms, including dizziness, headache, nausea, vomiting, and blurred vision.
+
+Nerve damage can result in a variety of symptoms, including dizziness, headache, nausea, vomiting, and blurred vision.
+
+Nerve damage can result in a variety of symptoms, including dizziness, headache, nausea, vomiting, and blurred vision.",100,gpt2-medium
+chest_pain,chest pain,declarative,cloze,Chest pain can indicate,"a heart condition, but it's not always a sign of a heart attack.
+
+The pain is usually mild and usually goes away within a few days.
+
+But if you have chest pain, you may need to see your doctor.
+
+The pain is usually mild and usually goes away within a few days.
+
+But if you have chest pain, you may need to see your doctor.
+
+The pain is usually mild and usually goes away within a few days.",100,gpt2-medium
+bone_marrow,bone marrow,declarative,cloze,Bone marrow is,"a vital organ for the body. It is the source of the body's own immune system, which protects the body from infection and disease.
+
+The bone marrow is also the source of the body's own immune system, which protects the body from infection and disease.
+
+The bone marrow is the source of the body's own immune system, which protects the body from infection and disease.
+
+The bone marrow is the source of the body's own immune system, which protects the body from",100,gpt2-medium
+brain_stem,brain stem,declarative,cloze,The brain stem controls,"the body's breathing, breathing controls the body's heartbeat, and the heart controls the body's blood pressure.
+
+The brain stem is the part of the brain that controls breathing, breathing controls the body's heartbeat, and the heart controls the body's blood pressure.
+
+The brain stem is the part of the brain that controls breathing, breathing controls the body's heartbeat, and the heart controls the body's blood pressure.
+
+The brain stem is the part of the brain that controls breathing",100,gpt2-medium
+birth_defect,birth defect,declarative,cloze,A birth defect is,"a condition that causes a baby to be born with a defect in the brain or spinal cord.
+
+The condition is called congenital heart defects (CHDs).
+
+The condition is caused by a defect in the heart muscle.
+
+The defect is usually caused by a defect in the heart muscle.
+
+The defect is usually caused by a defect in the heart muscle.
+
+The defect is usually caused by a defect in the heart muscle.
+
+The defect is usually caused by",100,gpt2-medium
+wound_care,wound care,declarative,cloze,Wound care is,"a critical part of any wound care program. It is important to understand the different types of wound care and how to best care for them.
+
+Wound care is a critical part of any wound care program. It is important to understand the different types of wound care and how to best care for them.
+
+Wound care is a critical part of any wound care program. It is important to understand the different types of wound care and how to best care for them.
+
+Wound",100,gpt2-medium
+pain_management,pain management,declarative,cloze,Pain management involves,"the use of analgesics, such as opioids, to relieve pain. Pain management is a complex process that involves the use of different types of analgesics, such as opioids, to relieve pain.
+
+The pain management process is often divided into three phases:
+
+Pain management phase: The patient is given an analgesic to relieve pain.
+
+The patient is given an analgesic to relieve pain. Post-treatment phase: The patient is given an opioid to relieve pain.
+
+The",100,gpt2-medium
+blood_clot,blood clot,declarative,cloze,A blood clot is,"a clot that forms in the blood vessels of the body. It is caused by a clotting disorder called thrombocytopenia.
+
+Blood clots are caused by a clotting disorder called thrombocytopenia.
+
+Blood clots are caused by a clotting disorder called thrombocytopenia.
+
+Blood clots are caused by a clotting disorder called thrombocytopenia.
+
+Blood clots are caused by",100,gpt2-medium
+tumor_growth,tumor growth,declarative,cloze,Tumor growth is,"a common side effect of chemotherapy. It is often accompanied by a variety of other side effects, including nausea, vomiting, and diarrhea.
+
+Tumor growth is a common side effect of chemotherapy. It is often accompanied by a variety of other side effects, including nausea, vomiting, and diarrhea.
+
+Tumor growth is a common side effect of chemotherapy. It is often accompanied by a variety of other side effects, including nausea, vomiting, and diarrhea.
+
+Tumor",100,gpt2-medium
+joint_replacement,joint replacement,declarative,cloze,A joint replacement is,"needed for the existing system, which is expected to cost $1.5 billion.
+
+The replacement will be a combination of two or more components, including a new engine, a new transmission, a new transmission gearbox, a new transmission fluid, a new transmission fluid pump, a new transmission fluid pump, a new transmission fluid pump, a new transmission fluid pump, a new transmission fluid pump, a new transmission fluid pump, a new transmission fluid pump, a new transmission fluid pump, a",100,gpt2-medium
+immune_response,immune response,declarative,cloze,An immune response is,"a physiological response that is triggered by a specific antigen. The immune system is a complex system that includes the immune cells, the T cells, and the macrophages. The T cells are the cells that recognize and destroy foreign substances. The macrophages are the cells that engulf and destroy the foreign substances. The macrophages are responsible for the destruction of the foreign substances.
+
+The immune system is a complex system that includes the immune cells, the T cells, and the macrophages",100,gpt2-medium
+viral_infection,viral infection,declarative,cloze,A viral infection is caused by,"a virus that infects the body's immune system. The virus is passed from person to person through contact with infected surfaces.
+
+The virus is spread through contact with bodily fluids, such as saliva, urine, feces, or vomit.
+
+The virus can be spread through direct contact with infected surfaces, such as a person's mouth, nose, or eyes.
+
+The virus can also be spread through contact with contaminated objects, such as clothing, bedding, or bedding linens",100,gpt2-medium
+chronic_pain,chronic pain,declarative,cloze,Chronic pain is,"a common condition that affects millions of people worldwide. It is a chronic condition that can affect the body in many different ways. It can affect the body in many different ways, including:
+
+Painful, painful, painful, painful, painful, painful, painful, painful, painful, painful, painful, painful, painful, painful, painful, painful, painful, painful, painful, painful, painful, painful, painful, painful, painful, painful, painful, painful, painful, painful,",100,gpt2-medium
+mental_health,mental health,declarative,cloze,Mental health refers to,"the mental health of a person. It is a condition that affects the way a person thinks, feels, and acts. It is also a condition that affects the way they feel about themselves and others.
+
+Mental health is a condition that affects the way a person thinks, feels, and acts. It is also a condition that affects the way they feel about themselves and others.
+
+Mental health is a condition that affects the way a person thinks, feels, and acts. It is",100,gpt2-medium
+spinal_cord,spinal cord,declarative,cloze,The spinal cord is,"a complex organ that connects the brain and spinal cord. It is composed of a series of nerves, which are connected to each other by a series of axons. The axons are connected to the spinal cord by a series of nerve fibers. The spinal cord is divided into two parts, the spinal cord and the spinal cord and spinal cord.
+
+The spinal cord is divided into two parts, the spinal cord and the spinal cord and spinal cord. The spinal cord is divided into two parts,",100,gpt2-medium
+scar_tissue,scar tissue,declarative,cloze,Scar tissue is,"a common problem in women. It can be caused by a variety of causes, including:
+
+Age
+
+Age-related macular degeneration (AMD)
+
+Age-related macular degeneration (AMD) Age-related macular degeneration (AMD) Age-related macular degeneration (AMD)
+
+Age-related macular degeneration (AMD) Age-related macular degeneration (AMD)
+
+Age-related macular degeneration (AMD) Age",100,gpt2-medium
+fluid_retention,fluid retention,declarative,cloze,Fluid retention can cause,"a variety of problems, including:
+
+Fluid retention can cause a variety of problems, including:
+
+Fluid retention can cause a variety of problems, including:
+
+Fluid retention can cause a variety of problems, including:
+
+Fluid retention can cause a variety of problems, including:
+
+Fluid retention can cause a variety of problems, including:
+
+Fluid retention can cause a variety of problems, including:
+
+F",100,gpt2-medium
+sleep_apnea,sleep apnea,declarative,cloze,Sleep apnea is,"a condition in which the breathing of air is interrupted by a short period of rapid breathing. It is caused by a malfunction in the breathing muscles, which are responsible for breathing air through the nose.
+
+The condition is most common in children, but it can also affect adults.
+
+Symptoms
+
+Sleep apnea can cause:
+
+Shortness of breath
+
+Shortness of breath and/or chest tightness
+
+Chest tightness
+
+Chest pain
+
+Chest pain and",100,gpt2-medium
+muscle_spasm,muscle spasm,declarative,cloze,A muscle spasm is,"a muscle contraction that occurs when the muscle is stretched or stretched out. It is a muscle contraction that occurs when the muscle is stretched or stretched out.
+
+A muscle spasm is a muscle contraction that occurs when the muscle is stretched or stretched out. It is a muscle contraction that occurs when the muscle is stretched or stretched out.
+
+A muscle spasm is a muscle contraction that occurs when the muscle is stretched or stretched out. It is a muscle contraction that occurs when the muscle is stretched",100,gpt2-medium
+breast_cancer,breast cancer,declarative,cloze,Breast cancer is,"the most common cancer in women. It is estimated that about 1 in every 100 women will develop breast cancer at some point in their lives.
+
+Breast cancer is a very aggressive cancer that can be fatal. It is estimated that about 1 in every 100 women will develop breast cancer at some point in their lives.
+
+Breast cancer is a very aggressive cancer that can be fatal. It is estimated that about 1 in every 100 women will develop breast cancer at some point in their lives.",100,gpt2-medium
+lung_cancer,lung cancer,declarative,cloze,Lung cancer is,"the most common cancer in the world, affecting more than 1.5 billion people. It is the most common cancer in the world, affecting more than 1.5 billion people.
+
+Lung cancer is the most common cancer in the world, affecting more than 1.5 billion people. It is the most common cancer in the world, affecting more than 1.5 billion people.
+
+Lung cancer is the most common cancer in the world, affecting more than 1.5 billion people",100,gpt2-medium
+skin_graft,skin graft,declarative,cloze,A skin graft is,"a surgical procedure that uses a special type of skin graft to replace damaged skin. The skin graft is usually made of a special type of skin that is specially designed to allow the skin graft to be removed without damaging the surrounding tissue.
+
+The skin graft is usually made of a special type of skin that is specially designed to allow the skin graft to be removed without damaging the surrounding tissue.
+
+The skin graft is usually made of a special type of skin that is specially designed to allow the skin",100,gpt2-medium
+stem_cell,stem cell,declarative,cloze,A stem cell is,"a cell that has been transformed into a different cell type. Stem cells are the cells that make up the body's immune system.
+
+Stem cells are made from a person's own cells. They are made from the skin cells of the body. They are made from the blood cells of the body. They are made from the bone marrow of the body. They are made from the bone marrow of the body.
+
+Stem cells are made from the skin cells of the body.",100,gpt2-medium
+side_effect,side effect,declarative,cloze,A side effect is,"that the patient may feel more relaxed and more relaxed.
+
+The side effect is that the patient may feel more relaxed and more relaxed.
+
+The side effect is that the patient may feel more relaxed and more relaxed.
+
+The side effect is that the patient may feel more relaxed and more relaxed.
+
+The side effect is that the patient may feel more relaxed and more relaxed.
+
+The side effect is that the patient may feel more relaxed and more relaxed.
+
+The side",100,gpt2-medium

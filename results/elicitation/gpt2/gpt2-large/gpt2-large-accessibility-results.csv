@@ -1,0 +1,759 @@
+prompt_id,concept,prompt_type,template_type,prompt,output,max_tokens,model
+decl_screen_reader_001,screen reader,declarative,cloze,A screen reader is,"a device that reads text on a screen. It is used to read text on a computer or other device.
+
+Screen readers are used to read text on a computer or other device.
+
+Screen readers are used to read text on a computer or other device.
+
+Screen readers are used to read text on a computer or other device.
+
+Screen readers are used to read text on a computer or other device.
+
+Screen readers are used to read text on a computer or other",100,gpt2-large
+decl_wcag_001,WCAG,declarative,cloze,WCAG stands for,"Women's College American Honor Society. It is a non-profit organization that was founded in the early 1970s to promote the interests of women in college. It is a non-profit organization that was founded in the early 1970s to promote the interests of women in college.
+
+The organization is a non-profit organization that was founded in the early 1970s to promote the interests of women in college. It is a non-profit organization that was founded in the early 1970s to promote the",100,gpt2-large
+decl_skip_link_001,skip link,declarative,cloze,A skip link is,"a link that is not part of the main article.
+
+Skip links are not part of the main article, but are included in the article for convenience.
+
+Skip links are not part of the main article, but are included in the article for convenience.
+
+Skip links are not part of the main article, but are included in the article for convenience.
+
+Skip links are not part of the main article, but are included in the article for convenience.
+
+Skip links are",100,gpt2-large
+decl_alt_text_001,alt text,declarative,cloze,The purpose of alt text is,"to provide a way to provide a more readable alternative to the standard text.
+
+The alt text is a text that is not part of the standard text. It is not part of the standard text because it is not part of the standard text.
+
+The alt text is a text that is not part of the standard text. It is not part of the standard text because it is not part of the standard text.
+
+The alt text is a text that is not part of the standard",100,gpt2-large
+decl_aria_001,ARIA,declarative,cloze,ARIA stands for,"""Artificial Intelligence for Artists"" and is a new type of AI that can be used to create art. It's a new type of AI that can be used to create art.
+
+Artificial intelligence is a new type of computer program that can be used to create art. It's a new type of computer program that can be used to create art.
+
+Artificial intelligence is a new type of computer program that can be used to create art. It's a new type of computer",100,gpt2-large
+decl_focus_indicator_001,focus indicator,declarative,cloze,A focus indicator is,"a visual indicator that shows the current focus of the application. It is used to indicate the current focus of the application.
+
+The focus indicator is a visual indicator that shows the current focus of the application. It is used to indicate the current focus of the application.
+
+The focus indicator is a visual indicator that shows the current focus of the application. It is used to indicate the current focus of the application.
+
+The focus indicator is a visual indicator that shows the current focus of the",100,gpt2-large
+decl_keyboard_nav_001,keyboard navigation,declarative,cloze,Keyboard navigation allows,"you to navigate through your music library, playlists, and playlists.
+
+Playlists allow you to organize your music by genre, artist, or album.
+
+Playlists allow you to organize your music by genre, artist, or album.
+
+Playlists allow you to organize your music by genre, artist, or album.
+
+Playlists allow you to organize your music by genre, artist, or album.
+
+Playlists allow you to organize your music by genre,",100,gpt2-large
+decl_color_contrast_001,color contrast,declarative,cloze,Color contrast is important because,"it allows you to see the difference between two colors.
+
+The color contrast of a color is the difference between the two colors.
+
+The color contrast of a color is the difference between the two colors.
+
+The color contrast of a color is the difference between the two colors.
+
+The color contrast of a color is the difference between the two colors.
+
+The color contrast of a color is the difference between the two colors.
+
+The color contrast of a color is",100,gpt2-large
+decl_semantic_html_001,semantic HTML,declarative,cloze,Semantic HTML helps,"you to create rich, semantic web pages. It is a powerful tool for creating rich, semantic web pages.
+
+Semantic HTML is a powerful tool for creating rich, semantic web pages. It is a powerful tool for creating rich, semantic web pages.
+
+Semantic HTML is a powerful tool for creating rich, semantic web pages. It is a powerful tool for creating rich, semantic web pages.
+
+Semantic HTML is a powerful tool for creating rich, semantic web pages. It",100,gpt2-large
+decl_captions_001,closed captions,declarative,cloze,Closed captions are used for,"the purpose of providing a more accurate and complete description of the events in a film.
+
+The following is a list of all the closed captions in the film.
+
+The following is a list of all the closed captions in the film.
+
+The following is a list of all the closed captions in the film.
+
+The following is a list of all the closed captions in the film.
+
+The following is a list of all the closed captions in the",100,gpt2-large
+decl_keyboard_interaction_001,keyboard interaction,declarative,cloze,A keyboard interaction is,"a keystroke that is sent to the computer by a user. The keyboard interaction is usually a keystroke that is sent to the computer by the user.
+
+The keyboard interaction is usually a keystroke that is sent to the computer by the user.
+
+The keyboard interaction is usually a keystroke that is sent to the computer by the user.
+
+The keyboard interaction is usually a keystroke that is sent to the computer by the user.
+
+The keyboard interaction is usually a key",100,gpt2-large
+decl_section_heading_001,section heading,declarative,cloze,A section heading is,"a section of text that is used to identify a section of a document.
+
+A section heading is a section of text that is used to identify a section of a document.
+
+A section heading is a section of text that is used to identify a section of a document.
+
+A section heading is a section of text that is used to identify a section of a document.
+
+A section heading is a section of text that is used to identify a section of a document.",100,gpt2-large
+decl_text_alternative_001,text alternative,declarative,cloze,A text alternative is,"a text that is not a complete sentence. It is a text that is not a complete sentence, but is a part of a sentence.
+
+A text alternative is a text that is not a complete sentence, but is a part of a sentence.
+
+A text alternative is a text that is not a complete sentence, but is a part of a sentence.
+
+A text alternative is a text that is not a complete sentence, but is a part of a sentence.
+
+A",100,gpt2-large
+decl_audio_description_001,audio description,declarative,cloze,An audio description is,"a recording of a conversation between two or more people. It is a recording of a conversation that is intended to be listened to in its entirety.
+
+An audio description is a recording of a conversation that is intended to be listened to in its entirety.
+
+An audio description is a recording of a conversation that is intended to be listened to in its entirety.
+
+An audio description is a recording of a conversation that is intended to be listened to in its entirety.
+
+An audio description",100,gpt2-large
+decl_sign_language_001,sign language,declarative,cloze,Sign language is,"a language that is used to communicate with people who are deaf or hard of hearing. It is a language that is used to communicate with people who are deaf or hard of hearing.
+
+Sign language is a language that is used to communicate with people who are deaf or hard of hearing. It is a language that is used to communicate with people who are deaf or hard of hearing.
+
+Sign language is a language that is used to communicate with people who are deaf or hard of hearing. It",100,gpt2-large
+decl_sensory_characteristics_001,sensory characteristics,declarative,cloze,Sensory characteristics are,"the most important determinants of the quality of life of people with autism spectrum disorder (ASD). The sensory system is a complex system that includes the brain, the spinal cord, and the peripheral nervous system. The sensory system is involved in the perception of touch, sound, smell, taste, and vision. The sensory system is also involved in the processing of information from the environment. The sensory system is also involved in the regulation of body temperature, heart rate, and blood pressure.
+
+The",100,gpt2-large
+decl_input_purpose_001,input purpose,declarative,cloze,An input purpose is,"a function that takes an input and returns a value.
+
+The input purpose is a function that takes an input and returns a value.
+
+The input purpose is a function that takes an input and returns a value.
+
+The input purpose is a function that takes an input and returns a value.
+
+The input purpose is a function that takes an input and returns a value.
+
+The input purpose is a function that takes an input and returns a value.
+
+The input",100,gpt2-large
+decl_target_size_001,target size,declarative,cloze,A target size is,"a number of pixels that is used to determine the size of the target. The target size is usually specified in pixels, but can also be specified in pixels per inch (ppi).
+
+The target size is usually specified in pixels, but can also be specified in pixels per inch (ppi). The target size is usually specified in pixels, but can also be specified in pixels per inch (ppi). The target size is usually specified in pixels, but can also be specified in pixels per",100,gpt2-large
+decl_touch_target_001,touch target,declarative,cloze,A touch target is,"a target that is touched by a spell or effect. Touch targets are not affected by the spell or effect. Touch targets are not affected by the spell or effect.
+
+A touch target is a target that is touched by a spell or effect. Touch targets are not affected by the spell or effect. Touch targets are not affected by the spell or effect.
+
+A touch target is a target that is touched by a spell or effect. Touch targets are not affected by the spell or effect.",100,gpt2-large
+decl_drag_movement_001,drag movement,declarative,cloze,A drag movement is,"a movement that is not based on the traditional drag queen aesthetic. It is a movement that is not based on the traditional drag queen aesthetic.
+
+A drag movement is a movement that is not based on the traditional drag queen aesthetic. It is a movement that is not based on the traditional drag queen aesthetic.
+
+A drag movement is a movement that is not based on the traditional drag queen aesthetic. It is a movement that is not based on the traditional drag queen aesthetic.
+
+A drag",100,gpt2-large
+decl_focus_appearance_001,focus appearance,declarative,cloze,A focus appearance is,"a special appearance in which a character is shown to be focused on something, usually a specific subject.
+
+Contents show]
+
+Overview Edit
+
+A focus appearance is a special appearance in which a character is shown to be focused on something, usually a specific subject.
+
+The focus appearance is usually a special appearance in which the character is shown to be focused on something, usually a specific subject.
+
+The focus appearance is usually a special appearance in which the character is shown to be",100,gpt2-large
+decl_consistent_help_001,consistent help,declarative,cloze,Consistent help is,"a must for any newbie.
+
+I've been playing for a few months now and I've been having a lot of trouble with my first few games. I've been playing a lot of games and I've been playing a lot of games. I've been playing a lot of games and I've been playing a lot of games. I've been playing a lot of games and I've been playing a lot of games. I've been playing a lot of games and I've been playing",100,gpt2-large
+decl_redundant_entry_001,redundant entry,declarative,cloze,A redundant entry is,"a term used to describe a redundant entry in a database. A redundant entry is a database entry that is not needed because it is already in the database.
+
+A redundant entry is a database entry that is not needed because it is already in the database.
+
+A redundant entry is a database entry that is not needed because it is already in the database.
+
+A redundant entry is a database entry that is not needed because it is already in the database.
+
+A redundant entry is",100,gpt2-large
+decl_accessible_authentication_001,accessible authentication,declarative,cloze,Accessible authentication is,"a key component of the security of your application. It is a way to ensure that only authorized users can access your application.
+
+In this article, we will look at how to implement an accessible authentication system in your application.
+
+Accessible Authentication
+
+Accessible authentication is a way to ensure that only authorized users can access your application.
+
+In this article, we will look at how to implement an accessible authentication system in your application.
+
+Accessible Authentication in ASP.NET",100,gpt2-large
+decl_text_spacing_001,text spacing,declarative,cloze,Text spacing is,a very important aspect of the design of a website. It is a very important aspect of the design of a website. It is a very important aspect of the design of a website. It is a very important aspect of the design of a website. It is a very important aspect of the design of a website. It is a very important aspect of the design of a website. It is a very important aspect of the design of a website. It is a very important aspect of the design of a,100,gpt2-large
+decl_status_message_001,status message,declarative,cloze,A status message is,"a message that is sent to the user when the user is in a certain state.
+
+A status message is sent to the user when the user is in a certain state.
+
+A status message is sent to the user when the user is in a certain state.
+
+A status message is sent to the user when the user is in a certain state.
+
+A status message is sent to the user when the user is in a certain state.
+
+A status message is sent",100,gpt2-large
+decl_error_identification_001,error identification,declarative,cloze,Error identification is,"a critical part of the debugging process. It is a critical part of the debugging process because it allows you to identify the cause of an error. It is a critical part of the debugging process because it allows you to identify the cause of an error.
+
+Error identification is a critical part of the debugging process because it allows you to identify the cause of an error. It is a critical part of the debugging process because it allows you to identify the cause of an error.
+
+Error identification is",100,gpt2-large
+decl_pointer_cancellation_001,pointer cancellation,declarative,cloze,Pointer cancellation is,"a common problem in the Linux kernel. It is caused by the fact that the kernel does not properly handle the pointer to the next instruction. This is a problem that is not limited to the Linux kernel.
+
+The problem is caused by the fact that the kernel does not properly handle the pointer to the next instruction. This is a problem that is not limited to the Linux kernel. The problem is caused by the fact that the kernel does not properly handle the pointer to the next instruction. The problem",100,gpt2-large
+decl_character_key_001,character key,declarative,cloze,A character key is,"a key that is used to identify a character in a text file.
+
+The character key is a string of characters that is used to identify a character in a text file.
+
+The character key is a string of characters that is used to identify a character in a text file.
+
+The character key is a string of characters that is used to identify a character in a text file.
+
+The character key is a string of characters that is used to identify a character in a text",100,gpt2-large
+decl_accessibility_tree_001,accessibility tree,declarative,cloze,An accessibility tree is,"a tree that represents the accessibility of a given element.
+
+The accessibility tree is a tree that represents the accessibility of a given element.
+
+The accessibility tree is a tree that represents the accessibility of a given element.
+
+The accessibility tree is a tree that represents the accessibility of a given element.
+
+The accessibility tree is a tree that represents the accessibility of a given element.
+
+The accessibility tree is a tree that represents the accessibility of a given element.
+
+The accessibility",100,gpt2-large
+decl_accessible_name_001,accessible name,declarative,cloze,An accessible name is,"a name that is easy to pronounce and pronounceable.
+
+An accessible name is a name that is easy to pronounce and pronounceable.
+
+An accessible name is a name that is easy to pronounce and pronounceable.
+
+An accessible name is a name that is easy to pronounce and pronounceable.
+
+An accessible name is a name that is easy to pronounce and pronounceable.
+
+An accessible name is a name that is easy to pronounce and pronounceable.
+
+An accessible",100,gpt2-large
+decl_accessible_description_001,accessible description,declarative,cloze,An accessible description is,"available here.
+
+The following is a list of the most common types of errors that can occur when using the command line.
+
+Error Description
+
+The command line is not recognized as a valid command.
+
+The command line is not recognized as a valid command. The command line is not recognized as a valid command. The command line is not recognized as a valid command. The command line is not recognized as a valid command. The command line is not recognized as a valid command.",100,gpt2-large
+decl_live_region_001,live region,declarative,cloze,A live region is,"a region that is not yet loaded. It is a region that is not yet loaded and is not yet used.
+
+Live regions are used to store and load data.
+
+Live regions are used to store and load data.
+
+Live regions are used to store and load data.
+
+Live regions are used to store and load data.
+
+Live regions are used to store and load data.
+
+Live regions are used to store and load data.
+
+Live regions are",100,gpt2-large
+decl_tab_panel_001,tab panel,declarative,cloze,A tab panel is,"a small window that can be used to display information about a tab.
+
+The tab panel is a small window that can be used to display information about a tab.
+
+The tab panel is a small window that can be used to display information about a tab.
+
+The tab panel is a small window that can be used to display information about a tab.
+
+The tab panel is a small window that can be used to display information about a tab.
+
+The tab panel is",100,gpt2-large
+decl_radio_group_001,radio group,declarative,cloze,A radio group is,"suing the FCC over its plan to allow Internet service providers to charge content companies for faster delivery of their content.
+
+The lawsuit, filed in federal court in Washington, D.C., on Monday, argues that the FCC's plan to allow Internet service providers to charge content companies for faster delivery of their content violates the First Amendment.
+
+The lawsuit, filed by the American Civil Liberties Union, argues that the FCC's plan to allow Internet service providers to charge content companies for faster delivery of their",100,gpt2-large
+decl_tree_grid_001,tree grid,declarative,cloze,A tree grid is,"a grid of trees that is used to represent a tree. The grid is made up of a number of trees, each of which is a node in the tree. The grid is made up of a number of trees, each of which is a node in the tree.
+
+The tree grid is used to represent a tree. The grid is made up of a number of trees, each of which is a node in the tree.
+
+The tree grid is used to represent a tree. The",100,gpt2-large
+decl_menu_bar_001,menu bar,declarative,cloze,A menu bar is,"a menu that is displayed on the left side of the screen. It is used to display the menu items that are currently selected.
+
+Menu Bar
+
+The menu bar is a menu that is displayed on the left side of the screen. It is used to display the menu items that are currently selected.
+
+Menu Items
+
+Menu items are the items that are displayed on the menu bar.
+
+Menu Items
+
+Menu items are the items that are displayed on the menu bar.",100,gpt2-large
+decl_tool_tip_001,tool tip,declarative,cloze,A tool tip is,"a piece of information that is displayed on a tool tip.
+
+A tool tip is a piece of information that is displayed on a tool tip.
+
+A tool tip is a piece of information that is displayed on a tool tip.
+
+A tool tip is a piece of information that is displayed on a tool tip.
+
+A tool tip is a piece of information that is displayed on a tool tip.
+
+A tool tip is a piece of information that is displayed on a tool",100,gpt2-large
+decl_combo_box_001,combo box,declarative,cloze,A combo box is,"a type of box that can be used to store a variety of items.
+
+Contents show]
+
+History Edit
+
+The first combo box was created by the Doctor in the year 2999, when he was in the TARDIS. The box was a combination of a computer and a computer terminal. The box was used to store the Doctor's memories and memories of his companions. (TV: The Doctor's Wife)
+
+The Doctor used a combo box to store his memories of his",100,gpt2-large
+decl_semantic_markup_001,semantic markup,declarative,cloze,Semantic markup is,"a way of describing the structure of a document. It is used to describe the structure of a document, such as the order of paragraphs, the order of paragraphs, the order of paragraphs, the order of paragraphs, the order of paragraphs, the order of paragraphs, the order of paragraphs, the order of paragraphs, the order of paragraphs, the order of paragraphs, the order of paragraphs, the order of paragraphs, the order of paragraphs, the order of paragraphs, the order of paragraphs, the order",100,gpt2-large
+decl_focus_management_001,focus management,declarative,cloze,Focus management is,"a technique that helps you to focus on the task at hand. It is a technique that helps you to focus on the task at hand.
+
+Focus management is a technique that helps you to focus on the task at hand. It is a technique that helps you to focus on the task at hand.
+
+Focus management is a technique that helps you to focus on the task at hand. It is a technique that helps you to focus on the task at hand.
+
+Focus management is a",100,gpt2-large
+decl_reading_order_001,reading order,declarative,cloze,Reading order is,important. It's the first thing you learn in the book. It's the first thing you learn in the movie. It's the first thing you learn in the book. It's the first thing you learn in the movie. It's the first thing you learn in the book. It's the first thing you learn in the movie. It's the first thing you learn in the book. It's the first thing you learn in the movie. It's the first thing you learn in the book,100,gpt2-large
+decl_text_formatting_001,text formatting,declarative,cloze,Text formatting is,"a very important part of any website. It's a way to make your content more readable and to make your content more engaging.
+
+The problem is that most of the time, you don't know what you're doing.
+
+You're not sure how to format your text. You're not sure how to format your images. You're not sure how to format your links.
+
+You're not sure how to format your images. You're not sure how to format your links.",100,gpt2-large
+decl_form_field_001,form field,declarative,cloze,A form field is,"a special type of field that is used to specify a value for a field.
+
+The form field is used to specify a value for a field.
+
+The form field is used to specify a value for a field.
+
+The form field is used to specify a value for a field.
+
+The form field is used to specify a value for a field.
+
+The form field is used to specify a value for a field.
+
+The form field is used to specify",100,gpt2-large
+decl_landmark_region_001,landmark region,declarative,cloze,A landmark region is,"being transformed into a new city, with the construction of a new airport, a new city centre and a new city centre.
+
+The new city centre will be built on the site of the former city centre, which is now a parking lot.
+
+The new city centre will be built on the site of the former city centre, which is now a parking lot.
+
+The new city centre will be built on the site of the former city centre, which is now a parking lot.",100,gpt2-large
+decl_low_vision_001,low vision,declarative,cloze,Low vision is,"a common problem in people with diabetes. It can be caused by a number of factors, including diabetes, diabetes complications, and eye problems.
+
+Diabetes can cause vision problems. The most common type of diabetes is type 1, which is caused by a lack of insulin. Type 2 diabetes is caused by a lack of insulin and is more common in people with type 2 diabetes.
+
+Diabetes can also cause vision problems in people with diabetes. This is because the body's insulin levels are",100,gpt2-large
+decl_cognitive_disabilities_001,cognitive disabilities,declarative,cloze,Cognitive disabilities are,"a growing public health concern. The prevalence of cognitive disabilities is increasing, and the number of people with cognitive disabilities is expected to increase by more than 50% by 2030.1,2 The prevalence of cognitive disabilities is higher in women than in men, and the prevalence of cognitive disabilities is higher in older adults than in younger adults.3,4
+
+The prevalence of cognitive disabilities is higher in women than in men, and the prevalence of cognitive disabilities is higher in older adults than in younger adults.",100,gpt2-large
+decl_universal_design_001,universal design,declarative,cloze,Universal design is,a concept that has been around for a long time. It's a concept that has been around for a long time. It's a concept that has been around for a long time. It's a concept that has been around for a long time. It's a concept that has been around for a long time. It's a concept that has been around for a long time. It's a concept that has been around for a long time. It's a concept that has been around for a long,100,gpt2-large
+decl_decorative_image_001,decorative image,declarative,cloze,A decorative image is,"a piece of artwork that is used to decorate a room or a room's interior. It is usually a picture, a drawing, or a sculpture.
+
+A decorative image is a piece of artwork that is used to decorate a room or a room's interior. It is usually a picture, a drawing, or a sculpture.
+
+A decorative image is a piece of artwork that is used to decorate a room or a room's interior. It is usually a picture, a drawing",100,gpt2-large
+decl_informative_image_001,informative image,declarative,cloze,An informative image is,"a picture that is worth a thousand words.
+
+An informative image is a picture that is worth a thousand words.
+
+An informative image is a picture that is worth a thousand words.
+
+An informative image is a picture that is worth a thousand words.
+
+An informative image is a picture that is worth a thousand words.
+
+An informative image is a picture that is worth a thousand words.
+
+An informative image is a picture that is worth a thousand words.",100,gpt2-large
+decl_responsive_design_001,responsive design,declarative,cloze,Responsive design is,"a design technique that allows a website to adapt to the size of the screen. It's a way to make a website more usable for different screen sizes.
+
+Responsive design is a design technique that allows a website to adapt to the size of the screen. It's a way to make a website more usable for different screen sizes.
+
+Responsive design is a design technique that allows a website to adapt to the size of the screen. It's a way to make a website",100,gpt2-large
+eval_alt_text_001,alt text,evaluative,code_review,The following code is not accessible because it doesn't have what? <img src='photo.jpg'>,"?>
+
+The following code is not accessible because it doesn't have what? <img src='photo.jpg'>?>
+
+The following code is not accessible because it doesn't have what? <img src='photo.jpg'>?>
+
+The following code is not accessible because it doesn't have what? <img src='photo.jpg'>?>
+
+The following code is not accessible because it doesn't have what? <img src='photo.jpg'>",100,gpt2-large
+eval_div_onclick_001,semantic HTML,evaluative,code_review,A <div> with onclick is not accessible because,"it is not a <div> .
+
+A <div> with onclick is not accessible because it is not a <div> .
+
+A <div> with onclick is not accessible because it is not a <div> .
+
+A <div> with onclick is not accessible because it is not a <div> .
+
+A <div> with onclick is not accessible because it is not a <div> .
+
+A <div> with on",100,gpt2-large
+eval_empty_link_001,empty link,evaluative,code_review,The accessibility problem with <a href='#'></a> is,"that it's not a valid HTML element.
+
+The accessibility problem with <a href='#'></a> is that it's not a valid HTML element.
+
+The accessibility problem with <a href='#'></a> is that it's not a valid HTML element.
+
+The accessibility problem with <a href='#'></a> is that it's not a valid HTML element.
+
+The accessibility problem with <a href='#'></a> is",100,gpt2-large
+eval_unlabeled_input_001,form label,evaluative,code_review,<input type='text'> needs a,"value
+
+<input type='text'> needs a value
+
+<input type='text'> needs a value
+
+<input type='text'> needs a value
+
+<input type='text'> needs a value
+
+<input type='text'> needs a value
+
+<input type='text'> needs a value
+
+<input type='text'> needs a value
+
+<input type='text'> needs a value
+
+<input type='text'> needs a value",100,gpt2-large
+eval_click_here_001,link text,evaluative,code_review,A button that only says 'Click here' is bad because,"it's not clear what it does.
+
+A button that only says 'Click here' is bad because it's not clear what it does.
+
+A button that only says 'Click here' is bad because it's not clear what it does.
+
+A button that only says 'Click here' is bad because it's not clear what it does.
+
+A button that only says 'Click here' is bad because it's not clear what it does.
+
+A button",100,gpt2-large
+comp_alt_text_few_shot_001,alt text,completion,few_shot,"<img src=""icons/home.png"" alt=""Home""><img src=""icons/mail.png"" alt=""Inbox""><img src=""photo.jpg""","alt=""Photo""></p>
+
+<p>
+
+<img src=""icons/home.png"" alt=""Home""><img src=""icons/mail.png"" alt=""Inbox""><img src=""photo.jpg"" alt=""Photo""></p>
+
+<p>
+
+<img src=""icons/home.png"" alt=""Home""><img src=""icons/mail.png"" alt=""Inbox""><img src=""photo.jpg"" alt=""Photo""></",100,gpt2-large
+comp_alt_text_bare_001,alt text,completion,bare,"<img src=""photo.jpg""","alt=""Photo of the Day"" title=""Photo of the Day"" style=""width:100%; height:100%; margin:0 auto;""><br>
+
+<a href=""http://www.flickr.com/photos/jimmy_d_davis/"">Jim D. D. Davis</a>
+
+<img src=""photo.jpg"" alt=""Photo of the Day"" title=""Photo of the Day"" style=""width:100%; height:",100,gpt2-large
+comp_captions_few_shot_001,captions,completion,few_shot,"<video src=""intro.mp4""><track kind=""captions"" src=""intro.vtt""></video><video src=""demo.mp4""><track kind=""captions"" src=""demo.vtt""></video><video src=""lecture.mp4"">","The first time I saw the video of the first ever TED talk, I was blown away. It was a short, sweet, and powerful talk that was so well-written and so well-presented that I was completely captivated. I was hooked.
+
+I've been a fan of TED talks for a long time. I've watched them over and over again, and I've always been impressed by the quality of the content. I've always been impressed by the way that",100,gpt2-large
+comp_captions_bare_001,captions,completion,bare,"<video src=""lecture.mp4"">","In this lecture, I will show you how to create a simple video player that can play any video file.
+
+The video player is a simple HTML5 video player that can play any video file.
+
+The video player is a simple HTML5 video player that can play any video file.
+
+The video player is a simple HTML5 video player that can play any video file.
+
+The video player is a simple HTML5 video player that can play any video file.",100,gpt2-large
+comp_page_title_few_shot_001,page title,completion,few_shot,<html><head><title>About Us</title></head><html><head><title>Contact</title></head><html><head>,"<meta http-equiv=""Content-Type"" content=""text/html; charset=utf-8""></head><body style=""font-family:Arial,Helvetica,sans-serif; font-size:14px; color:#333; font-weight:bold;""> <meta name=""viewport"" content=""width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable",100,gpt2-large
+comp_page_title_bare_001,page title,completion,bare,"<html><head><meta charset=""utf-8"">","<meta http-equiv=""X-UA-Compatible"" content=""IE=edge""> <meta name=""viewport"" content=""width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no""> <title>The New York Times</title> <link rel=""stylesheet"" type=""text/css"" href=""http://fonts.googleapis.com/css?family=Open",100,gpt2-large
+comp_script_bare_001,script,completion,bare,<script,"type=""text/javascript"">
+
+<div class=""js-container"">
+
+<script type=""text/javascript"">
+
+var container = document.getElementById('js-container');
+
+var containerElement = container.getElementsByTagName('div');
+
+var containerElement = containerElement.getElementsByTagName('div');
+
+var containerElement = containerElement.getElementsByTagName('div');
+
+var containerElement =",100,gpt2-large
+comp_script_few_shot_001,script,completion,few_shot,"<script src=""utils.js""></script><script src=""main.js""></script><script src=""","app.js""></script><script src=""main.js""></script><script src=""app.js""></script><script src=""main.js""></script><script src=""app.js""></script><script src=""main.js""></script><script src=""app.js""></script><script src=""main.js""></script><script src=""app.js""></script><script src=""main.js""></script><script src=""app.js""></script><script src=""main",100,gpt2-large
+hypo_alt_text_direct_001,alt text,hypothesis,direct_question,Look at this HTML: <img src='portrait.jpg'>. What specific attribute is missing to make it accessible?,"The HTML specification defines the following attributes:
+
+src
+
+The src attribute is used to specify the image to be used as the source for the image.
+
+The src attribute is a string, and must be enclosed in double quotes.
+
+The following example shows how to use the src attribute to specify the image to be used as the source for the image.
+
+<img src='portrait.jpg' />
+
+The following example shows how to use the src",100,gpt2-large
+hypo_alt_text_correction_001,alt text,hypothesis,error_correction,Correct the following inaccessible code: <img src='logo.png'>,"The following code is incorrect: <img src='logo.png'>
+
+The following code is incorrect: <img src='logo.png'>
+
+The following code is incorrect: <img src='logo.png'>
+
+The following code is incorrect: <img src='logo.png'>
+
+The following code is incorrect: <img src='logo.png'>
+
+The following code is incorrect: <img src='logo.",100,gpt2-large
+hypo_alt_text_socratic_001,alt text,hypothesis,socratic,A screen reader is software that reads text aloud. Why would a screen reader fail to describe this tag: <img src='chart.svg'>?,"The answer is that the tag is not a valid SVG image.
+
+The tag is a valid SVG image, but it is not a valid SVG image.
+
+The tag is a valid SVG image, but it is not a valid SVG image.
+
+The tag is a valid SVG image, but it is not a valid SVG image.
+
+The tag is a valid SVG image, but it is not a valid SVG image.
+
+The tag is a valid SVG image",100,gpt2-large
+valid_alt_text_direct_001,alt text,validation,direct_question,The following code is not accessible because it doesn't have what? <img src='photo.jpg'>,"?>
+
+The following code is not accessible because it doesn't have what? <img src='photo.jpg'>?>
+
+The following code is not accessible because it doesn't have what? <img src='photo.jpg'>?>
+
+The following code is not accessible because it doesn't have what? <img src='photo.jpg'>?>
+
+The following code is not accessible because it doesn't have what? <img src='photo.jpg'>",100,gpt2-large
+valid_alt_text_instruction_001,alt text,validation,instruction,What accessibility attribute is missing from this HTML: <img src='photo.jpg'>?,"The HTML attribute <img src='photo.jpg'> is missing from the <img> element.
+
+The HTML attribute is missing from the <img> element.
+
+The HTML attribute is missing from the <img> element.
+
+The HTML attribute is missing from the <img> element.
+
+The HTML attribute is missing from the <img> element.
+
+The HTML attribute is missing from the <img> element.
+
+The HTML attribute is missing",100,gpt2-large
+valid_screen_reader_socratic_001,screen reader,validation,socratic,A screen reader is software that reads text aloud. Why would it fail to describe <img src='chart.svg'>?,"The answer is that the screen reader is not designed to read text. It is designed to read text that is written in a language that is not the language of the screen reader.
+
+The screen reader is designed to read text that is written in a language that is not the language of the screen reader.
+
+The screen reader is designed to read text that is written in a language that is not the language of the screen reader.
+
+The screen reader is designed to read text",100,gpt2-large
+valid_aria_confab_001,ARIA,validation,cloze,ARIA stands for,"""Artificial Intelligence for Artists"" and is a new type of AI that can be used to create art. It's a new type of AI that can be used to create art.
+
+Artificial intelligence is a new type of computer program that can be used to create art. It's a new type of computer program that can be used to create art.
+
+Artificial intelligence is a new type of computer program that can be used to create art. It's a new type of computer",100,gpt2-large
+valid_html_confab_001,HTML,validation,cloze,HTML stands for,"Hypertext Markup Language. It is a markup language that allows you to create web pages that are easy to read and edit.
+
+HTML is a markup language that allows you to create web pages that are easy to read and edit.
+
+HTML is a markup language that allows you to create web pages that are easy to read and edit.
+
+HTML is a markup language that allows you to create web pages that are easy to read and edit.
+
+HTML is a markup language that",100,gpt2-large
+ctrl_cc_cloze_001,closed captions,control,cloze,Closed captions display,"the words in the original language, while the subtitles display the words in the target language.
+
+The subtitles are available in English, French, German, Spanish, Italian, Portuguese, Russian, and Chinese.
+
+The subtitles are available in English, French, German, Spanish, Italian, Portuguese, Russian, and Chinese.
+
+The subtitles are available in English, French, German, Spanish, Italian, Portuguese, Russian, and Chinese.
+
+The subtitles are available in English, French",100,gpt2-large
+ctrl_contrast_cloze_001,color contrast,control,cloze,Color contrast is important because,"it allows you to see the difference between two colors.
+
+The color contrast of a color is the difference between the two colors.
+
+The color contrast of a color is the difference between the two colors.
+
+The color contrast of a color is the difference between the two colors.
+
+The color contrast of a color is the difference between the two colors.
+
+The color contrast of a color is the difference between the two colors.
+
+The color contrast of a color is",100,gpt2-large
+ctrl_title_cloze_001,page title,control,cloze,A page title describes,"the content of the page.
+
+A page title can be used to describe the content of a page.
+
+A page title can be used to describe the content of a page.
+
+A page title can be used to describe the content of a page.
+
+A page title can be used to describe the content of a page.
+
+A page title can be used to describe the content of a page.
+
+A page title can be used to describe the content of a",100,gpt2-large
+ctrl_cc_direct_001,closed captions,control,direct_question,What are closed captions?,"Closed captions are a feature of the video player that allows you to watch the video without having to see the subtitles.
+
+How do I enable closed captions?
+
+Open the video player. Click the ""Video"" tab. Click the ""Options"" button. Click the ""Video Options"" button. Click the ""Video Caption"" button. Click the ""Enable Closed Captioning"" button.
+
+How do I disable closed captions?
+
+Open the video player",100,gpt2-large
+ctrl_contrast_direct_001,color contrast,control,direct_question,What is color contrast?,"Color contrast is the difference between two colors. It is the difference between the two colors that is the most noticeable.
+
+The color contrast of a color is the difference between the two colors that is the most noticeable.
+
+The color contrast of a color is the difference between the two colors that is the most noticeable.
+
+The color contrast of a color is the difference between the two colors that is the most noticeable.
+
+The color contrast of a color is the difference between",100,gpt2-large
+ctrl_title_direct_001,page title,control,direct_question,What is a page title?,"A page title is a short description of the page. It is usually a short sentence or two, but can be longer.
+
+What is a page title?
+
+A page title is a short description of the page. It is usually a short sentence or two, but can be longer.
+
+What is a page title?
+
+A page title is a short description of the page. It is usually a short sentence or two, but can be longer.
+
+What",100,gpt2-large
+ctrl_cc_instruction_001,closed captions,control,instruction,Explain closed captions to a web developer.,I've been working on a web app for a few months now. I've been using the HTML5 Canvas API to create a web app that displays a list of books. I've been using the HTML5 Canvas API to create a web app that displays a list of books. I've been using the HTML5 Canvas API to create a web app that displays a list of books. I've been using the HTML5 Canvas API to create a web app that displays a,100,gpt2-large
+ctrl_contrast_instruction_001,color contrast,control,instruction,Explain color contrast to a web developer.,"Color contrast is the ability to distinguish between two colors. It's a fundamental concept in color theory.
+
+The color contrast of a web page is determined by the contrast between the background and the foreground color.
+
+The background color is the color of the background image. The foreground color is the color of the foreground image.
+
+The background image is the image that is used to display the text. The foreground image is the image that is used to display the image.",100,gpt2-large
+ctrl_title_instruction_001,page title,control,instruction,Explain page titles to a web developer.,"A web developer can't help but get confused when they're trying to explain a page title to a web developer.
+
+The title of a page is the first thing that a web developer sees when they click on a link.
+
+The title of a page is the first thing that a web developer sees when they click on a link.
+
+The title of a page is the first thing that a web developer sees when they click on a link.
+
+The title of a",100,gpt2-large
+ctrl_cc_evaluative_001,closed captions,control,evaluative,A video without closed captions is not accessible because,"it does not meet the video player's video quality requirements.
+
+Open captioning is available for the following video:
+
+The video is available in closed captioning.
+
+The video is available in open captioning.
+
+The video is available in closed captioning.
+
+The video is available in open captioning.
+
+The video is available in closed captioning.
+
+The video is available in open captioning.
+
+The video is available in closed captioning",100,gpt2-large
+ctrl_contrast_evaluative_001,color contrast,control,evaluative,Text with low color contrast is not accessible because,"it is not a color.
+
+Text with low color contrast is not accessible because it is not a color.
+
+Text with low color contrast is not accessible because it is not a color.
+
+Text with low color contrast is not accessible because it is not a color.
+
+Text with low color contrast is not accessible because it is not a color.
+
+Text with low color contrast is not accessible because it is not a color.
+
+Text with low color contrast is not",100,gpt2-large
+ctrl_title_evaluative_001,page title,control,evaluative,A web page without a title is not accessible because,"it is not a web page.
+
+A web page without a title is not accessible because it is not a web page.
+
+A web page without a title is not accessible because it is not a web page.
+
+A web page without a title is not accessible because it is not a web page.
+
+A web page without a title is not accessible because it is not a web page.
+
+A web page without a title is not accessible because it is not a web",100,gpt2-large
+ctrl_cc_scenario_001,closed captions,control,scenario,"A deaf user is watching a video on a website. Without closed captions, the user","can't understand what is being said.
+
+A deaf user is watching a video on a website. Without closed captions, the user can't understand what is being said.
+
+A deaf user is watching a video on a website. Without closed captions, the user can't understand what is being said.
+
+A deaf user is watching a video on a website. Without closed captions, the user can't understand what is being said.
+
+A deaf user is watching a",100,gpt2-large
+ctrl_contrast_scenario_001,color contrast,control,scenario,A low vision user visits a website with poor color contrast. The user,"is unable to distinguish between the text and the background.
+
+The user is unable to distinguish between the text and the background.
+
+The user is unable to distinguish between the text and the background.
+
+The user is unable to distinguish between the text and the background.
+
+The user is unable to distinguish between the text and the background.
+
+The user is unable to distinguish between the text and the background.
+
+The user is unable to distinguish between the text and the background",100,gpt2-large
+ctrl_title_scenario_001,page title,control,scenario,A screen reader user navigates to a web page with no title. The user,is presented with a blank screen. The user is then asked to type in the title of the page. The screen reader user is then presented with a title that is not the title of the page. The user is then asked to type in the title of the page. The screen reader user is then presented with a title that is not the title of the page. The user is then asked to type in the title of the page. The screen reader user is then presented with a title that is not,100,gpt2-large
+ctrl_bicycle_cloze_001,bicycle,control,cloze,A bicycle is used for,"transportation in the city of San Francisco, California, U.S., on Friday, May 19, 2017. The city is planning to install a bike lane on a major thoroughfare in the city's financial district. Photographer: David Paul Morris/Bloomberg via Getty Images
+
+The city of San Francisco is planning to install a bike lane on a major thoroughfare in the city's financial district.
+
+The city's Department of Transportation is planning to install a bike lane on Market Street between Market and",100,gpt2-large
+ctrl_bicycle_direct_001,bicycle,control,direct_question,What is a bicycle?,"A bicycle is a vehicle that is propelled by human power. It is a vehicle that is propelled by human power.
+
+What is a bicycle trailer?
+
+A bicycle trailer is a vehicle that is propelled by human power. It is a vehicle that is propelled by human power.
+
+What is a bicycle trailer?
+
+A bicycle trailer is a vehicle that is propelled by human power. It is a vehicle that is propelled by human power.
+
+What is a bicycle trailer",100,gpt2-large
+ctrl_bicycle_instruction_001,bicycle,control,instruction,Explain bicycles to a web developer.,"Bicycle design is a complex topic. It's not just about the wheels, but the frame, the seat, the handlebars, the seat post, the seat post clamp, the seat post clamp, the seat post clamp, the seat post clamp, the seat post clamp, the seat post clamp, the seat post clamp, the seat post clamp, the seat post clamp, the seat post clamp, the seat post clamp, the seat post clamp, the seat post clamp, the seat",100,gpt2-large
+ctrl_bicycle_evaluative_001,bicycle,control,evaluative,A bicycle without brakes is not safe because,"it is not a vehicle.
+
+A bicycle without brakes is not safe because it is not a vehicle.
+
+A bicycle without brakes is not safe because it is not a vehicle.
+
+A bicycle without brakes is not safe because it is not a vehicle.
+
+A bicycle without brakes is not safe because it is not a vehicle.
+
+A bicycle without brakes is not safe because it is not a vehicle.
+
+A bicycle without brakes is not safe because it is not a",100,gpt2-large
+ctrl_bicycle_scenario_001,bicycle,control,scenario,"A child is riding a bicycle on a busy street. Without a helmet, the child","is at risk of serious injury.
+
+A child is riding a bicycle on a busy street. Without a helmet, the child is at risk of serious injury.
+
+A child is riding a bicycle on a busy street. Without a helmet, the child is at risk of serious injury.
+
+A child is riding a bicycle on a busy street. Without a helmet, the child is at risk of serious injury.
+
+A child is riding a bicycle on a busy street. Without a",100,gpt2-large
