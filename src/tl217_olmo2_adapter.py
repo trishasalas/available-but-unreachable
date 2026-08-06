@@ -1,10 +1,10 @@
-"""OLMo 2 adapter for TransformerLens 2.17.0.
+"""OLMo 2 adapter for TransformerLens 2.18.0.
 
-This module keeps the installed TransformerLens 2.17.0 implementation intact for
+This module keeps the installed TransformerLens 2.18.0 implementation intact for
 all previously supported architectures and adds a conditional OLMo 2 path.
 
 Target dependency versions:
-    transformer_lens == 2.17.0
+    transformer_lens == 2.18.0
     transformers == 4.57.6
 
 The adapter supports the base OLMo 2 models whose number of KV heads equals the
@@ -129,10 +129,7 @@ def patch_tl217_for_olmo2() -> None:
 
             resid_pre = self.hook_resid_pre(resid_pre)
 
-            if self.cfg.use_attn_in or self.cfg.use_split_qkv_input:
-                attn_in = resid_pre
-            else:
-                attn_in = resid_pre
+            attn_in = resid_pre
 
             if self.cfg.use_attn_in:
                 attn_in = self.hook_attn_in(
