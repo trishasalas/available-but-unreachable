@@ -1,0 +1,167 @@
+domain,prompt_id,concept,prompt_type,template_type,prompt,output,max_tokens,model
+finance,cash_flow,cash flow,declarative,cloze,Cash flow is,"a key driver of the global economy. It is a measure of the amount of money that a firm can make by selling goods and services. It is also a measure of the amount of money that a firm can make by borrowing money.
+
+The global economy is in a period of slow growth. The global economy is in a period of slow growth. The global economy is in a period of slow growth. The global economy is in a period of slow growth. The global economy is in a period",100,pythia-1b
+finance,balance_sheet,balance sheet,declarative,cloze,A balance sheet is,"a financial statement that shows the financial position of a company. It is a statement of the financial position of a company, which is prepared by the company and is usually prepared by the company's accounting department. The balance sheet is prepared by the accounting department and is usually prepared by the accounting department.
+
+A balance sheet is a financial statement that shows the financial position of a company. It is a statement of the financial position of a company, which is prepared by the company and is usually prepared by",100,pythia-1b
+finance,journal_entry,journal entry,declarative,cloze,A journal entry is,"a written record of a person's thoughts, feelings, and actions. It is a record of a person's thoughts, feelings, and actions in a particular context. It is a record of a person's thoughts, feelings, and actions in a particular context. It is a record of a person's thoughts, feelings, and actions in a particular context. It is a record of a person's thoughts, feelings, and actions in a particular context. It is a record of a person's thoughts,",100,pythia-1b
+finance,accelerated_depreciation,accelerated depreciation,declarative,cloze,Accelerated depreciation is,"a common practice in the financial industry. It is a method of reducing the value of a company's assets by reducing the amount of money that the company is required to pay for the assets. The accelerated depreciation method is used to reduce the amount of money that a company must pay for the assets.
+
+The accelerated depreciation method is used to reduce the amount of money that a company must pay for the assets. The accelerated depreciation method is used to reduce the amount of money that a company",100,pythia-1b
+finance,impairment_goodwill,impairment goodwill,declarative,cloze,Goodwill impairment occurs when,"a business is unable to meet its financial obligations. Goodwill impairment is a business’s inability to meet its financial obligations.
+
+Goodwill impairment is a business’s inability to meet its financial obligations. Goodwill impairment is a business’s inability to meet its financial obligations.
+
+Goodwill impairment is a business’s inability to meet its financial obligations. Goodwill impairment is a business’s inability to meet its financial obligations.
+
+Goodwill impairment is a business’s inability",100,pythia-1b
+finance,yield_maturity,yield maturity,declarative,cloze,Yield to maturity is,"a key factor in determining the price of a commodity. The yield to maturity is the amount of money that a commodity will earn in a given time period. The yield to maturity is a function of the price of the commodity and the time period. The yield to maturity is a function of the price of the commodity and the time period.
+
+The yield to maturity is a function of the price of the commodity and the time period. The yield to maturity is a function of the price of the commodity",100,pythia-1b
+finance,bond_coupon,bond coupon,declarative,cloze,A bond coupon is,"a form of debt that is issued by a bank or other financial institution to a borrower. The borrower pays the bank or other financial institution a fixed amount of money, called a coupon, to be paid in the future. The coupon is usually a fixed amount of money, but may be a fixed amount of money per year, per month, or per day. The coupon is usually issued in the form of a promissory note, but may be a promissory note in the form",100,pythia-1b
+finance,credit_spread,credit spread,declarative,cloze,A credit spread is,"a measure of the difference between the price of a security and the price of a security that is not the same as the security. The difference between the price of a security and the price of a security that is not the same as the security is called the spread. The spread is a measure of the risk of the security. The spread is a measure of the risk of the security.
+
+A credit spread is a measure of the difference between the price of a security and the price of a security",100,pythia-1b
+finance,modified_duration,modified duration,declarative,cloze,Modified duration measures,"of the first 24 hours of life: a systematic review.
+The objective of this systematic review was to determine the effect of modified duration measures of the first 24 hours of life on the risk of death or disability in children. A systematic search of the literature was conducted in MEDLINE, EMBASE, CINAHL, and the Cochrane Library. The search strategy was developed by a medical librarian and included the following terms: ""duration of the first 24 hours of life,"" ""modified duration of",100,pythia-1b
+finance,interest_swap,interest swap,declarative,cloze,An interest swap is,a financial transaction in which a party buys or sells an interest in a financial asset. An interest swap is a financial transaction in which a party buys or sells an interest in a financial asset. An interest swap is a financial transaction in which a party buys or sells an interest in a financial asset. An interest swap is a financial transaction in which a party buys or sells an interest in a financial asset. An interest swap is a financial transaction in which a party buys or sells an interest in a financial asset,100,pythia-1b
+finance,call_option,call option,declarative,cloze,A call option gives,"investors the ability to buy a call option on a stock at a certain price. The call option is a contract that gives the holder the right to buy the stock at a certain price at a certain time. The call option is a contract that gives the holder the right to buy the stock at a certain price at a certain time.
+
+The call option is a contract that gives the holder the right to buy the stock at a certain price at a certain time. The call option is a contract that",100,pythia-1b
+finance,commodity_futures,commodity futures,declarative,cloze,Commodity futures are,"a key part of the global financial system. They are used to price the supply and demand of commodities, and to price the price of oil.
+
+The price of oil is a key determinant of the price of commodities. The price of oil is determined by the demand for oil, the supply of oil, and the price of oil.
+
+The price of oil is determined by the demand for oil, the supply of oil, and the price of oil.
+
+The price of oil is",100,pythia-1b
+finance,currency_hedge,currency hedge,declarative,cloze,A currency hedge is,"a way to protect against currency risk. It is a way to hedge against currency risk by buying a currency that is less expensive than the currency you are hedging against.
+
+A currency hedge is a way to protect against currency risk. It is a way to hedge against currency risk by buying a currency that is less expensive than the currency you are hedging against.
+
+A currency hedge is a way to protect against currency risk. It is a way to hedge against currency risk by buying a",100,pythia-1b
+finance,implied_volatility,implied volatility,declarative,cloze,Implied volatility refers to,"the volatility of a financial instrument, such as a stock, bond, or currency. The volatility of a financial instrument is the volatility of the instrument's price relative to the volatility of the underlying asset. The implied volatility of a financial instrument is the volatility of the instrument's price relative to the volatility of the underlying asset.
+Implied volatility is a key component of the pricing of financial instruments. The pricing of financial instruments is based on the pricing of the underlying asset. The pricing of financial instruments is",100,pythia-1b
+finance,zero_collar,zero collar,declarative,cloze,A zero collar strategy,"for the treatment of patients with chronic obstructive pulmonary disease.
+Chronic obstructive pulmonary disease (COPD) is a major cause of morbidity and mortality worldwide. The disease is characterized by progressive airflow obstruction, which is caused by a combination of chronic inflammation and airway remodeling. The disease is characterized by a progressive decline in lung function, which is caused by a combination of inflammation and airway remodeling. The disease is characterized by a progressive decline in lung function, which is caused by a combination of inflammation and airway",100,pythia-1b
+finance,diluted_earnings,diluted earnings,declarative,cloze,Diluted earnings per share is,"a measure of the company’s financial performance. It is calculated by dividing the net income by the average number of shares outstanding.
+
+Diluted earnings per share is a measure of the company’s financial performance. It is calculated by dividing the net income by the average number of shares outstanding.
+
+Diluted earnings per share is a measure of the company’s financial performance. It is calculated by dividing the net income by the average number of shares outstanding.
+
+Dil",100,pythia-1b
+finance,price_ratio,price ratio,declarative,cloze,The price to earnings ratio is,"a measure of the company’s ability to generate cash flow from operations. It is calculated by dividing the net income by the net sales.
+
+The price to sales ratio is a measure of the company’s ability to generate cash flow from operations. It is calculated by dividing the net income by the net sales.
+
+The price to sales ratio is a measure of the company’s ability to generate cash flow from operations. It is calculated by dividing the net income by the net sales.",100,pythia-1b
+finance,preferred_dividend,preferred dividend,declarative,cloze,A preferred dividend is,a way to reward investors for their long-term investment. It is a way to reward investors for their long-term investment. It is a way to reward investors for their long-term investment. It is a way to reward investors for their long-term investment. It is a way to reward investors for their long-term investment. It is a way to reward investors for their long-term investment. It is a way to reward investors for their long-term investment. It is a way,100,pythia-1b
+finance,financial_leverage,financial leverage,declarative,cloze,Financial leverage is,"a key component of any business. It is the ability to borrow money at a lower rate of interest than the rate of interest you pay on your own credit.
+
+The key to financial leverage is to have a strong credit history.
+
+A strong credit history is the ability to borrow money at a lower rate of interest than the rate of interest you pay on your own credit.
+
+A strong credit history is the ability to borrow money at a lower rate of interest than the rate of interest",100,pythia-1b
+finance,debt_covenant,debt covenant,declarative,cloze,A debt covenant is,"a legal document that requires a debtor to pay a certain amount of money to the government in exchange for the government's promise to forgive the debt. The government may also require the debtor to pay a certain amount of money to the government in exchange for the debtor's promise to pay the government a certain amount of money in the future.
+
+A debt covenant is a legal document that requires a debtor to pay a certain amount of money to the government in exchange for the government's promise to forgive the debt",100,pythia-1b
+finance,capital_structure,capital structure,declarative,cloze,Capital structure refers to,"the financial structure of a company. It is the sum of the assets and liabilities of a company. It is also known as the financial statement.
+
+Capital structure is the financial structure of a company. It is the sum of the assets and liabilities of a company. It is also known as the financial statement.
+
+Capital structure is the financial structure of a company. It is the sum of the assets and liabilities of a company. It is also known as the financial statement.",100,pythia-1b
+finance,due_diligence,due diligence,declarative,cloze,Due diligence is,"a process that involves the gathering of information about a potential business partner, the gathering of information about the business, and the gathering of information about the business. Due diligence is a process that involves the gathering of information about a potential business partner, the gathering of information about the business, and the gathering of information about the business.
+
+Due diligence is a process that involves the gathering of information about a potential business partner, the gathering of information about the business, and the gathering of information about the business",100,pythia-1b
+finance,public_offering,public offering,declarative,cloze,A public offering is,"a public offering of securities by a company or other entity. The offering is typically made by a public offering of securities by a company or other entity. The offering is typically made by a public offering of securities by a company or other entity.
+
+A public offering is a public offering of securities by a company or other entity. The offering is typically made by a public offering of securities by a company or other entity. The offering is typically made by a public offering of securities by a company or other",100,pythia-1b
+finance,market_liquidity,market liquidity,declarative,cloze,Market liquidity refers to,"the ability of a financial institution to raise funds from investors. The ability to raise funds is a function of the liquidity of the financial institution's assets. The liquidity of the assets is measured by the amount of money available to be raised by investors.
+
+The liquidity of a financial institution's assets is a function of the amount of money available to be raised by investors. The amount of money available to be raised is a function of the amount of money available to be raised by investors.
+
+The",100,pythia-1b
+finance,trade_settlement,trade settlement,declarative,cloze,Trade settlement is,"a process by which a country agrees to accept certain goods and services from another country in exchange for the country's goods and services. The process is usually initiated by a country's government, but can also be initiated by a private company.
+
+Trade settlement is a process by which a country agrees to accept certain goods and services from another country in exchange for the country's goods and services. The process is usually initiated by a country's government, but can also be initiated by a private company.",100,pythia-1b
+finance,central_clearing,central clearing,declarative,cloze,Central clearing houses,(CCHs) are used to provide a central location for the storage and retrieval of data. CCHs are used to provide a central location for the storage and retrieval of data. CCHs are used to provide a central location for the storage and retrieval of data. CCHs are used to provide a central location for the storage and retrieval of data. CCHs are used to provide a central location for the storage and retrieval of data. CCHs are used to provide a central,100,pythia-1b
+finance,maintenance_margin,maintenance margin,declarative,cloze,A maintenance margin is,"a measure of the amount of money that a business can expect to earn from a particular source of revenue. The maintenance margin is a measure of the amount of money that a business can expect to earn from a particular source of revenue. The maintenance margin is a measure of the amount of money that a business can expect to earn from a particular source of revenue.
+
+The maintenance margin is a measure of the amount of money that a business can expect to earn from a particular source of revenue. The maintenance",100,pythia-1b
+finance,regulatory_compliance,regulatory compliance,declarative,cloze,Regulatory compliance means,"that you have to be able to follow the rules and regulations that are in place to ensure that your business is operating in a safe and healthy manner.
+
+The following are some of the most common regulatory compliance requirements that you will need to meet:
+
+Regulatory Compliance
+
+Regulatory Compliance
+
+Regulatory Compliance
+
+Regulatory Compliance
+
+Regulatory Compliance
+
+Regulatory Compliance
+
+Regulatory Compliance
+
+Regulatory Compliance",100,pythia-1b
+finance,money_laundering,money laundering,declarative,cloze,Money laundering is,a crime that is committed by a person who is involved in the financial sector. The financial sector is the largest and most important part of the economy. The financial sector is the largest and most important part of the economy. The financial sector is the largest and most important part of the economy. The financial sector is the largest and most important part of the economy. The financial sector is the largest and most important part of the economy. The financial sector is the largest and most important part of the economy.,100,pythia-1b
+finance,asset_allocation,asset allocation,declarative,cloze,Asset allocation is,a key component of a portfolio. It is a process that determines the allocation of assets between different investment vehicles. Asset allocation is a process that determines the allocation of assets between different investment vehicles. Asset allocation is a process that determines the allocation of assets between different investment vehicles. Asset allocation is a process that determines the allocation of assets between different investment vehicles. Asset allocation is a process that determines the allocation of assets between different investment vehicles. Asset allocation is a process that determines the allocation of assets between different investment,100,pythia-1b
+finance,systemic_risk,systemic risk,declarative,cloze,Systemic risk is,a measure of the risk of developing a disease in a population. It is a measure of the risk of developing a disease in a population that is not caused by a specific disease. It is a measure of the risk of developing a disease in a population that is not caused by a specific disease. It is a measure of the risk of developing a disease in a population that is not caused by a specific disease. It is a measure of the risk of developing a disease in a population that is not caused,100,pythia-1b
+finance,stress_test,stress test,declarative,cloze,A stress test is,a test that is performed to determine whether a person is capable of performing a task. Stress tests are often used to determine whether a person is capable of performing a task. Stress tests are often performed by a person who is not capable of performing the task. Stress tests are often performed by a person who is capable of performing the task. Stress tests are often performed by a person who is not capable of performing the task. Stress tests are often performed by a person who is capable of performing the task.,100,pythia-1b
+finance,credit_default,credit default,declarative,cloze,A credit default is,"a situation in which a borrower defaults on a loan, and the lender is unable to make a loan to the borrower because the borrower has defaulted on the loan. The lender may be unable to make a loan to the borrower because the borrower has defaulted on the loan.
+
+A credit default swap (CDS) is a financial derivative contract that allows a borrower to hedge against a credit event. A CDS is a derivative contract that allows a borrower to",100,pythia-1b
+finance,stock_market,stock market,declarative,cloze,The stock market is,"a very important part of our lives. It is the source of our income, and it is the source of our savings. It is the source of our wealth. It is the source of our happiness. It is the source of our dreams. It is the source of our hopes. It is the source of our fears. It is the source of our sorrows. It is the source of our joys. It is the source of our happiness. It is the source of our dreams. It",100,pythia-1b
+finance,mutual_fund,mutual fund,declarative,cloze,A mutual fund is,"a financial investment vehicle that invests in a variety of securities, such as stocks, bonds, and other financial instruments. Mutual funds are often managed by a fund manager, who is typically a professional investment advisor. Mutual funds are often managed by a fund manager who is a professional investment advisor.
+A mutual fund is a financial investment vehicle that invests in a variety of securities, such as stocks, bonds, and other financial instruments. Mutual funds are often managed by a fund manager who is a professional",100,pythia-1b
+finance,hedge_fund,hedge fund,declarative,cloze,A hedge fund is,"a financial investment company that invests in securities. The hedge fund is a type of investment vehicle that is designed to be managed by a professional investment manager. The hedge fund is a type of investment vehicle that is designed to be managed by a professional investment manager.
+
+The hedge fund is a type of investment vehicle that is designed to be managed by a professional investment manager. The hedge fund is a type of investment vehicle that is designed to be managed by a professional investment manager.
+
+The hedge",100,pythia-1b
+finance,bear_market,bear market,declarative,cloze,A bear market is,"a market that is characterized by a rapid decline in the price of a security. Bear markets are typically characterized by a sharp decline in the price of a security, followed by a sharp rise in the price of the security. Bear markets are typically characterized by a sharp decline in the price of a security, followed by a sharp rise in the price of the security. Bear markets are typically characterized by a sharp decline in the price of a security, followed by a sharp rise in the price of the security.",100,pythia-1b
+finance,bull_market,bull market,declarative,cloze,A bull market is,a bull market is a bull market is a bull market is a bull market is a bull market is a bull market is a bull market is a bull market is a bull market is a bull market is a bull market is a bull market is a bull market is a bull market is a bull market is a bull market is a bull market is a bull market is a bull market is a bull market is a bull market is a bull market is a bull market is a bull market is a bull market is,100,pythia-1b
+finance,credit_rating,credit rating,declarative,cloze,A credit rating is,"a numerical rating assigned to a borrower by a credit agency. The rating is based on the borrower's ability to repay the loan. The higher the rating, the more likely the borrower will be able to repay the loan.
+
+The higher the rating, the more likely the borrower will be able to repay the loan.
+
+The higher the rating, the more likely the borrower will be able to repay the loan.
+
+The higher the rating, the more likely the",100,pythia-1b
+finance,tax_shelter,tax shelter,declarative,cloze,A tax shelter is,"a type of investment that is designed to generate a high return on investment. The investment is usually a property or business that is sold to investors for a high return. The investors then use the property or business to generate income. The investors may be individuals, corporations, or partnerships.
+
+The tax shelter is a type of investment that is designed to generate a high return on investment. The investment is usually a property or business that is sold to investors for a high return. The investors then use the",100,pythia-1b
+finance,venture_capital,venture capital,declarative,cloze,Venture capital is,"a business that is often associated with the idea of “risk.” The idea of risk is that the venture capitalists are looking for a company that is going to be successful, and that the company will be able to grow and become a successful company.
+
+The problem with this is that venture capitalists are looking for companies that are going to be successful, and that the company will be able to grow and become a successful company.
+
+The problem with this is that venture capitalists are looking",100,pythia-1b
+finance,prime_rate,prime rate,declarative,cloze,The prime rate is,"now at its lowest level in nearly a decade, and the Fed is expected to raise rates at least twice this year, according to a new report.
+
+The Fed is expected to raise rates at least twice this year, according to a new report.
+
+The Fed is expected to raise rates at least twice this year, according to a new report.
+
+The Fed is expected to raise rates at least twice this year, according to a new report.
+
+The Fed is expected to",100,pythia-1b
+finance,fiscal_policy,fiscal policy,declarative,cloze,Fiscal policy refers to,"the broad area of policy that includes budget policy, tax policy, and spending for international development. Fiscal policy affects the way government spends money and the way it raises revenue.
+
+The Fiscal Responsibility Act of 2008 (FRSA) was passed by the U.S. Congress in December of 2008. The FRSA was a major step in the direction of fiscal responsibility. The FRSA was a major step in the direction of fiscal responsibility.
+
+The FRSA was a major step",100,pythia-1b
+finance,trade_deficit,trade deficit,declarative,cloze,A trade deficit occurs when,"a country imports more goods than it exports. A deficit is a country’s trade balance.
+
+The US is a net importer of goods. The US is a net exporter of goods.
+
+The US is a net importer of services. The US is a net exporter of services.
+
+The US is a net importer of capital. The US is a net exporter of capital.
+
+The US is a net importer of labor. The US is",100,pythia-1b

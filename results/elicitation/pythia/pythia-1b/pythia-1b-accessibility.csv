@@ -1,0 +1,463 @@
+domain,prompt_id,concept,prompt_type,template_type,prompt,output,max_tokens,model
+accessibility,decl_screen_reader_001,screen reader,declarative,cloze,A screen reader is,a program that reads text from a computer screen and converts it into text that can be read by a human being. The screen reader is a program that is used to read text from a computer screen. The screen reader is a program that is used to read text from a computer screen. The screen reader is a program that is used to read text from a computer screen. The screen reader is a program that is used to read text from a computer screen. The screen reader is a program that is used,100,pythia-1b
+accessibility,decl_wcag_001,WCAG,declarative,cloze,WCAG stands for,"what?
+
+The World Council for Children’s Agenda is a group of over 100 organizations, including the United Nations, the World Bank, the World Health Organization, the World Education Council, the World Bank Group, the World Bank Group, the World Bank Group, the World Bank Group, the World Bank Group, the World Bank Group, the World Bank Group, the World Bank Group, the World Bank Group, the World Bank Group, the World Bank Group, the World Bank Group,",100,pythia-1b
+accessibility,decl_skip_link_001,skip link,declarative,cloze,A skip link is,a type of data link used in a computer network. A skip link is a link that is used to transmit data between two or more computers. A skip link is typically used to transmit data between two or more computers that are connected to a network. A skip link is typically used to transmit data between two or more computers that are connected to a network. A skip link is typically used to transmit data between two or more computers that are connected to a network. A skip link is typically used to transmit,100,pythia-1b
+accessibility,decl_alt_text_001,alt text,declarative,cloze,The purpose of alt text is,"to provide a way to add text to an image.
+
+Alt text is a way to add text to an image. It is a way to add text to an image that is not part of the image.
+
+Alt text is a way to add text to an image. It is a way to add text to an image that is not part of the image.
+
+Alt text is a way to add text to an image. It is a way to add text to an image that",100,pythia-1b
+accessibility,decl_aria_001,ARIA,declarative,cloze,ARIA stands for,"“Artificial Replacement of a Human Being”. It is a term coined by the French philosopher Jean-Paul Sartre in his book “Existentialism is a Humanism”.
+
+The term “ARIA” is a term coined by the French philosopher Jean-Paul Sartre in his book “Existentialism is a Humanism”.
+
+The term “ARIA” is a term coined by the French philosopher Jean-Paul Sartre in his book “Existentialism",100,pythia-1b
+accessibility,decl_focus_indicator_001,focus indicator,declarative,cloze,A focus indicator is,"a device that is used to indicate the focus of a camera. The focus indicator is typically used to indicate the focus of a camera by indicating the position of the camera's lens. The focus indicator is typically used to indicate the focus of a camera by indicating the position of the camera's lens.
+A focus indicator is typically used to indicate the focus of a camera by indicating the position of the camera's lens. The focus indicator is typically used to indicate the focus of a camera by indicating the position",100,pythia-1b
+accessibility,decl_keyboard_nav_001,keyboard navigation,declarative,cloze,Keyboard navigation allows,"you to navigate through the pages of this website.
+
+The following pages are not currently available.
+
+The following pages are not currently available.
+
+The following pages are not currently available.
+
+The following pages are not currently available.
+
+The following pages are not currently available.
+
+The following pages are not currently available.
+
+The following pages are not currently available.
+
+The following pages are not currently available.
+
+The following pages are not currently available.",100,pythia-1b
+accessibility,decl_color_contrast_001,color contrast,declarative,cloze,Color contrast is important because,"it is the basis for many of the visual effects in computer graphics. The color contrast of a scene is determined by the ratio of the luminance of the scene to the luminance of the background. The luminance of a scene is the brightness of the scene. The luminance of a background is the brightness of the background. The luminance of a scene is the brightness of the scene. The luminance of a background is the brightness of the background.
+The luminance of a scene is determined by the luminance of the scene",100,pythia-1b
+accessibility,decl_semantic_html_001,semantic HTML,declarative,cloze,Semantic HTML helps,you to create a website that is easy to read and understand. It is a type of markup language that is used to create web pages. It is a markup language that is used to create web pages. It is a markup language that is used to create web pages. It is a markup language that is used to create web pages. It is a markup language that is used to create web pages. It is a markup language that is used to create web pages. It is a markup language that is,100,pythia-1b
+accessibility,decl_captions_001,closed captions,declarative,cloze,Closed captions are used for,"many reasons, including to provide a visual aid to the viewer, to provide a means of communication between the viewer and the narrator, and to provide a means of providing a means of providing a means of providing a means of providing a means of providing a means of providing a means of providing a means of providing a means of providing a means of providing a means of providing a means of providing a means of providing a means of providing a means of providing a means of providing a means of providing a means of",100,pythia-1b
+accessibility,decl_keyboard_interaction_001,keyboard interaction,declarative,cloze,A keyboard interaction is,"a key element of a computer system. A keyboard is a device that allows a user to input data into a computer system. A keyboard may be a physical keyboard, a virtual keyboard, or a combination of both. A keyboard may be a physical keyboard that is connected to a computer system, a virtual keyboard that is connected to a computer system, or a combination of both.
+A keyboard may be a physical keyboard that is connected to a computer system, a virtual keyboard that is connected to a computer",100,pythia-1b
+accessibility,decl_section_heading_001,section heading,declarative,cloze,A section heading is,"a section of a document that is typically used to identify the section of the document. A section heading is typically used to identify the section of the document that is being described. A section heading is typically used to identify the section of the document that is being described.
+A section heading is typically used to identify the section of the document that is being described. A section heading is typically used to identify the section of the document that is being described. A section heading is typically used to identify the section",100,pythia-1b
+accessibility,decl_text_alternative_001,text alternative,declarative,cloze,A text alternative is,"a text that is displayed in a text box, such as a web browser window, and is displayed in a text box in a web page. A text alternative is typically a text that is displayed in a text box, such as a web browser window, and is displayed in a text box in a web page. A text alternative is typically a text that is displayed in a text box, such as a web browser window, and is displayed in a text box in a web page.
+A text",100,pythia-1b
+accessibility,decl_audio_description_001,audio description,declarative,cloze,An audio description is,"a description of a sound, such as a voice, a song, a musical composition, or a spoken word. Audio descriptions are often used to describe a scene, a person, or a place. Audio descriptions are often used to describe a person's voice, a song, a musical composition, or a spoken word. Audio descriptions are often used to describe a scene, a person, or a place. Audio descriptions are often used to describe a person's voice, a song, a musical composition,",100,pythia-1b
+accessibility,decl_sign_language_001,sign language,declarative,cloze,Sign language is,a language that is used by deaf people to communicate with their hearing counterparts. Sign language is a language that is used by deaf people to communicate with their hearing counterparts. Sign language is a language that is used by deaf people to communicate with their hearing counterparts. Sign language is a language that is used by deaf people to communicate with their hearing counterparts. Sign language is a language that is used by deaf people to communicate with their hearing counterparts. Sign language is a language that is used by deaf people to communicate,100,pythia-1b
+accessibility,decl_sensory_characteristics_001,sensory characteristics,declarative,cloze,Sensory characteristics are,"important in the selection of a product. The sensory characteristics of a product are determined by the sensory characteristics of the raw material. The sensory characteristics of a raw material are determined by the sensory characteristics of the raw material and the processing conditions. The sensory characteristics of a raw material are determined by the sensory characteristics of the raw material and the processing conditions. The sensory characteristics of a raw material are determined by the sensory characteristics of the raw material and the processing conditions.
+The sensory characteristics of a raw material are",100,pythia-1b
+accessibility,decl_input_purpose_001,input purpose,declarative,cloze,An input purpose is,"a function that is used to determine the purpose of an input. Inputs may be used to perform a variety of tasks, such as inputting data, performing calculations, and performing other functions. Inputs may be used to perform a variety of tasks, such as inputting data, performing calculations, and performing other functions. Inputs may be used to perform a variety of tasks, such as inputting data, performing calculations, and performing other functions. Inputs may be used to perform a variety",100,pythia-1b
+accessibility,decl_target_size_001,target size,declarative,cloze,A target size is,"a measure of the size of a target object. The target size is typically defined by a size of the target object, such as a target size of a target object in a target object display. The target size is typically defined by a size of the target object, such as a target size of a target object in a target object display. The target size is typically defined by a size of the target object, such as a target size of a target object in a target object display.
+A target",100,pythia-1b
+accessibility,decl_touch_target_001,touch target,declarative,cloze,A touch target is,"a device that is capable of detecting a touch of a user's finger or a pen on a display screen. The touch target is used in various fields such as a mobile phone, a personal digital assistant (PDA), a personal computer, a tablet, a television, a car navigation system, a game machine, a personal digital assistant (PDA) game machine, a personal computer game machine, a game machine, a personal digital assistant (PDA) game machine, a game machine, a",100,pythia-1b
+accessibility,decl_drag_movement_001,drag movement,declarative,cloze,A drag movement is,"a movement that is based on the idea that the human body is a vehicle for expressing the human spirit. The movement is characterized by the use of drag to express the human spirit. The movement is characterized by the use of drag to express the human spirit.
+
+The movement is characterized by the use of drag to express the human spirit. The movement is characterized by the use of drag to express the human spirit.
+
+The movement is characterized by the use of drag to express the human spirit.",100,pythia-1b
+accessibility,decl_focus_appearance_001,focus appearance,declarative,cloze,A focus appearance is,"a type of appearance that is used to attract attention to a subject. Focus appearances are often used to attract attention to a subject, such as a person, animal, or object. Focus appearances are often used to attract attention to a subject, such as a person, animal, or object.
+A focus appearance is often used to attract attention to a subject, such as a person, animal, or object. A focus appearance is often used to attract attention to a subject, such as a person,",100,pythia-1b
+accessibility,decl_consistent_help_001,consistent help,declarative,cloze,Consistent help is,"needed to help people with dementia
+
+A new report from the Alzheimer’s Society says that dementia is a major public health problem, with more than half of people with dementia living in care homes.
+
+The report, Dementia Care in Care Homes, says that the number of people with dementia living in care homes has increased by more than 50% in the last 20 years.
+
+The report says that the number of people with dementia living in care homes has increased by more than 50%",100,pythia-1b
+accessibility,decl_redundant_entry_001,redundant entry,declarative,cloze,A redundant entry is,"a type of redundant data storage system that is designed to provide a single point of failure for the data storage system. A redundant entry is typically used to provide a single point of failure for the data storage system. A redundant entry is typically used to provide a single point of failure for the data storage system.
+A redundant entry is typically used to provide a single point of failure for the data storage system. A redundant entry is typically used to provide a single point of failure for the data storage system.",100,pythia-1b
+accessibility,decl_accessible_authentication_001,accessible authentication,declarative,cloze,Accessible authentication is,"a method of authentication that allows a user to access a system without requiring the user to know the password. Accessible authentication is typically used to authenticate a user to a system, such as a computer system, a network, or a mobile device. Accessible authentication is typically performed by a user entering a password into a system, such as a computer system, a network, or a mobile device. The user is then able to access the system without having to know the password.
+Accessible authentication",100,pythia-1b
+accessibility,decl_text_spacing_001,text spacing,declarative,cloze,Text spacing is,"set to 8.5 pt.
+
+The following is a list of the most common words in the English language.
+
+1.
+
+2.
+
+3.
+
+4.
+
+5.
+
+6.
+
+7.
+
+8.
+
+9.
+
+10.
+
+11.
+
+12.
+
+13.
+
+14.
+
+15.
+
+16.
+
+17.
+
+18.
+
+19.",100,pythia-1b
+accessibility,decl_status_message_001,status message,declarative,cloze,A status message is,"a message that is sent to a user. The status message may be displayed to the user in a variety of ways. For example, the status message may be displayed to the user in a graphical user interface (GUI) of a computer system. The status message may also be displayed to the user in a text-based message. The status message may also be displayed to the user in a voice message.
+The status message may be displayed to the user in a variety of ways. For example,",100,pythia-1b
+accessibility,decl_error_identification_001,error identification,declarative,cloze,Error identification is,"a process of identifying errors in a computer program. The process of error identification is often performed by a human programmer. The human programmer may be a software engineer, a hardware engineer, or a system administrator. The human programmer may be a novice programmer, a novice hardware engineer, or a novice system administrator.
+The human programmer may be required to identify errors in a computer program. The human programmer may be required to identify errors in a computer program that is being used to perform a particular",100,pythia-1b
+accessibility,decl_pointer_cancellation_001,pointer cancellation,declarative,cloze,Pointer cancellation is,"a common problem in many applications. For example, in a video game, a player may be required to move a character or object in a game world. In some games, the player may be required to move the character or object in a game world in a particular direction. In other games, the player may be required to move the character or object in a game world in a particular direction. In some games, the player may be required to move the character or object in a game world in a",100,pythia-1b
+accessibility,decl_character_key_001,character key,declarative,cloze,A character key is,"a key that is used to unlock a door or a lock. The character key is usually a key that is used to open a door or a lock. The character key is usually a key that is used to open a door or a lock.
+
+A character key is a key that is used to open a door or a lock. The character key is usually a key that is used to open a door or a lock. The character key is usually a key that is used to open a door",100,pythia-1b
+accessibility,decl_accessibility_tree_001,accessibility tree,declarative,cloze,An accessibility tree is,"a tree that is designed to be used by people with disabilities. The tree is designed to be used by people with disabilities who have a disability that affects their ability to use the tree. The tree is designed to be used by people who have a disability that affects their ability to use the tree.
+
+The tree is designed to be used by people who have a disability that affects their ability to use the tree. The tree is designed to be used by people who have a disability that affects their ability",100,pythia-1b
+accessibility,decl_accessible_name_001,accessible name,declarative,cloze,An accessible name is,"a name that is used to identify a person or entity. The name is used to identify a person or entity in a variety of contexts. For example, a name may be used to identify a person or entity in a legal proceeding, a person or entity in a social setting, a person or entity in a business setting, a person or entity in a political setting, a person or entity in a military setting, a person or entity in a religious setting, a person or entity in a political or",100,pythia-1b
+accessibility,decl_accessible_description_001,accessible description,declarative,cloze,An accessible description is,"provided for the item (1) in the form of a brief description.
+
+This item is available to borrow from all library branches.
+
+""The story of the life of the great American poet, William Carlos Williams, is told in a series of poems, each of which is a new and original work. The poems are written in a style that is both lyrical and lyrical, and the poems are written in a style that is both lyrical and lyrical. The poems are",100,pythia-1b
+accessibility,decl_live_region_001,live region,declarative,cloze,A live region is,a region that is not yet in the process of being recorded. The live region is a region that is not yet in the process of being recorded. The live region is a region that is not yet in the process of being recorded. The live region is a region that is not yet in the process of being recorded. The live region is a region that is not yet in the process of being recorded. The live region is a region that is not yet in the process of being recorded. The live,100,pythia-1b
+accessibility,decl_tab_panel_001,tab panel,declarative,cloze,A tab panel is,"a type of display panel that includes a plurality of display elements, such as liquid crystal display elements, which are arranged in a matrix. The display elements are controlled by a control signal, which is generated by a control circuit. The control signal is applied to the display elements to control the display elements.
+The display elements are controlled by the control signal to display images. The control signal is applied to the display elements to control the display elements. The control signal is applied to the display elements to control",100,pythia-1b
+accessibility,decl_radio_group_001,radio group,declarative,cloze,A radio group is,"a group of people who share a common interest. Radio groups are often formed by individuals who are interested in a particular topic. Radio groups may be formed by individuals who are interested in a particular topic, or by groups of people who are interested in a particular topic.
+Radio groups may be formed by individuals who are interested in a particular topic, or by groups of people who are interested in a particular topic. Radio groups may be formed by individuals who are interested in a particular topic, or by groups",100,pythia-1b
+accessibility,decl_tree_grid_001,tree grid,declarative,cloze,A tree grid is,a network of interconnected power lines that are used to provide power to a building or other structure. A tree grid is typically used to provide power to a building or other structure in a residential or commercial setting. A tree grid is typically used to provide power to a building or other structure in a residential or commercial setting. A tree grid is typically used to provide power to a building or other structure in a residential or commercial setting. A tree grid is typically used to provide power to a building or other structure,100,pythia-1b
+accessibility,decl_menu_bar_001,menu bar,declarative,cloze,A menu bar is,"a menu item that appears on the screen when the user clicks on a menu item. The menu bar is usually a list of items that the user can select from. The menu bar is usually displayed in a list format, and the items in the menu bar are usually displayed in a list format. The menu bar is usually displayed in a list format, and the items in the menu bar are usually displayed in a list format.
+
+A menu bar is a menu item that appears on the screen when",100,pythia-1b
+accessibility,decl_tool_tip_001,tool tip,declarative,cloze,A tool tip is,"a graphical representation of a text or other graphical object. A tool tip is typically a graphical representation of a text or other graphical object that is displayed on a display device. A tool tip may be used to provide information to a user. For example, a tool tip may be used to provide information to a user regarding a particular object. A tool tip may also be used to provide information to a user regarding a particular object that is located in a particular location.
+A tool tip may be displayed on",100,pythia-1b
+accessibility,decl_combo_box_001,combo box,declarative,cloze,A combo box is,"a type of data entry field that allows a user to enter a value into a data entry field. A combo box is typically used to display a list of items that are selected from a list of items. A user can select an item from the list of items by clicking on the item. The user can then enter a value into the data entry field of the combo box. The data entry field of the combo box is typically a text field.
+A user can select an item from the list of",100,pythia-1b
+accessibility,decl_semantic_markup_001,semantic markup,declarative,cloze,Semantic markup is,"a language that allows a document to be written in a way that is easy to read and understand. The markup language is used to describe the structure of the document, and the structure of the document is described in the markup language. The markup language is a language that allows a document to be written in a way that is easy to read and understand. The markup language is used to describe the structure of the document, and the structure of the document is described in the markup language. The markup language is",100,pythia-1b
+accessibility,decl_focus_management_001,focus management,declarative,cloze,Focus management is,"a technique used in the field of computer graphics to control the focus of a display. The technique is used to control the focus of a display by changing the size of the display. The technique is used to control the focus of a display by changing the size of the display.
+The technique is used to control the focus of a display by changing the size of the display. The technique is used to control the focus of a display by changing the size of the display. The technique is used to control",100,pythia-1b
+accessibility,decl_reading_order_001,reading order,declarative,cloze,Reading order is,"one of the most important skills you can learn. It is the foundation of your future success.
+
+Reading is a skill that is not taught in school. It is a skill that is learned through books, magazines, newspapers, and other sources.
+
+Reading is a skill that is learned through books, magazines, newspapers, and other sources.
+
+Reading is a skill that is learned through books, magazines, newspapers, and other sources.
+
+Reading is a skill that is learned through",100,pythia-1b
+accessibility,decl_text_formatting_001,text formatting,declarative,cloze,Text formatting is,a feature that is available in many text editors. It is a feature that is available in many text editors. It is a feature that is available in many text editors. It is a feature that is available in many text editors. It is a feature that is available in many text editors. It is a feature that is available in many text editors. It is a feature that is available in many text editors. It is a feature that is available in many text editors. It is a feature that is,100,pythia-1b
+accessibility,decl_form_field_001,form field,declarative,cloze,A form field is,a field that is used to enter data into a database. A form field is a field that is used to enter data into a database. A form field is a field that is used to enter data into a database. A form field is a field that is used to enter data into a database. A form field is a field that is used to enter data into a database. A form field is a field that is used to enter data into a database. A form field is a field that is,100,pythia-1b
+accessibility,decl_landmark_region_001,landmark region,declarative,cloze,A landmark region is,"being created in the southern part of the country, with the aim of creating a new economic hub for the region.
+
+The region, which is being called the Southern Economic Corridor, will be home to a number of new companies, including a number of tech companies.
+
+The region is being created by the government of the southern part of the country, which is home to the country’s largest city, Port Harcourt.
+
+The region is being created by the government",100,pythia-1b
+accessibility,decl_low_vision_001,low vision,declarative,cloze,Low vision is,a common problem in the elderly population. The prevalence of low vision is estimated to be between 10% and 20% in the elderly population. Low vision is defined as a visual acuity of less than 6/18 in the better eye. Low vision is a visual disability that affects the quality of life of the elderly. Low vision is a visual disability that affects the quality of life of the elderly. Low vision is a visual disability that affects the quality of life of the elderly. Low vision is a visual,100,pythia-1b
+accessibility,decl_cognitive_disabilities_001,cognitive disabilities,declarative,cloze,Cognitive disabilities are,"a major public health problem in the United States. The prevalence of cognitive disabilities is estimated to be between 5% and 15% of the population. Cognitive disabilities are associated with a high risk of developing dementia, and are a major cause of disability and death in the elderly. Cognitive disabilities are also a major cause of disability in children. Cognitive disabilities are also a major cause of disability in the elderly. Cognitive disabilities are a major public health problem in the United States. The prevalence of cognitive disabilities is estimated to",100,pythia-1b
+accessibility,decl_universal_design_001,universal design,declarative,cloze,Universal design is,"a term that is used to describe the process of designing a product or service to be universally appealing. The term is often used to describe the process of designing a product or service to be universally appealing to a wide range of people.
+
+The term is often used to describe the process of designing a product or service to be universally appealing to a wide range of people. The term is often used to describe the process of designing a product or service to be universally appealing to a wide range of people.",100,pythia-1b
+accessibility,decl_decorative_image_001,decorative image,declarative,cloze,A decorative image is,"formed on a surface of a substrate by a printing method. The printing method includes a printing method using a printing plate, a printing method using a printing plate precursor, and a printing method using a printing plate. The printing plate is a plate that is formed by printing a photosensitive material on a surface of a substrate. The printing plate precursor is a plate precursor that is formed by printing a photosensitive material on a surface of a substrate. The printing plate is a plate that is formed by printing a photosensitive material",100,pythia-1b
+accessibility,decl_informative_image_001,informative image,declarative,cloze,An informative image is,"a visual representation of a physical object. The image may be a photograph, a drawing, a painting, a photograph, a video, a video image, a video image sequence, a video image sequence, a video image, a video image sequence, a video image, a video image sequence, a video image sequence, a video image sequence, a video image sequence, a video image sequence, a video image sequence, a video image sequence, a video image sequence, a video image sequence, a",100,pythia-1b
+accessibility,decl_responsive_design_001,responsive design,declarative,cloze,Responsive design is,"a design philosophy that focuses on the user experience and the user’s interaction with the website. It is a design philosophy that focuses on the user experience and the user’s interaction with the website. It is a design philosophy that focuses on the user experience and the user’s interaction with the website.
+
+Responsive design is a design philosophy that focuses on the user experience and the user’s interaction with the website. It is a design philosophy that focuses on the user experience and the",100,pythia-1b
+accessibility,eval_alt_text_001,alt text,evaluative,code_review,The following code is not accessible because it doesn't have what? <img src='photo.jpg'>,"The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
+
+The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
+
+The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
+
+The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
+
+The following code is not accessible",100,pythia-1b
+accessibility,eval_div_onclick_001,semantic HTML,evaluative,code_review,A <div> with onclick is not accessible because,"it is not a <span> element.
+
+A <div> with onclick is not accessible because it is not a <span> element.
+
+A <div> with onclick is not accessible because it is not a <span> element.
+
+A <div> with onclick is not accessible because it is not a <span> element.
+
+A <div> with onclick is not accessible because it is not a <span> element.
+
+A <div> with",100,pythia-1b
+accessibility,eval_empty_link_001,empty link,evaluative,code_review,The accessibility problem with <a href='#'></a> is,"that it is not a valid HTML tag.
+
+The <a href='#'></a> tag is not valid HTML. It is a special tag that is used to
+link to a page. It is not a valid tag for a link.
+
+The <a href='#'></a> tag is not valid HTML. It is a special tag that is used to
+link to a page. It is not a valid tag for a link.
+
+The <a href='",100,pythia-1b
+accessibility,eval_unlabeled_input_001,form label,evaluative,code_review,<input type='text'> needs a,"value
+<input type='text'> needs a value
+<input type='text'> needs a value
+<input type='text'> needs a value
+<input type='text'> needs a value
+<input type='text'> needs a value
+<input type='text'> needs a value
+<input type='text'> needs a value
+<input type='text'> needs a value
+<input type='text'> needs a value
+<input type='text'> needs a",100,pythia-1b
+accessibility,eval_click_here_001,link text,evaluative,code_review,A button that only says 'Click here' is bad because,"it's a clickable link.
+
+A button that only says 'Click here' is bad because it's a clickable link.
+
+A button that only says 'Click here' is bad because it's a clickable link.
+
+A button that only says 'Click here' is bad because it's a clickable link.
+
+A button that only says 'Click here' is bad because it's a clickable link.
+
+A button that only says 'Click",100,pythia-1b
+accessibility,comp_alt_text_few_shot_001,alt text,completion,few_shot,"<img src=""icons/home.png"" alt=""Home""><img src=""icons/mail.png"" alt=""Inbox""><img src=""photo.jpg""","alt=""Photo""><img src=""icons/search.png"" alt=""Search""><img src=""icons/settings.png"" alt=""Settings""><img src=""icons/settings.png"" alt=""Settings""><img src=""icons/settings.png"" alt=""Settings""><img src=""icons/settings.png"" alt=""Settings""><img src=""icons/settings.png"" alt=""Settings""><img src=""icons/settings.png"" alt=""Settings""><img src=""icons/",100,pythia-1b
+accessibility,comp_alt_text_bare_001,alt text,completion,bare,"<img src=""photo.jpg""","width=""300"" height=""300"" alt=""photo"" />
+
+<p>
+  <strong>
+    <span>
+      <span>
+        <span>
+          <span>
+            <span>
+              <span>
+                <span>
+                  <span>
+                    <span>
+                      <span>
+                        <span>
+                          <span>
+                            <span>
+                              <span>
+                                <",100,pythia-1b
+accessibility,comp_captions_few_shot_001,captions,completion,few_shot,"<video src=""intro.mp4""><track kind=""captions"" src=""intro.vtt""></video><video src=""demo.mp4""><track kind=""captions"" src=""demo.vtt""></video><video src=""lecture.mp4"">","<audio src=""intro.mp3""><track kind=""captions"" src=""intro.vtt""></audio>
+
+<audio src=""lecture.mp3""><track kind=""captions"" src=""lecture.vtt""></audio>
+
+<audio src=""lecture.mp3""><track kind=""captions"" src=""lecture.vtt""></audio>
+
+<audio src=""lecture.mp3""><track kind=""captions""",100,pythia-1b
+accessibility,comp_captions_bare_001,captions,completion,bare,"<video src=""lecture.mp4"">","<p>
+<img src=""http://www.youtube.com/watch?v=2_9_9_9_9"" alt=""Watch the lecture"" />
+</p>
+<p>
+<img src=""http://www.youtube.com/watch?v=2_9_9_9_9"" alt=""Watch the lecture"" />
+</p>
+<p>
+<img src=""http://www.youtube.com",100,pythia-1b
+accessibility,comp_page_title_few_shot_001,page title,completion,few_shot,<html><head><title>About Us</title></head><html><head><title>Contact</title></head><html><head>,"<meta http-equiv=""Content-Type"" content=""text/html; charset=utf-8"">
+<meta name=""viewport"" content=""width=device-width, initial-scale=1"">
+<link rel=""stylesheet"" type=""text/css"" href=""css/style.css"">
+<link rel=""stylesheet"" type=""text/css"" href=""css/bootstrap.css"">
+<link rel=""stylesheet"" type=""text/css""",100,pythia-1b
+accessibility,comp_page_title_bare_001,page title,completion,bare,"<html><head><meta charset=""utf-8"">","<title>CSS Test: text-decoration</title>
+<link rel=""author"" title=""Florian Rivoal"" href=""http://florian.rivoal.net/"">
+<style>
+div {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  line-height: 1.5;
+  color: #000;
+  text-decoration: none;",100,pythia-1b
+accessibility,comp_script_bare_001,script,completion,bare,<script,">
+  import { Component } from '@angular/core';
+  import { FormGroup, FormControl, Validators } from '@angular/forms';
+  import { FormBuilder, FormArray, FormGroup, FormControl, Validators } from '@angular/forms';
+  import { Router } from '@angular/router';
+  import { User } from './user';
+  import { UserService } from './user.service';
+  import { UserDetails }",100,pythia-1b
+accessibility,comp_script_few_shot_001,script,completion,few_shot,"<script src=""utils.js""></script><script src=""main.js""></script><script src=""","main.js""></script><script src=""main.js""></script><script src=""main.js""></script><script src=""main.js""></script><script src=""main.js""></script><script src=""main.js""></script><script src=""main.js""></script><script src=""main.js""></script><script src=""main.js""></script><script src=""main.js""></script><script src=""main.js""></script><script src=""main",100,pythia-1b
+accessibility,hypo_alt_text_direct_001,alt text,hypothesis,direct_question,Look at this HTML: <img src='portrait.jpg'>. What specific attribute is missing to make it accessible?,"<img src='portrait.jpg' alt='portrait' />
+
+<img src='portrait.jpg' alt='portrait' />
+
+<img src='portrait.jpg' alt='portrait' />
+
+<img src='portrait.jpg' alt='portrait' />
+
+<img src='portrait.jpg' alt='portrait' />
+
+<img src='portrait.jpg' alt='portrait",100,pythia-1b
+accessibility,hypo_alt_text_correction_001,alt text,hypothesis,error_correction,Correct the following inaccessible code: <img src='logo.png'>,,100,pythia-1b
+accessibility,hypo_alt_text_socratic_001,alt text,hypothesis,socratic,A screen reader is software that reads text aloud. Why would a screen reader fail to describe this tag: <img src='chart.svg'>?,"The screen reader is a software program that reads text aloud. Why would a screen reader fail to describe this tag: <img src='chart.svg'>?
+
+The screen reader is a software program that reads text aloud. Why would a screen reader fail to describe this tag: <img src='chart.svg'>?
+
+The screen reader is a software program that reads text aloud. Why would a screen reader fail to describe this tag: <img src='chart.svg",100,pythia-1b
+accessibility,valid_alt_text_direct_001,alt text,validation,direct_question,The following code is not accessible because it doesn't have what? <img src='photo.jpg'>,"The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
+
+The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
+
+The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
+
+The following code is not accessible because it doesn't have what? <img src='photo.jpg'>
+
+The following code is not accessible",100,pythia-1b
+accessibility,valid_alt_text_instruction_001,alt text,validation,instruction,What accessibility attribute is missing from this HTML: <img src='photo.jpg'>?,"<img src='photo.jpg'>
+
+<img src='photo.jpg'>
+
+<img src='photo.jpg'>
+
+<img src='photo.jpg'>
+
+<img src='photo.jpg'>
+
+<img src='photo.jpg'>
+
+<img src='photo.jpg'>
+
+<img src='photo.jpg'>
+
+<img src='photo.jpg'>
+
+<img src='photo.jpg'>",100,pythia-1b
+accessibility,valid_screen_reader_socratic_001,screen reader,validation,socratic,A screen reader is software that reads text aloud. Why would it fail to describe <img src='chart.svg'>?,"A screen reader is software that reads text aloud. Why would it fail to describe <img src='chart.svg'>?
+
+A screen reader is software that reads text aloud. Why would it fail to describe <img src='chart.svg'>?
+
+A screen reader is software that reads text aloud. Why would it fail to describe <img src='chart.svg'>?
+
+A screen reader is software that reads text aloud. Why would it fail to describe <",100,pythia-1b
+accessibility,valid_aria_confab_001,ARIA,validation,cloze,ARIA stands for,"“Artificial Replacement of a Human Being”. It is a term coined by the French philosopher Jean-Paul Sartre in his book “Existentialism is a Humanism”.
+
+The term “ARIA” is a term coined by the French philosopher Jean-Paul Sartre in his book “Existentialism is a Humanism”.
+
+The term “ARIA” is a term coined by the French philosopher Jean-Paul Sartre in his book “Existentialism",100,pythia-1b
+accessibility,valid_html_confab_001,HTML,validation,cloze,HTML stands for,HyperText Markup Language. It is a markup language that allows you to create web pages. HTML is used to create web pages that are displayed on the web. HTML is used to create web pages that are displayed on the web. HTML is used to create web pages that are displayed on the web. HTML is used to create web pages that are displayed on the web. HTML is used to create web pages that are displayed on the web. HTML is used to create web pages that are displayed on,100,pythia-1b
+accessibility,ctrl_cc_cloze_001,closed captions,control,cloze,Closed captions display,"on a computer screen are typically used to provide a visual representation of a video sequence. The closed captions are typically displayed in a fixed size and are typically displayed in a fixed location on the screen. The closed captions are typically displayed in a fixed size and are typically displayed in a fixed location on the screen.
+Closed captions are typically displayed in a fixed size and are typically displayed in a fixed location on the screen. The closed captions are typically displayed in a fixed size and are typically",100,pythia-1b
+accessibility,ctrl_contrast_cloze_001,color contrast,control,cloze,Color contrast is important because,"it is the basis for many of the visual effects in computer graphics. The color contrast of a scene is determined by the ratio of the luminance of the scene to the luminance of the background. The luminance of a scene is the brightness of the scene. The luminance of a background is the brightness of the background. The luminance of a scene is the brightness of the scene. The luminance of a background is the brightness of the background.
+The luminance of a scene is determined by the luminance of the scene",100,pythia-1b
+accessibility,ctrl_title_cloze_001,page title,control,cloze,A page title describes,the content of the page. A title is a short description of the page content. A title is usually a short description of the page content. A title is usually a short description of the page content. A title is usually a short description of the page content. A title is usually a short description of the page content. A title is usually a short description of the page content. A title is usually a short description of the page content. A title is usually a short description of the page content,100,pythia-1b
+accessibility,ctrl_cc_direct_001,closed captions,control,direct_question,What are closed captions?,"Closed captions are a new feature in the Google Translate app. They are a way to add captions to your translation.
+
+Closed captions are a way to add captions to your translation. They are a way to add captions to your translation.
+
+Closed captions are a way to add captions to your translation. They are a way to add captions to your translation.
+
+Closed captions are a way to add captions to your translation.",100,pythia-1b
+accessibility,ctrl_contrast_direct_001,color contrast,control,direct_question,What is color contrast?,"Color contrast is the difference between the colors of two objects.
+
+For example, if you see a red car and a blue house, the color contrast is the difference between the red car and the blue house.
+
+The color contrast is measured in terms of the number of different colors that can be distinguished from each other.
+
+For example, if you see a red car and a blue house, the color contrast is the difference between the red car and the blue house.",100,pythia-1b
+accessibility,ctrl_title_direct_001,page title,control,direct_question,What is a page title?,"A page title is a short, descriptive name for a page in a website. It is usually a short, descriptive name for a page in a website.
+
+What is a page title?
+
+A page title is a short, descriptive name for a page in a website. It is usually a short, descriptive name for a page in a website.
+
+What is a page title?
+
+A page title is a short, descriptive name for a page in a website.",100,pythia-1b
+accessibility,ctrl_cc_instruction_001,closed captions,control,instruction,Explain closed captions to a web developer.,"I have a client who is a web developer. He is a very good developer, but he is not very good at explaining his work to a client. He is a very good developer, but he is not very good at explaining his work to a client.
+
+I have a client who is a web developer. He is a very good developer, but he is not very good at explaining his work to a client. He is a very good developer, but he is not very good",100,pythia-1b
+accessibility,ctrl_contrast_instruction_001,color contrast,control,instruction,Explain color contrast to a web developer.,"I have a client who is a web developer. He is a very good developer, but he is not very good at explaining color contrast to a web developer. He is not very good at explaining color contrast to a web developer.
+
+I have a client who is a web developer. He is a very good developer, but he is not very good at explaining color contrast to a web developer. He is not very good at explaining color contrast to a web developer.
+
+I have",100,pythia-1b
+accessibility,ctrl_title_instruction_001,page title,control,instruction,Explain page titles to a web developer.,"I have a page that is supposed to be a simple list of items. The page title is supposed to be a link to the item. The item is supposed to be a link to a page that has a list of items.
+
+The page title is supposed to be a link to the item. The item is supposed to be a link to a page that has a list of items.
+
+The page title is supposed to be a link to the item. The item is supposed",100,pythia-1b
+accessibility,ctrl_cc_evaluative_001,closed captions,control,evaluative,A video without closed captions is not accessible because,"the video is not available in the video player.
+
+A video without closed captions is not accessible because the video is not available in the video player.
+
+A video without closed captions is not accessible because the video is not available in the video player.
+
+A video without closed captions is not accessible because the video is not available in the video player.
+
+A video without closed captions is not accessible because the video is not available in the video player.",100,pythia-1b
+accessibility,ctrl_contrast_evaluative_001,color contrast,control,evaluative,Text with low color contrast is not accessible because,"of the low color contrast.
+
+Text with high color contrast is not accessible because of the high color contrast.
+
+Text with low color contrast is not accessible because of the low color contrast.
+
+Text with high color contrast is not accessible because of the high color contrast.
+
+Text with low color contrast is not accessible because of the low color contrast.
+
+Text with high color contrast is not accessible because of the high color contrast.
+
+Text with low color contrast is not",100,pythia-1b
+accessibility,ctrl_title_evaluative_001,page title,control,evaluative,A web page without a title is not accessible because,"the title is not available.
+
+A web page without a title is not accessible because the title is not available.
+
+A web page without a title is not accessible because the title is not available.
+
+A web page without a title is not accessible because the title is not available.
+
+A web page without a title is not accessible because the title is not available.
+
+A web page without a title is not accessible because the title is not available.
+
+A web",100,pythia-1b
+accessibility,ctrl_cc_scenario_001,closed captions,control,scenario,"A deaf user is watching a video on a website. Without closed captions, the user","can hear the audio of the video.
+
+A deaf user is watching a video on a website. Without closed captions, the user can hear the audio of the video.
+
+A deaf user is watching a video on a website. Without closed captions, the user can hear the audio of the video.
+
+A deaf user is watching a video on a website. Without closed captions, the user can hear the audio of the video.
+
+A deaf user is watching a",100,pythia-1b
+accessibility,ctrl_contrast_scenario_001,color contrast,control,scenario,A low vision user visits a website with poor color contrast. The user,is unable to see the website's content. The user is unable to see the website's content. The user is unable to see the website's content. The user is unable to see the website's content. The user is unable to see the website's content. The user is unable to see the website's content. The user is unable to see the website's content. The user is unable to see the website's content. The user is unable to see the website's content. The user is,100,pythia-1b
+accessibility,ctrl_title_scenario_001,page title,control,scenario,A screen reader user navigates to a web page with no title. The user,is presented with a list of options. The user selects one of the options and the screen reader displays the selected option. The screen reader then displays the selected option in a text box. The screen reader then displays the selected option in a text box. The screen reader then displays the selected option in a text box. The screen reader then displays the selected option in a text box. The screen reader then displays the selected option in a text box. The screen reader then displays the selected option in a text,100,pythia-1b
+accessibility,ctrl_bicycle_cloze_001,bicycle,control,cloze,A bicycle is used for,"transportation, and is generally provided with a front wheel and a rear wheel. The front wheel is rotatably supported by a hub, and the rear wheel is rotatably supported by a hub. The hub is rotatably supported by a hub shaft. The hub shaft is rotatably supported by a hub shaft shaft. The hub shaft shaft is rotatably supported by a hub shaft shaft.
+The hub shaft shaft is rotatably supported by a hub shaft shaft. The hub shaft",100,pythia-1b
+accessibility,ctrl_bicycle_direct_001,bicycle,control,direct_question,What is a bicycle?,"A bicycle is a wheeled vehicle that is powered by a motor. The motor is usually a gasoline-powered electric motor. The motor is connected to the bicycle by a chain or a belt. The bicycle is propelled by the motor.
+
+What is a bicycle?
+
+A bicycle is a wheeled vehicle that is powered by a motor. The motor is usually a gasoline-powered electric motor. The motor is connected to the bicycle by a chain or a belt. The bicycle",100,pythia-1b
+accessibility,ctrl_bicycle_instruction_001,bicycle,control,instruction,Explain bicycles to a web developer.,"I’ve been working on a project for a client that is a bit different from the usual web development. The client is a small company that has a lot of experience in the field of web development. They have a lot of experience in the field of mobile development, and they are looking to hire a web developer to help them with their mobile site.
+
+The client is a small company that has a lot of experience in the field of web development. They have a lot of experience",100,pythia-1b
+accessibility,ctrl_bicycle_evaluative_001,bicycle,control,evaluative,A bicycle without brakes is not safe because,"it is not safe to ride.
+
+The bicycle without brakes is not safe because it is not safe to ride.
+
+The bicycle without brakes is not safe because it is not safe to ride.
+
+The bicycle without brakes is not safe because it is not safe to ride.
+
+The bicycle without brakes is not safe because it is not safe to ride.
+
+The bicycle without brakes is not safe because it is not safe to ride.
+
+The bicycle without brakes is not",100,pythia-1b
+accessibility,ctrl_bicycle_scenario_001,bicycle,control,scenario,"A child is riding a bicycle on a busy street. Without a helmet, the child","is at risk of being struck by a car.
+
+A child is riding a bicycle on a busy street. Without a helmet, the child is at risk of being struck by a car.
+
+A child is riding a bicycle on a busy street. Without a helmet, the child is at risk of being struck by a car.
+
+A child is riding a bicycle on a busy street. Without a helmet, the child is at risk of being struck by a car.
+
+A",100,pythia-1b
