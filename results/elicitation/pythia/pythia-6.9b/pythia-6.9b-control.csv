@@ -1,0 +1,139 @@
+domain,prompt_id,concept,prompt_type,template_type,prompt,output,max_tokens,model
+control,blue_sky,blue sky,declarative,cloze,A blue sky is,"seen over the city of San Francisco, California, U.S., January 7, 2018. REUTERS/Stephen Lam
+
+(Reuters) - The U.S. Federal Reserve is expected to raise interest rates on Wednesday, according to a Reuters poll of economists, but the timing of the move is uncertain.
+
+The central bank is widely expected to raise its benchmark interest rate by a quarter of a percentage point to a range of 1.75 percent to 2 percent.
+
+The Fed",100,pythia-6.9b
+control,cold_water,cold water,declarative,cloze,Cold water is typically characterized by,"a low temperature and a high salinity. The low temperature is due to the fact that the water is cooled by the surrounding air. The high salinity is due to the fact that the water is saturated with dissolved salts.
+The cooling of the water is typically accomplished by evaporative cooling. Evaporative cooling is accomplished by passing the water through a heat exchanger. The heat exchanger is typically a coil of metal tubing through which water is passed. The water is cooled by evaporation as it passes through",100,pythia-6.9b
+control,ice_cream,ice cream,declarative,cloze,Ice cream is a frozen dessert made from,"milk, cream, sugar, and sometimes eggs, and is usually flavored with fruit, nuts, or chocolate. Ice cream is a popular dessert in many countries, and is often served as a topping on other desserts.
+
+Ice cream is a frozen dessert made from milk, cream, sugar, and sometimes eggs, and is usually flavored with fruit, nuts, or chocolate. Ice cream is a popular dessert in many countries, and is often served as a topping on other dessert",100,pythia-6.9b
+control,life_jacket,life jacket,declarative,cloze,A life jacket is designed to,be worn by a person in the event of a water rescue. The life jacket is typically worn by a person in a life jacket vest or a life jacket vest. The life jacket is typically worn by a person in a life jacket vest or a life jacket vest. The life jacket is typically worn by a person in a life jacket vest or a life jacket vest. The life jacket is typically worn by a person in a life jacket vest or a life jacket vest. The life jacket is typically worn by,100,pythia-6.9b
+control,tea_cup,tea cup,declarative,cloze,A tea cup is a vessel used for,"serving tea. Tea is a hot beverage made from the leaves of the tea plant Camellia sinensis. Tea is usually served in a cup or mug, but it can also be served in a teapot or a pot. Tea is usually served hot, but it can also be served iced. Tea is usually drunk black, but it can also be drunk with milk, sugar, or lemon.
+
+Tea is a popular beverage in many parts of the world. Tea is consumed",100,pythia-6.9b
+control,living_room,living room,declarative,cloze,A living room is,"a place where you can relax and enjoy your time with your family and friends. It is a place where you can sit and watch TV, listen to music, or just hang out with your loved ones. It is also a place where you can have a conversation with your loved ones.
+
+A living room is a place where you can relax and enjoy your time with your family and friends. It is a place where you can sit and watch TV, listen to music, or just hang out with",100,pythia-6.9b
+control,roller_coaster,roller coaster,declarative,cloze,A roller coaster is an amusement ride that,"includes a track with a series of loops, dives, and turns, and a vehicle that travels along the track. The vehicle is typically a car, but may be a train, a boat, or a plane. The vehicle is typically powered by a motor, but may be powered by gravity, air pressure, or other means.
+A roller coaster may be designed to provide a variety of ride experiences, such as a thrill ride, a family ride, a children's ride, or a",100,pythia-6.9b
+control,school_bus,school bus,declarative,cloze,A school bus is used to,transport students to and from school. The school bus is typically a large vehicle that is used to transport students to and from school. The school bus is typically used to transport students to and from school. The school bus is typically used to transport students to and from school. The school bus is typically used to transport students to and from school. The school bus is typically used to transport students to and from school. The school bus is typically used to transport students to and from school. The school bus is,100,pythia-6.9b
+control,grilled_cheese,grilled cheese,declarative,cloze,A grilled cheese sandwich consists of,"a slice of bread, a slice of cheese, and a slice of ham. The sandwich is then grilled on a pan until the bread is toasted and the cheese is melted. The sandwich is then cut into two pieces and served.
+
+The grilled cheese sandwich is a staple of American cuisine. It is a popular food item in the United States, and is often served at fast food restaurants.
+
+The grilled cheese sandwich is a staple of American cuisine. It is a popular food item in the",100,pythia-6.9b
+control,peanut_butter,peanut butter,declarative,cloze,Peanut butter is made from,"peanuts, and it’s a great source of protein. It’s also a great source of vitamin E, which is a powerful antioxidant. Vitamin E is also a powerful anti-inflammatory, which means it can help reduce inflammation in the body.
+
+Peanut butter is also a great source of vitamin B6, which is a powerful antioxidant. Vitamin B6 is also a powerful anti-inflammatory, which means it can help reduce inflammation in the body.
+
+Peanut butter is",100,pythia-6.9b
+control,hot_chocolate,hot chocolate,declarative,cloze,Hot chocolate is a warm beverage typically made from,"cocoa powder, sugar, and milk. It is a popular drink in many countries, and is often served at Christmas time.
+
+Hot chocolate is a warm beverage typically made from cocoa powder, sugar, and milk. It is a popular drink in many countries, and is often served at Christmas time.
+
+Hot chocolate is a warm beverage typically made from cocoa powder, sugar, and milk. It is a popular drink in many countries, and is often served at Christmas time.
+
+Hot",100,pythia-6.9b
+control,apple_pie,apple pie,declarative,cloze,Apple pie is a dessert featuring,"a flaky crust, a sweet filling, and a topping of cinnamon and sugar. It is a staple of American cuisine, and is a popular dessert in many other countries.
+
+The pie is a staple of American cuisine, and is a popular dessert in many other countries.
+
+The pie is a staple of American cuisine, and is a popular dessert in many other countries.
+
+The pie is a staple of American cuisine, and is a popular dessert in many other countries.",100,pythia-6.9b
+control,orange_juice,orange juice,declarative,cloze,Orange juice is extracted from,"the fruit of the citrus tree, Citrus sinensis. The juice is made by squeezing the fruit and then separating the juice from the pulp. The juice is then pasteurized to kill any bacteria that may be present. The juice is then pasteurized again to kill any remaining bacteria. The juice is then bottled and sold to consumers.
+The juice is a rich source of vitamin C, which is an antioxidant. The juice is also a rich source of vitamin B6, which is a co",100,pythia-6.9b
+control,baked_beans,baked beans,declarative,cloze,Baked beans are,"a staple in my house. I love them, and I love to make them. I’ve made them with canned beans, dried beans, and even lentils. I’ve made them with ham hocks, bacon, and even a little bit of sausage. I’ve made them with a variety of different spices, and I’ve made them with a variety of different beans. I’ve even made them with a variety of different beans and spices.
+
+I’ve made",100,pythia-6.9b
+control,palm_tree,palm tree,declarative,cloze,A palm tree is characterized by,"its ability to grow in a wide range of climates and soil conditions. The palm tree is a tropical plant that is native to the tropical and subtropical regions of the world. The palm tree is a popular ornamental plant that is used in landscaping and in the construction of buildings. The palm tree is also used in the production of paper, oil, and other products.
+The palm tree is a large, evergreen tree that is characterized by its ability to grow in a wide range of",100,pythia-6.9b
+control,thunder_storm,thunder storm,declarative,cloze,A thunder storm is,"brewing in the Pacific Northwest.
+
+The National Weather Service has issued a severe thunderstorm watch for the region, which includes the Seattle area, from 10 p.m. Friday to 6 a.m. Saturday.
+
+The watch means that severe thunderstorms are possible, and that they could produce damaging winds, large hail, and even tornadoes.
+
+The watch is in effect from the Seattle area to the Oregon border, including the cities of Portland, Eugene, and Medford",100,pythia-6.9b
+control,coral_reef,coral reef,declarative,cloze,A coral reef is an underwater formation that,"is composed of living organisms, such as corals, sponges, and other invertebrates. Coral reefs are found in tropical and subtropical oceans, and are the most diverse ecosystems on Earth. Coral reefs are found in shallow water, and are often found in tropical and subtropical oceans. Coral reefs are found in shallow water, and are often found in tropical and subtropical oceans. Coral reefs are found in shallow water, and are often found in tropical",100,pythia-6.9b
+control,shooting_star,shooting star,declarative,cloze,A shooting star is actually,"a meteor that burns up in the atmosphere. The meteor is called a fireball.
+
+A shooting star is actually a meteor that burns up in the atmosphere. The meteor is called a fireball.
+
+−
+
+A shooting star is a meteor that burns up in the atmosphere. The meteor is called a fireball.
+
++
+
+A shooting star is a meteor that burns up in the atmosphere. The meteor is called a fireball.
+
+−
+
+A shooting",100,pythia-6.9b
+control,mountain_lion,mountain lion,declarative,cloze,A mountain lion is,"seen in the Santa Monica Mountains in this undated handout photo. The mountain lion was killed by a hunter in the Santa Monica Mountains on Monday, Aug. 19, 2017. (Handout via AP)
+
+A mountain lion is seen in the Santa Monica Mountains in this undated handout photo. The mountain lion was killed by a hunter in the Santa Monica Mountains on Monday, Aug. 19, 2017. (Handout via AP)
+
+LOS ANGELES (AP",100,pythia-6.9b
+control,tidal_wave,tidal wave,declarative,cloze,A tidal wave is a large ocean wave caused by,the difference in the water level between the high and low tides. Tidal waves are caused by the gravitational pull of the moon and sun on the oceans. The difference in the water level between the high and low tides is called the tidal range. The tidal range is the difference between the high and low water levels. The tidal range is the difference between the high and low water levels. The tidal range is the difference between the high and low water levels. The tidal range is the difference between,100,pythia-6.9b
+control,dining_table,dining table,declarative,cloze,A dining table is furniture used for,eating and drinking. It is a piece of furniture that is used for eating and drinking. It is a piece of furniture that is used for eating and drinking. It is a piece of furniture that is used for eating and drinking. It is a piece of furniture that is used for eating and drinking. It is a piece of furniture that is used for eating and drinking. It is a piece of furniture that is used for eating and drinking. It is a piece of furniture that is used for eating and,100,pythia-6.9b
+control,car_keys,car keys,declarative,cloze,Car keys are used to,"start and stop a vehicle. The keys are typically stored in a key box or other secure location. The keys are used to unlock the doors of the vehicle, and to start the engine.
+The keys are typically stored in a key box or other secure location. The keys are used to unlock the doors of the vehicle, and to start the engine.
+The keys are typically stored in a key box or other secure location. The keys are used to unlock the doors of the vehicle, and to",100,pythia-6.9b
+control,washing_machine,washing machine,declarative,cloze,A washing machine is an appliance that,"washes clothes using water and detergent. The washing machine includes a tub for containing water, a drum rotatably mounted in the tub, and a motor for rotating the drum. The drum includes a plurality of holes formed therein. The washing machine also includes a water supply device for supplying water to the tub, a detergent supply device for supplying detergent to the tub, and a drain device for draining water from the tub.
+The washing machine may include a water supply device for supplying water to the tub",100,pythia-6.9b
+control,bath_towels,bath towels,declarative,cloze,Bath towels are used for,"a variety of purposes. For example, bath towels are used to dry the body after a bath or shower. Bath towels are also used to dry the body after a bath or shower and to dry the body after a shower. Bath towels are also used to dry the body after a bath or shower and to dry the body after a shower and to dry the body after a bath or shower. Bath towels are also used to dry the body after a bath or shower and to dry the body after a shower",100,pythia-6.9b
+control,alarm_clock,alarm clock,declarative,cloze,An alarm clock is a device that,"is used to wake a person up in the morning. Alarm clocks are typically used to wake a person up in the morning. The alarm clock may be a mechanical alarm clock, a digital alarm clock, or a combination of both. The alarm clock may be a single unit or may be a combination of a single unit and a radio. The alarm clock may be a single unit or may be a combination of a single unit and a radio. The alarm clock may be a single unit or may be",100,pythia-6.9b
+control,light_bulb,light bulb,declarative,cloze,A light bulb is,a device that produces light by means of an electric current. The light bulb is a device that converts electric energy into light energy. The light bulb is a device that converts electric energy into light energy. The light bulb is a device that converts electric energy into light energy. The light bulb is a device that converts electric energy into light energy. The light bulb is a device that converts electric energy into light energy. The light bulb is a device that converts electric energy into light energy. The light bulb is,100,pythia-6.9b
+control,post_office,post office,declarative,cloze,A post office is an institution that,"provides postal services to the public. Post offices are usually located in a building or other structure, and are staffed by postal employees. The post office may also provide other services, such as mail delivery, postal insurance, and postal banking.
+
+The United States Postal Service (USPS) is the largest postal service in the world, with over 32,000 post offices and over 1.5 million employees. The USPS is a government agency, and is not a private company.",100,pythia-6.9b
+control,parking_lot,parking lot,declarative,cloze,A parking lot is,a place where cars are parked. It is a place where people park their cars. It is a place where people park their cars. It is a place where people park their cars. It is a place where people park their cars. It is a place where people park their cars. It is a place where people park their cars. It is a place where people park their cars. It is a place where people park their cars. It is a place where people park their cars. It is a,100,pythia-6.9b
+control,train_station,train station,declarative,cloze,A train station is a facility where,"passengers can board and alight from a train. A train station is usually a building or a structure that is used to house a train, and is often connected to a railway line.
+
+A train station is a facility where passengers can board and alight from a train. A train station is usually a building or a structure that is used to house a train, and is often connected to a railway line.
+
+A train station is a facility where passengers can board and alight from a",100,pythia-6.9b
+control,fire_station,fire station,declarative,cloze,A fire station is,"a building that houses a fire department. Fire stations are usually located in a city or town, and are usually staffed by firefighters. Fire stations are usually staffed by firefighters, but may also be staffed by other emergency personnel such as police officers, paramedics, and EMTs.
+
+Contents
+
+Fire stations are usually located in a city or town, and are usually staffed by firefighters. Fire stations are usually staffed by firefighters, but may also be staffed by other",100,pythia-6.9b
+control,swimming_pool,swimming pool,declarative,cloze,A swimming pool is a structure designed for,"the purpose of containing water for swimming. Swimming pools are typically constructed of concrete, fiberglass, or other materials. The pool is typically surrounded by a deck, which is typically constructed of wood or metal. The deck is typically constructed of wood or metal and is typically covered with a decking material, such as wood, vinyl, or composite materials.
+A swimming pool is typically constructed in a rectangular shape. The pool is typically constructed in a rectangular shape with a rectangular deck surrounding the pool",100,pythia-6.9b
+control,coffee_shop,coffee shop,declarative,cloze,A coffee shop is,"a place where you can get a cup of coffee, a cup of tea, or a latte. It is a place where you can sit down and relax, and enjoy a cup of coffee or tea. It is a place where you can meet friends, and have a conversation. It is a place where you can get a cup of coffee, and have a conversation. It is a place where you can get a cup of coffee, and have a conversation. It is a place where you can",100,pythia-6.9b
+control,hard_drive,hard drive,declarative,cloze,A hard drive is a computer component used for,"storing digital data. A hard drive is a non-volatile storage device that can store large amounts of data. Hard drives are used in computers, digital audio players, digital cameras, and other electronic devices.
+A hard drive is a non-volatile storage device that can store large amounts of data. Hard drives are used in computers, digital audio players, digital cameras, and other electronic devices.
+A hard drive is a non-volatile storage device that can store large amounts of data. Hard drives",100,pythia-6.9b
+control,operating_system,operating system,declarative,cloze,An operating system is software that,"manages computer hardware and software resources and provides common services for computer programs. Operating systems are responsible for managing the execution of computer programs and the resources of the computer system.
+An operating system may be implemented as a single monolithic program or as a collection of programs that cooperate to perform the functions of the operating system. The operating system may be implemented as a single program or as a collection of programs that cooperate to perform the functions of the operating system.
+An operating system may be implemented as a single",100,pythia-6.9b
+control,search_engine,search engine,declarative,cloze,A search engine is,a computer program that helps find information on the World Wide Web. A search engine is a type of Internet search engine. A search engine is a software application that allows users to search for information on the Internet. A search engine is a software application that allows users to search for information on the World Wide Web. A search engine is a software application that allows users to search for information on the World Wide Web. A search engine is a software application that allows users to search for information on the World Wide,100,pythia-6.9b
+control,user_name,user name,declarative,cloze,A user name is typically used for,"identification purposes. A user name is typically a string of characters that is unique to a particular user. A user name may be used to identify a user in a variety of contexts. For example, a user name may be used to identify a user in a social network, a chat room, a forum, a blog, a newsgroup, a mailing list, a chat room, a bulletin board, a chat room, a forum, a blog, a newsgroup, a mailing list, a",100,pythia-6.9b
+control,power_supply,power supply,declarative,cloze,A power supply is,"a device that converts one form of energy into another. A power supply may be used to convert one form of energy into another form of energy. For example, a power supply may convert electrical energy into mechanical energy. A power supply may also convert mechanical energy into electrical energy.
+A power supply may include a power converter. A power converter may include a power switch that is controlled by a controller. The controller may be configured to control the power switch to switch between an on state and an off state",100,pythia-6.9b
+control,data_base,data base,declarative,cloze,A data base is,"a collection of data. A data base may be a relational database, a flat file database, or a hierarchical database. A relational database is a collection of data organized in a table format. A flat file database is a collection of data organized in a file format. A hierarchical database is a collection of data organized in a tree format.
+A data base may be accessed by a user through a user interface. A user interface may be a graphical user interface (GUI) or a command line interface (",100,pythia-6.9b
+control,sore_throat,sore throat,declarative,cloze,A sore throat is,"a common ailment that can be caused by a number of different conditions. The most common cause of a sore throat is a viral infection. Other causes of a sore throat include allergies, a cold, or a bacterial infection.
+
+A sore throat is a common ailment that can be caused by a number of different conditions. The most common cause of a sore throat is a viral infection. Other causes of a sore throat include allergies, a cold, or a bacterial infection.
+
+A sore",100,pythia-6.9b
+control,blood_pressure,blood pressure,declarative,cloze,Blood pressure refers to,"the force exerted by the blood on the walls of blood vessels. The force of the blood against the walls of the blood vessels is called blood pressure. The force of the blood against the walls of the blood vessels is measured in units of pressure, such as millimeters of mercury (mm Hg). The units of pressure are named for the French physiologist and mathematician, Claude Bernard, who first described them in 1877.
+The force of the blood against the walls of the blood vessels is determined",100,pythia-6.9b
+control,collar_bone,collar bone,declarative,cloze,The collar bone is,a very important part of the body. It is the part of the body that is used to support the head. It is also used to support the neck. The collar bone is also used to support the shoulder. The collar bone is also used to support the arm. The collar bone is also used to support the hand. The collar bone is also used to support the elbow. The collar bone is also used to support the wrist. The collar bone is also used to support the shoulder. The collar,100,pythia-6.9b
+control,heart_rate,heart rate,declarative,cloze,Heart rate measures,"in the assessment of autonomic function in patients with chronic heart failure.
+Heart rate variability (HRV) is a non-invasive method for assessing autonomic function. The aim of this study was to evaluate the usefulness of HRV in the assessment of autonomic function in patients with chronic heart failure (CHF). We studied 30 patients with CHF (mean age, 63.3 +/- 10.1 years; mean left ventricular ejection fraction, 27.8 +/- 8.1%) and 30 healthy controls (",100,pythia-6.9b
+control,dental_appointment,dental appointment,declarative,cloze,A dental appointment is,"a great way to get your teeth checked and cleaned. It is also a great way to get your teeth cleaned and checked.
+
+A dental appointment is a great way to get your teeth checked and cleaned. It is also a great way to get your teeth cleaned and checked.
+
+A dental appointment is a great way to get your teeth checked and cleaned. It is also a great way to get your teeth cleaned and checked.
+
+A dental appointment is a great way to get your teeth",100,pythia-6.9b
+control,waiting_room,waiting room,declarative,cloze,A waiting room is,"a place where people wait for something. It is a place where people wait for a doctor, a lawyer, a dentist, a mechanic, a plumber, a mechanic, a plumber, a mechanic, a plumber, a mechanic, a plumber, a mechanic, a plumber, a mechanic, a plumber, a mechanic, a plumber, a mechanic, a plumber, a mechanic, a plumber, a mechanic, a plumber, a mechanic, a pl",100,pythia-6.9b

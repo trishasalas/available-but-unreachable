@@ -1,0 +1,203 @@
+domain,prompt_id,concept,prompt_type,template_type,prompt,output,max_tokens,model
+legal,due_process,due process,declarative,cloze,Due process is,"a fundamental right of all Americans. It is a right that is protected by the Constitution and the Bill of Rights. It is a right that is guaranteed by the Fifth Amendment. It is a right that is protected by the Fourteenth Amendment. It is a right that is protected by the Fifth and Fourteenth Amendments. It is a right that is protected by the First Amendment. It is a right that is protected by the First, Fifth, and Fourteenth Amendments. It is a right that is protected by",100,pythia-6.9b
+legal,equal_protection,equal protection,declarative,cloze,Equal protection refers to,"the principle that all persons similarly situated should be treated alike. The Equal Protection Clause of the Fourteenth Amendment to the United States Constitution prohibits states from denying to any person within its jurisdiction the equal protection of the laws. The Equal Protection Clause applies to the states through the Fourteenth Amendment.
+
+The Equal Protection Clause of the Fourteenth Amendment to the United States Constitution provides that no state shall ""deny to any person within its jurisdiction the equal protection of the laws."" The Equal Protection Clause applies to the states through",100,pythia-6.9b
+legal,commerce_clause,commerce clause,declarative,cloze,The commerce clause is,"a constitutional provision that gives Congress the power to regulate commerce among the states. The Supreme Court has interpreted the clause to mean that Congress can regulate any activity that substantially affects interstate commerce.
+
+The Supreme Court has upheld the constitutionality of the individual mandate under the commerce clause. The Court has also upheld the constitutionality of the individual mandate under the taxing power.
+
+The Supreme Court has upheld the constitutionality of the individual mandate under the commerce clause. The Court has also upheld the constitutionality",100,pythia-6.9b
+legal,fifth_amendment,fifth amendment,declarative,cloze,The fifth amendment provides,"that no person shall be compelled in any criminal case to be a witness against himself. The fifth amendment is a fundamental right of the accused. It is a right that is not to be taken lightly. It is a right that is to be zealously guarded. It is a right that is to be zealously protected.
+
+The fifth amendment is a fundamental right of the accused. It is a right that is not to be taken lightly. It is a right that is to be zealously guarded",100,pythia-6.9b
+legal,free_speech,free speech,declarative,cloze,Free speech is a right that,"is protected by the First Amendment to the United States Constitution. The First Amendment states that “Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances.”
+
+The First Amendment is the most important part of the Constitution, and it is the most important part of the Bill of Rights.",100,pythia-6.9b
+legal,strict_liability,strict liability,declarative,cloze,Strict liability is a legal doctrine holding,"that a person is liable for the consequences of his or her actions, even if the person did not intend to cause harm. The doctrine is most commonly applied in tort law, but it is also used in criminal law.
+
+The doctrine is most commonly applied in tort law, but it is also used in criminal law. In tort law, the doctrine is most commonly applied in cases where the defendant is charged with negligence. In criminal law, the doctrine is most commonly applied in cases where the defendant",100,pythia-6.9b
+legal,punitive_damages,punitive damages,declarative,cloze,Punitive damages are awarded to,"punish a defendant for egregious conduct. The purpose of punitive damages is to punish the defendant and to deter others from engaging in similar conduct.
+
+Punitive damages are awarded to punish a defendant for egregious conduct. The purpose of punitive damages is to punish the defendant and to deter others from engaging in similar conduct.
+
+Punitive damages are awarded to punish a defendant for egregious conduct. The purpose of punitive damages is to punish the defendant and to deter others from",100,pythia-6.9b
+legal,sovereign_immunity,sovereign immunity,declarative,cloze,Sovereign immunity is,"a legal doctrine that protects the government from lawsuits. It is a fundamental principle of American law, and it is a cornerstone of the American legal system.
+
+The doctrine is based on the principle that the government is not subject to the same laws as private citizens. The government is not subject to the same laws as private citizens because the government is a separate entity from the people.
+
+The government is a separate entity from the people because the government is a separate entity from the people. The",100,pythia-6.9b
+legal,grand_indictment,grand indictment,declarative,cloze,A grand indictment is,"being made against the United States of America, and the people thereof, for their manifold sins and abominations.
+
+The indictment is that the people of the United States have been guilty of the following crimes:
+
+1. Murdering the unborn.
+
+2. Murdering the innocent.
+
+3. Murdering the helpless.
+
+4. Murdering the defenseless.
+
+5. Murdering the innocent.
+
+6. Murdering the helpless.",100,pythia-6.9b
+legal,guilty_plea,guilty plea,declarative,cloze,A guilty plea is when,"a person pleads guilty to a criminal charge. A plea of guilty is a formal admission of guilt. A plea of not guilty is a denial of guilt. A plea of guilty is a formal admission of guilt. A plea of not guilty is a denial of guilt.
+
+A guilty plea is when a person pleads guilty to a criminal charge. A plea of guilty is a formal admission of guilt. A plea of not guilty is a denial of guilt. A plea of guilty is a formal",100,pythia-6.9b
+legal,excessive_bail,excessive bail,declarative,cloze,Excessive bail is prohibited by,the Eighth Amendment to the United States Constitution. The Excessive Bail Clause is a part of the Due Process Clause of the Fourteenth Amendment. The Excessive Bail Clause is a part of the Due Process Clause of the Fourteenth Amendment. The Excessive Bail Clause is a part of the Due Process Clause of the Fourteenth Amendment. The Excessive Bail Clause is a part of the Due Process Clause of the Fourteenth Amendment. The Excessive Bail Clause is a part of the Due Process Clause of,100,pythia-6.9b
+legal,felony_conviction,felony conviction,declarative,cloze,A felony conviction is,"a serious matter. It can affect your ability to get a job, housing, and even your right to vote. It can also affect your ability to get a student loan, a driver’s license, or even a passport.
+
+If you have been convicted of a felony, you may be eligible to have your record sealed. Sealing your record can help you get a job, housing, and even a student loan.
+
+What is Sealing a Record?
+
+A felony conviction",100,pythia-6.9b
+legal,conditional_parole,conditional parole,declarative,cloze,Conditional parole requires,"a prisoner to be released from prison if certain conditions are met. The conditions are set by the parole board and are based on the prisoner’s criminal history, the nature of the crime, and the prisoner’s behavior while in prison.
+
+Conditional parole is a form of parole that is granted to prisoners who have been convicted of a crime and are serving a sentence of less than one year. The parole board may grant conditional parole to a prisoner if the prisoner has been in prison for less",100,pythia-6.9b
+legal,joint_custody,joint custody,declarative,cloze,Joint custody means,"that the parents share the care of the child. The parents may have joint custody of the child, or one parent may have sole custody of the child. Joint custody is a form of shared parenting.
+
+Joint custody is a form of shared parenting. It is a way of sharing the care of the child. It is a way of sharing the responsibility of raising the child. It is a way of sharing the decision-making process. It is a way of sharing the decision-making process.",100,pythia-6.9b
+legal,material_breach,material breach,declarative,cloze,A material breach is,a failure to comply with a material obligation under a contract. A material breach is a breach of a material obligation under a contract. A material breach is a breach of a material obligation under a contract. A material breach is a breach of a material obligation under a contract. A material breach is a breach of a material obligation under a contract. A material breach is a breach of a material obligation under a contract. A material breach is a breach of a material obligation under a contract. A material breach is,100,pythia-6.9b
+legal,adequate_consideration,adequate consideration,declarative,cloze,Adequate consideration in a contract means,"that the parties to the contract have considered the relevant factors and have reached a reasonable conclusion.
+
+The contract must be fair and reasonable.
+
+The contract must be in writing.
+
+The contract must be signed by the parties.
+
+The contract must be signed by the party who is to perform the contract.
+
+The contract must be signed by the party who is to receive the benefit of the contract.
+
+The contract must be signed by the party who is to be bound",100,pythia-6.9b
+legal,arbitration_clause,arbitration clause,declarative,cloze,An arbitration clause is,"a provision in a contract that allows a party to a contract to have a dispute resolved by a third party. Arbitration clauses are common in contracts, and are often included in contracts for the sale of goods.
+
+Arbitration clauses are often included in contracts for the sale of goods. The clause allows the buyer and seller to resolve any disputes that arise between them without going to court.
+
+The clause is often included in contracts for the sale of goods. The clause allows the buyer and",100,pythia-6.9b
+legal,specific_performance,specific performance,declarative,cloze,Specific performance is a remedy that,is used to prevent a party from performing a contract. It is a remedy that is used to prevent a party from performing a contract. It is a remedy that is used to prevent a party from performing a contract. It is a remedy that is used to prevent a party from performing a contract. It is a remedy that is used to prevent a party from performing a contract. It is a remedy that is used to prevent a party from performing a contract. It is a remedy that is used to prevent,100,pythia-6.9b
+legal,preliminary_injunction,preliminary injunction,declarative,cloze,A preliminary injunction is,"a court order that temporarily stops a defendant from doing something. The order is usually granted when a plaintiff shows that he or she is likely to win the case on the merits.
+
+A preliminary injunction is a court order that temporarily stops a defendant from doing something. The order is usually granted when a plaintiff shows that he or she is likely to win the case on the merits.
+
+A preliminary injunction is a court order that temporarily stops a defendant from doing something. The order is usually granted when",100,pythia-6.9b
+legal,oral_deposition,oral deposition,declarative,cloze,An oral deposition is,"a deposition taken in a non-courtroom setting. The deposition is typically taken by a party to a lawsuit, and the deposition is typically taken by a party's attorney. The deposition is typically taken by the party's attorney in the presence of the party and the party's attorney's staff. The deposition is typically taken in the presence of the party's attorney's staff, and the party's attorney is typically present in the room during the deposition.
+Depositions are typically taken in a room",100,pythia-6.9b
+legal,personal_jurisdiction,personal jurisdiction,declarative,cloze,Personal jurisdiction refers to,"the power of a court to exercise judicial authority over a party. The concept of personal jurisdiction is a fundamental principle of American law. Personal jurisdiction is a question of law, and the court's determination of personal jurisdiction is reviewed de novo.
+
+The concept of personal jurisdiction is a fundamental principle of American law. Personal jurisdiction is a question of law, and the court's determination of personal jurisdiction is reviewed de novo.
+
+The concept of personal jurisdiction is a fundamental principle of American law. Personal jurisdiction",100,pythia-6.9b
+legal,electronic_discovery,electronic discovery,declarative,cloze,Electronic discovery is,"a process by which electronic information is obtained from one or more sources and provided to one or more recipients. Electronic discovery may be performed in connection with a civil, criminal, or administrative proceeding. Electronic discovery may be performed in connection with a legal matter, such as a lawsuit, a regulatory matter, such as a compliance matter, or a business matter, such as a corporate investigation.
+Electronic discovery may be performed using a variety of different tools. For example, a party may use a search engine to",100,pythia-6.9b
+legal,summary_motion,summary motion,declarative,cloze,A summary motion is,"a motion that is filed by a party to a lawsuit, and that is not a pleading. A summary judgment motion is a motion that is filed by a party to a lawsuit, and that is a pleading. A summary judgment motion is a motion that is filed by a party to a lawsuit, and that is a pleading. A summary judgment motion is a motion that is filed by a party to a lawsuit, and that is a pleading. A summary judgment motion is a motion that is filed by a",100,pythia-6.9b
+legal,proper_venue,proper venue,declarative,cloze,Proper venue is determined by,"the type of event, the number of attendees, and the type of facility.
+
+The venue must be large enough to accommodate the number of attendees.
+
+The venue must be accessible to the public.
+
+The venue must be able to accommodate the number of attendees.
+
+The venue must be able to accommodate the number of attendees.
+
+The venue must be able to accommodate the number of attendees.
+
+The venue must be able to accommodate the number of attendees.",100,pythia-6.9b
+legal,patent_infringement,patent infringement,declarative,cloze,Patent infringement occurs when,"a person or company uses a patented invention without permission. The patent holder can sue the infringer for damages.
+
+The patent holder can also sue the infringer for an injunction to stop the infringer from continuing to infringe the patent.
+
+The patent holder can also sue the infringer for an injunction to stop the infringer from continuing to infringe the patent.
+
+The patent holder can also sue the infringer for an injunction to stop the infringer from continuing to infringe",100,pythia-6.9b
+legal,articles_incorporation,articles incorporation,declarative,cloze,Articles of incorporation are,"a legal document that is used to create a corporation. The articles of incorporation are used to create a corporation that is governed by the laws of the state in which it is created. The articles of incorporation are also used to create a corporation that is governed by the laws of the state in which it is created.
+
+Articles of incorporation are a legal document that is used to create a corporation. The articles of incorporation are used to create a corporation that is governed by the laws of the state in",100,pythia-6.9b
+legal,hostile_merger,hostile merger,declarative,cloze,A hostile merger is,"brewing between the two largest U.S. wireless carriers, with AT&T and T-Mobile in talks to combine their wireless operations, according to a report.
+
+The Wall Street Journal reported that the two companies are in talks to combine their wireless operations, which would create a new company with more than $100 billion in annual revenue.
+
+The deal would be the largest in the wireless industry since AT&T acquired T-Mobile in 2011.
+
+The companies declined to comment on",100,pythia-6.9b
+legal,statute_limitations,statute limitations,declarative,cloze,A statute of limitations is,"a law that limits the time period in which a person can file a lawsuit. Statutes of limitations are designed to prevent stale claims from being brought. Statutes of limitations are not intended to prevent a person from bringing a claim that is valid, but simply to prevent a person from bringing a claim that is too old.
+
+Statutes of limitations are often used to prevent a person from bringing a claim that is too old. For example, if a person is injured in an accident and does not file a",100,pythia-6.9b
+legal,legal_standing,legal standing,declarative,cloze,Legal standing is the right to,bring a lawsuit. It is a right that is granted by the state. It is a right that is granted by the state to the individual. It is a right that is granted by the state to the individual to bring a lawsuit. It is a right that is granted by the state to the individual to bring a lawsuit. It is a right that is granted by the state to the individual to bring a lawsuit. It is a right that is granted by the state to the individual to bring a lawsuit,100,pythia-6.9b
+legal,binding_precedent,binding precedent,declarative,cloze,A binding precedent is,"a decision of a court of law that is binding on all other courts in the same jurisdiction. The binding precedent doctrine is a rule of law that requires a court to follow the decision of a higher court in the same jurisdiction on a similar issue.
+
+The binding precedent doctrine is a rule of law that requires a court to follow the decision of a higher court in the same jurisdiction on a similar issue. The doctrine is based on the principle that the court should not overrule a previous decision unless there",100,pythia-6.9b
+legal,judicial_review,judicial review,declarative,cloze,Judicial review is,"a process by which a court can review the actions of a government agency. The court can order the agency to take certain actions or to stop certain actions. The court can also order the agency to pay money to a person who has been harmed by the agency's actions.
+
+The court can also order the agency to change its actions. For example, the court can order the agency to change its decision to deny a person a benefit.
+
+The court can also order the agency to change its",100,pythia-6.9b
+legal,civil_lawsuit,civil lawsuit,declarative,cloze,A civil lawsuit is,"being filed against the city of San Francisco by a woman who claims she was raped by a police officer in the Mission District in 2016.
+
+The lawsuit, filed by the woman on Monday, alleges that Officer John Pike raped her in his police car in the Mission District on Nov. 30, 2016.
+
+The lawsuit, which was filed in San Francisco Superior Court, alleges that Pike, who was off-duty at the time, raped the woman after she was arrested for public intoxication",100,pythia-6.9b
+legal,criminal_record,criminal record,declarative,cloze,A criminal record is,a record of a person’s criminal history. It is a record of a person’s criminal history that is maintained by a government agency. It is a record of a person’s criminal history that is maintained by a government agency. It is a record of a person’s criminal history that is maintained by a government agency. It is a record of a person’s criminal history that is maintained by a government agency. It is a record of a person’s criminal history that is maintained,100,pythia-6.9b
+legal,search_warrant,search warrant,declarative,cloze,A search warrant is,"a court order that allows police to search a person or a place for evidence of a crime. The search warrant is usually issued by a judge, but it can also be issued by a police officer.
+
+A search warrant is a court order that allows police to search a person or a place for evidence of a crime. The search warrant is usually issued by a judge, but it can also be issued by a police officer.
+
+−
+
+A search warrant is a court order that allows",100,pythia-6.9b
+legal,plea_bargain,plea bargain,declarative,cloze,A plea bargain is,"a formal agreement between a prosecutor and a defendant in which the defendant agrees to plead guilty in exchange for a reduced sentence. The defendant is usually allowed to plead guilty to a lesser charge or to a charge that carries a lesser sentence.
+
+A plea bargain is a formal agreement between a prosecutor and a defendant in which the defendant agrees to plead guilty in exchange for a reduced sentence. The defendant is usually allowed to plead guilty to a lesser charge or to a charge that carries a lesser sentence.",100,pythia-6.9b
+legal,witness_testimony,witness testimony,declarative,cloze,Witness testimony is,"a key component of the criminal justice system. It is used to establish the facts of a case, to provide the jury with a complete picture of the events that occurred, and to provide the court with a complete picture of the events that occurred. Witness testimony is also used to impeach a witness's credibility.
+
+Witness testimony is also used in civil cases. In civil cases, the court will often allow the parties to call witnesses to testify. The court will also allow the parties to call",100,pythia-6.9b
+legal,expert_witness,expert witness,declarative,cloze,An expert witness is,"a person who is called to give evidence in a court of law. Expert witnesses are usually called to give evidence about a particular subject, such as medicine, engineering, or law.
+
+An expert witness is a person who is called to give evidence in a court of law. Expert witnesses are usually called to give evidence about a particular subject, such as medicine, engineering, or law.
+
+An expert witness is a person who is called to give evidence in a court of law. Expert witnesses",100,pythia-6.9b
+legal,court_order,court order,declarative,cloze,A court order is,"being sought to force the government to release the names of the people who have been charged with terrorism offences.
+
+The move comes after the government refused to release the names of the people who have been charged with terrorism offences.
+
+The move comes after the government refused to release the names of the people who have been charged with terrorism offences.
+
+The move comes after the government refused to release the names of the people who have been charged with terrorism offences.
+
+The",100,pythia-6.9b
+legal,bench_trial,bench trial,declarative,cloze,A bench trial is,"scheduled for next month in the case of a former New York City police officer accused of raping a woman in a Brooklyn hotel room.
+
+The woman, who was in her 20s at the time, told police she was raped by Officer Michael Dowd in the early morning hours of May 1, 2013, according to a criminal complaint.
+
+Dowd, who was off-duty at the time, was arrested in May 2014 and charged with rape, criminal sex act, sexual abuse",100,pythia-6.9b
+legal,jury_verdict,jury verdict,declarative,cloze,A jury verdict is,"expected to be announced in the trial of a former police officer charged with murdering a man in a confrontation over a parking space.
+
+The jury was expected to begin deliberations on Monday in the trial of former police officer Michael Slager, who is charged with murder in the death of Walter Scott.
+
+Slager, who is white, is accused of shooting Scott, who was black, in the back as he ran away from him in North Charleston, South Carolina, in April 2015.",100,pythia-6.9b
+legal,class_action,class action,declarative,cloze,A class action lawsuit is,"being filed against the City of Los Angeles and the Los Angeles Police Department for the death of a man who was shot and killed by police in the Boyle Heights neighborhood of Los Angeles.
+
+The lawsuit was filed on behalf of the family of Jose Guerena, who was shot and killed by police on July 5, 2014.
+
+The lawsuit alleges that the shooting was unjustified and that the LAPD and the City of Los Angeles failed to properly train and supervise their officers.",100,pythia-6.9b
+legal,double_jeopardy,double jeopardy,declarative,cloze,Double jeopardy is,"a legal concept that refers to the situation where a person is charged with two crimes that are the same or based on the same act. In the United States, double jeopardy is a constitutional protection against multiple punishments for the same offense.
+
+The concept of double jeopardy is a common law concept that is not found in the United States Constitution. The double jeopardy clause of the Fifth Amendment to the United States Constitution provides that no person shall ""be subject for the same offense to be twice put in jeopardy",100,pythia-6.9b
+legal,probable_cause,probable cause,declarative,cloze,Probable cause is,"a legal term that is used to describe the evidence that a police officer has to have to arrest someone. It is a legal term that is used to describe the evidence that a police officer has to have to arrest someone.
+
+Probable cause is a legal term that is used to describe the evidence that a police officer has to have to arrest someone. It is a legal term that is used to describe the evidence that a police officer has to have to arrest someone.
+
+Probable cause is",100,pythia-6.9b
+legal,restraining_order,restraining order,declarative,cloze,A restraining order is,"a court order that prohibits a person from doing something. A restraining order is usually issued by a court to protect a person from harm.
+
+A restraining order is a court order that prohibits a person from doing something. A restraining order is usually issued by a court to protect a person from harm.
+
+−
+
+A restraining order is a court order that prohibits a person from doing something. A restraining order is usually issued by a court to protect a person from harm.
+
++",100,pythia-6.9b

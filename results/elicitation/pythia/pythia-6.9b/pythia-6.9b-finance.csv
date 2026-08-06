@@ -1,0 +1,166 @@
+domain,prompt_id,concept,prompt_type,template_type,prompt,output,max_tokens,model
+finance,cash_flow,cash flow,declarative,cloze,Cash flow is,a key factor in the success of any business. It is the lifeblood of any business. It is the fuel that keeps the business running. It is the money that allows the business to grow. It is the money that allows the business to expand. It is the money that allows the business to hire more employees. It is the money that allows the business to buy more equipment. It is the money that allows the business to buy more inventory. It is the money that allows the business to buy,100,pythia-6.9b
+finance,balance_sheet,balance sheet,declarative,cloze,A balance sheet is,"a financial statement that shows the financial position of a business or organization at a particular point in time. It is a record of the assets, liabilities, and owner's equity of a business.
+
+A balance sheet is a financial statement that shows the financial position of a business or organization at a particular point in time. It is a record of the assets, liabilities, and owner's equity of a business.
+
+A balance sheet is a financial statement that shows the financial position of a business or",100,pythia-6.9b
+finance,journal_entry,journal entry,declarative,cloze,A journal entry is,"a short piece of writing that is usually written in a diary or a journal. It is a personal record of a person's thoughts, feelings, and experiences. It is a way to keep a record of your life.
+
+A journal entry is a short piece of writing that is usually written in a diary or a journal. It is a personal record of a person's thoughts, feelings, and experiences. It is a way to keep a record of your life.
+
+A journal entry is",100,pythia-6.9b
+finance,accelerated_depreciation,accelerated depreciation,declarative,cloze,Accelerated depreciation is,"a tax benefit that allows you to write off the cost of a capital asset over a shorter period of time. The amount of depreciation you can claim depends on the type of asset you’re depreciating.
+
+The following table shows the depreciation schedule for various types of assets.
+
+Asset Type
+
+Depreciation Schedule
+
+Equipment
+
+1/3 of the original cost in the first year, 2/3 in the second year, and the remainder in the third",100,pythia-6.9b
+finance,impairment_goodwill,impairment goodwill,declarative,cloze,Goodwill impairment occurs when,"a company's goodwill is impaired by a change in the company's business or in the economic environment. Goodwill impairment is measured by comparing the fair value of the company's assets and liabilities to the fair value of the company's goodwill.
+
+Goodwill impairment is measured by comparing the fair value of the company's assets and liabilities to the fair value of the company's goodwill. The fair value of goodwill is determined by using the income approach, the market approach, or the asset",100,pythia-6.9b
+finance,yield_maturity,yield maturity,declarative,cloze,Yield to maturity is,"a measure of the return on an investment. It is the total return on an investment divided by the total amount invested.
+
+The yield to maturity is the annualized rate of return on an investment. It is the total return on an investment divided by the total amount invested.
+
+The yield to maturity is the annualized rate of return on an investment. It is the total return on an investment divided by the total amount invested.
+
+The yield to maturity is the annualized rate of",100,pythia-6.9b
+finance,bond_coupon,bond coupon,declarative,cloze,A bond coupon is,a coupon that is issued by a bond issuer to a bondholder. The coupon is a coupon that is paid at maturity of the bond. The coupon is a coupon that is paid at maturity of the bond. The coupon is a coupon that is paid at maturity of the bond. The coupon is a coupon that is paid at maturity of the bond. The coupon is a coupon that is paid at maturity of the bond. The coupon is a coupon that is paid at maturity of the bond. The,100,pythia-6.9b
+finance,credit_spread,credit spread,declarative,cloze,A credit spread is,"a financial product that is based on the difference between two or more financial instruments. For example, a credit spread may be based on the difference between a bond and a stock. A credit spread may be used to hedge against the risk of a single financial instrument. For example, a credit spread may be used to hedge against the risk of a bond.
+A credit spread may be used to hedge against the risk of a single financial instrument. For example, a credit spread may be used to hedge against",100,pythia-6.9b
+finance,modified_duration,modified duration,declarative,cloze,Modified duration measures,"for the assessment of the effects of a new anti-hypertensive drug.
+The effects of a new anti-hypertensive drug, prazosin, were studied in a double-blind, placebo-controlled, crossover study in 12 patients with mild to moderate essential hypertension. The drug was given in a single daily dose of 1 mg for 4 weeks. The effects of the drug were assessed by means of a number of different measures of blood pressure and heart rate. The results showed that the drug had",100,pythia-6.9b
+finance,interest_swap,interest swap,declarative,cloze,An interest swap is,a financial instrument that allows two parties to exchange interest payments on a debt instrument. The interest payments are exchanged at a predetermined rate. The interest payments are exchanged at a predetermined rate. The interest payments are exchanged at a predetermined rate. The interest payments are exchanged at a predetermined rate. The interest payments are exchanged at a predetermined rate. The interest payments are exchanged at a predetermined rate. The interest payments are exchanged at a predetermined rate. The interest payments are exchanged at a predetermined rate. The interest payments are,100,pythia-6.9b
+finance,call_option,call option,declarative,cloze,A call option gives,"the right, but not the obligation, to buy a specified number of shares of a stock at a specified price within a specified time. The buyer of the call option is said to have the right to buy the stock at the strike price. The seller of the call option is said to have the obligation to sell the stock at the strike price.
+
+The buyer of the call option is said to have the right to buy the stock at the strike price. The seller of the call option is said",100,pythia-6.9b
+finance,commodity_futures,commodity futures,declarative,cloze,Commodity futures are,"a popular way to trade the markets. They are a form of futures contract that allows you to buy or sell a commodity at a future date. The futures contract is a contract that is traded on a futures exchange. The futures contract is a contract that is traded on a futures exchange.
+
+The futures contract is a contract that is traded on a futures exchange. The futures contract is a contract that is traded on a futures exchange.
+
+The futures contract is a contract that is traded on a",100,pythia-6.9b
+finance,currency_hedge,currency hedge,declarative,cloze,A currency hedge is,a financial instrument that is designed to protect a portfolio from currency fluctuations. A currency hedge is typically a derivative contract that is designed to protect a portfolio from currency fluctuations. A currency hedge is typically a derivative contract that is designed to protect a portfolio from currency fluctuations. A currency hedge is typically a derivative contract that is designed to protect a portfolio from currency fluctuations. A currency hedge is typically a derivative contract that is designed to protect a portfolio from currency fluctuations. A currency hedge is typically a derivative contract that is,100,pythia-6.9b
+finance,implied_volatility,implied volatility,declarative,cloze,Implied volatility refers to,"the volatility of an option's price as a function of the volatility of the underlying asset. The implied volatility of an option is a function of the option's strike price, the time to expiration, and the volatility of the underlying asset. The implied volatility of an option is a function of the volatility of the underlying asset. The implied volatility of an option is a function of the volatility of the underlying asset. The implied volatility of an option is a function of the volatility of the underlying asset. The implied",100,pythia-6.9b
+finance,zero_collar,zero collar,declarative,cloze,A zero collar strategy,"for the treatment of patients with acute coronary syndromes.
+The treatment of patients with acute coronary syndromes (ACS) is a major challenge for the cardiologist. The aim of this study was to evaluate the efficacy and safety of a zero collar strategy in patients with ACS. A total of 1,904 patients with ACS were enrolled in this study. Patients were randomly assigned to receive either a zero collar strategy (n = 952) or a conventional strategy (n = 952). The primary end point",100,pythia-6.9b
+finance,diluted_earnings,diluted earnings,declarative,cloze,Diluted earnings per share is,"a key metric for investors to watch. It is calculated by dividing the net income by the number of shares outstanding.
+
+The company's net income for the quarter was $1.1 billion, or $1.08 per share, compared with $1.1 billion, or $1.08 per share, in the year-ago quarter.
+
+Revenue for the quarter was $4.8 billion, up from $4.7 billion in the year-ago quarter.",100,pythia-6.9b
+finance,price_ratio,price ratio,declarative,cloze,The price to earnings ratio is,"a measure of how much a company is paying for its earnings. It is calculated by dividing the company's earnings per share by the current share price.
+
+The price to earnings ratio is a measure of how much a company is paying for its earnings. It is calculated by dividing the company's earnings per share by the current share price.
+
+The price to earnings ratio is a measure of how much a company is paying for its earnings. It is calculated by dividing the company's earnings per share",100,pythia-6.9b
+finance,preferred_dividend,preferred dividend,declarative,cloze,A preferred dividend is,"a dividend that is paid to shareholders of a corporation on a regular basis. The preferred dividend is usually paid in addition to the regular dividend. The preferred dividend is usually paid at a higher rate than the regular dividend.
+
+A preferred stock is a stock that is issued by a corporation that is not a common stock. The preferred stock is usually issued at a higher price than the common stock. The preferred stock is usually issued at a higher rate than the common stock.
+
+A preferred stock is",100,pythia-6.9b
+finance,financial_leverage,financial leverage,declarative,cloze,Financial leverage is,"a common term used in the financial industry to describe the use of debt to increase the financial leverage of a company. Financial leverage is a common term used in the financial industry to describe the use of debt to increase the financial leverage of a company.
+
+Financial leverage is a common term used in the financial industry to describe the use of debt to increase the financial leverage of a company. Financial leverage is a common term used in the financial industry to describe the use of debt to increase the financial leverage of",100,pythia-6.9b
+finance,debt_covenant,debt covenant,declarative,cloze,A debt covenant is,a promise to pay a debt. It is a contract between two parties. The debtor is the party that owes the debt. The creditor is the party that is owed the debt. The creditor is the party that is owed the debt. The debtor is the party that owes the debt. The creditor is the party that is owed the debt. The debtor is the party that owes the debt. The creditor is the party that is owed the debt. The debtor is the party that owes the debt. The,100,pythia-6.9b
+finance,capital_structure,capital structure,declarative,cloze,Capital structure refers to,"the composition of a firm's capital structure, which includes the firm's debt and equity. The capital structure of a firm is a key determinant of its financial performance. The capital structure of a firm is also a key determinant of its risk profile.
+
+The capital structure of a firm is a key determinant of its financial performance. The capital structure of a firm is also a key determinant of its risk profile.
+
+The capital structure of a firm is a key determinant of its financial performance. The",100,pythia-6.9b
+finance,due_diligence,due diligence,declarative,cloze,Due diligence is,"a process of investigation and analysis that is performed to determine the suitability of a potential investment. Due diligence is a process of investigation and analysis that is performed to determine the suitability of a potential investment.
+
+Due diligence is a process of investigation and analysis that is performed to determine the suitability of a potential investment. Due diligence is a process of investigation and analysis that is performed to determine the suitability of a potential investment.
+
+Due diligence is a process of investigation and analysis that is performed to determine the",100,pythia-6.9b
+finance,public_offering,public offering,declarative,cloze,A public offering is,"a sale of securities to the public. The securities are sold to investors who are not affiliated with the company offering the securities. The company offering the securities is called the underwriter.
+
+The underwriter is the company that sells the securities to the public. The underwriter is also called the promoter.
+
+The underwriter is the company that sells the securities to the public. The underwriter is also called the promoter.
+
+The underwriter is the company that sells the securities to the",100,pythia-6.9b
+finance,market_liquidity,market liquidity,declarative,cloze,Market liquidity refers to,"the ease with which a market can be traded. Market liquidity is a function of the number of buyers and sellers, the number of bids and offers, and the price at which the market is traded. Market liquidity is a measure of the ease with which a market can be traded.
+
+Market liquidity is a function of the number of buyers and sellers, the number of bids and offers, and the price at which the market is traded. Market liquidity is a measure of the ease with which a market",100,pythia-6.9b
+finance,trade_settlement,trade settlement,declarative,cloze,Trade settlement is,"a process of resolving disputes between two parties. The process is usually initiated by one party to the dispute, and is usually resolved by the other party. The process is usually initiated by one party to the dispute, and is usually resolved by the other party.
+
+The process of resolving disputes between two parties is called trade settlement. The process is usually initiated by one party to the dispute, and is usually resolved by the other party. The process is usually initiated by one party to the dispute, and",100,pythia-6.9b
+finance,central_clearing,central clearing,declarative,cloze,Central clearing houses,"(CCHs) are financial institutions that provide a central location for clearing and settling securities transactions. CCHs are typically organized as a non-profit corporation, and are regulated by the Securities and Exchange Commission (SEC). CCHs are also known as central securities depositories (CSDs), central securities depositories (CSDs), or central securities depositories (CSDs).
+CCHs are used by broker-dealers, banks, and other financial institutions to clear and settle",100,pythia-6.9b
+finance,maintenance_margin,maintenance margin,declarative,cloze,A maintenance margin is,a safety margin that is added to the design of a system to account for the possibility of unforeseen events. The maintenance margin is a safety margin that is added to the design of a system to account for the possibility of unforeseen events. The maintenance margin is a safety margin that is added to the design of a system to account for the possibility of unforeseen events. The maintenance margin is a safety margin that is added to the design of a system to account for the possibility of un,100,pythia-6.9b
+finance,regulatory_compliance,regulatory compliance,declarative,cloze,Regulatory compliance means,"that you are complying with all the rules and regulations that apply to your business. It is a legal requirement that you are aware of and comply with.
+
+The rules and regulations that apply to your business are constantly changing. You need to be aware of the changes and ensure that you are complying with the new rules and regulations.
+
+The following are some of the most common rules and regulations that apply to your business:
+
+The Fair Trading Act
+
+The Fair Trading Act is",100,pythia-6.9b
+finance,money_laundering,money laundering,declarative,cloze,Money laundering is,a serious crime. It is a crime that is committed by people who are trying to hide their money from the tax authorities. It is a crime that is committed by people who are trying to hide their money from the police. It is a crime that is committed by people who are trying to hide their money from the public. It is a crime that is committed by people who are trying to hide their money from the government. It is a crime that is committed by people who are trying to hide their,100,pythia-6.9b
+finance,asset_allocation,asset allocation,declarative,cloze,Asset allocation is,"a key component of any investment strategy. It is the process of allocating your investment capital among different asset classes. The asset allocation process is a dynamic process that is constantly changing as the market conditions change.
+
+The asset allocation process is a dynamic process that is constantly changing as the market conditions change.
+
+The asset allocation process is a dynamic process that is constantly changing as the market conditions change.
+
+The asset allocation process is a dynamic process that is constantly changing as the market conditions change",100,pythia-6.9b
+finance,systemic_risk,systemic risk,declarative,cloze,Systemic risk is,"a major concern in the financial industry. The financial industry is constantly looking for ways to reduce the risk of financial loss. One way to reduce the risk of financial loss is to reduce the risk of fraud. Fraud is a major concern in the financial industry. Fraud is a major concern in the financial industry because it can result in financial loss. Fraud can result in financial loss because it can result in the loss of money. For example, a fraudster can steal money from a bank account",100,pythia-6.9b
+finance,stress_test,stress test,declarative,cloze,A stress test is,"a test of the ability of a computer system to handle a variety of different types of workloads. Stress testing is typically performed by running a workload on a computer system and measuring the amount of time it takes to complete the workload. Stress testing is typically performed on a computer system to determine whether the computer system is capable of handling a particular workload.
+A stress test may be performed on a computer system to determine whether the computer system is capable of handling a particular workload. For example, a stress test",100,pythia-6.9b
+finance,credit_default,credit default,declarative,cloze,A credit default is,"a financial instrument that is used to transfer the risk of a borrower defaulting on a loan. The credit default is a contract between the borrower and the lender. The lender agrees to lend money to the borrower, and the borrower agrees to repay the loan. The borrower agrees to repay the loan by making payments to the lender. The lender agrees to accept the payments from the borrower, and the borrower agrees to make the payments to the lender. The borrower is said",100,pythia-6.9b
+finance,stock_market,stock market,declarative,cloze,The stock market is,a place where people can make money. It’s a place where people can lose money. It’s a place where people can make money and lose money. It’s a place where people can make money and lose money and make money. It’s a place where people can make money and lose money and make money and lose money. It’s a place where people can make money and lose money and make money and lose money. It’s a place where people can make money,100,pythia-6.9b
+finance,mutual_fund,mutual fund,declarative,cloze,A mutual fund is,"a type of investment fund that pools money from many investors and invests it in a portfolio of stocks, bonds, or other securities. Mutual funds are managed by a mutual fund manager, who is responsible for the day-to-day management of the fund. The fund manager is paid a fee for managing the fund. The fund manager may also receive a performance fee if the fund outperforms a benchmark index.
+
+Mutual funds are a popular investment vehicle for individuals and small businesses. Mutual funds",100,pythia-6.9b
+finance,hedge_fund,hedge fund,declarative,cloze,A hedge fund is,"a private investment firm that pools money from investors to invest in a variety of assets, including stocks, bonds, commodities, and other financial instruments. Hedge funds are generally considered to be less risky than other investment vehicles, such as mutual funds, because they are not required to follow the same rules as other investment vehicles.
+
+Hedge funds are generally considered to be less risky than other investment vehicles, such as mutual funds, because they are not required to follow the same rules as other investment vehicles",100,pythia-6.9b
+finance,bear_market,bear market,declarative,cloze,A bear market is,"defined as a 20% decline from the peak. The market has been in a bear market since March 2009.
+
+The market has been in a bear market since March 2009.
+
+The market has been in a bear market since March 2009.
+
+The market has been in a bear market since March 2009.
+
+The market has been in a bear market since March 2009.
+
+The market has been in a bear market since March 2009.
+
+The market has been in a",100,pythia-6.9b
+finance,bull_market,bull market,declarative,cloze,A bull market is,"a long-term uptrend in the price of a stock or other asset. The bull market is usually characterized by a steady increase in the price of the asset over a period of time. The bull market is often preceded by a bear market, which is a period of declining prices.
+
+The bull market is often associated with a rising economy, which is usually accompanied by rising stock prices. The bull market is often associated with a rising economy, which is usually accompanied by rising stock prices.",100,pythia-6.9b
+finance,credit_rating,credit rating,declarative,cloze,A credit rating is,"a measure of the creditworthiness of a borrower. The credit rating of a borrower is determined by a credit rating agency. The credit rating of a borrower is used by lenders to determine the interest rate they will charge for a loan.
+
+A credit rating is a measure of the creditworthiness of a borrower. The credit rating of a borrower is determined by a credit rating agency. The credit rating of a borrower is used by lenders to determine the interest rate they",100,pythia-6.9b
+finance,tax_shelter,tax shelter,declarative,cloze,A tax shelter is,"a legal arrangement that allows a taxpayer to reduce or eliminate the amount of tax that he or she owes. Tax shelters are often used by high-income taxpayers to reduce their tax liability.
+
+Tax shelters are often used by high-income taxpayers to reduce their tax liability.
+
+Tax shelters are often used by high-income taxpayers to reduce their tax liability.
+
+Tax shelters are often used by high-income taxpayers to reduce their tax liability.
+
+Tax shelters are often used by high",100,pythia-6.9b
+finance,venture_capital,venture capital,declarative,cloze,Venture capital is,"a business model that is used to finance the development of new products and services. It is a form of private equity that is used to finance the development of new products and services. It is a form of private equity that is used to finance the development of new products and services.
+
+Venture capital is a business model that is used to finance the development of new products and services. It is a form of private equity that is used to finance the development of new products and services. It",100,pythia-6.9b
+finance,prime_rate,prime rate,declarative,cloze,The prime rate is,the interest rate that banks charge each other for overnight loans. The prime rate is the rate that banks charge each other for overnight loans. The prime rate is the rate that banks charge each other for overnight loans. The prime rate is the rate that banks charge each other for overnight loans. The prime rate is the rate that banks charge each other for overnight loans. The prime rate is the rate that banks charge each other for overnight loans. The prime rate is the rate that banks charge each other for overnight,100,pythia-6.9b
+finance,fiscal_policy,fiscal policy,declarative,cloze,Fiscal policy refers to,"the government’s fiscal decisions, including tax and spending decisions, and the government’s overall fiscal policy. Fiscal policy is a key element of the government’s economic policy.
+
+The fiscal policy of a country is determined by the government’s budget. The budget is the government’s plan for spending and taxing. The budget is the government’s plan for the next fiscal year.
+
+The budget is the government’s plan for spending and taxing. The budget",100,pythia-6.9b
+finance,trade_deficit,trade deficit,declarative,cloze,A trade deficit occurs when,"a country imports more than it exports. The trade deficit is the difference between the value of imports and the value of exports. The trade deficit is a measure of the imbalance between the demand for and supply of goods and services in the world economy.
+
+The trade deficit is a measure of the imbalance between the demand for and supply of goods and services in the world economy. The trade deficit is the difference between the value of imports and the value of exports.
+
+The trade deficit is the difference",100,pythia-6.9b

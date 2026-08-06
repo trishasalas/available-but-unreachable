@@ -1,0 +1,132 @@
+domain,prompt_id,concept,prompt_type,template_type,prompt,output,max_tokens,model
+medical,oxygen_saturation,oxygen saturation,declarative,cloze,Oxygen saturation refers to,"the percentage of oxygen in the blood. It is measured by pulse oximetry. Pulse oximetry is a noninvasive procedure that measures the oxygen saturation of arterial blood. It is used to monitor patients with heart and lung disease, and those who are undergoing surgery.
+
+Pulse oximetry is a noninvasive procedure that measures the oxygen saturation of arterial blood. It is used to monitor patients with heart and lung disease, and those who are undergoing surgery.
+
+Pulse o",100,pythia-6.9b
+medical,body_temperature,body temperature,declarative,cloze,Body temperature is,a critical factor in the regulation of metabolism and in the maintenance of homeostasis. The mechanisms by which body temperature is regulated are not well understood. The long-term objective of this proposal is to understand the mechanisms by which body temperature is regulated in the mammalian brain. The specific aims of this proposal are to determine the role of the hypothalamic preoptic area (POA) in the regulation of body temperature and to determine the role of the POA in the regulation of the hypothalamic-pituitary-,100,pythia-6.9b
+medical,platelet_count,platelet count,declarative,cloze,Platelet count measures,"in patients with acute coronary syndromes.
+Platelet count is a simple and inexpensive test that is widely used in the diagnosis of acute coronary syndromes (ACS). However, the clinical utility of platelet count in ACS is not well established. We sought to determine the clinical utility of platelet count in ACS. We performed a retrospective analysis of patients with ACS who underwent coronary angiography. The primary end point was the association between platelet count and the presence of ACS. The secondary end point was the association between platelet count",100,pythia-6.9b
+medical,metabolic_panel,metabolic panel,declarative,cloze,A metabolic panel is,"a blood test that measures the levels of various substances in the blood. The panel is used to detect and monitor various metabolic disorders. The panel is also used to monitor the effectiveness of certain medications.
+
+A metabolic panel is a blood test that measures the levels of various substances in the blood. The panel is used to detect and monitor various metabolic disorders. The panel is also used to monitor the effectiveness of certain medications.
+
+A metabolic panel is a blood test that measures the levels of various substances",100,pythia-6.9b
+medical,bacterial_infection,bacterial infection,declarative,cloze,A bacterial infection is caused by,"a variety of bacteria, and is a disease that is caused by a variety of bacteria. In general, a bacterium is a microorganism that is a single-celled organism, and is a living organism that is a single-celled organism.
+A bacterium is a microorganism that is a single-celled organism, and is a living organism that is a single-celled organism. A bacterium is a microorganism that is a single-celled organism, and is",100,pythia-6.9b
+medical,magnetic_resonance,magnetic resonance,declarative,cloze,Magnetic resonance imaging is,"a non-invasive imaging technique that can be used to produce images of the inside of a subject. Typically, the subject is positioned in a magnetic field, and an image is produced based on the relaxation properties of the excited nuclei in the subject.
+Magnetic resonance imaging is particularly useful for imaging the human body. For example, magnetic resonance imaging is commonly used to produce images of the heart, the brain, and the like.
+In magnetic resonance imaging, a magnetic field is applied to the subject",100,pythia-6.9b
+medical,multiple_sclerosis,multiple sclerosis,declarative,cloze,Multiple sclerosis is,"a chronic inflammatory disease of the central nervous system (CNS) characterized by demyelination and axonal loss. The disease is characterized by a wide spectrum of clinical symptoms, including sensory, motor, and cognitive dysfunction. The etiology of MS is unknown, but it is believed to be an autoimmune disease in which the immune system attacks the myelin sheath surrounding the axons of the CNS.
+The most common form of MS is relapsing-remitting MS (RRMS), which is characterized by acute episodes",100,pythia-6.9b
+medical,complete_remission,complete remission,declarative,cloze,Complete remission means,"that the patient has no evidence of disease on physical examination, imaging studies, and laboratory tests.
+
+Partial remission means that the patient has no evidence of disease on physical examination, imaging studies, and laboratory tests.
+
+Stable disease means that the patient has no evidence of disease on physical examination, imaging studies, and laboratory tests.
+
+Progressive disease means that the patient has evidence of disease on physical examination, imaging studies, and laboratory tests.
+
+The patient is not eligible for",100,pythia-6.9b
+medical,bowel_resection,bowel resection,declarative,cloze,A bowel resection is,"a surgical procedure in which a section of the bowel is removed. The section of the bowel may be removed for a variety of reasons, including cancer, Crohn's disease, diverticulitis, and other conditions.
+
+A bowel resection is a surgical procedure in which a section of the bowel is removed. The section of the bowel may be removed for a variety of reasons, including cancer, Crohn's disease, diverticulitis, and other conditions.
+
+Revision Information
+
+This content",100,pythia-6.9b
+medical,organ_transplant,organ transplant,declarative,cloze,An organ transplant is,"a surgical procedure in which a healthy organ is replaced with an organ from a donor. The donor organ is removed from the donor and stored in a sterile solution until needed. The donor organ is then transplanted into the recipient.
+
+The organ is removed from the donor by a surgeon and placed in a sterile solution. The donor organ is then transported to the operating room where the recipient is waiting. The donor organ is then placed in the recipient's body.
+
+The donor organ is removed from the",100,pythia-6.9b
+medical,therapeutic_dosage,therapeutic dosage,declarative,cloze,A therapeutic dosage is,"a dosage that is effective for the treatment of a disease or condition. A therapeutic dosage is not necessarily a dosage that is effective for the treatment of all patients. A therapeutic dosage is not necessarily a dosage that is effective for all patients at all times.
+A therapeutic dosage is not necessarily a dosage that is effective for all patients at all times. For example, a therapeutic dosage may be a dosage that is effective for a patient at a particular time, but not effective for the patient at another time.",100,pythia-6.9b
+medical,drug_interaction,drug interaction,declarative,cloze,A drug interaction occurs when,"a drug is taken in combination with another drug or with food. The effect of the drug interaction may be beneficial or harmful.
+
+A drug interaction occurs when a drug is taken in combination with another drug or with food. The effect of the drug interaction may be beneficial or harmful.
+
+A drug interaction occurs when a drug is taken in combination with another drug or with food. The effect of the drug interaction may be beneficial or harmful.
+
+A drug interaction occurs when a drug is taken",100,pythia-6.9b
+medical,antibiotic_resistance,antibiotic resistance,declarative,cloze,Antibiotic resistance is,"a major public health problem worldwide. The emergence of multidrug-resistant (MDR) bacteria is a major cause of morbidity and mortality in hospitals and the community. The development of new antibiotics is a high priority for the pharmaceutical industry. However, the discovery of new antibiotics is a slow and expensive process. The development of new antibiotics is further complicated by the fact that bacteria have developed resistance to many antibiotics.
+The development of new antibiotics is further complicated by the fact that bacteria have developed resistance to many",100,pythia-6.9b
+medical,gastrointestinal_absorption,gastrointestinal absorption,declarative,cloze,Gastrointestinal absorption refers to,"the process by which a substance is absorbed from the gastrointestinal tract into the bloodstream. The gastrointestinal tract is a long tube that extends from the mouth to the anus. The gastrointestinal tract is lined with a membrane called the mucosa. The mucosa is a single layer of cells that line the gastrointestinal tract. The cells of the mucosa are called enterocytes. The enterocytes are the cells that absorb nutrients from the gastrointestinal tract.
+The gastrointestinal tract is divided into three sections: the mouth, the esophagus",100,pythia-6.9b
+medical,respiratory_tract,respiratory tract,declarative,cloze,The respiratory tract is,"the primary site of infection for many pathogenic organisms. The respiratory tract is lined by a pseudostratified epithelium, which is composed of ciliated, secretory, and basal cells. The ciliated cells are responsible for the mucociliary clearance of the respiratory tract. The secretory cells produce and secrete mucus, which is a viscous fluid that traps and removes inhaled particles and pathogens. The basal cells are responsible for the production and maintenance of the epithelial barrier. The basal cells are also responsible for the production",100,pythia-6.9b
+medical,cerebral_cortex,cerebral cortex,declarative,cloze,The cerebral cortex is,"the most complex structure in the mammalian brain. It is composed of many different cell types, each with a unique function. The cerebral cortex is divided into six layers, each with a unique function. The six layers are: the molecular layer, the granular layer, the pyramidal layer, the granular layer, the pyramidal layer, and the white matter. The molecular layer is the innermost layer of the cerebral cortex. It is composed of a single layer of cells called the “molecular layer of the",100,pythia-6.9b
+medical,informed_consent,informed consent,declarative,cloze,Informed consent requires,"that patients be given information about the nature of the procedure, the risks and benefits of the procedure, and the alternatives to the procedure. The informed consent process is a dynamic process that requires the patient to be informed about the procedure, the risks and benefits of the procedure, and the alternatives to the procedure. The informed consent process is a dynamic process that requires the patient to be informed about the procedure, the risks and benefits of the procedure, and the alternatives to the procedure. The informed consent process is",100,pythia-6.9b
+medical,clinical_trial,clinical trial,declarative,cloze,A clinical trial is,"proposed to evaluate the efficacy of a new treatment for patients with chronic hepatitis C. The treatment is a combination of interferon-alpha and ribavirin. The combination is administered for 24 weeks and is compared to a standard 24 week course of interferon-alpha alone. The study will be a randomized, double-blind, placebo-controlled trial. The primary outcome measure will be the rate of sustained viral response. Secondary outcome measures will include the rate of normalization of alanine aminotransferase, the rate of histologic improvement",100,pythia-6.9b
+medical,nerve_damage,nerve damage,declarative,cloze,Nerve damage can result in,"a loss of sensation, which can be painful and can lead to serious injury. The most common type of nerve damage is peripheral neuropathy, which is damage to the nerves that supply the skin, muscles, and other organs. Peripheral neuropathy can be caused by diabetes, alcoholism, and other conditions.
+
+Peripheral neuropathy can be caused by diabetes, alcoholism, and other conditions.
+
+Peripheral neuropathy can be caused by diabetes, alcoholism, and other conditions.
+
+Peripheral",100,pythia-6.9b
+medical,chest_pain,chest pain,declarative,cloze,Chest pain can indicate,"a wide range of conditions, from a simple muscle strain to a life-threatening condition. The most common causes of chest pain are heart disease, pneumonia, and lung cancer.
+
+Chest pain is a symptom of a serious condition. If you have chest pain, you should see your doctor right away.
+
+Chest pain is a symptom of a serious condition. If you have chest pain, you should see your doctor right away.
+
+Chest pain is a symptom of a serious",100,pythia-6.9b
+medical,bone_marrow,bone marrow,declarative,cloze,Bone marrow is,"a complex tissue that is composed of a variety of cell types, including hematopoietic stem cells, stromal cells, and endothelial cells. The hematopoietic stem cells are responsible for the production of all blood cells, including erythrocytes, leukocytes, and platelets. The stromal cells are responsible for the production of the extracellular matrix, and the endothelial cells are responsible for the production of the vascular system.
+The hematopoietic stem cells are located in the bone marrow, and are responsible for the production of all blood cells. The hematopoietic stem",100,pythia-6.9b
+medical,brain_stem,brain stem,declarative,cloze,The brain stem controls,"the cardiovascular system and the autonomic nervous system. The brain stem is divided into the midbrain, pons, and medulla. The midbrain is the area of the brain stem that controls the cardiovascular system. The pons is the area of the brain stem that controls the autonomic nervous system. The medulla is the area of the brain stem that controls the respiratory system.
+
+The brain stem controls the cardiovascular system and the autonomic nervous system. The brain stem is divided into the midbrain,",100,pythia-6.9b
+medical,birth_defect,birth defect,declarative,cloze,A birth defect is,"a structural or functional abnormality of the fetus or infant at birth. Birth defects are the leading cause of infant mortality and morbidity in the United States. The most common birth defects are neural tube defects (NTDs), which are a group of congenital malformations that affect the brain and spinal cord. NTDs are the most common cause of infant mortality and the most common cause of severe disability in children. The incidence of NTDs is approximately 1 in 1000 live births. The most common NTDs",100,pythia-6.9b
+medical,wound_care,wound care,declarative,cloze,Wound care is,a critical component of the management of patients with chronic wounds. The purpose of this study is to determine the effect of a wound care protocol on the healing of chronic wounds.,100,pythia-6.9b
+medical,pain_management,pain management,declarative,cloze,Pain management involves,"the use of a variety of modalities to treat pain. These modalities include, but are not limited to, pharmacological, non-pharmacological, and surgical treatments.
+Pharmacological treatments for pain include, but are not limited to, the use of opioids, non-steroidal anti-inflammatory drugs (NSAIDs), and local anesthetics. Opioids are a class of drugs that act on the central nervous system to produce analgesia. Opioids are typically administered by injection,",100,pythia-6.9b
+medical,blood_clot,blood clot,declarative,cloze,A blood clot is,"a collection of blood cells that have clumped together. Blood clots can form in the heart, lungs, or brain. Blood clots that form in the heart are called a heart attack. Blood clots that form in the lungs are called a pulmonary embolism. Blood clots that form in the brain are called a stroke.
+
+Blood clots can be broken up by the body's own clot-dissolving system. This system is called the fibrinolytic system. The fibrinolytic system",100,pythia-6.9b
+medical,tumor_growth,tumor growth,declarative,cloze,Tumor growth is,"a complex process that involves the interaction of tumor cells with the tumor microenvironment. The tumor microenvironment is composed of a variety of cell types, including endothelial cells, fibroblasts, pericytes, and immune cells. The tumor microenvironment is also composed of a variety of soluble factors, including growth factors, cytokines, and chemokines. The tumor microenvironment is dynamic and can change over time. The tumor microenvironment can also change in response to therapeutic interventions.
+The tumor microenvironment is composed of a variety of cell types, including",100,pythia-6.9b
+medical,joint_replacement,joint replacement,declarative,cloze,A joint replacement is,"a surgical procedure to repair or replace damaged or diseased parts of a joint. The damaged or diseased parts are removed and replaced with prosthetic parts. For example, in a total knee replacement, the damaged or diseased portions of the distal end of the femur and the proximal end of the tibia are removed and replaced with prosthetic parts.
+The prosthetic parts are typically made of metal, ceramic, or plastic. The metal prosthetic parts are typically formed of a metal alloy, such as, for example, a cobalt",100,pythia-6.9b
+medical,immune_response,immune response,declarative,cloze,An immune response is,"a complex process involving a variety of cells and molecules. The immune response is initiated by the recognition of an antigen by a T cell. Antigen recognition by a T cell is mediated by the T cell receptor (TCR) and the antigen is presented to the T cell in the form of a complex with major histocompatibility complex (MHC) molecules. The antigen-MHC complex is recognized by the TCR, which triggers a series of intracellular signaling events that result in the activation of the T",100,pythia-6.9b
+medical,viral_infection,viral infection,declarative,cloze,A viral infection is caused by,"a virus that is transmitted from one person to another. Viruses are very small and are not visible to the naked eye. Viruses are very small and are not visible to the naked eye.
+
+A virus is a small infectious agent that can cause disease in humans and other animals. Viruses are very small and are not visible to the naked eye. Viruses are very small and are not visible to the naked eye.
+
+A virus is a small infectious agent that can cause disease in",100,pythia-6.9b
+medical,chronic_pain,chronic pain,declarative,cloze,Chronic pain is,"a major public health problem that affects more than 100 million Americans. The most common chronic pain conditions are back pain, headache, and arthritis. The most common treatments for chronic pain are non-steroidal anti-inflammatory drugs (NSAIDs), opioids, and muscle relaxants. However, these treatments are not always effective, and they can have serious side effects. The goal of this project is to develop a novel treatment for chronic pain that is effective, safe, and easy to use. The treatment",100,pythia-6.9b
+medical,mental_health,mental health,declarative,cloze,Mental health refers to,"the state of a person's mind, emotions, and behavior. Mental health is a broad term that covers a wide range of issues, including depression, anxiety, and substance abuse. Mental health is a state of well-being in which the individual realizes his or her own abilities, can cope with the normal stresses of life, can work productively and fruitfully, and is able to make a contribution to his or her community.
+
+Mental health is a state of well-being in which",100,pythia-6.9b
+medical,spinal_cord,spinal cord,declarative,cloze,The spinal cord is,"a part of the central nervous system (CNS) that is located in the vertebral canal. The spinal cord is a bundle of nerve fibers that extends from the brain and the brain stem to the lower limbs. The spinal cord is enclosed in the vertebral canal, which is a bony structure that surrounds the spinal cord. The vertebral canal is formed by the vertebral bodies and the intervertebral discs. The spinal cord is protected by the vertebral canal and the spinal cord is not directly exposed to the outside.",100,pythia-6.9b
+medical,scar_tissue,scar tissue,declarative,cloze,Scar tissue is,"a common complication of cutaneous wounds. It is a complex, three-dimensional structure that is composed of a variety of cell types, including fibroblasts, myofibroblasts, endothelial cells, and inflammatory cells. Scar tissue is characterized by the presence of excess extracellular matrix (ECM) proteins, including collagen, fibronectin, and proteoglycans. The ECM is produced by the fibroblasts and myofibroblasts that are present in the scar tissue. The ECM is a complex structure that is composed of a",100,pythia-6.9b
+medical,fluid_retention,fluid retention,declarative,cloze,Fluid retention can cause,"a variety of problems, including edema, ascites, pleural effusion, and hydrothorax. Fluid retention can also cause a variety of symptoms, including dyspnea, orthopnea, and peripheral edema. Fluid retention can be caused by a variety of conditions, including heart failure, cirrhosis, nephrotic syndrome, and cancer.
+Fluid retention can be treated by a variety of methods, including diuretics, vasodilators, and albumin. Diuretics are often used",100,pythia-6.9b
+medical,sleep_apnea,sleep apnea,declarative,cloze,Sleep apnea is,"a common sleep disorder characterized by brief pauses in breathing during sleep. These pauses are typically followed by shallow breathing and arousals from sleep. Sleep apnea is associated with excessive daytime sleepiness, cardiac arrhythmias, and hypertension.
+The most common treatment for sleep apnea is continuous positive airway pressure (CPAP). CPAP is a non-invasive treatment that delivers air through a mask to the nasal passages of the patient. The air pressure is adjusted to maintain a patent airway and prevent",100,pythia-6.9b
+medical,muscle_spasm,muscle spasm,declarative,cloze,A muscle spasm is,"a condition in which a muscle is contracted and is painful. Muscle spasms are often caused by a muscle strain, a muscle tear, or a muscle pull. Muscle spasms can be caused by a variety of conditions, including, for example, a muscle strain, a muscle tear, a muscle pull, a muscle tear, a muscle strain, a muscle pull, a muscle tear, a muscle strain, a muscle pull, a muscle tear, a muscle strain, a muscle pull, a",100,pythia-6.9b
+medical,breast_cancer,breast cancer,declarative,cloze,Breast cancer is,"the most common cancer in women in the United States. The American Cancer Society estimates that in 2010, there will be about 1,460,920 new cases of invasive breast cancer and about 464,190 deaths from breast cancer. The incidence of breast cancer is increasing in the United States, and the mortality rate is decreasing.
+Breast cancer is a heterogeneous disease, and the molecular mechanisms underlying its development and progression are not fully understood. The identification of genes that are differentially expressed in breast cancer may provide",100,pythia-6.9b
+medical,lung_cancer,lung cancer,declarative,cloze,Lung cancer is,"the leading cause of cancer death in the United States. The overall 5-year survival rate for lung cancer is only 15%. The majority of lung cancers are non-small cell lung cancer (NSCLC). The most common form of NSCLC is adenocarcinoma. The incidence of adenocarcinoma is increasing in the United States, and the incidence of adenocarcinoma is increasing in the United States. The incidence of adenocarcinoma is increasing in the United States, and the incidence of adenocarcinoma is increasing in the United States. The incidence of adenocarcinoma",100,pythia-6.9b
+medical,skin_graft,skin graft,declarative,cloze,A skin graft is,"a surgical procedure in which a portion of skin is removed from one area of the body and is transplanted to another area of the body. The skin graft is typically taken from a donor site on the patient's body and is transplanted to a recipient site on the patient's body. The donor site is typically a portion of the patient's own skin that is removed from the patient's body. The donor site is typically located on the patient's back, chest, or other body part. The donor site is",100,pythia-6.9b
+medical,stem_cell,stem cell,declarative,cloze,A stem cell is,"a cell that has the ability to self-renew and to differentiate into specialized cells. Stem cells are found in many tissues and organs, including the brain, bone marrow, blood, skin, muscle, and liver. Stem cells are also found in the lining of the intestine, where they are known as intestinal stem cells.
+
+Stem cells are important for the growth and repair of tissues and organs. They are also important for the development of the fetus. Stem cells are also used",100,pythia-6.9b
+medical,side_effect,side effect,declarative,cloze,A side effect is,"that the user will be able to see the current time in the status bar.
+
+The user will be able to see the current time in the status bar.
+
+−
+
+The user will be able to see the current time in the status bar.
+
++
+
+The user will be able to see the current time in the status bar.
+
+−
+
+The user will be able to see the current time in the status bar.
+
++
+
+The user",100,pythia-6.9b
