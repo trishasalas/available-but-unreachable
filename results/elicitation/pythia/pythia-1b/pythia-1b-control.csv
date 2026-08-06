@@ -1,0 +1,150 @@
+domain,prompt_id,concept,prompt_type,template_type,prompt,output,max_tokens,model
+control,blue_sky,blue sky,declarative,cloze,A blue sky is,"a rare thing in the world of the Internet.
+
+But it’s not just a rare thing. It’s a rare thing that’s been around for a long time.
+
+The sky is blue because it’s a reflection of the sun’s light.
+
+The sun is a reflection of the earth’s light.
+
+The earth is a reflection of the sun’s light.
+
+The sun is a reflection of the earth’s light.",100,pythia-1b
+control,cold_water,cold water,declarative,cloze,Cold water is typically characterized by,"a temperature of about 0° C. to about 10° C. and a relative humidity of about 50% to about 90%. The cold water is typically used for swimming, diving, and other activities that require immersion in cold water. Cold water is typically used for swimming, diving, and other activities that require immersion in cold water.
+Cold water is typically used for swimming, diving, and other activities that require immersion in cold water. Cold water is typically used for swimming, diving, and other",100,pythia-1b
+control,ice_cream,ice cream,declarative,cloze,Ice cream is a frozen dessert made from,"milk, sugar, and flavoring. Ice cream is usually made from cream, milk, and sugar. Ice cream is usually made from milk, cream, and sugar. Ice cream is usually made from milk, cream, and sugar. Ice cream is usually made from milk, cream, and sugar. Ice cream is usually made from milk, cream, and sugar. Ice cream is usually made from milk, cream, and sugar. Ice cream is usually made from milk, cream, and sugar. Ice",100,pythia-1b
+control,life_jacket,life jacket,declarative,cloze,A life jacket is designed to,protect a person from the elements. The life jacket is typically worn by a person who is in a water-based environment. The life jacket is typically worn by a person who is in a water-based environment while swimming. The life jacket is typically worn by a person who is in a water-based environment while swimming while wearing a life jacket. The life jacket is typically worn by a person who is in a water-based environment while swimming while wearing a life jacket while swimming while wearing a life,100,pythia-1b
+control,tea_cup,tea cup,declarative,cloze,A tea cup is a vessel used for,"brewing tea. The tea cup is typically made of a metal, such as stainless steel, and is typically made of a cup-shaped body. The body of the tea cup is typically made of a material that is resistant to oxidation, such as stainless steel. The body of the tea cup is typically made of a material that is resistant to corrosion, such as stainless steel. The body of the tea cup is typically made of a material that is resistant to wear, such as stainless steel. The body",100,pythia-1b
+control,living_room,living room,declarative,cloze,A living room is,"a place where people gather to relax and enjoy each other’s company. It is a place where people can enjoy the company of their friends and family. It is a place where people can enjoy the company of their friends and family.
+
+A living room is a place where people gather to relax and enjoy each other’s company. It is a place where people can enjoy the company of their friends and family.
+
+A living room is a place where people gather to relax and enjoy each",100,pythia-1b
+control,roller_coaster,roller coaster,declarative,cloze,A roller coaster is an amusement ride that,is designed to provide a thrill to the riders. The roller coaster ride is usually a roller coaster that is designed to provide a thrill to the riders. The roller coaster ride is usually a roller coaster that is designed to provide a thrill to the riders. The roller coaster ride is usually a roller coaster that is designed to provide a thrill to the riders. The roller coaster ride is usually a roller coaster that is designed to provide a thrill to the riders. The roller,100,pythia-1b
+control,school_bus,school bus,declarative,cloze,A school bus is used to,"transport students to and from school. The bus is equipped with a number of seats, each of which is assigned to a student. The bus is equipped with a number of doors, each of which is assigned to a student. The doors are opened and closed by a door operator. The door operator is located at the front of the bus and is responsible for opening and closing the doors. The door operator is also responsible for opening and closing the doors of the bus.
+The door operator is located at",100,pythia-1b
+control,grilled_cheese,grilled cheese,declarative,cloze,A grilled cheese sandwich consists of,"a soft, chewy, and crispy bread, a soft, chewy, and crispy cheese, and a soft, chewy, and crispy bun. The sandwich is usually served with a side of mustard, relish, and pickles.
+
+A grilled cheese sandwich consists of a soft, chewy, and crispy bread, a soft, chewy, and crispy cheese, and a soft, chewy, and crispy bun. The sandwich is usually served with",100,pythia-1b
+control,peanut_butter,peanut butter,declarative,cloze,Peanut butter is made from,"peanuts, which are the seeds of the peanut plant. Peanut butter is a nutritious food that is rich in protein, vitamins, minerals, and other nutrients. Peanut butter is also a great source of energy, and is a good source of protein.
+
+Peanut butter is a great source of protein, and is a good source of energy. Peanut butter is also a great source of protein.
+
+Peanut butter is a great source of protein, and is a",100,pythia-1b
+control,hot_chocolate,hot chocolate,declarative,cloze,Hot chocolate is a warm beverage typically made from,"cocoa, milk, sugar, and water. Hot chocolate is typically served in a mug or cup. Hot chocolate is typically served in a mug or cup with a handle. Hot chocolate is typically served in a mug or cup with a handle. Hot chocolate is typically served in a mug or cup with a handle. Hot chocolate is typically served in a mug or cup with a handle. Hot chocolate is typically served in a mug or cup with a handle. Hot chocolate is typically served in a mug or cup",100,pythia-1b
+control,apple_pie,apple pie,declarative,cloze,Apple pie is a dessert featuring,"a pie crust, a filling, and a sweet crust. It is a traditional dessert that is made with apples, sugar, and spices. Apple pie is a very popular dessert in the United States.
+
+Apple pie is a dessert featuring a pie crust, a filling, and a sweet crust. It is a traditional dessert that is made with apples, sugar, and spices. Apple pie is a very popular dessert in the United States.
+
+Apple pie is a dessert featuring a pie crust,",100,pythia-1b
+control,orange_juice,orange juice,declarative,cloze,Orange juice is extracted from,fruit juice by centrifuging the fruit juice. The centrifugal force causes the juice to separate into a clear liquid and a cloudy liquid. The cloudy liquid is then filtered to remove the cloudy liquid. The cloudy liquid is then concentrated to a syrup. The concentrated syrup is then filtered to remove the cloudy liquid. The cloudy liquid is then concentrated to a syrup. The syrup is then filtered to remove the cloudy liquid. The syrup is then concentrated to a syrup. The syrup,100,pythia-1b
+control,baked_beans,baked beans,declarative,cloze,Baked beans are,"a staple in the South. They are a great way to get your kids to eat their vegetables, and they are a great way to get your family to eat their meat.
+
+Baked beans are a staple in the South. They are a great way to get your kids to eat their vegetables, and they are a great way to get your family to eat their meat.
+
+Baked beans are a staple in the South. They are a great way to get your kids to eat their",100,pythia-1b
+control,palm_tree,palm tree,declarative,cloze,A palm tree is characterized by,"its large size, its high density, and its high resistance to wind and water. Palm trees are also characterized by their high resistance to fire, and their high resistance to insects. Palm trees are also characterized by their high resistance to drought, and their high resistance to cold.
+Palm trees are also characterized by their high resistance to diseases, and their high resistance to pests. Palm trees are also characterized by their high resistance to drought, and their high resistance to cold.
+Palm trees",100,pythia-1b
+control,thunder_storm,thunder storm,declarative,cloze,A thunder storm is,"expected to hit the area on Sunday, bringing with it a high of around 40 degrees.
+
+The storm is expected to bring with it a high of around 40 degrees.
+
+The storm is expected to bring with it a high of around 40 degrees.
+
+The storm is expected to bring with it a high of around 40 degrees.
+
+The storm is expected to bring with it a high of around 40 degrees.
+
+The storm is expected to bring with it a high of around",100,pythia-1b
+control,coral_reef,coral reef,declarative,cloze,A coral reef is an underwater formation that,"is composed of a coral reef and a coral reef habitat. Coral reefs are found in tropical and subtropical seas, and are found in the oceanic and continental regions. Coral reefs are found in the tropical and subtropical seas, and are found in the oceanic and continental regions. Coral reefs are found in the tropical and subtropical seas, and are found in the oceanic and continental regions. Coral reefs are found in the tropical and subtropical seas,",100,pythia-1b
+control,shooting_star,shooting star,declarative,cloze,A shooting star is actually,"a star that has been born in the sky.
+
+The star is a star that has been born in the sky.
+
+The star is a star that has been born in the sky.
+
+The star is a star that has been born in the sky.
+
+The star is a star that has been born in the sky.
+
+The star is a star that has been born in the sky.
+
+The star is a star that has been born in the sky.",100,pythia-1b
+control,mountain_lion,mountain lion,declarative,cloze,A mountain lion is,"seen in a photo taken in the mountains of Colorado.
+
+A mountain lion is seen in a photo taken in the mountains of Colorado.
+
+Photo: AP
+
+Photo: AP
+
+Image
+
+A mountain lion is seen in a photo taken in the mountains of Colorado.
+
+Photo: AP
+
+Image
+
+A mountain lion is seen in a photo taken in the mountains of Colorado.
+
+Photo: AP
+
+Image
+
+A mountain lion is seen in a",100,pythia-1b
+control,tidal_wave,tidal wave,declarative,cloze,A tidal wave is a large ocean wave caused by,"the breaking of the surface of the ocean. The wave is caused by the breaking of the surface of the ocean, and is caused by the breaking of the surface of the ocean, and is caused by the breaking of the surface of the ocean, and is caused by the breaking of the surface of the ocean, and is caused by the breaking of the surface of the ocean, and is caused by the breaking of the surface of the ocean, and is caused by the breaking of the surface of the ocean",100,pythia-1b
+control,dining_table,dining table,declarative,cloze,A dining table is furniture used for,"dining. The table is usually made of wood, and is usually made of a material such as wood, metal, plastic, or the like. The table is usually made of a material such as wood, metal, plastic, or the like. The table is usually made of a material such as wood, metal, plastic, or the like. The table is usually made of a material such as wood, metal, plastic, or the like. The table is usually made of a material such as wood",100,pythia-1b
+control,car_keys,car keys,declarative,cloze,Car keys are used to,lock and unlock a vehicle. The keys are typically inserted into a key slot of the vehicle. The key slot is typically located in the dashboard of the vehicle. The key slot is typically located in the center console of the vehicle. The key slot is typically located in the center console of the vehicle. The key slot is typically located in the center console of the vehicle. The key slot is typically located in the center console of the vehicle. The key slot is typically located in the center console of the,100,pythia-1b
+control,washing_machine,washing machine,declarative,cloze,A washing machine is an appliance that,is used to wash laundry by rotating a drum to wash the laundry. The drum is provided with a drum body and a drum cover. The drum body is provided with a drum shaft and a drum shaft cover. The drum shaft is provided with a drum shaft shaft and a drum shaft cover. The drum shaft cover is provided with a drum shaft cover. The drum shaft cover is provided with a drum shaft cover. The drum shaft cover is provided with a drum shaft cover. The drum shaft cover is provided,100,pythia-1b
+control,bath_towels,bath towels,declarative,cloze,Bath towels are used for,"a variety of purposes. Bath towels are used to cleanse the skin, to remove dirt and to provide a comfortable and sanitary environment. Bath towels are also used to provide a comfortable and sanitary environment for the user. Bath towels are also used to provide a comfortable and sanitary environment for the user. Bath towels are also used to provide a comfortable and sanitary environment for the user. Bath towels are also used to provide a comfortable and sanitary environment for the user. Bath towels are also",100,pythia-1b
+control,alarm_clock,alarm clock,declarative,cloze,An alarm clock is a device that,"is used to wake up a person. The alarm clock is usually a small, portable device that is used to wake up a person. The alarm clock is usually used to wake up a person when they are sleeping. The alarm clock is usually used to wake up a person when they are sleeping. The alarm clock is usually used to wake up a person when they are sleeping. The alarm clock is usually used to wake up a person when they are sleeping. The alarm clock is usually used to wake up",100,pythia-1b
+control,light_bulb,light bulb,declarative,cloze,A light bulb is,"a device that converts electrical energy into light. Light bulbs are used in a variety of applications, including the illumination of rooms, the illumination of signs, and the illumination of signs on buildings. Light bulbs are typically made of a metal, such as aluminum, and are typically made of a glass bulb.
+Light bulbs are typically made of a glass bulb, which is a bulb that is made of glass. The glass bulb is typically made of a material that is transparent to visible light. The glass bulb",100,pythia-1b
+control,post_office,post office,declarative,cloze,A post office is an institution that,"is used to deliver mail to a large number of people. The post office is a place where mail is sorted and delivered to the proper address. The post office is a place where mail is sorted and delivered to the proper address. The post office is a place where mail is sorted and delivered to the proper address.
+
+The post office is a place where mail is sorted and delivered to the proper address. The post office is a place where mail is sorted and delivered to the proper address. The",100,pythia-1b
+control,parking_lot,parking lot,declarative,cloze,A parking lot is,"a place where people park their cars. It is a place where people park their cars to get to work, to go shopping, to go to the movies, to go to the gym, to go to the library, to go to the doctor’s office, to go to the dentist’s office, to go to the grocery store, to go to the post office, to go to the bank, to go to the library, to go to the church, to go to the park,",100,pythia-1b
+control,train_station,train station,declarative,cloze,A train station is a facility where,"trains are stored and maintained. The station is typically located in a railroad yard or other facility where trains are stored and maintained. The station may be located in a depot, a yard, a yard, a yard, a yard, a yard, a yard, a yard, a yard, a yard, a yard, a yard, a yard, a yard, a yard, a yard, a yard, a yard, a yard, a yard, a yard, a yard, a yard",100,pythia-1b
+control,fire_station,fire station,declarative,cloze,A fire station is,"seen in the background of a video posted on YouTube on July 9, 2016. (Photo: YouTube)
+
+A fire station is seen in the background of a video posted on YouTube on July 9, 2016. (Photo: YouTube)
+
+A fire station is seen in the background of a video posted on YouTube on July 9, 2016. (Photo: YouTube)
+
+A fire station is seen in the background of a video posted on YouTube on July 9, 2016. (Photo:",100,pythia-1b
+control,swimming_pool,swimming pool,declarative,cloze,A swimming pool is a structure designed for,"the purpose of providing a place for water to be circulated. The structure is typically made of a concrete or other material, and is typically covered with a waterproof material. The waterproof material is typically a membrane, such as a polyethylene film, which is placed over the concrete or other material. The membrane is typically attached to the concrete or other material by a plurality of fasteners, such as nails, screws, or other fasteners.
+The membrane is typically attached to the concrete or other material",100,pythia-1b
+control,coffee_shop,coffee shop,declarative,cloze,A coffee shop is,"a place where you can get a cup of coffee, a snack, or a meal. Coffee shops are also known as cafes, restaurants, and coffee houses. Coffee shops are also known as coffee houses, cafes, and restaurants.
+
+Coffee shops are a place where you can get a cup of coffee, a snack, or a meal. Coffee shops are also known as cafes, restaurants, and coffee houses. Coffee shops are also known as coffee houses, cafes, and",100,pythia-1b
+control,hard_drive,hard drive,declarative,cloze,A hard drive is a computer component used for,"storing data. Hard drives are typically used in computers to store data, such as computer programs, data files, and data blocks. A hard drive is a storage device that is used to store data. A hard drive is a computer component used for storing data. A hard drive is a storage device that is used to store data. A hard drive is a computer component used for storing data. A hard drive is a storage device that is used to store data. A hard drive is a computer component used",100,pythia-1b
+control,operating_system,operating system,declarative,cloze,An operating system is software that,"controls the operation of a computer system. Operating systems are typically used to control the operation of a computer system. For example, an operating system may be used to control the operation of a computer system.
+An operating system may be used to control the operation of a computer system. For example, an operating system may be used to control the operation of a computer system. An operating system may be used to control the operation of a computer system. An operating system may be used to control the operation of",100,pythia-1b
+control,search_engine,search engine,declarative,cloze,A search engine is,"a computer program that uses a database of information to find information. The information in the database is organized into pages, and each page is associated with a keyword. The keywords are used to search for information. The keywords are typically entered by a user, and the search engine uses the keywords to find information.
+The search engine may use a variety of different techniques to find information. For example, the search engine may use a Boolean search. A Boolean search is a search in which the search engine searches",100,pythia-1b
+control,user_name,user name,declarative,cloze,A user name is typically used for,"identifying a user of a computer system. For example, a user name may be used to identify a user of a computer system to a user of a network. A user name may also be used to identify a user of a computer system to a user of a network. A user name may also be used to identify a user of a computer system to a user of a network. A user name may also be used to identify a user of a computer system to a user of a network. A user",100,pythia-1b
+control,power_supply,power supply,declarative,cloze,A power supply is,"a device that converts electrical energy into mechanical energy. The power supply may be used to power a variety of devices, such as a motor, a fan, a compressor, a pump, a generator, and the like.
+A power supply may be used to power a variety of devices, such as a motor, a fan, a compressor, a pump, a generator, and the like.
+A power supply may be used to power a variety of devices, such as a motor, a fan",100,pythia-1b
+control,data_base,data base,declarative,cloze,A data base is,"a collection of data that is organized in a particular way. For example, a data base may be organized in a hierarchical manner, in which each node of the data base is associated with a parent node. In this manner, a data base may be organized as a tree.
+A data base may be organized in a relational manner, in which each node of the data base is associated with a parent node. In this manner, a data base may be organized as a tree.
+A data base",100,pythia-1b
+control,sore_throat,sore throat,declarative,cloze,A sore throat is,"a common symptom of many illnesses. It is caused by a viral infection, which is usually caused by a virus. The symptoms of a sore throat include a sore throat, a runny nose, a stuffy or runny nose, a cough, a headache, a fever, and a sore throat.
+
+The symptoms of a sore throat can be caused by a variety of different viruses. The symptoms of a sore throat can be caused by a variety of different viruses. The symptoms of a sore",100,pythia-1b
+control,blood_pressure,blood pressure,declarative,cloze,Blood pressure refers to,"the pressure exerted by the heart on the walls of the arteries. The pressure is measured in millimeters of mercury (mmHg). The blood pressure is measured in millimeters of mercury (mmHg) and is divided by the heart rate (bpm). The blood pressure is measured in millimeters of mercury (mmHg) and is divided by the heart rate (bpm).
+
+Blood pressure refers to the pressure exerted by the heart on the walls of the arteries. The pressure is measured in millimeters of",100,pythia-1b
+control,collar_bone,collar bone,declarative,cloze,The collar bone is,a small bone that is located on the top of the neck. It is a small bone that is located on the top of the neck. It is a small bone that is located on the top of the neck. It is a small bone that is located on the top of the neck. It is a small bone that is located on the top of the neck. It is a small bone that is located on the top of the neck. It is a small bone that is located on the top of,100,pythia-1b
+control,heart_rate,heart rate,declarative,cloze,Heart rate measures,"of the autonomic nervous system are associated with the risk of developing type 2 diabetes in women.
+The aim of this study was to investigate the association between heart rate measures of the autonomic nervous system and the risk of developing type 2 diabetes in women. A total of 1,932 women aged 40-79 years were recruited from the general population. The participants were followed up for a median of 6.5 years. The risk of developing type 2 diabetes was estimated using Cox proportional hazards models. The risk",100,pythia-1b
+control,dental_appointment,dental appointment,declarative,cloze,A dental appointment is,"a time when you need to make sure that you are in good health and that you are ready to receive the care that you need. If you are not in good health, you may not be able to receive the care that you need.
+
+If you are not in good health, you may not be able to receive the care that you need.
+
+If you are not in good health, you may not be able to receive the care that you need.
+
+If you are not",100,pythia-1b
+control,waiting_room,waiting room,declarative,cloze,A waiting room is,a place where people wait for a doctor or a nurse. It is a place where people wait for a doctor or a nurse. It is a place where people wait for a doctor or a nurse. It is a place where people wait for a doctor or a nurse. It is a place where people wait for a doctor or a nurse. It is a place where people wait for a doctor or a nurse. It is a place where people wait for a doctor or a nurse. It is a place,100,pythia-1b
