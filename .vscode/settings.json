@@ -1,0 +1,11 @@
+{
+    "python-envs.pythonProjects": [
+        {
+            "path": "tmlr/src",
+            "envManager": "ms-python.python:conda",
+            "packageManager": "ms-python.python:conda",
+            "python.defaultInterpreterPath": "~/opt/homebrew/Caskroom/miniconda/base/envs/mechinterp/bin/python"
+        }
+    ]
+}
+
