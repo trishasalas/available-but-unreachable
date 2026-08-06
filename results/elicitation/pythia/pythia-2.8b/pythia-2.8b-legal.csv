@@ -1,0 +1,282 @@
+domain,prompt_id,concept,prompt_type,template_type,prompt,output,max_tokens,model
+legal,due_process,due process,declarative,cloze,Due process is,"a fundamental right in the United States. It is a right that is guaranteed by the Constitution and is a fundamental component of the American legal system. The right to due process is also a right that is protected by the First Amendment.
+
+The right to due process is a right that is guaranteed by the Constitution and is a fundamental component of the American legal system. The right to due process is also a right that is protected by the First Amendment.
+
+The right to due process is a right",100,pythia-2.8b
+legal,equal_protection,equal protection,declarative,cloze,Equal protection refers to,"the principle that all persons are entitled to equal protection of the laws. Equal protection of the laws means that all persons are entitled to the same rights and privileges under the law. The equal protection clause of the Fourteenth Amendment to the United States Constitution provides that no state shall ""deny to any person within its jurisdiction the equal protection of the laws.""
+
+The equal protection clause of the Fourteenth Amendment to the United States Constitution provides that no state shall ""deny to any person within its jurisdiction the equal",100,pythia-2.8b
+legal,commerce_clause,commerce clause,declarative,cloze,The commerce clause is,the most important clause in the Constitution. It is the only clause that gives Congress the power to regulate commerce. The commerce clause is the only clause that gives Congress the power to regulate interstate commerce. The commerce clause is the only clause that gives Congress the power to regulate interstate commerce. The commerce clause is the only clause that gives Congress the power to regulate interstate commerce. The commerce clause is the only clause that gives Congress the power to regulate interstate commerce. The commerce clause is the only clause that gives Congress,100,pythia-2.8b
+legal,fifth_amendment,fifth amendment,declarative,cloze,The fifth amendment provides,"that no person shall be compelled in any criminal case to be a witness against himself, or to give evidence against himself, or to be twice put in jeopardy for the same offence.
+
+The sixth amendment provides that in all criminal prosecutions the accused shall enjoy the right to a speedy and public trial, by an impartial jury of the State and district wherein the crime shall have been committed, which district shall have been previously ascertained by law, and to be informed of the nature and cause of the accusation",100,pythia-2.8b
+legal,free_speech,free speech,declarative,cloze,Free speech is a right that,"is protected by the First Amendment of the United States Constitution. It is a right that is not absolute, but is subject to reasonable regulation. The First Amendment is a guarantee of freedom of speech, press, assembly, petition, and religion.
+
+The First Amendment is a guarantee of freedom of speech, press, assembly, petition, and religion.
+
+The First Amendment is a guarantee of freedom of speech, press, assembly, petition, and religion.
+
+The First Amendment is a guarantee",100,pythia-2.8b
+legal,strict_liability,strict liability,declarative,cloze,Strict liability is a legal doctrine holding,"that a person who sells a product is not liable for injuries caused by the product unless the seller knew or should have known that the product was dangerous. The doctrine is based on the principle that a seller of a product is not liable for injuries caused by the product unless the seller knew or should have known that the product was dangerous.
+
+Strict liability is a legal doctrine holding that a person who sells a product is not liable for injuries caused by the product unless the seller knew or should have known",100,pythia-2.8b
+legal,punitive_damages,punitive damages,declarative,cloze,Punitive damages are awarded to,"a plaintiff who proves that the defendant's conduct was willful, wanton, or malicious. The plaintiff must prove that the defendant's conduct was intentional, deliberate, or reckless.
+
+The plaintiff must prove that the defendant's conduct was willful, wanton, or malicious.
+
+The plaintiff must prove that the defendant's conduct was intentional, deliberate, or reckless.
+
+The plaintiff must prove that the defendant's conduct was willful, wanton, or malicious.
+
+The plaintiff must prove",100,pythia-2.8b
+legal,sovereign_immunity,sovereign immunity,declarative,cloze,Sovereign immunity is,"a doctrine that protects the government from lawsuits. The doctrine is based on the idea that the government is not subject to the same rules as private citizens. The doctrine is not absolute, however. The Supreme Court has held that the government can be sued for damages in certain circumstances.
+
+The doctrine of sovereign immunity is based on the idea that the government is not subject to the same rules as private citizens. The doctrine is not absolute, however. The Supreme Court has held that the government can be sued",100,pythia-2.8b
+legal,grand_indictment,grand indictment,declarative,cloze,A grand indictment is,"being prepared against the former head of the FBI, James Comey, for allegedly leaking classified information to the media.
+
+Comey was fired by President Trump on Tuesday after he was found to have leaked memos to a friend detailing his conversations with Trump.
+
+The FBI is reportedly preparing a criminal referral against Comey for allegedly leaking classified information to the media.
+
+The FBI is reportedly preparing a criminal referral against James Comey for allegedly leaking classified information to the media.
+
+The FBI is reportedly",100,pythia-2.8b
+legal,guilty_plea,guilty plea,declarative,cloze,A guilty plea is when,"a defendant pleads guilty to a crime. The defendant admits to the crime and agrees to the punishment. A plea bargain is when a defendant agrees to plead guilty to a crime in exchange for a lesser punishment.
+
+A plea bargain is a negotiation between the prosecutor and the defense attorney. The prosecutor and defense attorney agree on the punishment for the crime. The prosecutor and defense attorney then present the plea bargain to the judge. The judge then decides whether to accept the plea bargain.
+
+A plea",100,pythia-2.8b
+legal,excessive_bail,excessive bail,declarative,cloze,Excessive bail is prohibited by,"the Constitution. The Supreme Court has held that the Constitution prohibits excessive bail. The Court has also held that the Constitution prohibits excessive bail in the context of criminal cases.
+
+The Supreme Court has held that the Constitution prohibits excessive bail in the context of criminal cases. The Court has also held that the Constitution prohibits excessive bail in the context of criminal cases.
+
+The Supreme Court has held that the Constitution prohibits excessive bail in the context of criminal cases. The Court has also held that the Constitution prohibits",100,pythia-2.8b
+legal,felony_conviction,felony conviction,declarative,cloze,A felony conviction is,"a serious matter. It can have a profound impact on your life. It can also have a profound impact on your family.
+
+A felony conviction can have a profound impact on your life. It can also have a profound impact on your family.
+
+A felony conviction can have a profound impact on your life. It can also have a profound impact on your family.
+
+A felony conviction can have a profound impact on your life. It can also have a profound impact on your family.",100,pythia-2.8b
+legal,conditional_parole,conditional parole,declarative,cloze,Conditional parole requires,"a judge to find that the prisoner has shown a ""reasonable prospect"" of rehabilitation.
+
+The judge must also find that the prisoner has not been convicted of a crime for which he or she is not suitable for parole.
+
+The judge must also find that the prisoner has not been convicted of a crime for which he or she is not suitable for parole.
+
+The judge must also find that the prisoner has not been convicted of a crime for which he or she is not suitable for parole",100,pythia-2.8b
+legal,joint_custody,joint custody,declarative,cloze,Joint custody means,"that both parents have equal time with their children.
+
+The court will decide whether to grant joint custody or sole custody.
+
+Joint custody means that both parents have equal time with their children.
+
+The court will decide whether to grant joint custody or sole custody.
+
+Joint custody means that both parents have equal time with their children.
+
+The court will decide whether to grant joint custody or sole custody.
+
+Joint custody means that both parents have equal time with their children.",100,pythia-2.8b
+legal,material_breach,material breach,declarative,cloze,A material breach is,"a material failure to comply with a contractual obligation. The term is used in the context of a contract. A material breach is a breach that is so serious that it justifies the other party's termination of the contract.
+
+A material breach is a breach that is so serious that it justifies the other party's termination of the contract.
+
+A material breach is a breach that is so serious that it justifies the other party's termination of the contract.
+
+A material breach is",100,pythia-2.8b
+legal,adequate_consideration,adequate consideration,declarative,cloze,Adequate consideration in a contract means,"that the parties have agreed to the terms of the contract.
+
+Adequate consideration means that the parties have agreed to the terms of the contract.
+
+Adequate consideration means that the parties have agreed to the terms of the contract.
+
+Adequate consideration means that the parties have agreed to the terms of the contract.
+
+Adequate consideration means that the parties have agreed to the terms of the contract.
+
+Adequate consideration means",100,pythia-2.8b
+legal,arbitration_clause,arbitration clause,declarative,cloze,An arbitration clause is,"a clause in a contract that requires the parties to resolve their disputes through arbitration. The clause is usually found in a contract that involves the purchase of goods or services. Arbitration is a common method of dispute resolution in the United States.
+
+The Federal Arbitration Act (FAA) was passed in 1925 to encourage the use of arbitration as a method of dispute resolution. The FAA requires that arbitration clauses be included in all contracts that involve interstate commerce. The FAA also requires that arbitration clauses be included",100,pythia-2.8b
+legal,specific_performance,specific performance,declarative,cloze,Specific performance is a remedy that,"is used to address the problem of a party's inability to perform a contract. The remedy is used to address the problem of a party's inability to perform a contract. The remedy is used to address the problem of a party's inability to perform a contract.
+
+The remedy is used to address the problem of a party's inability to perform a contract. The remedy is used to address the problem of a party's inability to perform a contract.
+
+The remedy is used to address the problem",100,pythia-2.8b
+legal,preliminary_injunction,preliminary injunction,declarative,cloze,A preliminary injunction is,"a powerful tool that can be used to stop a company from continuing to violate the law.
+
+The preliminary injunction is a powerful tool that can be used to stop a company from continuing to violate the law.
+
+The preliminary injunction is a powerful tool that can be used to stop a company from continuing to violate the law.
+
+The preliminary injunction is a powerful tool that can be used to stop a company from continuing to violate the law.
+
+The preliminary injunction is a powerful tool that",100,pythia-2.8b
+legal,oral_deposition,oral deposition,declarative,cloze,An oral deposition is,"a form of testimony in which a witness testifies orally in front of a jury. The witness is not under oath, but is subject to cross-examination. The witness is not required to be present in court, but is subject to the rules of evidence.
+
+The term oral deposition is also used to refer to the testimony of a witness who is not present in court. In this case, the witness is not subject to cross-examination.
+
+The term oral deposition is also used to",100,pythia-2.8b
+legal,personal_jurisdiction,personal jurisdiction,declarative,cloze,Personal jurisdiction refers to,"the power of a court to hear and determine a case involving a person who is not a party to the litigation. The power of a court to hear and determine a case involving a person who is not a party to the litigation is called personal jurisdiction. Personal jurisdiction is a fundamental principle of the law of the United States.
+
+Personal jurisdiction is a legal concept that is used to determine whether a court has the power to hear and determine a case involving a person who is not a party to the litigation",100,pythia-2.8b
+legal,electronic_discovery,electronic discovery,declarative,cloze,Electronic discovery is,"a process by which a party may obtain information from another party. The information may be in the form of documents, data, or other information. The information may be in electronic form. The information may be in paper form. The information may be in any form.
+Electronic discovery is a process by which a party may obtain information from another party. The information may be in the form of documents, data, or other information. The information may be in electronic form. The information may be in paper",100,pythia-2.8b
+legal,summary_motion,summary motion,declarative,cloze,A summary motion is,"a motion that is filed in a court of law and is usually filed by a plaintiff or defendant. The summary motion is usually filed in a court of law to request a court to decide the case on the merits. The summary motion is usually filed in a court of law to request a court to decide the case on the merits. The summary motion is usually filed in a court of law to request a court to decide the case on the merits.
+
+A summary motion is a motion that is filed",100,pythia-2.8b
+legal,proper_venue,proper venue,declarative,cloze,Proper venue is determined by,"the type of event, the number of people attending, and the type of event.
+
+The following are the most common types of events that require a venue:
+
+Weddings
+
+Birthdays
+
+Anniversaries
+
+Birthday parties
+
+Bachelor/Bachelorette parties
+
+Graduation parties
+
+Corporate events
+
+Wedding receptions
+
+Birthday parties
+
+Bachelor/Bachelorette parties
+
+Graduation",100,pythia-2.8b
+legal,patent_infringement,patent infringement,declarative,cloze,Patent infringement occurs when,"a person or entity uses the patented invention without permission. The most common form of patent infringement is patent infringement by direct infringement. Direct infringement occurs when a person or entity uses the patented invention without permission. The most common form of direct infringement is patent infringement by direct infringement.
+
+The most common form of patent infringement is patent infringement by direct infringement.
+
+The most common form of patent infringement is patent infringement by direct infringement.
+
+The most common form of patent infringement is patent infringement by direct",100,pythia-2.8b
+legal,articles_incorporation,articles incorporation,declarative,cloze,Articles of incorporation are,"filed with the Secretary of State of the State of New York.
+
+The name of the corporation shall be the ""New York State Association of Realtors, Inc.""
+
+The name of the corporation shall be changed to the ""New York State Association of Realtors, Inc.""
+
+The name of the corporation shall be changed to the ""New York State Association of Realtors, Inc.""
+
+The name of the corporation shall be changed to the ""New York State Association",100,pythia-2.8b
+legal,hostile_merger,hostile merger,declarative,cloze,A hostile merger is,a merger that is not friendly. The hostile merger is a merger that is not friendly. The hostile merger is a merger that is not friendly. The hostile merger is a merger that is not friendly. The hostile merger is a merger that is not friendly. The hostile merger is a merger that is not friendly. The hostile merger is a merger that is not friendly. The hostile merger is a merger that is not friendly. The hostile merger is a merger that is not friendly. The hostile merger is a,100,pythia-2.8b
+legal,statute_limitations,statute limitations,declarative,cloze,A statute of limitations is,"a legal term that refers to the time period in which a person or entity must file a lawsuit or claim against another person or entity. The statute of limitations is a legal term that refers to the time period in which a person or entity must file a lawsuit or claim against another person or entity. The statute of limitations is a legal term that refers to the time period in which a person or entity must file a lawsuit or claim against another person or entity.
+
+The statute of limitations is a legal",100,pythia-2.8b
+legal,legal_standing,legal standing,declarative,cloze,Legal standing is the right to,be heard in a court of law. Legal standing is the right to be heard in a court of law. It is the right to be heard in a court of law. It is the right to be heard in a court of law. It is the right to be heard in a court of law. It is the right to be heard in a court of law. It is the right to be heard in a court of law. It is the right to be heard in a court of law.,100,pythia-2.8b
+legal,binding_precedent,binding precedent,declarative,cloze,A binding precedent is,"a legal precedent that is binding on the parties to the case.
+
+A binding precedent is a legal precedent that is binding on the parties to the case.
+
+A binding precedent is a legal precedent that is binding on the parties to the case.
+
+A binding precedent is a legal precedent that is binding on the parties to the case.
+
+A binding precedent is a legal precedent that is binding on the parties to the case.
+
+A binding precedent is a legal precedent that is",100,pythia-2.8b
+legal,judicial_review,judicial review,declarative,cloze,Judicial review is,"a common law doctrine that allows courts to review the actions of government officials. The doctrine is based on the principle that the courts are the final arbiters of the law and that the courts should not be bound by the actions of government officials.
+
+The doctrine is based on the principle that the courts are the final arbiters of the law and that the courts should not be bound by the actions of government officials.
+
+The doctrine is based on the principle that the courts are the final arbiters",100,pythia-2.8b
+legal,civil_lawsuit,civil lawsuit,declarative,cloze,A civil lawsuit is,"being filed against the city of San Diego and the San Diego Unified School District for allegedly failing to protect students from sexual abuse by a teacher.
+
+The lawsuit, filed by the law firm of Keker & Van Nest, alleges that the school district failed to properly investigate and discipline the teacher, who was accused of sexually abusing a student.
+
+The lawsuit alleges that the teacher, identified as John Doe, was allowed to continue working with students despite the fact that he was accused of sexually",100,pythia-2.8b
+legal,criminal_record,criminal record,declarative,cloze,A criminal record is,"a serious matter. It can affect your ability to get a job, get a loan, or even get a job interview. It can also affect your ability to get a job in a certain field.
+
+A criminal record can also affect your ability to get a job in a certain field.
+
+A criminal record can affect your ability to get a job in a certain field.
+
+A criminal record can affect your ability to get a job in a certain field.
+
+A criminal record",100,pythia-2.8b
+legal,search_warrant,search warrant,declarative,cloze,A search warrant is,"being executed at a home in the city's west end.
+
+The warrant was issued by a judge in the city's west end.
+
+The warrant was issued by a judge in the city's west end.
+
+The warrant was issued by a judge in the city's west end.
+
+The warrant was issued by a judge in the city's west end.
+
+The warrant was issued by a judge in the city's west end.
+
+The warrant was issued by a",100,pythia-2.8b
+legal,plea_bargain,plea bargain,declarative,cloze,A plea bargain is,"in the works for a man accused of killing his wife and two children in a home invasion.
+
+The man, identified as David Lee, is accused of killing his wife, Jennifer Lee, and their two children, 3-year-old Abigail and 2-year-old Aiden, in a home invasion in the early morning hours of July 28, according to the Los Angeles County District Attorney’s Office.
+
+The children were found dead in the home, which was located",100,pythia-2.8b
+legal,witness_testimony,witness testimony,declarative,cloze,Witness testimony is,"a critical part of the criminal justice system. The credibility of a witness is often the difference between a conviction and an acquittal.
+
+The credibility of a witness is often the difference between a conviction and an acquittal.
+
+Witnesses are often the only evidence that a defendant is guilty. The credibility of a witness is often the difference between a conviction and an acquittal.
+
+The credibility of a witness is often the difference between a conviction and an acquittal.
+
+Witnesses are often",100,pythia-2.8b
+legal,expert_witness,expert witness,declarative,cloze,An expert witness is,"a person who is qualified to give an opinion on a particular subject. The expert witness is usually a person who has a special knowledge or skill in a particular field. The expert witness is usually called to give an opinion on a particular subject. The expert witness is usually called to give an opinion on a particular subject.
+
+The expert witness is usually called to give an opinion on a particular subject. The expert witness is usually called to give an opinion on a particular subject.
+
+The expert witness",100,pythia-2.8b
+legal,court_order,court order,declarative,cloze,A court order is,"being sought to stop the release of a new book by a former senior official at the Department of Justice (DOJ) that alleges that the Obama administration used the IRS to target conservative groups.
+
+The book, “The Plot to Destroy Trump,” by former DOJ official Lois Lerner, is set to be released on Tuesday.
+
+ADVERTISEMENT
+
+The book, which was published by Regnery Publishing, is set to be released on Tuesday.
+
+The book alleges that",100,pythia-2.8b
+legal,bench_trial,bench trial,declarative,cloze,A bench trial is,"a trial in which the judge, sitting alone, hears the case and decides the facts. The judge is not bound by the rules of evidence, and the jury is not present. The judge is not bound by the rules of evidence, and the jury is not present. The judge is not bound by the rules of evidence, and the jury is not present. The judge is not bound by the rules of evidence, and the jury is not present. The judge is not bound by the rules of evidence",100,pythia-2.8b
+legal,jury_verdict,jury verdict,declarative,cloze,A jury verdict is,"expected in the trial of a former police officer accused of killing a man in a hit-and-run crash in the Bronx.
+
+The jury in the case of former NYPD officer Daniel Pantaleo, who is accused of killing Eric Garner, was sent home for the day on Thursday after deliberating for about three hours.
+
+The jury was sent home for the day after deliberating for about three hours.
+
+The trial of Daniel Pantaleo, who is accused of",100,pythia-2.8b
+legal,class_action,class action,declarative,cloze,A class action lawsuit is,"being filed against the makers of the popular video game ""Grand Theft Auto V"" for allegedly failing to warn players of the dangers of playing the game while under the influence of alcohol.
+
+The lawsuit, filed in Los Angeles Superior Court on Monday, alleges that Rockstar Games, the makers of the game, failed to warn players of the dangers of playing the game while under the influence of alcohol.
+
+The lawsuit, filed by attorney David M. Schultz, alleges that Rockstar Games",100,pythia-2.8b
+legal,double_jeopardy,double jeopardy,declarative,cloze,Double jeopardy is,"a term used to describe a situation where two people are both guilty of the same crime.
+
+In the case of the two men who were arrested for the murder of a young woman, the two men were both charged with the same crime.
+
+The two men were both charged with the same crime.
+
+The two men were both charged with the same crime.
+
+The two men were both charged with the same crime.
+
+The two men were both charged with the same crime",100,pythia-2.8b
+legal,probable_cause,probable cause,declarative,cloze,Probable cause is,"a legal standard that allows police to make an arrest without a warrant. The standard is based on the idea that police have probable cause to believe that a crime has been committed.
+
+The standard is not a guarantee that a crime will be found. It is a legal standard that allows police to make an arrest without a warrant. The standard is based on the idea that police have probable cause to believe that a crime has been committed.
+
+The standard is not a guarantee that a crime will be",100,pythia-2.8b
+legal,restraining_order,restraining order,declarative,cloze,A restraining order is,"in place against a man accused of stalking a woman in the Bronx.
+
+The woman, who asked to remain anonymous, said she was walking home from work on Dec. 28 when she noticed a man following her.
+
+“He was following me, and I was trying to get away from him,” she said. “I was trying to get away from him, and he was following me.”
+
+The woman said she was able to get away from the man, but she said",100,pythia-2.8b

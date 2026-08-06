@@ -1,0 +1,144 @@
+domain,prompt_id,concept,prompt_type,template_type,prompt,output,max_tokens,model
+control,blue_sky,blue sky,declarative,cloze,A blue sky is,"the perfect backdrop for a wedding.
+
+A blue sky is the perfect backdrop for a wedding.
+
+A blue sky is the perfect backdrop for a wedding.
+
+A blue sky is the perfect backdrop for a wedding.
+
+A blue sky is the perfect backdrop for a wedding.
+
+A blue sky is the perfect backdrop for a wedding.
+
+A blue sky is the perfect backdrop for a wedding.
+
+A blue sky is the perfect backdrop for a wedding.",100,pythia-2.8b
+control,cold_water,cold water,declarative,cloze,Cold water is typically characterized by,"a high degree of turbulence, which can be detrimental to the performance of a heat exchanger. Cold water can also be characterized by a high degree of stratification, which can be detrimental to the performance of a heat exchanger.
+In order to reduce the effects of cold water, it is known to provide a heat exchanger with a cold water inlet and a cold water outlet. The cold water inlet and the cold water outlet are typically located in a cold water inlet and a cold water outlet chamber, respectively. The",100,pythia-2.8b
+control,ice_cream,ice cream,declarative,cloze,Ice cream is a frozen dessert made from,"milk, sugar, and cream. Ice cream is usually made by freezing the milk, sugar, and cream together, then churning the mixture to form ice crystals. The ice crystals are then frozen in a freezer to form a solid mass of ice cream.
+
+Ice cream is a popular dessert in many countries around the world. It is a popular treat in the United States, where it is sold in many different flavors. Ice cream is also a popular treat in many other countries around the world.",100,pythia-2.8b
+control,life_jacket,life jacket,declarative,cloze,A life jacket is designed to,keep a person afloat in water. It is a type of life jacket that is designed to keep a person afloat in water. It is a type of life jacket that is designed to keep a person afloat in water. It is a type of life jacket that is designed to keep a person afloat in water. It is a type of life jacket that is designed to keep a person afloat in water. It is a type of life jacket that is designed to keep a person afloat,100,pythia-2.8b
+control,tea_cup,tea cup,declarative,cloze,A tea cup is a vessel used for,"drinking tea. It is usually made of ceramic, glass, or porcelain. The cup is usually made of a single piece of material, but may be made of multiple pieces. The cup is usually made of a single piece of material, but may be made of multiple pieces. The cup is usually made of a single piece of material, but may be made of multiple pieces. The cup is usually made of a single piece of material, but may be made of multiple pieces. The cup is",100,pythia-2.8b
+control,living_room,living room,declarative,cloze,A living room is,a place where you can relax and enjoy your time with your family and friends. It is a place where you can enjoy the comfort of your home. It is a place where you can enjoy the comfort of your home. It is a place where you can enjoy the comfort of your home. It is a place where you can enjoy the comfort of your home. It is a place where you can enjoy the comfort of your home. It is a place where you can enjoy the comfort of your home.,100,pythia-2.8b
+control,roller_coaster,roller coaster,declarative,cloze,A roller coaster is an amusement ride that,is designed to be ridden by a passenger seated on a seat. The roller coaster is typically designed to be ridden by a passenger seated on a seat that is mounted on a track. The track is typically a steel or wood track that is supported by a steel or wood structure. The track is typically supported by a steel or wood structure that is supported by a steel or wood structure. The track is typically supported by a steel or wood structure that is supported by a steel or wood structure.,100,pythia-2.8b
+control,school_bus,school bus,declarative,cloze,A school bus is used to,transport students to and from school. The school bus is a large vehicle that is used to transport students to and from school. The school bus is a large vehicle that is used to transport students to and from school. The school bus is a large vehicle that is used to transport students to and from school. The school bus is a large vehicle that is used to transport students to and from school. The school bus is a large vehicle that is used to transport students to and from school. The school bus,100,pythia-2.8b
+control,grilled_cheese,grilled cheese,declarative,cloze,A grilled cheese sandwich consists of,"a slice of bread, a slice of cheese, and a slice of meat. The meat is usually a ham, a roast beef, or a turkey. The cheese is usually American, cheddar, Swiss, or provolone. The bread is usually white, and the cheese is usually American.
+
+The sandwich is usually served with a side of ketchup, mustard, or mayonnaise.
+
+The sandwich is a favorite of children, and is often served at school lun",100,pythia-2.8b
+control,peanut_butter,peanut butter,declarative,cloze,Peanut butter is made from,"ground peanuts. It is a popular spread in the United States and is used in many recipes. It is also a popular ingredient in many other foods.
+
+Peanut butter is made from ground peanuts. It is a popular spread in the United States and is used in many recipes. It is also a popular ingredient in many other foods.
+
+Peanut butter is made from ground peanuts. It is a popular spread in the United States and is used in many recipes. It is",100,pythia-2.8b
+control,hot_chocolate,hot chocolate,declarative,cloze,Hot chocolate is a warm beverage typically made from,"cocoa powder, sugar, and milk. It is a popular drink in many countries, especially in the United States. It is also a popular drink in many countries, especially in the United States.
+
+Hot chocolate is a warm beverage typically made from cocoa powder, sugar, and milk. It is a popular drink in many countries, especially in the United States. It is also a popular drink in many countries, especially in the United States.
+
+Hot chocolate is a warm beverage typically made from",100,pythia-2.8b
+control,apple_pie,apple pie,declarative,cloze,Apple pie is a dessert featuring,"a fruit filling, usually apple, and a crust. The filling is usually sweetened with sugar or honey, and the crust is usually made with flour, butter, and a little water. Apple pie is a common dessert in the United States, and is often served with ice cream or whipped cream.
+
+The first written mention of apple pie was in a letter written by a woman named Elizabeth Wayland in 1789. The letter was written to her husband, who was serving in the Revolutionary War",100,pythia-2.8b
+control,orange_juice,orange juice,declarative,cloze,Orange juice is extracted from,"the juice of the orange fruit. Orange juice is a popular beverage in the United States and is a popular ingredient in many other beverages. Orange juice is a popular ingredient in many other beverages, including soft drinks, fruit drinks, and fruit juice drinks.
+Orange juice is typically produced by squeezing the juice from the orange fruit. The juice is then separated from the pulp and other solids. The juice is then pasteurized and filtered to remove the solids. The juice is then concentrated to a desired concentration",100,pythia-2.8b
+control,baked_beans,baked beans,declarative,cloze,Baked beans are,"a staple in my house. I love them, and I love them with a little bit of bacon. I’ve been making them for years, and I’ve never had a problem with them. I’ve never had a problem with them because I’ve never had a problem with bacon.
+
+I’ve never had a problem with bacon.
+
+I’ve never had a problem with bacon.
+
+I’ve never had a problem with bacon.
+
+I",100,pythia-2.8b
+control,palm_tree,palm tree,declarative,cloze,A palm tree is characterized by,"a single trunk, a single crown, and a single leaf. The crown is the part of the tree that is above the ground. The trunk is the part of the tree that is below the ground. The leaf is the part of the tree that is above the ground. The crown is the part of the tree that is above the ground. The trunk is the part of the tree that is below the ground. The leaf is the part of the tree that is above the ground. The crown is",100,pythia-2.8b
+control,thunder_storm,thunder storm,declarative,cloze,A thunder storm is,"brewing in the skies above the city of New York. The storm is expected to be a major one, with the National Weather Service issuing a severe thunderstorm warning for the area.
+
+The storm is expected to begin around 2:30 p.m. ET, with the heaviest rain expected to begin around 3 p.m. ET.
+
+The storm is expected to last until around 8 p.m. ET, with the heaviest rain expected to begin around 9 p.m",100,pythia-2.8b
+control,coral_reef,coral reef,declarative,cloze,A coral reef is an underwater formation that,"is composed of living organisms, such as corals, sponges, and other organisms. The coral reef is a habitat for many marine organisms, including fish, crustaceans, and other invertebrates. The coral reef is a habitat for many marine organisms, including fish, crustaceans, and other invertebrates.
+
+The coral reef is an underwater formation that is composed of living organisms, such as corals, sponges, and other organisms. The coral reef is a habitat",100,pythia-2.8b
+control,shooting_star,shooting star,declarative,cloze,A shooting star is actually,"a meteor that has broken up and fallen to Earth. It is a rare sight to see, but it is not a rare sight to hear.
+
+A shooting star is actually a meteor that has broken up and fallen to Earth. It is a rare sight to see, but it is not a rare sight to hear.
+
+A shooting star is actually a meteor that has broken up and fallen to Earth. It is a rare sight to see, but it is not a rare sight to hear",100,pythia-2.8b
+control,mountain_lion,mountain lion,declarative,cloze,A mountain lion is,"on the loose in the San Gabriel Mountains, and it's causing a lot of trouble.
+
+The mountain lion was spotted in the San Gabriel Mountains on Monday, and it's causing a lot of trouble.
+
+The mountain lion was spotted in the San Gabriel Mountains on Monday, and it's causing a lot of trouble.
+
+The mountain lion was spotted in the San Gabriel Mountains on Monday, and it's causing a lot of trouble.
+
+The mountain lion was spotted in the San",100,pythia-2.8b
+control,tidal_wave,tidal wave,declarative,cloze,A tidal wave is a large ocean wave caused by,the combined action of wind and water. The wave is generated by the difference in the height of the water surface between the high and low tide. The wave is generated by the difference in the height of the water surface between the high and low tide. The wave is generated by the difference in the height of the water surface between the high and low tide. The wave is generated by the difference in the height of the water surface between the high and low tide. The wave is generated by the difference in,100,pythia-2.8b
+control,dining_table,dining table,declarative,cloze,A dining table is furniture used for,eating and socializing. It is a table that is used for eating and socializing. It is a table that is used for eating and socializing. It is a table that is used for eating and socializing. It is a table that is used for eating and socializing. It is a table that is used for eating and socializing. It is a table that is used for eating and socializing. It is a table that is used for eating and socializing. It is a table,100,pythia-2.8b
+control,car_keys,car keys,declarative,cloze,Car keys are used to,"start and stop the engine of a vehicle. The keys are typically stored in a key fob that is worn on a key chain. The key fob is typically a small, flat, rectangular device that is typically made of plastic or metal. The key fob is typically used to start and stop the engine of the vehicle. The key fob is typically used to start the engine of the vehicle. The key fob is typically used to start the engine of the vehicle. The key fob",100,pythia-2.8b
+control,washing_machine,washing machine,declarative,cloze,A washing machine is an appliance that,"washes clothes by using water and detergent. The washing machine is classified into a pulsator type washing machine and a drum type washing machine according to the type of the washing machine.
+The pulsator type washing machine washes clothes by using water and detergent by rotating a pulsator in a washing tub. The drum type washing machine washes clothes by using water and detergent by rotating a drum in a washing tub.
+The pulsator type washing machine has a structure in which a pulsator is rotated",100,pythia-2.8b
+control,bath_towels,bath towels,declarative,cloze,Bath towels are used for,"a variety of purposes. For example, they are used to dry a person after a shower or bath, to clean a person after a bath or shower, to clean a person after a shower or bath, to clean a person after a bath or shower, to clean a person after a bath or shower, to clean a person after a bath or shower, to clean a person after a bath or shower, to clean a person after a bath or shower, to clean a person after a bath or shower",100,pythia-2.8b
+control,alarm_clock,alarm clock,declarative,cloze,An alarm clock is a device that,is used to wake a person up in the morning. It is a device that is used to wake a person up in the morning. It is a device that is used to wake a person up in the morning. It is a device that is used to wake a person up in the morning. It is a device that is used to wake a person up in the morning. It is a device that is used to wake a person up in the morning. It is a device that is used to wake,100,pythia-2.8b
+control,light_bulb,light bulb,declarative,cloze,A light bulb is,a device that is used to illuminate a space. The light bulb is a device that is used to illuminate a space. The light bulb is a device that is used to illuminate a space. The light bulb is a device that is used to illuminate a space. The light bulb is a device that is used to illuminate a space. The light bulb is a device that is used to illuminate a space. The light bulb is a device that is used to illuminate a space,100,pythia-2.8b
+control,post_office,post office,declarative,cloze,A post office is an institution that,"is essential to the functioning of a country. It is a place where people can send and receive mail. It is also a place where people can get their mail delivered. A post office is a place where people can get their mail delivered. It is also a place where people can get their mail delivered.
+
+A post office is an institution that is essential to the functioning of a country. It is a place where people can send and receive mail. It is also a place where people can get",100,pythia-2.8b
+control,parking_lot,parking lot,declarative,cloze,A parking lot is,"a place where you can park your car, but it is also a place where you can park your mind.
+
+The parking lot is a place where you can park your car, but it is also a place where you can park your mind.
+
+The parking lot is a place where you can park your car, but it is also a place where you can park your mind.
+
+The parking lot is a place where you can park your car, but it is also a place where",100,pythia-2.8b
+control,train_station,train station,declarative,cloze,A train station is a facility where,"people can board and alight trains. It is a place where people can get on and off trains. A train station is a place where people can get on and off trains.
+
+A train station is a facility where people can board and alight trains. It is a place where people can get on and off trains. A train station is a place where people can get on and off trains.
+
+A train station is a facility where people can board and alight trains. It is",100,pythia-2.8b
+control,fire_station,fire station,declarative,cloze,A fire station is,"seen in the background of this photo. The fire station is located in the city of Bremen, Germany.
+
+A fire station is seen in the background of this photo. The fire station is located in the city of Bremen, Germany.
+
+Photo: Bremen Fire Department
+
+Image 2 of 3
+
+A fire station is seen in the background of this photo. The fire station is located in the city of Bremen, Germany.
+
+A fire",100,pythia-2.8b
+control,swimming_pool,swimming pool,declarative,cloze,A swimming pool is a structure designed for,"the purpose of providing a body of water for swimming. The swimming pool is usually constructed of concrete, stone, or other suitable material. The swimming pool is usually surrounded by a fence or wall. The swimming pool is usually surrounded by a fence or wall to prevent children from falling into the swimming pool. The swimming pool is usually surrounded by a fence or wall to prevent children from falling into the swimming pool. The swimming pool is usually surrounded by a fence or wall to prevent children from falling into the swimming",100,pythia-2.8b
+control,coffee_shop,coffee shop,declarative,cloze,A coffee shop is,"a place where you can get a cup of coffee, a pastry, or a sandwich. It is a place where you can sit down and relax. It is a place where you can meet people and talk to them. It is a place where you can get a good cup of coffee. It is a place where you can get a good cup of coffee. It is a place where you can get a good cup of coffee. It is a place where you can get a good cup of coffee.",100,pythia-2.8b
+control,hard_drive,hard drive,declarative,cloze,A hard drive is a computer component used for,"storing data. The hard drive is a device that stores data on magnetic media, such as a disk. The hard drive is a storage device that is used to store data on a disk. The hard drive is a storage device that is used to store data on a disk. The hard drive is a storage device that is used to store data on a disk. The hard drive is a storage device that is used to store data on a disk. The hard drive is a storage device that is used to",100,pythia-2.8b
+control,operating_system,operating system,declarative,cloze,An operating system is software that,"manages computer hardware and software resources. The operating system provides a common interface for applications and operating system services. The operating system is responsible for allocating resources, such as memory, to applications and for managing the execution of the applications. The operating system also provides services to applications, such as input/output (I/O) services, and manages the execution of the applications.
+The operating system is typically implemented as a set of software modules that are executed by a processor. The operating system is typically",100,pythia-2.8b
+control,search_engine,search engine,declarative,cloze,A search engine is,a computer program that searches for information on the Internet. The search engine is a tool that allows a user to search for information on the Internet. The search engine is a tool that allows a user to search for information on the Internet. The search engine is a tool that allows a user to search for information on the Internet. The search engine is a tool that allows a user to search for information on the Internet. The search engine is a tool that allows a user to search for information on the Internet,100,pythia-2.8b
+control,user_name,user name,declarative,cloze,A user name is typically used for,"authentication purposes. The user name is typically a string of characters that is used to identify a user. The user name is typically used to identify a user to a server. The server may then use the user name to authenticate the user.
+A user name may be used to authenticate a user to a server. The user name may be used to identify a user to a server. The server may then use the user name to authenticate the user.
+A user name may be used to",100,pythia-2.8b
+control,power_supply,power supply,declarative,cloze,A power supply is,"a device that converts an input voltage into a regulated output voltage. The output voltage is typically regulated to a desired value by controlling the duty cycle of a switching element. The switching element is typically a transistor, such as a bipolar junction transistor (BJT) or a field effect transistor (FET). The switching element is turned on and off by a control signal. The control signal is typically generated by a control circuit.
+A power supply may be designed to operate at a particular frequency. For example",100,pythia-2.8b
+control,data_base,data base,declarative,cloze,A data base is,a collection of data that is organized in a manner that facilitates the retrieval of data. The data base may be stored in a computer system or on a magnetic or optical disk. The data base may be stored in a computer system or on a magnetic or optical disk. The data base may be stored in a computer system or on a magnetic or optical disk. The data base may be stored in a computer system or on a magnetic or optical disk. The data base may be stored in a computer system or,100,pythia-2.8b
+control,sore_throat,sore throat,declarative,cloze,A sore throat is,"a common ailment that can be caused by a variety of factors. It can be caused by a virus, bacteria, or other infectious agent. It can also be caused by a variety of other factors, including allergies, stress, and other conditions.
+
+A sore throat can be caused by a variety of factors. It can be caused by a virus, bacteria, or other infectious agent. It can also be caused by a variety of other factors, including allergies, stress, and other conditions.",100,pythia-2.8b
+control,blood_pressure,blood pressure,declarative,cloze,Blood pressure refers to,the force of blood against the walls of blood vessels. Blood pressure is the force of blood against the walls of blood vessels. The force of blood against the walls of blood vessels is determined by the amount of blood in the blood vessels and the pressure of the blood against the walls of the blood vessels. The pressure of blood against the walls of blood vessels is determined by the amount of blood in the blood vessels and the resistance of the blood vessels to the flow of blood. The resistance of the blood vessels,100,pythia-2.8b
+control,collar_bone,collar bone,declarative,cloze,The collar bone is,a very important part of the human body. It is the main support for the upper body. It is also the main support for the neck. The collar bone is the main support for the neck. It is also the main support for the upper body. It is also the main support for the upper body. It is also the main support for the upper body. It is also the main support for the upper body. It is also the main support for the upper body. It is also the main,100,pythia-2.8b
+control,heart_rate,heart rate,declarative,cloze,Heart rate measures,"in the assessment of the effects of drugs on the cardiovascular system.
+The heart rate (HR) is a measure of the cardiac output (CO) and is a useful tool in the assessment of the effects of drugs on the cardiovascular system. The HR is a measure of the cardiac output and is a useful tool in the assessment of the effects of drugs on the cardiovascular system. The HR is a measure of the cardiac output and is a useful tool in the assessment of the effects of drugs on the cardiovascular",100,pythia-2.8b
+control,dental_appointment,dental appointment,declarative,cloze,A dental appointment is,"a great way to get a check-up and a clean.
+
+Dental appointments are a great way to get a check-up and a clean.
+
+Dental appointments are a great way to get a check-up and a clean.
+
+Dental appointments are a great way to get a check-up and a clean.
+
+Dental appointments are a great way to get a check-up and a clean.
+
+Dental appointments are a great way to get",100,pythia-2.8b
+control,waiting_room,waiting room,declarative,cloze,A waiting room is,"a place where people wait for something. It can be a doctor's appointment, a dentist's appointment, a job interview, a test, a meeting, a wedding, a funeral, a wedding, a funeral, a job interview, a test, a meeting, a wedding, a funeral, a job interview, a test, a meeting, a wedding, a funeral, a job interview, a test, a meeting, a wedding, a funeral, a job interview, a test, a meeting",100,pythia-2.8b
