@@ -1,7 +1,7 @@
 # Model data captured during Elicitation Battery
 
-- Run (UTC): 2026-08-05T23:11:01.719713+00:00
-- Git commit: b8b67d7 (DIRTY)
+- Run (UTC): 2026-08-06T20:50:24.268136+00:00
+- Git commit: f5f1a95
 
 ## Model
 
@@ -31,11 +31,7 @@
 
 | domain | expected | written | file |
 |---|---|---|---|
-| control | 44 | 44 | `pythia-410m-control.csv` |
-| accessibility | 92 | 92 | `pythia-410m-accessibility.csv` |
-| medical | 42 | 42 | `pythia-410m-medical.csv` |
-| legal | 44 | 44 | `pythia-410m-legal.csv` |
 | finance | 44 | 44 | `pythia-410m-finance.csv` |
 
-**Total rows:** 266
-**Domains completed:** 5 / 5
+**Total rows:** 44
+**Domains completed:** 1 / 1
