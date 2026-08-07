@@ -1,0 +1,157 @@
+prompt_id,concept,prompt_type,template_type,prompt,output,max_tokens,model
+decl_keyboard_interaction_001,keyboard interaction,declarative,cloze,A keyboard interaction is,"a process in which a user interacts with a keyboard to perform a task. For example, a user may interact with a keyboard to perform a task such as typing a word, typing a sentence, or typing a paragraph.
+Typing a word is a process in which a user types a word using a keyboard. A user may type a word using a keyboard by pressing a key on the keyboard. A user may type a word using a keyboard by pressing a key on a keyboard.
+Typing",100,EleutherAI/pythia-410m
+decl_section_heading_001,section heading,declarative,cloze,A section heading is,a section of a document that is used to identify the section of the document. A section heading is typically used to identify a section of a document. A section heading is typically used to identify a section of a document. A section heading is typically used to identify a section of a document. A section heading is typically used to identify a section of a document. A section heading is typically used to identify a section of a document. A section heading is typically used to identify a section of a document.,100,EleutherAI/pythia-410m
+decl_text_alternative_001,text alternative,declarative,cloze,A text alternative is,a text that is not a text. A text alternative is a text that is not a text. A text alternative is a text that is not a text. A text alternative is a text that is not a text. A text alternative is a text that is not a text. A text alternative is a text that is not a text. A text alternative is a text that is not a text. A text alternative is a text that is not a text. A text alternative is a text that is,100,EleutherAI/pythia-410m
+decl_audio_description_001,audio description,declarative,cloze,An audio description is,"a short audio file that can be used to describe a particular event.
+
+Audio description
+
+Audio description
+
+Audio description
+
+Audio description
+
+Audio description
+
+Audio description
+
+Audio description
+
+Audio description
+
+Audio description
+
+Audio description
+
+Audio description
+
+Audio description
+
+Audio description
+
+Audio description
+
+Audio description
+
+Audio description
+
+Audio description
+
+Audio description
+
+Audio description
+
+Audio description
+
+Audio description",100,EleutherAI/pythia-410m
+decl_sign_language_001,sign language,declarative,cloze,Sign language is,a language that is used to communicate with other people. Sign language is a language that is used to communicate with other people. Sign language is a language that is used to communicate with other people. Sign language is a language that is used to communicate with other people. Sign language is a language that is used to communicate with other people. Sign language is a language that is used to communicate with other people. Sign language is a language that is used to communicate with other people. Sign language is a language,100,EleutherAI/pythia-410m
+decl_sensory_characteristics_001,sensory characteristics,declarative,cloze,Sensory characteristics are,"important in the diagnosis of many diseases. For example, the sensory characteristics of a patient's skin are important in the diagnosis of skin cancer. The sensory characteristics of a patient's skin are also important in the diagnosis of a variety of diseases, including, for example, the diagnosis of diabetes.
+Sensory characteristics are also important in the diagnosis of a variety of diseases, including, for example, the diagnosis of diabetes.
+Sensory characteristics are also important in the diagnosis of a variety of diseases,",100,EleutherAI/pythia-410m
+decl_input_purpose_001,input purpose,declarative,cloze,An input purpose is,"a function that is used to input data to a computer system. An input device is a device that is used to input data to a computer system. An input device may be a keyboard, a mouse, a touch screen, a touch pad, a touch pad controller, a touch pad controller controller, a touch pad controller controller, a touch pad controller controller, a touch pad controller controller, a touch pad controller controller, a touch pad controller controller, a touch pad controller controller, a touch pad controller",100,EleutherAI/pythia-410m
+decl_target_size_001,target size,declarative,cloze,A target size is,"a measure of the size of the target that is to be targeted. The target size is typically expressed in the form of a number of bits. For example, a target size of 8 bits is a target size of 256 bits.
+Target size is a measure of the size of the target that is to be targeted. The target size is typically expressed in the form of a number of bits. For example, a target size of 8 bits is a target size of 256 bits.
+Target size is",100,EleutherAI/pythia-410m
+decl_touch_target_001,touch target,declarative,cloze,A touch target is,"a device that is used to detect a touch on a surface. Touch targets are typically used in a variety of applications, such as in a touch screen display, a touch pad, a touch pen, a touch pad, a touch screen, a touch pad, a touch screen, a touch pad, a touch screen, a touch pad, a touch screen, a touch pad, a touch screen, a touch pad, a touch screen, a touch pad, a touch screen, a touch pad,",100,EleutherAI/pythia-410m
+decl_drag_movement_001,drag movement,declarative,cloze,A drag movement is,a movement of a body that is caused by a force applied to the body. Drag is a term used to describe a movement of a body that is caused by a force applied to the body. Drag is a term used to describe a movement of a body that is caused by a force applied to the body. Drag is a term used to describe a movement of a body that is caused by a force applied to the body. Drag is a term used to describe a movement of a body that is caused,100,EleutherAI/pythia-410m
+decl_focus_appearance_001,focus appearance,declarative,cloze,A focus appearance is,a type of presentation that is used to present a topic or a topic-related topic. A focus appearance is a type of presentation that is used to present a topic or a topic-related topic. A focus appearance is a type of presentation that is used to present a topic or a topic-related topic. A focus appearance is a type of presentation that is used to present a topic or a topic-related topic. A focus appearance is a type of presentation that is used to present a topic or,100,EleutherAI/pythia-410m
+decl_consistent_help_001,consistent help,declarative,cloze,Consistent help is,"not always the best thing.
+
+I’ve been a long time reader of this blog, and I’ve been a long time reader of the blog of the same name. I’ve been a long time reader of the blog of the same name, and I’ve been a long time reader of the blog of the same name.
+
+I’ve been a long time reader of the blog of the same name, and I’ve been a long time reader of the blog",100,EleutherAI/pythia-410m
+decl_redundant_entry_001,redundant entry,declarative,cloze,A redundant entry is,a data entry entry that is not required for the operation of the system. A redundant entry is one that is not required for the operation of the system. A redundant entry is one that is not required for the operation of the system. A redundant entry is one that is not required for the operation of the system. A redundant entry is one that is not required for the operation of the system. A redundant entry is one that is not required for the operation of the system. A redundant entry is one,100,EleutherAI/pythia-410m
+decl_accessible_authentication_001,accessible authentication,declarative,cloze,Accessible authentication is,a key component of the Internet of Things (IoT) and is becoming increasingly important. The IoT is a set of technologies that enable devices to communicate with each other and with the Internet. The IoT is a set of technologies that enable devices to communicate with each other and with the Internet. The IoT is a set of technologies that enable devices to communicate with each other and with the Internet. The IoT is a set of technologies that enable devices to communicate with each other and with the Internet. The IoT,100,EleutherAI/pythia-410m
+decl_text_spacing_001,text spacing,declarative,cloze,Text spacing is,"a common problem in many applications. For example, in a web browser, the user may want to have a fixed width text box. However, the user may want to change the width of the text box. In this case, the user may want to change the width of the text box by using a text box control. However, the user may not be able to change the width of the text box by using a text box control.
+In order to solve this problem, the user may use",100,EleutherAI/pythia-410m
+decl_status_message_001,status message,declarative,cloze,A status message is,a message that is sent to a user when a particular action is taken. A status message is sent to a user when a particular action is taken. A status message is sent to a user when a particular action is taken. A status message is sent to a user when a particular action is taken. A status message is sent to a user when a particular action is taken. A status message is sent to a user when a particular action is taken. A status message is sent to a user when a,100,EleutherAI/pythia-410m
+decl_error_identification_001,error identification,declarative,cloze,Error identification is,"a process by which a computer system processes data in order to identify errors. In a typical error identification process, a computer system receives a request for an error identification. The request is sent to a computer system identification (ID) server. The ID server processes the request and identifies the computer system. The computer system is then notified of the error.
+Error identification is a process by which a computer system processes data in order to identify errors. In a typical error identification process, a computer system receives a",100,EleutherAI/pythia-410m
+decl_pointer_cancellation_001,pointer cancellation,declarative,cloze,Pointer cancellation is,"a technique for reducing the number of operations required to perform a given operation. In the context of a computer system, a pointer is a pointer to a memory location. A pointer can be used to access a memory location, and a pointer can be used to access a memory location. A pointer can be used to access a memory location, and a pointer can be used to access a memory location. A pointer can be used to access a memory location, and a pointer can be used to access a memory",100,EleutherAI/pythia-410m
+decl_character_key_001,character key,declarative,cloze,A character key is,a key that is used to access a character in a game. A character key is a key that is used to access a character in a game. A character key is a key that is used to access a character in a game. A character key is a key that is used to access a character in a game. A character key is a key that is used to access a character in a game. A character key is a key that is used to access a character in a game. A character,100,EleutherAI/pythia-410m
+decl_accessibility_tree_001,accessibility tree,declarative,cloze,An accessibility tree is,a tree that is accessible to the public. Accessibility trees are used to help people find information and resources that are accessible to them. Accessibility trees are used to help people find information and resources that are accessible to them. Accessibility trees are used to help people find information and resources that are accessible to them. Accessibility trees are used to help people find information and resources that are accessible to them. Accessibility trees are used to help people find information and resources that are accessible to them. Access,100,EleutherAI/pythia-410m
+decl_accessible_name_001,accessible name,declarative,cloze,An accessible name is,"a name that is not a name, but a name that is accessible.
+
+A name is a name that is not a name, but a name that is accessible.
+
+A name is a name that is not a name, but a name that is accessible.
+
+A name is a name that is not a name, but a name that is accessible.
+
+A name is a name that is not a name, but a name that is accessible.
+
+A name is",100,EleutherAI/pythia-410m
+decl_accessible_description_001,accessible description,declarative,cloze,An accessible description is,a description that is easy to understand and easy to use. It is a description that is easy to understand and easy to use. It is a description that is easy to understand and easy to use. It is a description that is easy to understand and easy to use. It is a description that is easy to understand and easy to use. It is a description that is easy to understand and easy to use. It is a description that is easy to understand and easy to use. It is a description,100,EleutherAI/pythia-410m
+decl_live_region_001,live region,declarative,cloze,A live region is,"a region of a video stream that is not currently being displayed.
+
+A live region is a region of a video stream that is not currently being displayed.
+
+Live Region
+
+A live region is a region of a video stream that is not currently being displayed.
+
+Live Region
+
+A live region is a region of a video stream that is not currently being displayed.
+
+Live Region
+
+A live region is a region of a video stream that is not currently being displayed",100,EleutherAI/pythia-410m
+decl_tab_panel_001,tab panel,declarative,cloze,A tab panel is,"a panel that is used to display information on a screen. A tab panel is typically used to display information on a screen, such as a list of items, a list of people, or a list of items and people. A tab panel may be used to display information on a screen, such as a list of items, a list of people, or a list of items and people.
+A tab panel may be used to display information on a screen, such as a list of items, a",100,EleutherAI/pythia-410m
+decl_radio_group_001,radio group,declarative,cloze,A radio group is,"trying to get the public to understand the dangers of the coronavirus.
+
+The group, called the Public Health Emergency of International Concern, is calling on the public to take a few minutes to listen to a radio broadcast from the U.S. Centers for Disease Control and Prevention.
+
+The broadcast is from the CDC's website.
+
+The CDC says the virus is spread by coughing, sneezing, touching surfaces, and touching your eyes.
+
+The CDC says the virus",100,EleutherAI/pythia-410m
+decl_tree_grid_001,tree grid,declarative,cloze,A tree grid is,a grid of trees that are arranged in a grid pattern. A tree grid is a grid of trees that are arranged in a grid pattern. A tree grid is a grid of trees that are arranged in a grid pattern. A tree grid is a grid of trees that are arranged in a grid pattern. A tree grid is a grid of trees that are arranged in a grid pattern. A tree grid is a grid of trees that are arranged in a grid pattern. A tree grid is a grid of trees,100,EleutherAI/pythia-410m
+decl_menu_bar_001,menu bar,declarative,cloze,A menu bar is,"a type of menu that is displayed on a menu bar. A menu bar is typically used to display a menu of items on a screen. A menu bar may be used to display a menu of items on a screen, such as a television screen, a computer screen, a mobile phone screen, a tablet screen, a laptop screen, a desktop screen, a projector screen, a projector screen, a projector screen, a projector screen, a projector screen, a projector screen, a projector screen, a",100,EleutherAI/pythia-410m
+decl_tool_tip_001,tool tip,declarative,cloze,A tool tip is,"a small, easily visible, and easily read message that is printed on a piece of paper. The message is usually printed in a small font, and is usually printed in a small font size. The message is usually printed in a small font size, and is usually printed in a small font size.
+
+A tool tip is a small, easily visible, and easily read message that is printed on a piece of paper. The message is usually printed in a small font, and is usually printed in",100,EleutherAI/pythia-410m
+decl_combo_box_001,combo box,declarative,cloze,A combo box is,"a box that can be used to combine two or more items.
+
+A combo box is a box that can be used to combine two or more items.
+
+A combo box is a box that can be used to combine two or more items.
+
+A combo box is a box that can be used to combine two or more items.
+
+A combo box is a box that can be used to combine two or more items.
+
+A combo box is a box that can be",100,EleutherAI/pythia-410m
+decl_semantic_markup_001,semantic markup,declarative,cloze,Semantic markup is,"a powerful tool for creating rich content. It is a powerful tool for creating rich content.
+
+The Semantic Markup Language (SML) is a powerful tool for creating rich content. It is a powerful tool for creating rich content.
+
+The Semantic Markup Language (SML) is a powerful tool for creating rich content. It is a powerful tool for creating rich content.
+
+The Semantic Markup Language (SML) is a powerful tool for creating rich content",100,EleutherAI/pythia-410m
+decl_focus_management_001,focus management,declarative,cloze,Focus management is,"a process of managing information in a way that is consistent with the organization’s goals and objectives. It is a process that is used to manage information in a way that is consistent with the organization’s goals and objectives.
+
+Focus management is a process of managing information in a way that is consistent with the organization’s goals and objectives. It is a process that is used to manage information in a way that is consistent with the organization’s goals and objectives.
+
+Focus management is",100,EleutherAI/pythia-410m
+decl_reading_order_001,reading order,declarative,cloze,Reading order is,a very important part of the reading process. It is a process of reading and understanding the text. It is a process of reading and understanding the text. It is a process of reading and understanding the text. It is a process of reading and understanding the text. It is a process of reading and understanding the text. It is a process of reading and understanding the text. It is a process of reading and understanding the text. It is a process of reading and understanding the text. It is a,100,EleutherAI/pythia-410m
+decl_text_formatting_001,text formatting,declarative,cloze,Text formatting is,a very important part of the web design process. It is a very important part of the web design process. It is a very important part of the web design process. It is a very important part of the web design process. It is a very important part of the web design process. It is a very important part of the web design process. It is a very important part of the web design process. It is a very important part of the web design process. It is a very important part,100,EleutherAI/pythia-410m
+decl_form_field_001,form field,declarative,cloze,A form field is,"a field that is used to store information about a user. A form field may be used to store information about a user, such as a name, address, email address, phone number, or other information. A form field may be used to store information about a user, such as a name, address, email address, phone number, or other information. A form field may be used to store information about a user, such as a name, address, email address, phone number, or other",100,EleutherAI/pythia-410m
+decl_landmark_region_001,landmark region,declarative,cloze,A landmark region is,"being created in the city of Kiev, Ukraine, to help the city’s residents with the challenges of the coronavirus pandemic.
+
+The region, which is located in the city of Kiev, is being created in the city of Kiev, Ukraine, to help the city’s residents with the challenges of the coronavirus pandemic.
+
+The region, which is located in the city of Kiev, Ukraine, is being created in the city of Kiev, Ukraine, to help the",100,EleutherAI/pythia-410m
+decl_low_vision_001,low vision,declarative,cloze,Low vision is,a common problem in the elderly. The prevalence of low vision in the elderly is estimated to be between 1% and 5% of the population. The prevalence of low vision in the elderly is higher than that in younger people. The prevalence of low vision in the elderly is higher than that in the younger population. The prevalence of low vision in the elderly is higher than that in the younger population. The prevalence of low vision in the elderly is higher than that in the younger population. The prevalence of low,100,EleutherAI/pythia-410m
+decl_cognitive_disabilities_001,cognitive disabilities,declarative,cloze,Cognitive disabilities are,"a major public health problem. The prevalence of cognitive impairment is increasing, and the number of people with cognitive impairment is expected to increase in the coming years. Cognitive impairment is a heterogeneous group of disorders that are characterized by a decline in cognitive function. Cognitive impairment is a major public health problem, and the prevalence of cognitive impairment is increasing. Cognitive impairment is a heterogeneous group of disorders that are characterized by a decline in cognitive function. Cognitive impairment is a major public health problem, and the prevalence of cognitive impairment",100,EleutherAI/pythia-410m
+decl_universal_design_001,universal design,declarative,cloze,Universal design is,"a concept that has been around for a long time. It is a concept that has been around for a long time, but it has been a concept that has been around for a long time, but it has been a concept that has been around for a long time, but it has been a concept that has been around for a long time, but it has been a concept that has been around for a long time, but it has been a concept that has been around for a long time, but",100,EleutherAI/pythia-410m
+decl_decorative_image_001,decorative image,declarative,cloze,A decorative image is,a picture or image that is used to decorate a room or a piece of furniture. A decorative image is often used to create a sense of style and to create a sense of comfort. A decorative image is often used to create a sense of style and to create a sense of comfort. A decorative image is often used to create a sense of style and to create a sense of comfort. A decorative image is often used to create a sense of style and to create a sense of comfort. A decorative,100,EleutherAI/pythia-410m
+decl_informative_image_001,informative image,declarative,cloze,An informative image is,"a good thing.
+
+I’m not sure if I’m the only one who has this problem, but I’ve been having this problem for a while now. I’ve been using a Canon EOS Rebel T3i for a few years now, and I’ve been using it for a few years now. I’ve been using it for a few years now, and I’ve been using it for a few years now. I’ve been using it for",100,EleutherAI/pythia-410m
+decl_responsive_design_001,responsive design,declarative,cloze,Responsive design is,a design technique that allows a user to change the design of a website in response to a user's needs. Responsive design is a design technique that allows a user to change the design of a website in response to a user's needs. Responsive design is a design technique that allows a user to change the design of a website in response to a user's needs. Responsive design is a design technique that allows a user to change the design of a website in response to a user's needs.,100,EleutherAI/pythia-410m

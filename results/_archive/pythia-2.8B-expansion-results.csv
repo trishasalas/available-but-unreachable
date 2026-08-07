@@ -1,0 +1,177 @@
+prompt_id,concept,prompt_type,template_type,prompt,output,max_tokens,model
+decl_keyboard_interaction_001,keyboard interaction,declarative,cloze,A keyboard interaction is,"a process in which a user interacts with a computer system by using a keyboard. The keyboard interaction may be performed by a user, a software application, or a hardware device. The keyboard interaction may be performed by a user by using a keyboard. The keyboard interaction may be performed by a software application by using a keyboard. The keyboard interaction may be performed by a hardware device by using a keyboard.
+A keyboard interaction may be performed by a user by using a keyboard. The keyboard interaction may be performed",100,EleutherAI/pythia-2.8B
+decl_section_heading_001,section heading,declarative,cloze,A section heading is,a way of grouping together a set of related items. It is a way of organizing a set of related items. It is a way of grouping together a set of related items. It is a way of organizing a set of related items. It is a way of organizing a set of related items. It is a way of organizing a set of related items. It is a way of organizing a set of related items. It is a way of organizing a set of related items. It is a way,100,EleutherAI/pythia-2.8B
+decl_text_alternative_001,text alternative,declarative,cloze,A text alternative is,"available for the following languages:
+
+English
+
+Spanish
+
+French
+
+German
+
+Italian
+
+Portuguese
+
+Russian
+
+Chinese
+
+Japanese
+
+Korean
+
+Dutch
+
+Swedish
+
+Polish
+
+Portuguese
+
+Dutch
+
+Swedish
+
+Polish
+
+Portuguese
+
+Dutch
+
+Swedish
+
+Polish
+
+Portuguese
+
+Dutch
+
+Swedish
+
+Polish
+
+Portuguese
+
+Dutch
+
+Swedish",100,EleutherAI/pythia-2.8B
+decl_audio_description_001,audio description,declarative,cloze,An audio description is,"a way to provide a description of a video or other media content to a user. The audio description is typically presented in a separate audio track that is synchronized with the video or other media content. The audio description may be presented in a separate audio track that is synchronized with the video or other media content, or the audio description may be presented in the same audio track as the video or other media content.
+The audio description may be presented in a separate audio track that is synchronized with the video or",100,EleutherAI/pythia-2.8B
+decl_sign_language_001,sign language,declarative,cloze,Sign language is,"a language of the deaf, and is used to communicate with deaf people.
+
+Sign language is a language of the deaf, and is used to communicate with deaf people.
+
+Sign language is a language of the deaf, and is used to communicate with deaf people.
+
+Sign language is a language of the deaf, and is used to communicate with deaf people.
+
+Sign language is a language of the deaf, and is used to communicate with deaf people.
+
+Sign language is",100,EleutherAI/pythia-2.8B
+decl_sensory_characteristics_001,sensory characteristics,declarative,cloze,Sensory characteristics are,"important for the development of the central nervous system (CNS) and the maintenance of normal function. The olfactory system is a sensory system that is critical for the detection of odorants and the subsequent processing of odor information. The olfactory system is also important for the detection of pheromones, which are chemical signals that are used to communicate with conspecifics. The olfactory system is also important for the detection of food and other environmental stimuli. The olfactory system is also important for the detection of drugs and",100,EleutherAI/pythia-2.8B
+decl_input_purpose_001,input purpose,declarative,cloze,An input purpose is,a purpose that is used to determine the output of a function. The input purpose is a purpose that is used to determine the output of a function. The input purpose is a purpose that is used to determine the output of a function. The input purpose is a purpose that is used to determine the output of a function. The input purpose is a purpose that is used to determine the output of a function. The input purpose is a purpose that is used to determine the output of a function. The input,100,EleutherAI/pythia-2.8B
+decl_target_size_001,target size,declarative,cloze,A target size is,a size of a target that is to be measured. The target size is determined by a size of a target to be measured. The target size is determined by a size of a target to be measured. The target size is determined by a size of a target to be measured. The target size is determined by a size of a target to be measured. The target size is determined by a size of a target to be measured. The target size is determined by a size of a target to be measured,100,EleutherAI/pythia-2.8B
+decl_touch_target_001,touch target,declarative,cloze,A touch target is,"a location on a display screen that can be touched by a user. Touch targets are used in a variety of applications, such as in a touch screen display. A touch screen display is a display that includes a touch sensitive surface that can detect the presence and location of a touch within the display. A touch screen display can be used to display information to a user, such as a menu, a map, or a list of items. A touch screen display can also be used to receive input from a",100,EleutherAI/pythia-2.8B
+decl_drag_movement_001,drag movement,declarative,cloze,A drag movement is,"a movement of a fluid, such as a gas or liquid, caused by a force acting on the fluid. The drag movement is a result of the fluid's resistance to the movement of the fluid. The drag movement is a force that opposes the movement of the fluid. The drag movement is a force that opposes the movement of the fluid. The drag movement is a force that opposes the movement of the fluid. The drag movement is a force that opposes the movement of the fluid.",100,EleutherAI/pythia-2.8B
+decl_focus_appearance_001,focus appearance,declarative,cloze,A focus appearance is,"a technique that is used to focus a light beam on a specific location on a surface. The light beam is typically generated by a light source, such as a laser, and is directed to a surface by a light guide. The light guide is typically a transparent material that is positioned between the light source and the surface. The light beam is then reflected from the surface and is directed back to the light source. The light source then generates a second light beam that is focused on the surface. The light",100,EleutherAI/pythia-2.8B
+decl_consistent_help_001,consistent help,declarative,cloze,Consistent help is,"a key component of the success of any organization. It is the foundation of a strong team, and it is the key to a successful business.
+
+The best way to ensure that your team is consistently providing the best possible service is to have a clear understanding of what your team is doing and why.
+
+In this article, we will look at the different types of help that your team can provide, and how to ensure that your team is providing the best possible help.
+
+Types of",100,EleutherAI/pythia-2.8B
+decl_redundant_entry_001,redundant entry,declarative,cloze,A redundant entry is,a memory location that is used to store a copy of the data stored in a primary memory location. The redundant entry is used to replace the primary memory location if the primary memory location becomes defective. The redundant entry is used to replace the primary memory location if the primary memory location becomes defective. The redundant entry is used to replace the primary memory location if the primary memory location becomes defective. The redundant entry is used to replace the primary memory location if the primary memory location becomes defective. The redundant entry is,100,EleutherAI/pythia-2.8B
+decl_accessible_authentication_001,accessible authentication,declarative,cloze,Accessible authentication is,a key component of the Internet of Things (IoT). It is a key enabler for the Internet of Everything (IoE) and is a key enabler for the Internet of Everything (IoE) and is a key enabler for the Internet of Everything (IoE) and is a key enabler for the Internet of Everything (IoE) and is a key enabler for the Internet of Everything (IoE) and is a key enabler for,100,EleutherAI/pythia-2.8B
+decl_text_spacing_001,text spacing,declarative,cloze,Text spacing is,a very important aspect of a document. It is used to set the distance between the lines of text. The text spacing is also used to set the distance between the lines of text and the lines of text. The text spacing is also used to set the distance between the lines of text and the lines of text. The text spacing is also used to set the distance between the lines of text and the lines of text. The text spacing is also used to set the distance between the lines of text and,100,EleutherAI/pythia-2.8B
+decl_status_message_001,status message,declarative,cloze,A status message is,a message that is sent to a user when a status of a service is changed. The status message is sent to the user in a form of a notification. The status message is sent to the user in a form of a notification. The status message is sent to the user in a form of a notification. The status message is sent to the user in a form of a notification. The status message is sent to the user in a form of a notification. The status message is sent to the user,100,EleutherAI/pythia-2.8B
+decl_error_identification_001,error identification,declarative,cloze,Error identification is,"a key component of any computer system. In the past, error identification has been performed by a human operator. However, as the number of errors in a computer system increases, the time required to identify the errors also increases.
+One approach to reducing the time required to identify errors is to use a computer system that includes a plurality of error identification modules. Each error identification module is configured to identify errors in a computer system. The computer system may include a plurality of computer systems. Each computer system may",100,EleutherAI/pythia-2.8B
+decl_pointer_cancellation_001,pointer cancellation,declarative,cloze,Pointer cancellation is,"a technique that is used to cancel a request for a resource. The resource can be a resource that is being used by a client application, or a resource that is being used by a server application. The resource can be a resource that is being used by a client application, or a resource that is being used by a server application. The resource can be a resource that is being used by a client application, or a resource that is being used by a server application. The resource can be a resource",100,EleutherAI/pythia-2.8B
+decl_character_key_001,character key,declarative,cloze,A character key is,a character that is used to represent a character in a character set. The character set is a set of characters that are used to represent a character in a character set. The character set is a set of characters that are used to represent a character in a character set. The character set is a set of characters that are used to represent a character in a character set. The character set is a set of characters that are used to represent a character in a character set. The character set is a set,100,EleutherAI/pythia-2.8B
+decl_accessibility_tree_001,accessibility tree,declarative,cloze,An accessibility tree is,a tree structure that represents a hierarchy of elements. The elements in the hierarchy are accessible to the user. The elements in the hierarchy are accessible to the user by providing a path to the element. The path is a sequence of elements that are accessible to the user. The elements in the hierarchy are accessible to the user by providing a path to the element. The path is a sequence of elements that are accessible to the user. The elements in the hierarchy are accessible to the user by providing a path to,100,EleutherAI/pythia-2.8B
+decl_accessible_name_001,accessible name,declarative,cloze,An accessible name is,"a name that is easy to pronounce and remember.
+
+The name is easy to pronounce and remember because it is short and easy to spell.
+
+The name is easy to pronounce and remember because it is short and easy to spell.
+
+The name is easy to pronounce and remember because it is short and easy to spell.
+
+The name is easy to pronounce and remember because it is short and easy to spell.
+
+The name is easy to pronounce and remember because it is short",100,EleutherAI/pythia-2.8B
+decl_accessible_description_001,accessible description,declarative,cloze,An accessible description is,"provided of the invention, including the best mode of practicing the invention, as well as the advantages and features of the invention.",100,EleutherAI/pythia-2.8B
+decl_live_region_001,live region,declarative,cloze,A live region is,"a region of a computer system that is accessible to a user. The live region may be a region of a computer system that is accessible to a user, such as a desktop computer system, a laptop computer system, a tablet computer system, a smartphone, a wearable computer system, a virtual reality system, a virtual machine, a virtual machine monitor, a virtual machine hypervisor, a virtual machine host, a virtual machine controller, a virtual machine monitor, a virtual machine hypervisor, a virtual",100,EleutherAI/pythia-2.8B
+decl_tab_panel_001,tab panel,declarative,cloze,A tab panel is,a container that can be used to display a set of tabs. The tabs can be used to display a set of related information. The tabs can be used to display a set of related information. The tabs can be used to display a set of related information. The tabs can be used to display a set of related information. The tabs can be used to display a set of related information. The tabs can be used to display a set of related information. The tabs can be used to display a set,100,EleutherAI/pythia-2.8B
+decl_radio_group_001,radio group,declarative,cloze,A radio group is,"suing the Federal Communications Commission for $1 billion, claiming the agency has failed to enforce the law that requires broadcasters to provide equal time to competing stations.
+
+The lawsuit, filed in the U.S. District Court for the District of Columbia, claims the FCC has failed to enforce the law, which was passed in the 1970s.
+
+The law requires broadcasters to give equal time to competing stations, but the FCC has not enforced the law since the early 1990s, according",100,EleutherAI/pythia-2.8B
+decl_tree_grid_001,tree grid,declarative,cloze,A tree grid is,"a data structure that is used to represent a tree. The tree grid is a two-dimensional array of cells, where each cell is a node of the tree. Each cell is associated with a value that is used to represent the value of the cell. The tree grid is used to represent a tree in a way that is efficient in terms of memory and time.
+A tree grid is a data structure that is used to represent a tree. The tree grid is a two-dimensional array of cells",100,EleutherAI/pythia-2.8B
+decl_menu_bar_001,menu bar,declarative,cloze,A menu bar is,"a common feature of many computer applications. The menu bar is typically displayed at the top of the screen and contains a number of menu items. The menu items are typically arranged in a hierarchical manner, with the most frequently used items at the top of the menu bar. The menu bar is typically associated with a particular application, such as a word processing application, a spreadsheet application, a database application, a web browser, or a media player.
+A menu bar is typically associated with a particular application because",100,EleutherAI/pythia-2.8B
+decl_tool_tip_001,tool tip,declarative,cloze,A tool tip is,"a small piece of text that appears when the mouse hovers over a control. It is a very useful tool for quickly conveying information to the user.
+
+Tool tips are usually displayed when the mouse hovers over a control, but they can also be displayed when the mouse is moved over the control.
+
+Tool tips are usually displayed when the mouse hovers over a control, but they can also be displayed when the mouse is moved over the control.
+
+Tool tips are usually displayed when",100,EleutherAI/pythia-2.8B
+decl_combo_box_001,combo box,declarative,cloze,A combo box is,"a control that allows a user to select from a list of items. The items in the list are typically represented by a list of items, such as a list of files, a list of folders, a list of files in a folder, a list of files in a folder, a list of files in a folder, a list of files in a folder, a list of files in a folder, a list of files in a folder, a list of files in a folder, a list of files",100,EleutherAI/pythia-2.8B
+decl_semantic_markup_001,semantic markup,declarative,cloze,Semantic markup is,"a markup language that is used to describe the meaning of a document. Semantic markup is used to describe the meaning of a document, and is used to describe the meaning of a document. Semantic markup is used to describe the meaning of a document, and is used to describe the meaning of a document. Semantic markup is used to describe the meaning of a document, and is used to describe the meaning of a document. Semantic markup is used to describe the meaning of a document, and",100,EleutherAI/pythia-2.8B
+decl_focus_management_001,focus management,declarative,cloze,Focus management is,"a key component of any successful business.
+
+It’s a key component of any successful business.
+
+It’s a key component of any successful business.
+
+It’s a key component of any successful business.
+
+It’s a key component of any successful business.
+
+It’s a key component of any successful business.
+
+It’s a key component of any successful business.
+
+It’s a key component of any successful business.",100,EleutherAI/pythia-2.8B
+decl_reading_order_001,reading order,declarative,cloze,Reading order is,"not important.
+
+The book is a collection of essays on the history of the United States, written by a group of historians. The essays are not arranged in any particular order, and the reader is free to read them in any order.
+
+The book is divided into three parts. The first part is a general introduction to the history of the United States. The second part is a collection of essays on the history of the United States. The third part is a collection of essays on the",100,EleutherAI/pythia-2.8B
+decl_text_formatting_001,text formatting,declarative,cloze,Text formatting is,"a very important part of any document. It is used to make the text look good and to make it easy to read. The text formatting is done by using different fonts, sizes, colors, and other features.
+
+In this article, we will learn how to format text in Microsoft Word.
+
+How to Format Text in Microsoft Word
+
+To format text in Microsoft Word, you need to go to the Home tab and click on the Format tab.
+
+On the Format tab,",100,EleutherAI/pythia-2.8B
+decl_form_field_001,form field,declarative,cloze,A form field is,a field that is used to collect data from a user. The form field is typically used to collect data from a user and then to submit the data to a server. The form field may be used to collect data from a user and then to submit the data to a server. The form field may be used to collect data from a user and then to submit the data to a server. The form field may be used to collect data from a user and then to submit the data to a server.,100,EleutherAI/pythia-2.8B
+decl_landmark_region_001,landmark region,declarative,cloze,A landmark region is,"a region of a computer system that is used to store data and/or to execute programs. The data and programs are stored in the region in a manner that is optimized for the particular computer system. The region may be a memory region, a disk region, a network region, a storage region, a processor region, a peripheral region, or any other region of a computer system.
+A computer system may include a plurality of regions. For example, a computer system may include a memory region,",100,EleutherAI/pythia-2.8B
+decl_low_vision_001,low vision,declarative,cloze,Low vision is,"a condition that affects the eyesight of people with a visual acuity of 20/40 or worse. It is a major cause of disability in the elderly and is a leading cause of blindness in the world. Low vision is a condition that affects the eyesight of people with a visual acuity of 20/40 or worse. It is a major cause of disability in the elderly and is a leading cause of blindness in the world.
+
+The World Health Organization (WHO) defines low vision as a visual",100,EleutherAI/pythia-2.8B
+decl_cognitive_disabilities_001,cognitive disabilities,declarative,cloze,Cognitive disabilities are,"a major cause of disability in the United States. The prevalence of cognitive disabilities is increasing, and the number of individuals with cognitive disabilities is expected to double by the year 2020. The prevalence of cognitive disabilities is higher in the elderly population, and the elderly population is expected to double by the year 2020. The prevalence of cognitive disabilities is higher in the elderly population, and the elderly population is expected to double by the year 2020.
+
+Cognitive disabilities are a major cause of disability in the United States",100,EleutherAI/pythia-2.8B
+decl_universal_design_001,universal design,declarative,cloze,Universal design is,"a design approach that seeks to make products and services as accessible as possible to all users. It is a design philosophy that seeks to make products and services as accessible as possible to all users. Universal design is a design philosophy that seeks to make products and services as accessible as possible to all users.
+
+Universal design is a design approach that seeks to make products and services as accessible as possible to all users. It is a design philosophy that seeks to make products and services as accessible as possible to all",100,EleutherAI/pythia-2.8B
+decl_decorative_image_001,decorative image,declarative,cloze,A decorative image is,"formed on a substrate by a variety of methods. For example, a decorative image can be formed by applying a liquid material to a substrate, such as a paper substrate, and then drying the liquid material to form a decorative image. The liquid material can be applied to the substrate by a variety of methods, such as by spraying, dipping, or brushing.
+In some cases, the decorative image is formed by applying a liquid material to a substrate, such as a paper substrate, and then drying",100,EleutherAI/pythia-2.8B
+decl_informative_image_001,informative image,declarative,cloze,An informative image is,"a picture that is useful to the viewer. It is a picture that is not only aesthetically pleasing, but also informative. An informative image is a picture that is useful to the viewer. It is a picture that is not only aesthetically pleasing, but also informative.
+
+An informative image is a picture that is useful to the viewer. It is a picture that is not only aesthetically pleasing, but also informative. An informative image is a picture that is useful to the viewer",100,EleutherAI/pythia-2.8B
+decl_responsive_design_001,responsive design,declarative,cloze,Responsive design is,"a term that is used to describe the design of a website that is responsive to the size of the screen that the user is using. It is a design that is responsive to the size of the screen that the user is using.
+
+Responsive design is a term that is used to describe the design of a website that is responsive to the size of the screen that the user is using. It is a design that is responsive to the size of the screen that the user is using.",100,EleutherAI/pythia-2.8B

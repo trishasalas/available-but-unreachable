@@ -1,0 +1,308 @@
+prompt_id,concept,prompt_type,template_type,prompt,output,max_tokens,model
+decl_keyboard_interaction_001,keyboard interaction,declarative,cloze,A keyboard interaction is,"a keystroke that is sent to the computer by a user. The keyboard interaction is usually a keystroke that is sent to the computer by the user.
+
+The keyboard interaction is usually a keystroke that is sent to the computer by the user.
+
+The keyboard interaction is usually a keystroke that is sent to the computer by the user.
+
+The keyboard interaction is usually a keystroke that is sent to the computer by the user.
+
+The keyboard interaction is usually a key",100,gpt2-large
+decl_section_heading_001,section heading,declarative,cloze,A section heading is,"a section of text that is used to identify a section of a document.
+
+A section heading is a section of text that is used to identify a section of a document.
+
+A section heading is a section of text that is used to identify a section of a document.
+
+A section heading is a section of text that is used to identify a section of a document.
+
+A section heading is a section of text that is used to identify a section of a document.",100,gpt2-large
+decl_text_alternative_001,text alternative,declarative,cloze,A text alternative is,"a text that is not a complete sentence. It is a text that is not a complete sentence, but is a part of a sentence.
+
+A text alternative is a text that is not a complete sentence, but is a part of a sentence.
+
+A text alternative is a text that is not a complete sentence, but is a part of a sentence.
+
+A text alternative is a text that is not a complete sentence, but is a part of a sentence.
+
+A",100,gpt2-large
+decl_audio_description_001,audio description,declarative,cloze,An audio description is,"a recording of a conversation between two or more people. It is a recording of a conversation that is intended to be listened to in its entirety.
+
+An audio description is a recording of a conversation that is intended to be listened to in its entirety.
+
+An audio description is a recording of a conversation that is intended to be listened to in its entirety.
+
+An audio description is a recording of a conversation that is intended to be listened to in its entirety.
+
+An audio description",100,gpt2-large
+decl_sign_language_001,sign language,declarative,cloze,Sign language is,"a language that is used to communicate with people who are deaf or hard of hearing. It is a language that is used to communicate with people who are deaf or hard of hearing.
+
+Sign language is a language that is used to communicate with people who are deaf or hard of hearing. It is a language that is used to communicate with people who are deaf or hard of hearing.
+
+Sign language is a language that is used to communicate with people who are deaf or hard of hearing. It",100,gpt2-large
+decl_sensory_characteristics_001,sensory characteristics,declarative,cloze,Sensory characteristics are,"the most important determinants of the quality of life of people with autism spectrum disorder (ASD). The sensory system is a complex system that includes the brain, the spinal cord, and the peripheral nervous system. The sensory system is involved in the perception of touch, sound, smell, taste, and vision. The sensory system is also involved in the processing of information from the environment. The sensory system is also involved in the regulation of body temperature, heart rate, and blood pressure.
+
+The",100,gpt2-large
+decl_input_purpose_001,input purpose,declarative,cloze,An input purpose is,"a function that takes an input and returns a value.
+
+The input purpose is a function that takes an input and returns a value.
+
+The input purpose is a function that takes an input and returns a value.
+
+The input purpose is a function that takes an input and returns a value.
+
+The input purpose is a function that takes an input and returns a value.
+
+The input purpose is a function that takes an input and returns a value.
+
+The input",100,gpt2-large
+decl_target_size_001,target size,declarative,cloze,A target size is,"a number of pixels that is used to determine the size of the target. The target size is usually specified in pixels, but can also be specified in pixels per inch (ppi).
+
+The target size is usually specified in pixels, but can also be specified in pixels per inch (ppi). The target size is usually specified in pixels, but can also be specified in pixels per inch (ppi). The target size is usually specified in pixels, but can also be specified in pixels per",100,gpt2-large
+decl_touch_target_001,touch target,declarative,cloze,A touch target is,"a target that is touched by a spell or effect. Touch targets are not affected by the spell or effect. Touch targets are not affected by the spell or effect.
+
+A touch target is a target that is touched by a spell or effect. Touch targets are not affected by the spell or effect. Touch targets are not affected by the spell or effect.
+
+A touch target is a target that is touched by a spell or effect. Touch targets are not affected by the spell or effect.",100,gpt2-large
+decl_drag_movement_001,drag movement,declarative,cloze,A drag movement is,"a movement that is not based on the traditional drag queen aesthetic. It is a movement that is not based on the traditional drag queen aesthetic.
+
+A drag movement is a movement that is not based on the traditional drag queen aesthetic. It is a movement that is not based on the traditional drag queen aesthetic.
+
+A drag movement is a movement that is not based on the traditional drag queen aesthetic. It is a movement that is not based on the traditional drag queen aesthetic.
+
+A drag",100,gpt2-large
+decl_focus_appearance_001,focus appearance,declarative,cloze,A focus appearance is,"a special appearance in which a character is shown to be focused on something, usually a specific subject.
+
+Contents show]
+
+Overview Edit
+
+A focus appearance is a special appearance in which a character is shown to be focused on something, usually a specific subject.
+
+The focus appearance is usually a special appearance in which the character is shown to be focused on something, usually a specific subject.
+
+The focus appearance is usually a special appearance in which the character is shown to be",100,gpt2-large
+decl_consistent_help_001,consistent help,declarative,cloze,Consistent help is,"a must for any newbie.
+
+I've been playing for a few months now and I've been having a lot of trouble with my first few games. I've been playing a lot of games and I've been playing a lot of games. I've been playing a lot of games and I've been playing a lot of games. I've been playing a lot of games and I've been playing a lot of games. I've been playing a lot of games and I've been playing",100,gpt2-large
+decl_redundant_entry_001,redundant entry,declarative,cloze,A redundant entry is,"a term used to describe a redundant entry in a database. A redundant entry is a database entry that is not needed because it is already in the database.
+
+A redundant entry is a database entry that is not needed because it is already in the database.
+
+A redundant entry is a database entry that is not needed because it is already in the database.
+
+A redundant entry is a database entry that is not needed because it is already in the database.
+
+A redundant entry is",100,gpt2-large
+decl_accessible_authentication_001,accessible authentication,declarative,cloze,Accessible authentication is,"a key component of the security of your application. It is a way to ensure that only authorized users can access your application.
+
+In this article, we will look at how to implement an accessible authentication system in your application.
+
+Accessible Authentication
+
+Accessible authentication is a way to ensure that only authorized users can access your application.
+
+In this article, we will look at how to implement an accessible authentication system in your application.
+
+Accessible Authentication in ASP.NET",100,gpt2-large
+decl_text_spacing_001,text spacing,declarative,cloze,Text spacing is,a very important aspect of the design of a website. It is a very important aspect of the design of a website. It is a very important aspect of the design of a website. It is a very important aspect of the design of a website. It is a very important aspect of the design of a website. It is a very important aspect of the design of a website. It is a very important aspect of the design of a website. It is a very important aspect of the design of a,100,gpt2-large
+decl_status_message_001,status message,declarative,cloze,A status message is,"a message that is sent to the user when the user is in a certain state.
+
+A status message is sent to the user when the user is in a certain state.
+
+A status message is sent to the user when the user is in a certain state.
+
+A status message is sent to the user when the user is in a certain state.
+
+A status message is sent to the user when the user is in a certain state.
+
+A status message is sent",100,gpt2-large
+decl_error_identification_001,error identification,declarative,cloze,Error identification is,"a critical part of the debugging process. It is a critical part of the debugging process because it allows you to identify the cause of an error. It is a critical part of the debugging process because it allows you to identify the cause of an error.
+
+Error identification is a critical part of the debugging process because it allows you to identify the cause of an error. It is a critical part of the debugging process because it allows you to identify the cause of an error.
+
+Error identification is",100,gpt2-large
+decl_pointer_cancellation_001,pointer cancellation,declarative,cloze,Pointer cancellation is,"a common problem in the Linux kernel. It is caused by the fact that the kernel does not properly handle the pointer to the next instruction. This is a problem that is not limited to the Linux kernel.
+
+The problem is caused by the fact that the kernel does not properly handle the pointer to the next instruction. This is a problem that is not limited to the Linux kernel. The problem is caused by the fact that the kernel does not properly handle the pointer to the next instruction. The problem",100,gpt2-large
+decl_character_key_001,character key,declarative,cloze,A character key is,"a key that is used to identify a character in a text file.
+
+The character key is a string of characters that is used to identify a character in a text file.
+
+The character key is a string of characters that is used to identify a character in a text file.
+
+The character key is a string of characters that is used to identify a character in a text file.
+
+The character key is a string of characters that is used to identify a character in a text",100,gpt2-large
+decl_accessibility_tree_001,accessibility tree,declarative,cloze,An accessibility tree is,"a tree that represents the accessibility of a given element.
+
+The accessibility tree is a tree that represents the accessibility of a given element.
+
+The accessibility tree is a tree that represents the accessibility of a given element.
+
+The accessibility tree is a tree that represents the accessibility of a given element.
+
+The accessibility tree is a tree that represents the accessibility of a given element.
+
+The accessibility tree is a tree that represents the accessibility of a given element.
+
+The accessibility",100,gpt2-large
+decl_accessible_name_001,accessible name,declarative,cloze,An accessible name is,"a name that is easy to pronounce and pronounceable.
+
+An accessible name is a name that is easy to pronounce and pronounceable.
+
+An accessible name is a name that is easy to pronounce and pronounceable.
+
+An accessible name is a name that is easy to pronounce and pronounceable.
+
+An accessible name is a name that is easy to pronounce and pronounceable.
+
+An accessible name is a name that is easy to pronounce and pronounceable.
+
+An accessible",100,gpt2-large
+decl_accessible_description_001,accessible description,declarative,cloze,An accessible description is,"available here.
+
+The following is a list of the most common types of errors that can occur when using the command line.
+
+Error Description
+
+The command line is not recognized as a valid command.
+
+The command line is not recognized as a valid command. The command line is not recognized as a valid command. The command line is not recognized as a valid command. The command line is not recognized as a valid command. The command line is not recognized as a valid command.",100,gpt2-large
+decl_live_region_001,live region,declarative,cloze,A live region is,"a region that is not yet loaded. It is a region that is not yet loaded and is not yet used.
+
+Live regions are used to store and load data.
+
+Live regions are used to store and load data.
+
+Live regions are used to store and load data.
+
+Live regions are used to store and load data.
+
+Live regions are used to store and load data.
+
+Live regions are used to store and load data.
+
+Live regions are",100,gpt2-large
+decl_tab_panel_001,tab panel,declarative,cloze,A tab panel is,"a small window that can be used to display information about a tab.
+
+The tab panel is a small window that can be used to display information about a tab.
+
+The tab panel is a small window that can be used to display information about a tab.
+
+The tab panel is a small window that can be used to display information about a tab.
+
+The tab panel is a small window that can be used to display information about a tab.
+
+The tab panel is",100,gpt2-large
+decl_radio_group_001,radio group,declarative,cloze,A radio group is,"suing the FCC over its plan to allow Internet service providers to charge content companies for faster delivery of their content.
+
+The lawsuit, filed in federal court in Washington, D.C., on Monday, argues that the FCC's plan to allow Internet service providers to charge content companies for faster delivery of their content violates the First Amendment.
+
+The lawsuit, filed by the American Civil Liberties Union, argues that the FCC's plan to allow Internet service providers to charge content companies for faster delivery of their",100,gpt2-large
+decl_tree_grid_001,tree grid,declarative,cloze,A tree grid is,"a grid of trees that is used to represent a tree. The grid is made up of a number of trees, each of which is a node in the tree. The grid is made up of a number of trees, each of which is a node in the tree.
+
+The tree grid is used to represent a tree. The grid is made up of a number of trees, each of which is a node in the tree.
+
+The tree grid is used to represent a tree. The",100,gpt2-large
+decl_menu_bar_001,menu bar,declarative,cloze,A menu bar is,"a menu that is displayed on the left side of the screen. It is used to display the menu items that are currently selected.
+
+Menu Bar
+
+The menu bar is a menu that is displayed on the left side of the screen. It is used to display the menu items that are currently selected.
+
+Menu Items
+
+Menu items are the items that are displayed on the menu bar.
+
+Menu Items
+
+Menu items are the items that are displayed on the menu bar.",100,gpt2-large
+decl_tool_tip_001,tool tip,declarative,cloze,A tool tip is,"a piece of information that is displayed on a tool tip.
+
+A tool tip is a piece of information that is displayed on a tool tip.
+
+A tool tip is a piece of information that is displayed on a tool tip.
+
+A tool tip is a piece of information that is displayed on a tool tip.
+
+A tool tip is a piece of information that is displayed on a tool tip.
+
+A tool tip is a piece of information that is displayed on a tool",100,gpt2-large
+decl_combo_box_001,combo box,declarative,cloze,A combo box is,"a type of box that can be used to store a variety of items.
+
+Contents show]
+
+History Edit
+
+The first combo box was created by the Doctor in the year 2999, when he was in the TARDIS. The box was a combination of a computer and a computer terminal. The box was used to store the Doctor's memories and memories of his companions. (TV: The Doctor's Wife)
+
+The Doctor used a combo box to store his memories of his",100,gpt2-large
+decl_semantic_markup_001,semantic markup,declarative,cloze,Semantic markup is,"a way of describing the structure of a document. It is used to describe the structure of a document, such as the order of paragraphs, the order of paragraphs, the order of paragraphs, the order of paragraphs, the order of paragraphs, the order of paragraphs, the order of paragraphs, the order of paragraphs, the order of paragraphs, the order of paragraphs, the order of paragraphs, the order of paragraphs, the order of paragraphs, the order of paragraphs, the order of paragraphs, the order",100,gpt2-large
+decl_focus_management_001,focus management,declarative,cloze,Focus management is,"a technique that helps you to focus on the task at hand. It is a technique that helps you to focus on the task at hand.
+
+Focus management is a technique that helps you to focus on the task at hand. It is a technique that helps you to focus on the task at hand.
+
+Focus management is a technique that helps you to focus on the task at hand. It is a technique that helps you to focus on the task at hand.
+
+Focus management is a",100,gpt2-large
+decl_reading_order_001,reading order,declarative,cloze,Reading order is,important. It's the first thing you learn in the book. It's the first thing you learn in the movie. It's the first thing you learn in the book. It's the first thing you learn in the movie. It's the first thing you learn in the book. It's the first thing you learn in the movie. It's the first thing you learn in the book. It's the first thing you learn in the movie. It's the first thing you learn in the book,100,gpt2-large
+decl_text_formatting_001,text formatting,declarative,cloze,Text formatting is,"a very important part of any website. It's a way to make your content more readable and to make your content more engaging.
+
+The problem is that most of the time, you don't know what you're doing.
+
+You're not sure how to format your text. You're not sure how to format your images. You're not sure how to format your links.
+
+You're not sure how to format your images. You're not sure how to format your links.",100,gpt2-large
+decl_form_field_001,form field,declarative,cloze,A form field is,"a special type of field that is used to specify a value for a field.
+
+The form field is used to specify a value for a field.
+
+The form field is used to specify a value for a field.
+
+The form field is used to specify a value for a field.
+
+The form field is used to specify a value for a field.
+
+The form field is used to specify a value for a field.
+
+The form field is used to specify",100,gpt2-large
+decl_landmark_region_001,landmark region,declarative,cloze,A landmark region is,"being transformed into a new city, with the construction of a new airport, a new city centre and a new city centre.
+
+The new city centre will be built on the site of the former city centre, which is now a parking lot.
+
+The new city centre will be built on the site of the former city centre, which is now a parking lot.
+
+The new city centre will be built on the site of the former city centre, which is now a parking lot.",100,gpt2-large
+decl_low_vision_001,low vision,declarative,cloze,Low vision is,"a common problem in people with diabetes. It can be caused by a number of factors, including diabetes, diabetes complications, and eye problems.
+
+Diabetes can cause vision problems. The most common type of diabetes is type 1, which is caused by a lack of insulin. Type 2 diabetes is caused by a lack of insulin and is more common in people with type 2 diabetes.
+
+Diabetes can also cause vision problems in people with diabetes. This is because the body's insulin levels are",100,gpt2-large
+decl_cognitive_disabilities_001,cognitive disabilities,declarative,cloze,Cognitive disabilities are,"a growing public health concern. The prevalence of cognitive disabilities is increasing, and the number of people with cognitive disabilities is expected to increase by more than 50% by 2030.1,2 The prevalence of cognitive disabilities is higher in women than in men, and the prevalence of cognitive disabilities is higher in older adults than in younger adults.3,4
+
+The prevalence of cognitive disabilities is higher in women than in men, and the prevalence of cognitive disabilities is higher in older adults than in younger adults.",100,gpt2-large
+decl_universal_design_001,universal design,declarative,cloze,Universal design is,a concept that has been around for a long time. It's a concept that has been around for a long time. It's a concept that has been around for a long time. It's a concept that has been around for a long time. It's a concept that has been around for a long time. It's a concept that has been around for a long time. It's a concept that has been around for a long time. It's a concept that has been around for a long,100,gpt2-large
+decl_decorative_image_001,decorative image,declarative,cloze,A decorative image is,"a piece of artwork that is used to decorate a room or a room's interior. It is usually a picture, a drawing, or a sculpture.
+
+A decorative image is a piece of artwork that is used to decorate a room or a room's interior. It is usually a picture, a drawing, or a sculpture.
+
+A decorative image is a piece of artwork that is used to decorate a room or a room's interior. It is usually a picture, a drawing",100,gpt2-large
+decl_informative_image_001,informative image,declarative,cloze,An informative image is,"a picture that is worth a thousand words.
+
+An informative image is a picture that is worth a thousand words.
+
+An informative image is a picture that is worth a thousand words.
+
+An informative image is a picture that is worth a thousand words.
+
+An informative image is a picture that is worth a thousand words.
+
+An informative image is a picture that is worth a thousand words.
+
+An informative image is a picture that is worth a thousand words.",100,gpt2-large
+decl_responsive_design_001,responsive design,declarative,cloze,Responsive design is,"a design technique that allows a website to adapt to the size of the screen. It's a way to make a website more usable for different screen sizes.
+
+Responsive design is a design technique that allows a website to adapt to the size of the screen. It's a way to make a website more usable for different screen sizes.
+
+Responsive design is a design technique that allows a website to adapt to the size of the screen. It's a way to make a website",100,gpt2-large
