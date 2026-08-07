@@ -8,9 +8,9 @@
 
 
 OLMO_REVISIONS = {
-    "allenai/OLMo-2-0425-1B": "stage1-step1907359-tokens4001B",
-    "allenai/OLMo-2-1124-7B": "stage1-step928646-tokens3896B",
-    "allenai/OLMo-2-1124-13B": "stage1-step596057-tokens5001B",
+    "OLMo-2-0425-1B": "stage1-step1907359-tokens4001B",
+    "OLMo-2-1124-7B": "stage1-step928646-tokens3896B",
+    "OLMo-2-1124-13B": "stage1-step596057-tokens5001B",
 }
 
 
