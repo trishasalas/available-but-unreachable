@@ -1,0 +1,273 @@
+domain,prompt_id,concept,prompt_type,template_type,prompt,output,max_tokens,model
+medical,oxygen_saturation,oxygen saturation,declarative,cloze,Oxygen saturation refers to,"the amount of oxygen in the blood. The oxygen saturation of the blood is a measure of the amount of oxygen in the blood. The oxygen saturation of the blood is measured by a blood gas analyzer.
+
+Oxygen saturation is a measure of the amount of oxygen in the blood. The oxygen saturation of the blood is a measure of the amount of oxygen in the blood. The oxygen saturation of the blood is measured by a blood gas analyzer.
+
+Oxygen saturation is a",100,gpt2-xl
+medical,body_temperature,body temperature,declarative,cloze,Body temperature is,"a measure of the body's internal temperature. It is a measure of the body's core temperature.
+
+The body's core temperature is the temperature of the body's core. It is the temperature of the body's core that is the most important factor in determining the body's core temperature.
+
+The body's core temperature is the temperature of the body's core. It is the temperature of the body's core that is the most important factor in determining the body's core temperature.",100,gpt2-xl
+medical,platelet_count,platelet count,declarative,cloze,Platelet count measures,"the number of red blood cells in the blood. It is a good indicator of the health of the heart and blood vessels.
+
+The number of platelets in the blood is a good indicator of the health of the heart and blood vessels. Platelets are a type of blood cell that help to stop bleeding.
+
+The number of platelets in the blood is a good indicator of the health of the heart and blood vessels. Platelets are a type of blood cell that help to stop bleeding",100,gpt2-xl
+medical,metabolic_panel,metabolic panel,declarative,cloze,A metabolic panel is,"a tool that can be used to assess the metabolic health of a person. It is a tool that can be used to assess the metabolic health of a person.
+
+The metabolic panel is a tool that can be used to assess the metabolic health of a person. It is a tool that can be used to assess the metabolic health of a person.
+
+A metabolic panel is a tool that can be used to assess the metabolic health of a person. It is a tool that can be used to",100,gpt2-xl
+medical,bacterial_infection,bacterial infection,declarative,cloze,A bacterial infection is caused by,"a bacterium called Staphylococcus aureus. It is a common infection that can cause a sore throat, fever, and a sore or swollen throat.
+
+Staphylococcus aureus is a common bacteria that can cause a sore throat, fever, and a sore or swollen throat.
+
+Staphylococcus aureus is a common bacteria that can cause a sore throat, fever, and a sore or swollen throat.
+
+Staphylococ",100,gpt2-xl
+medical,magnetic_resonance,magnetic resonance,declarative,cloze,Magnetic resonance imaging is,"a powerful tool for studying the brain. It can reveal the structure of the brain and its connections, and it can also reveal the function of the brain.
+
+MRI is a non-invasive imaging technique that uses magnetic fields to create images of the brain. It is used to study the brain in a variety of ways, including to study the effects of drugs and to study the effects of traumatic brain injury.
+
+MRI is also used to study the effects of aging, to study the effects",100,gpt2-xl
+medical,multiple_sclerosis,multiple sclerosis,declarative,cloze,Multiple sclerosis is,"a chronic inflammatory disease of the central nervous system. It is characterized by the presence of myelin, a fatty substance that insulates nerve cells. Myelin is composed of a fatty substance called myelin basic protein (MBP). Myelin is composed of a fatty substance called myelin basic protein (MBP).
+
+Myelin is composed of a fatty substance called myelin basic protein (MBP). Myelin is composed of a fatty substance called myelin basic protein (MBP).",100,gpt2-xl
+medical,complete_remission,complete remission,declarative,cloze,Complete remission means,"that the patient has no detectable levels of the virus in their blood.
+
+The virus is undetectable in the blood of patients who have been cured of HIV.
+
+The virus is undetectable in the blood of patients who have been cured of HIV.
+
+The virus is undetectable in the blood of patients who have been cured of HIV.
+
+The virus is undetectable in the blood of patients who have been cured of HIV.
+
+The virus is undet",100,gpt2-xl
+medical,bowel_resection,bowel resection,declarative,cloze,A bowel resection is,"a surgical procedure that removes part of the colon. It is done to treat colorectal cancer, but it can also be used to treat other conditions.
+
+What is a bowel resection?
+
+A bowel resection is a surgical procedure that removes part of the colon. It is done to treat colorectal cancer, but it can also be used to treat other conditions.
+
+A bowel resection is a surgical procedure that removes part of the colon. It is done",100,gpt2-xl
+medical,organ_transplant,organ transplant,declarative,cloze,An organ transplant is,"a life-saving procedure that can save the life of a patient who has been declared brain dead.
+
+The transplant is performed by a team of doctors and nurses who are trained to carry out the procedure.
+
+The transplant is carried out in a hospital or surgery centre.
+
+The patient is given a blood transfusion and a blood product called a blood product.
+
+The blood product is then removed from the patient and replaced with a new blood product.
+
+The new blood product",100,gpt2-xl
+medical,therapeutic_dosage,therapeutic dosage,declarative,cloze,A therapeutic dosage is,"a dose that is effective for a specific condition. A therapeutic dose is usually defined as the dose that is effective for a specific condition.
+
+A therapeutic dose is usually defined as the dose that is effective for a specific condition. A therapeutic dose is usually defined as the dose that is effective for a specific condition.
+
+A therapeutic dosage is a dose that is effective for a specific condition. A therapeutic dosage is usually defined as the dose that is effective for a specific condition. A therapeutic dosage is",100,gpt2-xl
+medical,drug_interaction,drug interaction,declarative,cloze,A drug interaction occurs when,"two or more drugs interact. The interaction may be mild or severe, and may be reversible or irreversible.
+
+The most common drug interactions are listed below. Other drug interactions may occur.
+
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+
+A B C D",100,gpt2-xl
+medical,antibiotic_resistance,antibiotic resistance,declarative,cloze,Antibiotic resistance is,"a growing problem in the world. The World Health Organization (WHO) estimates that antibiotic resistance will cause up to 2 million deaths a year by 2050.
+
+The problem is particularly acute in developing countries, where the use of antibiotics is often not regulated.
+
+In the US, the Food and Drug Administration (FDA) has been working to regulate the use of antibiotics in livestock.
+
+But the FDA has been hampered by a lack of funding.
+
+The US Congress has also been",100,gpt2-xl
+medical,gastrointestinal_absorption,gastrointestinal absorption,declarative,cloze,Gastrointestinal absorption refers to,"the process by which food is absorbed into the body. The digestive system is a complex system that includes the mouth, stomach, small intestine, large intestine, and colon. The digestive system is divided into two main parts: the small intestine and the large intestine. The small intestine is the first part of the digestive system and is responsible for the absorption of nutrients from food. The large intestine is the second part of the digestive system and is responsible for the absorption of waste products from the small intestine.",100,gpt2-xl
+medical,respiratory_tract,respiratory tract,declarative,cloze,The respiratory tract is,"the first part of the body to be affected by the effects of smoking. The lungs are the first part of the body to be affected by the effects of smoking.
+
+The lungs are the first part of the body to be affected by the effects of smoking.
+
+The lungs are the first part of the body to be affected by the effects of smoking.
+
+The lungs are the first part of the body to be affected by the effects of smoking.
+
+The lungs are the first",100,gpt2-xl
+medical,cerebral_cortex,cerebral cortex,declarative,cloze,The cerebral cortex is,"the outermost layer of the brain. It is the seat of higher cognitive functions such as memory, language, and consciousness. The cortex is also the site of the most complex and sophisticated brain structures.
+
+The cortex is the outermost layer of the brain. It is the seat of higher cognitive functions such as memory, language, and consciousness. The cortex is also the site of the most complex and sophisticated brain structures.
+
+The cerebral cortex is the outermost layer of the brain. It",100,gpt2-xl
+medical,informed_consent,informed consent,declarative,cloze,Informed consent requires,"that you understand the risks and benefits of the treatment you are about to receive. It also requires that you understand the risks and benefits of the treatment you are about to receive.
+
+The following information is intended to help you understand the risks and benefits of the treatment you are about to receive.
+
+The information provided here is not intended to be a substitute for medical advice. If you have questions about your treatment, please consult your health care provider.
+
+The information provided here is not intended",100,gpt2-xl
+medical,clinical_trial,clinical trial,declarative,cloze,A clinical trial is,"underway to determine whether a new type of vaccine can prevent the spread of the Zika virus.
+
+The trial, which is being conducted at the University of Texas Medical Branch at Galveston, is the first of its kind to test a vaccine against the Zika virus.
+
+The vaccine is being developed by the National Institute of Allergy and Infectious Diseases (NIAID), part of the National Institutes of Health.
+
+The vaccine is being tested on mice, which are genetically engineered to",100,gpt2-xl
+medical,nerve_damage,nerve damage,declarative,cloze,Nerve damage can result in,"a variety of symptoms, including numbness, tingling, weakness, and difficulty with movement.
+
+Nerve damage can result in a variety of symptoms, including numbness, tingling, weakness, and difficulty with movement.
+
+Nerve damage can result in a variety of symptoms, including numbness, tingling, weakness, and difficulty with movement.
+
+Nerve damage can result in a variety of symptoms, including numbness, tingling, weakness, and",100,gpt2-xl
+medical,chest_pain,chest pain,declarative,cloze,Chest pain can indicate,"a number of different conditions, including heart disease, cancer, and even diabetes. But the pain can also be caused by a number of other conditions, including:
+
+A condition called ""muscle spasm""
+
+A condition called ""muscle weakness""
+
+A condition called ""muscle spasm""
+
+Muscle spasm is a condition in which the muscles in your chest, neck, and back become tight. This can cause chest pain.
+
+Muscle weakness is",100,gpt2-xl
+medical,bone_marrow,bone marrow,declarative,cloze,Bone marrow is,"a rich source of stem cells, which can be used to treat a wide range of diseases. But the process of extracting stem cells from bone marrow is a long and arduous one.
+
+Now, researchers at the University of California, San Francisco (UCSF) have developed a new method that could make the process much faster and less expensive.
+
+The new method, described in the journal Nature Biotechnology, uses a combination of chemical and mechanical means to extract stem cells from bone marrow",100,gpt2-xl
+medical,brain_stem,brain stem,declarative,cloze,The brain stem controls,"the body's response to stress. It is the first organ to respond to stress, and it is the first to respond to the effects of stress.
+
+The brain stem is the first organ to respond to stress. It is the first organ to respond to stress, and it is the first to respond to the effects of stress.
+
+The brain stem is the first organ to respond to stress. It is the first organ to respond to stress, and it is the first to respond to the",100,gpt2-xl
+medical,birth_defect,birth defect,declarative,cloze,A birth defect is,"a condition that affects a baby's development. It can be caused by a genetic defect, a problem with the way the baby's body develops, or a problem with the way the baby's brain develops.
+
+A birth defect is usually diagnosed when the baby is born. It can be treated with surgery, medication, or other treatments.
+
+A birth defect can affect a baby's health and development. It can affect how well the baby grows, how well the baby learns, and how well",100,gpt2-xl
+medical,wound_care,wound care,declarative,cloze,Wound care is,"a complex and challenging field. It is important to understand the basics of wound care and how to care for your wound.
+
+Wound care is a complex and challenging field. It is important to understand the basics of wound care and how to care for your wound.
+
+Wound care is a complex and challenging field. It is important to understand the basics of wound care and how to care for your wound.
+
+Wound care is a complex and challenging field. It is important to",100,gpt2-xl
+medical,pain_management,pain management,declarative,cloze,Pain management involves,"a variety of techniques, including acupuncture, massage, and other forms of therapy. The goal of these techniques is to relieve pain and improve function.
+
+Acupuncture is a type of therapy that uses needles to stimulate specific points on the body. The needles are inserted into specific points on the body, and the needles are then moved back and forth to stimulate the points.
+
+Acupuncture is a form of therapy that uses needles to stimulate specific points on the body. The needles are inserted into specific",100,gpt2-xl
+medical,blood_clot,blood clot,declarative,cloze,A blood clot is,"a collection of blood that forms in the space between two blood vessels. Blood clots can form in the arteries, veins, or capillaries.
+
+Blood clots can be dangerous if they block blood flow to the heart, brain, or other organs. They can also cause a stroke, heart attack, or heart failure.
+
+Blood clots can be caused by:
+
+A blood clot in the leg
+
+A blood clot in the lung
+
+A blood clot in the",100,gpt2-xl
+medical,tumor_growth,tumor growth,declarative,cloze,Tumor growth is,"a common feature of cancer. The growth of tumors is a result of the uncontrolled growth of cells. The growth of tumors is a result of the uncontrolled growth of cells.
+
+Tumor growth is a common feature of cancer. The growth of tumors is a result of the uncontrolled growth of cells. The growth of tumors is a result of the uncontrolled growth of cells.
+
+Tumor growth is a common feature of cancer. The growth of tumors is a result of the uncontrolled growth of",100,gpt2-xl
+medical,joint_replacement,joint replacement,declarative,cloze,A joint replacement is,"a procedure in which a person's heart is replaced with a donor heart. The donor heart is usually a healthy donor heart that has been donated by a living donor.
+
+A heart transplant is a procedure in which a person's heart is replaced with a donor heart. The donor heart is usually a healthy donor heart that has been donated by a living donor.
+
+A heart transplant is a procedure in which a person's heart is replaced with a donor heart. The donor heart is usually a healthy",100,gpt2-xl
+medical,immune_response,immune response,declarative,cloze,An immune response is,"a natural response to a foreign substance or to a foreign substance that is not normally present in the body. The immune system is a complex system of cells that work together to fight off foreign substances. The immune system is made up of two main parts: the innate immune system and the adaptive immune system. The innate immune system is made up of white blood cells, which are the first line of defense against foreign substances. The adaptive immune system is made up of white blood cells that are able to recognize and",100,gpt2-xl
+medical,viral_infection,viral infection,declarative,cloze,A viral infection is caused by,"a virus that infects the body's cells. Viruses are small, single-celled organisms that can infect and multiply in the body. Viruses can be spread through direct contact with the body fluids of an infected person or animal, or through the air.
+
+Viral infections can be caused by a number of different viruses. The most common viral infections are:
+
+HIV (Human Immunodeficiency Virus)
+
+Hepatitis A
+
+Hepatitis",100,gpt2-xl
+medical,chronic_pain,chronic pain,declarative,cloze,Chronic pain is,"a common problem for people with diabetes. It can be a source of stress and anxiety, and it can also be a source of physical pain.
+
+Pain is a normal response to injury or illness. But chronic pain can be a problem for people with diabetes.
+
+Chronic pain can be caused by:
+
+Diabetes itself
+
+Diabetes-related complications
+
+Other conditions
+
+Chronic pain can be a problem for people with diabetes. It can be a source of stress",100,gpt2-xl
+medical,mental_health,mental health,declarative,cloze,Mental health refers to,"the mental and emotional health of an individual. It is a complex issue that affects all of us.
+
+The Mental Health Foundation is a national charity that works to improve the lives of people with mental health problems.
+
+We work with people and organisations across the country to improve the lives of people with mental health problems.
+
+We are committed to improving the lives of people with mental health problems and to making sure that people with mental health problems have the support they need.
+
+We are",100,gpt2-xl
+medical,spinal_cord,spinal cord,declarative,cloze,The spinal cord is,"a bundle of nerve fibers that connects the brain to the rest of the body. It is the most important part of the nervous system, and it is responsible for transmitting information from the brain to the rest of the body.
+
+The spinal cord is made up of two main parts: the cord and the gray matter. The gray matter is the part of the brain that controls the body's muscles, nerves, and organs.
+
+The spinal cord is made up of two main parts: the cord",100,gpt2-xl
+medical,scar_tissue,scar tissue,declarative,cloze,Scar tissue is,"a common finding in the skin of people with psoriasis. It is a result of the immune system attacking the skin. Scar tissue is a normal part of the skin's natural healing process.
+
+Scar tissue is a normal part of the skin's natural healing process.
+
+Scar tissue is a normal part of the skin's natural healing process.
+
+Scar tissue is a normal part of the skin's natural healing process.
+
+Scar tissue is a normal part of the skin's natural",100,gpt2-xl
+medical,fluid_retention,fluid retention,declarative,cloze,Fluid retention can cause,"a variety of problems, including:
+
+Fluid retention can cause a variety of problems, including:
+
+Fluid retention can cause a variety of problems, including:
+
+Fluid retention can cause a variety of problems, including:
+
+Fluid retention can cause a variety of problems, including:
+
+Fluid retention can cause a variety of problems, including:
+
+Fluid retention can cause a variety of problems, including:
+
+F",100,gpt2-xl
+medical,sleep_apnea,sleep apnea,declarative,cloze,Sleep apnea is,a condition in which the airway is not fully open during sleep. The airway is not fully open because the airway is not fully open because the airway is not fully open because the airway is not fully open because the airway is not fully open because the airway is not fully open because the airway is not fully open because the airway is not fully open because the airway is not fully open because the airway is not fully open because the airway is not fully,100,gpt2-xl
+medical,muscle_spasm,muscle spasm,declarative,cloze,A muscle spasm is,"a sudden, involuntary contraction of a muscle. It can be caused by a number of factors, including:
+
+A muscle spasm can be painful, but it is usually not serious.
+
+If you have a muscle spasm, you may feel a tightness in your chest, neck, or jaw. You may also feel a tingling or burning sensation in your arms, legs, or feet.
+
+If you have a muscle spasm, you may feel a tightness in",100,gpt2-xl
+medical,breast_cancer,breast cancer,declarative,cloze,Breast cancer is,"the most common cancer in women in the United States. It is the second leading cause of cancer death in women, after lung cancer.
+
+Breast cancer is the most common cancer in women in the United States. It is the second leading cause of cancer death in women, after lung cancer.
+
+Breast cancer is the most common cancer in women in the United States. It is the second leading cause of cancer death in women, after lung cancer.
+
+Breast cancer is the",100,gpt2-xl
+medical,lung_cancer,lung cancer,declarative,cloze,Lung cancer is,"the most common cancer in the United States, and it is the second leading cause of cancer death in the United States.1,2 The incidence of lung cancer has increased by approximately 50% in the United States since the early 1980s.3,4 The incidence of lung cancer is highest among men, and it is also highest among smokers.5,6 The risk of lung cancer is increased by smoking, and the risk of lung cancer is increased by a number of other factors, including age,",100,gpt2-xl
+medical,skin_graft,skin graft,declarative,cloze,A skin graft is,a procedure in which a piece of skin is removed from the patient's own body and replaced with a piece of another person's skin. The procedure is usually performed to treat a skin disease or injury.,100,gpt2-xl
+medical,stem_cell,stem cell,declarative,cloze,A stem cell is,"a cell that has been transformed into a specialized cell type. Stem cells are the source of all the cells in the body. They are the source of all the cells in the body. They are the source of all the cells in the body.
+
+Stem cells are the source of all the cells in the body. They are the source of all the cells in the body. They are the source of all the cells in the body.
+
+Stem cells are the source of all",100,gpt2-xl
+medical,side_effect,side effect,declarative,cloze,A side effect is,"a side effect of a medication. Side effects can be mild or severe, and can be caused by a medication or by a medical condition.
+
+A side effect is a side effect of a medication. Side effects can be mild or severe, and can be caused by a medication or by a medical condition.
+
+Side effects are a side effect of a medication. Side effects can be mild or severe, and can be caused by a medication or by a medical condition.
+
+Side effects are",100,gpt2-xl

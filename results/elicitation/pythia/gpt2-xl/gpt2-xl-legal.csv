@@ -1,0 +1,319 @@
+domain,prompt_id,concept,prompt_type,template_type,prompt,output,max_tokens,model
+legal,due_process,due process,declarative,cloze,Due process is,a fundamental principle of our legal system. It is the foundation of our democracy. It is the foundation of our justice system. It is the foundation of our civil rights. It is the foundation of our civil liberties. It is the foundation of our civil liberties. It is the foundation of our civil liberties. It is the foundation of our civil liberties. It is the foundation of our civil liberties. It is the foundation of our civil liberties. It is the foundation of our civil liberties. It is the,100,gpt2-xl
+legal,equal_protection,equal protection,declarative,cloze,Equal protection refers to,"the principle that all citizens are entitled to equal protection of the law. The principle is enshrined in the Constitution of the United States and in the Canadian Charter of Rights and Freedoms.
+
+The Supreme Court of Canada has interpreted the equal protection clause of the Charter to include the right to be free from discrimination on the basis of race, national or ethnic origin, colour, religion, age, sex, sexual orientation, marital status, family status, disability, or conviction for an offence.",100,gpt2-xl
+legal,commerce_clause,commerce clause,declarative,cloze,The commerce clause is,"a part of the Constitution that gives Congress the power to regulate commerce among the states. The commerce clause is also known as the ""commerce clause"" or the ""commerce clause"" because it is the only part of the Constitution that deals with commerce.
+
+The commerce clause gives Congress the power to regulate commerce among the states. The commerce clause gives Congress the power to regulate commerce among the states.
+
+The commerce clause gives Congress the power to regulate commerce among the states. The commerce clause gives Congress",100,gpt2-xl
+legal,fifth_amendment,fifth amendment,declarative,cloze,The fifth amendment provides,"that no person shall be ""deprived of life, liberty, or property, without due process of law."" The Supreme Court has held that the Fifth Amendment protects against the deprivation of life, liberty, or property without due process of law. The Due Process Clause of the Fourteenth Amendment provides that no person shall be deprived of life, liberty, or property without due process of law.
+
+The Due Process Clause of the Fourteenth Amendment provides that no person shall be deprived of life, liberty,",100,gpt2-xl
+legal,free_speech,free speech,declarative,cloze,Free speech is a right that,"is not absolute. It is a right that is subject to reasonable restrictions.
+
+The right to free speech is not absolute. It is subject to reasonable restrictions.
+
+The right to free speech is not absolute. It is subject to reasonable restrictions.
+
+The right to free speech is not absolute. It is subject to reasonable restrictions.
+
+The right to free speech is not absolute. It is subject to reasonable restrictions.
+
+The right to free speech is not absolute. It is",100,gpt2-xl
+legal,strict_liability,strict liability,declarative,cloze,Strict liability is a legal doctrine holding,"that a person is not responsible for the actions of another person unless the person is negligent.
+
+The doctrine is based on the idea that a person is not responsible for the actions of another person unless the person is negligent.
+
+The doctrine is also known as the ""duty to rescue"" or ""duty to retreat.""
+
+The doctrine is not limited to criminal cases. It applies to civil cases as well.
+
+The doctrine is also known as the ""duty to retreat"" or """,100,gpt2-xl
+legal,punitive_damages,punitive damages,declarative,cloze,Punitive damages are awarded to,"the victim of a crime, but the amount of damages is determined by the court. Punitive damages are awarded to the victim of a crime, but the amount of damages is determined by the court.
+
+Punitive damages are awarded to the victim of a crime, but the amount of damages is determined by the court. Punitive damages are awarded to the victim of a crime, but the amount of damages is determined by the court.
+
+Punitive damages are awarded to the victim",100,gpt2-xl
+legal,sovereign_immunity,sovereign immunity,declarative,cloze,Sovereign immunity is,"a legal doctrine that protects individuals from being sued for actions that are not criminal. It is a cornerstone of the U.S. Constitution.
+
+The doctrine is based on the idea that individuals have a right to be protected from being sued for actions that are not criminal.
+
+The doctrine is based on the idea that individuals have a right to be protected from being sued for actions that are not criminal.
+
+The doctrine is based on the idea that individuals have a right to be protected from",100,gpt2-xl
+legal,grand_indictment,grand indictment,declarative,cloze,A grand indictment is,"a formal accusation of a crime. It is a formal accusation of a crime. It is a formal accusation of a crime.
+
+A grand jury is a group of citizens who are charged with investigating and deciding whether to indict a person or a group of people for a crime. A grand jury is a group of citizens who are charged with investigating and deciding whether to indict a person or a group of people for a crime.
+
+The grand jury is a group of citizens who are charged with investigating",100,gpt2-xl
+legal,guilty_plea,guilty plea,declarative,cloze,A guilty plea is when,"a person admits to a crime. A plea bargain is when a person agrees to plead guilty to a lesser charge in exchange for a lighter sentence.
+
+A guilty plea is when a person admits to a crime. A plea bargain is when a person agrees to plead guilty to a lesser charge in exchange for a lighter sentence.
+
+A guilty plea is when a person admits to a crime. A plea bargain is when a person agrees to plead guilty to a lesser charge in exchange for a lighter sentence",100,gpt2-xl
+legal,excessive_bail,excessive bail,declarative,cloze,Excessive bail is prohibited by,"the Constitution. The Supreme Court has held that the Constitution requires that the government provide a ""justifiable reason"" for the continued detention of an individual. The government must show that the individual poses a danger to the community.
+
+The Supreme Court has held that the Constitution requires that the government provide a ""justifiable reason"" for the continued detention of an individual. The government must show that the individual poses a danger to the community.
+
+The Supreme Court has held that the Constitution requires that the",100,gpt2-xl
+legal,felony_conviction,felony conviction,declarative,cloze,A felony conviction is,"a serious matter. It can have serious consequences for your life, your job, your finances, and your ability to travel.
+
+If you are convicted of a felony, you may be required to serve time in prison.
+
+If you are convicted of a felony, you may be required to serve time in prison.
+
+If you are convicted of a felony, you may be required to serve time in prison.
+
+If you are convicted of a felony, you may be required to",100,gpt2-xl
+legal,conditional_parole,conditional parole,declarative,cloze,Conditional parole requires,"the offender to serve a certain number of years in prison before being eligible for release. The parole board determines the length of the sentence based on the offender's criminal history and the nature of the crime.
+
+The parole board may also consider the offender's rehabilitation and the offender's ability to re-enter society.
+
+The parole board may also consider the offender's criminal history and the nature of the crime.
+
+The parole board may also consider the offender's rehabilitation and the offender's ability",100,gpt2-xl
+legal,joint_custody,joint custody,declarative,cloze,Joint custody means,"that the child is living with both parents.
+
+If you are considering joint custody, you should first talk to a family law lawyer.
+
+If you are considering joint custody, you should first talk to a family law lawyer.
+
+If you are considering joint custody, you should first talk to a family law lawyer.
+
+If you are considering joint custody, you should first talk to a family law lawyer.
+
+If you are considering joint custody, you should first talk to a",100,gpt2-xl
+legal,material_breach,material breach,declarative,cloze,A material breach is,"a breach of a contract or agreement. A breach of a contract or agreement is a breach of a promise or agreement.
+
+A breach of a promise or agreement is a breach of a promise or agreement that is made to another person.
+
+A breach of a promise or agreement is a breach of a promise or agreement that is made to another person.
+
+A breach of a promise or agreement is a breach of a promise or agreement that is made to another person.
+
+A breach",100,gpt2-xl
+legal,adequate_consideration,adequate consideration,declarative,cloze,Adequate consideration in a contract means,"that the parties have considered all relevant factors and have agreed on the terms of the contract.
+
+Adequate consideration means that the parties have considered all relevant factors and have agreed on the terms of the contract.
+
+Adequate consideration means that the parties have considered all relevant factors and have agreed on the terms of the contract.
+
+Adequate consideration means that the parties have considered all relevant factors and have agreed on the terms of the contract.
+
+Adequate consideration means",100,gpt2-xl
+legal,arbitration_clause,arbitration clause,declarative,cloze,An arbitration clause is,"a legal contract that allows you to resolve a dispute with a company or other entity. Arbitration is a process in which a neutral third party hears both sides of a dispute and decides the outcome.
+
+An arbitration clause is a legal contract that allows you to resolve a dispute with a company or other entity. Arbitration is a process in which a neutral third party hears both sides of a dispute and decides the outcome.
+
+The arbitration clause in your contract may be written or oral. If it",100,gpt2-xl
+legal,specific_performance,specific performance,declarative,cloze,Specific performance is a remedy that,"is not available to all patients.
+
+Specific performance is a remedy that is not available to all patients.
+
+Specific performance is a remedy that is not available to all patients.
+
+Specific performance is a remedy that is not available to all patients.
+
+Specific performance is a remedy that is not available to all patients.
+
+Specific performance is a remedy that is not available to all patients.
+
+Specific performance is a remedy that is not available to all patients.
+
+Specific",100,gpt2-xl
+legal,preliminary_injunction,preliminary injunction,declarative,cloze,A preliminary injunction is,"being sought by the family of a man who was shot and killed by police in a confrontation in the city's west end.
+
+The family of Anthony Smith, who was shot and killed by police in a confrontation in the city's west end, is seeking a preliminary injunction to stop the police from using excessive force.
+
+Smith, who was shot and killed by police in a confrontation in the city's west end, is seen in this undated photo. (Family photo)
+
+The",100,gpt2-xl
+legal,oral_deposition,oral deposition,declarative,cloze,An oral deposition is,"a written statement given by a person under oath to a person or organization. Oral depositions are often used in civil cases, but they can also be used in criminal cases.
+
+An oral deposition is a written statement given by a person under oath to a person or organization. Oral depositions are often used in civil cases, but they can also be used in criminal cases.
+
+An oral deposition is a written statement given by a person under oath to a person or organization. Oral depositions",100,gpt2-xl
+legal,personal_jurisdiction,personal jurisdiction,declarative,cloze,Personal jurisdiction refers to,"the right of a court to hear and decide a case in the place where the defendant lives or is found.
+
+The right to personal jurisdiction is a fundamental right of all people. It is a fundamental right that is protected by the Constitution.
+
+The right to personal jurisdiction is also a fundamental right of the courts.
+
+The right to personal jurisdiction is also a fundamental right of the courts.
+
+The right to personal jurisdiction is also a fundamental right of the courts.
+
+The",100,gpt2-xl
+legal,electronic_discovery,electronic discovery,declarative,cloze,Electronic discovery is,"a powerful tool for researchers, but it can be difficult to find the right tool for the job.
+
+The problem is that the tools we use to find information are often outdated.
+
+The problem is that the tools we use to find information are often outdated.
+
+The problem is that the tools we use to find information are often outdated.
+
+The problem is that the tools we use to find information are often outdated.
+
+The problem is that the tools we use to find",100,gpt2-xl
+legal,summary_motion,summary motion,declarative,cloze,A summary motion is,"a motion that is made in a court of law to allow a party to proceed with a case. A summary motion is not a motion to dismiss a case. A summary motion is a motion that allows the court to hear the case and decide the case.
+
+A summary motion is not a motion to dismiss a case. A summary motion is a motion that allows the court to hear the case and decide the case.
+
+A summary motion is not a motion to dismiss a case. A summary",100,gpt2-xl
+legal,proper_venue,proper venue,declarative,cloze,Proper venue is determined by,"the venue's location and the type of event.
+
+The following are examples of proper venue:
+
+A restaurant
+
+A bar
+
+A nightclub
+
+A concert hall
+
+A theater
+
+A sports arena
+
+A convention center
+
+A convention center with a large auditorium
+
+A convention center with a smaller auditorium
+
+A convention center with a smaller auditorium with a large auditorium
+
+A convention center with a smaller auditorium with a smaller auditor",100,gpt2-xl
+legal,patent_infringement,patent infringement,declarative,cloze,Patent infringement occurs when,"someone copies a patent without permission. The law protects the rights of inventors and the public.
+
+The U.S. Patent and Trademark Office (USPTO) enforces the patent laws. The USPTO also administers the Patent Cooperation Treaty (PCT) and the International Trade Commission (ITC).
+
+The USPTO enforces the patent laws. The USPTO also administers the Patent Cooperation Treaty (PCT) and the International Trade Commission (IT",100,gpt2-xl
+legal,articles_incorporation,articles incorporation,declarative,cloze,Articles of incorporation are,"the documents that set out the legal framework for a company. They are often the most important documents in a company's history.
+
+Articles of incorporation are the documents that set out the legal framework for a company. They are often the most important documents in a company's history.
+
+The articles of incorporation are the documents that set out the legal framework for a company. They are often the most important documents in a company's history.
+
+The articles of incorporation are the documents that set",100,gpt2-xl
+legal,hostile_merger,hostile merger,declarative,cloze,A hostile merger is,"a merger between two or more companies that is intended to reduce competition, increase prices, or otherwise harm consumers.
+
+The Federal Trade Commission (FTC) enforces antitrust laws to prevent anticompetitive mergers and to protect consumers from anticompetitive practices. The FTC also investigates and prosecutes cases of antitrust violations.
+
+The FTC's Bureau of Competition enforces antitrust laws to prevent anticompetitive mergers and to protect consumers from anticompetitive practices. The Bureau also investigates and prosec",100,gpt2-xl
+legal,statute_limitations,statute limitations,declarative,cloze,A statute of limitations is,"a law that limits the amount of time a person can be held liable for a crime. The statute of limitations is usually set by the state, but it can be set by the federal government.
+
+The statute of limitations is a law that limits the amount of time a person can be held liable for a crime. The statute of limitations is usually set by the state, but it can be set by the federal government.
+
+The statute of limitations is a law that limits the amount of time",100,gpt2-xl
+legal,legal_standing,legal standing,declarative,cloze,Legal standing is the right to,"sue a government agency for damages. It is a fundamental right that is guaranteed by the U.S. Constitution.
+
+The U.S. Supreme Court has held that the right to sue is a ""fundamental right"" that is ""fundamental to our system of government.""
+
+The right to sue is a fundamental right that is guaranteed by the U.S. Constitution.
+
+The right to sue is a fundamental right that is guaranteed by the U.S. Constitution.",100,gpt2-xl
+legal,binding_precedent,binding precedent,declarative,cloze,A binding precedent is,"set for the future of the Internet.
+
+The Federal Communications Commission voted Thursday to repeal Obama-era net neutrality rules, which prohibited Internet service providers from blocking or slowing down access to websites.
+
+The vote was 3-2, with the two Democrats in favor and the two Republicans opposed.
+
+The vote was a victory for the telecom industry, which has spent millions of dollars lobbying against the rules.
+
+The vote was a victory for the telecom industry, which has spent millions of",100,gpt2-xl
+legal,judicial_review,judicial review,declarative,cloze,Judicial review is,"a fundamental right of the people. It is a fundamental right that is guaranteed by the Constitution. The right to judicial review is a right that is guaranteed by the Constitution.
+
+The right to judicial review is a fundamental right of the people. It is a fundamental right that is guaranteed by the Constitution.
+
+The right to judicial review is a fundamental right of the people. It is a fundamental right that is guaranteed by the Constitution.
+
+The right to judicial review is a fundamental right of",100,gpt2-xl
+legal,civil_lawsuit,civil lawsuit,declarative,cloze,A civil lawsuit is,"being filed against the city of San Diego and the San Diego Police Department, alleging that officers used excessive force against a man who was arrested for a minor traffic violation.
+
+The lawsuit, filed by the American Civil Liberties Union of San Diego and Imperial Counties, alleges that the officers used a Taser on the man, who was handcuffed and lying on the ground, and then used a baton to strike him in the head.
+
+The lawsuit also alleges that the officers used excessive force against",100,gpt2-xl
+legal,criminal_record,criminal record,declarative,cloze,A criminal record is,"a record of a person's criminal activity. It is a record of a person's criminal activity that is kept by the government.
+
+A criminal record is a record of a person's criminal activity. It is a record of a person's criminal activity that is kept by the government.
+
+A criminal record is a record of a person's criminal activity. It is a record of a person's criminal activity that is kept by the government.
+
+A criminal record is a record of a",100,gpt2-xl
+legal,search_warrant,search warrant,declarative,cloze,A search warrant is,"being sought for the home of a man who was shot and killed by police in the parking lot of a Walmart in the city's West End.
+
+The shooting happened around 2:30 a.m. Sunday at the Walmart on the 500 block of West Main Street.
+
+Police said the man was shot by officers after they tried to arrest him for shoplifting.
+
+The man was taken to Advocate Christ Medical Center where he was pronounced dead.
+
+Police said the man was shot",100,gpt2-xl
+legal,plea_bargain,plea bargain,declarative,cloze,A plea bargain is,"a deal in which a defendant agrees to plead guilty to a lesser charge in exchange for a reduced sentence. The defendant is usually offered a plea bargain in exchange for a guilty plea to a more serious crime.
+
+Plea bargains are often used in cases involving drug trafficking, weapons trafficking, and other crimes.
+
+Plea bargains are often used in cases involving drug trafficking, weapons trafficking, and other crimes.
+
+Plea bargains are often used in cases involving",100,gpt2-xl
+legal,witness_testimony,witness testimony,declarative,cloze,Witness testimony is,"the most important evidence in a criminal trial. It is the only evidence that can be used to prove the defendant's guilt or innocence.
+
+Witness testimony is the most important evidence in a criminal trial. It is the only evidence that can be used to prove the defendant's guilt or innocence.
+
+Witness testimony is the most important evidence in a criminal trial. It is the only evidence that can be used to prove the defendant's guilt or innocence.
+
+Witness testimony is the most important evidence",100,gpt2-xl
+legal,expert_witness,expert witness,declarative,cloze,An expert witness is,"expected to testify that the U.S. government's use of drones to kill suspected terrorists overseas is legal, but the Obama administration is expected to argue that the program is a vital tool in the fight against terrorism.
+
+The testimony is expected to come from former CIA Director David Petraeus, who is expected to testify before the Senate Intelligence Committee on Thursday.
+
+Petraeus is expected to testify that the CIA's drone program is legal and that the U.S. government has the authority to",100,gpt2-xl
+legal,court_order,court order,declarative,cloze,A court order is,"being sought to force the government to release the names of the people who were killed in the attack on the Indian Parliament in 2001.
+
+The Supreme Court on Tuesday sought the names of the people who were killed in the attack on the Indian Parliament in 2001.
+
+The court said it was ""not satisfied"" that the government had complied with the court's order to release the names of the people killed in the attack on the Indian Parliament in 2001.
+
+The court said it was ""not",100,gpt2-xl
+legal,bench_trial,bench trial,declarative,cloze,A bench trial is,"being held in the Supreme Court on a petition filed by the Centre seeking a direction to the Delhi government to provide free water to the residents of the national capital.
+
+The Centre has also sought a direction to the Delhi government to provide free water to the residents of the national capital.
+
+A bench of Justices A K Sikri and S A Bobde on Monday said the Centre would file its reply in the matter on August 25.
+
+The Centre had moved the apex court in July",100,gpt2-xl
+legal,jury_verdict,jury verdict,declarative,cloze,A jury verdict is,"expected in the trial of a former police officer accused of raping a woman in a parking lot in the early morning hours of July 31, 2013.
+
+The jury is expected to begin deliberations on Monday.
+
+The woman testified that she was walking home from a bar with her boyfriend when she was approached by a man who asked her for a ride.
+
+The man, identified as Officer Michael C. Smith, then drove the woman to a parking lot in the 100 block of North Central Avenue",100,gpt2-xl
+legal,class_action,class action,declarative,cloze,A class action lawsuit is,"being filed against the National Football League and the New England Patriots for the ""deflategate"" scandal.
+
+The lawsuit, filed in New York on Monday, alleges that the NFL and the Patriots deflated footballs in the AFC Championship game against the Indianapolis Colts.
+
+The lawsuit alleges that the Patriots intentionally deflated the footballs to gain an advantage in the game.
+
+The lawsuit also alleges that the NFL and the Patriots violated the Federal Fair Labor Standards Act by failing to provide",100,gpt2-xl
+legal,double_jeopardy,double jeopardy,declarative,cloze,Double jeopardy is,"a legal concept that allows a defendant to be tried twice for the same crime. It is a common law concept that is not recognized in the United States.
+
+Double jeopardy is a legal concept that allows a defendant to be tried twice for the same crime. It is a common law concept that is not recognized in the United States.
+
+Double jeopardy is a legal concept that allows a defendant to be tried twice for the same crime. It is a common law concept that is not recognized in the",100,gpt2-xl
+legal,probable_cause,probable cause,declarative,cloze,Probable cause is,"a legal standard that requires a judge to find that a person has committed a crime before a search can take place. It is used to determine whether a person has been arrested or charged with a crime.
+
+The standard is used to determine whether a person has been arrested or charged with a crime. It is used to determine whether a person has been arrested or charged with a crime.
+
+Probable cause is a legal standard that requires a judge to find that a person has committed a crime before",100,gpt2-xl
+legal,restraining_order,restraining order,declarative,cloze,A restraining order is,"a court order that prohibits someone from contacting or harassing you. It can be issued by a judge or a family court judge.
+
+A restraining order is a court order that prohibits someone from contacting or harassing you. It can be issued by a judge or a family court judge.
+
+A restraining order is a court order that prohibits someone from contacting or harassing you. It can be issued by a judge or a family court judge.
+
+A restraining order is a court order that prohibits someone from",100,gpt2-xl
