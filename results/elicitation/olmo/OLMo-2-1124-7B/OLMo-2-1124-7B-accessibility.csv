@@ -1,0 +1,349 @@
+domain,prompt_id,concept,prompt_type,template_type,prompt,output,max_tokens,model
+accessibility,decl_screen_reader_001,screen reader,declarative,cloze,A screen reader is,"a software program that allows blind and visually impaired people to use a computer. It works by converting text into speech. It also allows users to navigate the computer using a keyboard. Screen readers are available for all major operating systems, including Windows, Mac, and Linux.
+
+There are many different screen readers available, but some of the most popular include JAWS, NVDA, and VoiceOver. Each screen reader has its own strengths and weaknesses, so it is important to try out a few different ones before",100,OLMo-2-1124-7B
+accessibility,decl_wcag_001,WCAG,declarative,cloze,WCAG stands for,Web Content Accessibility Guidelines. It is a set of guidelines that are used to make web content more accessible to people with disabilities. WCAG is a set of guidelines that are used to make web content more accessible to people with disabilities. WCAG is a set of guidelines that are used to make web content more accessible to people with disabilities. WCAG is a set of guidelines that are used to make web content more accessible to people with disabilities. WCAG is a set of guidelines that are used to make,100,OLMo-2-1124-7B
+accessibility,decl_skip_link_001,skip link,declarative,cloze,A skip link is,"a link that jumps over a heading or list of links. It is used to provide a way for users to skip over content that they may not need to read. For example, a skip link might be used to skip over a list of links to the main content of a page.
+
+Skip links are usually placed at the top of a page, but they can also be placed in other locations, such as at the bottom of a page.
+
+Skip links are usually hidden from view, but they can be",100,OLMo-2-1124-7B
+accessibility,decl_alt_text_001,alt text,declarative,cloze,The purpose of alt text is,"to provide a text alternative to non-text content in web pages. It is used by screen readers to describe the content of images, videos, and other non-text content. Alt text is also used by search engines to understand the content of images and videos. Alt text is important for accessibility and SEO.
+
+Alt text is also known as “alternative text” or “alt description.”
+
+What is alt text?
+
+Alt text is a short description of an image, video, or other non-text content. It is",100,OLMo-2-1124-7B
+accessibility,decl_aria_001,ARIA,declarative,cloze,ARIA stands for,"Accessible Rich Internet Applications. It is a specification that defines how to make web content more accessible to people with disabilities. It is a set of attributes that can be added to HTML elements to make them more accessible. ARIA is not a replacement for HTML, but rather a way to make HTML more accessible.
+
+ARIA is supported by all major browsers and is used by many popular websites and web applications, including Facebook, Twitter, and Google Maps. ARIA can be used to make web content more",100,OLMo-2-1124-7B
+accessibility,decl_focus_indicator_001,focus indicator,declarative,cloze,A focus indicator is,"a small light that indicates when a button is being pressed. It is usually located on the left side of the button. It is also called a ""press indicator"" or ""press light"".
+
+history | show excerpt | excerpt history",100,OLMo-2-1124-7B
+accessibility,decl_keyboard_nav_001,keyboard navigation,declarative,cloze,Keyboard navigation allows,"you to navigate through the website using the keyboard. This is useful for people who have difficulty using a mouse or who prefer to use the keyboard. To use keyboard navigation, press the Tab key to move between links, buttons, and other elements on the page. Press the Enter key to select an item.",100,OLMo-2-1124-7B
+accessibility,decl_color_contrast_001,color contrast,declarative,cloze,Color contrast is important because,"it helps people with low vision to distinguish between different elements on a page. It also helps people with normal vision to scan a page and quickly understand what it is about. The contrast ratio is the difference between the lightness of the background and the lightness of the text. The higher the contrast ratio, the easier it is to read the text. The contrast ratio should be at least 4.5:1 for normal text and 3:1 for large text.
+
+There are a few things",100,OLMo-2-1124-7B
+accessibility,decl_semantic_html_001,semantic HTML,declarative,cloze,Semantic HTML helps,"you to create a more accessible website. It also helps you to create a website that is more easily understood by search engines. This means that your website will rank higher in search results. Semantic HTML is also easier to maintain and update. It is also more likely to be compatible with different browsers and devices.
+
+Semantic HTML is a type of HTML that uses tags to describe the meaning of the content on a web page. This makes it easier for search engines to understand what your website is about. It also",100,OLMo-2-1124-7B
+accessibility,decl_captions_001,closed captions,declarative,cloze,Closed captions are used for,people who are deaf or hard of hearing. They are also used for people who are learning English as a second language. Closed captions are displayed on the screen and can be turned on or off. They are usually displayed in white letters on a black background. They are also displayed in a box at the bottom of the screen. Closed captions are not the same as subtitles. Subtitles are used for people who are deaf or hard of hearing. They are displayed in the same language as the audio. Closed,100,OLMo-2-1124-7B
+accessibility,decl_keyboard_interaction_001,keyboard interaction,declarative,cloze,A keyboard interaction is,"a sequence of key presses and key releases. The key presses and key releases are called key events. The key events are sent to the operating system, which then sends them to the application. The application can then process the key events.
+
+The following figure shows the keyboard interaction process.
+
+Keyboard interaction process
+
+Keyboard interaction process
+
+The following table describes the key events that are sent to the application.
+
+Key event Description
+KeyDown The key is pressed.
+KeyUp The key is released.
+KeyUp or KeyDown The key",100,OLMo-2-1124-7B
+accessibility,decl_section_heading_001,section heading,declarative,cloze,A section heading is,"a short phrase that describes the content of the section. It is usually displayed in bold and in a larger font size than the rest of the text. Section headings are used to break up the text into smaller, more manageable sections. They also help readers to quickly scan the text and find the information they are looking for.
+
+Section headings should be concise and descriptive. They should use keywords that are relevant to the content of the section. They should also be easy to read and understand.
+
+Section headings are important",100,OLMo-2-1124-7B
+accessibility,decl_text_alternative_001,text alternative,declarative,cloze,A text alternative is,"a text equivalent of the non-text content in the content of the page. It is used to provide the same information as the non-text content to people who cannot see it, for example, people who are blind or have low vision. The text alternative must be equivalent to the non-text content and must not be redundant.",100,OLMo-2-1124-7B
+accessibility,decl_audio_description_001,audio description,declarative,cloze,An audio description is,"a narration that is added to a film or television program to describe the visual elements of the production. It is intended for people who are blind or visually impaired. Audio descriptions are usually added to the existing soundtrack, and are not intended to replace the dialogue or narration. They are intended to provide information about the visual elements of the production that are not available through the dialogue or narration. Audio descriptions are usually added to the existing soundtrack, and are not intended to replace the dialogue or narration. They are intended",100,OLMo-2-1124-7B
+accessibility,decl_sign_language_001,sign language,declarative,cloze,Sign language is,"a language that uses hand gestures, facial expressions, and body language to communicate. It is used by people who are deaf or hard of hearing. It is also used by people who cannot speak. Sign language is a language that is used by people who are deaf or hard of hearing. It is a language that uses hand gestures, facial expressions, and body language to communicate. It is a language that is used by people who cannot speak. Sign language is a language that is used by people who are",100,OLMo-2-1124-7B
+accessibility,decl_sensory_characteristics_001,sensory characteristics,declarative,cloze,Sensory characteristics are,the most important characteristics of a wine. They are the first things that we notice when we taste a wine. They are the most important characteristics of a wine because they are the most important to the consumer. They are the most important to the consumer because they are the most important to the consumer. They are the most important to the consumer because they are the most important to the consumer. They are the most important to the consumer because they are the most important to the consumer. They are the most important,100,OLMo-2-1124-7B
+accessibility,decl_input_purpose_001,input purpose,declarative,cloze,An input purpose is,a purpose that is used to receive data from the user. It is a purpose that is used to receive data from the user. It is a purpose that is used to receive data from the user. It is a purpose that is used to receive data from the user. It is a purpose that is used to receive data from the user. It is a purpose that is used to receive data from the user. It is a purpose that is used to receive data from the user. It is a purpose,100,OLMo-2-1124-7B
+accessibility,decl_target_size_001,target size,declarative,cloze,A target size is,the amount of money you want to make from your investments. It is the amount of money you want to have at the end of a period of time. It is the amount of money you want to have in your bank account when you retire. It is the amount of money you want to have in your bank account when you want to buy a house. It is the amount of money you want to have in your bank account when you want to buy a car. It is the amount of money you,100,OLMo-2-1124-7B
+accessibility,decl_touch_target_001,touch target,declarative,cloze,A touch target is,"a clickable area on a screen. It can be a button, a link, a menu item, or any other clickable area. The size of a touch target is measured in pixels. The larger the touch target, the easier it is to click.
+
+Touch targets should be at least 44 pixels wide and 44 pixels tall. This is the minimum size recommended by Apple. However, larger touch targets are even better. For example, the Facebook app has touch targets that are 48 pixels wide and",100,OLMo-2-1124-7B
+accessibility,decl_drag_movement_001,drag movement,declarative,cloze,A drag movement is,"a movement that is performed by a person who is wearing a costume and make-up. The person is called a drag queen. Drag queens are usually women who dress as men. They are often seen in gay bars and clubs. Drag queens are often very popular with gay men because they are seen as being very feminine and sexy.
+
+Drag queens are often very popular with gay men because they are seen as being very feminine and sexy. They are also seen as being very entertaining and fun to watch. Drag queens",100,OLMo-2-1124-7B
+accessibility,decl_focus_appearance_001,focus appearance,declarative,cloze,A focus appearance is,"a type of appearance that is used to focus the user's attention on a specific element. It is a visual indicator that is used to highlight a specific element on a page. It can be used to highlight a button, link, or other element that the user needs to interact with. It can also be used to highlight a specific piece of text or other content that the user needs to read.
+
+There are a few different types of focus appearances that can be used. The most common type is a border",100,OLMo-2-1124-7B
+accessibility,decl_consistent_help_001,consistent help,declarative,cloze,Consistent help is,"the key to success
+
+Consistent help is the key to success
+
+Consistent help is the key to success
+
+The key to success is consistency. This is a phrase that is often used in the business world, but it is also true in the world of education. Consistency is the key to success in education because it helps students to develop a routine and a sense of security. It also helps teachers to create a positive learning environment.
+
+Consistency is the key to success in education because it helps",100,OLMo-2-1124-7B
+accessibility,decl_redundant_entry_001,redundant entry,declarative,cloze,A redundant entry is,"a duplicate entry in a database. For example, if you have a database of employees, and you have two entries for the same employee, you have a redundant entry. Redundant entries are usually the result of a data entry error.",100,OLMo-2-1124-7B
+accessibility,decl_accessible_authentication_001,accessible authentication,declarative,cloze,Accessible authentication is,"a process that allows users to access a website without having to enter a password. This is done by using a token that is stored on the user’s device. This token can be used to authenticate the user without having to enter a password.
+
+There are a few different types of accessible authentication. One type is called “token-based authentication.” This type of authentication uses a token that is stored on the user’s device. The token can be used to authenticate the user without having to enter a password.
+
+Another",100,OLMo-2-1124-7B
+accessibility,decl_text_spacing_001,text spacing,declarative,cloze,Text spacing is,"a very important part of typography. It is the space between the letters, words, and lines of text. It is also the space between the margins and the text. The spacing of text can be adjusted to make the text more readable and attractive. There are many different ways to adjust the spacing of text, and each method has its own advantages and disadvantages.
+
+The most common way to adjust the spacing of text is to use a word processor. Word processors allow you to adjust the spacing of text by",100,OLMo-2-1124-7B
+accessibility,decl_status_message_001,status message,declarative,cloze,A status message is,"a message that is displayed to the user when a certain event occurs. For example, a status message can be displayed when a user clicks a button. Status messages are displayed in the status bar at the bottom of the screen.
+
+The following example shows how to display a status message when a button is clicked.
+
+<asp:Button ID=""Button1"" runat=""server"" Text=""Click Me"" OnClick=""Button1_Click"" />
+protected void Button1_Click(object sender, EventArgs e)",100,OLMo-2-1124-7B
+accessibility,decl_error_identification_001,error identification,declarative,cloze,Error identification is,the process of detecting and diagnosing errors in a program. The process of error identification is also known as debugging. The process of error identification is also known as debugging. The process of error identification is also known as debugging. The process of error identification is also known as debugging. The process of error identification is also known as debugging. The process of error identification is also known as debugging. The process of error identification is also known as debugging. The process of error identification is also known as debugging.,100,OLMo-2-1124-7B
+accessibility,decl_pointer_cancellation_001,pointer cancellation,declarative,cloze,Pointer cancellation is,"a feature that allows you to cancel a pointer event before it is processed by the application. This is useful when you want to prevent the user from clicking on a button or link, for example, when the user is dragging an object. Pointer cancellation is supported by the PointerEvent object.
+
+Pointer cancellation is enabled by default. You can disable it by setting the pointerCancellation property to false.
+
+Pointer cancellation is supported by the PointerEvent object. The PointerEvent object is a DOM event object that represents a pointer",100,OLMo-2-1124-7B
+accessibility,decl_character_key_001,character key,declarative,cloze,A character key is,"a key that is used to represent a character. For example, the character key for the letter ""A"" is ""A"". The character key for the letter ""B"" is ""B"". The character key for the letter ""C"" is ""C"". The character key for the letter ""D"" is ""D"". The character key for the letter ""E"" is ""E"". The character key for the letter ""F"" is ""F"". The character key for the letter ""G""",100,OLMo-2-1124-7B
+accessibility,decl_accessibility_tree_001,accessibility tree,declarative,cloze,An accessibility tree is,"a data structure that represents the structure of a document. It is used by screen readers to navigate the document. The tree is built from the document's DOM tree, and contains the same information, but in a different format. The accessibility tree is used to provide information to assistive technologies, such as screen readers, that is not available in the DOM tree.
+
+The accessibility tree is a hierarchical structure that represents the document's structure and content. It is used by screen readers to navigate the document and provide",100,OLMo-2-1124-7B
+accessibility,decl_accessible_name_001,accessible name,declarative,cloze,An accessible name is,a name that is easy to understand and pronounce. It is a name that is not ambiguous and is not likely to be misinterpreted. It is a name that is not likely to be confused with another name. It is a name that is not likely to be confused with a word or phrase that is not related to the name. It is a name that is not likely to be confused with a word or phrase that is related to the name. It is a name that is not likely to be confused,100,OLMo-2-1124-7B
+accessibility,decl_accessible_description_001,accessible description,declarative,cloze,An accessible description is,"a description of a user interface element that can be understood by a person with a visual impairment. It is a text equivalent of the visual information presented in the user interface. It is used to make the user interface accessible to people with visual impairments. It is also used to make the user interface accessible to people with cognitive disabilities, such as dyslexia.
+
+An accessible description is a text equivalent of the visual information presented in the user interface. It is used to make the user interface accessible to people",100,OLMo-2-1124-7B
+accessibility,decl_live_region_001,live region,declarative,cloze,A live region is,"a region that is currently being edited. It is usually indicated by a red border around the region. Live regions are usually used to indicate that the user is currently editing a region, such as a text box or a table cell.",100,OLMo-2-1124-7B
+accessibility,decl_tab_panel_001,tab panel,declarative,cloze,A tab panel is,"a container for multiple tabs. Each tab is a separate panel that can be displayed or hidden. The tabs are displayed in the order in which they are added to the tab panel. The tabs are displayed in the order in which they are added to the tab panel. The tabs are displayed in the order in which they are added to the tab panel.
+
+The tabs are displayed in the order in which they are added to the tab panel. The tabs are displayed in the order in which they are added to",100,OLMo-2-1124-7B
+accessibility,decl_radio_group_001,radio group,declarative,cloze,A radio group is,"a group of radio stations that are owned by the same company. The term is used in the United States, Canada, and the United Kingdom. In the United States, the term is used to refer to a group of stations that are owned by the same company, but are not necessarily affiliated with each other. In Canada, the term is used to refer to a group of stations that are owned by the same company, but are not necessarily affiliated with each other. In the United Kingdom, the term",100,OLMo-2-1124-7B
+accessibility,decl_tree_grid_001,tree grid,declarative,cloze,A tree grid is,a grid that has a tree structure. It is a grid that has a tree structure. It is a grid that has a tree structure. It is a grid that has a tree structure. It is a grid that has a tree structure. It is a grid that has a tree structure. It is a grid that has a tree structure. It is a grid that has a tree structure. It is a grid that has a tree structure. It is a grid that has a tree structure. It is,100,OLMo-2-1124-7B
+accessibility,decl_menu_bar_001,menu bar,declarative,cloze,A menu bar is,"a horizontal bar at the top of a window that contains a list of commands that you can use to control the window. The menu bar is usually located at the top of the window, but it can be located elsewhere. The menu bar is usually labeled ""File,"" ""Edit,"" ""View,"" ""Help,"" and ""Window,"" but it can be labeled differently. The menu bar contains a list of commands that you can use to control the window. The menu bar is usually labeled ""File,"" """,100,OLMo-2-1124-7B
+accessibility,decl_tool_tip_001,tool tip,declarative,cloze,A tool tip is,"a small window that appears when you hover your mouse over a control. Tool tips are used to provide additional information about a control. For example, a tool tip can be used to provide a description of a control, or to provide a hint on how to use the control. Tool tips are also used to provide information about the status of a control. For example, a tool tip can be used to indicate whether a control is enabled or disabled.
+
+Tool tips can be used to provide additional information about a",100,OLMo-2-1124-7B
+accessibility,decl_combo_box_001,combo box,declarative,cloze,A combo box is,"a control that allows the user to select a value from a list of options. The user can also type a value directly into the control. The combo box is a combination of a list box and a text box. The list box displays a list of options, and the text box allows the user to type a value. The combo box is a convenient way to allow the user to select a value from a list of options, or to type a value directly into the control.
+
+The combo box is a",100,OLMo-2-1124-7B
+accessibility,decl_semantic_markup_001,semantic markup,declarative,cloze,Semantic markup is,a way of adding meaning to your HTML code. It is a way of adding meaning to your HTML code. It is a way of adding meaning to your HTML code. It is a way of adding meaning to your HTML code. It is a way of adding meaning to your HTML code. It is a way of adding meaning to your HTML code. It is a way of adding meaning to your HTML code. It is a way of adding meaning to your HTML code. It is a way of adding,100,OLMo-2-1124-7B
+accessibility,decl_focus_management_001,focus management,declarative,cloze,Focus management is,"a key component of the project management process. It is the process of identifying and managing the resources that are required to complete a project. This includes the time, money, and people that are needed to complete the project. It also includes the tools and equipment that are needed to complete the project. Focus management is a key component of project management because it helps to ensure that the project is completed on time and within budget.
+
+There are a number of different focus management techniques that can be used to help manage",100,OLMo-2-1124-7B
+accessibility,decl_reading_order_001,reading order,declarative,cloze,Reading order is,important. It's the difference between a good story and a bad one. It's the difference between a good book and a bad one. It's the difference between a good movie and a bad one. It's the difference between a good TV show and a bad one. It's the difference between a good game and a bad one. It's the difference between a good comic book and a bad one. It's the difference between a good book and a bad one. It's the difference between,100,OLMo-2-1124-7B
+accessibility,decl_text_formatting_001,text formatting,declarative,cloze,Text formatting is,"a very important part of writing. It helps to make your writing more readable and understandable. It also helps to make your writing more attractive and interesting. There are many different ways to format text, and each one has its own advantages and disadvantages. In this article, we will discuss the different types of text formatting and how to use them effectively.
+
+What is text formatting?
+
+Text formatting is the process of changing the appearance of text. This can be done by changing the font, size, color, and",100,OLMo-2-1124-7B
+accessibility,decl_form_field_001,form field,declarative,cloze,A form field is,"a container for a single piece of information. It can be a text field, a checkbox, a radio button, a drop-down menu, or a date picker. The form field is the most basic building block of a form.
+
+Form fields are usually placed in a form row, but they can also be placed in a form column. A form row is a container for a group of form fields. A form column is a container for a group of form rows.
+
+Form fields can be grouped together in",100,OLMo-2-1124-7B
+accessibility,decl_landmark_region_001,landmark region,declarative,cloze,A landmark region is,"a region that is a landmark. A landmark is a point of interest that is easily identifiable and is usually of historical, cultural, or geographical interest. Landmarks are usually named and are often used for navigation. For example, the Eiffel Tower is a landmark in Paris, France. Landmarks are often used as points of reference for navigation. For example, the Eiffel Tower is a landmark in Paris, France. Landmarks are often used as points of reference for navigation. For example",100,OLMo-2-1124-7B
+accessibility,decl_low_vision_001,low vision,declarative,cloze,Low vision is,"a condition that affects a person’s ability to see. It is not the same as blindness. People with low vision can see some things, but not as well as people with normal vision. Low vision can be caused by many things, including eye diseases, eye injuries, and eye conditions that are present at birth. Low vision can also be caused by aging. It is estimated that 3 million Americans have low vision. Low vision can make it hard to do everyday tasks, such as reading, writing",100,OLMo-2-1124-7B
+accessibility,decl_cognitive_disabilities_001,cognitive disabilities,declarative,cloze,Cognitive disabilities are,"a group of disorders that affect the way a person thinks, learns, and remembers. They can be caused by a variety of factors, including brain injury, stroke, dementia, and Alzheimer’s disease. Cognitive disabilities can range from mild to severe, and they can have a significant impact on a person’s ability to function in everyday life.
+
+Cognitive disabilities can be divided into two main categories: acquired and developmental. Acquired cognitive disabilities are those that develop later in life, often as a result of an",100,OLMo-2-1124-7B
+accessibility,decl_universal_design_001,universal design,declarative,cloze,Universal design is,"a concept that is gaining popularity in the design of buildings, furniture, and other products. It is a concept that is based on the idea that a product should be usable by as many people as possible. This means that the product should be designed in such a way that it can be used by people with a wide range of abilities and disabilities.
+
+Universal design is a concept that is gaining popularity in the design of buildings, furniture, and other products. It is a concept that is based on the idea",100,OLMo-2-1124-7B
+accessibility,decl_decorative_image_001,decorative image,declarative,cloze,A decorative image is,a picture that is used to decorate a web page. It is not a link to another page. It is usually a small picture that is used to decorate the page. It is not a link to another page. It is usually a small picture that is used to decorate the page. It is usually a small picture that is used to decorate the page. It is usually a small picture that is used to decorate the page. It is usually a small picture that is used to decorate the page. It,100,OLMo-2-1124-7B
+accessibility,decl_informative_image_001,informative image,declarative,cloze,An informative image is,"a picture that is used to convey information. It can be a photograph, a drawing, a diagram, or a graph. It can be used to illustrate a point, to show how something works, or to give instructions. An informative image can be used to help people understand something better.
+
+There are many different types of informative images. Some are more common than others. For example, a diagram is a type of informative image that is used to show how something works. A graph is another type of",100,OLMo-2-1124-7B
+accessibility,decl_responsive_design_001,responsive design,declarative,cloze,Responsive design is,"a term that is used to describe a website that is designed to be viewed on a variety of devices, from desktop computers to smartphones and tablets. Responsive design is becoming increasingly important as more and more people are using mobile devices to access the internet.
+
+Responsive design is a web design approach that allows a website to be viewed and used on a variety of devices, from desktop computers to smartphones and tablets. Responsive design is becoming increasingly important as more and more people are using mobile devices to access the internet.
+
+Responsive",100,OLMo-2-1124-7B
+accessibility,eval_alt_text_001,alt text,evaluative,code_review,The following code is not accessible because it doesn't have what? <img src='photo.jpg'>,<script> alert('hi');</script> <div> </div> <p> </p> <p> </p> <p> </p> <p> </p> <p> </p> <p> </p> <p> </p> <p> </p> <p> </p> <p> </p> <p> </p> <p> </p> <p> </p> <p> </p> <,100,OLMo-2-1124-7B
+accessibility,eval_div_onclick_001,semantic HTML,evaluative,code_review,A <div> with onclick is not accessible because,"it is not focusable. The only way to make it accessible is to add tabindex=""0"" to the <div>. This is not a good solution because it makes the <div> focusable, but it is not keyboard navigable. The <div> is not in the tab order. The only way to make it keyboard navigable is to add role=""button"" to the <div>. This is a better solution, but it is not a good solution because it makes the <div",100,OLMo-2-1124-7B
+accessibility,eval_empty_link_001,empty link,evaluative,code_review,The accessibility problem with <a href='#'></a> is,that it's not a link. It's a button. It's not a link because it doesn't have a title attribute. It's not a link because it doesn't have a tabindex. It's not a link because it doesn't have a role. It's not a link because it doesn't have a title attribute. It's not a link because it doesn't have a tabindex. It's not a link because it doesn't have a role. It's not a link because it doesn,100,OLMo-2-1124-7B
+accessibility,eval_unlabeled_input_001,form label,evaluative,code_review,<input type='text'> needs a,"way to specify the maximum number of characters that can be entered. This is useful for things like phone numbers, email addresses, and other fields where the user is expected to enter a limited amount of text.
+
+The maxlength attribute is used to specify the maximum number of characters that can be entered into a text input field. It is supported by all major browsers, and is a useful way to limit the amount of text that can be entered into a field.
+
+The maxlength attribute is a global attribute, which means",100,OLMo-2-1124-7B
+accessibility,eval_click_here_001,link text,evaluative,code_review,A button that only says 'Click here' is bad because,"it doesn't tell the user what will happen when they click it. It's also bad because it doesn't tell the user what will happen if they don't click it. It's also bad because it doesn't tell the user what will happen if they click it twice.
+
+A button that says 'Click here to continue' is bad because it's not clear what will happen if the user doesn't click it. It's also bad because it's not clear what will happen if the user clicks it",100,OLMo-2-1124-7B
+accessibility,comp_alt_text_few_shot_001,alt text,completion,few_shot,"<img src=""icons/home.png"" alt=""Home""><img src=""icons/mail.png"" alt=""Inbox""><img src=""photo.jpg""","alt=""Photo""><img src=""icons/phone.png"" alt=""Phone""><img src=""icons/heart.png"" alt=""Heart""><img src=""icons/lock.png"" alt=""Lock""><img src=""icons/lock.png"" alt=""Lock""><img src=""icons/lock.png"" alt=""Lock""><img src=""icons/lock.png"" alt=""Lock""><img src=""icons/lock.png"" alt=""Lock""><img src=""icons/lock.png"" alt=""Lock""><",100,OLMo-2-1124-7B
+accessibility,comp_alt_text_bare_001,alt text,completion,bare,"<img src=""photo.jpg""","alt=""photo"" width=""300"" height=""200"" />
+
+# 1.0.0 (2019-10-01)
+
+* Initial release
+
+# 0.1.0 (2019-10-01)
+
+* Add `get` method to `Photo` class
+* Add `Photo` class to `Photo` module
+* Add `Photo` class to `Photo` namespace
+* Add `Photo` class to `Photo` namespace
+* Add `Photo`",100,OLMo-2-1124-7B
+accessibility,comp_captions_few_shot_001,captions,completion,few_shot,"<video src=""intro.mp4""><track kind=""captions"" src=""intro.vtt""></video><video src=""demo.mp4""><track kind=""captions"" src=""demo.vtt""></video><video src=""lecture.mp4"">","<track kind=""captions"" src=""lecture.vtt""></video><video src=""lecture2.mp4""> <track kind=""captions"" src=""lecture2.vtt""></video><video src=""lecture3.mp4""> <track kind=""captions"" src=""lecture3.vtt""></video><video src=""lecture4.mp4""> <track kind=""captions"" src=""lecture4.vtt""></video><video src=""lecture5.mp4""> <track kind=""capt",100,OLMo-2-1124-7B
+accessibility,comp_captions_bare_001,captions,completion,bare,"<video src=""lecture.mp4"">","</video>
+
+## Lecture 1: Introduction to the course
+
+In this lecture, we will introduce the course and the main topics we will cover. We will also introduce the main concepts of the course, such as the notion of a **graph** and the **graph representation problem**. We will also introduce the notion of a **graph algorithm** and the **graph algorithm representation problem**. Finally, we will introduce the notion of a **graph algorithm library** and the **graph algorithm library representation",100,OLMo-2-1124-7B
+accessibility,comp_page_title_few_shot_001,page title,completion,few_shot,<html><head><title>About Us</title></head><html><head><title>Contact</title></head><html><head>,<title>Home</title></head><html><head><title>Our Mission</title></head><html><head><title>Our Vision</title></head><html><head><title>Our Values</title></head><html><head><title>Our People</title></head><html><head><title>Our Culture</title></head><html><head><title>Our Leadership</title></head><html><head><title>Our History</title></head><,100,OLMo-2-1124-7B
+accessibility,comp_page_title_bare_001,page title,completion,bare,"<html><head><meta charset=""utf-8"">","<title>How to use the <code>set</code> method</title> <style> .example { border: 1px solid #ccc; padding: 10px; margin: 10px; background-color: #eee; } </style> </head> <body> <p>When you want to set a value for a property, you can use the <code>set</code> method. This method is used to set the value of a property.",100,OLMo-2-1124-7B
+accessibility,comp_script_bare_001,script,completion,bare,<script,"type=""text/javascript"">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-12345678-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google",100,OLMo-2-1124-7B
+accessibility,comp_script_few_shot_001,script,completion,few_shot,"<script src=""utils.js""></script><script src=""main.js""></script><script src=""","main.js""></script><script src=""main.js""></script><script src=""main.js""></script><script src=""main.js""></script><script src=""main.js""></script><script src=""main.js""></script><script src=""main.js""></script><script src=""main.js""></script><script src=""main.js""></script><script src=""main.js""></script><script src=""main.js""></script><script src=""main.js""></script><script src=""main.js""></script",100,OLMo-2-1124-7B
+accessibility,hypo_alt_text_direct_001,alt text,hypothesis,direct_question,Look at this HTML: <img src='portrait.jpg'>. What specific attribute is missing to make it accessible?,"(Select one)
+
+  • alt
+  • title
+  • longdesc
+  • height
+  • width
+
+The answer is alt. The alt attribute is used to provide a text alternative to an image. It is used by screen readers to describe the image to the user. The title attribute is used to provide additional information about the image. The longdesc attribute is used to provide a link to a longer description of the image. The height and width attributes are used to specify the size",100,OLMo-2-1124-7B
+accessibility,hypo_alt_text_correction_001,alt text,hypothesis,error_correction,Correct the following inaccessible code: <img src='logo.png'>,"<p>Hi, I'm a paragraph.</p>
+
+The code above is not accessible because the image is not described. The image is not described because the alt attribute is empty. The image is not described because the alt attribute is not required. The image is not described because the alt attribute is not required. The image is not described because the alt attribute is not required. The image is not described because the alt attribute is not required. The image is not described because the alt attribute is not",100,OLMo-2-1124-7B
+accessibility,hypo_alt_text_socratic_001,alt text,hypothesis,socratic,A screen reader is software that reads text aloud. Why would a screen reader fail to describe this tag: <img src='chart.svg'>?,"I am using NVDA on Windows 10.
+
+  • 1
+    What do you mean by ""this tag""? – Barmar Jul 12 '17 at 19:51
+  • 1
+    @Barmar I mean the tag <img src='chart.svg'>. – user 170039 Jul 12 '17 at 19:52
+  • 1
+    What do you mean by ""this tag""? – Barmar",100,OLMo-2-1124-7B
+accessibility,valid_alt_text_direct_001,alt text,validation,direct_question,The following code is not accessible because it doesn't have what? <img src='photo.jpg'>,<script> alert('hi');</script> <div> </div> <p> </p> <p> </p> <p> </p> <p> </p> <p> </p> <p> </p> <p> </p> <p> </p> <p> </p> <p> </p> <p> </p> <p> </p> <p> </p> <p> </p> <,100,OLMo-2-1124-7B
+accessibility,valid_alt_text_instruction_001,alt text,validation,instruction,What accessibility attribute is missing from this HTML: <img src='photo.jpg'>?,"(A) alt (B) title (C) longdesc (D) src
+
+  • A
+  • B
+  • C
+  • D
+
+An accessible image should have an alternative text. The alternative text is the text that is displayed when the image is not displayed. The alternative text is also used by screen readers to describe the image to the user. The alternative text is also used by search engines to index the image. The alternative text is also used by search engines to",100,OLMo-2-1124-7B
+accessibility,valid_screen_reader_socratic_001,screen reader,validation,socratic,A screen reader is software that reads text aloud. Why would it fail to describe <img src='chart.svg'>?,"Because it is an image, not text. It is not a text alternative. It is not a text equivalent. It is not a text equivalent. It is not a text alternative. It is not a text equivalent. It is not a text alternative. It is not a text equivalent. It is not a text alternative. It is not a text equivalent. It is not a text alternative. It is not a text equivalent. It is not a text alternative. It is not a text equivalent.",100,OLMo-2-1124-7B
+accessibility,valid_aria_confab_001,ARIA,validation,cloze,ARIA stands for,"Accessible Rich Internet Applications. It is a specification that defines how to make web content more accessible to people with disabilities. It is a set of attributes that can be added to HTML elements to make them more accessible. ARIA is not a replacement for HTML, but rather a way to make HTML more accessible.
+
+ARIA is supported by all major browsers and is used by many popular websites and web applications, including Facebook, Twitter, and Google Maps. ARIA can be used to make web content more",100,OLMo-2-1124-7B
+accessibility,valid_html_confab_001,HTML,validation,cloze,HTML stands for,"HyperText Markup Language. It is the markup language used to create web pages. HTML is the standard markup language for creating web pages and other information that can be displayed in a web browser. HTML is the foundation of the World Wide Web. HTML is a markup language, not a programming language. HTML is used to create web pages and other information that can be displayed in a web browser. HTML is the standard markup language for creating web pages and other information that can be displayed in a web browser.",100,OLMo-2-1124-7B
+accessibility,ctrl_cc_cloze_001,closed captions,control,cloze,Closed captions display,"Closed captions display
+
+Closed captions display
+
+Closed captions display
+
+Closed captions display
+
+Closed captions display
+
+Closed captions display
+
+Closed captions display
+
+Closed captions display
+
+Closed captions display
+
+Closed captions display
+
+Closed captions display
+
+Closed captions display
+
+Closed captions display
+
+Closed captions display
+
+Closed captions display
+
+Closed captions display
+
+Closed captions display
+
+Closed captions display
+
+Closed captions display
+
+Closed captions display
+
+Closed captions display
+
+Closed captions display
+
+Closed captions display
+
+Closed captions display
+
+Closed captions display",100,OLMo-2-1124-7B
+accessibility,ctrl_contrast_cloze_001,color contrast,control,cloze,Color contrast is important because,"it helps people with low vision to distinguish between different elements on a page. It also helps people with normal vision to scan a page and quickly understand what it is about. The contrast ratio is the difference between the lightness of the background and the lightness of the text. The higher the contrast ratio, the easier it is to read the text. The contrast ratio should be at least 4.5:1 for normal text and 3:1 for large text.
+
+There are a few things",100,OLMo-2-1124-7B
+accessibility,ctrl_title_cloze_001,page title,control,cloze,A page title describes,"what the page is about in a few words or a short phrase. It is the first thing a search engine reads when indexing a page. The page title should be placed within the first 10-20 words of the page, with the rest of the text on the page not containing the keyword being ranked on. The title tag should be unique every page on your site, but each page should have a title that accurately describes the content of the page. The title tag should not be ""hidden""",100,OLMo-2-1124-7B
+accessibility,ctrl_cc_direct_001,closed captions,control,direct_question,What are closed captions?,"Closed captions are text that appears on a television screen to display dialogue and other sounds that are not audible to the hearing impaired. Closed captions are also known as subtitles. Closed captions are not the same as open captions, which are always on and cannot be turned off. Closed captions are usually displayed in white text on a black background, but they can also be displayed in yellow text on a blue background. Closed captions are usually displayed at the bottom of the screen, but they can also be displayed in the",100,OLMo-2-1124-7B
+accessibility,ctrl_contrast_direct_001,color contrast,control,direct_question,What is color contrast?,"Why is it important?
+
+Color contrast is the difference in color between the foreground and background of a web page. It is important because it helps people with visual impairments to read text on a web page. It also helps people with low vision to read text on a web page.
+
+What is the WCAG color contrast ratio?
+
+The WCAG color contrast ratio is the ratio of the lightness of the background color to the lightness of the foreground color. The WCAG color contrast ratio is measured in",100,OLMo-2-1124-7B
+accessibility,ctrl_title_direct_001,page title,control,direct_question,What is a page title?,"How do you write a good one?
+
+A page title is the name of a web page. It is the text that appears in the title bar of your browser window. It is also the text that appears in search results. Page titles are important for SEO because they help search engines understand what your page is about.
+
+How do you write a good page title? There are a few things to keep in mind when writing page titles:
+
+  1. Keep it short and concise. A good page title",100,OLMo-2-1124-7B
+accessibility,ctrl_cc_instruction_001,closed captions,control,instruction,Explain closed captions to a web developer.,They will look at you like you are speaking a foreign language. They will ask you to explain it again. They will ask you to explain it again. They will ask you to explain it again. They will ask you to explain it again. They will ask you to explain it again. They will ask you to explain it again. They will ask you to explain it again. They will ask you to explain it again. They will ask you to explain it again. They will ask you to explain,100,OLMo-2-1124-7B
+accessibility,ctrl_contrast_instruction_001,color contrast,control,instruction,Explain color contrast to a web developer.,"What is color contrast?
+
+Color contrast is the difference in color between two colors. Color contrast is important for web developers because it helps them to make sure that the text on a web page is readable. Color contrast is measured in terms of the ratio of the lightness of the two colors. The higher the ratio, the more contrast there is between the two colors.
+
+Color contrast is important for web developers because it helps them to make sure that the text on a web page is readable. If the text",100,OLMo-2-1124-7B
+accessibility,ctrl_title_instruction_001,page title,control,instruction,Explain page titles to a web developer.,They are the most important part of your website. They are the first thing that people see when they visit your site. They are also the first thing that search engines see when they visit your site. Page titles are the most important part of your website. They are the first thing that people see when they visit your site. They are also the first thing that search engines see when they visit your site. Page titles are the most important part of your website. They are the first thing that people see,100,OLMo-2-1124-7B
+accessibility,ctrl_cc_evaluative_001,closed captions,control,evaluative,A video without closed captions is not accessible because,"people who are deaf or hard of hearing cannot understand what is being said. Closed captions are text that appears on the screen at the same time as the audio. They are usually displayed at the bottom of the screen, but can also be displayed at the top of the screen or in a separate window. Closed captions are different from open captions, which are always displayed on the screen and cannot be turned off.
+
+Closed captions can be created in a variety of ways, including by using a stenographer,",100,OLMo-2-1124-7B
+accessibility,ctrl_contrast_evaluative_001,color contrast,control,evaluative,Text with low color contrast is not accessible because,"it is difficult to read. The text is white and the background is black. The text is also small and the font is not bold.
+
+The text is not accessible because it is difficult to read. The text is white and the background is black. The text is also small and the font is not bold. The text is also small and the font is not bold.
+
+The text is not accessible because it is difficult to read. The text is white and the background is black. The text is also",100,OLMo-2-1124-7B
+accessibility,ctrl_title_evaluative_001,page title,control,evaluative,A web page without a title is not accessible because,the title is used by screen readers to identify the page. The title is also used by search engines to identify the page. The title is also used by the browser to identify the page. The title is also used by the browser to identify the page. The title is also used by the browser to identify the page. The title is also used by the browser to identify the page. The title is also used by the browser to identify the page. The title is also used by the browser to identify,100,OLMo-2-1124-7B
+accessibility,ctrl_cc_scenario_001,closed captions,control,scenario,"A deaf user is watching a video on a website. Without closed captions, the user","is unable to understand the video. The user is unable to use the website.
+
+Why is this a problem?
+
+  • The user is unable to understand the video.
+  • The user is unable to use the website.
+
+What is the solution?
+
+  • Add closed captions to the video.
+
+What is the benefit?
+
+  • The user can understand the video and use the website.
+
+What is the cost?
+
+  • Adding closed captions to a video is inexpensive.
+
+What is the impact?
+
+  • Adding",100,OLMo-2-1124-7B
+accessibility,ctrl_contrast_scenario_001,color contrast,control,scenario,A low vision user visits a website with poor color contrast. The user,"is unable to read the text on the page. The user is unable to use the website.
+
+A person with low vision visits a website with poor color contrast. The user is unable to read the text on the page. The user is unable to use the website.
+
+What is color contrast?
+
+Color contrast is the difference in color between foreground and background. Color contrast is important for people with low vision because it helps them distinguish between foreground and background. Color contrast is also important for people with color blindness because",100,OLMo-2-1124-7B
+accessibility,ctrl_title_scenario_001,page title,control,scenario,A screen reader user navigates to a web page with no title. The user,is presented with a list of links. The user clicks on a link and is presented with a list of links. The user clicks on a link and is presented with a list of links. The user clicks on a link and is presented with a list of links. The user clicks on a link and is presented with a list of links. The user clicks on a link and is presented with a list of links. The user clicks on a link and is presented with a list of links. The user,100,OLMo-2-1124-7B
+accessibility,ctrl_bicycle_cloze_001,bicycle,control,cloze,A bicycle is used for,"transportation, and it is a very popular mode of transportation in many countries. It is a very popular mode of transportation in many countries. It is a very popular mode of transportation in many countries. It is a very popular mode of transportation in many countries. It is a very popular mode of transportation in many countries. It is a very popular mode of transportation in many countries. It is a very popular mode of transportation in many countries. It is a very popular mode of transportation in many countries. It",100,OLMo-2-1124-7B
+accessibility,ctrl_bicycle_direct_001,bicycle,control,direct_question,What is a bicycle?,What is a bicycle for? What is a bicycle for me? What is a bicycle for you? What is a bicycle for the world? What is a bicycle for the future? What is a bicycle for the past? What is a bicycle for the present? What is a bicycle for the future? What is a bicycle for the past? What is a bicycle for the present? What is a bicycle for the future? What is a bicycle for the past? What is a bicycle for the present?,100,OLMo-2-1124-7B
+accessibility,ctrl_bicycle_instruction_001,bicycle,control,instruction,Explain bicycles to a web developer.,"Explain web development to a cyclist.
+
+I was recently asked to explain the concept of a bicycle to a web developer. I was also asked to explain the concept of web development to a cyclist. I was not asked to explain the concept of a web developer to a cyclist, or a cyclist to a web developer. I was not asked to explain the concept of a bicycle to a web developer, or a web developer to a cyclist. I was not asked to explain the concept of a web developer to a",100,OLMo-2-1124-7B
+accessibility,ctrl_bicycle_evaluative_001,bicycle,control,evaluative,A bicycle without brakes is not safe because,it is not possible to stop the bicycle. A bicycle with brakes is safe because it is possible to stop the bicycle. A bicycle with brakes is safe because it is possible to stop the bicycle. A bicycle with brakes is safe because it is possible to stop the bicycle. A bicycle with brakes is safe because it is possible to stop the bicycle. A bicycle with brakes is safe because it is possible to stop the bicycle. A bicycle with brakes is safe because it is possible to stop the bicycle. A,100,OLMo-2-1124-7B
+accessibility,ctrl_bicycle_scenario_001,bicycle,control,scenario,"A child is riding a bicycle on a busy street. Without a helmet, the child","is at risk of serious injury. The child’s parents are negligent for not requiring the child to wear a helmet. The child’s negligence is not a defense to the parents’ negligence.
+
+A child is riding a bicycle on a busy street. Without a helmet, the child is at risk of serious injury. The child’s parents are negligent for not requiring the child to wear a helmet. The child’s negligence is not a defense to the parents’ negligence. The parents are responsible for the child’s injuries",100,OLMo-2-1124-7B
