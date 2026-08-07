@@ -1,0 +1,154 @@
+domain,prompt_id,concept,prompt_type,template_type,prompt,output,max_tokens,model
+control,blue_sky,blue sky,declarative,cloze,A blue sky is,"seen over the city of Dresden, Germany, February 9, 2015. REUTERS/Fabrizio Bensch
+
+FRANKFURT (Reuters) - The European Central Bank is likely to keep interest rates on hold at its meeting on Thursday, but it will be watching the euro zone economy closely, ECB President Mario Draghi said on Wednesday.
+
+“We are likely to keep the key ECB interest rate on hold at 0.75 percent,” Draghi told a",100,pythia-12b
+control,cold_water,cold water,declarative,cloze,Cold water is typically characterized by,"a temperature of less than about 40° F. (4.4° C.). Cold water is often used in swimming pools, spas, and other recreational water facilities. Cold water is also used in industrial applications, such as in cooling towers, and in commercial applications, such as in cooling towers, condensers, and evaporative coolers.
+Cold water is typically supplied to a water cooling system by a cold water supply line. The cold water supply line is typically connected to a water source",100,pythia-12b
+control,ice_cream,ice cream,declarative,cloze,Ice cream is a frozen dessert made from,"dairy products, usually containing milk, cream, or a combination of the two. It is usually sweetened and flavored with various ingredients, such as chocolate, vanilla, fruit, nuts, and other ingredients. Ice cream is a popular dessert in many countries, and is often served as a dessert or snack.
+
+Ice cream is made by churning a mixture of cream, milk, sugar, and sometimes other ingredients, such as eggs, corn syrup, and gelatin. The mixture is then frozen",100,pythia-12b
+control,life_jacket,life jacket,declarative,cloze,A life jacket is designed to,"keep a person afloat in the event of a water accident. A life jacket is typically worn by a person while swimming, boating, or participating in other water activities. A life jacket may be worn by a person while participating in water sports, such as surfing, windsurfing, and kite surfing. A life jacket may also be worn by a person while participating in water activities, such as swimming, water skiing, and water aerobics.
+A life jacket typically includes a buoy",100,pythia-12b
+control,tea_cup,tea cup,declarative,cloze,A tea cup is a vessel used for,"drinking tea. The tea cup is usually made of ceramic, porcelain, or glass. The tea cup is usually used for drinking tea, but it can also be used for other purposes.
+
+A tea cup is a vessel used for drinking tea. The tea cup is usually made of ceramic, porcelain, or glass. The tea cup is usually used for drinking tea, but it can also be used for other purposes.
+
+A tea cup is a vessel used for drinking tea",100,pythia-12b
+control,living_room,living room,declarative,cloze,A living room is,"a place where you can relax and enjoy your time with your family and friends. It is a place where you can enjoy your favorite TV shows, movies, and music. It is a place where you can enjoy your favorite foods and drinks. It is a place where you can enjoy your favorite games. It is a place where you can enjoy your favorite activities. It is a place where you can enjoy your favorite hobbies. It is a place where you can enjoy your favorite sports. It is",100,pythia-12b
+control,roller_coaster,roller coaster,declarative,cloze,A roller coaster is an amusement ride that,"includes a track with a series of hills and valleys. The track is supported by a series of support towers, or “spans,” that are spaced apart along the track. The track is supported by the spans, and the track is supported by the support towers. The track is supported by the support towers, and the track is supported by the support towers. The track is supported by the support towers, and the track is supported by the support towers. The track is supported by the support towers,",100,pythia-12b
+control,school_bus,school bus,declarative,cloze,A school bus is used to,"transport students to and from school. The school bus is typically a large vehicle having a plurality of seats for transporting students. The school bus is typically equipped with a safety restraint system for restraining the students in their seats. The safety restraint system typically includes a lap belt and a shoulder belt. The lap belt is typically positioned across the lap of the student and the shoulder belt is typically positioned across the chest of the student.
+The safety restraint system is typically secured to the vehicle by a latch assembly. The",100,pythia-12b
+control,grilled_cheese,grilled cheese,declarative,cloze,A grilled cheese sandwich consists of,"two slices of bread, each with a layer of cheese in the middle. The cheese is usually American cheese, but other cheeses can be used. The cheese is usually melted and then grilled on a griddle or in a pan. The sandwich is then cut in half and served.
+
+A grilled cheese sandwich is a popular food item in the United States. It is often served at lunch or dinner, and is a staple of many American school lunches.
+
+The sandwich is often served",100,pythia-12b
+control,peanut_butter,peanut butter,declarative,cloze,Peanut butter is made from,"ground peanuts, salt, and other ingredients. It is a staple food in many countries. It is a popular food in the United States, where it is the most popular spread. It is also popular in many other countries.
+
+Peanut butter is made from ground peanuts, salt, and other ingredients. It is a staple food in many countries. It is a popular food in the United States, where it is the most popular spread. It is also popular in many other countries.",100,pythia-12b
+control,hot_chocolate,hot chocolate,declarative,cloze,Hot chocolate is a warm beverage typically made from,"hot water, cocoa powder, and milk. The cocoa powder is typically mixed with the hot water and milk to form a hot chocolate beverage. The hot chocolate beverage is then served in a cup or mug.
+Hot chocolate beverages are typically served in a cup or mug. The cup or mug is typically made of a material that is capable of retaining heat. The cup or mug is typically made of a material that is capable of retaining heat. The cup or mug is typically made of a material that is",100,pythia-12b
+control,apple_pie,apple pie,declarative,cloze,Apple pie is a dessert featuring,"a sweet, flaky crust, a filling of fruit, and a topping of either sugar or a sweetened egg mixture. The crust is typically made from flour, butter, and sugar, and the filling is typically made from fruit, such as apples, pears, or berries. The topping is typically made from sugar, flour, and an egg.
+Traditional apple pies are baked in a pie pan, which is a shallow, round, metal pan with a removable bottom.",100,pythia-12b
+control,orange_juice,orange juice,declarative,cloze,Orange juice is extracted from,"the fruit of the orange tree. The orange tree is a member of the Rutaceae family, which also includes the lemon, lime, grapefruit, and mandarin orange. The orange tree is a tropical plant that is native to Southeast Asia. The orange tree is a member of the family Rutaceae, which also includes the lemon, lime, grapefruit, and mandarin orange. The orange tree is a tropical plant that is native to Southeast Asia.
+
+Orange juice is extracted from the",100,pythia-12b
+control,baked_beans,baked beans,declarative,cloze,Baked beans are,"a staple of the British diet. They are a cheap, filling and nutritious meal that can be made in advance and stored in the fridge for a quick and easy meal.
+
+Ingredients
+
+1 tin of baked beans
+
+1 tin of kidney beans
+
+1 tin of butter beans
+
+1 tin of cannellini beans
+
+1 tin of chickpeas
+
+1 tin of borlotti beans
+
+1 tin of haricot beans
+
+1",100,pythia-12b
+control,palm_tree,palm tree,declarative,cloze,A palm tree is characterized by,"its leaves, which are arranged in a spiral around the stem. The leaves are arranged in a spiral around the stem, and the leaves are arranged in a spiral around the stem. The leaves are arranged in a spiral around the stem. The leaves are arranged in a spiral around the stem. The leaves are arranged in a spiral around the stem. The leaves are arranged in a spiral around the stem. The leaves are arranged in a spiral around the stem. The leaves are arranged in a spiral around the",100,pythia-12b
+control,thunder_storm,thunder storm,declarative,cloze,A thunder storm is,"brewing in the South Pacific, and it's bringing with it a massive storm surge.
+
+The storm is expected to hit the Solomon Islands on Saturday, and the surge is expected to hit the islands on Sunday.
+
+The Solomon Islands is a group of islands in the South Pacific, and the storm is expected to hit the islands on Saturday.
+
+The storm is expected to bring with it a massive storm surge, which is expected to hit the Solomon Islands on Sunday.
+
+The storm",100,pythia-12b
+control,coral_reef,coral reef,declarative,cloze,A coral reef is an underwater formation that,"is composed of a complex community of organisms. Coral reefs are found in tropical and subtropical waters, and are the most diverse ecosystems on Earth. Coral reefs are found in shallow water, generally less than 30 meters deep. Coral reefs are found in shallow water because they are built by corals, which are sessile animals that live on the sea floor. Corals are composed of calcium carbonate, and are the most abundant organisms on Earth. Corals are found in shallow",100,pythia-12b
+control,shooting_star,shooting star,declarative,cloze,A shooting star is actually,"a meteor that has burned up in the atmosphere.
+
+A shooting star is actually a meteor that has burned up in the atmosphere.
+
+A shooting star is actually a meteor that has burned up in the atmosphere.
+
+A shooting star is actually a meteor that has burned up in the atmosphere.
+
+A shooting star is actually a meteor that has burned up in the atmosphere.
+
+A shooting star is actually a meteor that has burned up in the atmosphere.
+
+A shooting star",100,pythia-12b
+control,mountain_lion,mountain lion,declarative,cloze,A mountain lion is,"seen in the Santa Monica Mountains in California. (Credit: CBS)
+
+This is an archived article and the information in the article may be outdated. Please look at the time stamp on the story to see when it was last updated.
+
+A mountain lion was shot and killed by a California Department of Fish and Wildlife officer after it attacked a woman and her dog in the Santa Monica Mountains, officials said.
+
+The woman was walking her dog in the area of the 11800 block",100,pythia-12b
+control,tidal_wave,tidal wave,declarative,cloze,A tidal wave is a large ocean wave caused by,"the action of the tide. Tidal waves are caused by the gravitational pull of the moon and the sun on the earth. The moon's gravitational pull is stronger than the sun's, so the moon pulls the water on the earth's surface more strongly than the sun does. The moon's gravitational pull is stronger at the earth's equator than at the poles. The moon's gravitational pull is strongest at the earth's equator when the moon is full. The moon's gravitational pull is strongest at",100,pythia-12b
+control,dining_table,dining table,declarative,cloze,A dining table is furniture used for,"eating and dining. It is usually made of wood, metal, or plastic. It is a piece of furniture that is used to eat meals and other meals. It is usually placed in the middle of a room. It is usually used for eating meals and other meals. It is usually placed in the middle of a room.
+
+A dining table is furniture used for eating and dining. It is usually made of wood, metal, or plastic. It is a piece of furniture that is used to",100,pythia-12b
+control,car_keys,car keys,declarative,cloze,Car keys are used to,"unlock and lock doors, and to start and stop the engine of a vehicle. Car keys are typically made of metal, and are often shaped like a cylinder. The cylinder is typically cylindrical in shape, and has a flat top surface and a flat bottom surface. The flat top surface is used to insert into a keyhole of a vehicle, and the flat bottom surface is used to push against the flat top surface of the keyhole to unlock the vehicle.
+Car keys are typically made of metal,",100,pythia-12b
+control,washing_machine,washing machine,declarative,cloze,A washing machine is an appliance that,"uses mechanical action of water and detergent to wash laundry. The washing machine is classified into a pulsator type washing machine, a drum type washing machine, and a drum type washing machine having a pulsator.
+The drum type washing machine includes a cabinet forming an external appearance of the washing machine, a tub mounted in the cabinet to contain water, a drum rotatably mounted in the tub to contain laundry, and a motor to rotate the drum.
+The drum type washing machine is classified into a",100,pythia-12b
+control,bath_towels,bath towels,declarative,cloze,Bath towels are used for,"a variety of purposes. For example, bath towels are used to dry the body after bathing, to dry the body after a shower, to dry the body after a shower or bath, to dry the body after a sauna, to dry the body after a steam bath, to dry the body after a hot tub or Jacuzzi bath, to dry the body after a swimming pool or ocean bath, to dry the body after a snow bath, to dry the body after a snowmobile bath,",100,pythia-12b
+control,alarm_clock,alarm clock,declarative,cloze,An alarm clock is a device that,"is used to wake a person from sleep. The alarm clock is typically used to wake a person from sleep at a predetermined time. The alarm clock may be used to wake a person from sleep at a predetermined time, such as in the morning, in the afternoon, in the evening, or at night. The alarm clock may be used to wake a person from sleep at a predetermined time, such as in the morning, in the afternoon, in the evening, or at night, and may be used",100,pythia-12b
+control,light_bulb,light bulb,declarative,cloze,A light bulb is,"a device that converts electrical energy into light. The most common light bulb is the incandescent light bulb, which uses a tungsten filament enclosed in a glass bulb. The filament is heated to a very high temperature, causing it to glow. The filament is typically heated by passing an electric current through it. The filament is typically supported by a pair of lead wires, which are attached to the filament at one end and to a support at the other end. The glass bulb is filled with a gas",100,pythia-12b
+control,post_office,post office,declarative,cloze,A post office is an institution that,"provides postal services to the public. A post office is typically a government-owned and operated facility that is open to the public. Post offices are typically located in public buildings, such as post office buildings, post office annexes, or post office branches. Post offices are typically open during business hours, such as Monday through Friday, 8:00 a.m. to 5:00 p.m.
+Post offices are typically staffed by a number of postal employees, such as postal clerks",100,pythia-12b
+control,parking_lot,parking lot,declarative,cloze,A parking lot is,a place where you can park your car. It is a place where you can park your car and leave it for a while. It is a place where you can park your car and leave it for a while. It is a place where you can park your car and leave it for a while. It is a place where you can park your car and leave it for a while. It is a place where you can park your car and leave it for a while. It is a place where you,100,pythia-12b
+control,train_station,train station,declarative,cloze,A train station is a facility where,"trains stop to pick up or drop off passengers. Train stations are usually located in or near a city center, and are often the center of a city's public transportation system. Train stations are usually built with a large waiting area for passengers to wait for their trains. Train stations are usually built with a large waiting area for passengers to wait for their trains.
+
+A train station is a facility where trains stop to pick up or drop off passengers. Train stations are usually located in or near a city",100,pythia-12b
+control,fire_station,fire station,declarative,cloze,A fire station is,"a building that houses fire fighting equipment and personnel. Fire stations are typically located in urban areas, and are often located in high-density areas. Fire stations are typically built to withstand high winds and other natural disasters. Fire stations are typically built with a steel frame and a brick or stone exterior.
+Fire stations are typically built with a steel frame and a brick or stone exterior. The steel frame is typically built with a steel frame and a brick or stone exterior. The brick or stone exterior is typically",100,pythia-12b
+control,swimming_pool,swimming pool,declarative,cloze,A swimming pool is a structure designed for,"swimming and/or other water sports. A swimming pool may be constructed of concrete, fiberglass, or other materials. A swimming pool may be constructed in a backyard, a backyard of a house, a backyard of a condominium, a backyard of a hotel, a backyard of a campground, a backyard of a public park, a backyard of a school, a backyard of a public beach, a backyard of a public beach, a backyard of a public beach, a backyard of a",100,pythia-12b
+control,coffee_shop,coffee shop,declarative,cloze,A coffee shop is,"a place where you can get a cup of coffee, a pastry, or a snack. It is a place where you can sit down and relax. It is a place where you can meet friends and have a good time. It is a place where you can get a cup of coffee and a pastry and sit down and relax. It is a place where you can meet friends and have a good time. It is a place where you can get a cup of coffee and a pastry and sit down and",100,pythia-12b
+control,hard_drive,hard drive,declarative,cloze,A hard drive is a computer component used for,"storing data. Hard drives are commonly used in desktop computers, laptop computers, and other computing devices. Hard drives are typically made up of a number of platters, each of which has a magnetic coating. The platters are arranged in a stack, with one platter above another. The platters are rotated by a spindle motor at a constant speed.
+Hard drives are typically made up of a number of platters, each of which has a magnetic coating. The platters are arranged in a",100,pythia-12b
+control,operating_system,operating system,declarative,cloze,An operating system is software that,"manages computer hardware and software resources and provides common services for computer programs. Common services include process management, memory management, and file management. The operating system also provides an interface between programs and the computer hardware.
+The operating system is typically stored in a non-volatile memory device, such as a hard disk drive, and is loaded into memory when the computer is turned on. The operating system is responsible for managing the computer hardware and software resources and for providing the common services.
+The operating system is",100,pythia-12b
+control,search_engine,search engine,declarative,cloze,A search engine is,"a computer program that helps a user to locate information stored on a computer system or a network. The information may be stored in a database, or may be stored in a file. The information may be stored in a file, or may be stored in a database. The information may be stored in a file, or may be stored in a database. The information may be stored in a file, or may be stored in a database. The information may be stored in a file, or may be stored",100,pythia-12b
+control,user_name,user name,declarative,cloze,A user name is typically used for,"identifying a user of a computer system. A user name is typically a string of characters that is unique to the user. A user name may be a combination of letters, numbers, and/or special characters. A user name may be a combination of letters, numbers, and/or special characters that is unique to the user. A user name may be a combination of letters, numbers, and/or special characters that is unique to the user and that is not easily guessed by a malicious user.",100,pythia-12b
+control,power_supply,power supply,declarative,cloze,A power supply is,"a device that supplies electric power to a load. A power supply may be a stand-alone device or may be a component of a larger system. A power supply may be used to convert one form of electrical energy to another. For example, a power supply may convert alternating current (AC) electrical energy to direct current (DC) electrical energy. A power supply may also convert DC electrical energy to AC electrical energy.
+A power supply may be used to provide power to a load. The load",100,pythia-12b
+control,data_base,data base,declarative,cloze,A data base is,"a collection of data organized in a manner that facilitates the retrieval of data. A data base may be organized in a variety of ways. For example, a data base may be organized in a hierarchical manner, such as a file system. A data base may also be organized in a relational manner, such as a relational database. A data base may also be organized in a networked manner, such as a network database.
+A data base may be used to store data that is generated by a variety",100,pythia-12b
+control,sore_throat,sore throat,declarative,cloze,A sore throat is,"a common ailment that can be caused by a variety of factors. It is often caused by a viral infection, but can also be caused by a bacterial infection. A sore throat can be caused by a variety of bacteria, including streptococcus, staphylococcus, and hemophilus.
+
+Symptoms of a sore throat include:
+
+A sore throat
+
+A fever
+
+A headache
+
+A cough
+
+A runny nose
+
+A sore throat can be caused by",100,pythia-12b
+control,blood_pressure,blood pressure,declarative,cloze,Blood pressure refers to,"the force exerted by circulating blood on the walls of blood vessels. It is a major risk factor for cardiovascular disease, which is the leading cause of death in the United States. The American Heart Association estimates that about one-third of all Americans have high blood pressure, and that about half of these people are unaware that they have the condition.
+Blood pressure is measured with a sphygmomanometer, which is a device that inflates and deflates a cuff placed around a patient's upper",100,pythia-12b
+control,collar_bone,collar bone,declarative,cloze,The collar bone is,a long bone in the human skeleton that connects the shoulder to the sternum. The collar bone is a very important bone in the human skeleton. The collar bone is the first bone to articulate with the sternum. The collar bone is also the first bone to articulate with the clavicle. The collar bone is also the first bone to articulate with the scapula. The collar bone is also the first bone to articulate with the humerus. The collar bone is also the first bone to,100,pythia-12b
+control,heart_rate,heart rate,declarative,cloze,Heart rate measures,"of the effects of alcohol on the human body.
+The effects of alcohol on the human body are well documented. However, the effects of alcohol on the heart rate are not well understood. This study was designed to determine the effects of alcohol on the heart rate. The study was conducted in a laboratory setting. The study was conducted in a laboratory setting. The study was conducted in a laboratory setting. The study was conducted in a laboratory setting. The study was conducted in a laboratory setting. The study",100,pythia-12b
+control,dental_appointment,dental appointment,declarative,cloze,A dental appointment is,"a time when you can get your teeth cleaned, get a filling, or get a crown. But what if you have a toothache? What if you have a toothache and you can’t afford to see a dentist?
+
+The answer is simple: you can’t.
+
+The Affordable Care Act (ACA) requires that all health insurance plans cover dental care. But the ACA also requires that all health insurance plans cover preventive care, including dental care.
+
+The A",100,pythia-12b
+control,waiting_room,waiting room,declarative,cloze,A waiting room is,"a place where people wait for something to happen. A waiting room is a place where people wait for something to happen.
+
+A waiting room is a place where people wait for something to happen. A waiting room is a place where people wait for something to happen.
+
+A waiting room is a place where people wait for something to happen. A waiting room is a place where people wait for something to happen.
+
+A waiting room is a place where people wait for something to happen.",100,pythia-12b

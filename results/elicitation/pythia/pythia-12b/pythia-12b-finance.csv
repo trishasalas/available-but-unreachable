@@ -1,0 +1,156 @@
+domain,prompt_id,concept,prompt_type,template_type,prompt,output,max_tokens,model
+finance,cash_flow,cash flow,declarative,cloze,Cash flow is,"the lifeblood of any business. It is the fuel that keeps the engine running. Without cash flow, a business will not be able to pay its bills, buy inventory, or pay its employees.
+
+Cash flow is the lifeblood of any business. It is the fuel that keeps the engine running. Without cash flow, a business will not be able to pay its bills, buy inventory, or pay its employees.
+
+Cash flow is the lifeblood of any business. It",100,pythia-12b
+finance,balance_sheet,balance sheet,declarative,cloze,A balance sheet is,"a financial statement that shows the financial position of a business at a point in time. It is a snapshot of the financial health of a business. It is a snapshot of the financial health of a business.
+
+A balance sheet is a financial statement that shows the financial position of a business at a point in time. It is a snapshot of the financial health of a business. It is a snapshot of the financial health of a business.
+
+A balance sheet is a financial statement that shows the",100,pythia-12b
+finance,journal_entry,journal entry,declarative,cloze,A journal entry is,"a record of a person's thoughts, feelings, and experiences. Journaling is a great way to express yourself and to keep track of your thoughts and feelings. It is also a great way to learn about yourself.
+
+Journaling is a great way to express yourself and to keep track of your thoughts and feelings. It is also a great way to learn about yourself.
+
+Journaling is a great way to express yourself and to keep track of your thoughts and feelings. It is also a",100,pythia-12b
+finance,accelerated_depreciation,accelerated depreciation,declarative,cloze,Accelerated depreciation is,"a tax break that allows businesses to deduct the cost of equipment and other assets over a shorter period of time. The tax break is available to businesses that use the assets in their business.
+
+The tax break is available to businesses that use the assets in their business.
+
+The tax break is available to businesses that use the assets in their business.
+
+The tax break is available to businesses that use the assets in their business.
+
+The tax break is available to businesses that use the",100,pythia-12b
+finance,impairment_goodwill,impairment goodwill,declarative,cloze,Goodwill impairment occurs when,"a company’s assets are less valuable than its liabilities. The company’s assets are valued at their historical cost, while the liabilities are valued at their current market value.
+
+The impairment loss is calculated by comparing the carrying value of the assets to the fair value of the liabilities. The fair value of the liabilities is determined by using the market value of the liabilities.
+
+The impairment loss is recognized in the income statement as a reduction in the carrying value of the assets.
+
+The",100,pythia-12b
+finance,yield_maturity,yield maturity,declarative,cloze,Yield to maturity is,"the most widely used measure of the return on a bond investment. It is the sum of the interest payments received by the investor over the life of the bond. The yield to maturity is the interest rate that the investor will receive if he or she holds the bond to the maturity date.
+
+The yield to maturity is the interest rate that the investor will receive if he or she holds the bond to the maturity date.
+
+The yield to maturity is the interest rate that the investor will receive if",100,pythia-12b
+finance,bond_coupon,bond coupon,declarative,cloze,A bond coupon is,"a coupon that is issued by a bond issuer to a bondholder in exchange for the bondholder's agreement to purchase a bond at a specified price. The bond coupon is usually issued in the form of a paper document, but may also be issued electronically. The bond coupon is usually printed on a bond certificate, which is a paper document that is issued by the bond issuer to the bondholder. The bond certificate is usually printed on a bond certificate stock, which is a paper document that is",100,pythia-12b
+finance,credit_spread,credit spread,declarative,cloze,A credit spread is,"a financial instrument that allows investors to profit from a change in the price of one or more underlying assets. The underlying assets may be stocks, bonds, commodities, currencies, or other financial instruments. A credit spread may be created by buying one or more underlying assets and selling a second underlying asset. The second underlying asset may be referred to as a “credit” or “spread” because it is typically a credit or a spread over the price of the first underlying asset.
+A credit spread may be",100,pythia-12b
+finance,modified_duration,modified duration,declarative,cloze,Modified duration measures,"of the P300 event-related potential.
+The P300 event-related potential (ERP) is a well-known measure of cognitive processing. The P300 is typically measured by averaging the ERP over a number of trials. However, averaging the ERP over a number of trials can lead to a loss of information. In this paper, we propose a modified duration measure of the P300. The modified duration measure is based on the idea that the P300 is a transient response that",100,pythia-12b
+finance,interest_swap,interest swap,declarative,cloze,An interest swap is,"a financial instrument that is used to hedge against interest rate risk. An interest swap is a contract between two parties, the “buyer” and the “seller”, where the buyer pays a fixed rate of interest to the seller and the seller pays a floating rate of interest to the buyer. The buyer and seller agree to exchange the floating rate of interest for the fixed rate of interest. The buyer and seller agree to exchange the floating rate of interest for the fixed rate of interest. The buyer and",100,pythia-12b
+finance,call_option,call option,declarative,cloze,A call option gives,"the buyer the right to buy a stock at a specified price within a specified time period. The buyer of a call option is said to have the right to buy the stock at the strike price. The buyer of a put option is said to have the right to sell the stock at the strike price.
+A call option is said to be in-the-money when the stock price is above the strike price. A put option is said to be in-the-money when the stock price is",100,pythia-12b
+finance,commodity_futures,commodity futures,declarative,cloze,Commodity futures are,"a great way to speculate on the price of a commodity. But, if you are looking to make a profit, you need to be able to predict the price of the commodity.
+
+The price of a commodity is determined by supply and demand. The supply of a commodity is determined by the amount of the commodity that is available to be sold. The demand for a commodity is determined by the amount of the commodity that is needed.
+
+The price of a commodity is determined by the supply and",100,pythia-12b
+finance,currency_hedge,currency hedge,declarative,cloze,A currency hedge is,"a strategy that involves the purchase of a currency that is expected to appreciate against a currency that is expected to depreciate. The currency hedge is used to reduce the risk of currency exposure.
+
+A currency hedge is a strategy that involves the purchase of a currency that is expected to appreciate against a currency that is expected to depreciate. The currency hedge is used to reduce the risk of currency exposure.
+
+A currency hedge is a strategy that involves the purchase of a currency that is expected to appreciate",100,pythia-12b
+finance,implied_volatility,implied volatility,declarative,cloze,Implied volatility refers to,the price of a security that is expected to change in the future. The price of a security is determined by the supply and demand for the security. The supply and demand for a security is determined by the price of the security. The price of a security is determined by the supply and demand for the security. The price of a security is determined by the supply and demand for the security. The price of a security is determined by the supply and demand for the security. The price of a security is,100,pythia-12b
+finance,zero_collar,zero collar,declarative,cloze,A zero collar strategy,"for the treatment of cervical spine injuries.
+A zero collar strategy for the treatment of cervical spine injuries is described. The technique is based on the concept of a ""zero collar"" for the cervical spine. The zero collar is defined as the distance between the anterior and posterior margins of the vertebral bodies. The zero collar is measured on lateral radiographs of the cervical spine. The zero collar is then used to determine the appropriate size of the cervical collar. The zero collar is measured on the lateral radiograph",100,pythia-12b
+finance,diluted_earnings,diluted earnings,declarative,cloze,Diluted earnings per share is,"a measure of a company's profitability. It is calculated by dividing net income by the weighted average number of common shares outstanding during the period.
+
+Diluted earnings per share is a measure of a company's profitability. It is calculated by dividing net income by the weighted average number of common shares outstanding during the period.
+
+Diluted earnings per share is a measure of a company's profitability. It is calculated by dividing net income by the weighted average number of common shares",100,pythia-12b
+finance,price_ratio,price ratio,declarative,cloze,The price to earnings ratio is,"a measure of the price of a stock relative to its earnings. The higher the ratio, the more expensive the stock. The price to earnings ratio is calculated by dividing the stock price by the earnings per share.
+
+The price to earnings ratio is a measure of the price of a stock relative to its earnings. The higher the ratio, the more expensive the stock. The price to earnings ratio is calculated by dividing the stock price by the earnings per share.
+
+The price to earnings ratio is",100,pythia-12b
+finance,preferred_dividend,preferred dividend,declarative,cloze,A preferred dividend is,"a dividend paid by a company to its shareholders. The dividend is paid in the form of a cash payment, a stock dividend, or a combination of cash and stock. The dividend is usually paid out of the company's earnings, but it can also be paid out of capital.
+
+A preferred stock is a type of stock that has a fixed dividend rate. Preferred stock is usually issued by a company to attract investors. Preferred stock is usually issued by a company to attract investors.",100,pythia-12b
+finance,financial_leverage,financial leverage,declarative,cloze,Financial leverage is,"a term used to describe the relationship between a company's debt and equity. It is a measure of the company's ability to generate cash flow from its operations.
+
+Financial leverage is a term used to describe the relationship between a company's debt and equity. It is a measure of the company's ability to generate cash flow from its operations.
+
+Financial leverage is a term used to describe the relationship between a company's debt and equity. It is a measure of the company's ability to generate",100,pythia-12b
+finance,debt_covenant,debt covenant,declarative,cloze,A debt covenant is,"a promise by a borrower to pay a specified amount of money to a lender. The borrower promises to pay the lender a specified amount of money, usually at a specified time, in exchange for the lender’s promise to extend credit to the borrower.
+
+A debt covenant is a promise by a borrower to pay a specified amount of money to a lender. The borrower promises to pay the lender a specified amount of money, usually at a specified time, in exchange for the",100,pythia-12b
+finance,capital_structure,capital structure,declarative,cloze,Capital structure refers to,"the composition of a firm's assets. It is the ratio of the firm's total assets to its equity. The capital structure of a firm is determined by the firm's financing decisions. The capital structure of a firm is determined by the firm's financing decisions.
+
+The capital structure of a firm is determined by the firm's financing decisions. The capital structure of a firm is determined by the firm's financing decisions. The capital structure of a firm is determined by the firm's financing decisions.",100,pythia-12b
+finance,due_diligence,due diligence,declarative,cloze,Due diligence is,"a process of investigation that is performed before a transaction is completed. Due diligence is a process of investigation that is performed before a transaction is completed.
+
+The Supreme Court on Friday asked the Centre to explain why it had not taken action against the alleged illegal mining in the Niyamgiri hills in Odisha.
+
+A bench of Justices Dipak Misra and Prafulla C Pant said the Centre should have taken action against the illegal mining in the Niyamgiri hills",100,pythia-12b
+finance,public_offering,public offering,declarative,cloze,A public offering is,"a way for a company to raise money by selling shares of its stock to the public. The company will issue a prospectus, which is a document that describes the company and its business, and the terms of the offering. The prospectus will also include information about the company’s financial condition, and the risks associated with investing in the company.
+
+The prospectus will be filed with the Securities and Exchange Commission (SEC). The SEC will review the prospectus to make sure it is accurate",100,pythia-12b
+finance,market_liquidity,market liquidity,declarative,cloze,Market liquidity refers to,"the ease with which a market can be traded. The liquidity of a market is determined by the number of buyers and sellers in the market, the size of the orders placed in the market, and the speed at which the orders are executed.
+
+The liquidity of a market is determined by the number of buyers and sellers in the market, the size of the orders placed in the market, and the speed at which the orders are executed.
+
+The liquidity of a market is determined by the number",100,pythia-12b
+finance,trade_settlement,trade settlement,declarative,cloze,Trade settlement is,"a process of exchanging goods and services between two parties. The process of trade settlement is typically carried out by a central bank, which acts as a clearing house for the transaction. The central bank acts as a central counterparty to the transaction, and is responsible for settling the transaction in the event of a default by one of the parties.
+The central bank may be a member of a central bank group, which is a group of central banks that have agreed to act as a central counterparty to each",100,pythia-12b
+finance,central_clearing,central clearing,declarative,cloze,Central clearing houses,"are used to clear trades between participants in a trading system. For example, a central clearing house may be used to clear trades between a number of different banks. In this example, the central clearing house may receive a trade from a first bank and then send a confirmation to the first bank that the trade has been completed. The central clearing house may also receive a trade from a second bank and then send a confirmation to the second bank that the trade has been completed.
+In a typical clearing house,",100,pythia-12b
+finance,maintenance_margin,maintenance margin,declarative,cloze,A maintenance margin is,"a safety margin that is provided to ensure that a system is not overloaded. For example, a system may be designed to operate at a maximum load of 100% of its capacity. If the system is operated at a load of 110% of its capacity, then the system is operating at a load that is 10% greater than its maximum load. In this example, the system is operating at a load that is 10% greater than its maximum load.
+In some systems, the maintenance margin is",100,pythia-12b
+finance,regulatory_compliance,regulatory compliance,declarative,cloze,Regulatory compliance means,"different things to different people. For some, it means the ability to comply with the rules and regulations of the government. For others, it means the ability to comply with the rules and regulations of the company. For still others, it means the ability to comply with the rules and regulations of the industry.
+
+The first two are easy to understand. The third is a little more difficult.
+
+The rules and regulations of the industry are the rules and regulations of the industry. They are not",100,pythia-12b
+finance,money_laundering,money laundering,declarative,cloze,Money laundering is,"a crime that is committed by individuals, groups, and corporations to conceal the source of funds obtained illegally. Money laundering is a crime that is committed by individuals, groups, and corporations to conceal the source of funds obtained illegally.
+
+The Enforcement Directorate (ED) has attached assets worth Rs 1,000 crore of the Vijay Mallya-owned Kingfisher Airlines in connection with the Rs 9,000-crore loan default case. The agency has also attached assets worth Rs",100,pythia-12b
+finance,asset_allocation,asset allocation,declarative,cloze,Asset allocation is,"a key component of a successful investment strategy. It is the process of determining how much of your investment portfolio should be allocated to various asset classes.
+
+The asset allocation process is a critical component of a successful investment strategy. It is the process of determining how much of your investment portfolio should be allocated to various asset classes.
+
+The asset allocation process is a critical component of a successful investment strategy. It is the process of determining how much of your investment portfolio should be allocated to various asset classes",100,pythia-12b
+finance,systemic_risk,systemic risk,declarative,cloze,Systemic risk is,"a key issue in the management of patients with acute coronary syndromes (ACS). The risk of death or myocardial infarction (MI) is high in the first hours after the onset of symptoms, and the risk of death or MI is high in the first days after the onset of symptoms. The risk of death or MI is high in the first hours after the onset of symptoms, and the risk of death or MI is high in the first days after the onset of symptoms. The risk of death or MI is",100,pythia-12b
+finance,stress_test,stress test,declarative,cloze,A stress test is,a test that is performed on a computer system to determine the ability of the computer system to withstand a stress. A stress test may be performed on a computer system to determine the ability of the computer system to withstand a stress. A stress test may be performed on a computer system to determine the ability of the computer system to withstand a stress. A stress test may be performed on a computer system to determine the ability of the computer system to withstand a stress. A stress test may be performed on a computer,100,pythia-12b
+finance,credit_default,credit default,declarative,cloze,A credit default is,"a situation where a borrower defaults on a loan. A credit default swap (CDS) is a financial instrument that is used to hedge against credit risk. A CDS is a contract between two parties, the protection buyer and the protection seller. The protection buyer pays a premium to the protection seller in exchange for the protection seller agreeing to make a payment to the protection buyer if a credit event occurs. The credit event may be a default by a borrower. The protection buyer may be a financial",100,pythia-12b
+finance,stock_market,stock market,declarative,cloze,The stock market is,"a great place to invest your money. It is a place where you can get a good return on your investment. However, it is not a place where you can get rich overnight. It takes time to build a good portfolio.
+
+The stock market is a great place to invest your money. It is a place where you can get a good return on your investment. However, it is not a place where you can get rich overnight. It takes time to build a good portfolio.",100,pythia-12b
+finance,mutual_fund,mutual fund,declarative,cloze,A mutual fund is,"a professionally managed investment vehicle that pools money from a number of investors and invests it in a variety of securities. The fund manager, who is usually a professional money manager, invests the money in a variety of securities, such as stocks, bonds, and money market instruments. The fund manager is responsible for the overall investment strategy of the fund. The fund manager is also responsible for the day-to-day management of the fund.
+
+Mutual funds are usually open-ended, which",100,pythia-12b
+finance,hedge_fund,hedge fund,declarative,cloze,A hedge fund is,"a type of investment fund that invests in a variety of assets, including stocks, bonds, commodities, currencies, and other financial instruments. Hedge funds are typically run by a team of managers who are experts in a particular field. They are often managed by a team of managers who are experts in a particular field.
+
+Hedge funds are typically run by a team of managers who are experts in a particular field. They are often managed by a team of managers who are experts in a particular",100,pythia-12b
+finance,bear_market,bear market,declarative,cloze,A bear market is,"a period of time when the stock market experiences a significant decline in value. The bear market is often followed by a bull market, which is a period of time when the stock market experiences a significant increase in value.
+
+The term “bear market” is often used to describe a period of time when the stock market experiences a significant decline in value. The term “bear market” is often used to describe a period of time when the stock market experiences a significant decline in value.
+
+A",100,pythia-12b
+finance,bull_market,bull market,declarative,cloze,A bull market is,"a market in which the price of a stock or other financial asset is rising. Bull markets are often characterized by a rise in the price of a stock or other financial asset, and a rise in the price of the stock or other financial asset is often followed by a rise in the price of the stock or other financial asset.
+A bear market is a market in which the price of a stock or other financial asset is falling. A bear market is often characterized by a fall in the price of a",100,pythia-12b
+finance,credit_rating,credit rating,declarative,cloze,A credit rating is,"a measure of the creditworthiness of a borrower. A credit rating is a subjective assessment of the likelihood that a borrower will be able to repay a loan. A credit rating is typically based on a number of factors, including the borrower's credit history, the amount of debt the borrower is carrying, the borrower's ability to pay the debt, and the borrower's financial strength.
+A credit rating is typically assigned by a credit rating agency. A credit rating agency is",100,pythia-12b
+finance,tax_shelter,tax shelter,declarative,cloze,A tax shelter is,"a legal arrangement that allows a taxpayer to reduce the amount of tax that he or she owes to the government. The tax shelter is a legal agreement between the taxpayer and the government. The taxpayer agrees to pay a certain amount of tax in exchange for the government agreeing to reduce the amount of tax that the taxpayer owes.
+
+The tax shelter is a legal agreement between the taxpayer and the government. The taxpayer agrees to pay a certain amount of tax in exchange for the government agreeing to reduce the amount of",100,pythia-12b
+finance,venture_capital,venture capital,declarative,cloze,Venture capital is,"a hot topic in the tech world. It’s a topic that’s been covered by the likes of TechCrunch, The New York Times, and The Wall Street Journal. Venture capitalists are the people who invest in startups, and they’re the ones who decide whether or not a startup is worth their time.
+
+But what is venture capital? And how does it work?
+
+What is Venture Capital?
+
+Venture capital is a form of investment",100,pythia-12b
+finance,prime_rate,prime rate,declarative,cloze,The prime rate is,"the rate at which a bank charges its best customers for loans. It is the rate at which a bank lends money to its best customers. The prime rate is the rate at which a bank lends money to its best customers.
+
+The prime rate is the rate at which a bank charges its best customers for loans. It is the rate at which a bank lends money to its best customers. The prime rate is the rate at which a bank lends money to its best customers.",100,pythia-12b
+finance,fiscal_policy,fiscal policy,declarative,cloze,Fiscal policy refers to,"the use of government spending and taxation to influence the economy. Fiscal policy is a tool of macroeconomic management. It is used to influence the level of economic activity, the rate of inflation, and the level of employment. Fiscal policy is also used to influence the level of economic activity in the short term.
+
+Fiscal policy is used to influence the level of economic activity, the rate of inflation, and the level of employment. Fiscal policy is also used to influence the level",100,pythia-12b
+finance,trade_deficit,trade deficit,declarative,cloze,A trade deficit occurs when,"a country imports more goods and services than it exports. The trade deficit is the difference between the value of the goods and services that a country imports and the value of the goods and services that it exports.
+
+The trade deficit is a measure of the difference between the value of the goods and services that a country imports and the value of the goods and services that it exports.
+
+The trade deficit is the difference between the value of the goods and services that a country imports and the value of",100,pythia-12b
