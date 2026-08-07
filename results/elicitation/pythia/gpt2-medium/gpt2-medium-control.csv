@@ -1,0 +1,257 @@
+domain,prompt_id,concept,prompt_type,template_type,prompt,output,max_tokens,model
+control,blue_sky,blue sky,declarative,cloze,A blue sky is,"a beautiful thing. It's a sign of a healthy, happy, and healthy-looking planet. But it's also a sign of a planet that's been ravaged by climate change.
+
+The blue sky is a sign of a healthy, happy, and healthy-looking planet. But it's also a sign of a planet that's been ravaged by climate change.
+
+The blue sky is a sign of a healthy, happy, and healthy-looking planet. But it's also a sign",100,gpt2-medium
+control,cold_water,cold water,declarative,cloze,Cold water is typically characterized by,"a low temperature and a low pressure. The cold water is usually at a depth of about 1.5 meters (5 feet) and is usually at a pressure of about 1.5 bar (10 psi). The cold water is usually at a depth of about 1.5 meters (5 feet) and is usually at a pressure of about 1.5 bar (10 psi).
+
+The cold water is usually at a depth of about 1.5 meters (5 feet) and is usually at",100,gpt2-medium
+control,ice_cream,ice cream,declarative,cloze,Ice cream is a frozen dessert made from,"milk and sugar. It is usually made with cream cheese, but can also be made with any type of cream cheese. Ice cream is usually served with a scoop of ice cream, but it can also be made with a scoop of ice cream, ice cream, or a combination of both.
+
+Ice cream is a popular dessert in many countries around the world. It is also a popular snack in many countries around the world. Ice cream is also a popular dessert in many countries around the world.",100,gpt2-medium
+control,life_jacket,life jacket,declarative,cloze,A life jacket is designed to,"protect you from the elements. It's a lightweight, waterproof, and breathable layer that can be worn over your clothes or over your head. It's also a great way to keep you warm in the winter.
+
+The Life Jacket is made of a lightweight, waterproof, and breathable fabric that's designed to keep you warm in the winter. It's also a great way to keep you warm in the winter.
+
+The Life Jacket is made of a lightweight, waterproof, and breath",100,gpt2-medium
+control,tea_cup,tea cup,declarative,cloze,A tea cup is a vessel used for,"drinking tea. It is usually made of a tea leaf, a leaf of a plant, or a leaf of a tree. Tea cups are usually made of a thin, round, or round-shaped piece of wood. Tea cups are usually made of a thin, round, or round-shaped piece of wood.
+
+Tea cups are usually made of a thin, round, or round-shaped piece of wood. Tea cups are usually made of a thin, round, or round-shaped piece",100,gpt2-medium
+control,living_room,living room,declarative,cloze,A living room is,a place where you can relax and enjoy the company of your family and friends. It's a place where you can relax and enjoy the company of your family and friends. It's a place where you can relax and enjoy the company of your family and friends. It's a place where you can relax and enjoy the company of your family and friends. It's a place where you can relax and enjoy the company of your family and friends. It's a place where you can relax and enjoy the company,100,gpt2-medium
+control,roller_coaster,roller coaster,declarative,cloze,A roller coaster is an amusement ride that,"is designed to be fun and exciting for all ages. Roller coasters are often built in a variety of styles and sizes, and are often designed to be fun and exciting for all ages. Roller coasters are often built in a variety of styles and sizes, and are often designed to be fun and exciting for all ages.
+
+The term roller coaster is often used to describe a roller coaster that is designed to be fun and exciting for all ages. Roller coasters are often built in a variety",100,gpt2-medium
+control,school_bus,school bus,declarative,cloze,A school bus is used to,"transport students from the school in the village of Konya, in the central African Republic, on April 7, 2015. (AFP Photo/Mariana Bazo)
+
+Konya (AFP) - A school bus carrying students from a school in the central African Republic was attacked by gunmen on Tuesday, killing at least nine people, officials said.
+
+The attack took place in the village of Konya, in the central African Republic's capital, Bangui, and",100,gpt2-medium
+control,grilled_cheese,grilled cheese,declarative,cloze,A grilled cheese sandwich consists of,"a slice of bread, cheese, and a slice of tomato. The sandwich is served with a side of lettuce, tomato, and a slice of tomato.
+
+The grilled cheese sandwich is a popular snack in the United States. It is also a popular snack in many other countries.
+
+The grilled cheese sandwich is often served with a side of lettuce, tomato, and a slice of tomato.
+
+The grilled cheese sandwich is often served with a side of lettuce, tomato, and a slice",100,gpt2-medium
+control,peanut_butter,peanut butter,declarative,cloze,Peanut butter is made from,"the seeds of the peanut plant, which is native to Asia. It is a rich, creamy, and nutty treat that is perfect for breakfast, lunch, and dinner.
+
+Peanut butter is also known as peanut butter, peanut butter jelly, peanut butter, peanut butter crackers, peanut butter crackers, peanut butter crackers, peanut butter crackers, peanut butter crackers, peanut butter crackers, peanut butter crackers, peanut butter crackers, peanut butter crackers, peanut",100,gpt2-medium
+control,hot_chocolate,hot chocolate,declarative,cloze,Hot chocolate is a warm beverage typically made from,"milk or cream. It is often served with ice cream or ice cream and sugar. It is also sometimes served with ice cream and ice cream and sugar.
+
+The name ""hot chocolate"" comes from the fact that it is made from milk or cream. It is also sometimes served with ice cream and ice cream and sugar.
+
+The name ""hot chocolate"" comes from the fact that it is made from milk or cream. It is also sometimes served with ice cream and ice cream and sugar",100,gpt2-medium
+control,apple_pie,apple pie,declarative,cloze,Apple pie is a dessert featuring,"a thick, creamy filling made from a combination of apples, cream, sugar, and butter. It's a popular dessert in many countries around the world, and it's also a popular dessert in the United States.
+
+The recipe for Apple Pie is a bit different in the United States than in other countries. In the United States, Apple Pie is made with a mixture of apples, cream, sugar, and butter.
+
+In the United States, Apple Pie is usually made with a mixture",100,gpt2-medium
+control,orange_juice,orange juice,declarative,cloze,Orange juice is extracted from,"the juice of the orange tree. It is a natural sweetener that is used in many foods and beverages. It is also used in the production of many other products.
+
+The juice of the orange tree contains about 80% sugar. The sugar content of orange juice varies depending on the type of juice and the type of fruit.
+
+The sugar content of orange juice varies depending on the type of juice and the type of fruit. The sugar content of orange juice varies depending on the type of",100,gpt2-medium
+control,baked_beans,baked beans,declarative,cloze,Baked beans are,"a staple in many Asian cuisines, and they're also a staple in my own. I've been making them for years, and I've always been a fan of the flavor and texture. I've been making them for years, and I've always been a fan of the flavor and texture.
+
+I've been making them for years, and I've always been a fan of the flavor and texture.
+
+I've been making them for years, and I've always been a",100,gpt2-medium
+control,palm_tree,palm tree,declarative,cloze,A palm tree is characterized by,"its large, upright, and slender branches. The branches are usually long and slender, and are usually arranged in a row. The palm tree is a member of the palm tree family, which includes the palm tree, palm tree, and palm tree.
+
+The palm tree is a member of the palm tree family, which includes the palm tree, palm tree, and palm tree. The palm tree is a member of the palm tree family, which includes the palm tree, palm tree, and palm",100,gpt2-medium
+control,thunder_storm,thunder storm,declarative,cloze,A thunder storm is,"expected to hit the area around the city of Houston on Wednesday night, according to the National Weather Service.
+
+The storm is expected to be a ""very strong"" storm with winds of up to 80 mph, according to the weather service.
+
+The storm is expected to bring rain and wind gusts of up to 60 mph, according to the weather service.
+
+The storm is expected to bring heavy rain and wind gusts of up to 60 mph, according to the weather service.",100,gpt2-medium
+control,coral_reef,coral reef,declarative,cloze,A coral reef is an underwater formation that,"is formed by the movement of water through a reef's bottom. It is a natural structure that is formed by the movement of water through the water column.
+
+Coral reefs are formed by the movement of water through the water column. The movement of water through the water column is called the ""water column"" movement. The movement of water through the water column is called the ""water column"" movement because the water column moves through the water column.
+
+Coral reefs are formed by the",100,gpt2-medium
+control,shooting_star,shooting star,declarative,cloze,A shooting star is actually,"a star that is created when a star is born. It is a star that is created when a star is born.
+
+A shooting star is actually a star that is created when a star is born. It is a star that is created when a star is born.
+
+A shooting star is actually a star that is created when a star is born. It is a star that is created when a star is born.
+
+A shooting star is actually a star that is created when a",100,gpt2-medium
+control,mountain_lion,mountain lion,declarative,cloze,A mountain lion is,"seen in the woods near the entrance to the park in the town of Big Bear, Calif., on Saturday, April 18, 2015. A mountain lion is seen in the woods near the entrance to the park in the town of Big Bear, Calif., on Saturday, April 18, 2015. Photo: Paul Chinn, The Chronicle Buy photo
+
+A mountain lion is seen in the woods near the entrance to the park in the town of Big Bear, Calif., on Saturday, April 18, 2015",100,gpt2-medium
+control,tidal_wave,tidal wave,declarative,cloze,A tidal wave is a large ocean wave caused by,"a large wave.
+
+Tidal waves are caused by a large wave hitting a small body of water.
+
+Tidal waves are caused by a large wave hitting a small body of water.
+
+Tidal waves are caused by a large wave hitting a small body of water.
+
+Tidal waves are caused by a large wave hitting a small body of water.
+
+Tidal waves are caused by a large wave hitting a small body of water.
+
+Tidal waves are",100,gpt2-medium
+control,dining_table,dining table,declarative,cloze,A dining table is furniture used for,"eating and drinking. It is usually made of wood, but can also be made of metal, plastic, or other materials.
+
+Dining tables are used for eating and drinking. They are usually made of wood, but can also be made of metal, plastic, or other materials.
+
+Dining tables are used for eating and drinking. They are usually made of wood, but can also be made of metal, plastic, or other materials.
+
+Dining tables are used for eating",100,gpt2-medium
+control,car_keys,car keys,declarative,cloze,Car keys are used to,"unlock your car. They are also used to unlock your car keys.
+
+Car keys are used to unlock your car. They are also used to unlock your car keys.
+
+Car keys are used to unlock your car. They are also used to unlock your car keys.
+
+Car keys are used to unlock your car. They are also used to unlock your car keys.
+
+Car keys are used to unlock your car. They are also used to unlock your car keys.",100,gpt2-medium
+control,washing_machine,washing machine,declarative,cloze,A washing machine is an appliance that,"uses water to wash clothes. It is usually a small, portable machine that is used to wash clothes.
+
+Washing machines are used to wash clothes in a variety of ways. They can be used to wash clothes in a washing machine, or they can be used to wash clothes in a dryer.
+
+Washing machines are often used to wash clothes in a dryer, but they can also be used to wash clothes in a washing machine.
+
+Washing machines are usually used",100,gpt2-medium
+control,bath_towels,bath towels,declarative,cloze,Bath towels are used for,"cleaning and drying the skin. They are also used for cleaning the hair and body.
+
+Bath towels are used for cleaning and drying the skin. They are also used for cleaning the hair and body.
+
+Bath towels are used for cleaning and drying the skin. They are also used for cleaning the hair and body.
+
+Bath towels are used for cleaning and drying the skin. They are also used for cleaning the hair and body.
+
+Bath towels are used for",100,gpt2-medium
+control,alarm_clock,alarm clock,declarative,cloze,An alarm clock is a device that,"is used to wake up the user from sleep. It is usually placed in a room or a room with a light source. The alarm clock is usually placed in a room or a room with a light source.
+
+The alarm clock is usually placed in a room or a room with a light source.
+
+The alarm clock is usually placed in a room or a room with a light source.
+
+The alarm clock is usually placed in a room or a room with a light source.",100,gpt2-medium
+control,light_bulb,light bulb,declarative,cloze,A light bulb is,"a device that emits light when it is turned on. It is used in many applications, including lighting, video, and audio.
+
+Contents show]
+
+History Edit
+
+The light bulb was invented by Nikola Tesla in 1879. It was originally a light bulb that was used to light a room. It was later used to light a room by a light bulb.
+
+The light bulb was originally a light bulb that was used to light a room. It was later used to light",100,gpt2-medium
+control,post_office,post office,declarative,cloze,A post office is an institution that,"is used to deliver mail to the public. It is a place where mail is delivered to the public. It is also a place where mail is delivered to the public.
+
+The post office is a place where mail is delivered to the public. It is also a place where mail is delivered to the public.
+
+The post office is a place where mail is delivered to the public. It is also a place where mail is delivered to the public.
+
+The post office is a place",100,gpt2-medium
+control,parking_lot,parking lot,declarative,cloze,A parking lot is,"seen in the parking lot of the hotel in the city of São Paulo, Brazil, on March 1, 2016. (Photo: Ricardo Moraes, AFP/Getty Images)
+
+The hotel where Brazilian President Dilma Rousseff was staying in Rio de Janeiro was robbed on Thursday, police said.
+
+The hotel, which is owned by the state-run oil company Petrobras, was robbed at about 9:30 p.m. local time, police said.",100,gpt2-medium
+control,train_station,train station,declarative,cloze,A train station is a facility where,"trains travel between stations. It is usually located in a city or town.
+
+Contents show]
+
+History Edit
+
+The train station was first built in the early 20th century, and was the first station in the United States. It was built in the town of New York City, and was the first station in the United States to be built in a city.
+
+The train station was built in the early 20th century, and was the first station in the United States to",100,gpt2-medium
+control,fire_station,fire station,declarative,cloze,A fire station is,"seen in the town of Krasnoyarsk, Russia, on March 7, 2015. (Photo: Sergei Karpukhin, AP)
+
+A fire station in Russia's southern city of Krasnoyarsk was destroyed by a bomb blast, officials said.
+
+The fire station was destroyed by a bomb blast at around 9:30 a.m. local time (1130 GMT), the city's emergency services said in a statement.
+
+The fire station",100,gpt2-medium
+control,swimming_pool,swimming pool,declarative,cloze,A swimming pool is a structure designed for,"swimming. It is usually a circular pool with a pool deck. The pool deck is usually made of concrete or wood. The pool deck is usually made of concrete or wood.
+
+A swimming pool is a structure designed for swimming. It is usually a circular pool with a pool deck. The pool deck is usually made of concrete or wood.
+
+A swimming pool is a structure designed for swimming. It is usually a circular pool with a pool deck. The pool deck is usually made of concrete",100,gpt2-medium
+control,coffee_shop,coffee shop,declarative,cloze,A coffee shop is,"a place where people can meet and socialize. It's a place where people can get together and have a good time. It's a place where people can get together and have a good time.
+
+It's a place where people can get together and have a good time. It's a place where people can get together and have a good time.
+
+It's a place where people can get together and have a good time.
+
+It's a place where people can get together",100,gpt2-medium
+control,hard_drive,hard drive,declarative,cloze,A hard drive is a computer component used for,"storing data. It is usually a hard drive that is connected to a computer. Hard drives are usually made of metal or plastic.
+
+Hard drives are used to store data on a computer. They are also used to store data on a hard drive.
+
+Hard drives are usually made of metal or plastic.
+
+Hard drives are usually made of metal or plastic.
+
+Hard drives are usually made of metal or plastic.
+
+Hard drives are usually made of metal or plastic.",100,gpt2-medium
+control,operating_system,operating system,declarative,cloze,An operating system is software that,runs on a computer. It is a program that runs on a computer. It is a program that runs on a computer. It is a program that runs on a computer. It is a program that runs on a computer. It is a program that runs on a computer. It is a program that runs on a computer. It is a program that runs on a computer. It is a program that runs on a computer. It is a program that runs on a computer. It is a program that,100,gpt2-medium
+control,search_engine,search engine,declarative,cloze,A search engine is,"a tool that allows users to search for information about a specific topic. It is used to find information about a topic, such as a book, movie, or song.
+
+Search engines are used by many people to find information about a topic. They are used to find information about a topic, such as a book, movie, or song.
+
+Search engines are used by many people to find information about a topic. They are used to find information about a topic, such as a book",100,gpt2-medium
+control,user_name,user name,declarative,cloze,A user name is typically used for,"a user account, which is a unique identifier that identifies a user. A user name is also used to identify a user account.
+
+A user name is a unique identifier that identifies a user. A user name is also used to identify a user account.
+
+A user name is a unique identifier that identifies a user. A user name is also used to identify a user account.
+
+A user name is a unique identifier that identifies a user. A user name is also used to identify",100,gpt2-medium
+control,power_supply,power supply,declarative,cloze,A power supply is,"a device that provides power to a computer or other electronic device. It is usually a power supply that is connected to a computer or other electronic device.
+
+A power supply is a device that provides power to a computer or other electronic device. It is usually a power supply that is connected to a computer or other electronic device.
+
+A power supply is a device that provides power to a computer or other electronic device. It is usually a power supply that is connected to a computer or other electronic",100,gpt2-medium
+control,data_base,data base,declarative,cloze,A data base is,"a collection of data that can be used to create a database. A database is a collection of records that can be used to create a database.
+
+A database is a collection of records that can be used to create a database.
+
+A database is a collection of records that can be used to create a database.
+
+A database is a collection of records that can be used to create a database.
+
+A database is a collection of records that can be used to create a database",100,gpt2-medium
+control,sore_throat,sore throat,declarative,cloze,A sore throat is,"a condition in which the throat is sore, inflamed, or sore. It is caused by a bacterial infection.
+
+Symptoms
+
+A sore throat can be caused by a variety of bacteria, including Staphylococcus aureus, Staphylococcus aureus, and Staphylococcus epidermidis.
+
+Symptoms of a sore throat can include:
+
+Sore throat
+
+Sore throat can be caused by a variety of bacteria",100,gpt2-medium
+control,blood_pressure,blood pressure,declarative,cloze,Blood pressure refers to,"the amount of pressure in the blood vessels that allows blood to flow. The blood pressure of a person is determined by the amount of blood in the blood vessels. The blood pressure of a person is usually measured by a blood pressure cuff.
+
+Blood pressure cuff
+
+The blood pressure cuff is a device that is placed on the arm or leg to measure the blood pressure. The blood pressure cuff is usually placed on the arm or leg to measure the blood pressure.
+
+Blood pressure cuff",100,gpt2-medium
+control,collar_bone,collar bone,declarative,cloze,The collar bone is,the most important part of the human body. It is the bone that connects the neck to the shoulder. It is the most important part of the body because it is the bone that connects the neck to the shoulder. It is the bone that connects the neck to the shoulder. It is the bone that connects the neck to the shoulder. It is the bone that connects the neck to the shoulder. It is the bone that connects the neck to the shoulder. It is the bone that connects the neck to,100,gpt2-medium
+control,heart_rate,heart rate,declarative,cloze,Heart rate measures,"the rate of heart rate. It is a measure of the rate of the heart beating. It is also known as the heart rate variability (HRV) or the heart rate variability index (HRVI).
+
+Heart rate is a measure of the rate of the heart beating. It is a measure of the rate of the heart beating. It is also known as the heart rate variability (HRV) or the heart rate variability index (HRVI). Heart rate variability is a measure of",100,gpt2-medium
+control,dental_appointment,dental appointment,declarative,cloze,A dental appointment is,"a time-consuming and expensive procedure. It's also a time-consuming and expensive procedure that can be done by a dentist who is not licensed.
+
+Dental care is expensive. It's also a time-consuming and expensive procedure that can be done by a dentist who is not licensed.
+
+Dental care is expensive. It's also a time-consuming and expensive procedure that can be done by a dentist who is not licensed.
+
+Dental care is expensive. It's",100,gpt2-medium
+control,waiting_room,waiting room,declarative,cloze,A waiting room is,"a place where people wait for a job or a job interview. It is a place where people wait for a job or a job interview. It is a place where people wait for a job or a job interview.
+
+A waiting room is a place where people wait for a job or a job interview. It is a place where people wait for a job or a job interview.
+
+A waiting room is a place where people wait for a job or a job interview. It is a place",100,gpt2-medium
