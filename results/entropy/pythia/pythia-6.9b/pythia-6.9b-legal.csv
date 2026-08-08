@@ -1,0 +1,45 @@
+domain,prompt_id,concept,prompt_type,template_type,prompt,n_tokens,mean_entropy,last_token_entropy,max_entropy,min_entropy,model
+legal,due_process,due process,declarative,cloze,Due process is,4,3.7995,4.0345,6.4594,0.5368,pythia-6.9b
+legal,equal_protection,equal protection,declarative,cloze,Equal protection refers to,5,3.6568,2.7444,6.4594,0.2916,pythia-6.9b
+legal,commerce_clause,commerce clause,declarative,cloze,The commerce clause is,5,4.9093,4.0001,7.5087,2.8672,pythia-6.9b
+legal,fifth_amendment,fifth amendment,declarative,cloze,The fifth amendment provides,5,5.0396,2.7983,7.5087,2.7983,pythia-6.9b
+legal,free_speech,free speech,declarative,cloze,Free speech is a right that,7,4.9927,4.2818,7.0425,3.265,pythia-6.9b
+legal,strict_liability,strict liability,declarative,cloze,Strict liability is a legal doctrine holding,9,3.6777,2.1431,6.4594,1.6195,pythia-6.9b
+legal,punitive_damages,punitive damages,declarative,cloze,Punitive damages are awarded to,8,4.3148,3.3037,6.4594,2.239,pythia-6.9b
+legal,sovereign_immunity,sovereign immunity,declarative,cloze,Sovereign immunity is,6,4.1664,3.1701,6.4594,0.1492,pythia-6.9b
+legal,grand_indictment,grand indictment,declarative,cloze,A grand indictment is,5,4.8743,4.3834,7.7485,2.423,pythia-6.9b
+legal,guilty_plea,guilty plea,declarative,cloze,A guilty plea is when,6,4.2443,1.8145,7.7485,1.7693,pythia-6.9b
+legal,excessive_bail,excessive bail,declarative,cloze,Excessive bail is prohibited by,7,4.2852,1.7737,7.1253,1.7737,pythia-6.9b
+legal,felony_conviction,felony conviction,declarative,cloze,A felony conviction is,5,5.2273,3.9507,7.7485,3.6551,pythia-6.9b
+legal,conditional_parole,conditional parole,declarative,cloze,Conditional parole requires,5,4.8926,4.4251,7.2447,3.0317,pythia-6.9b
+legal,joint_custody,joint custody,declarative,cloze,Joint custody means,4,5.0782,2.891,7.1965,2.891,pythia-6.9b
+legal,material_breach,material breach,declarative,cloze,A material breach is,5,5.0496,3.1746,7.7485,2.8833,pythia-6.9b
+legal,adequate_consideration,adequate consideration,declarative,cloze,Adequate consideration in a contract means,10,4.8274,4.081,7.7485,0.8282,pythia-6.9b
+legal,arbitration_clause,arbitration clause,declarative,cloze,An arbitration clause is,5,4.5358,2.8061,6.8674,2.8061,pythia-6.9b
+legal,specific_performance,specific performance,declarative,cloze,Specific performance is a remedy that,7,5.1973,4.6882,6.4594,3.5151,pythia-6.9b
+legal,preliminary_injunction,preliminary injunction,declarative,cloze,A preliminary injunction is,5,5.0048,3.3756,7.7485,3.3756,pythia-6.9b
+legal,oral_deposition,oral deposition,declarative,cloze,An oral deposition is,5,5.2347,2.6831,6.8674,2.6831,pythia-6.9b
+legal,personal_jurisdiction,personal jurisdiction,declarative,cloze,Personal jurisdiction refers to,5,3.559,1.6689,6.4594,0.2096,pythia-6.9b
+legal,electronic_discovery,electronic discovery,declarative,cloze,Electronic discovery is,4,4.8206,3.2017,6.4594,3.2017,pythia-6.9b
+legal,summary_motion,summary motion,declarative,cloze,A summary motion is,5,4.752,4.2856,7.7485,0.9479,pythia-6.9b
+legal,proper_venue,proper venue,declarative,cloze,Proper venue is determined by,7,4.9115,5.723,7.0181,1.5439,pythia-6.9b
+legal,patent_infringement,patent infringement,declarative,cloze,Patent infringement occurs when,5,3.286,1.9965,6.4594,1.135,pythia-6.9b
+legal,articles_incorporation,articles incorporation,declarative,cloze,Articles of incorporation are,6,4.2973,5.0351,6.4594,3.0867,pythia-6.9b
+legal,hostile_merger,hostile merger,declarative,cloze,A hostile merger is,5,5.6412,4.6132,7.7485,3.8,pythia-6.9b
+legal,statute_limitations,statute limitations,declarative,cloze,A statute of limitations is,6,4.6289,2.2885,7.7485,2.2885,pythia-6.9b
+legal,legal_standing,legal standing,declarative,cloze,Legal standing is the right to,7,4.5239,4.3515,6.4594,1.7299,pythia-6.9b
+legal,binding_precedent,binding precedent,declarative,cloze,A binding precedent is,5,5.2673,4.1096,7.7485,3.7998,pythia-6.9b
+legal,judicial_review,judicial review,declarative,cloze,Judicial review is,5,3.5896,3.4615,6.4594,2.5334,pythia-6.9b
+legal,civil_lawsuit,civil lawsuit,declarative,cloze,A civil lawsuit is,5,4.9215,4.1053,7.7485,2.9866,pythia-6.9b
+legal,criminal_record,criminal record,declarative,cloze,A criminal record is,5,5.2071,3.8249,7.7485,3.8249,pythia-6.9b
+legal,search_warrant,search warrant,declarative,cloze,A search warrant is,5,4.8213,3.7539,7.7485,2.6189,pythia-6.9b
+legal,plea_bargain,plea bargain,declarative,cloze,A plea bargain is,5,5.0087,3.8875,7.7485,2.725,pythia-6.9b
+legal,witness_testimony,witness testimony,declarative,cloze,Witness testimony is,5,4.8822,4.8765,6.4594,3.5777,pythia-6.9b
+legal,expert_witness,expert witness,declarative,cloze,An expert witness is,5,5.1547,4.8066,6.8674,3.5966,pythia-6.9b
+legal,court_order,court order,declarative,cloze,A court order is,5,5.1916,4.3702,7.7485,2.7283,pythia-6.9b
+legal,bench_trial,bench trial,declarative,cloze,A bench trial is,5,4.5072,2.4687,7.7485,2.4687,pythia-6.9b
+legal,jury_verdict,jury verdict,declarative,cloze,A jury verdict is,5,4.8045,3.0367,7.7485,3.0367,pythia-6.9b
+legal,class_action,class action,declarative,cloze,A class action lawsuit is,6,4.2225,3.8066,7.7485,1.584,pythia-6.9b
+legal,double_jeopardy,double jeopardy,declarative,cloze,Double jeopardy is,4,4.9443,3.9087,6.4594,3.3636,pythia-6.9b
+legal,probable_cause,probable cause,declarative,cloze,Probable cause is,5,4.8735,4.3907,7.6969,2.17,pythia-6.9b
+legal,restraining_order,restraining order,declarative,cloze,A restraining order is,5,4.6256,3.4196,7.7485,1.8591,pythia-6.9b

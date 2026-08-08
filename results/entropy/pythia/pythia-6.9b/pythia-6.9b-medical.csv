@@ -1,0 +1,43 @@
+domain,prompt_id,concept,prompt_type,template_type,prompt,n_tokens,mean_entropy,last_token_entropy,max_entropy,min_entropy,model
+medical,oxygen_saturation,oxygen saturation,declarative,cloze,Oxygen saturation refers to,6,3.7205,0.922,6.4594,0.1484,pythia-6.9b
+medical,body_temperature,body temperature,declarative,cloze,Body temperature is,4,4.9303,3.7985,6.4594,3.7985,pythia-6.9b
+medical,platelet_count,platelet count,declarative,cloze,Platelet count measures,6,3.8194,4.2533,6.4594,1.326,pythia-6.9b
+medical,metabolic_panel,metabolic panel,declarative,cloze,A metabolic panel is,5,5.2819,2.3035,7.7485,2.3035,pythia-6.9b
+medical,bacterial_infection,bacterial infection,declarative,cloze,A bacterial infection is caused by,7,4.7599,3.5445,7.7485,0.8543,pythia-6.9b
+medical,magnetic_resonance,magnetic resonance,declarative,cloze,Magnetic resonance imaging is,6,3.9059,3.0152,6.4594,1.78,pythia-6.9b
+medical,multiple_sclerosis,multiple sclerosis,declarative,cloze,Multiple sclerosis is,4,4.5981,1.6688,7.4433,1.6688,pythia-6.9b
+medical,complete_remission,complete remission,declarative,cloze,Complete remission means,4,4.7206,3.8399,6.8885,1.6944,pythia-6.9b
+medical,bowel_resection,bowel resection,declarative,cloze,A bowel resection is,5,5.1464,2.682,7.7485,2.682,pythia-6.9b
+medical,organ_transplant,organ transplant,declarative,cloze,An organ transplant is,5,4.9516,3.2991,6.8674,3.2991,pythia-6.9b
+medical,therapeutic_dosage,therapeutic dosage,declarative,cloze,A therapeutic dosage is,5,4.9966,3.3805,7.7485,1.8483,pythia-6.9b
+medical,drug_interaction,drug interaction,declarative,cloze,A drug interaction occurs when,6,4.1641,2.272,7.7485,0.5135,pythia-6.9b
+medical,antibiotic_resistance,antibiotic resistance,declarative,cloze,Antibiotic resistance is,6,3.5609,2.654,6.4594,1.6204,pythia-6.9b
+medical,gastrointestinal_absorption,gastrointestinal absorption,declarative,cloze,Gastrointestinal absorption refers to,7,3.1699,0.9889,6.4594,0.2602,pythia-6.9b
+medical,respiratory_tract,respiratory tract,declarative,cloze,The respiratory tract is,5,4.8907,2.9962,7.5087,2.6745,pythia-6.9b
+medical,cerebral_cortex,cerebral cortex,declarative,cloze,The cerebral cortex is,5,5.0335,3.2063,7.5087,3.0808,pythia-6.9b
+medical,informed_consent,informed consent,declarative,cloze,Informed consent requires,5,4.337,4.2499,6.4594,2.7476,pythia-6.9b
+medical,clinical_trial,clinical trial,declarative,cloze,A clinical trial is,5,4.6192,2.7295,7.7485,2.0375,pythia-6.9b
+medical,nerve_damage,nerve damage,declarative,cloze,Nerve damage can result in,7,4.1342,4.8274,6.4594,0.9789,pythia-6.9b
+medical,chest_pain,chest pain,declarative,cloze,Chest pain can indicate,6,4.2243,2.9018,6.4594,2.0159,pythia-6.9b
+medical,bone_marrow,bone marrow,declarative,cloze,Bone marrow is,5,4.9635,3.005,6.4594,3.005,pythia-6.9b
+medical,brain_stem,brain stem,declarative,cloze,The brain stem controls,5,5.5105,4.4435,7.5087,4.4435,pythia-6.9b
+medical,birth_defect,birth defect,declarative,cloze,A birth defect is,5,5.0252,2.2958,7.7485,2.2958,pythia-6.9b
+medical,wound_care,wound care,declarative,cloze,Wound care is,5,4.6437,3.3608,6.4594,3.3608,pythia-6.9b
+medical,pain_management,pain management,declarative,cloze,Pain management involves,4,4.5549,3.9851,6.4594,3.35,pythia-6.9b
+medical,blood_clot,blood clot,declarative,cloze,A blood clot is,5,5.0399,3.1017,7.7485,3.1017,pythia-6.9b
+medical,tumor_growth,tumor growth,declarative,cloze,Tumor growth is,5,4.999,4.3209,6.4594,3.848,pythia-6.9b
+medical,joint_replacement,joint replacement,declarative,cloze,A joint replacement is,5,4.8997,1.63,7.7485,1.63,pythia-6.9b
+medical,immune_response,immune response,declarative,cloze,An immune response is,5,4.8961,3.7569,6.8674,3.6142,pythia-6.9b
+medical,viral_infection,viral infection,declarative,cloze,A viral infection is caused by,7,4.1378,2.5422,7.7485,0.8364,pythia-6.9b
+medical,chronic_pain,chronic pain,declarative,cloze,Chronic pain is,5,4.7204,2.5044,6.4594,2.5044,pythia-6.9b
+medical,mental_health,mental health,declarative,cloze,Mental health refers to,6,3.9865,2.9568,6.4594,0.2531,pythia-6.9b
+medical,spinal_cord,spinal cord,declarative,cloze,The spinal cord is,5,4.8647,3.2132,7.5087,2.9547,pythia-6.9b
+medical,scar_tissue,scar tissue,declarative,cloze,Scar tissue is,5,4.4992,3.9447,6.4594,3.0583,pythia-6.9b
+medical,fluid_retention,fluid retention,declarative,cloze,Fluid retention can cause,6,4.5589,4.869,6.4594,2.5831,pythia-6.9b
+medical,sleep_apnea,sleep apnea,declarative,cloze,Sleep apnea is,5,3.2107,1.4031,6.4594,0.4692,pythia-6.9b
+medical,muscle_spasm,muscle spasm,declarative,cloze,A muscle spasm is,6,4.4105,2.2349,7.7485,0.7901,pythia-6.9b
+medical,breast_cancer,breast cancer,declarative,cloze,Breast cancer is,5,3.4812,1.4266,6.4594,1.4266,pythia-6.9b
+medical,lung_cancer,lung cancer,declarative,cloze,Lung cancer is,5,4.3656,1.305,6.4594,1.305,pythia-6.9b
+medical,skin_graft,skin graft,declarative,cloze,A skin graft is,5,5.215,2.3339,7.7485,2.3339,pythia-6.9b
+medical,stem_cell,stem cell,declarative,cloze,A stem cell is,5,4.4948,2.1289,7.7485,1.3316,pythia-6.9b
+medical,side_effect,side effect,declarative,cloze,A side effect is,5,4.3821,3.3936,7.7485,0.6719,pythia-6.9b
