@@ -22,7 +22,14 @@ from src.accuracy_coding import code_response
 
 PYTHIA_SCALE_ORDER = ['160M', '410M', '1B', '2.8B', '6.9B', '12B']
 GPT2_SCALE_ORDER = ['124M', '355M', '774M', '1.5B']
+OLMO_SCALE_ORDER = ['1B', '7B', '13B']
 SCORE_MAP = {'correct': 2, 'partial': 1, 'incorrect': 0}
+
+ALL_SUITES = [
+    ('pythia', 'pythia', PYTHIA_SCALE_ORDER),
+    ('gpt2', 'gpt2', GPT2_SCALE_ORDER),
+    ('olmo', 'olmo', OLMO_SCALE_ORDER),
+]
 
 
 def run_gap_analysis(project_root):
@@ -40,8 +47,11 @@ def run_gap_analysis(project_root):
     if not binding.empty:
         binding['scale_label'] = binding['scale'].apply(scale_label)
 
-    # Apply accuracy coding
-    elicitation['accuracy'] = elicitation.apply(
+    # Accuracy coding applies only to accessibility-domain prompts;
+    # other domains have no coding rules and get 'uncoded'.
+    elicitation['accuracy'] = 'uncoded'
+    acc_mask = elicitation['domain'] == 'accessibility'
+    elicitation.loc[acc_mask, 'accuracy'] = elicitation.loc[acc_mask].apply(
         lambda r: code_response(
             r['prompt_type'], r['concept'], r['prompt'], r['output']
         ),
@@ -50,20 +60,19 @@ def run_gap_analysis(project_root):
 
     tables = {}
 
-    for suite_name, suite_filter, col_order in [
-        ('pythia', 'pythia', PYTHIA_SCALE_ORDER),
-        ('gpt2', 'gpt2', GPT2_SCALE_ORDER),
-    ]:
-        subset = elicitation[elicitation['suite'] == suite_filter]
+    for suite_name, suite_filter, col_order in ALL_SUITES:
+        subset = elicitation[
+            (elicitation['suite'] == suite_filter) &
+            (elicitation['domain'] == 'accessibility')
+        ]
+        if subset.empty:
+            continue
 
         # The declarative-evaluative GAP characterizes the elicitation
         # experiment's concept set. The 41 expansion compounds are frequency-
         # stratified probes (declarative-only, deliberately spanning rare
         # never-emerges compounds); pooling them into the paradigm mean would
         # depress the declarative baseline by construction and distort the gap.
-        # They belong to the frequency/trajectory analysis instead, which reads
-        # the full elicitation below. (Sampling-frame partition, DECISIONS
-        # 2026-07-03.)
         if 'source' in subset.columns:
             subset = subset[subset['source'] == 'original']
 
@@ -102,21 +111,19 @@ def run_gap_analysis(project_root):
                 })
         tables[f'{suite_name}_gap'] = pd.DataFrame(gap_rows)
 
-    # Emergence thresholds (cross-architecture)
+    # Emergence thresholds (cross-architecture, accessibility domain only)
+    a11y = elicitation[elicitation['domain'] == 'accessibility']
     emergence_rows = []
-    for concept in sorted(elicitation['concept'].unique()):
+    for concept in sorted(a11y['concept'].unique()):
         row = {'concept': concept}
-        for suite_name, suite_filter, col_order in [
-            ('pythia', 'pythia', PYTHIA_SCALE_ORDER),
-            ('gpt2', 'gpt2', GPT2_SCALE_ORDER),
-        ]:
+        for suite_name, suite_filter, col_order in ALL_SUITES:
             emerged = 'never'
             for scale in col_order:
-                matches = elicitation[
-                    (elicitation['suite'] == suite_filter) &
-                    (elicitation['scale_label'] == scale) &
-                    (elicitation['concept'] == concept) &
-                    (elicitation['prompt_type'] == 'declarative')
+                matches = a11y[
+                    (a11y['suite'] == suite_filter) &
+                    (a11y['scale_label'] == scale) &
+                    (a11y['concept'] == concept) &
+                    (a11y['prompt_type'] == 'declarative')
                 ]
                 if len(matches) > 0:
                     coded = code_response(
@@ -149,7 +156,11 @@ def run_gap_analysis(project_root):
 # the structure is recoverable from the data alone.
 # ---------------------------------------------------------------------------
 
-SCALE_ORDERS = {'pythia': PYTHIA_SCALE_ORDER, 'gpt2': GPT2_SCALE_ORDER}
+SCALE_ORDERS = {
+    'pythia': PYTHIA_SCALE_ORDER,
+    'gpt2': GPT2_SCALE_ORDER,
+    'olmo': OLMO_SCALE_ORDER,
+}
 
 
 def _concept_to_compound(concept):
@@ -210,7 +221,7 @@ def accuracy_by_prompt_type_table(elicitation):
     concept-level tables. Note: non-bicycle 'control' rows are accessibility-
     concept probes; bicycle 'control' is the reasoning baseline.
     """
-    df = elicitation.copy()
+    df = elicitation[elicitation['domain'] == 'accessibility'].copy()
     df['score'] = df['accuracy'].map(SCORE_MAP)
 
     rows = []
@@ -244,9 +255,12 @@ def entropy_confidence_tables(elicitation, entropy_df):
     if entropy_df.empty:
         return pd.DataFrame(), pd.DataFrame()
 
-    e = entropy_df[['model', 'prompt_id', 'last_token_entropy', 'mean_entropy']]
+    eli = elicitation[elicitation['domain'] == 'accessibility']
+    ent = entropy_df[entropy_df['domain'] == 'accessibility']
+
+    e = ent[['model', 'prompt_id', 'last_token_entropy', 'mean_entropy']]
     e = e.drop_duplicates(['model', 'prompt_id'])
-    merged = elicitation.merge(e, on=['model', 'prompt_id'], how='left')
+    merged = eli.merge(e, on=['model', 'prompt_id'], how='left')
 
     by = merged.groupby(
         ['suite', 'concept', 'scale_label', 'accuracy'], as_index=False
@@ -289,7 +303,7 @@ def binding_accuracy_tables(elicitation, binding_df):
 
     Pairs the max binding score per concept x scale with the declarative
     accuracy score, and reports Pearson/Spearman correlation per suite.
-    Only the 11 multi-word compounds have binding data (single-token
+    Only the multi-word compounds have binding data (single-token
     concepts like ARIA/WCAG cannot have cross-token binding).
     """
     if binding_df.empty:
@@ -301,10 +315,13 @@ def binding_accuracy_tables(elicitation, binding_df):
     ].rename(columns={'layer': 'binding_layer', 'head': 'binding_head',
                       'binding_score': 'max_binding'})
 
-    decl = elicitation[elicitation['prompt_type'] == 'declarative'].copy()
-    decl['score'] = decl['accuracy'].map(SCORE_MAP)
-    decl['compound'] = decl['concept'].apply(_concept_to_compound)
-    acc = decl.groupby(['suite', 'scale', 'scale_label', 'compound'], as_index=False).agg(
+    a11y = elicitation[
+        (elicitation['domain'] == 'accessibility') &
+        (elicitation['prompt_type'] == 'declarative')
+    ].copy()
+    a11y['score'] = a11y['accuracy'].map(SCORE_MAP)
+    a11y['compound'] = a11y['concept'].apply(_concept_to_compound)
+    acc = a11y.groupby(['suite', 'scale', 'scale_label', 'compound'], as_index=False).agg(
         accuracy_score=('score', 'mean')
     )
 
@@ -351,12 +368,15 @@ def per_concept_scaling_tables(elicitation):
     plus a wide table classifying each concept's trajectory as
     monotonic_climb / peak_regress / never_emerges / mixed.
     """
-    decl = elicitation[elicitation['prompt_type'] == 'declarative'].copy()
-    decl['score'] = decl['accuracy'].map(SCORE_MAP)
+    a11y = elicitation[
+        (elicitation['domain'] == 'accessibility') &
+        (elicitation['prompt_type'] == 'declarative')
+    ].copy()
+    a11y['score'] = a11y['accuracy'].map(SCORE_MAP)
 
     long_rows, traj_rows = [], []
     for suite, order in SCALE_ORDERS.items():
-        s = decl[decl['suite'] == suite]
+        s = a11y[a11y['suite'] == suite]
         for concept in sorted(s['concept'].unique()):
             series = {}
             for scale in order:
@@ -436,12 +456,12 @@ def completion_paradox_table(elicitation):
     A positive paradox_gap means the model completes the syntax correctly at
     scales where it cannot define the concept.
     """
-    df = elicitation.copy()
-    df['score'] = df['accuracy'].map(SCORE_MAP)
+    a11y = elicitation[elicitation['domain'] == 'accessibility'].copy()
+    a11y['score'] = a11y['accuracy'].map(SCORE_MAP)
 
     rows = []
     for suite, order in SCALE_ORDERS.items():
-        s = df[df['suite'] == suite]
+        s = a11y[a11y['suite'] == suite]
         concepts = sorted(
             set(s[s['prompt_type'] == 'completion']['concept']) |
             set(s[s['prompt_type'] == 'declarative']['concept'])
@@ -485,8 +505,11 @@ def save_tables(tables, output_dir):
 def print_summary(tables):
     """Print a human-readable summary of the gap analysis."""
 
-    for suite in ['pythia', 'gpt2']:
+    for suite in ['pythia', 'gpt2', 'olmo']:
         suite_upper = suite.upper()
+
+        if f'{suite}_declarative' not in tables:
+            continue
 
         # Declarative
         print(f"\n{'='*70}")
@@ -495,33 +518,43 @@ def print_summary(tables):
         print(tables[f'{suite}_declarative'].to_string())
 
         # Evaluative
-        print(f"\n{'='*70}")
-        print(f"{suite_upper} EVALUATIVE ACCURACY")
-        print(f"{'='*70}")
-        print(tables[f'{suite}_evaluative'].to_string())
+        if f'{suite}_evaluative' in tables and not tables[f'{suite}_evaluative'].empty:
+            print(f"\n{'='*70}")
+            print(f"{suite_upper} EVALUATIVE ACCURACY")
+            print(f"{'='*70}")
+            print(tables[f'{suite}_evaluative'].to_string())
 
         # Gap
-        print(f"\n{'='*70}")
-        print(f"{suite_upper} DECLARATIVE-EVALUATIVE GAP")
-        print(f"{'='*70}")
-        gap = tables[f'{suite}_gap']
-        for _, row in gap.iterrows():
-            bar_d = '█' * int(row['declarative_pct'] / 3)
-            bar_e = '█' * int(row['evaluative_pct'] / 3)
-            print(f"  {row['scale']:>5s}  DECL: {row['declarative_pct']:5.1f}% {bar_d}")
-            print(f"         EVAL: {row['evaluative_pct']:5.1f}% {bar_e}")
-            print(f"         GAP:  {row['gap']:+.2f} ({row['gap_pct_pts']:+.1f} pct pts)")
-            print()
+        if f'{suite}_gap' in tables and not tables[f'{suite}_gap'].empty:
+            print(f"\n{'='*70}")
+            print(f"{suite_upper} DECLARATIVE-EVALUATIVE GAP")
+            print(f"{'='*70}")
+            gap = tables[f'{suite}_gap']
+            for _, row in gap.iterrows():
+                bar_d = '█' * int(row['declarative_pct'] / 3)
+                bar_e = '█' * int(row['evaluative_pct'] / 3)
+                print(f"  {row['scale']:>5s}  DECL: {row['declarative_pct']:5.1f}% {bar_d}")
+                print(f"         EVAL: {row['evaluative_pct']:5.1f}% {bar_e}")
+                print(f"         GAP:  {row['gap']:+.2f} ({row['gap_pct_pts']:+.1f} pct pts)")
+                print()
 
     # Emergence
     print(f"{'='*70}")
     print("DECLARATIVE EMERGENCE THRESHOLDS")
     print(f"{'='*70}")
     em = tables['emergence_thresholds']
-    print(f"  {'Concept':30s} {'Pythia':>10s} {'GPT-2':>10s}")
-    print(f"  {'─'*30} {'─'*10} {'─'*10}")
+    header_cols = [('Pythia', 'pythia_emergence'),
+                   ('GPT-2', 'gpt2_emergence'),
+                   ('OLMo', 'olmo_emergence')]
+    header_cols = [(label, col) for label, col in header_cols if col in em.columns]
+    header = f"  {'Concept':30s}" + ''.join(f" {label:>10s}" for label, _ in header_cols)
+    print(header)
+    print(f"  {'─'*30}" + ''.join(f" {'─'*10}" for _ in header_cols))
     for _, row in em.iterrows():
-        print(f"  {row['concept']:30s} {row['pythia_emergence']:>10s} {row['gpt2_emergence']:>10s}")
+        line = f"  {row['concept']:30s}"
+        for _, col in header_cols:
+            line += f" {row[col]:>10s}"
+        print(line)
 
     print_extended_summary(tables)
 
@@ -550,7 +583,7 @@ def print_extended_summary(tables):
         print("PER-CONCEPT TRAJECTORIES (ext 3)")
         print(f"{'='*70}")
         traj = tables['per_concept_trajectories']
-        for suite in ['pythia', 'gpt2']:
+        for suite in ['pythia', 'gpt2', 'olmo']:
             sub = traj[traj['suite'] == suite]
             if sub.empty:
                 continue

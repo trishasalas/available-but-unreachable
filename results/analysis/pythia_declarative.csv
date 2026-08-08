@@ -1,11 +1,52 @@
 concept,160M,410M,1B,2.8B,6.9B,12B
 ARIA,incorrect,incorrect,incorrect,incorrect,incorrect,incorrect
 WCAG,incorrect,incorrect,incorrect,incorrect,correct,correct
+accessibility tree,partial,partial,partial,partial,partial,partial
+accessible authentication,partial,incorrect,partial,incorrect,partial,correct
+accessible description,partial,partial,partial,incorrect,partial,incorrect
+accessible name,incorrect,incorrect,correct,incorrect,incorrect,incorrect
 alt text,incorrect,partial,partial,correct,correct,correct
-captions,incorrect,incorrect,incorrect,incorrect,partial,partial
+audio description,incorrect,incorrect,incorrect,partial,incorrect,correct
+character key,incorrect,incorrect,incorrect,incorrect,incorrect,incorrect
+closed captions,incorrect,incorrect,incorrect,correct,incorrect,incorrect
+cognitive disabilities,correct,correct,correct,correct,partial,correct
 color contrast,partial,correct,partial,partial,correct,correct
+combo box,partial,partial,correct,partial,correct,partial
+consistent help,incorrect,incorrect,incorrect,incorrect,partial,incorrect
+decorative image,incorrect,correct,incorrect,correct,correct,correct
+drag movement,partial,partial,partial,partial,partial,partial
+error identification,incorrect,incorrect,incorrect,incorrect,incorrect,incorrect
+focus appearance,incorrect,incorrect,incorrect,incorrect,incorrect,partial
 focus indicator,partial,incorrect,incorrect,incorrect,incorrect,incorrect
+focus management,partial,partial,partial,incorrect,partial,correct
+form field,correct,correct,correct,correct,correct,correct
+informative image,incorrect,incorrect,incorrect,incorrect,incorrect,incorrect
+input purpose,incorrect,incorrect,incorrect,incorrect,incorrect,partial
+keyboard interaction,partial,partial,partial,partial,partial,partial
 keyboard navigation,partial,correct,correct,correct,correct,incorrect
+landmark region,partial,correct,partial,partial,incorrect,partial
+live region,partial,partial,partial,partial,partial,partial
+low vision,partial,partial,partial,partial,partial,correct
+menu bar,correct,correct,correct,correct,correct,correct
+pointer cancellation,incorrect,incorrect,incorrect,incorrect,incorrect,incorrect
+radio group,partial,incorrect,partial,incorrect,incorrect,partial
+reading order,incorrect,incorrect,incorrect,correct,incorrect,incorrect
+redundant entry,incorrect,incorrect,incorrect,incorrect,incorrect,incorrect
+responsive design,incorrect,incorrect,incorrect,correct,correct,correct
 screen reader,partial,partial,correct,correct,correct,correct
+section heading,correct,correct,correct,correct,correct,correct
 semantic HTML,partial,partial,incorrect,partial,partial,partial
+semantic markup,correct,correct,partial,correct,partial,correct
+sensory characteristics,partial,partial,partial,incorrect,incorrect,partial
+sign language,correct,correct,correct,correct,correct,correct
 skip link,incorrect,partial,incorrect,correct,correct,incorrect
+status message,partial,partial,partial,partial,correct,partial
+tab panel,partial,partial,partial,partial,correct,correct
+target size,partial,partial,partial,partial,partial,partial
+text alternative,incorrect,partial,partial,incorrect,incorrect,partial
+text formatting,partial,incorrect,incorrect,correct,correct,correct
+text spacing,partial,incorrect,partial,partial,partial,partial
+tool tip,incorrect,incorrect,incorrect,correct,incorrect,correct
+touch target,correct,partial,incorrect,partial,partial,correct
+tree grid,incorrect,incorrect,incorrect,incorrect,partial,partial
+universal design,incorrect,incorrect,incorrect,partial,partial,partial

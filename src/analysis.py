@@ -4,109 +4,129 @@ Analysis module — loads and combines results across all models.
 Usage (from notebook):
     from src.analysis import load_all_results
     elicitation, entropy, binding = load_all_results(PROJECT_ROOT)
+
+Directory layout (post-reorganisation):
+    results/{elicitation,entropy,binding}/{suite}/{model}/{model}-{domain}.csv
+    Suites: pythia, gpt2, olmo
+    Domains: accessibility, control, medical, legal, finance
 """
 
 from pathlib import Path
 import pandas as pd
 
 
+KNOWN_DOMAINS = {'accessibility', 'control', 'medical', 'legal', 'finance'}
+
+
 def load_all_results(project_root):
     """
-    Load and concatenate all result CSVs across both model families.
+    Load and concatenate all result CSVs across all model families.
 
     Returns three DataFrames:
         elicitation_df — all prompt responses across all models
         entropy_df     — all entropy measurements across all models
         binding_df     — all binding scores across all models
 
-    Each DataFrame has a 'model' column and an added 'suite' column
-    (pythia or gpt2) and 'scale' column (parameter count as int for sorting).
+    Each DataFrame has 'model', 'suite', 'scale', 'domain', and 'source'
+    columns.
     """
     project_root = Path(project_root)
     results_dir = project_root / 'results'
 
-    elicitation_frames = []
-    entropy_frames = []
-    binding_frames = []
+    frames = {'elicitation': [], 'entropy': [], 'binding': []}
 
-    for suite_dir in sorted(results_dir.iterdir()):
-        if suite_dir.name.startswith('_') or not suite_dir.is_dir():
-            continue
-        if suite_dir.name not in ('pythia', 'gpt2'):
-            # Experiment output dirs (analysis/, frequency/, logits/,
-            # mlp_investigation/) are not raw suites — skip them.
-            # Canonical layout: raw per-model CSVs live at results/{suite}/.
+    for data_type in frames:
+        type_dir = results_dir / data_type
+        if not type_dir.exists():
             continue
 
-        suite = suite_dir.name  # 'pythia' or 'gpt2'
+        for suite_dir in sorted(type_dir.iterdir()):
+            if not suite_dir.is_dir():
+                continue
+            dir_suite = suite_dir.name
 
-        for csv_file in sorted(suite_dir.glob('*.csv')):
-            name = csv_file.stem  # e.g. 'pythia-160m-results'
+            for model_dir in sorted(suite_dir.iterdir()):
+                if not model_dir.is_dir():
+                    continue
+                model_name = model_dir.name
+                suite = _infer_suite(model_name, dir_suite)
 
-            df = pd.read_csv(csv_file)
-            df['suite'] = suite
-            df['scale'] = _extract_scale(name, suite)
-            # Provenance tag: the n=49 frequency-stratified probes live in
-            # *-expansion-results.csv. Downstream, the declarative-evaluative
-            # gap (a paradigm-level mean) is restricted to source=='original';
-            # trajectory/scaling/frequency analyses use all sources.
-            df['source'] = 'expansion' if 'expansion' in name else 'original'
+                for csv_file in sorted(model_dir.glob('*.csv')):
+                    domain = _extract_domain(csv_file.stem, model_name)
+                    if domain not in KNOWN_DOMAINS:
+                        continue
 
-            if name.endswith('-results'):
-                elicitation_frames.append(df)
-            elif name.endswith('-entropy'):
-                entropy_frames.append(df)
-            elif name.endswith('-binding'):
-                binding_frames.append(df)
+                    df = pd.read_csv(csv_file)
+                    if 'domain' not in df.columns:
+                        df['domain'] = domain
+                    df['suite'] = suite
+                    df['scale'] = _extract_scale(model_name, suite)
+                    df['source'] = 'original'
+                    frames[data_type].append(df)
 
-    elicitation_df = pd.concat(elicitation_frames, ignore_index=True) if elicitation_frames else pd.DataFrame()
-    entropy_df = pd.concat(entropy_frames, ignore_index=True) if entropy_frames else pd.DataFrame()
-    binding_df = pd.concat(binding_frames, ignore_index=True) if binding_frames else pd.DataFrame()
+    elicitation_df = pd.concat(frames['elicitation'], ignore_index=True) if frames['elicitation'] else pd.DataFrame()
+    entropy_df = pd.concat(frames['entropy'], ignore_index=True) if frames['entropy'] else pd.DataFrame()
+    binding_df = pd.concat(frames['binding'], ignore_index=True) if frames['binding'] else pd.DataFrame()
 
-    # Sort by scale for consistent plotting
     for df in [elicitation_df, entropy_df, binding_df]:
         if 'scale' in df.columns:
             df.sort_values('scale', inplace=True)
 
-    print(f"Loaded:")
-    print(f"  Elicitation: {len(elicitation_df)} rows across {elicitation_df['model'].nunique()} models")
-    print(f"  Entropy:     {len(entropy_df)} rows across {entropy_df['model'].nunique()} models")
-    print(f"  Binding:     {len(binding_df)} rows across {binding_df['model'].nunique()} models")
+    print("Loaded:")
+    for name, df in [('Elicitation', elicitation_df), ('Entropy', entropy_df), ('Binding', binding_df)]:
+        if not df.empty and 'model' in df.columns:
+            print(f"  {name}: {len(df)} rows across {df['model'].nunique()} models "
+                  f"({sorted(df['suite'].unique())})")
+        else:
+            print(f"  {name}: {len(df)} rows")
 
     return elicitation_df, entropy_df, binding_df
 
 
-def _extract_scale(filename, suite):
+def _infer_suite(model_name, dir_suite):
+    """Correct suite when model dirs are misplaced (e.g. OLMo under gpt2/)."""
+    if model_name.startswith('OLMo'):
+        return 'olmo'
+    return dir_suite
+
+
+def _extract_domain(csv_stem, model_name):
+    """Extract domain from filename: 'pythia-160m-accessibility' -> 'accessibility'."""
+    prefix = model_name + '-'
+    if csv_stem.startswith(prefix):
+        return csv_stem[len(prefix):]
+    return csv_stem
+
+
+def _extract_scale(model_name, suite):
     """
     Extract parameter count as integer for sorting.
-    'pythia-160m-results' -> 160_000_000
-    'gpt2-xl-results' -> 1_500_000_000
+    'pythia-160m'        -> 160_000_000
+    'gpt2-xl'           -> 1_500_000_000
+    'OLMo-2-1124-7B'    -> 7_000_000_000
     """
-    # GPT-2 scale mapping
     gpt2_scales = {
         'gpt2': 124_000_000,
+        'gpt2-small': 124_000_000,
         'gpt2-medium': 355_000_000,
         'gpt2-large': 774_000_000,
         'gpt2-xl': 1_500_000_000,
     }
-
     if suite == 'gpt2':
-        # Remove the suffix (-results, -entropy, -binding)
-        model_key = filename.rsplit('-', 1)[0] if filename.endswith(('results', 'entropy', 'binding')) else filename
-        # Handle 'gpt2-large-results' -> need to check for compound names
-        for key in sorted(gpt2_scales.keys(), key=len, reverse=True):
-            if filename.startswith(key):
-                return gpt2_scales[key]
-        return 0
+        return gpt2_scales.get(model_name, 0)
 
-    # Pythia scale extraction
-    multipliers = {'m': 1_000_000, 'b': 1_000_000_000, 'B': 1_000_000_000}
-    parts = filename.split('-')
+    # pythia-13b is the same checkpoint as pythia-12b
+    if model_name == 'pythia-13b':
+        return 12_000_000_000
+
+    multipliers = {'m': 1_000_000, 'b': 1_000_000_000}
+    parts = model_name.split('-')
     for part in parts:
+        p = part.lower()
         for suffix, mult in multipliers.items():
-            if part.endswith(suffix):
+            if p.endswith(suffix):
                 try:
-                    return float(part[:-1]) * mult
+                    return int(float(p[:-1]) * mult)
                 except ValueError:
                     continue
     return 0
@@ -133,7 +153,7 @@ def binding_summary(binding_df, threshold=0.1):
 
 def max_binding_layer(binding_df):
     """
-    For each compound × model, find the layer with the strongest binding head.
+    For each compound x model, find the layer with the strongest binding head.
     Useful for tracking binding depth across scales.
     """
     idx = binding_df.groupby(['model', 'compound'])['binding_score'].idxmax()
