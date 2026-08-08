@@ -1,0 +1,45 @@
+domain,prompt_id,concept,prompt_type,template_type,prompt,n_tokens,mean_entropy,last_token_entropy,max_entropy,min_entropy,model
+control,blue_sky,blue sky,declarative,cloze,A blue sky is,5,5.7848,4.6518,7.6199,4.6518,gpt2-large
+control,cold_water,cold water,declarative,cloze,Cold water is typically characterized by,7,4.7473,3.8593,6.6701,0.7457,gpt2-large
+control,ice_cream,ice cream,declarative,cloze,Ice cream is a frozen dessert made from,9,4.3263,4.1641,6.6701,2.0094,gpt2-large
+control,life_jacket,life jacket,declarative,cloze,A life jacket is designed to,7,4.1234,3.1935,7.6199,0.9571,gpt2-large
+control,tea_cup,tea cup,declarative,cloze,A tea cup is a vessel used for,9,4.5478,3.965,7.6199,1.4896,gpt2-large
+control,living_room,living room,declarative,cloze,A living room is,5,6.0323,3.7769,7.6199,3.7769,gpt2-large
+control,roller_coaster,roller coaster,declarative,cloze,A roller coaster is an amusement ride that,9,4.0798,3.9886,7.6199,1.7002,gpt2-large
+control,school_bus,school bus,declarative,cloze,A school bus is used to,7,4.3262,1.6947,7.6199,1.6947,gpt2-large
+control,grilled_cheese,grilled cheese,declarative,cloze,A grilled cheese sandwich consists of,7,4.0205,3.5718,7.6199,0.1038,gpt2-large
+control,peanut_butter,peanut butter,declarative,cloze,Peanut butter is made from,7,3.8904,4.221,6.6701,1.8895,gpt2-large
+control,hot_chocolate,hot chocolate,declarative,cloze,Hot chocolate is a warm beverage typically made from,10,4.0331,3.6011,6.6701,1.7159,gpt2-large
+control,apple_pie,apple pie,declarative,cloze,Apple pie is a dessert featuring,7,4.9477,4.0032,6.6701,3.9728,gpt2-large
+control,orange_juice,orange juice,declarative,cloze,Orange juice is extracted from,6,4.2786,3.3581,6.6701,1.2259,gpt2-large
+control,baked_beans,baked beans,declarative,cloze,Baked beans are,5,5.4468,4.1745,6.6701,3.7061,gpt2-large
+control,palm_tree,palm tree,declarative,cloze,A palm tree is characterized by,7,4.3854,2.9294,7.6199,0.3706,gpt2-large
+control,thunder_storm,thunder storm,declarative,cloze,A thunder storm is,5,5.239,4.8641,7.6199,1.5243,gpt2-large
+control,coral_reef,coral reef,declarative,cloze,A coral reef is an underwater formation that,9,4.5042,3.6605,7.6199,3.0326,gpt2-large
+control,shooting_star,shooting star,declarative,cloze,A shooting star is actually,6,4.8667,2.0245,7.6199,2.0245,gpt2-large
+control,mountain_lion,mountain lion,declarative,cloze,A mountain lion is,5,5.4317,4.8554,7.6199,3.1515,gpt2-large
+control,tidal_wave,tidal wave,declarative,cloze,A tidal wave is a large ocean wave caused by,11,3.3491,2.9194,7.6199,0.329,gpt2-large
+control,dining_table,dining table,declarative,cloze,A dining table is furniture used for,8,4.6645,4.5171,7.6199,2.0088,gpt2-large
+control,car_keys,car keys,declarative,cloze,Car keys are used to,6,4.4698,2.7791,6.6701,2.1534,gpt2-large
+control,washing_machine,washing machine,declarative,cloze,A washing machine is an appliance that,8,4.3886,4.512,7.6199,1.1304,gpt2-large
+control,bath_towels,bath towels,declarative,cloze,Bath towels are used for,7,5.0475,4.8088,6.6701,2.6186,gpt2-large
+control,alarm_clock,alarm clock,declarative,cloze,An alarm clock is a device that,8,4.5889,4.912,7.0681,1.9916,gpt2-large
+control,light_bulb,light bulb,declarative,cloze,A light bulb is,5,5.9655,4.4884,7.6199,4.4884,gpt2-large
+control,post_office,post office,declarative,cloze,A post office is an institution that,8,4.4205,4.3675,7.6199,2.7507,gpt2-large
+control,parking_lot,parking lot,declarative,cloze,A parking lot is,5,5.2695,4.2973,7.6199,3.4946,gpt2-large
+control,train_station,train station,declarative,cloze,A train station is a facility where,8,4.9252,4.0595,7.6199,3.2446,gpt2-large
+control,fire_station,fire station,declarative,cloze,A fire station is,5,5.4093,4.4224,7.6199,3.8847,gpt2-large
+control,swimming_pool,swimming pool,declarative,cloze,A swimming pool is a structure designed for,9,4.293,4.4434,7.6199,1.1952,gpt2-large
+control,coffee_shop,coffee shop,declarative,cloze,A coffee shop is,5,5.3165,5.2755,7.6199,3.4668,gpt2-large
+control,hard_drive,hard drive,declarative,cloze,A hard drive is a computer component used for,10,3.7683,0.7722,7.6199,0.7722,gpt2-large
+control,operating_system,operating system,declarative,cloze,An operating system is software that,7,4.1736,3.7861,7.0681,1.6,gpt2-large
+control,search_engine,search engine,declarative,cloze,A search engine is,5,5.2473,4.2762,7.6199,3.0265,gpt2-large
+control,user_name,user name,declarative,cloze,A user name is typically used for,8,4.369,4.4639,7.6199,2.0611,gpt2-large
+control,power_supply,power supply,declarative,cloze,A power supply is,5,5.4167,3.5681,7.6199,3.5681,gpt2-large
+control,data_base,data base,declarative,cloze,A data base is,5,5.0496,2.1449,7.6199,2.1449,gpt2-large
+control,sore_throat,sore throat,declarative,cloze,A sore throat is,5,5.2587,3.0599,7.6199,3.0599,gpt2-large
+control,blood_pressure,blood pressure,declarative,cloze,Blood pressure refers to,5,3.7629,1.3317,6.6701,0.1093,gpt2-large
+control,collar_bone,collar bone,declarative,cloze,The collar bone is,5,5.4365,3.6088,8.3779,3.6088,gpt2-large
+control,heart_rate,heart rate,declarative,cloze,Heart rate measures,4,4.7334,3.7697,6.6701,3.3185,gpt2-large
+control,dental_appointment,dental appointment,declarative,cloze,A dental appointment is,5,5.4649,3.7287,7.6199,3.618,gpt2-large
+control,waiting_room,waiting room,declarative,cloze,A waiting room is,5,4.8227,3.8159,7.6199,2.2348,gpt2-large
