@@ -1,0 +1,45 @@
+domain,prompt_id,concept,prompt_type,template_type,prompt,n_tokens,mean_entropy,last_token_entropy,max_entropy,min_entropy,model
+control,blue_sky,blue sky,declarative,cloze,A blue sky is,5,6.2604,4.0877,8.0804,4.0877,OLMo-2-0425-1B
+control,cold_water,cold water,declarative,cloze,Cold water is typically characterized by,7,4.9629,4.7195,7.1345,1.0782,OLMo-2-0425-1B
+control,ice_cream,ice cream,declarative,cloze,Ice cream is a frozen dessert made from,9,4.2113,2.7225,7.1345,1.6525,OLMo-2-0425-1B
+control,life_jacket,life jacket,declarative,cloze,A life jacket is designed to,7,4.4901,3.493,8.0804,0.7907,OLMo-2-0425-1B
+control,tea_cup,tea cup,declarative,cloze,A tea cup is a vessel used for,9,4.3614,2.9032,8.0804,1.1714,OLMo-2-0425-1B
+control,living_room,living room,declarative,cloze,A living room is,5,5.8473,3.2658,8.0804,3.2658,OLMo-2-0425-1B
+control,roller_coaster,roller coaster,declarative,cloze,A roller coaster is an amusement ride that,9,3.9392,4.0986,8.0804,1.2502,OLMo-2-0425-1B
+control,school_bus,school bus,declarative,cloze,A school bus is used to,7,5.1137,3.0224,8.0804,2.2186,OLMo-2-0425-1B
+control,grilled_cheese,grilled cheese,declarative,cloze,A grilled cheese sandwich consists of,7,3.9303,2.9358,8.0804,0.3073,OLMo-2-0425-1B
+control,peanut_butter,peanut butter,declarative,cloze,Peanut butter is made from,8,3.8798,3.4093,7.1345,0.3093,OLMo-2-0425-1B
+control,hot_chocolate,hot chocolate,declarative,cloze,Hot chocolate is a warm beverage typically made from,10,4.0236,3.0695,7.1345,1.4079,OLMo-2-0425-1B
+control,apple_pie,apple pie,declarative,cloze,Apple pie is a dessert featuring,7,4.8896,3.0128,7.1345,3.0128,OLMo-2-0425-1B
+control,orange_juice,orange juice,declarative,cloze,Orange juice is extracted from,6,4.5656,2.9941,7.1345,1.7706,OLMo-2-0425-1B
+control,baked_beans,baked beans,declarative,cloze,Baked beans are,5,5.4764,3.9816,7.1345,3.9032,OLMo-2-0425-1B
+control,palm_tree,palm tree,declarative,cloze,A palm tree is characterized by,7,4.5573,2.9737,8.0804,0.469,OLMo-2-0425-1B
+control,thunder_storm,thunder storm,declarative,cloze,A thunder storm is,5,5.3975,4.5839,8.0804,1.7886,OLMo-2-0425-1B
+control,coral_reef,coral reef,declarative,cloze,A coral reef is an underwater formation that,9,4.3604,3.6363,8.0804,2.5793,OLMo-2-0425-1B
+control,shooting_star,shooting star,declarative,cloze,A shooting star is actually,6,5.1273,2.0976,8.0804,2.0976,OLMo-2-0425-1B
+control,mountain_lion,mountain lion,declarative,cloze,A mountain lion is,5,6.007,4.94,8.0804,4.8398,OLMo-2-0425-1B
+control,tidal_wave,tidal wave,declarative,cloze,A tidal wave is a large ocean wave caused by,11,3.7184,2.907,8.0804,0.1656,OLMo-2-0425-1B
+control,dining_table,dining table,declarative,cloze,A dining table is furniture used for,8,4.3054,2.5086,8.0804,1.6405,OLMo-2-0425-1B
+control,car_keys,car keys,declarative,cloze,Car keys are used to,6,4.6128,4.3527,7.1345,1.8834,OLMo-2-0425-1B
+control,washing_machine,washing machine,declarative,cloze,A washing machine is an appliance that,8,4.2328,3.5393,8.0804,1.6091,OLMo-2-0425-1B
+control,bath_towels,bath towels,declarative,cloze,Bath towels are used for,7,5.0651,4.1083,7.1345,2.8036,OLMo-2-0425-1B
+control,alarm_clock,alarm clock,declarative,cloze,An alarm clock is a device that,8,4.3966,4.2194,7.1345,1.8997,OLMo-2-0425-1B
+control,light_bulb,light bulb,declarative,cloze,A light bulb is,5,6.1844,4.1959,8.0804,4.1959,OLMo-2-0425-1B
+control,post_office,post office,declarative,cloze,A post office is an institution that,8,4.8878,4.0765,8.0804,2.8797,OLMo-2-0425-1B
+control,parking_lot,parking lot,declarative,cloze,A parking lot is,5,5.6773,3.587,8.0804,3.587,OLMo-2-0425-1B
+control,train_station,train station,declarative,cloze,A train station is a facility where,8,4.9458,3.533,8.0804,3.1186,OLMo-2-0425-1B
+control,fire_station,fire station,declarative,cloze,A fire station is,5,5.8258,4.541,8.0804,4.541,OLMo-2-0425-1B
+control,swimming_pool,swimming pool,declarative,cloze,A swimming pool is a structure designed for,9,4.2628,3.6043,8.0804,1.1096,OLMo-2-0425-1B
+control,coffee_shop,coffee shop,declarative,cloze,A coffee shop is,5,5.7312,3.2241,8.0804,3.2241,OLMo-2-0425-1B
+control,hard_drive,hard drive,declarative,cloze,A hard drive is a computer component used for,10,4.0615,2.3417,8.0804,1.1548,OLMo-2-0425-1B
+control,operating_system,operating system,declarative,cloze,An operating system is software that,7,4.1852,3.5354,7.1345,2.1347,OLMo-2-0425-1B
+control,search_engine,search engine,declarative,cloze,A search engine is,5,4.9867,2.1924,8.0804,2.1924,OLMo-2-0425-1B
+control,user_name,user name,declarative,cloze,A user name is typically used for,8,4.7347,4.4169,8.0804,2.0253,OLMo-2-0425-1B
+control,power_supply,power supply,declarative,cloze,A power supply is,5,5.6878,3.0385,8.0804,3.0385,OLMo-2-0425-1B
+control,data_base,data base,declarative,cloze,A data base is,5,5.648,2.4163,8.0804,2.4163,OLMo-2-0425-1B
+control,sore_throat,sore throat,declarative,cloze,A sore throat is,5,4.7095,2.9019,8.0804,2.4659,OLMo-2-0425-1B
+control,blood_pressure,blood pressure,declarative,cloze,Blood pressure refers to,5,3.9359,1.1723,7.1345,0.0791,OLMo-2-0425-1B
+control,collar_bone,collar bone,declarative,cloze,The collar bone is,5,5.4425,3.1165,8.5535,3.1165,OLMo-2-0425-1B
+control,heart_rate,heart rate,declarative,cloze,Heart rate measures,4,5.6289,5.5991,7.1345,4.6735,OLMo-2-0425-1B
+control,dental_appointment,dental appointment,declarative,cloze,A dental appointment is,5,5.2393,3.5631,8.0804,3.4751,OLMo-2-0425-1B
+control,waiting_room,waiting room,declarative,cloze,A waiting room is,5,5.3264,2.9644,8.0804,2.9644,OLMo-2-0425-1B

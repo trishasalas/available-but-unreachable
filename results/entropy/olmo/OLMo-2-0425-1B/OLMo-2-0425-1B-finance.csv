@@ -1,0 +1,45 @@
+domain,prompt_id,concept,prompt_type,template_type,prompt,n_tokens,mean_entropy,last_token_entropy,max_entropy,min_entropy,model
+finance,cash_flow,cash flow,declarative,cloze,Cash flow is,4,5.4239,3.8768,7.1345,3.8768,OLMo-2-0425-1B
+finance,balance_sheet,balance sheet,declarative,cloze,A balance sheet is,5,4.791,1.9183,8.0804,1.9183,OLMo-2-0425-1B
+finance,journal_entry,journal entry,declarative,cloze,A journal entry is,5,5.0723,2.9393,8.0804,2.9393,OLMo-2-0425-1B
+finance,accelerated_depreciation,accelerated depreciation,declarative,cloze,Accelerated depreciation is,5,4.7574,3.1196,7.5336,1.7816,OLMo-2-0425-1B
+finance,impairment_goodwill,impairment goodwill,declarative,cloze,Goodwill impairment occurs when,6,5.0327,2.7504,7.1345,1.0446,OLMo-2-0425-1B
+finance,yield_maturity,yield maturity,declarative,cloze,Yield to maturity is,6,5.1183,2.6346,7.1345,2.6346,OLMo-2-0425-1B
+finance,bond_coupon,bond coupon,declarative,cloze,A bond coupon is,5,4.7091,1.6317,8.0804,1.6317,OLMo-2-0425-1B
+finance,credit_spread,credit spread,declarative,cloze,A credit spread is,5,4.4521,1.8843,8.0804,1.8843,OLMo-2-0425-1B
+finance,modified_duration,modified duration,declarative,cloze,Modified duration measures,4,6.2109,4.7423,7.5015,4.7423,OLMo-2-0425-1B
+finance,interest_swap,interest swap,declarative,cloze,An interest swap is,5,4.49,1.7393,7.1345,1.7393,OLMo-2-0425-1B
+finance,call_option,call option,declarative,cloze,A call option gives,5,4.5074,1.5141,8.0804,1.5141,OLMo-2-0425-1B
+finance,commodity_futures,commodity futures,declarative,cloze,Commodity futures are,5,5.3121,4.6677,7.1345,4.2893,OLMo-2-0425-1B
+finance,currency_hedge,currency hedge,declarative,cloze,A currency hedge is,5,5.1584,2.06,8.0804,2.06,OLMo-2-0425-1B
+finance,implied_volatility,implied volatility,declarative,cloze,Implied volatility refers to,6,3.8698,1.5312,7.2563,0.076,OLMo-2-0425-1B
+finance,zero_collar,zero collar,declarative,cloze,A zero collar strategy,5,6.0067,3.8585,8.0804,3.8585,OLMo-2-0425-1B
+finance,diluted_earnings,diluted earnings,declarative,cloze,Diluted earnings per share is,8,4.9058,3.1389,8.5418,0.2931,OLMo-2-0425-1B
+finance,price_ratio,price ratio,declarative,cloze,The price to earnings ratio is,7,4.1876,2.6025,8.5535,1.132,OLMo-2-0425-1B
+finance,preferred_dividend,preferred dividend,declarative,cloze,A preferred dividend is,5,5.8409,2.3464,8.0804,2.3464,OLMo-2-0425-1B
+finance,financial_leverage,financial leverage,declarative,cloze,Financial leverage is,4,5.2095,3.019,7.1345,3.019,OLMo-2-0425-1B
+finance,debt_covenant,debt covenant,declarative,cloze,A debt covenant is,5,4.966,1.4157,8.0804,1.4157,OLMo-2-0425-1B
+finance,capital_structure,capital structure,declarative,cloze,Capital structure refers to,5,3.5906,1.1255,7.1345,0.0874,OLMo-2-0425-1B
+finance,due_diligence,due diligence,declarative,cloze,Due diligence is,4,4.1873,3.3622,7.1345,1.6998,OLMo-2-0425-1B
+finance,public_offering,public offering,declarative,cloze,A public offering is,5,5.4134,2.2732,8.0804,2.2732,OLMo-2-0425-1B
+finance,market_liquidity,market liquidity,declarative,cloze,Market liquidity refers to,5,3.8821,1.5812,7.1345,0.1038,OLMo-2-0425-1B
+finance,trade_settlement,trade settlement,declarative,cloze,Trade settlement is,4,6.0051,4.3361,7.1345,4.3361,OLMo-2-0425-1B
+finance,central_clearing,central clearing,declarative,cloze,Central clearing houses,4,5.7349,4.5124,7.1345,4.5124,OLMo-2-0425-1B
+finance,maintenance_margin,maintenance margin,declarative,cloze,A maintenance margin is,5,5.3692,2.2632,8.0804,2.2632,OLMo-2-0425-1B
+finance,regulatory_compliance,regulatory compliance,declarative,cloze,Regulatory compliance means,5,5.4893,4.3005,7.174,4.2432,OLMo-2-0425-1B
+finance,money_laundering,money laundering,declarative,cloze,Money laundering is,4,5.262,3.2151,7.1345,3.2151,OLMo-2-0425-1B
+finance,asset_allocation,asset allocation,declarative,cloze,Asset allocation is,4,5.1095,3.291,7.1345,3.291,OLMo-2-0425-1B
+finance,systemic_risk,systemic risk,declarative,cloze,Systemic risk is,5,5.6175,4.2596,7.1345,4.2596,OLMo-2-0425-1B
+finance,stress_test,stress test,declarative,cloze,A stress test is,5,5.0247,1.9039,8.0804,1.9039,OLMo-2-0425-1B
+finance,credit_default,credit default,declarative,cloze,A credit default is,5,4.135,2.029,8.0804,0.7401,OLMo-2-0425-1B
+finance,stock_market,stock market,declarative,cloze,The stock market is,5,5.479,5.1796,8.5535,2.2982,OLMo-2-0425-1B
+finance,mutual_fund,mutual fund,declarative,cloze,A mutual fund is,5,4.4781,1.6661,8.0804,1.6661,OLMo-2-0425-1B
+finance,hedge_fund,hedge fund,declarative,cloze,A hedge fund is,5,4.7465,1.7937,8.0804,1.7937,OLMo-2-0425-1B
+finance,bear_market,bear market,declarative,cloze,A bear market is,5,5.4645,2.6614,8.0804,2.6614,OLMo-2-0425-1B
+finance,bull_market,bull market,declarative,cloze,A bull market is,5,5.5532,3.1948,8.0804,3.1948,OLMo-2-0425-1B
+finance,credit_rating,credit rating,declarative,cloze,A credit rating is,5,4.7178,2.1133,8.0804,2.1133,OLMo-2-0425-1B
+finance,tax_shelter,tax shelter,declarative,cloze,A tax shelter is,5,5.2996,2.0896,8.0804,2.0896,OLMo-2-0425-1B
+finance,venture_capital,venture capital,declarative,cloze,Venture capital is,5,4.5605,4.1529,7.1345,2.7056,OLMo-2-0425-1B
+finance,prime_rate,prime rate,declarative,cloze,The prime rate is,5,4.9727,2.2802,8.5535,2.2802,OLMo-2-0425-1B
+finance,fiscal_policy,fiscal policy,declarative,cloze,Fiscal policy refers to,6,4.2845,2.6496,7.1345,0.1192,OLMo-2-0425-1B
+finance,trade_deficit,trade deficit,declarative,cloze,A trade deficit occurs when,6,4.4835,2.705,8.0804,0.4987,OLMo-2-0425-1B

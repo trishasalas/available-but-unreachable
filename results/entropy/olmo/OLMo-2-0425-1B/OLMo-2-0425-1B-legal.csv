@@ -1,0 +1,45 @@
+domain,prompt_id,concept,prompt_type,template_type,prompt,n_tokens,mean_entropy,last_token_entropy,max_entropy,min_entropy,model
+legal,due_process,due process,declarative,cloze,Due process is,4,4.358,3.9525,7.1345,1.6998,OLMo-2-0425-1B
+legal,equal_protection,equal protection,declarative,cloze,Equal protection refers to,5,3.8378,2.3999,7.1345,0.1531,OLMo-2-0425-1B
+legal,commerce_clause,commerce clause,declarative,cloze,The commerce clause is,5,5.8191,4.0523,8.5535,3.8488,OLMo-2-0425-1B
+legal,fifth_amendment,fifth amendment,declarative,cloze,The fifth amendment provides,5,5.6685,2.6792,8.5535,2.6792,OLMo-2-0425-1B
+legal,free_speech,free speech,declarative,cloze,Free speech is a right that,7,5.3335,4.3391,7.344,3.6286,OLMo-2-0425-1B
+legal,strict_liability,strict liability,declarative,cloze,Strict liability is a legal doctrine holding,8,3.5246,1.8458,7.1345,1.8458,OLMo-2-0425-1B
+legal,punitive_damages,punitive damages,declarative,cloze,Punitive damages are awarded to,8,4.3152,3.5489,7.1345,2.3307,OLMo-2-0425-1B
+legal,sovereign_immunity,sovereign immunity,declarative,cloze,Sovereign immunity is,6,4.5842,2.9428,7.1345,0.3889,OLMo-2-0425-1B
+legal,grand_indictment,grand indictment,declarative,cloze,A grand indictment is,5,5.5292,4.2644,8.0804,3.4864,OLMo-2-0425-1B
+legal,guilty_plea,guilty plea,declarative,cloze,A guilty plea is when,6,4.3778,1.4971,8.0804,1.4971,OLMo-2-0425-1B
+legal,excessive_bail,excessive bail,declarative,cloze,Excessive bail is prohibited by,7,4.6998,2.844,7.4652,2.541,OLMo-2-0425-1B
+legal,felony_conviction,felony conviction,declarative,cloze,A felony conviction is,5,4.9621,2.5861,8.0804,2.5861,OLMo-2-0425-1B
+legal,conditional_parole,conditional parole,declarative,cloze,Conditional parole requires,4,6.4154,5.7935,7.6458,5.0877,OLMo-2-0425-1B
+legal,joint_custody,joint custody,declarative,cloze,Joint custody means,4,5.5912,3.004,7.6385,3.004,OLMo-2-0425-1B
+legal,material_breach,material breach,declarative,cloze,A material breach is,5,5.2111,2.4266,8.0804,2.4266,OLMo-2-0425-1B
+legal,adequate_consideration,adequate consideration,declarative,cloze,Adequate consideration in a contract means,9,5.408,2.9445,8.0804,2.9445,OLMo-2-0425-1B
+legal,arbitration_clause,arbitration clause,declarative,cloze,An arbitration clause is,5,4.5818,2.014,7.1345,2.014,OLMo-2-0425-1B
+legal,specific_performance,specific performance,declarative,cloze,Specific performance is a remedy that,7,5.2104,4.0245,7.1345,3.2501,OLMo-2-0425-1B
+legal,preliminary_injunction,preliminary injunction,declarative,cloze,A preliminary injunction is,5,5.2475,2.2713,8.0804,2.2713,OLMo-2-0425-1B
+legal,oral_deposition,oral deposition,declarative,cloze,An oral deposition is,5,4.8637,2.515,7.1345,2.515,OLMo-2-0425-1B
+legal,personal_jurisdiction,personal jurisdiction,declarative,cloze,Personal jurisdiction refers to,5,3.7709,1.8831,7.1345,0.1395,OLMo-2-0425-1B
+legal,electronic_discovery,electronic discovery,declarative,cloze,Electronic discovery is,4,5.5413,3.7266,7.1345,3.7266,OLMo-2-0425-1B
+legal,summary_motion,summary motion,declarative,cloze,A summary motion is,5,4.772,3.0356,8.0804,1.4524,OLMo-2-0425-1B
+legal,proper_venue,proper venue,declarative,cloze,Proper venue is determined by,7,5.017,3.5592,7.2744,2.2393,OLMo-2-0425-1B
+legal,patent_infringement,patent infringement,declarative,cloze,Patent infringement occurs when,6,4.3937,2.0802,7.1345,1.93,OLMo-2-0425-1B
+legal,articles_incorporation,articles incorporation,declarative,cloze,Articles of incorporation are,5,5.0167,5.4,7.1345,3.5475,OLMo-2-0425-1B
+legal,hostile_merger,hostile merger,declarative,cloze,A hostile merger is,5,5.6471,2.6908,8.0804,2.6908,OLMo-2-0425-1B
+legal,statute_limitations,statute limitations,declarative,cloze,A statute of limitations is,6,4.2322,1.6775,8.0804,0.8066,OLMo-2-0425-1B
+legal,legal_standing,legal standing,declarative,cloze,Legal standing is the right to,7,4.5836,3.6552,7.1345,1.4721,OLMo-2-0425-1B
+legal,binding_precedent,binding precedent,declarative,cloze,A binding precedent is,5,5.687,2.2049,8.0804,2.2049,OLMo-2-0425-1B
+legal,judicial_review,judicial review,declarative,cloze,Judicial review is,5,4.7398,3.5859,7.1345,2.4581,OLMo-2-0425-1B
+legal,civil_lawsuit,civil lawsuit,declarative,cloze,A civil lawsuit is,5,5.1826,2.3791,8.0804,2.3791,OLMo-2-0425-1B
+legal,criminal_record,criminal record,declarative,cloze,A criminal record is,5,5.4771,3.162,8.0804,3.162,OLMo-2-0425-1B
+legal,search_warrant,search warrant,declarative,cloze,A search warrant is,5,4.9068,2.3362,8.0804,2.3362,OLMo-2-0425-1B
+legal,plea_bargain,plea bargain,declarative,cloze,A plea bargain is,5,4.719,2.2693,8.0804,2.2693,OLMo-2-0425-1B
+legal,witness_testimony,witness testimony,declarative,cloze,Witness testimony is,4,5.3809,5.4298,7.1345,4.1965,OLMo-2-0425-1B
+legal,expert_witness,expert witness,declarative,cloze,An expert witness is,5,5.306,3.0071,7.1345,3.0071,OLMo-2-0425-1B
+legal,court_order,court order,declarative,cloze,A court order is,5,5.31,2.5614,8.0804,2.5614,OLMo-2-0425-1B
+legal,bench_trial,bench trial,declarative,cloze,A bench trial is,5,5.2858,2.4715,8.0804,2.4715,OLMo-2-0425-1B
+legal,jury_verdict,jury verdict,declarative,cloze,A jury verdict is,5,5.0842,3.3976,8.0804,3.3643,OLMo-2-0425-1B
+legal,class_action,class action,declarative,cloze,A class action lawsuit is,6,4.9203,3.2717,8.0804,3.173,OLMo-2-0425-1B
+legal,double_jeopardy,double jeopardy,declarative,cloze,Double jeopardy is,4,5.6201,3.2411,7.472,3.2411,OLMo-2-0425-1B
+legal,probable_cause,probable cause,declarative,cloze,Probable cause is,5,4.3842,4.2028,7.1345,2.0163,OLMo-2-0425-1B
+legal,restraining_order,restraining order,declarative,cloze,A restraining order is,5,4.3034,2.2203,8.0804,0.4044,OLMo-2-0425-1B
