@@ -1,0 +1,45 @@
+domain,prompt_id,concept,prompt_type,template_type,prompt,n_tokens,mean_entropy,last_token_entropy,max_entropy,min_entropy,model
+control,blue_sky,blue sky,declarative,cloze,A blue sky is,5,5.7998,4.8706,7.77,4.5235,pythia-12b
+control,cold_water,cold water,declarative,cloze,Cold water is typically characterized by,7,4.4489,3.6946,6.6114,0.8894,pythia-12b
+control,ice_cream,ice cream,declarative,cloze,Ice cream is a frozen dessert made from,9,4.152,3.3192,6.6114,1.6069,pythia-12b
+control,life_jacket,life jacket,declarative,cloze,A life jacket is designed to,7,4.0029,3.0694,7.77,0.7502,pythia-12b
+control,tea_cup,tea cup,declarative,cloze,A tea cup is a vessel used for,9,4.3892,3.1064,7.77,1.3293,pythia-12b
+control,living_room,living room,declarative,cloze,A living room is,5,5.7341,3.5925,7.77,3.5925,pythia-12b
+control,roller_coaster,roller coaster,declarative,cloze,A roller coaster is an amusement ride that,10,3.4603,3.8548,7.77,0.0175,pythia-12b
+control,school_bus,school bus,declarative,cloze,A school bus is used to,7,4.2769,1.8007,7.77,1.7506,pythia-12b
+control,grilled_cheese,grilled cheese,declarative,cloze,A grilled cheese sandwich consists of,7,3.7258,1.8533,7.77,0.2776,pythia-12b
+control,peanut_butter,peanut butter,declarative,cloze,Peanut butter is made from,7,3.9406,2.8094,6.6114,1.5772,pythia-12b
+control,hot_chocolate,hot chocolate,declarative,cloze,Hot chocolate is a warm beverage typically made from,10,3.7014,3.5514,6.6114,1.4737,pythia-12b
+control,apple_pie,apple pie,declarative,cloze,Apple pie is a dessert featuring,7,4.498,2.2771,6.6114,2.2771,pythia-12b
+control,orange_juice,orange juice,declarative,cloze,Orange juice is extracted from,7,4.0803,2.3455,6.6114,0.8115,pythia-12b
+control,baked_beans,baked beans,declarative,cloze,Baked beans are,5,5.2327,3.7306,6.6114,3.7306,pythia-12b
+control,palm_tree,palm tree,declarative,cloze,A palm tree is characterized by,7,4.4592,2.8518,7.77,0.799,pythia-12b
+control,thunder_storm,thunder storm,declarative,cloze,A thunder storm is,5,5.049,4.0423,7.77,1.8501,pythia-12b
+control,coral_reef,coral reef,declarative,cloze,A coral reef is an underwater formation that,9,4.0944,3.1063,7.77,1.2951,pythia-12b
+control,shooting_star,shooting star,declarative,cloze,A shooting star is actually,6,5.0074,2.4733,7.77,2.4733,pythia-12b
+control,mountain_lion,mountain lion,declarative,cloze,A mountain lion is,5,5.4203,4.4957,7.77,4.0195,pythia-12b
+control,tidal_wave,tidal wave,declarative,cloze,A tidal wave is a large ocean wave caused by,11,3.381,2.5108,7.77,0.308,pythia-12b
+control,dining_table,dining table,declarative,cloze,A dining table is furniture used for,8,4.3315,3.5666,7.77,1.6839,pythia-12b
+control,car_keys,car keys,declarative,cloze,Car keys are used to,6,4.4023,3.1728,6.6114,2.153,pythia-12b
+control,washing_machine,washing machine,declarative,cloze,A washing machine is an appliance that,8,3.4299,2.3949,7.77,1.4133,pythia-12b
+control,bath_towels,bath towels,declarative,cloze,Bath towels are used for,7,4.4138,2.9641,6.6114,2.8157,pythia-12b
+control,alarm_clock,alarm clock,declarative,cloze,An alarm clock is a device that,8,4.342,3.8966,6.8072,2.1548,pythia-12b
+control,light_bulb,light bulb,declarative,cloze,A light bulb is,5,5.3372,3.5971,7.77,3.5971,pythia-12b
+control,post_office,post office,declarative,cloze,A post office is an institution that,8,4.4858,3.9312,7.77,2.7121,pythia-12b
+control,parking_lot,parking lot,declarative,cloze,A parking lot is,5,5.3568,4.1221,7.77,4.0379,pythia-12b
+control,train_station,train station,declarative,cloze,A train station is a facility where,8,4.8262,3.066,7.77,2.9943,pythia-12b
+control,fire_station,fire station,declarative,cloze,A fire station is,5,5.2524,4.6485,7.77,3.1721,pythia-12b
+control,swimming_pool,swimming pool,declarative,cloze,A swimming pool is a structure designed for,9,4.234,3.513,7.77,1.0858,pythia-12b
+control,coffee_shop,coffee shop,declarative,cloze,A coffee shop is,5,5.4533,5.2536,7.77,3.5534,pythia-12b
+control,hard_drive,hard drive,declarative,cloze,A hard drive is a computer component used for,10,3.4875,2.0172,7.77,0.8822,pythia-12b
+control,operating_system,operating system,declarative,cloze,An operating system is software that,7,3.4497,1.2373,6.8072,1.2373,pythia-12b
+control,search_engine,search engine,declarative,cloze,A search engine is,5,4.404,1.9235,7.77,1.9235,pythia-12b
+control,user_name,user name,declarative,cloze,A user name is typically used for,8,4.2429,3.6823,7.77,1.4609,pythia-12b
+control,power_supply,power supply,declarative,cloze,A power supply is,5,5.1293,2.8279,7.77,2.8279,pythia-12b
+control,data_base,data base,declarative,cloze,A data base is,5,4.9746,2.9693,7.77,2.9693,pythia-12b
+control,sore_throat,sore throat,declarative,cloze,A sore throat is,5,5.1964,3.1163,7.77,3.1163,pythia-12b
+control,blood_pressure,blood pressure,declarative,cloze,Blood pressure refers to,5,3.3577,0.5035,6.6114,0.1327,pythia-12b
+control,collar_bone,collar bone,declarative,cloze,The collar bone is,5,5.3341,3.0113,7.4108,3.0113,pythia-12b
+control,heart_rate,heart rate,declarative,cloze,Heart rate measures,4,4.4703,3.6201,6.6114,2.9955,pythia-12b
+control,dental_appointment,dental appointment,declarative,cloze,A dental appointment is,5,5.3887,3.4486,7.77,3.4486,pythia-12b
+control,waiting_room,waiting room,declarative,cloze,A waiting room is,5,4.7637,3.3568,7.77,2.5356,pythia-12b
