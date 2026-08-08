@@ -1,6 +1,7 @@
 suite,scale,declarative_entropy,evaluative_entropy,entropy_gap
 pythia,160M,3.9944,4.2072,0.2128
 pythia,410M,3.7012,4.0067,0.3055
+pythia,1B,3.6853,4.0811,0.3958
 pythia,2.8B,3.4819,3.9049,0.423
 pythia,6.9B,3.2988,3.7218,0.423
 pythia,12B,3.2127,3.751,0.5383

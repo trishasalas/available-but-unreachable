@@ -1,6 +1,7 @@
 suite,scale,n_access_incorrect,access_incorrect_entropy,n_control_correct,control_correct_entropy,confidence_gap
 pythia,160M,38,4.3233,4,3.1541,1.1691
 pythia,410M,36,3.9213,4,3.2012,0.72
+pythia,1B,40,3.7176,3,3.019,0.6986
 pythia,2.8B,32,3.6732,5,3.2593,0.4139
 pythia,6.9B,30,3.6182,5,3.2919,0.3263
 pythia,12B,23,3.5972,5,3.0655,0.5316
