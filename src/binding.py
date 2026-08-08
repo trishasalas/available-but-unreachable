@@ -14,7 +14,7 @@ import pandas as pd
 
 
 # Comounds with prompts for the binding run
-DEFAULT_COMPOUNDS = [
+ACCESSIBILITY = [
 
     ("screen_reader",            "screen",      "reader",          "A screen reader is"),
     ("alt_text",                 "alt",         "text",            "The purpose of alt text is"),
@@ -70,7 +70,6 @@ DEFAULT_COMPOUNDS = [
     ("responsive_design",        "responsive",  "design",            "Responsive design is"),
     ("empty_link",               "empty",       "link",              "An empty link is"),
 ]
-
 
 CONTROL = [
     ('blue_sky',                    'blue',         'sky',            'I like to look at the blue sky'),
@@ -353,7 +352,13 @@ def run_binding_sweep(model, model_name, project_root, compounds=None):
         DataFrame with binding scores for all compounds × layers × heads.
     """
     if compounds is None:
-        compounds = DEFAULT_COMPOUNDS
+        compounds = [
+     'CONTROL',
+     'ACCESSIBILITY',
+     'MEDICAL',
+     'LEGAL',
+     'FINANCE'
+]
 
     all_rows = []
 
