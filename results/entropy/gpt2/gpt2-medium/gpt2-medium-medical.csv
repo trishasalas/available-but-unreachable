@@ -1,0 +1,43 @@
+domain,prompt_id,concept,prompt_type,template_type,prompt,n_tokens,mean_entropy,last_token_entropy,max_entropy,min_entropy,model
+medical,oxygen_saturation,oxygen saturation,declarative,cloze,Oxygen saturation refers to,7,3.7765,1.9322,6.4598,0.1747,gpt2-medium
+medical,body_temperature,body temperature,declarative,cloze,Body temperature is,4,5.3195,4.2496,6.2854,4.2496,gpt2-medium
+medical,platelet_count,platelet count,declarative,cloze,Platelet count measures,6,4.8786,2.5254,6.4715,2.5254,gpt2-medium
+medical,metabolic_panel,metabolic panel,declarative,cloze,A metabolic panel is,5,5.7361,3.4549,7.763,3.4549,gpt2-medium
+medical,bacterial_infection,bacterial infection,declarative,cloze,A bacterial infection is caused by,7,4.4942,3.5781,7.763,0.4767,gpt2-medium
+medical,magnetic_resonance,magnetic resonance,declarative,cloze,Magnetic resonance imaging is,6,4.0958,3.9102,6.8712,1.0829,gpt2-medium
+medical,multiple_sclerosis,multiple sclerosis,declarative,cloze,Multiple sclerosis is,4,4.7836,2.5586,7.7879,2.5586,gpt2-medium
+medical,complete_remission,complete remission,declarative,cloze,Complete remission means,4,5.0292,3.9096,6.7135,3.4915,gpt2-medium
+medical,bowel_resection,bowel resection,declarative,cloze,A bowel resection is,6,4.1745,3.0551,7.763,0.0597,gpt2-medium
+medical,organ_transplant,organ transplant,declarative,cloze,An organ transplant is,5,5.1398,3.194,7.092,3.194,gpt2-medium
+medical,therapeutic_dosage,therapeutic dosage,declarative,cloze,A therapeutic dosage is,5,5.5128,4.4813,7.763,2.1,gpt2-medium
+medical,drug_interaction,drug interaction,declarative,cloze,A drug interaction occurs when,6,4.6795,3.6695,7.763,1.0624,gpt2-medium
+medical,antibiotic_resistance,antibiotic resistance,declarative,cloze,Antibiotic resistance is,6,3.6666,4.4959,6.0022,1.2456,gpt2-medium
+medical,gastrointestinal_absorption,gastrointestinal absorption,declarative,cloze,Gastrointestinal absorption refers to,8,3.2687,1.9934,6.0432,0.2554,gpt2-medium
+medical,respiratory_tract,respiratory tract,declarative,cloze,The respiratory tract is,5,5.4656,3.6557,8.5565,3.6557,gpt2-medium
+medical,cerebral_cortex,cerebral cortex,declarative,cloze,The cerebral cortex is,5,5.0819,4.4621,8.5565,3.0841,gpt2-medium
+medical,informed_consent,informed consent,declarative,cloze,Informed consent requires,5,4.674,4.6091,6.0022,3.4683,gpt2-medium
+medical,clinical_trial,clinical trial,declarative,cloze,A clinical trial is,5,4.928,3.9751,7.763,3.127,gpt2-medium
+medical,nerve_damage,nerve damage,declarative,cloze,Nerve damage can result in,7,4.6489,5.6156,6.2496,1.1557,gpt2-medium
+medical,chest_pain,chest pain,declarative,cloze,Chest pain can indicate,5,4.1477,4.845,6.0022,2.8927,gpt2-medium
+medical,bone_marrow,bone marrow,declarative,cloze,Bone marrow is,4,5.7246,4.2818,7.6944,4.2818,gpt2-medium
+medical,brain_stem,brain stem,declarative,cloze,The brain stem controls,5,5.7754,4.8867,8.5565,4.1474,gpt2-medium
+medical,birth_defect,birth defect,declarative,cloze,A birth defect is,5,4.9457,2.95,7.763,2.95,gpt2-medium
+medical,wound_care,wound care,declarative,cloze,Wound care is,5,5.6037,4.3248,7.3267,4.3248,gpt2-medium
+medical,pain_management,pain management,declarative,cloze,Pain management involves,4,5.2086,5.803,6.0022,4.2567,gpt2-medium
+medical,blood_clot,blood clot,declarative,cloze,A blood clot is,5,5.2368,2.9927,7.763,2.9927,gpt2-medium
+medical,tumor_growth,tumor growth,declarative,cloze,Tumor growth is,6,5.33,4.8493,6.404,4.1628,gpt2-medium
+medical,joint_replacement,joint replacement,declarative,cloze,A joint replacement is,5,5.8409,4.5358,7.763,4.5358,gpt2-medium
+medical,immune_response,immune response,declarative,cloze,An immune response is,5,4.923,4.0362,7.092,3.5104,gpt2-medium
+medical,viral_infection,viral infection,declarative,cloze,A viral infection is caused by,7,4.3802,3.4407,7.763,0.6058,gpt2-medium
+medical,chronic_pain,chronic pain,declarative,cloze,Chronic pain is,5,4.9545,3.3171,6.1984,3.3171,gpt2-medium
+medical,mental_health,mental health,declarative,cloze,Mental health refers to,6,4.0496,3.1353,6.1912,0.2342,gpt2-medium
+medical,spinal_cord,spinal cord,declarative,cloze,The spinal cord is,5,4.847,3.8481,8.5565,1.8713,gpt2-medium
+medical,scar_tissue,scar tissue,declarative,cloze,Scar tissue is,4,4.6168,4.9676,6.0022,2.9703,gpt2-medium
+medical,fluid_retention,fluid retention,declarative,cloze,Fluid retention can cause,7,5.5084,6.5968,7.7944,3.4899,gpt2-medium
+medical,sleep_apnea,sleep apnea,declarative,cloze,Sleep apnea is,5,3.6893,2.8003,6.0022,0.0945,gpt2-medium
+medical,muscle_spasm,muscle spasm,declarative,cloze,A muscle spasm is,6,4.5638,2.9637,7.763,0.7759,gpt2-medium
+medical,breast_cancer,breast cancer,declarative,cloze,Breast cancer is,5,3.8395,3.1845,6.0022,2.6988,gpt2-medium
+medical,lung_cancer,lung cancer,declarative,cloze,Lung cancer is,5,4.5684,3.0107,6.0022,3.0107,gpt2-medium
+medical,skin_graft,skin graft,declarative,cloze,A skin graft is,5,5.2612,2.0185,7.763,2.0185,gpt2-medium
+medical,stem_cell,stem cell,declarative,cloze,A stem cell is,5,4.5185,2.0654,7.763,1.2319,gpt2-medium
+medical,side_effect,side effect,declarative,cloze,A side effect is,5,4.5428,4.7942,7.763,0.5188,gpt2-medium

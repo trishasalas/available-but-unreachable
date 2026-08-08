@@ -1,0 +1,45 @@
+domain,prompt_id,concept,prompt_type,template_type,prompt,n_tokens,mean_entropy,last_token_entropy,max_entropy,min_entropy,model
+finance,cash_flow,cash flow,declarative,cloze,Cash flow is,4,5.6113,4.5331,6.3506,4.5331,gpt2-medium
+finance,balance_sheet,balance sheet,declarative,cloze,A balance sheet is,5,5.1914,3.0356,7.763,3.0356,gpt2-medium
+finance,journal_entry,journal entry,declarative,cloze,A journal entry is,5,5.0981,3.1739,7.763,3.1739,gpt2-medium
+finance,accelerated_depreciation,accelerated depreciation,declarative,cloze,Accelerated depreciation is,6,4.913,4.6109,8.4042,2.162,gpt2-medium
+finance,impairment_goodwill,impairment goodwill,declarative,cloze,Goodwill impairment occurs when,6,4.242,2.9642,6.0022,0.6315,gpt2-medium
+finance,yield_maturity,yield maturity,declarative,cloze,Yield to maturity is,6,4.7508,5.356,6.2412,1.9648,gpt2-medium
+finance,bond_coupon,bond coupon,declarative,cloze,A bond coupon is,5,5.2744,2.6041,7.763,2.6041,gpt2-medium
+finance,credit_spread,credit spread,declarative,cloze,A credit spread is,5,4.9125,2.8758,7.763,2.8758,gpt2-medium
+finance,modified_duration,modified duration,declarative,cloze,Modified duration measures,5,5.0291,4.9758,6.0022,3.7094,gpt2-medium
+finance,interest_swap,interest swap,declarative,cloze,An interest swap is,5,4.7429,2.8381,7.092,2.8381,gpt2-medium
+finance,call_option,call option,declarative,cloze,A call option gives,5,4.8818,3.0179,7.763,2.8677,gpt2-medium
+finance,commodity_futures,commodity futures,declarative,cloze,Commodity futures are,6,4.6419,6.1249,6.1249,0.9689,gpt2-medium
+finance,currency_hedge,currency hedge,declarative,cloze,A currency hedge is,5,4.7575,2.3462,7.763,1.8787,gpt2-medium
+finance,implied_volatility,implied volatility,declarative,cloze,Implied volatility refers to,6,4.0284,3.0907,7.7798,0.1816,gpt2-medium
+finance,zero_collar,zero collar,declarative,cloze,A zero collar strategy,5,5.5479,4.2765,7.763,3.0059,gpt2-medium
+finance,diluted_earnings,diluted earnings,declarative,cloze,Diluted earnings per share is,8,4.6554,3.8157,7.8282,0.3517,gpt2-medium
+finance,price_ratio,price ratio,declarative,cloze,The price to earnings ratio is,7,4.332,3.235,8.5565,1.0748,gpt2-medium
+finance,preferred_dividend,preferred dividend,declarative,cloze,A preferred dividend is,5,5.8224,4.2535,7.763,4.2535,gpt2-medium
+finance,financial_leverage,financial leverage,declarative,cloze,Financial leverage is,4,5.5827,4.7678,6.7957,4.765,gpt2-medium
+finance,debt_covenant,debt covenant,declarative,cloze,A debt covenant is,5,4.9165,2.0451,7.763,2.0451,gpt2-medium
+finance,capital_structure,capital structure,declarative,cloze,Capital structure refers to,5,3.8915,2.2948,6.0022,0.2615,gpt2-medium
+finance,due_diligence,due diligence,declarative,cloze,Due diligence is,4,3.7918,4.4408,6.0022,0.5663,gpt2-medium
+finance,public_offering,public offering,declarative,cloze,A public offering is,5,5.4892,4.1327,7.763,3.628,gpt2-medium
+finance,market_liquidity,market liquidity,declarative,cloze,Market liquidity refers to,5,3.5305,2.7667,6.0022,0.3113,gpt2-medium
+finance,trade_settlement,trade settlement,declarative,cloze,Trade settlement is,4,6.4049,6.0353,7.1867,6.0022,gpt2-medium
+finance,central_clearing,central clearing,declarative,cloze,Central clearing houses,4,5.644,5.2706,6.0246,5.2706,gpt2-medium
+finance,maintenance_margin,maintenance margin,declarative,cloze,A maintenance margin is,5,5.1529,3.138,7.763,3.138,gpt2-medium
+finance,regulatory_compliance,regulatory compliance,declarative,cloze,Regulatory compliance means,5,5.0651,4.8902,6.3141,3.5323,gpt2-medium
+finance,money_laundering,money laundering,declarative,cloze,Money laundering is,4,4.7615,3.4051,6.0022,3.4051,gpt2-medium
+finance,asset_allocation,asset allocation,declarative,cloze,Asset allocation is,4,4.4678,4.1205,6.0022,2.5946,gpt2-medium
+finance,systemic_risk,systemic risk,declarative,cloze,Systemic risk is,5,5.7438,4.8316,7.8511,4.2514,gpt2-medium
+finance,stress_test,stress test,declarative,cloze,A stress test is,5,5.2089,3.6198,7.763,3.6198,gpt2-medium
+finance,credit_default,credit default,declarative,cloze,A credit default is,5,3.9867,2.8472,7.763,0.3218,gpt2-medium
+finance,stock_market,stock market,declarative,cloze,The stock market is,5,5.5927,5.7317,8.5565,3.1784,gpt2-medium
+finance,mutual_fund,mutual fund,declarative,cloze,A mutual fund is,5,5.3487,3.4957,7.763,3.4957,gpt2-medium
+finance,hedge_fund,hedge fund,declarative,cloze,A hedge fund is,5,4.9368,5.7519,7.763,1.5388,gpt2-medium
+finance,bear_market,bear market,declarative,cloze,A bear market is,5,5.7711,4.0864,7.763,4.0864,gpt2-medium
+finance,bull_market,bull market,declarative,cloze,A bull market is,5,5.6191,4.4438,7.763,4.217,gpt2-medium
+finance,credit_rating,credit rating,declarative,cloze,A credit rating is,5,4.1772,3.0212,7.763,1.1004,gpt2-medium
+finance,tax_shelter,tax shelter,declarative,cloze,A tax shelter is,5,5.3136,2.2701,7.763,2.2701,gpt2-medium
+finance,venture_capital,venture capital,declarative,cloze,Venture capital is,5,5.0942,5.378,6.0022,4.2101,gpt2-medium
+finance,prime_rate,prime rate,declarative,cloze,The prime rate is,5,4.8396,4.6067,8.5565,0.7941,gpt2-medium
+finance,fiscal_policy,fiscal policy,declarative,cloze,Fiscal policy refers to,6,4.4492,3.3604,6.1543,0.2299,gpt2-medium
+finance,trade_deficit,trade deficit,declarative,cloze,A trade deficit occurs when,6,4.4251,3.6843,7.763,0.3512,gpt2-medium
