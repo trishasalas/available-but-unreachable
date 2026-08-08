@@ -142,7 +142,7 @@ def build_compound_table(project_root):
 
 def primary_and_robustness(tab):
     prim, kend, part, sec, sens = [], [], [], [], []
-    for suite in ['pythia', 'gpt2']:
+    for suite in sorted(tab['suite'].unique()):
         s = tab[tab['suite'] == suite]
         for split, ycol in [('all_rows', 'y_all'), ('a11y_sense_only', 'y_a11y')]:
             d = s.dropna(subset=[ycol, 'x_log10_bigram'])
@@ -192,7 +192,7 @@ def rowlevel_bootstrap(elic, tab, n_boot=2000, seed=0):
     rng = np.random.default_rng(seed)
     freq_x = tab.drop_duplicates('compound').set_index('compound')['x_log10_bigram']
     rows = []
-    for suite in ['pythia', 'gpt2']:
+    for suite in sorted(tab['suite'].unique()):
         s = elic[elic['suite'] == suite].copy()
         s['x'] = s['compound'].map(freq_x)
         s['y'] = s['accuracy'].map(STRICT)

@@ -91,6 +91,10 @@ COMPOUNDS = [
     ("decorative_image",           "decorative",  "image",           "A decorative image should have an empty alt attribute"),
     ("informative_image",          "informative", "image",           "An informative image must have meaningful alt text"),
     ("responsive_design",          "responsive",  "design",          "Modern responsive design should maintain accessibility at all sizes"),
+    ("form_label",                 "form",        "label",           "A form label is"),
+    ("link_text",                  "link",        "text",            "Link text describes"),
+    ("page_title",                 "page",        "title",           "A page title describes"),
+    ("empty_link",                 "empty",       "link",            "An empty link is"),
 ]
 
 # --------------------------------------------------------------------------- #
@@ -388,6 +392,10 @@ COMPOUND_DOMAINS = {
     "decorative_image":             "accessibility",
     "informative_image":            "accessibility",
     "responsive_design":            "accessibility",
+    "form_label":                   "accessibility",
+    "link_text":                    "accessibility",
+    "page_title":                   "accessibility",
+    "empty_link":                   "accessibility",
     # ── Control ──
     "blue_sky":                     "control",
     "cold_water":                   "control",
