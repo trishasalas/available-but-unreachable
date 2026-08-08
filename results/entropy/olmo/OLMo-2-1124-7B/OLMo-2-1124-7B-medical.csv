@@ -1,0 +1,43 @@
+domain,prompt_id,concept,prompt_type,template_type,prompt,n_tokens,mean_entropy,last_token_entropy,max_entropy,min_entropy,model
+medical,oxygen_saturation,oxygen saturation,declarative,cloze,Oxygen saturation refers to,6,4.0771,0.6488,7.0639,0.0856,OLMo-2-1124-7B
+medical,body_temperature,body temperature,declarative,cloze,Body temperature is,4,5.4662,4.0124,7.0639,4.0124,OLMo-2-1124-7B
+medical,platelet_count,platelet count,declarative,cloze,Platelet count measures,5,4.1449,0.834,7.0639,0.834,OLMo-2-1124-7B
+medical,metabolic_panel,metabolic panel,declarative,cloze,A metabolic panel is,5,4.8178,0.9741,8.0838,0.9741,OLMo-2-1124-7B
+medical,bacterial_infection,bacterial infection,declarative,cloze,A bacterial infection is caused by,7,4.569,3.05,8.0838,0.4711,OLMo-2-1124-7B
+medical,magnetic_resonance,magnetic resonance,declarative,cloze,Magnetic resonance imaging is,6,4.5629,2.8172,7.0639,1.8288,OLMo-2-1124-7B
+medical,multiple_sclerosis,multiple sclerosis,declarative,cloze,Multiple sclerosis is,4,4.8648,1.9245,7.0639,1.9245,OLMo-2-1124-7B
+medical,complete_remission,complete remission,declarative,cloze,Complete remission means,5,4.5576,2.8212,7.0639,2.8212,OLMo-2-1124-7B
+medical,bowel_resection,bowel resection,declarative,cloze,A bowel resection is,6,3.6817,1.94,8.0838,0.1079,OLMo-2-1124-7B
+medical,organ_transplant,organ transplant,declarative,cloze,An organ transplant is,5,5.0714,2.4674,7.0639,2.4674,OLMo-2-1124-7B
+medical,therapeutic_dosage,therapeutic dosage,declarative,cloze,A therapeutic dosage is,5,5.553,4.2884,8.0838,2.227,OLMo-2-1124-7B
+medical,drug_interaction,drug interaction,declarative,cloze,A drug interaction occurs when,6,4.2088,1.9697,8.0838,0.3056,OLMo-2-1124-7B
+medical,antibiotic_resistance,antibiotic resistance,declarative,cloze,Antibiotic resistance is,6,4.093,3.2213,7.0639,1.5265,OLMo-2-1124-7B
+medical,gastrointestinal_absorption,gastrointestinal absorption,declarative,cloze,Gastrointestinal absorption refers to,7,3.4746,1.0105,7.0639,0.1123,OLMo-2-1124-7B
+medical,respiratory_tract,respiratory tract,declarative,cloze,The respiratory tract is,5,5.2276,3.6868,8.3813,3.4887,OLMo-2-1124-7B
+medical,cerebral_cortex,cerebral cortex,declarative,cloze,The cerebral cortex is,5,5.0986,2.7668,8.3813,2.7668,OLMo-2-1124-7B
+medical,informed_consent,informed consent,declarative,cloze,Informed consent requires,5,4.9123,3.9743,7.0639,3.6178,OLMo-2-1124-7B
+medical,clinical_trial,clinical trial,declarative,cloze,A clinical trial is,5,5.2588,2.5065,8.0838,2.5065,OLMo-2-1124-7B
+medical,nerve_damage,nerve damage,declarative,cloze,Nerve damage can result in,7,4.4688,4.3483,7.0639,1.2592,OLMo-2-1124-7B
+medical,chest_pain,chest pain,declarative,cloze,Chest pain can indicate,6,4.4878,2.5318,7.0639,1.8342,OLMo-2-1124-7B
+medical,bone_marrow,bone marrow,declarative,cloze,Bone marrow is,4,5.1145,2.8712,7.0639,2.8712,OLMo-2-1124-7B
+medical,brain_stem,brain stem,declarative,cloze,The brain stem controls,5,5.4953,3.6387,8.3813,3.4372,OLMo-2-1124-7B
+medical,birth_defect,birth defect,declarative,cloze,A birth defect is,5,4.9664,2.1638,8.0838,2.1638,OLMo-2-1124-7B
+medical,wound_care,wound care,declarative,cloze,Wound care is,5,5.1646,3.5545,7.0639,3.5545,OLMo-2-1124-7B
+medical,pain_management,pain management,declarative,cloze,Pain management involves,5,5.3467,4.1027,7.0639,4.1027,OLMo-2-1124-7B
+medical,blood_clot,blood clot,declarative,cloze,A blood clot is,5,4.972,2.0271,8.0838,2.0271,OLMo-2-1124-7B
+medical,tumor_growth,tumor growth,declarative,cloze,Tumor growth is,5,5.4515,4.2862,7.0639,3.8547,OLMo-2-1124-7B
+medical,joint_replacement,joint replacement,declarative,cloze,A joint replacement is,5,4.7807,2.5122,8.0838,2.3164,OLMo-2-1124-7B
+medical,immune_response,immune response,declarative,cloze,An immune response is,5,5.0861,3.4747,7.0639,3.4747,OLMo-2-1124-7B
+medical,viral_infection,viral infection,declarative,cloze,A viral infection is caused by,7,4.0473,1.9086,8.0838,0.239,OLMo-2-1124-7B
+medical,chronic_pain,chronic pain,declarative,cloze,Chronic pain is,5,5.1285,3.5748,7.0639,3.5748,OLMo-2-1124-7B
+medical,mental_health,mental health,declarative,cloze,Mental health refers to,6,4.0093,2.467,7.0639,0.0896,OLMo-2-1124-7B
+medical,spinal_cord,spinal cord,declarative,cloze,The spinal cord is,5,4.7019,2.9694,8.3813,2.1076,OLMo-2-1124-7B
+medical,scar_tissue,scar tissue,declarative,cloze,Scar tissue is,4,4.6813,4.2278,7.0639,3.112,OLMo-2-1124-7B
+medical,fluid_retention,fluid retention,declarative,cloze,Fluid retention can cause,5,4.8392,3.9931,7.0639,2.7155,OLMo-2-1124-7B
+medical,sleep_apnea,sleep apnea,declarative,cloze,Sleep apnea is,5,3.4949,1.7139,7.0639,0.2577,OLMo-2-1124-7B
+medical,muscle_spasm,muscle spasm,declarative,cloze,A muscle spasm is,6,4.1088,2.0449,8.0838,0.0343,OLMo-2-1124-7B
+medical,breast_cancer,breast cancer,declarative,cloze,Breast cancer is,5,4.1233,2.4539,7.0639,2.4539,OLMo-2-1124-7B
+medical,lung_cancer,lung cancer,declarative,cloze,Lung cancer is,5,4.6327,2.3289,7.0639,2.3289,OLMo-2-1124-7B
+medical,skin_graft,skin graft,declarative,cloze,A skin graft is,5,5.0893,2.1203,8.0838,2.1203,OLMo-2-1124-7B
+medical,stem_cell,stem cell,declarative,cloze,A stem cell is,5,4.9659,2.0528,8.0838,2.0528,OLMo-2-1124-7B
+medical,side_effect,side effect,declarative,cloze,A side effect is,5,4.6367,2.4132,8.0838,1.2954,OLMo-2-1124-7B
