@@ -795,7 +795,7 @@ def save_frequency_results(freq_df, project_root, filename="frequency_analysis.c
 # Pipeline entry point                                                         #
 # --------------------------------------------------------------------------- #
 def run_frequency_analysis(project_root, accuracy_df=None, accuracy_path=None,
-                           suite="pythia"):
+                           suite="pythia", index=None):
     """Run the full frequency analysis pipeline.
 
     Queries Infini-gram for corpus frequency of all compounds, correlates
@@ -808,16 +808,20 @@ def run_frequency_analysis(project_root, accuracy_df=None, accuracy_path=None,
         accuracy_path: path to a CSV with compound-level accuracy. Used
             only when accuracy_df is not provided.
         suite: model suite label (for output filenames).
+        index: Infini-gram corpus index. Defaults to PILE_INDEX.
 
     Returns:
         dict with:
             freq_df: DataFrame with corpus frequency data.
             correlation: Spearman correlation results.
     """
+    if index is None:
+        index = PILE_INDEX
+
     out_dir = Path(project_root) / "results" / "frequency"
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    freq_df = build_frequency_table()
+    freq_df = build_frequency_table(index=index)
     freq_path = out_dir / "frequency_table.csv"
     freq_df.to_csv(freq_path, index=False)
     print(f"Saved frequency table -> {freq_path}")
