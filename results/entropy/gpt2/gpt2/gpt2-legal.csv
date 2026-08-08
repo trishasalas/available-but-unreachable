@@ -1,0 +1,45 @@
+domain,prompt_id,concept,prompt_type,template_type,prompt,n_tokens,mean_entropy,last_token_entropy,max_entropy,min_entropy,model
+legal,due_process,due process,declarative,cloze,Due process is,4,4.2304,4.7087,7.0106,0.5806,gpt2
+legal,equal_protection,equal protection,declarative,cloze,Equal protection refers to,6,4.0722,3.3856,7.0106,0.212,gpt2
+legal,commerce_clause,commerce clause,declarative,cloze,The commerce clause is,5,5.4562,4.9724,8.5531,3.3026,gpt2
+legal,fifth_amendment,fifth amendment,declarative,cloze,The fifth amendment provides,5,5.7381,2.9276,8.5531,2.9276,gpt2
+legal,free_speech,free speech,declarative,cloze,Free speech is a right that,7,5.3492,4.893,7.2714,3.5439,gpt2
+legal,strict_liability,strict liability,declarative,cloze,Strict liability is a legal doctrine holding,9,4.3446,0.9743,7.0106,0.9743,gpt2
+legal,punitive_damages,punitive damages,declarative,cloze,Punitive damages are awarded to,8,5.0188,4.4985,7.0106,2.5255,gpt2
+legal,sovereign_immunity,sovereign immunity,declarative,cloze,Sovereign immunity is,6,5.1315,4.8278,7.1448,0.5898,gpt2
+legal,grand_indictment,grand indictment,declarative,cloze,A grand indictment is,5,4.8821,4.5611,7.9502,1.2991,gpt2
+legal,guilty_plea,guilty plea,declarative,cloze,A guilty plea is when,6,4.7131,2.9554,7.9502,1.7246,gpt2
+legal,excessive_bail,excessive bail,declarative,cloze,Excessive bail is prohibited by,7,4.9259,3.8775,7.1651,2.6674,gpt2
+legal,felony_conviction,felony conviction,declarative,cloze,A felony conviction is,5,5.3902,3.3586,7.9502,3.3586,gpt2
+legal,conditional_parole,conditional parole,declarative,cloze,Conditional parole requires,5,5.0844,4.3876,7.304,2.0923,gpt2
+legal,joint_custody,joint custody,declarative,cloze,Joint custody means,5,5.6136,3.3448,7.3064,3.3448,gpt2
+legal,material_breach,material breach,declarative,cloze,A material breach is,5,5.6257,3.6643,7.9502,3.554,gpt2
+legal,adequate_consideration,adequate consideration,declarative,cloze,Adequate consideration in a contract means,9,5.1021,4.5315,7.4907,0.276,gpt2
+legal,arbitration_clause,arbitration clause,declarative,cloze,An arbitration clause is,5,5.0638,4.2429,7.0625,3.3146,gpt2
+legal,specific_performance,specific performance,declarative,cloze,Specific performance is a remedy that,7,5.6613,5.239,7.8838,2.5694,gpt2
+legal,preliminary_injunction,preliminary injunction,declarative,cloze,A preliminary injunction is,5,5.4812,3.1178,7.9502,3.1178,gpt2
+legal,oral_deposition,oral deposition,declarative,cloze,An oral deposition is,5,5.0627,4.0361,7.0625,3.1653,gpt2
+legal,personal_jurisdiction,personal jurisdiction,declarative,cloze,Personal jurisdiction refers to,5,3.4687,3.1549,7.0106,0.362,gpt2
+legal,electronic_discovery,electronic discovery,declarative,cloze,Electronic discovery is,5,4.6094,5.1365,7.0106,2.2192,gpt2
+legal,summary_motion,summary motion,declarative,cloze,A summary motion is,5,4.7714,4.2061,7.9502,0.8755,gpt2
+legal,proper_venue,proper venue,declarative,cloze,Proper venue is determined by,7,5.115,5.493,7.0106,1.3656,gpt2
+legal,patent_infringement,patent infringement,declarative,cloze,Patent infringement occurs when,6,4.7158,3.498,7.0106,1.7551,gpt2
+legal,articles_incorporation,articles incorporation,declarative,cloze,Articles of incorporation are,6,5.3994,6.2215,7.0106,4.4368,gpt2
+legal,hostile_merger,hostile merger,declarative,cloze,A hostile merger is,5,5.8984,4.9568,7.9502,3.2751,gpt2
+legal,statute_limitations,statute limitations,declarative,cloze,A statute of limitations is,6,4.5046,4.6009,7.9502,0.4683,gpt2
+legal,legal_standing,legal standing,declarative,cloze,Legal standing is the right to,7,5.2936,5.637,7.4058,1.459,gpt2
+legal,binding_precedent,binding precedent,declarative,cloze,A binding precedent is,5,6.0278,4.8543,7.9502,4.1851,gpt2
+legal,judicial_review,judicial review,declarative,cloze,Judicial review is,5,4.3114,4.7328,7.0106,2.3659,gpt2
+legal,civil_lawsuit,civil lawsuit,declarative,cloze,A civil lawsuit is,5,5.0508,4.3459,7.9502,2.9484,gpt2
+legal,criminal_record,criminal record,declarative,cloze,A criminal record is,5,5.6137,4.1728,7.9502,3.8983,gpt2
+legal,search_warrant,search warrant,declarative,cloze,A search warrant is,5,4.9203,3.8468,7.9502,2.5632,gpt2
+legal,plea_bargain,plea bargain,declarative,cloze,A plea bargain is,5,5.1348,4.6599,7.9502,1.9386,gpt2
+legal,witness_testimony,witness testimony,declarative,cloze,Witness testimony is,4,5.368,5.3821,7.0106,4.2744,gpt2
+legal,expert_witness,expert witness,declarative,cloze,An expert witness is,5,5.8278,5.5943,7.0625,4.613,gpt2
+legal,court_order,court order,declarative,cloze,A court order is,5,5.572,3.9696,7.9502,3.7881,gpt2
+legal,bench_trial,bench trial,declarative,cloze,A bench trial is,5,5.1115,3.3069,7.9502,3.3069,gpt2
+legal,jury_verdict,jury verdict,declarative,cloze,A jury verdict is,5,4.6446,1.8815,7.9502,1.8815,gpt2
+legal,class_action,class action,declarative,cloze,A class action lawsuit is,6,4.3201,4.237,7.9502,0.6368,gpt2
+legal,double_jeopardy,double jeopardy,declarative,cloze,Double jeopardy is,4,5.769,3.9701,7.2349,3.9701,gpt2
+legal,probable_cause,probable cause,declarative,cloze,Probable cause is,5,5.2279,5.6401,7.0106,4.227,gpt2
+legal,restraining_order,restraining order,declarative,cloze,A restraining order is,5,4.5365,3.9747,7.9502,0.0618,gpt2
