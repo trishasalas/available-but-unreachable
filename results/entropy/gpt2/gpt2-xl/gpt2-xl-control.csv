@@ -1,0 +1,45 @@
+domain,prompt_id,concept,prompt_type,template_type,prompt,n_tokens,mean_entropy,last_token_entropy,max_entropy,min_entropy,model
+control,blue_sky,blue sky,declarative,cloze,A blue sky is,5,6.1851,5.3048,7.7341,5.2451,gpt2-xl
+control,cold_water,cold water,declarative,cloze,Cold water is typically characterized by,7,5.0475,4.2291,6.7631,0.8366,gpt2-xl
+control,ice_cream,ice cream,declarative,cloze,Ice cream is a frozen dessert made from,9,4.1684,3.5706,6.7631,1.8278,gpt2-xl
+control,life_jacket,life jacket,declarative,cloze,A life jacket is designed to,7,4.3231,3.7859,7.7341,0.9786,gpt2-xl
+control,tea_cup,tea cup,declarative,cloze,A tea cup is a vessel used for,9,4.6132,3.263,7.7341,1.333,gpt2-xl
+control,living_room,living room,declarative,cloze,A living room is,5,5.93,3.79,7.7341,3.79,gpt2-xl
+control,roller_coaster,roller coaster,declarative,cloze,A roller coaster is an amusement ride that,9,3.9937,3.942,7.7341,1.0358,gpt2-xl
+control,school_bus,school bus,declarative,cloze,A school bus is used to,7,4.4517,2.218,7.7341,1.87,gpt2-xl
+control,grilled_cheese,grilled cheese,declarative,cloze,A grilled cheese sandwich consists of,7,3.9057,2.8982,7.7341,0.1491,gpt2-xl
+control,peanut_butter,peanut butter,declarative,cloze,Peanut butter is made from,7,3.5967,2.5464,6.7631,1.8545,gpt2-xl
+control,hot_chocolate,hot chocolate,declarative,cloze,Hot chocolate is a warm beverage typically made from,10,4.0023,3.5177,6.7631,1.7333,gpt2-xl
+control,apple_pie,apple pie,declarative,cloze,Apple pie is a dessert featuring,7,4.5772,2.9345,6.7631,2.9345,gpt2-xl
+control,orange_juice,orange juice,declarative,cloze,Orange juice is extracted from,6,4.4161,3.6757,6.7631,1.2978,gpt2-xl
+control,baked_beans,baked beans,declarative,cloze,Baked beans are,5,5.3574,3.7009,6.7631,3.5781,gpt2-xl
+control,palm_tree,palm tree,declarative,cloze,A palm tree is characterized by,7,4.2479,3.188,7.7341,0.3694,gpt2-xl
+control,thunder_storm,thunder storm,declarative,cloze,A thunder storm is,5,5.2743,4.7655,7.7341,1.7826,gpt2-xl
+control,coral_reef,coral reef,declarative,cloze,A coral reef is an underwater formation that,9,4.4133,3.3494,7.7341,2.7685,gpt2-xl
+control,shooting_star,shooting star,declarative,cloze,A shooting star is actually,6,4.9671,1.9648,7.7341,1.9648,gpt2-xl
+control,mountain_lion,mountain lion,declarative,cloze,A mountain lion is,5,5.4139,4.6541,7.7341,3.0716,gpt2-xl
+control,tidal_wave,tidal wave,declarative,cloze,A tidal wave is a large ocean wave caused by,11,3.5613,2.6516,7.7341,0.3049,gpt2-xl
+control,dining_table,dining table,declarative,cloze,A dining table is furniture used for,8,4.4757,3.5195,7.7341,1.4744,gpt2-xl
+control,car_keys,car keys,declarative,cloze,Car keys are used to,6,4.2944,2.1883,6.7631,2.1883,gpt2-xl
+control,washing_machine,washing machine,declarative,cloze,A washing machine is an appliance that,8,4.3706,4.0258,7.7341,0.8482,gpt2-xl
+control,bath_towels,bath towels,declarative,cloze,Bath towels are used for,7,4.755,4.9056,6.7631,2.4299,gpt2-xl
+control,alarm_clock,alarm clock,declarative,cloze,An alarm clock is a device that,8,4.6208,4.4953,6.9793,2.0721,gpt2-xl
+control,light_bulb,light bulb,declarative,cloze,A light bulb is,5,6.0639,4.5688,7.7341,4.5688,gpt2-xl
+control,post_office,post office,declarative,cloze,A post office is an institution that,8,4.6814,4.8601,7.7341,2.7935,gpt2-xl
+control,parking_lot,parking lot,declarative,cloze,A parking lot is,5,5.4585,4.3608,7.7341,3.8466,gpt2-xl
+control,train_station,train station,declarative,cloze,A train station is a facility where,8,4.8937,3.4693,7.7341,3.1239,gpt2-xl
+control,fire_station,fire station,declarative,cloze,A fire station is,5,5.4017,4.8366,7.7341,3.5327,gpt2-xl
+control,swimming_pool,swimming pool,declarative,cloze,A swimming pool is a structure designed for,9,4.5233,4.3446,7.7341,1.1362,gpt2-xl
+control,coffee_shop,coffee shop,declarative,cloze,A coffee shop is,5,5.3612,5.3922,7.7341,3.4178,gpt2-xl
+control,hard_drive,hard drive,declarative,cloze,A hard drive is a computer component used for,10,3.9249,1.5966,7.7341,1.068,gpt2-xl
+control,operating_system,operating system,declarative,cloze,An operating system is software that,7,4.1936,3.6762,6.9793,1.8679,gpt2-xl
+control,search_engine,search engine,declarative,cloze,A search engine is,5,5.3689,4.4506,7.7341,3.3292,gpt2-xl
+control,user_name,user name,declarative,cloze,A user name is typically used for,8,4.509,4.5415,7.7341,1.7971,gpt2-xl
+control,power_supply,power supply,declarative,cloze,A power supply is,5,5.452,3.0064,7.7341,3.0064,gpt2-xl
+control,data_base,data base,declarative,cloze,A data base is,5,5.0798,2.6518,7.7341,2.6518,gpt2-xl
+control,sore_throat,sore throat,declarative,cloze,A sore throat is,5,5.2181,3.1151,7.7341,3.1151,gpt2-xl
+control,blood_pressure,blood pressure,declarative,cloze,Blood pressure refers to,5,3.8312,1.4455,6.7631,0.0958,gpt2-xl
+control,collar_bone,collar bone,declarative,cloze,The collar bone is,5,5.3692,3.2098,8.4116,3.2098,gpt2-xl
+control,heart_rate,heart rate,declarative,cloze,Heart rate measures,4,5.0344,4.3953,6.7631,3.8352,gpt2-xl
+control,dental_appointment,dental appointment,declarative,cloze,A dental appointment is,5,5.5869,4.0869,7.7341,3.7328,gpt2-xl
+control,waiting_room,waiting room,declarative,cloze,A waiting room is,5,4.9824,3.814,7.7341,2.3748,gpt2-xl
