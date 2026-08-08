@@ -1,0 +1,45 @@
+domain,prompt_id,concept,prompt_type,template_type,prompt,n_tokens,mean_entropy,last_token_entropy,max_entropy,min_entropy,model
+finance,cash_flow,cash flow,declarative,cloze,Cash flow is,5,5.4884,4.1364,6.2484,4.1364,pythia-2.8b
+finance,balance_sheet,balance sheet,declarative,cloze,A balance sheet is,5,4.6372,2.4164,7.786,2.4164,pythia-2.8b
+finance,journal_entry,journal entry,declarative,cloze,A journal entry is,5,4.7882,3.741,7.786,2.1976,pythia-2.8b
+finance,accelerated_depreciation,accelerated depreciation,declarative,cloze,Accelerated depreciation is,7,3.7265,3.4785,7.6484,0.1319,pythia-2.8b
+finance,impairment_goodwill,impairment goodwill,declarative,cloze,Goodwill impairment occurs when,6,4.8638,3.4483,6.2484,2.7046,pythia-2.8b
+finance,yield_maturity,yield maturity,declarative,cloze,Yield to maturity is,6,5.2145,4.8711,7.2879,3.0844,pythia-2.8b
+finance,bond_coupon,bond coupon,declarative,cloze,A bond coupon is,5,5.4421,2.7329,7.786,2.7329,pythia-2.8b
+finance,credit_spread,credit spread,declarative,cloze,A credit spread is,5,4.5127,1.9106,7.786,1.9106,pythia-2.8b
+finance,modified_duration,modified duration,declarative,cloze,Modified duration measures,4,4.5462,2.2803,8.2966,1.3593,pythia-2.8b
+finance,interest_swap,interest swap,declarative,cloze,An interest swap is,5,4.1705,1.8701,6.7819,1.8701,pythia-2.8b
+finance,call_option,call option,declarative,cloze,A call option gives,5,4.2367,1.4686,7.786,1.4686,pythia-2.8b
+finance,commodity_futures,commodity futures,declarative,cloze,Commodity futures are,6,4.7954,5.761,6.2484,1.8214,pythia-2.8b
+finance,currency_hedge,currency hedge,declarative,cloze,A currency hedge is,5,4.8946,2.5037,7.786,2.5037,pythia-2.8b
+finance,implied_volatility,implied volatility,declarative,cloze,Implied volatility refers to,6,3.485,1.3695,7.1313,0.1347,pythia-2.8b
+finance,zero_collar,zero collar,declarative,cloze,A zero collar strategy,5,5.4933,3.5726,7.786,2.5604,pythia-2.8b
+finance,diluted_earnings,diluted earnings,declarative,cloze,Diluted earnings per share is,8,4.7089,3.6937,7.2014,0.3667,pythia-2.8b
+finance,price_ratio,price ratio,declarative,cloze,The price to earnings ratio is,7,4.2106,3.7136,7.4896,1.0897,pythia-2.8b
+finance,preferred_dividend,preferred dividend,declarative,cloze,A preferred dividend is,5,5.3945,3.984,7.786,3.9194,pythia-2.8b
+finance,financial_leverage,financial leverage,declarative,cloze,Financial leverage is,4,4.9739,3.7529,6.2484,3.6897,pythia-2.8b
+finance,debt_covenant,debt covenant,declarative,cloze,A debt covenant is,5,4.5524,1.5616,7.786,1.5616,pythia-2.8b
+finance,capital_structure,capital structure,declarative,cloze,Capital structure refers to,6,3.3457,1.3723,6.2484,0.1997,pythia-2.8b
+finance,due_diligence,due diligence,declarative,cloze,Due diligence is,4,3.6517,3.3736,6.2484,0.5712,pythia-2.8b
+finance,public_offering,public offering,declarative,cloze,A public offering is,5,5.0056,2.914,7.786,2.818,pythia-2.8b
+finance,market_liquidity,market liquidity,declarative,cloze,Market liquidity refers to,5,3.5518,1.2794,6.2484,0.1487,pythia-2.8b
+finance,trade_settlement,trade settlement,declarative,cloze,Trade settlement is,5,5.5427,4.8919,6.4794,4.2954,pythia-2.8b
+finance,central_clearing,central clearing,declarative,cloze,Central clearing houses,4,5.406,4.1525,6.7311,4.1525,pythia-2.8b
+finance,maintenance_margin,maintenance margin,declarative,cloze,A maintenance margin is,5,5.2962,2.8412,7.786,2.8412,pythia-2.8b
+finance,regulatory_compliance,regulatory compliance,declarative,cloze,Regulatory compliance means,5,4.8252,5.4503,6.2484,3.1888,pythia-2.8b
+finance,money_laundering,money laundering,declarative,cloze,Money laundering is,4,4.9287,3.2124,6.2484,3.2124,pythia-2.8b
+finance,asset_allocation,asset allocation,declarative,cloze,Asset allocation is,4,4.5534,2.9058,6.2484,2.9058,pythia-2.8b
+finance,systemic_risk,systemic risk,declarative,cloze,Systemic risk is,5,4.6361,4.02,6.2484,2.6665,pythia-2.8b
+finance,stress_test,stress test,declarative,cloze,A stress test is,5,4.9191,2.8177,7.786,2.8177,pythia-2.8b
+finance,credit_default,credit default,declarative,cloze,A credit default is,5,4.0946,2.5213,7.786,1.1272,pythia-2.8b
+finance,stock_market,stock market,declarative,cloze,The stock market is,5,5.2145,5.4623,7.4896,2.6106,pythia-2.8b
+finance,mutual_fund,mutual fund,declarative,cloze,A mutual fund is,5,5.4248,2.2912,7.786,2.2912,pythia-2.8b
+finance,hedge_fund,hedge fund,declarative,cloze,A hedge fund is,5,5.0022,5.2495,7.786,1.6923,pythia-2.8b
+finance,bear_market,bear market,declarative,cloze,A bear market is,5,5.5063,4.1644,7.786,3.7393,pythia-2.8b
+finance,bull_market,bull market,declarative,cloze,A bull market is,5,5.4776,4.1652,7.786,3.7662,pythia-2.8b
+finance,credit_rating,credit rating,declarative,cloze,A credit rating is,5,4.1498,2.7238,7.786,1.2009,pythia-2.8b
+finance,tax_shelter,tax shelter,declarative,cloze,A tax shelter is,5,5.0932,2.5478,7.786,2.5478,pythia-2.8b
+finance,venture_capital,venture capital,declarative,cloze,Venture capital is,6,4.7177,4.9815,6.2484,2.464,pythia-2.8b
+finance,prime_rate,prime rate,declarative,cloze,The prime rate is,5,4.6196,3.7995,7.4896,2.2597,pythia-2.8b
+finance,fiscal_policy,fiscal policy,declarative,cloze,Fiscal policy refers to,7,3.9202,2.4911,6.2484,0.3334,pythia-2.8b
+finance,trade_deficit,trade deficit,declarative,cloze,A trade deficit occurs when,6,4.2133,2.8785,7.786,0.2874,pythia-2.8b
