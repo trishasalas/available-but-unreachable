@@ -1,0 +1,181 @@
+# ============================================================
+# Binding compounds — medical
+# ============================================================
+# Generated from src.binding.MEDICAL — do not hand-edit both.
+#
+# Schema:
+#   name    — compound identifier (unique within this file)
+#   word1   — first constituent, the attention SOURCE (earlier token)
+#   word2   — second constituent, the attention TARGET (later token)
+#   prompt  — natural sentence containing both constituents
+# ============================================================
+
+compounds:
+- name: oxygen_saturation
+  word1: oxygen
+  word2: saturation
+  prompt: The oxygen saturation dropped below normal levels
+- name: body_temperature
+  word1: body
+  word2: temperature
+  prompt: His body temperature was checked every four hours
+- name: platelet_count
+  word1: platelet
+  word2: count
+  prompt: The platelet count was dangerously low
+- name: metabolic_panel
+  word1: metabolic
+  word2: panel
+  prompt: A metabolic panel revealed elevated liver enzymes
+- name: bacterial_infection
+  word1: bacterial
+  word2: infection
+  prompt: The blood culture confirmed a bacterial infection
+- name: magnetic_resonance
+  word1: magnetic
+  word2: resonance
+  prompt: The magnetic resonance scan showed no abnormalities
+- name: multiple_sclerosis
+  word1: multiple
+  word2: sclerosis
+  prompt: Multiple sclerosis affects the central nervous system
+- name: complete_remission
+  word1: complete
+  word2: remission
+  prompt: The patient achieved complete remission after treatment
+- name: bowel_resection
+  word1: bowel
+  word2: resection
+  prompt: The bowel resection was completed without complications
+- name: organ_transplant
+  word1: organ
+  word2: transplant
+  prompt: An organ transplant requires lifelong medication
+- name: therapeutic_dosage
+  word1: therapeutic
+  word2: dosage
+  prompt: The therapeutic dosage was adjusted based on lab results
+- name: drug_interaction
+  word1: drug
+  word2: interaction
+  prompt: A drug interaction caused an unexpected side effect
+- name: antibiotic_resistance
+  word1: antibiotic
+  word2: resistance
+  prompt: The antibiotic resistance made treatment more difficult
+- name: gastrointestinal_absorption
+  word1: gastrointestinal
+  word2: absorption
+  prompt: The gastrointestinal absorption rate varied between patients
+- name: respiratory_tract
+  word1: respiratory
+  word2: tract
+  prompt: The respiratory tract was inflamed from the infection
+- name: cerebral_cortex
+  word1: cerebral
+  word2: cortex
+  prompt: The cerebral cortex processes sensory information
+- name: informed_consent
+  word1: informed
+  word2: consent
+  prompt: The informed consent form was signed before the procedure
+- name: clinical_trial
+  word1: clinical
+  word2: trial
+  prompt: The clinical trial enrolled five hundred participants
+- name: nerve_damage
+  word1: nerve
+  word2: damage
+  prompt: The nerve damage caused numbness in her left hand
+- name: chest_pain
+  word1: chest
+  word2: pain
+  prompt: The chest pain started suddenly after dinner
+- name: bone_marrow
+  word1: bone
+  word2: marrow
+  prompt: The bone marrow sample was sent to the lab
+- name: brain_stem
+  word1: brain
+  word2: stem
+  prompt: The brain stem controls breathing and heart rate
+- name: birth_defect
+  word1: birth
+  word2: defect
+  prompt: The birth defect was detected during the ultrasound
+- name: wound_care
+  word1: wound
+  word2: care
+  prompt: The wound care protocol was followed precisely
+- name: pain_management
+  word1: pain
+  word2: management
+  prompt: The pain management plan included physical therapy
+- name: blood_clot
+  word1: blood
+  word2: clot
+  prompt: The blood clot was discovered during a routine scan
+- name: tumor_growth
+  word1: tumor
+  word2: growth
+  prompt: The tumor growth was monitored every three months
+- name: joint_replacement
+  word1: joint
+  word2: replacement
+  prompt: The joint replacement surgery was scheduled for Monday
+- name: immune_response
+  word1: immune
+  word2: response
+  prompt: The immune response was stronger than expected
+- name: viral_infection
+  word1: viral
+  word2: infection
+  prompt: The viral infection spread through the entire ward
+- name: chronic_pain
+  word1: chronic
+  word2: pain
+  prompt: The chronic pain affected her ability to work
+- name: mental_health
+  word1: mental
+  word2: health
+  prompt: The mental health evaluation was completed this morning
+- name: spinal_cord
+  word1: spinal
+  word2: cord
+  prompt: The spinal cord injury required emergency surgery
+- name: scar_tissue
+  word1: scar
+  word2: tissue
+  prompt: The scar tissue formed around the surgical site
+- name: fluid_retention
+  word1: fluid
+  word2: retention
+  prompt: The fluid retention caused swelling in both legs
+- name: sleep_apnea
+  word1: sleep
+  word2: apnea
+  prompt: The sleep apnea diagnosis explained his constant fatigue
+- name: muscle_spasm
+  word1: muscle
+  word2: spasm
+  prompt: The muscle spasm lasted for several painful minutes
+- name: breast_cancer
+  word1: breast
+  word2: cancer
+  prompt: The breast cancer screening is recommended annually
+- name: lung_cancer
+  word1: lung
+  word2: cancer
+  prompt: The lung cancer diagnosis came as a complete shock
+- name: skin_graft
+  word1: skin
+  word2: graft
+  prompt: The skin graft healed well after the procedure
+- name: stem_cell
+  word1: stem
+  word2: cell
+  prompt: The stem cell therapy showed promising early results
+- name: side_effect
+  word1: side
+  word2: effect
+  prompt: The side effect was reported by several patients

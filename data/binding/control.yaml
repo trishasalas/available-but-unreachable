@@ -1,0 +1,189 @@
+# ============================================================
+# Binding compounds — control
+# ============================================================
+# Generated from src.binding.CONTROL — do not hand-edit both.
+#
+# Schema:
+#   name    — compound identifier (unique within this file)
+#   word1   — first constituent, the attention SOURCE (earlier token)
+#   word2   — second constituent, the attention TARGET (later token)
+#   prompt  — natural sentence containing both constituents
+# ============================================================
+
+compounds:
+- name: blue_sky
+  word1: blue
+  word2: sky
+  prompt: I like to look at the blue sky
+- name: cold_water
+  word1: cold
+  word2: water
+  prompt: She drank a glass of cold water
+- name: ice_cream
+  word1: ice
+  word2: cream
+  prompt: My favorite ice cream is chocolate
+- name: life_jacket
+  word1: life
+  word2: jacket
+  prompt: We took a life jacket on the boat
+- name: tea_cup
+  word1: tea
+  word2: cup
+  prompt: My tea cup is pink
+- name: living_room
+  word1: living
+  word2: room
+  prompt: Our house has a formal living room
+- name: roller_coaster
+  word1: roller
+  word2: coaster
+  prompt: The roller coaster is my favorite ride
+- name: school_bus
+  word1: school
+  word2: bus
+  prompt: The school bus is yellow
+- name: grilled_cheese
+  word1: grilled
+  word2: cheese
+  prompt: She ordered a grilled cheese from the menu
+- name: peanut_butter
+  word1: peanut
+  word2: butter
+  prompt: We need to buy peanut butter at the store
+- name: hot_chocolate
+  word1: hot
+  word2: chocolate
+  prompt: He put whipped cream on his hot chocolate
+- name: apple_pie
+  word1: apple
+  word2: pie
+  prompt: The apple pie was still warm from the oven
+- name: orange_juice
+  word1: orange
+  word2: juice
+  prompt: She drinks orange juice every morning
+- name: baked_beans
+  word1: baked
+  word2: beans
+  prompt: We had baked beans with dinner last night
+- name: palm_tree
+  word1: palm
+  word2: tree
+  prompt: The palm tree swayed gently in the breeze
+- name: thunder_storm
+  word1: thunder
+  word2: storm
+  prompt: A thunder storm rolled in from the west
+- name: coral_reef
+  word1: coral
+  word2: reef
+  prompt: The coral reef is home to many fish
+- name: shooting_star
+  word1: shooting
+  word2: star
+  prompt: We watched the shooting star cross the sky
+- name: mountain_lion
+  word1: mountain
+  word2: lion
+  prompt: The mountain lion was spotted near the trail
+- name: tidal_wave
+  word1: tidal
+  word2: wave
+  prompt: A tidal wave warning was issued for the coast
+- name: dining_table
+  word1: dining
+  word2: table
+  prompt: The dining table seats six people comfortably
+- name: car_keys
+  word1: car
+  word2: keys
+  prompt: He left his car keys on the counter
+- name: washing_machine
+  word1: washing
+  word2: machine
+  prompt: The washing machine is making a strange noise
+- name: bath_towels
+  word1: bath
+  word2: towels
+  prompt: She bought new bath towels for the guest room
+- name: alarm_clock
+  word1: alarm
+  word2: clock
+  prompt: The alarm clock went off at six in the morning
+- name: light_bulb
+  word1: light
+  word2: bulb
+  prompt: He replaced the light bulb in the hallway
+- name: post_office
+  word1: post
+  word2: office
+  prompt: The post office closes at five on weekdays
+- name: parking_lot
+  word1: parking
+  word2: lot
+  prompt: We parked in the parking lot behind the building
+- name: train_station
+  word1: train
+  word2: station
+  prompt: The train station is two blocks from here
+- name: fire_station
+  word1: fire
+  word2: station
+  prompt: She works at the fire station downtown
+- name: swimming_pool
+  word1: swimming
+  word2: pool
+  prompt: The swimming pool is open during the summer
+- name: coffee_shop
+  word1: coffee
+  word2: shop
+  prompt: They met at the coffee shop on the corner
+- name: hard_drive
+  word1: hard
+  word2: drive
+  prompt: The hard drive stores all of your files
+- name: operating_system
+  word1: operating
+  word2: system
+  prompt: She updated her operating system last night
+- name: search_engine
+  word1: search
+  word2: engine
+  prompt: The search engine returned millions of results
+- name: user_name
+  word1: user
+  word2: name
+  prompt: He forgot his user name for the website
+- name: power_supply
+  word1: power
+  word2: supply
+  prompt: The power supply was disconnected during the storm
+- name: data_base
+  word1: data
+  word2: base
+  prompt: A data base stores information in structured tables
+- name: sore_throat
+  word1: sore
+  word2: throat
+  prompt: She has a sore throat from the cold weather
+- name: blood_pressure
+  word1: blood
+  word2: pressure
+  prompt: The blood pressure reading was perfectly normal
+- name: collar_bone
+  word1: collar
+  word2: bone
+  prompt: He broke his collar bone playing football
+- name: heart_rate
+  word1: heart
+  word2: rate
+  prompt: The heart rate monitor beeped steadily
+- name: dental_appointment
+  word1: dental
+  word2: appointment
+  prompt: She scheduled a dental appointment for Tuesday
+- name: waiting_room
+  word1: waiting
+  word2: room
+  prompt: The waiting room was full of patients

@@ -1,0 +1,225 @@
+# ============================================================
+# Binding compounds — accessibility
+# ============================================================
+# Generated from src.binding.ACCESSIBILITY — do not hand-edit both.
+#
+# Schema:
+#   name    — compound identifier (unique within this file)
+#   word1   — first constituent, the attention SOURCE (earlier token)
+#   word2   — second constituent, the attention TARGET (later token)
+#   prompt  — natural sentence containing both constituents
+# ============================================================
+
+compounds:
+- name: screen_reader
+  word1: screen
+  word2: reader
+  prompt: A screen reader is
+- name: alt_text
+  word1: alt
+  word2: text
+  prompt: The purpose of alt text is
+- name: skip_link
+  word1: skip
+  word2: link
+  prompt: A skip link is
+- name: color_contrast
+  word1: color
+  word2: contrast
+  prompt: Color contrast is important because
+- name: keyboard_navigation
+  word1: keyboard
+  word2: navigation
+  prompt: Keyboard navigation allows
+- name: closed_captions
+  word1: closed
+  word2: captions
+  prompt: Closed captions are used for
+- name: focus_indicator
+  word1: focus
+  word2: indicator
+  prompt: A focus indicator is
+- name: semantic_html
+  word1: semantic
+  word2: HTML
+  prompt: Semantic HTML helps
+- name: form_label
+  word1: form
+  word2: label
+  prompt: A form label is
+- name: link_text
+  word1: link
+  word2: text
+  prompt: Link text describes
+- name: page_title
+  word1: page
+  word2: title
+  prompt: A page title describes
+- name: keyboard_interaction
+  word1: keyboard
+  word2: interaction
+  prompt: A keyboard interaction is
+- name: section_heading
+  word1: section
+  word2: heading
+  prompt: A section heading is
+- name: text_alternative
+  word1: text
+  word2: alternative
+  prompt: A text alternative is
+- name: audio_description
+  word1: audio
+  word2: description
+  prompt: An audio description is
+- name: sign_language
+  word1: sign
+  word2: language
+  prompt: Sign language is
+- name: sensory_characteristics
+  word1: sensory
+  word2: characteristics
+  prompt: Sensory characteristics are
+- name: input_purpose
+  word1: input
+  word2: purpose
+  prompt: An input purpose is
+- name: target_size
+  word1: target
+  word2: size
+  prompt: A target size is
+- name: touch_target
+  word1: touch
+  word2: target
+  prompt: A touch target is
+- name: drag_movement
+  word1: drag
+  word2: movement
+  prompt: A drag movement is
+- name: focus_appearance
+  word1: focus
+  word2: appearance
+  prompt: A focus appearance is
+- name: consistent_help
+  word1: consistent
+  word2: help
+  prompt: Consistent help is
+- name: redundant_entry
+  word1: redundant
+  word2: entry
+  prompt: A redundant entry is
+- name: accessible_authentication
+  word1: accessible
+  word2: authentication
+  prompt: Accessible authentication is
+- name: text_spacing
+  word1: text
+  word2: spacing
+  prompt: Text spacing is
+- name: status_message
+  word1: status
+  word2: message
+  prompt: A status message is
+- name: error_identification
+  word1: error
+  word2: identification
+  prompt: Error identification is
+- name: pointer_cancellation
+  word1: pointer
+  word2: cancellation
+  prompt: Pointer cancellation is
+- name: character_key
+  word1: character
+  word2: key
+  prompt: A character key is
+- name: accessibility_tree
+  word1: accessibility
+  word2: tree
+  prompt: An accessibility tree is
+- name: accessible_name
+  word1: accessible
+  word2: name
+  prompt: An accessible name is
+- name: accessible_description
+  word1: accessible
+  word2: description
+  prompt: An accessible description is
+- name: live_region
+  word1: live
+  word2: region
+  prompt: A live region is
+- name: tab_panel
+  word1: tab
+  word2: panel
+  prompt: A tab panel is
+- name: radio_group
+  word1: radio
+  word2: group
+  prompt: A radio group is
+- name: tree_grid
+  word1: tree
+  word2: grid
+  prompt: A tree grid is
+- name: menu_bar
+  word1: menu
+  word2: bar
+  prompt: A menu bar is
+- name: tool_tip
+  word1: tool
+  word2: tip
+  prompt: A tool tip is
+- name: combo_box
+  word1: combo
+  word2: box
+  prompt: A combo box is
+- name: semantic_markup
+  word1: semantic
+  word2: markup
+  prompt: Semantic markup is
+- name: focus_management
+  word1: focus
+  word2: management
+  prompt: Focus management is
+- name: reading_order
+  word1: reading
+  word2: order
+  prompt: Reading order is
+- name: text_formatting
+  word1: text
+  word2: formatting
+  prompt: Text formatting is
+- name: form_field
+  word1: form
+  word2: field
+  prompt: A form field is
+- name: landmark_region
+  word1: landmark
+  word2: region
+  prompt: A landmark region is
+- name: low_vision
+  word1: low
+  word2: vision
+  prompt: Low vision is
+- name: cognitive_disabilities
+  word1: cognitive
+  word2: disabilities
+  prompt: Cognitive disabilities are
+- name: universal_design
+  word1: universal
+  word2: design
+  prompt: Universal design is
+- name: decorative_image
+  word1: decorative
+  word2: image
+  prompt: A decorative image is
+- name: informative_image
+  word1: informative
+  word2: image
+  prompt: An informative image is
+- name: responsive_design
+  word1: responsive
+  word2: design
+  prompt: Responsive design is
+- name: empty_link
+  word1: empty
+  word2: link
+  prompt: An empty link is

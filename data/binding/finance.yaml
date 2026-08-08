@@ -1,0 +1,189 @@
+# ============================================================
+# Binding compounds — finance
+# ============================================================
+# Generated from src.binding.FINANCE — do not hand-edit both.
+#
+# Schema:
+#   name    — compound identifier (unique within this file)
+#   word1   — first constituent, the attention SOURCE (earlier token)
+#   word2   — second constituent, the attention TARGET (later token)
+#   prompt  — natural sentence containing both constituents
+# ============================================================
+
+compounds:
+- name: cash_flow
+  word1: cash
+  word2: flow
+  prompt: The cash flow statement showed positive operating results
+- name: balance_sheet
+  word1: balance
+  word2: sheet
+  prompt: The balance sheet reflected total assets and liabilities
+- name: journal_entry
+  word1: journal
+  word2: entry
+  prompt: Each journal entry must have equal debits and credits
+- name: accelerated_depreciation
+  word1: accelerated
+  word2: depreciation
+  prompt: The accelerated depreciation method reduced taxable income
+- name: impairment_goodwill
+  word1: impairment
+  word2: goodwill
+  prompt: The impairment goodwill charge reduced reported earnings
+- name: yield_maturity
+  word1: yield
+  word2: maturity
+  prompt: The yield maturity calculation determined the bond value
+- name: bond_coupon
+  word1: bond
+  word2: coupon
+  prompt: The bond coupon payment arrives every six months
+- name: credit_spread
+  word1: credit
+  word2: spread
+  prompt: The credit spread widened during the market downturn
+- name: modified_duration
+  word1: modified
+  word2: duration
+  prompt: The modified duration measure estimates interest rate risk
+- name: interest_swap
+  word1: interest
+  word2: swap
+  prompt: An interest swap exchanges fixed for floating payments
+- name: call_option
+  word1: call
+  word2: option
+  prompt: A call option gives the right to buy at a set price
+- name: commodity_futures
+  word1: commodity
+  word2: futures
+  prompt: The commodity futures contract expires next month
+- name: currency_hedge
+  word1: currency
+  word2: hedge
+  prompt: A currency hedge protects against exchange rate movements
+- name: implied_volatility
+  word1: implied
+  word2: volatility
+  prompt: The implied volatility rose sharply before the announcement
+- name: zero_collar
+  word1: zero
+  word2: collar
+  prompt: A zero collar strategy caps both gains and losses
+- name: diluted_earnings
+  word1: diluted
+  word2: earnings
+  prompt: The diluted earnings per share declined this quarter
+- name: price_ratio
+  word1: price
+  word2: ratio
+  prompt: The price ratio suggested the stock was overvalued
+- name: preferred_dividend
+  word1: preferred
+  word2: dividend
+  prompt: The preferred dividend was paid before common shareholders
+- name: financial_leverage
+  word1: financial
+  word2: leverage
+  prompt: The financial leverage ratio exceeded industry standards
+- name: debt_covenant
+  word1: debt
+  word2: covenant
+  prompt: The debt covenant restricted additional borrowing
+- name: capital_structure
+  word1: capital
+  word2: structure
+  prompt: The capital structure included both equity and debt
+- name: due_diligence
+  word1: due
+  word2: diligence
+  prompt: The due diligence review uncovered several risk factors
+- name: public_offering
+  word1: public
+  word2: offering
+  prompt: The public offering raised two billion in new capital
+- name: market_liquidity
+  word1: market
+  word2: liquidity
+  prompt: The market liquidity dried up during the crisis
+- name: trade_settlement
+  word1: trade
+  word2: settlement
+  prompt: The trade settlement occurs two days after execution
+- name: central_clearing
+  word1: central
+  word2: clearing
+  prompt: The central clearing house guaranteed all transactions
+- name: maintenance_margin
+  word1: maintenance
+  word2: margin
+  prompt: The maintenance margin requirement triggered a call
+- name: regulatory_compliance
+  word1: regulatory
+  word2: compliance
+  prompt: The regulatory compliance department reviewed the filing
+- name: money_laundering
+  word1: money
+  word2: laundering
+  prompt: The money laundering investigation lasted several years
+- name: asset_allocation
+  word1: asset
+  word2: allocation
+  prompt: The asset allocation strategy balanced growth and income
+- name: systemic_risk
+  word1: systemic
+  word2: risk
+  prompt: The systemic risk assessment flagged several vulnerabilities
+- name: stress_test
+  word1: stress
+  word2: test
+  prompt: The stress test revealed weakness in the loan portfolio
+- name: credit_default
+  word1: credit
+  word2: default
+  prompt: The credit default probability increased dramatically
+- name: stock_market
+  word1: stock
+  word2: market
+  prompt: The stock market closed at a record high today
+- name: mutual_fund
+  word1: mutual
+  word2: fund
+  prompt: The mutual fund portfolio included both stocks and bonds
+- name: hedge_fund
+  word1: hedge
+  word2: fund
+  prompt: The hedge fund manager outperformed the benchmark
+- name: bear_market
+  word1: bear
+  word2: market
+  prompt: The bear market lasted for nearly eighteen months
+- name: bull_market
+  word1: bull
+  word2: market
+  prompt: The bull market drove prices to unprecedented levels
+- name: credit_rating
+  word1: credit
+  word2: rating
+  prompt: The credit rating was downgraded after the earnings report
+- name: tax_shelter
+  word1: tax
+  word2: shelter
+  prompt: The tax shelter reduced the company's total liability
+- name: venture_capital
+  word1: venture
+  word2: capital
+  prompt: The venture capital firm invested in early stage companies
+- name: prime_rate
+  word1: prime
+  word2: rate
+  prompt: The prime rate increased for the third consecutive quarter
+- name: fiscal_policy
+  word1: fiscal
+  word2: policy
+  prompt: The fiscal policy change affected government spending levels
+- name: trade_deficit
+  word1: trade
+  word2: deficit
+  prompt: The trade deficit widened to its largest level in years

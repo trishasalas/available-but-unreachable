@@ -1,0 +1,189 @@
+# ============================================================
+# Binding compounds — legal
+# ============================================================
+# Generated from src.binding.LEGAL — do not hand-edit both.
+#
+# Schema:
+#   name    — compound identifier (unique within this file)
+#   word1   — first constituent, the attention SOURCE (earlier token)
+#   word2   — second constituent, the attention TARGET (later token)
+#   prompt  — natural sentence containing both constituents
+# ============================================================
+
+compounds:
+- name: due_process
+  word1: due
+  word2: process
+  prompt: The due process clause protects individual rights
+- name: equal_protection
+  word1: equal
+  word2: protection
+  prompt: The equal protection argument was central to the case
+- name: commerce_clause
+  word1: commerce
+  word2: clause
+  prompt: The commerce clause limits state regulatory power
+- name: fifth_amendment
+  word1: fifth
+  word2: amendment
+  prompt: The fifth amendment protects against self incrimination
+- name: free_speech
+  word1: free
+  word2: speech
+  prompt: The free speech doctrine applies to public forums
+- name: strict_liability
+  word1: strict
+  word2: liability
+  prompt: The strict liability standard applied to the manufacturer
+- name: punitive_damages
+  word1: punitive
+  word2: damages
+  prompt: The punitive damages award exceeded ten million dollars
+- name: sovereign_immunity
+  word1: sovereign
+  word2: immunity
+  prompt: The sovereign immunity doctrine shielded the government
+- name: grand_indictment
+  word1: grand
+  word2: indictment
+  prompt: The grand indictment was handed down by the jury
+- name: guilty_plea
+  word1: guilty
+  word2: plea
+  prompt: A guilty plea was entered in exchange for reduced charges
+- name: excessive_bail
+  word1: excessive
+  word2: bail
+  prompt: The excessive bail amount was challenged on appeal
+- name: felony_conviction
+  word1: felony
+  word2: conviction
+  prompt: The felony conviction carried a mandatory minimum sentence
+- name: conditional_parole
+  word1: conditional
+  word2: parole
+  prompt: The conditional parole required regular check ins
+- name: joint_custody
+  word1: joint
+  word2: custody
+  prompt: The joint custody arrangement was approved by the court
+- name: material_breach
+  word1: material
+  word2: breach
+  prompt: The material breach voided the entire agreement
+- name: adequate_consideration
+  word1: adequate
+  word2: consideration
+  prompt: The adequate consideration requirement was not satisfied
+- name: arbitration_clause
+  word1: arbitration
+  word2: clause
+  prompt: The arbitration clause required disputes be settled privately
+- name: specific_performance
+  word1: specific
+  word2: performance
+  prompt: The specific performance remedy was granted by the court
+- name: preliminary_injunction
+  word1: preliminary
+  word2: injunction
+  prompt: The preliminary injunction halted construction immediately
+- name: oral_deposition
+  word1: oral
+  word2: deposition
+  prompt: The oral deposition lasted more than six hours
+- name: personal_jurisdiction
+  word1: personal
+  word2: jurisdiction
+  prompt: The personal jurisdiction question was raised early
+- name: electronic_discovery
+  word1: electronic
+  word2: discovery
+  prompt: The electronic discovery process produced thousands of documents
+- name: summary_motion
+  word1: summary
+  word2: motion
+  prompt: A summary motion was filed to dismiss the case
+- name: proper_venue
+  word1: proper
+  word2: venue
+  prompt: The proper venue for the trial was disputed
+- name: patent_infringement
+  word1: patent
+  word2: infringement
+  prompt: The patent infringement suit was filed in federal court
+- name: articles_incorporation
+  word1: articles
+  word2: incorporation
+  prompt: The articles incorporation were filed with the state
+- name: hostile_merger
+  word1: hostile
+  word2: merger
+  prompt: The hostile merger attempt was blocked by the board
+- name: statute_limitations
+  word1: statute
+  word2: limitations
+  prompt: The statute limitations period had already expired
+- name: legal_standing
+  word1: legal
+  word2: standing
+  prompt: The legal standing requirement must be met before filing
+- name: binding_precedent
+  word1: binding
+  word2: precedent
+  prompt: The binding precedent from the higher court controlled
+- name: judicial_review
+  word1: judicial
+  word2: review
+  prompt: The judicial review process examined the agency decision
+- name: civil_lawsuit
+  word1: civil
+  word2: lawsuit
+  prompt: The civil lawsuit was filed in state court last week
+- name: criminal_record
+  word1: criminal
+  word2: record
+  prompt: His criminal record prevented him from getting the job
+- name: search_warrant
+  word1: search
+  word2: warrant
+  prompt: The search warrant was issued by the federal judge
+- name: plea_bargain
+  word1: plea
+  word2: bargain
+  prompt: The plea bargain reduced the sentence to five years
+- name: witness_testimony
+  word1: witness
+  word2: testimony
+  prompt: The witness testimony contradicted the original statement
+- name: expert_witness
+  word1: expert
+  word2: witness
+  prompt: An expert witness was called to explain the evidence
+- name: court_order
+  word1: court
+  word2: order
+  prompt: The court order required immediate compliance
+- name: bench_trial
+  word1: bench
+  word2: trial
+  prompt: The bench trial proceeded without a jury present
+- name: jury_verdict
+  word1: jury
+  word2: verdict
+  prompt: The jury verdict was delivered after three days
+- name: class_action
+  word1: class
+  word2: action
+  prompt: The class action included thousands of affected consumers
+- name: double_jeopardy
+  word1: double
+  word2: jeopardy
+  prompt: The double jeopardy clause prevents being tried twice
+- name: probable_cause
+  word1: probable
+  word2: cause
+  prompt: The probable cause standard must be met for an arrest
+- name: restraining_order
+  word1: restraining
+  word2: order
+  prompt: A restraining order was granted to protect the victim
