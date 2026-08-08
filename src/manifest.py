@@ -3,13 +3,8 @@ import torch
 from importlib.metadata import version
 
 
-def create_manifest_file(PROJECT_ROOT, output_dir, model_name, model, battery_name, domain_counts, results_df, prompt_files, gen_kwargs=None, hf_commit_sha=None, revision=None):
-    if isinstance(battery_name, dict):
-        raise TypeError(
-            "create_manifest_file() signature changed: battery_name is now the 5th arg. "
-            "Pass gen_kwargs as a keyword argument: gen_kwargs={...}"
-        )
-
+def _write_manifest(PROJECT_ROOT, output_dir, model_name, model, battery_name, domain_counts, results_df, prompt_files, gen_kwargs=None, hf_commit_sha=None, revision=None):
+    """Shared manifest writer. Call one of the per-battery wrappers below."""
     try:
         commit = subprocess.check_output(
             ['git', 'rev-parse', '--short', 'HEAD'], cwd=PROJECT_ROOT, text=True).strip()
@@ -74,3 +69,33 @@ def create_manifest_file(PROJECT_ROOT, output_dir, model_name, model, battery_na
             f.write(f"| {d} | {c['expected']} | {c['written']}{flag} | `{c['file']}` |\n")
         f.write(f"\n**Total rows:** {len(results_df)}\n")
         f.write(f"**Domains completed:** {len(domain_counts)} / {len(prompt_files)}\n")
+
+
+def write_elicitation_manifest(PROJECT_ROOT, output_dir, model_name, model,
+                               domain_counts, results_df, prompt_files,
+                               gen_kwargs, revision=None, hf_commit_sha=None):
+    """Elicitation generates text, so gen_kwargs is required."""
+    return _write_manifest(
+        PROJECT_ROOT, output_dir, model_name, model, "elicitation",
+        domain_counts, results_df, prompt_files,
+        gen_kwargs=gen_kwargs, hf_commit_sha=hf_commit_sha, revision=revision)
+
+
+def write_entropy_manifest(PROJECT_ROOT, output_dir, model_name, model,
+                           domain_counts, results_df, prompt_files,
+                           revision=None, hf_commit_sha=None):
+    """Entropy is forward-pass only — no generation settings to record."""
+    return _write_manifest(
+        PROJECT_ROOT, output_dir, model_name, model, "entropy",
+        domain_counts, results_df, prompt_files,
+        hf_commit_sha=hf_commit_sha, revision=revision)
+
+
+def write_binding_manifest(PROJECT_ROOT, output_dir, model_name, model,
+                           domain_counts, results_df, prompt_files,
+                           revision=None, hf_commit_sha=None):
+    """Binding is forward-pass only — no generation settings to record."""
+    return _write_manifest(
+        PROJECT_ROOT, output_dir, model_name, model, "binding",
+        domain_counts, results_df, prompt_files,
+        hf_commit_sha=hf_commit_sha, revision=revision)
