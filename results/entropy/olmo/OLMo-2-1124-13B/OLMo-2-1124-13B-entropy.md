@@ -1,7 +1,46 @@
 # Model data captured during Entropy Battery
+
+- Run (UTC): 2026-08-08T16:37:05.532009+00:00
+- Git commit: 23aefb7 (DIRTY)
+
+## Model
+
 - Model name: OLMo-2-1124-13B
 - Model dtype: torch.float32
+- Device: cuda:0
 - Layers: 40
 - Heads: 40
 - Hidden size: 5120
+- Vocab size: 100352
 - Params: 13717.9M
+- Revision: stage1-step596057-tokens5001B
+
+## Server
+
+- GPU: NVIDIA A100-SXM4-80GB
+
+## Environment
+
+- transformer_lens: 2.18.0
+- transformers: 4.57.6
+- torch: 2.11.0+cu128
+- python: 3.12.13
+- platform: Linux-6.6.122+-x86_64-with-glibc2.35
+
+## Hugging Face
+
+- Commit SHA: 3fefddc1bf18a30e1d9b91000271630718f2aa8b
+- Revision: stage1-step596057-tokens5001B
+
+## Domains
+
+| domain | expected | written | file |
+|---|---|---|---|
+| control | 44 | 44 | `OLMo-2-1124-13B-control.csv` |
+| accessibility | 92 | 92 | `OLMo-2-1124-13B-accessibility.csv` |
+| medical | 42 | 42 | `OLMo-2-1124-13B-medical.csv` |
+| legal | 44 | 44 | `OLMo-2-1124-13B-legal.csv` |
+| finance | 44 | 44 | `OLMo-2-1124-13B-finance.csv` |
+
+**Total rows:** 266
+**Domains completed:** 5 / 5

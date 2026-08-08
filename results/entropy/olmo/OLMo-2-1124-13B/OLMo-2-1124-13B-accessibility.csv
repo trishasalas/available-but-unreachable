@@ -1,0 +1,93 @@
+domain,prompt_id,concept,prompt_type,template_type,prompt,n_tokens,mean_entropy,last_token_entropy,max_entropy,min_entropy,model
+accessibility,decl_screen_reader_001,screen reader,declarative,cloze,A screen reader is,5,4.6482,1.6523,7.9966,1.6523,OLMo-2-1124-13B
+accessibility,decl_wcag_001,WCAG,declarative,cloze,WCAG stands for,5,3.287,0.7432,7.0014,0.0524,OLMo-2-1124-13B
+accessibility,decl_skip_link_001,skip link,declarative,cloze,A skip link is,5,4.8805,2.1113,7.9966,2.1113,OLMo-2-1124-13B
+accessibility,decl_alt_text_001,alt text,declarative,cloze,The purpose of alt text is,7,3.7624,0.748,8.3991,0.3482,OLMo-2-1124-13B
+accessibility,decl_aria_001,ARIA,declarative,cloze,ARIA stands for,5,3.938,1.9649,7.0014,0.0803,OLMo-2-1124-13B
+accessibility,decl_focus_indicator_001,focus indicator,declarative,cloze,A focus indicator is,5,4.4548,2.2439,7.9966,1.5714,OLMo-2-1124-13B
+accessibility,decl_keyboard_nav_001,keyboard navigation,declarative,cloze,Keyboard navigation allows,4,4.7295,2.4785,7.0014,2.4785,OLMo-2-1124-13B
+accessibility,decl_color_contrast_001,color contrast,declarative,cloze,Color contrast is important because,6,4.4032,2.9549,7.0014,2.5197,OLMo-2-1124-13B
+accessibility,decl_semantic_html_001,semantic HTML,declarative,cloze,Semantic HTML helps,4,5.4364,4.1596,7.0014,4.0782,OLMo-2-1124-13B
+accessibility,decl_captions_001,closed captions,declarative,cloze,Closed captions are used for,6,4.2797,2.9811,7.0014,1.7899,OLMo-2-1124-13B
+accessibility,decl_keyboard_interaction_001,keyboard interaction,declarative,cloze,A keyboard interaction is,5,5.7791,3.7346,7.9966,3.7346,OLMo-2-1124-13B
+accessibility,decl_section_heading_001,section heading,declarative,cloze,A section heading is,5,4.8298,3.1638,7.9966,1.5066,OLMo-2-1124-13B
+accessibility,decl_text_alternative_001,text alternative,declarative,cloze,A text alternative is,5,5.0758,2.5116,7.9966,2.5116,OLMo-2-1124-13B
+accessibility,decl_audio_description_001,audio description,declarative,cloze,An audio description is,5,4.9749,1.9049,7.0014,1.9049,OLMo-2-1124-13B
+accessibility,decl_sign_language_001,sign language,declarative,cloze,Sign language is,4,3.9339,3.8959,7.0014,0.8946,OLMo-2-1124-13B
+accessibility,decl_sensory_characteristics_001,sensory characteristics,declarative,cloze,Sensory characteristics are,6,4.6811,5.289,7.0014,1.5925,OLMo-2-1124-13B
+accessibility,decl_input_purpose_001,input purpose,declarative,cloze,An input purpose is,5,5.1665,2.3373,7.0014,2.3373,OLMo-2-1124-13B
+accessibility,decl_target_size_001,target size,declarative,cloze,A target size is,5,5.4953,3.4548,7.9966,3.4047,OLMo-2-1124-13B
+accessibility,decl_touch_target_001,touch target,declarative,cloze,A touch target is,5,4.6019,2.3254,7.9966,2.0499,OLMo-2-1124-13B
+accessibility,decl_drag_movement_001,drag movement,declarative,cloze,A drag movement is,5,5.5671,3.6343,7.9966,3.6343,OLMo-2-1124-13B
+accessibility,decl_focus_appearance_001,focus appearance,declarative,cloze,A focus appearance is,5,4.9481,3.0019,7.9966,1.5714,OLMo-2-1124-13B
+accessibility,decl_consistent_help_001,consistent help,declarative,cloze,Consistent help is,5,5.2482,4.7506,7.291,2.2881,OLMo-2-1124-13B
+accessibility,decl_redundant_entry_001,redundant entry,declarative,cloze,A redundant entry is,5,5.8311,3.2017,7.9966,3.2017,OLMo-2-1124-13B
+accessibility,decl_accessible_authentication_001,accessible authentication,declarative,cloze,Accessible authentication is,4,5.3046,4.1809,7.0014,4.0797,OLMo-2-1124-13B
+accessibility,decl_text_spacing_001,text spacing,declarative,cloze,Text spacing is,4,5.1881,4.762,7.0014,4.3208,OLMo-2-1124-13B
+accessibility,decl_status_message_001,status message,declarative,cloze,A status message is,5,5.3174,3.24,7.9966,3.24,OLMo-2-1124-13B
+accessibility,decl_error_identification_001,error identification,declarative,cloze,Error identification is,4,4.7434,3.9167,7.0014,3.7006,OLMo-2-1124-13B
+accessibility,decl_pointer_cancellation_001,pointer cancellation,declarative,cloze,Pointer cancellation is,4,5.1775,3.0194,7.0014,3.0194,OLMo-2-1124-13B
+accessibility,decl_character_key_001,character key,declarative,cloze,A character key is,5,5.0279,2.0229,7.9966,2.0229,OLMo-2-1124-13B
+accessibility,decl_accessibility_tree_001,accessibility tree,declarative,cloze,An accessibility tree is,5,4.7824,1.5968,7.0014,1.5968,OLMo-2-1124-13B
+accessibility,decl_accessible_name_001,accessible name,declarative,cloze,An accessible name is,5,5.2073,2.4906,7.0014,2.4906,OLMo-2-1124-13B
+accessibility,decl_accessible_description_001,accessible description,declarative,cloze,An accessible description is,5,5.0252,3.9444,7.0014,0.799,OLMo-2-1124-13B
+accessibility,decl_live_region_001,live region,declarative,cloze,A live region is,5,5.0518,1.7794,7.9966,1.7794,OLMo-2-1124-13B
+accessibility,decl_tab_panel_001,tab panel,declarative,cloze,A tab panel is,5,4.9924,1.9581,7.9966,1.9581,OLMo-2-1124-13B
+accessibility,decl_radio_group_001,radio group,declarative,cloze,A radio group is,5,5.7957,3.9642,7.9966,3.9642,OLMo-2-1124-13B
+accessibility,decl_tree_grid_001,tree grid,declarative,cloze,A tree grid is,5,5.4193,2.2144,7.9966,2.2144,OLMo-2-1124-13B
+accessibility,decl_menu_bar_001,menu bar,declarative,cloze,A menu bar is,5,5.3876,2.479,7.9966,2.479,OLMo-2-1124-13B
+accessibility,decl_tool_tip_001,tool tip,declarative,cloze,A tool tip is,5,4.8127,2.1944,7.9966,2.1944,OLMo-2-1124-13B
+accessibility,decl_combo_box_001,combo box,declarative,cloze,A combo box is,5,4.9872,1.6142,7.9966,1.6142,OLMo-2-1124-13B
+accessibility,decl_semantic_markup_001,semantic markup,declarative,cloze,Semantic markup is,4,5.4431,4.3926,7.0014,3.8723,OLMo-2-1124-13B
+accessibility,decl_focus_management_001,focus management,declarative,cloze,Focus management is,4,4.6134,3.7307,7.0014,3.7307,OLMo-2-1124-13B
+accessibility,decl_reading_order_001,reading order,declarative,cloze,Reading order is,4,5.4479,5.3868,7.0014,3.8724,OLMo-2-1124-13B
+accessibility,decl_text_formatting_001,text formatting,declarative,cloze,Text formatting is,4,5.1555,4.7871,7.0014,4.1653,OLMo-2-1124-13B
+accessibility,decl_form_field_001,form field,declarative,cloze,A form field is,5,4.7512,3.2655,7.9966,1.396,OLMo-2-1124-13B
+accessibility,decl_landmark_region_001,landmark region,declarative,cloze,A landmark region is,5,5.409,2.8874,7.9966,2.8874,OLMo-2-1124-13B
+accessibility,decl_low_vision_001,low vision,declarative,cloze,Low vision is,4,5.3512,2.9592,7.0014,2.9592,OLMo-2-1124-13B
+accessibility,decl_cognitive_disabilities_001,cognitive disabilities,declarative,cloze,Cognitive disabilities are,5,5.4236,4.5111,7.0014,3.8509,OLMo-2-1124-13B
+accessibility,decl_universal_design_001,universal design,declarative,cloze,Universal design is,4,5.43,3.572,7.0014,3.572,OLMo-2-1124-13B
+accessibility,decl_decorative_image_001,decorative image,declarative,cloze,A decorative image is,5,6.028,4.2341,7.9966,4.0713,OLMo-2-1124-13B
+accessibility,decl_informative_image_001,informative image,declarative,cloze,An informative image is,5,5.2331,4.3047,7.0014,3.4711,OLMo-2-1124-13B
+accessibility,decl_responsive_design_001,responsive design,declarative,cloze,Responsive design is,4,4.8262,3.7998,7.0014,3.7998,OLMo-2-1124-13B
+accessibility,eval_alt_text_001,alt text,evaluative,code_review,The following code is not accessible because it doesn't have what? <img src='photo.jpg'>,21,3.8045,3.9068,8.3991,0.5285,OLMo-2-1124-13B
+accessibility,eval_div_onclick_001,semantic HTML,evaluative,code_review,A <div> with onclick is not accessible because,11,4.2217,3.2154,7.9966,1.1993,OLMo-2-1124-13B
+accessibility,eval_empty_link_001,empty link,evaluative,code_review,The accessibility problem with <a href='#'></a> is,13,3.9868,3.6802,8.3991,0.0099,OLMo-2-1124-13B
+accessibility,eval_unlabeled_input_001,form label,evaluative,code_review,<input type='text'> needs a,8,3.3894,4.9315,7.0014,0.5152,OLMo-2-1124-13B
+accessibility,eval_click_here_001,link text,evaluative,code_review,A button that only says 'Click here' is bad because,13,4.5285,2.2896,7.9966,2.2414,OLMo-2-1124-13B
+accessibility,comp_alt_text_few_shot_001,alt text,completion,few_shot,"<img src=""icons/home.png"" alt=""Home""><img src=""icons/mail.png"" alt=""Inbox""><img src=""photo.jpg""",30,1.4717,0.204,7.0014,0.016,OLMo-2-1124-13B
+accessibility,comp_alt_text_bare_001,alt text,completion,bare,"<img src=""photo.jpg""",7,2.5167,2.0851,7.0014,0.8156,OLMo-2-1124-13B
+accessibility,comp_captions_few_shot_001,captions,completion,few_shot,"<video src=""intro.mp4""><track kind=""captions"" src=""intro.vtt""></video><video src=""demo.mp4""><track kind=""captions"" src=""demo.vtt""></video><video src=""lecture.mp4"">",51,1.3364,3.7512,7.138,0.0013,OLMo-2-1124-13B
+accessibility,comp_captions_bare_001,captions,completion,bare,"<video src=""lecture.mp4"">",9,2.9653,3.2497,7.0014,0.0305,OLMo-2-1124-13B
+accessibility,comp_page_title_few_shot_001,page title,completion,few_shot,<html><head><title>About Us</title></head><html><head><title>Contact</title></head><html><head>,28,1.6517,6.3557,7.0014,0.0301,OLMo-2-1124-13B
+accessibility,comp_page_title_bare_001,page title,completion,bare,"<html><head><meta charset=""utf-8"">",12,1.7371,4.7852,7.0014,0.0108,OLMo-2-1124-13B
+accessibility,comp_script_bare_001,script,completion,bare,<script,2,4.5617,2.1221,7.0014,2.1221,OLMo-2-1124-13B
+accessibility,comp_script_few_shot_001,script,completion,few_shot,"<script src=""utils.js""></script><script src=""main.js""></script><script src=""",20,1.8912,7.1306,7.1959,0.0017,OLMo-2-1124-13B
+accessibility,hypo_alt_text_direct_001,alt text,hypothesis,direct_question,Look at this HTML: <img src='portrait.jpg'>. What specific attribute is missing to make it accessible?,24,3.5388,4.8133,7.0014,1.2275,OLMo-2-1124-13B
+accessibility,hypo_alt_text_correction_001,alt text,hypothesis,error_correction,Correct the following inaccessible code: <img src='logo.png'>,14,4.7681,5.5142,8.1236,1.6783,OLMo-2-1124-13B
+accessibility,hypo_alt_text_socratic_001,alt text,hypothesis,socratic,A screen reader is software that reads text aloud. Why would a screen reader fail to describe this tag: <img src='chart.svg'>?,30,2.975,4.3821,7.9966,0.0976,OLMo-2-1124-13B
+accessibility,valid_alt_text_direct_001,alt text,validation,direct_question,The following code is not accessible because it doesn't have what? <img src='photo.jpg'>,21,3.8045,3.9068,8.3991,0.5285,OLMo-2-1124-13B
+accessibility,valid_alt_text_instruction_001,alt text,validation,instruction,What accessibility attribute is missing from this HTML: <img src='photo.jpg'>?,18,3.3776,4.6566,7.0014,1.0175,OLMo-2-1124-13B
+accessibility,valid_screen_reader_socratic_001,screen reader,validation,socratic,A screen reader is software that reads text aloud. Why would it fail to describe <img src='chart.svg'>?,25,3.0753,4.3711,7.9966,0.9739,OLMo-2-1124-13B
+accessibility,valid_aria_confab_001,ARIA,validation,cloze,ARIA stands for,5,3.938,1.9649,7.0014,0.0803,OLMo-2-1124-13B
+accessibility,valid_html_confab_001,HTML,validation,cloze,HTML stands for,4,3.4107,1.3989,7.0014,0.0537,OLMo-2-1124-13B
+accessibility,ctrl_cc_cloze_001,closed captions,control,cloze,Closed captions display,4,5.2512,4.7878,7.0014,4.0898,OLMo-2-1124-13B
+accessibility,ctrl_contrast_cloze_001,color contrast,control,cloze,Color contrast is important because,6,4.4032,2.9549,7.0014,2.5197,OLMo-2-1124-13B
+accessibility,ctrl_title_cloze_001,page title,control,cloze,A page title describes,5,4.9327,1.6292,7.9966,1.6292,OLMo-2-1124-13B
+accessibility,ctrl_cc_direct_001,closed captions,control,direct_question,What are closed captions?,6,4.1102,4.2191,7.0014,1.7937,OLMo-2-1124-13B
+accessibility,ctrl_contrast_direct_001,color contrast,control,direct_question,What is color contrast?,6,4.6426,4.2085,7.0014,2.4314,OLMo-2-1124-13B
+accessibility,ctrl_title_direct_001,page title,control,direct_question,What is a page title?,7,5.1941,4.0146,8.4515,2.3315,OLMo-2-1124-13B
+accessibility,ctrl_cc_instruction_001,closed captions,control,instruction,Explain closed captions to a web developer.,10,4.3781,5.2874,7.0014,2.5469,OLMo-2-1124-13B
+accessibility,ctrl_contrast_instruction_001,color contrast,control,instruction,Explain color contrast to a web developer.,10,4.3846,5.2267,7.0014,2.5465,OLMo-2-1124-13B
+accessibility,ctrl_title_instruction_001,page title,control,instruction,Explain page titles to a web developer.,10,4.4877,5.5555,7.0014,2.7267,OLMo-2-1124-13B
+accessibility,ctrl_cc_evaluative_001,closed captions,control,evaluative,A video without closed captions is not accessible because,10,3.765,2.9788,7.9966,0.9069,OLMo-2-1124-13B
+accessibility,ctrl_contrast_evaluative_001,color contrast,control,evaluative,Text with low color contrast is not accessible because,10,4.0723,2.2302,7.275,1.3802,OLMo-2-1124-13B
+accessibility,ctrl_title_evaluative_001,page title,control,evaluative,A web page without a title is not accessible because,11,4.3322,3.0629,7.9966,2.0813,OLMo-2-1124-13B
+accessibility,ctrl_cc_scenario_001,closed captions,control,scenario,"A deaf user is watching a video on a website. Without closed captions, the user",18,3.5697,2.6426,7.9966,0.6612,OLMo-2-1124-13B
+accessibility,ctrl_contrast_scenario_001,color contrast,control,scenario,A low vision user visits a website with poor color contrast. The user,15,4.1521,4.1664,7.9966,0.5797,OLMo-2-1124-13B
+accessibility,ctrl_title_scenario_001,page title,control,scenario,A screen reader user navigates to a web page with no title. The user,17,3.7635,4.4034,7.9966,0.3696,OLMo-2-1124-13B
+accessibility,ctrl_bicycle_cloze_001,bicycle,control,cloze,A bicycle is used for,6,5.0584,4.9089,7.9966,1.9795,OLMo-2-1124-13B
+accessibility,ctrl_bicycle_direct_001,bicycle,control,direct_question,What is a bicycle?,6,5.9032,4.8628,8.4515,3.9023,OLMo-2-1124-13B
+accessibility,ctrl_bicycle_instruction_001,bicycle,control,instruction,Explain bicycles to a web developer.,9,4.4468,5.5489,7.0014,2.6379,OLMo-2-1124-13B
+accessibility,ctrl_bicycle_evaluative_001,bicycle,control,evaluative,A bicycle without brakes is not safe because,9,4.4454,2.7135,7.9966,2.6276,OLMo-2-1124-13B
+accessibility,ctrl_bicycle_scenario_001,bicycle,control,scenario,"A child is riding a bicycle on a busy street. Without a helmet, the child",18,3.6983,3.3831,7.9966,1.3464,OLMo-2-1124-13B
