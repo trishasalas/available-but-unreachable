@@ -1,16 +1,20 @@
 """
-Corpus frequency analysis  
+Corpus frequency analysis and token competition tracing.
 
-# Tests whether compound frequency in the training corpus predicts
-# compound-level accuracy across model families. Uses the Infini-gram
-# API (Liu et al. 2024) for n-gram counts. Computes Spearman
-# correlations with partial-correlation controls for constituent
-# frequency and tokenization length.
+Tests whether compound frequency in the training corpus (The Pile) predicts
+which behavioral trajectory class a concept takes (peak_regress, monotonic_climb,
+never_emerges, mixed). Uses the Infini-gram API (Liu et al. 2024) for n-gram
+counts and TransformerLens for token competition tracing.
+
+The frequency hypothesis: compounds that inverse-scale (peak_regress) are the
+ones whose correct continuation token has a high-frequency competitor at the
+decision point. Compounds that monotonic_climb don't have that competition.
 
 Usage (from notebook):
     from src.frequency import (
         COMPOUNDS, load_trajectories,
         query_infinigram, build_frequency_table,
+        token_competition_trace,
         frequency_trajectory_correlation,
         save_frequency_results,
     )
@@ -18,8 +22,11 @@ Usage (from notebook):
     # Get corpus frequencies
     freq_df = build_frequency_table()
 
-   # Correlate frequency with compound accuracy
-   corr = frequency_accuracy_correlation(freq_df, accuracy_df)
+    # Trace token competition at a specific scale
+    comp = token_competition_trace(model, "A skip link is", top_k=10)
+
+    # Correlate frequency with trajectory class
+    corr = frequency_trajectory_correlation(freq_df, traj_df)
 """
 
 import time
@@ -99,7 +106,7 @@ COMPOUNDS = [
 ]
 
 # --------------------------------------------------------------------------- #
-# Domain comparison compounds                                                 #
+# Domain comparison compounds (parked)                                         #
 # --------------------------------------------------------------------------- #
 # control/legal/medical/finance compounds sourced from thatDangCircuit's
 # final_*_pairs.py. NOT part of the default frequency run — Section 5's
@@ -771,6 +778,12 @@ def query_competitor_frequency(competitors, index=PILE_INDEX):
         rows.append({"token": tok, "count": result["count"]})
         time.sleep(0.3)
     return pd.DataFrame(rows)
+
+
+# --------------------------------------------------------------------------- #
+# Token competition tracing                                                    #
+# --------------------------------------------------------------------------- #
+def token_competition_trace(model, prompt, top_k=10, position=-1):
     """Trace the top-k candidate tokens across all layers via the logit lens.
 
     At the final layer, identifies the top-k predicted tokens. Then traces
