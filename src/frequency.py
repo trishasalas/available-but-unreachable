@@ -1,25 +1,22 @@
 """
-Corpus frequency analysis  
+Corpus frequency analysis
 
-# Tests whether compound frequency in the training corpus predicts
-# compound-level accuracy across model families. Uses the Infini-gram
-# API (Liu et al. 2024) for n-gram counts. Computes Spearman
-# correlations with partial-correlation controls for constituent
-# frequency and tokenization length.
+Tests whether compound frequency in the training corpus predicts
+compound-level accuracy across model families. Uses the Infini-gram
+API (Liu et al. 2024) for n-gram counts. Computes Spearman
+correlations with partial-correlation controls for constituent
+frequency and tokenization length.
 
 Usage (from notebook):
     from src.frequency import (
-        COMPOUNDS, load_trajectories,
+        COMPOUNDS,
         query_infinigram, build_frequency_table,
-        frequency_trajectory_correlation,
+        frequency_accuracy_correlation,
         save_frequency_results,
     )
 
-    # Get corpus frequencies
     freq_df = build_frequency_table()
-
-   # Correlate frequency with compound accuracy
-   corr = frequency_accuracy_correlation(freq_df, accuracy_df)
+    corr = frequency_accuracy_correlation(freq_df, accuracy_df)
 """
 
 import time
@@ -27,8 +24,6 @@ from pathlib import Path
 
 import pandas as pd
 import requests
-import torch
-import torch.nn.functional as F
 
 
 # --------------------------------------------------------------------------- #
@@ -334,22 +329,6 @@ SINGLE_CONCEPTS = [
     ("ARIA",                "ARIA",     None,        "ARIA stands for"),
 ]
 
-# The concept names used in per_concept_trajectories.csv, mapped to compound names.
-# Trajectory CSV uses display names; this maps them to our underscore names.
-CONCEPT_TO_COMPOUND = {
-    "screen reader":       "screen_reader",
-    "alt text":            "alt_text",
-    "skip link":           "skip_link",
-    "color contrast":      "color_contrast",
-    "keyboard navigation": "keyboard_navigation",
-    "focus indicator":     "focus_indicator",
-    "semantic HTML":       "semantic_html",
-    "captions":            "closed_captions",
-    "closed captions":     "closed_captions",
-    "WCAG":                "WCAG",
-    "ARIA":                "ARIA",
-}
-
 
 # --------------------------------------------------------------------------- #
 # Compound → domain map                                                        #
@@ -591,28 +570,6 @@ COMPOUND_DOMAINS = {
 
 
 # --------------------------------------------------------------------------- #
-# Trajectory data                                                              #
-# --------------------------------------------------------------------------- #
-def load_trajectories(project_root):
-    """Load per-concept trajectory classifications from the analysis CSV.
-
-    Returns DataFrame with columns: suite, concept, compound, trajectory.
-    """
-    path = Path(project_root) / "results" / "analysis" / "per_concept_trajectories.csv"
-    df = pd.read_csv(path)
-    # CONCEPT_TO_COMPOUND carries the 11 original special mappings (incl.
-    # captions -> closed_captions). The 41 n=49 expansion concepts map by the
-    # trivial space->underscore rule (verified: every expansion concept string
-    # equals its compound with spaces replaced), so fall back to that — without
-    # the fallback they map to NaN and silently drop from the Spearman merge,
-    # pinning it at n=8.
-    df["compound"] = df["concept"].map(
-        lambda c: CONCEPT_TO_COMPOUND.get(c, str(c).replace(" ", "_"))
-    )
-    return df[["suite", "concept", "compound", "trajectory"]]
-
-
-# --------------------------------------------------------------------------- #
 # Infini-gram API                                                              #
 # --------------------------------------------------------------------------- #
 INFINIGRAM_API = "https://api.infini-gram.io/"
@@ -752,189 +709,50 @@ def build_frequency_table(compounds=None, index=PILE_INDEX):
     return pd.DataFrame(rows)
 
 
-def query_competitor_frequency(competitors, index=PILE_INDEX):
-    """Query Infini-gram for a list of competitor tokens.
-
-    Use after token_competition_trace to get corpus frequency for
-    the tokens that compete at the decision point.
-
-    Args:
-        competitors: list of token strings (e.g. [" click", " displayed"]).
-        index: Infini-gram corpus index.
-
-    Returns:
-        DataFrame with columns: token, count.
-    """
-    rows = []
-    for tok in competitors:
-        result = query_infinigram(tok.strip(), index=index)
-        rows.append({"token": tok, "count": result["count"]})
-        time.sleep(0.3)
-    return pd.DataFrame(rows)
-    """Trace the top-k candidate tokens across all layers via the logit lens.
-
-    At the final layer, identifies the top-k predicted tokens. Then traces
-    each of those tokens' rank and probability back through every layer,
-    showing where and how they compete.
-
-    This is the generalized version of the skip_link "displayed vs click"
-    trace — it works for any prompt and any set of competing tokens.
-
-    Args:
-        model: a loaded TransformerLens HookedTransformer.
-        prompt: input text (e.g. "A skip link is").
-        top_k: number of top tokens to trace from the final layer.
-        position: which token position to analyze (default: last).
-
-    Returns:
-        dict with:
-            final_top: list of (token_str, prob) for the final prediction.
-            traces: DataFrame with columns:
-                layer, token, token_id, rank, prob, logit
-            prompt: the input prompt.
-            model: the model name.
-    """
-    logits, cache = model.run_with_cache(prompt)
-    final_logits = logits[0, position]
-
-    # Identify the top-k tokens at the final layer
-    final_probs = F.softmax(final_logits, dim=-1)
-    top_ids = torch.topk(final_probs, top_k).indices
-    top_tokens = [(model.to_single_str_token(tid.item()), round(final_probs[tid].item(), 6))
-                  for tid in top_ids]
-
-    # Trace each of those tokens through every layer
-    rows = []
-    for layer in range(model.cfg.n_layers):
-        resid = cache["resid_post", layer][0, position]
-        normed = model.ln_final(resid)
-        layer_logits = model.unembed(normed.unsqueeze(0).unsqueeze(0))[0, 0]
-        layer_probs = F.softmax(layer_logits, dim=-1)
-        sorted_indices = layer_logits.argsort(descending=True)
-
-        for tid in top_ids:
-            tid_int = tid.item()
-            rank = (sorted_indices == tid_int).nonzero().item() + 1
-            rows.append({
-                "layer": layer,
-                "token": model.to_single_str_token(tid_int),
-                "token_id": tid_int,
-                "rank": rank,
-                "prob": round(layer_probs[tid_int].item(), 6),
-                "logit": round(layer_logits[tid_int].item(), 4),
-            })
-
-    traces = pd.DataFrame(rows)
-    traces.attrs["model"] = model.cfg.model_name
-    traces.attrs["prompt"] = prompt
-
-    return {
-        "final_top": top_tokens,
-        "traces": traces,
-        "prompt": prompt,
-        "model": model.cfg.model_name,
-    }
-
-
-def compare_tokens_across_scales(results_by_scale, token_a, token_b):
-    """Compare two specific tokens' trajectories across model scales.
-
-    Takes the output of multiple token_competition_trace calls (one per
-    scale) and extracts the layer-by-layer rank of two tokens for
-    direct comparison.
-
-    Args:
-        results_by_scale: dict of {scale_name: token_competition_trace result}.
-            e.g. {"160M": trace_160m, "2.8B": trace_2_8b, ...}
-        token_a: first token string to compare (e.g. " displayed").
-        token_b: second token string to compare (e.g. " click").
-
-    Returns:
-        DataFrame with columns: scale, layer, token_a_rank, token_b_rank,
-        token_a_prob, token_b_prob, leader.
-    """
-    rows = []
-    for scale, result in results_by_scale.items():
-        traces = result["traces"]
-        a_data = traces[traces["token"] == token_a]
-        b_data = traces[traces["token"] == token_b]
-
-        if a_data.empty or b_data.empty:
-            print(f"  Warning: '{token_a}' or '{token_b}' not in top-k at {scale}")
-            continue
-
-        for _, row_a in a_data.iterrows():
-            layer = row_a["layer"]
-            row_b = b_data[b_data["layer"] == layer]
-            if row_b.empty:
-                continue
-            row_b = row_b.iloc[0]
-
-            rows.append({
-                "scale": scale,
-                "layer": layer,
-                f"{token_a.strip()}_rank": row_a["rank"],
-                f"{token_b.strip()}_rank": row_b["rank"],
-                f"{token_a.strip()}_prob": row_a["prob"],
-                f"{token_b.strip()}_prob": row_b["prob"],
-                "leader": token_a.strip() if row_a["rank"] < row_b["rank"]
-                          else token_b.strip(),
-            })
-
-    return pd.DataFrame(rows)
-
-
 # --------------------------------------------------------------------------- #
 # Correlation analysis                                                         #
 # --------------------------------------------------------------------------- #
-def frequency_trajectory_correlation(freq_df, traj_df, suite="pythia"):
-    """Spearman correlation between corpus frequency and trajectory class.
+def frequency_accuracy_correlation(freq_df, accuracy_df, suite="pythia"):
+    """Spearman correlation between corpus frequency and mean accuracy.
 
-    Merges the frequency table with trajectory classifications and tests
-    whether frequency metrics predict which trajectory a compound takes.
+    Merges the frequency table with per-compound mean accuracy from
+    elicitation results. Tests whether corpus frequency predicts how
+    well a model suite retrieves compound knowledge. Includes partial
+    correlations controlling for constituent frequency and tokenization
+    length.
 
     Args:
         freq_df: DataFrame from build_frequency_table.
-        traj_df: DataFrame from load_trajectories.
-        suite: which model suite to use for trajectories ("pythia" or "gpt2").
+        accuracy_df: DataFrame with at least columns 'compound' and
+            'mean_accuracy'. Typically aggregated from elicitation CSVs.
+        suite: label for which model suite produced the accuracy data
+            (stored in output for bookkeeping, not used for filtering).
 
     Returns:
         dict with:
             merged: the merged DataFrame (for inspection).
-            bigram_spearman: Spearman r and p-value for bigram count vs
-                             trajectory ordinal.
-            conditional_spearman: Spearman r and p-value for conditional
-                                  probability vs trajectory ordinal.
-            word1_spearman: Spearman r and p-value for word1 (component)
-                            frequency vs trajectory ordinal.
+            suite: the suite label.
+            bigram_spearman: Spearman r and p for bigram count vs mean_accuracy.
+            conditional_spearman: Spearman r and p for conditional prob vs
+                mean_accuracy.
+            word1_spearman: Spearman r and p for word1 frequency vs
+                mean_accuracy (partial-correlation control).
     """
     from scipy.stats import spearmanr
 
-    # Trajectory ordinal: higher = "better" scaling behavior
-    # never_emerges=0, mixed=1, peak_regress=2, monotonic_climb=3
-    trajectory_ordinal = {
-        "never_emerges": 0,
-        "mixed": 1,
-        "peak_regress": 2,
-        "monotonic_climb": 3,
-    }
+    merged = freq_df.merge(accuracy_df[["compound", "mean_accuracy"]],
+                           on="compound", how="inner")
 
-    traj = traj_df[traj_df["suite"] == suite].copy()
-    traj["traj_ordinal"] = traj["trajectory"].map(trajectory_ordinal)
+    results = {"merged": merged, "suite": suite}
 
-    merged = freq_df.merge(traj, on="compound", how="inner")
-
-    results = {"merged": merged}
-
-    # Only compute correlations where we have enough data points
-    valid = merged.dropna(subset=["traj_ordinal"])
+    valid = merged.dropna(subset=["mean_accuracy"])
 
     for col, label in [("bigram_count", "bigram_spearman"),
                        ("conditional_prob", "conditional_spearman"),
                        ("word1_count", "word1_spearman")]:
         subset = valid.dropna(subset=[col])
         if len(subset) >= 4:
-            r, p = spearmanr(subset[col], subset["traj_ordinal"])
+            r, p = spearmanr(subset[col], subset["mean_accuracy"])
             results[label] = {"r": round(r, 4), "p": round(p, 4), "n": len(subset)}
         else:
             results[label] = {"r": None, "p": None, "n": len(subset),
@@ -965,90 +783,61 @@ def save_frequency_results(freq_df, project_root, filename="frequency_analysis.c
     return path
 
 
-def save_competition_trace(result, project_root, model_name, compound_name):
-    """Save a token competition trace to results/frequency/.
-
-    Args:
-        result: dict from token_competition_trace.
-        project_root: path to the tmlr repo root.
-        model_name: e.g. "pythia-12b".
-        compound_name: e.g. "skip_link".
-
-    Returns:
-        Path to the saved file.
-    """
-    short = model_name.split("/")[-1]
-    suite = "pythia" if "pythia" in short else "gpt2"
-    out_dir = Path(project_root) / "results" / "frequency" / suite
-    out_dir.mkdir(parents=True, exist_ok=True)
-    path = out_dir / f"{short}_{compound_name}_competition.csv"
-    result["traces"].to_csv(path, index=False)
-    print(f"Saved competition trace to {path}")
-    return path
-
-
 # --------------------------------------------------------------------------- #
 # Pipeline entry point                                                         #
 # --------------------------------------------------------------------------- #
-def run_frequency_analysis(project_root):
+def run_frequency_analysis(project_root, accuracy_df=None, accuracy_path=None,
+                           suite="pythia"):
     """Run the full frequency analysis pipeline.
 
-    Queries Infini-gram for corpus frequency of all compounds, loads
-    trajectory classifications, runs Spearman correlation for both
-    model suites, and saves everything to results/frequency/.
-
-    Follows the experiments.ipynb convention: one function call per
-    experiment cell, function handles its own I/O.
+    Queries Infini-gram for corpus frequency of all compounds, correlates
+    with mean accuracy, and saves everything to results/frequency/.
 
     Args:
         project_root: path to the tmlr repo root.
+        accuracy_df: DataFrame with 'compound' and 'mean_accuracy' columns.
+            If None, loads from accuracy_path.
+        accuracy_path: path to a CSV with compound-level accuracy. Used
+            only when accuracy_df is not provided.
+        suite: model suite label (for output filenames).
 
     Returns:
         dict with:
             freq_df: DataFrame with corpus frequency data.
-            traj_df: DataFrame with trajectory classifications.
-            correlation: dict keyed by suite with Spearman results.
+            correlation: Spearman correlation results.
     """
     out_dir = Path(project_root) / "results" / "frequency"
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    # 1. Corpus frequency table from Infini-gram
     freq_df = build_frequency_table()
     freq_path = out_dir / "frequency_table.csv"
     freq_df.to_csv(freq_path, index=False)
-    print(f"Saved frequency table → {freq_path}")
+    print(f"Saved frequency table -> {freq_path}")
 
-    # 2. Load trajectory classifications
-    traj_df = load_trajectories(project_root)
+    if accuracy_df is None and accuracy_path is not None:
+        accuracy_df = pd.read_csv(accuracy_path)
 
-    # 3. Spearman correlation per suite
-    correlation = {}
-    for suite in ["pythia", "gpt2"]:
-        suite_traj = traj_df[traj_df["suite"] == suite]
-        if len(suite_traj) > 0:
-            corr = frequency_trajectory_correlation(freq_df, traj_df, suite=suite)
-            correlation[suite] = {
-                "bigram_spearman": corr["bigram_spearman"],
-                "conditional_spearman": corr["conditional_spearman"],
-                "word1_spearman": corr["word1_spearman"],
-            }
-            # Save merged frequency + trajectory data
-            merged_path = out_dir / f"{suite}_frequency_trajectory.csv"
-            corr["merged"].to_csv(merged_path, index=False)
-            print(f"Saved {suite} frequency-trajectory merge → {merged_path}")
+    correlation = None
+    if accuracy_df is not None:
+        corr = frequency_accuracy_correlation(freq_df, accuracy_df, suite=suite)
+        correlation = {
+            "bigram_spearman": corr["bigram_spearman"],
+            "conditional_spearman": corr["conditional_spearman"],
+            "word1_spearman": corr["word1_spearman"],
+        }
+        merged_path = out_dir / f"{suite}_frequency_accuracy.csv"
+        corr["merged"].to_csv(merged_path, index=False)
+        print(f"Saved {suite} frequency-accuracy merge -> {merged_path}")
 
-    # 4. Save Spearman summary
-    spearman_rows = []
-    for suite, metrics in correlation.items():
-        for metric, values in metrics.items():
+        spearman_rows = []
+        for metric, values in correlation.items():
             spearman_rows.append({"suite": suite, "metric": metric, **values})
-    spearman_df = pd.DataFrame(spearman_rows)
-    spearman_path = out_dir / "spearman_summary.csv"
-    spearman_df.to_csv(spearman_path, index=False)
-    print(f"Saved Spearman summary → {spearman_path}")
+        spearman_df = pd.DataFrame(spearman_rows)
+        spearman_path = out_dir / "spearman_summary.csv"
+        spearman_df.to_csv(spearman_path, index=False)
+        print(f"Saved Spearman summary -> {spearman_path}")
 
     return {
         "freq_df": freq_df,
-        "traj_df": traj_df,
         "correlation": correlation,
     }

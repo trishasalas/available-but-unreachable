@@ -42,7 +42,14 @@ from scipy.stats import spearmanr, kendalltau
 from src.analysis import load_all_results, scale_label
 from src.accuracy_coding import code_response, observe_sense
 from src.gap_analysis import SCALE_ORDERS, _classify_trajectory
-from src.frequency import CONCEPT_TO_COMPOUND
+CONCEPT_TO_COMPOUND = {
+    "screen reader": "screen_reader", "alt text": "alt_text",
+    "skip link": "skip_link", "color contrast": "color_contrast",
+    "keyboard navigation": "keyboard_navigation",
+    "focus indicator": "focus_indicator", "semantic HTML": "semantic_html",
+    "captions": "closed_captions", "closed captions": "closed_captions",
+    "WCAG": "WCAG", "ARIA": "ARIA",
+}
 
 STRICT = {'correct': 1, 'partial': 0, 'incorrect': 0}
 WEIGHTED = {'correct': 1.0, 'partial': 0.5, 'incorrect': 0.0}

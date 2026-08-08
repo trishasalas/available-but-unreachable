@@ -25,7 +25,14 @@ import numpy as np
 import pandas as pd
 from scipy.stats import spearmanr
 
-from src.frequency import CONCEPT_TO_COMPOUND
+CONCEPT_TO_COMPOUND = {
+    "screen reader": "screen_reader", "alt text": "alt_text",
+    "skip link": "skip_link", "color contrast": "color_contrast",
+    "keyboard navigation": "keyboard_navigation",
+    "focus indicator": "focus_indicator", "semantic HTML": "semantic_html",
+    "captions": "closed_captions", "closed captions": "closed_captions",
+    "WCAG": "WCAG", "ARIA": "ARIA",
+}
 
 # --- Pre-registered scaffolding (DECISIONS 2026-07-03) ---------------------
 # The 7 token-competition / wrong-domain candidates and their scorecard
