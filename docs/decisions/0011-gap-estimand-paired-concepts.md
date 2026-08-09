@@ -1,6 +1,6 @@
 # 0011 — Gap estimand: pooled means or paired concepts
 
-- **Status:** proposed
+- **Status:** accepted
 - **Date:** 2026-08-09
 - **Related:** 0010 (exposed this, but is a separate decision)
 
@@ -22,30 +22,63 @@ has no declarative counterpart. Forcing a mapping is possible but strained.
 
 ## Decision
 
-*(pending)*
+**Chosen: A — pooled paradigm means, over the Paper 1 batteries only.**
 
-**A.** Declarative mean minus evaluative mean, over the original concept set only.
+The gap at each scale is:
 
-**B.** Paired comparison restricted to concepts that have both a declarative and an
-evaluative item.
+> mean declarative accuracy over the **ten** Experiment 1 concepts
+> − mean evaluative accuracy over the **five** Experiment 2a concepts
 
-Recommended: B. It resolves the estimand problem and the population-mismatch problem
-in one move, and it matches the claim being made — a within-concept statement that the
-model defines a concept and cannot apply it.
+Stated as a difference of paradigm means, not a matched per-concept comparison.
+The paper says so explicitly rather than letting a reader assume pairing.
 
-Note that B is substantially more attractive if the evaluative battery is extended to
-cover the declarative concepts (see `docs/preregistrations/`), which would give clean
-pairs instead of a forced mapping.
+**Pre-registered switch.** Paired within-concept becomes the primary estimand
+once the expanded evaluative battery (preregistration 0002, plan step 7) has
+been authored, frozen, and run. The switch condition is recorded here, before
+either result is known, so it is not chosen later on the basis of which answer
+looks better. Until then, pooled is primary and any paired numbers are
+reported as illustrative.
+
+### Considered and rejected
+
+**B — paired within-concept, now.** Rejected on sample size. The five
+evaluative concepts are `alt text`, `empty link`, `form label`, `link text`,
+and `semantic HTML`; only two of those are among the ten declarative
+originals. That is n=2. Worse, `semantic HTML` never reaches `correct`
+declaratively at any scale — it codes `partial` at five of six scales and
+`incorrect` at 1B — so that pair measures the distance between "sort of" and
+"no." The usable paired set is effectively n=1, which cannot carry Section I.
+
+**Forcing a wider mapping** (e.g. treating `empty link` and `link text` as
+proxies for concepts in the declarative ten). Rejected: the mapping would be
+authored after seeing the data, which is the failure the pre-registration
+discipline exists to prevent.
 
 ## Consequences
 
-The gap becomes a within-concept measure, which is a stronger and more defensible
-claim than a difference of two pooled means over non-overlapping concept sets.
+The comparison is now like-for-like in a way it was not before 0010: both arms
+are Paper 1 batteries, both accessibility, both hand-authored for the same
+study. The 51-vs-5 mismatch that produced the impossible negative gap is
+resolved by concept population, not by changing the estimand.
 
-Harder: requires an explicit concept mapping between the declarative and evaluative
-batteries, which is itself a judgment call and should be recorded. Under B the paper
-reports fewer, better-grounded numbers rather than more, weaker ones — reviewers who
-expect the pooled framing may need the choice explained.
+The strongest current result does not depend on this decision at all. The 12B
+declarative regression — `keyboard navigation` and `skip link` going correct →
+incorrect, declarative peaking at 6.9B and dropping — is a **within-arm**
+finding. It needs no pairing and no evaluative comparison.
 
-**Depends on:** 0010 landing first. There is no meaningful pairing while the
-declarative side silently includes 41 expansion compounds.
+Harder: the paper reports a difference of means over non-identical concept
+sets, and must say so. A reviewer may reasonably ask why the arms were not
+matched. The answer is that they were not matched in Paper 1 either, and the
+matched battery is being built — which is a better answer than a forced
+mapping.
+
+**Depends on:** the ten declarative and five evaluative concepts remaining the
+Paper 1 batteries. If either arm grows without the other, the comparison stops
+being like-for-like — which is precisely what the 41 expansion compounds did
+to the declarative arm and what 0010 corrected. Any change to either battery
+requires re-examining this decision.
+
+**Who else reads this:** `src/gap_analysis.py` computes both pivots and the
+gap; anything reading `pythia_gap.csv`, `gpt2_gap.csv`, or `olmo_gap.csv`
+inherits this estimand whether or not it knows it. The figures and Section I
+prose both assume it.

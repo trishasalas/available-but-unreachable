@@ -56,36 +56,119 @@ not ship. These need re-homing or the claims need re-scoping.
 
 ## Decision
 
-*(pending)*
+**Chosen: adhoc, not archive.** The four archived files that CLAIMS cites move to
+named investigation directories under `results/adhoc/`, matching their `src/` modules:
 
-**Author's stated instinct, 2026-08-09:** "my first reaction is to put those files back
- and I don't know (or remember) why they were moved in the first place."
+- `results/adhoc/d6_multihead_ablation/` — `pythia-2.8b-multihead-ablation.csv`,
+  `pythia-2.8b-candidate-heads.csv`
+- `results/adhoc/head_characterization/` — `pythia-2.8b-head-characterization.csv`,
+  `pythia-2.8b-collocation.csv`
 
-That is itself evidence. An archiving action whose rationale is unrecoverable a day
-later is not a decision, it is a tidying reflex. The burden should therefore sit on
-*keeping them archived* rather than on restoring them — if no one can reconstruct the
-reason, the default is canonical.
+The two CLAIMS-cited analysis tables have already been restored to
+`results/analysis/` (2026-08-09): `completion_paradox.csv` and
+`trajectory_stability_audit.csv`.
 
-**A. Archived.** Stop writing them, fix or retire the readers, re-home the evidence
-that NAILED claims depend on.
+The three uncited audit tables stay archived: `criteria_strictness_audit.csv`,
+`criteria_strictness_audit_full.csv`, `emergence_thresholds.csv`.
 
-**B. Canonical.** Move back to `results/analysis`, keep writing them, keep the figure
-script pointed at them.
+### The rule this rests on
 
-A hybrid is likely correct: files cited by CLAIMS return to canonical; uncited
-diagnostics stay archived.
+**Every results directory is written by a notebook.** The distinction is what kind:
+
+- **Pipeline notebooks** — in the regeneration path, rerun when the data changes — write
+  top-level directories: `elicitation`, `entropy`, `binding`, `frequency`, `analysis`.
+- **Investigation notebooks** — one-off, question-shaped, run once — write under
+  `results/adhoc/` in a directory named for the investigation. This already holds
+  `d8_frequency_prior/`, `d1_bos_diagnostic/`, and `gap-paper-replication/`.
+
+So `adhoc/` is not "miscellaneous" and not "results with no notebook." It is results
+from notebooks that are not part of the regeneration path.
+
+The four orphaned files fit this exactly. D6 and the head-characterization work each
+had an investigation notebook; those notebooks have since been archived, which is why
+the results looked orphaned rather than adhoc. The results were always adhoc. Archiving
+them was a category error, not a deliberate demotion.
+
+This makes "does this fit anywhere else" checkable rather than a judgment call: **is the
+notebook that produced this in the regeneration path?** If yes, top-level. If no,
+`adhoc/` under the investigation's name.
+
+### Archived notebooks are out of scope
+
+The notebooks moved to `_Archive/_notebooks/` on 2026-08-09 — `mlp.ipynb`,
+`tangent.ipynb`, `trajectory-class.ipynb`, `frequency-olmo.ipynb` — are **no longer
+part of the paper's scope.** They are not rerun, not maintained, and their results are
+not evidence for any shipping claim.
+
+This is a scope statement, not a deletion: the notebooks stay in git and their outputs
+stay wherever they are. But nothing in the regeneration path should depend on them, and
+a claim citing their output needs re-scoping rather than a path fix.
+
+The four files being moved to `adhoc/` are the exception, and only because CLAIMS
+cites them. Their notebooks are archived; their results are still evidence.
+
+### A note on running `src/` modules directly
+
+Modules under `src/` are libraries called by notebooks, not entry points. If one is run
+directly — which has happened, by an agent rather than by the author — its output has
+no legitimate home under this rule, because there is no notebook to classify.
+
+That is an argument for the loader **flagging** unexpected paths rather than skipping
+them silently. The skip counter added in `aa7e1bb` is the first half of this; asserting
+the notebook-to-directory correspondence would be the second.
+
+### Considered and rejected
+
+**Leave archived, downgrade the claims.** Rejected: the files are evidence for claims
+that are otherwise sound, and the archiving had no recorded rationale (see below).
+
+**Restore to a flat `results/` root.** Rejected: flat-and-weird is the condition the
+2026-08-08 cleanup was reacting to. `results/peak_regress_lens.csv` is a surviving
+instance and should also move to `adhoc/`.
+
+**Delete.** Rejected on principle. Deletion is the only irreversible action on the
+audit response list; an unneeded file costs clutter, a deleted one costs a
+reconstruction. This applies to A20's "dead" `src/` modules as well — move to
+`_Archive/_src/` rather than removing.
 
 ## Consequences
 
-Under A, every reader must be fixed before the next run, or figures break silently at
-generation time rather than loudly at load time.
+Claims A5/D6 and the head-characterization claims keep citable evidence at a stable
+path, so CLAIMS' shipping gate is satisfied without downgrading anything.
 
-Under B, `results/analysis` stays cluttered with one-off diagnostic output that is not
-part of the paper's evidence chain — which is the condition that prompted the cleanup.
+`results/analysis/` stays what it is — derived tables written by the analysis notebook
+— rather than accumulating one-off diagnostic output. The clutter that prompted the
+2026-08-08 cleanup does not return.
 
-**Depends on:** knowing which claims cite which files. CLAIMS.md is the source of
-truth here, and the mapping should be verified rather than assumed before anything is
-deleted or stops being written.
+`results/adhoc/` gains a stated rule instead of being a place things land. That is worth
+more than the file moves: an escape hatch with no rule becomes the flat-and-weird
+problem one level down.
+
+Harder: `adhoc/` now has a convention that has to be maintained by hand, and loose files
+at its top level are the first sign of drift. `results/peak_regress_lens.csv` is already
+misfiled and should move under a named investigation directory.
+
+**Depends on:** the pipeline-versus-investigation distinction staying legible. If a
+top-level `results/{X}/` directory exists whose notebook is not in the regeneration
+path, either the rule has been broken or the directory belongs in `adhoc/`. This is
+checkable and would make a reasonable assertion in the loader alongside the skip
+counter.
+
+Also depends on knowing which claims cite which files. CLAIMS.md is the source of truth
+and the mapping should be verified rather than assumed before anything is moved.
+
+**Who else reads this:** `paper/generate-figures/*` reads from `results/analysis/`;
+findings docs cite paths directly; `src/analysis.py` walks
+`results/{elicitation,entropy,binding}/` and will silently skip anything that does not
+match the `{suite}/{model}/{model}-{domain}.csv` shape.
+
+## Sequencing note
+
+Figure scripts are downstream of everything here and should be fixed **last**. The
+figures are generated from data that is being regenerated; repairing a figure script's
+paths before the data settles is the same category of error as updating prose before
+the numbers stabilised, which is why prose was scoped out on 2026-08-08. Order is:
+data, then claims, then figures.
 
 ## Process note
 
