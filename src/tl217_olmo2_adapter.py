@@ -51,10 +51,10 @@ def _check_versions() -> None:
         )
 
 
-def patch_tl217_for_olmo2() -> None:
+def patch_tl218_for_olmo2() -> None:
     """Install architecture-conditional OLMo 2 forward paths.
 
-    Existing TL2.17 architectures delegate to their original methods unchanged.
+    Existing TL2.18 architectures delegate to their original methods unchanged.
     Calling this function more than once is safe.
     """
 
@@ -196,7 +196,7 @@ def _make_tl_config(hf_config, model_name: str, device: str, dtype: torch.dtype)
         )
     if hf_config.num_key_value_heads != hf_config.num_attention_heads:
         raise NotImplementedError(
-            "This TL2.17 adapter currently supports OLMo 2 checkpoints with "
+            "This TL2.18 adapter currently supports OLMo 2 checkpoints with "
             "num_key_value_heads == num_attention_heads."
         )
 
@@ -307,7 +307,7 @@ def _convert_olmo2_weights(hf_model, model: HookedTransformer) -> dict[str, torc
     return state_dict
 
 
-def load_olmo2_tl217(
+def load_olmo2_tl218(
     model_name: str = "allenai/OLMo-2-0425-1B",
     *,
     device: Optional[Union[str, torch.device]] = None,
@@ -316,7 +316,7 @@ def load_olmo2_tl217(
     center_unembed: bool = True,
     validate_prompt: Optional[str] = "An image without alt text is not accessible because",
 ) -> HookedTransformer:
-    """Load OLMo 2 into the TL2.17 HookedTransformer implementation.
+    """Load OLMo 2 into the TL2.18 HookedTransformer implementation.
 
     This intentionally does not fold RMSNorm or center residual-writing weights.
     Those TL2 transformations are not valid for OLMo 2's post-norm branches.
@@ -325,7 +325,7 @@ def load_olmo2_tl217(
     convention.
     """
 
-    patch_tl217_for_olmo2()
+    patch_tl218_for_olmo2()
 
     target_device = str(
         device if device is not None else ("cuda" if torch.cuda.is_available() else "cpu")
@@ -358,7 +358,7 @@ def load_olmo2_tl217(
     )
 
     # OLMo 2 normalizes the full concatenated Q/K projection, not each head
-    # independently. TL2.17's built-in use_qk_norm normalizes per head, so these
+    # independently. TL2.18's built-in use_qk_norm normalizes per head, so these
     # full-width modules are installed explicitly.
     for block in model.blocks:
         block.attn.q_norm = RMSNorm(cfg, length=cfg.d_model)
@@ -412,15 +412,15 @@ def load_olmo2_tl217(
 
         difference = tl_logits - reference_logits
         top1_match = torch.equal(tl_logits.argmax(-1), reference_logits.argmax(-1))
-        print("OLMo 2 TL2.17 validation")
+        print("OLMo 2 TL2.18 validation")
         print(f"  max |logit difference|:  {difference.abs().max().item():.6g}")
         print(f"  mean |logit difference|: {difference.abs().mean().item():.6g}")
         print(f"  top-1 match at every position: {top1_match}")
         if not top1_match:
             raise RuntimeError(
-                "The TL2.17 adapter and native Hugging Face OLMo 2 disagree on top-1 tokens. "
+                "The TL2.18 adapter and native Hugging Face OLMo 2 disagree on top-1 tokens. "
                 "Do not use this model for experiments until the mismatch is resolved."
             )
 
-    print(f"Loaded pretrained model {model_name} into TransformerLens 2.17.0")
+    print(f"Loaded pretrained model {model_name} into TransformerLens 2.18.0")
     return model

@@ -1,0 +1,13 @@
+freq_compound,n_incorrect_markers,pred_class
+sensory_characteristics,3,never_emerges
+redundant_entry,4,never_emerges
+status_message,6,never_emerges
+error_identification,4,never_emerges
+pointer_cancellation,4,never_emerges
+landmark_region,4,never_emerges
+focus_management,4,never_emerges
+tree_grid,4,never_emerges
+sign_language,3,monotonic_climb
+text_formatting,4,monotonic_climb
+form_field,4,monotonic_climb
+responsive_design,3,monotonic_climb

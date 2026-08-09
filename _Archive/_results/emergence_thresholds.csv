@@ -1,0 +1,60 @@
+concept,pythia_emergence,gpt2_emergence,olmo_emergence
+ARIA,never,never,7B
+HTML,never,never,never
+WCAG,6.9B,1.5B,1B
+accessibility tree,never,never,7B
+accessible authentication,12B,never,never
+accessible description,never,1.5B,never
+accessible name,1B,124M,13B
+alt text,2.8B,1.5B,1B
+audio description,12B,never,1B
+bicycle,never,never,never
+captions,never,never,never
+character key,never,never,never
+closed captions,2.8B,1.5B,7B
+cognitive disabilities,160M,124M,1B
+color contrast,410M,355M,never
+combo box,1B,never,7B
+consistent help,never,never,never
+decorative image,410M,124M,1B
+drag movement,never,never,never
+empty link,never,never,never
+error identification,never,1.5B,13B
+focus appearance,never,never,never
+focus indicator,never,124M,1B
+focus management,12B,never,never
+form field,160M,124M,1B
+form label,never,never,never
+informative image,never,never,never
+input purpose,never,never,never
+keyboard interaction,never,never,7B
+keyboard navigation,410M,355M,7B
+landmark region,410M,never,never
+link text,never,never,never
+live region,never,never,never
+low vision,12B,1.5B,1B
+menu bar,160M,124M,1B
+page title,never,never,never
+pointer cancellation,never,never,never
+radio group,never,never,never
+reading order,2.8B,355M,never
+redundant entry,never,never,never
+responsive design,2.8B,774M,1B
+screen reader,1B,774M,1B
+script,never,never,never
+section heading,160M,355M,1B
+semantic HTML,never,never,7B
+semantic markup,160M,124M,1B
+sensory characteristics,never,never,never
+sign language,160M,355M,1B
+skip link,2.8B,never,7B
+status message,6.9B,774M,13B
+tab panel,6.9B,never,1B
+target size,never,never,never
+text alternative,never,never,7B
+text formatting,2.8B,never,1B
+text spacing,never,never,7B
+tool tip,2.8B,never,1B
+touch target,160M,1.5B,7B
+tree grid,never,never,never
+universal design,never,never,never
