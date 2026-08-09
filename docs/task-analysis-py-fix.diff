@@ -1,0 +1,212 @@
+diff --git a/src/analysis.py b/src/analysis.py
+index 48bea5c..a776617 100644
+--- a/src/analysis.py
++++ b/src/analysis.py
+@@ -9,6 +9,30 @@ Directory layout (post-reorganisation):
+     results/{elicitation,entropy,binding}/{suite}/{model}/{model}-{domain}.csv
+     Suites: pythia, gpt2, olmo
+     Domains: accessibility, control, medical, legal, finance
++
++What this module now guarantees, and what it still does not
++-----------------------------------------------------------
++DONE 2026-08-09 (audit findings A6, A9, A10; decision 0010 option A):
++  - `source` is DERIVED from concept membership, not hardcoded 'original'.
++  - Every load reports its own scope: source counts, skipped CSVs, and any
++    (suite, scale) claimed by more than one model directory.
++
++DEFERRED — not an omission:
++  - Concept-key normalization (decision 0015, audit finding A3) is NOT applied
++    to the `concept` / `compound` columns. `_canonical_concept` below exists
++    and is used for the `source` membership test only. The three spellings
++    documented in 0015 (`closed_captions` / `closed captions` / `captions`)
++    are still live on the loaded frames, so the completion-to-declarative
++    join still resolves on `alt text` alone.
++    Blocked on: 0015 being ruled. It cannot land as a drop-in, because
++    src/accuracy_coding.py dispatches on a 52-key rules dict in space form,
++    case-sensitively, and returns 'incorrect' on a miss rather than raising —
++    zero of those 52 keys survive canonicalization. Agreed shape when it
++    lands: preserve the on-disk spelling as `concept_raw`, normalize
++    `concept` in place here, and have gap_analysis pass `concept_raw` to
++    code_response.
++  - The gpt2 / gpt2-small collision is REPORTED, not resolved. Deduping it is
++    a decision about which run is authoritative, not a loader concern.
+ """
+ 
+ from pathlib import Path
+@@ -17,6 +41,38 @@ import pandas as pd
+ 
+ KNOWN_DOMAINS = {'accessibility', 'control', 'medical', 'legal', 'finance'}
+ 
++# --- INTERIM (decision 0010, option A) --------------------------------------
++# The ten original Paper 1 Experiment 1 declarative concepts, in canonical form.
++# Verified 2026-08-09 against the section boundary in data/accessibility.yaml
++# ("Original Paper 1 Experiment 1 prompts" .. "DECLARATIVE (expansion)") rather
++# than transcribed by hand.
++#
++# This list lives in code and must be kept in sync with the YAML BY HAND — which
++# is the exact failure mode 0010 exists to fix. The durable fix is an explicit
++# `source:` field in data/accessibility.yaml, deferred to the Phase 4 frequency
++# regeneration; this frozenset is superseded at that point.
++#
++# Trap: the tenth is `closed captions`, NOT `captions` (renamed in 7f84365).
++# Getting it wrong silently yields nine concepts and no error.
++ORIGINAL_CONCEPTS = frozenset({
++    'screen_reader',
++    'wcag',
++    'skip_link',
++    'alt_text',
++    'aria',
++    'focus_indicator',
++    'keyboard_navigation',
++    'color_contrast',
++    'semantic_html',
++    'closed_captions',
++})
++
++# Genuine cross-battery aliases — not whitespace/case variants. The completion
++# battery says `captions` where the declarative battery says `closed captions`.
++CONCEPT_ALIASES = {
++    'captions': 'closed_captions',
++}
++
+ 
+ def load_all_results(project_root):
+     """
+@@ -34,6 +90,8 @@ def load_all_results(project_root):
+     results_dir = project_root / 'results'
+ 
+     frames = {'elicitation': [], 'entropy': [], 'binding': []}
++    skipped = []                                   # (path, failed domain string)
++    dir_rows = {}                                  # (data_type, suite, scale) -> {model_dir: rows}
+ 
+     for data_type in frames:
+         type_dir = results_dir / data_type
+@@ -50,19 +108,29 @@ def load_all_results(project_root):
+                     continue
+                 model_name = model_dir.name
+                 suite = _infer_suite(model_name, dir_suite)
++                scale = _extract_scale(model_name, suite)
++
++                # Registered before the per-file loop so a directory that
++                # contributes ZERO rows still shows up in the collision report.
++                dir_rows.setdefault((data_type, suite, scale), {}).setdefault(model_name, 0)
+ 
+                 for csv_file in sorted(model_dir.glob('*.csv')):
+                     domain = _extract_domain(csv_file.stem, model_name)
+                     if domain not in KNOWN_DOMAINS:
++                        skipped.append((csv_file.relative_to(project_root), domain))
+                         continue
+ 
+                     df = pd.read_csv(csv_file)
+                     if 'domain' not in df.columns:
+                         df['domain'] = domain
+                     df['suite'] = suite
+-                    df['scale'] = _extract_scale(model_name, suite)
+-                    df['source'] = 'original'
++                    df['scale'] = scale
++                    # Guarded like 'domain' above: never clobber a real column.
++                    # The unguarded write here was the original defect (0010).
++                    if 'source' not in df.columns:
++                        df['source'] = _derive_source(df)
+                     frames[data_type].append(df)
++                    dir_rows[(data_type, suite, scale)][model_name] += len(df)
+ 
+     elicitation_df = pd.concat(frames['elicitation'], ignore_index=True) if frames['elicitation'] else pd.DataFrame()
+     entropy_df = pd.concat(frames['entropy'], ignore_index=True) if frames['entropy'] else pd.DataFrame()
+@@ -75,14 +143,95 @@ def load_all_results(project_root):
+     print("Loaded:")
+     for name, df in [('Elicitation', elicitation_df), ('Entropy', entropy_df), ('Binding', binding_df)]:
+         if not df.empty and 'model' in df.columns:
++            counts = df['source'].value_counts().to_dict() if 'source' in df.columns else {}
+             print(f"  {name}: {len(df)} rows across {df['model'].nunique()} models "
+-                  f"({sorted(df['suite'].unique())})")
++                  f"({sorted(df['suite'].unique())})  source={counts}")
+         else:
+             print(f"  {name}: {len(df)} rows")
+ 
++    # Scope reporting. These three blocks exist because silence is what let the
++    # source filter, the gpt2 collision, and a dropped CSV hide for a month.
++    if skipped:
++        print(f"\nSkipped {len(skipped)} CSV(s) — stem did not resolve to a KNOWN_DOMAIN:")
++        for path, domain in skipped:
++            print(f"  {path}  ->  domain={domain!r}")
++
++    collisions = {k: v for k, v in dir_rows.items() if len(v) > 1}
++    if collisions:
++        print(f"\nScale collisions — one (suite, scale) claimed by >1 model directory.")
++        print("  NOT deduped: reported so the resolution is a decision, not a side effect.")
++        for (data_type, suite, scale), dirs in sorted(collisions.items()):
++            listed = ', '.join(f"{d} ({n} rows)" for d, n in sorted(dirs.items()))
++            print(f"  {data_type}/{suite} @ {scale_label(scale)}: {listed}")
++
+     return elicitation_df, entropy_df, binding_df
+ 
+ 
++def _canonical_concept(value):
++    """Canonical concept key: lowercase, underscores ('closed_captions').
++
++    Matches the frequency battery and file-naming conventions. Idempotent.
++    Handles genuine cross-battery aliases (CONCEPT_ALIASES), not just
++    whitespace and case.
++
++    NOTE (decision 0015, deferred): this is currently used ONLY for the
++    `source` membership test below. It is deliberately NOT applied to the
++    `concept` / `compound` columns themselves, because src/accuracy_coding.py
++    dispatches on a 52-key rules dict in space form, case-sensitively
++    ('WCAG', 'semantic HTML'); a miss returns 'incorrect' rather than raising.
++    Zero of those 52 keys survive canonicalization, so normalizing the column
++    in place would silently code every declarative row incorrect.
++
++    When 0015 is ruled, the agreed shape is: preserve the on-disk spelling as
++    `concept_raw`, normalize `concept` in place here, and have gap_analysis
++    pass `concept_raw` to code_response. Until then the three spellings
++    documented in 0015 remain live on the loaded frames.
++    """
++    c = str(value).strip().lower().replace(' ', '_')
++    return CONCEPT_ALIASES.get(c, c)
++
++
++def _derive_source(df):
++    """Tag each row 'original' or 'expansion' (decision 0010).
++
++    'expansion' means one of the 41 frequency-stratified expansion compounds,
++    which carry only the declarative arm and must stay out of the paradigm
++    means in gap_analysis. The discriminator is the YAML section those prompts
++    live in, which is exactly: accessibility domain, declarative prompt type,
++    concept outside the ten originals.
++
++    Scoped to declarative on purpose. The evaluative arm's five concepts are
++    Paper 1 originals, but only two of them ('alt text', 'semantic HTML') are
++    in ORIGINAL_CONCEPTS — a bare concept-membership test would silently cut
++    the evaluative pivot from five concepts to two, and the declarative pass
++    condition would not catch it. Verified against
++    _Archive/_results/pythia_gap_PRE_EXPANSION_REFERENCE.csv, whose evaluative
++    column must stay unchanged.
++
++    Frames with no prompt_type (binding) are tagged on concept membership
++    alone, which is the intended meaning there — every non-original compound
++    in the binding battery IS an expansion compound.
++
++    Limit worth naming: rows outside the accessibility domain (control,
++    medical, legal, finance) are tagged 'original' because the original/
++    expansion axis is not defined for them. Every consumer filters on domain
++    first. Do not read 'original' on a medical row as a claim about Paper 1.
++    """
++    concept_col = 'concept' if 'concept' in df.columns else (
++        'compound' if 'compound' in df.columns else None)
++    if concept_col is None:
++        return 'original'
++
++    is_expansion = (
++        (df['domain'] == 'accessibility') &
++        ~df[concept_col].map(_canonical_concept).isin(ORIGINAL_CONCEPTS)
++    )
++    if 'prompt_type' in df.columns:
++        is_expansion &= (df['prompt_type'] == 'declarative')
++
++    return is_expansion.map({True: 'expansion', False: 'original'})
++
++
+ def _infer_suite(model_name, dir_suite):
+     """Correct suite when model dirs are misplaced (e.g. OLMo under gpt2/)."""
+     if model_name.startswith('OLMo'):

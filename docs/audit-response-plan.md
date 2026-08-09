@@ -1,145 +1,339 @@
-# Audit response plan — 2026-08-08
+# Audit response plan
 
-Working plan against `docs/tmlr_audit_2026-08-09.md` (audit run at `6786d13`).
+- **Created:** 2026-08-08
+- **Last updated:** 2026-08-09
+- **Audit:** `docs/claude-science/tmlr_audit_2026-08-09.md`, run at commit `6786d13`
+- **Findings CSV:** `docs/claude-science/tmlr_audit_findings_2026-08-09.csv`
+- **Pending decisions:** `docs/decisions/` (0010–0015)
 
-**Scope decision:** paper prose findings are **out of scope** for this pass. The old
-prose is knowingly stale and is being rewritten under the new framing (see
-"Paper framing" below). Findings A5, A13, and most of A14 are therefore deferred,
-not fixed.
-
-**State as of writing:** working tree clean apart from `results/frequency/frequency_table.csv`
-(SpreadJS mangling — quoting, CRLF, phantom trailing columns). Local is 2 commits
-ahead of origin. The frozen Pile table is intact (`screen_reader = 32100`); it was
-never clobbered in committed history.
+> **Scope.** Paper prose findings are deliberately **out of scope**. The old prose is
+> knowingly stale and is being rewritten under a new framing (see below). Findings A5,
+> A13, and most of A14 are therefore deferred, not fixed.
 
 ---
 
-## Phase 0 — Make the tree safe
+## Changelog
 
-- [ ] `git add` the untracked `results/_archive/*.csv` files. Five files, currently
-      backed up by nothing. Two of them (`completion_paradox.csv`,
-      `trajectory_stability_audit.csv`) are cited evidence for claims marked NAILED
-      (finding A10). Tracked-and-maybe-wrong beats untracked-and-gone.
-- [ ] `git checkout -- results/frequency/frequency_table.csv`
-- [ ] Verify: `wc -l` → 50 (49 rows + header); `head -1` → unquoted, no trailing commas
-- [ ] Set VS Code `workbench.editorAssociations` so `*.csv` opens in the plain text
-      editor by default. SpreadJS rewrites the entire file on save, including columns
-      never touched.
-- [ ] Optional: `.gitattributes` entry marking `results/**/*.csv` as `text eol=lf`
+**2026-08-09 (afternoon)** — Steps 1 and 2 complete. `src/analysis.py` fixed and merged
+(`aa7e1bb`); decision 0010 accepted. Pass condition met: pythia-160M declarative = 0.5,
+declarative pivot n=10 (the ten originals, `closed captions` included), evaluative pivot
+unchanged at n=5. **The 12B declarative regression is now visible** — see Results below.
+Four new open items surfaced that were not in the audit.
 
-## Phase 1 — Fix the loader (`src/analysis.py`)
+**2026-08-09** — Substantially revised. Phase 0 is complete; the tree is clean and
+pushed. Archive reorganized into `_Archive/{_notebooks,_results,_src}` and tracked.
+Stale `.claude/worktrees/entropy-manifest-update` removed (branch was already merged;
+it held a pre-OLMo, pre-binding snapshot). Two pre-expansion reference tables rescued
+from it before deletion. `data/accessibility.yaml` inspected: the original/expansion
+split is explicit in section comments, and elicitation CSVs confirmed to have no
+`source` column. Decisions migrated to ADR format in `docs/decisions/`. New work added
+at the end: evaluative battery expansion and logit-lens follow-up.
 
-This is the file everything downstream reads. All four issues live here.
+**2026-08-08** — Created from the audit.
 
-- [ ] **A6 — the source flag.** `load_all_results` hardcodes `df['source'] = 'original'`
-      on every row, unguarded. Confirmed: elicitation CSVs have no `source` column, so
-      the filter in `gap_analysis.py:76-78` has never filtered anything. It has been
-      decorative since the per-domain reorg.
+---
 
-      *Interim fix:* hardcode the 10 original concepts as a set in `analysis.py` and
-      derive `source` from membership. Not elegant, but true and auditable at a glance.
+## Status: what is already done
 
-      *Watch out:* commit `7f84365` renamed `captions` → `closed captions`. The
-      membership set must account for this or it silently drops to 9 concepts.
+- [x] Working tree clean, committed, pushed to private origin
+- [x] `results/frequency/frequency_table.csv` restored — SpreadJS had rewritten it with
+      full-field quoting, CRLF line endings, and ~15 phantom trailing columns. The
+      frozen Pile table is intact (`screen_reader = 32100`)
+- [x] Archive reorganized and **tracked** — the five previously-untracked
+      `results/_archive/*.csv` are now in git under `_Archive/_results/`
+- [x] Stale worktree removed
+- [x] Pre-expansion reference tables preserved:
+      `_Archive/_results/pythia_gap_PRE_EXPANSION_REFERENCE.csv`,
+      `gpt2_gap_PRE_EXPANSION_REFERENCE.csv`,
+      `completion_paradox_PRE_RENAME_REFERENCE.csv`
 
-      *Durable fix (defer to Phase 4):* add a `source` field to `data/binding/*.yaml`
-      and propagate through the battery writers.
+**Still worth doing:** set VS Code `workbench.editorAssociations` so `*.csv` opens in
+the plain text editor by default. SpreadJS rewrites the entire file on save, including
+columns never touched. This will happen again otherwise.
 
-- [ ] **gpt2 double-count.** `_extract_scale` maps both `'gpt2'` and `'gpt2-small'` to
-      124M, and per finding A16 both directories exist. Nothing dedupes. Every
-      gpt2-small row is counted twice in any groupby over scale — and if the two dirs
-      hold pre- and post-rerun data, old and new are being averaged together.
+---
 
-- [ ] **Silent skips.** `_extract_domain` strips `model_name + '-'` from the stem;
-      anything not in `KNOWN_DOMAINS` is `continue`d with no warning. A file in a
-      directory whose name doesn't prefix it vanishes without trace. Add a skip counter
-      to the load printout.
+## The ordered plan
 
-- [ ] **Concept key normalization.** Three spellings of one concept currently exist
-      across batteries: `closed_captions` (frequency), `closed captions` (declarative),
-      `captions` (completion). Normalize at load time — one function, applied
-      everywhere. This is the real fix for A3; the rename didn't break the join, it
-      exposed a normalization that was never there.
+Each step unblocks the next. The "why" is the dependency, not the motivation.
 
-- [ ] **Stale compound lists.** `tokenization_comparison` hardcodes 11 compounds across
-      its `clean`/`split` lists. The battery is 53 compounds now; the other 42 all land
-      in an `'unknown'` bucket. Refresh or retire.
+### 1. Fix `src/analysis.py`
 
-**Known good in this file, per audit:** `_extract_scale` handles the OLMo case correctly
-(`'olmo'` ends in `'m'`, `float('olm')` raises, loop continues), and the `pythia-13b`
-alias is handled. `binding_summary` and `max_binding_layer` are straightforward.
+**DONE 2026-08-09** — commit `aa7e1bb`, merged to main. Decision 0010 accepted.
 
-## Phase 2 — Re-derive the gap tables
+One editing session, four changes:
 
-- [ ] Re-derive with the source flag actually working.
-- [ ] **Pair the comparison.** Restrict declarative to the concepts that have evaluative
-      counterparts. The current tables compare a 51-concept declarative mean against a
-      5-concept evaluative mean — two incomparable populations.
-- [ ] Confirm the negative gap at Pythia-6.9B disappears.
+- [x] **Source flag (A6).** `load_all_results` hardcodes `df['source'] = 'original'`,
+  unguarded — while the adjacent `domain` assignment two lines above *is* guarded.
+  Elicitation CSVs have no `source` column, so the filter in `gap_analysis.py:76-78`
+  has never removed a row. Derive `source` from membership in the ten original
+  concepts. See decision 0010.
 
-      *Prediction on record:* it will. The gap stays positive at all scale points,
-      probably widens overall, and the monotonic declarative rise (35.3 → 55.9) stays
-      because that part is real. 6.9B is the strongest evaluative performer but still
-      has the gap. If the negative *survives* the fix, stop and look at the 6.9B
-      declarative responses directly.
+  The ten, from `data/accessibility.yaml` (section comment: "Original Paper 1
+  Experiment 1 prompts"): screen reader, WCAG, skip link, alt text, ARIA, focus
+  indicator, keyboard navigation, color contrast, semantic HTML, **closed captions**
+  (renamed from `captions` in `7f84365` — getting this wrong silently drops to nine).
 
-- [ ] Once positive everywhere: the sentence worth having is
-      "gap positive at all 6 Pythia scales, all 4 GPT-2 scales, all 3 OLMo models."
-      Uniformity is what carries the floor claim.
+- [ ] **Concept key normalization (A3 root cause, decision 0015).** **DEFERRED** — this
+      cannot land as a drop-in. `src/accuracy_coding.py` dispatches on a 52-key rules
+      dict in space form, case-sensitively (`'WCAG'`, `'semantic HTML'`), and returns
+      `'incorrect'` on a miss rather than raising. **Zero of those 52 keys survive
+      canonicalization**, so normalizing the column in place would silently code every
+      declarative row incorrect — declarative mean 0.0, not 0.5. Ruled shape when it
+      lands: preserve the on-disk spelling as `concept_raw`, normalize `concept` in
+      place, have `gap_analysis` pass `concept_raw` to `code_response`. Three spellings
+      exist
+  across batteries: `closed_captions` (frequency), `closed captions` (declarative),
+  `captions` (completion). One normalization function, applied to every frame at load.
 
-## Phase 3 — Decisions before any rerun
+- [x] **gpt2 double-count (A16).** **REPORTED, NOT RESOLVED** — and it turns out to be
+      *latent*, not active. `_extract_scale` maps both `'gpt2'` and `'gpt2-small'`
+  to 124M and both directories exist. Nothing dedupes, so every gpt2-small row is
+  counted twice in any groupby over scale.
 
-See `docs/decisions-pending.md`. These get silently undone or entrenched by the next
-pipeline run, so they come first.
+- [x] **Skip counter.** `_extract_domain` silently `continue`s any file whose stem doesn't
+  match `KNOWN_DOMAINS`. Add skipped-file counts to the load printout so scope changes
+  announce themselves instead of hiding.
 
-- [ ] OLMo x-corpus (A4)
-- [ ] Archival question (A11)
-- [ ] `pythia-13b` / `pythia-12b` naming (A15)
+*Why first: everything downstream reads this file. Nothing computed is trustworthy
+until it is.*
 
-## Phase 4 — Frequency pipeline
+**Known good here, per audit:** `_extract_scale` handles OLMo correctly (`'olmo'` ends
+in `'m'`, `float('olm')` raises, loop continues) and the `pythia-13b` alias works.
+`binding_summary` and `max_binding_layer` are fine. `tokenization_comparison` is stale
+— hardcodes 11 compounds against a 53-compound battery — but is not on the critical
+path.
 
-- [ ] **A1 — per-suite filenames.** `run_frequency_analysis()` writes
-      `frequency_table.csv` and `spearman_summary.csv` with fixed names; the notebook
-      loops it over suites, so each pass overwrites the last. Note that
-      `{suite}_frequency_accuracy.csv` files *are* already per-suite — the fix is
-      narrower than it first appears.
-- [ ] Add a corpus/index column so provenance is recoverable from the file itself.
-- [ ] **A18 — latent bugs.** Infini-gram's `-1` failure sentinel flows into Spearman as
-      a real value (screen `count < 0` to NaN before writing). `cond_prob == 0.0`
-      becomes `None` via a truthiness check (use `is not None`). Partial-correlation
-      controls are dropped from the per-suite path.
-- [ ] **A22.** p-values round to 4dp so a true p≈1e-6 ships as `0.0`. Format
-      scientifically. Also: pythia and gpt2 map to the same Pile index and re-run the
-      full query loop for each — cache per index.
-- [ ] Regenerate the battery once, cleanly.
+### 2. Re-derive the gap tables and check pythia-160M declarative
 
-## Phase 5 — The completion paradox (A3)
+**DONE 2026-08-09.** Pass condition met.
 
-- [ ] With key normalization in place, re-run the completion/declarative join.
-- [ ] Check what the paradox does with all four concepts back. Currently alt-text-only:
-      7 greater / 6 ties / 0 less, p=0.0078 — significant *through a broken join*.
-- [ ] Fix `paper/generate-figures/generate-fig-completion-paradox.py:51`, which reads
-      the archived path and can no longer run.
-- [ ] **Free win worth checking:** grep the domain batteries (legal/medical/finance) for
-      any concept with both a cloze item and a declarative item. If the completion
-      paradox extends beyond accessibility, that's a substantially bigger result than
-      the accessibility-only version.
+- [x] Re-derive with the source flag actually working
+- [x] Confirm pythia-160M declarative == 0.5
+- [x] Confirm the negative gap at Pythia-6.9B is gone (−0.0392 → +0.3)
 
-## Phase 6 — Housekeeping (nothing here blocks the science)
+See **Results — the corrected gap** below. The prediction recorded here on 2026-08-08
+was half right: the negative at 6.9B resolved, but a negative appears at 12B, and it is
+real.
 
-- [ ] A10 — re-home evidence for NAILED claims A4/A5/D6 out of `results/_archive`
+Expect **0.5**, matching `_Archive/_results/pythia_gap_PRE_EXPANSION_REFERENCE.csv`.
+Currently 0.7059 (51-concept pooled).
+
+*Why: this is the regression test. It confirms step 1 against a preserved artifact
+rather than against reasoning. It is also where the impossible negative gap at
+Pythia-6.9B should disappear — the -2.0 was the pooling bug announcing itself, since a
+negative gap is impossible under the theory.*
+
+**Prediction on record:** the negative disappears, the gap stays positive at all six
+Pythia scales, and the monotonic declarative rise survives because that part is real.
+6.9B is the strongest evaluative performer and still has the gap. If the negative
+*survives* the fix, stop and inspect the 6.9B declarative responses directly.
+
+### 3. Rule on decision 0011 — the estimand
+
+- [ ] Ruled
+
+Paired within-concept, or difference of pooled means.
+
+*Why here: it needs the corrected numbers to judge, and everything after depends on
+knowing what "the gap" means.*
+
+### 4. Rule on decisions 0012, 0013, 0014
+
+- [ ] 0012 — OLMo x-corpus
+- [ ] 0013 — archival status of the five `results/analysis` tables
+- [ ] 0014 — `pythia-13b` vs `pythia-12b`
+
+OLMo x-corpus; archival status of the five `results/analysis` tables; `pythia-13b` vs
+`pythia-12b`.
+
+*Why before any regeneration: the next pipeline run either entrenches or silently
+undoes each of these.*
+
+### 5. Fix the frequency pipeline, then regenerate once
+
+- [ ] **Per-suite filenames (A1).** `frequency_table.csv` and `spearman_summary.csv` use
+  fixed names inside a loop over suites. Note the fix is narrower than it looks — the
+  `{suite}_frequency_accuracy.csv` files are already per-suite.
+- [ ] **Corpus column.** Required by whichever way 0012 goes; without it provenance is
+  unrecoverable from the artifact.
+- [ ] **A18 latent bugs.** Infini-gram's `-1` failure sentinel flows into Spearman as a
+  real value — screen `count < 0` to NaN before writing. `cond_prob == 0.0` becomes
+  `None` via a truthiness check; use `is not None`. Partial-correlation controls are
+  dropped from the per-suite path.
+- [ ] **A22.** p-values round to 4dp, so a true p≈1e-6 ships as `0.0`. Format
+  scientifically. Also cache per index — pythia and gpt2 both map to the Pile and
+  currently re-run the full query loop each.
+
+- [ ] Regenerate the battery once, cleanly
+
+*Why after 4: run this once, with the decisions already baked in.*
+
+### 6. Fix the completion-paradox join
+
+- [ ] Re-run the join with normalized keys
+- [ ] Fix `paper/generate-figures/generate-fig-completion-paradox.py:51`
+- [ ] Grep domain batteries for concepts with both cloze and declarative items
+
+*Why after 1: it needs key normalization to exist.* Then re-run and see what the
+paradox does with all four concepts instead of alt-text-only. Current state:
+7 greater / 6 ties / 0 less, p = 0.0078 — significant *through a broken join*.
+
+Also fix `paper/generate-figures/generate-fig-completion-paradox.py:51`, which reads a
+path that no longer exists.
+
+**Free win worth checking:** grep the domain batteries (legal/medical/finance) for any
+concept with both a cloze item and a declarative item. If the completion paradox
+extends beyond accessibility, that is a substantially larger result.
+
+### 7. Author the evaluative items and freeze preregistration 0002
+
+- [ ] Author framing A (question) items
+- [ ] Author framing B (cloze) items
+- [ ] Verify every target is a single token in NeoX **and** GPT-2 BPE
+- [ ] Fill the concept mapping table; confirm the exclusion list
+- [ ] Delete the authoring worksheet
+- [ ] **Commit the freeze** — must precede any run
+
+Two framings per concept (see below). `docs/preregistrations/0002-evaluative-prompts.md`.
+
+*Why now and not earlier: authoring is slow, and it is yours alone — ground truth in
+accessibility is the one thing that cannot be delegated. Nothing above depends on it.
+The freeze commit must precede any run; that is the entire mechanism.*
+
+### 8. Run the evaluative battery
+
+- [ ] Run, 13 models
+- [ ] Code the results
+
+Elicitation only, 13 models. *Why cheap: no binding, no frequency, no infini-gram.*
+
+### 9. Write preregistration 0003 and run the logit lens
+
+- [ ] Draft 0003 (answer position + target token, per item)
+- [ ] Commit the freeze
+- [ ] Run
+
+*Why last: it needs 0002's items frozen, because answer position and target token are
+per-item.*
+
+### Then housekeeping — none of it blocks the science
+
+- [ ] A10 — re-home evidence for NAILED claims A4/A5/D6
 - [ ] A7 / A8 — update CLAIMS B7 and B4 against regenerated data
-- [ ] A16 — entropy battery gaps (pythia-1b has 1 of 5 domains, no new-style manifest;
-      gpt2-small duplicates the rerun gpt2 dir; 13 legacy schema-drifted CSVs)
-- [ ] A17 — OLMo provenance: 1B commit-sha files sitting in the 7B elicitation dir
-- [ ] A19 — archive superseded frequency-era artifacts (four different "pythia primary
-      rho" values currently on disk)
+- [ ] A16 — entropy battery gaps (pythia-1b has 1 of 5 domains; 13 legacy schema-drifted
+      CSVs)
+- [ ] A17 — OLMo provenance: 1B commit-sha files in the 7B elicitation dir
+- [ ] A19 — archive superseded frequency-era artifacts (four different "pythia primary rho"
+      values on disk)
 - [ ] A20 — delete dead `src/` modules, orphan `.pyc`, `data/backup.py`.
-      **Do not delete** top-level `data/*.yaml` (elicitation/entropy prompt files, key
-      `prompts`) — a different artifact from `data/binding/*.yaml` (key `compounds`).
-      **Keep** `dual_spearman.py`, `closeout_followups.py`, `d6/d7/d8_*.py`.
-- [ ] A21 — ~14 dangling doc pointers; two DECISIONS entries both labeled D7;
-      appendix table placeholder
+      **Do not delete** top-level `data/*.yaml` (prompt files, key `prompts`) — a different
+      artifact from `data/binding/*.yaml` (key `compounds`). **Keep** `dual_spearman.py`,
+      `closeout_followups.py`, `d6/d7/d8_*.py`.
+- [ ] A21 — ~14 dangling doc pointers; the duplicate D7 (now noted in
+      `docs/decisions/README.md`); appendix table placeholder
+- [ ] Set VS Code `workbench.editorAssociations` for `*.csv`
+
+---
+
+## Results — the corrected gap (2026-08-09)
+
+With `source` derived correctly, restricted to the ten original concepts:
+
+| scale | declarative | evaluative | gap |
+|-------|-------------|------------|-----|
+| 160M  | 0.5  | 0.2 | +0.3 |
+| 410M  | 0.8  | 0.4 | +0.4 |
+| 1B    | 0.6  | 0.2 | +0.4 |
+| 2.8B  | 1.2  | 0.6 | +0.6 |
+| 6.9B  | 1.3  | 1.0 | +0.3 |
+| 12B   | 0.9  | 1.0 | **−0.1** |
+
+### The 12B declarative regression
+
+The impossible negative at 6.9B is gone. A negative appears at **12B**, and unlike the
+previous one it is not an artifact. Per-concept declarative codings, Pythia, ten
+originals:
+
+| concept | 160M | 410M | 1B | 2.8B | 6.9B | 12B |
+|---------|------|------|----|----- |------|-----|
+| ARIA | inc | inc | inc | inc | inc | inc |
+| WCAG | inc | inc | inc | inc | **cor** | **cor** |
+| alt text | inc | part | part | **cor** | **cor** | **cor** |
+| closed captions | inc | inc | inc | **cor** | inc | **inc** |
+| color contrast | part | cor | part | part | cor | cor |
+| focus indicator | part | inc | inc | inc | inc | inc |
+| keyboard navigation | part | cor | cor | cor | cor | **inc** |
+| screen reader | part | part | cor | cor | cor | cor |
+| semantic HTML | part | part | inc | part | part | part |
+| skip link | inc | part | inc | cor | cor | **inc** |
+
+Column sums: **160M 5 · 410M 8 · 1B 6 · 2.8B 12 · 6.9B 13 · 12B 9**
+
+Declarative capability peaks at 6.9B and **drops at 12B**. Three concepts regress:
+`keyboard navigation` (correct → incorrect), `skip link` (correct → incorrect), and
+`closed captions` (already regressed at 6.9B, stays incorrect).
+
+**This restores a finding the pooled data was hiding.** DECISIONS.md, 2026-06-28, gap
+analysis findings table: *"12B gap closes via declarative regression; declarative drops
+70% → 50%; skip_link and keyboard_navigation regress."* Same phenomenon, same two named
+concepts. The 41 frequency-stratified expansion compounds had been papering over it —
+the polluted table showed declarative rising monotonically 35.3 → 55.9 with no 12B
+regression at all.
+
+**Consequence for Section I.** The story is not "the gap is positive at every scale."
+It is: the gap opens early, widens to a maximum at 2.8B, then **closes from above** at
+maximum scale as declarative capability regresses. Inverse scaling at the paradigm
+level, not merely for `skip link`. This also connects directly to CLAIMS B4
+(peak_regress is not skip_link-specific) and to the ARIA fluent-confabulation pattern:
+scale produces different failure modes for different concepts rather than uniform
+improvement.
+
+Worth noting `semantic HTML` never reaches correct at any scale, and `ARIA` and `focus
+indicator` never emerge at all — four of ten concepts are at or near floor throughout.
+
+### What the reference table does and does not validate
+
+`_Archive/_results/pythia_gap_PRE_EXPANSION_REFERENCE.csv` is byte-identical to
+`results/analysis/pythia_gap.csv` at commit `0f116a5` (2026-06-27). It matches the new
+output exactly at 160M, 410M, and 1B, and diverges at 2.8B (+0.2), 6.9B (−0.1), and 12B
+(−0.1). The evaluative column matches at every scale.
+
+The divergence is **upstream, not the filter**. A source filter selects a concept
+population identically at every scale; three scales match exactly and the population
+verifies correct. `0f116a5` predates both `ca0319e` (2026-07-03 — 41 expansion criteria
+and the coding doctrine) and `ca01b59` (2026-08-05 — `max_tokens` standardized from
+10/20 to 100). Both the coding rules and the generations changed underneath it.
+
+**So the reference validates the concept population, not the scores.** It should be
+labelled as such before anyone uses it as an oracle again. Which of the two is
+authoritative for scores is an open decision — see below.
+
+---
+
+## Open items surfaced 2026-08-09 (not in the audit)
+
+- [ ] **Reference authority.** Is the 2026-06-27 table or the current pipeline
+      authoritative for gap *scores*? The concept population is settled; the scores
+      differ because coding rules and generation length both changed. This bears
+      directly on Section I's numbers and wants its own decision.
+- [ ] **Latent gpt2 collision.** `gpt2-small` collides with `gpt2` at 124M but
+      contributes **0 rows**, because its only CSV
+      (`results/entropy/gpt2/gpt2-small/gpt2-entropy.csv`) is one of the 13 files the
+      new skip counter reports. Fixing the skip *activates* the double-count. The two
+      findings are coupled and neither is dangerous alone — do not fix one in isolation.
+- [ ] **13 CSVs skipped on every load.** Twelve are per-model `{model}-entropy.csv`
+      summaries, benign but previously invisible. The thirteenth is
+      `gpt2-small/gpt2-entropy.csv`, which resolves to `domain='gpt2-entropy'`.
+- [ ] **Entropy coverage gap.** Entropy covers 61 (model, domain) pairs against
+      elicitation's 65. Missing: `pythia-1b` × {control, finance, legal, medical}.
+      This localizes part of A16.
+- [ ] **TransformerLens version drift.** DECISIONS pins 2.17.0; the local `mechinterp`
+      env runs **2.18**, and results were regenerated on Colab under 2.18. Either pin
+      back or ratify 2.18 with a byte-comparison against a frozen artifact
+      (`src/tangent_byte_compare.py` exists for this). Currently undocumented drift.
+- [ ] **Label the reference table** with what it validates (population, not scores) and
+      its provenance commit `0f116a5`.
 
 ---
 
@@ -147,7 +341,7 @@ pipeline run, so they come first.
 
 **"It's not attention and it's not frequency"** — two negatives braced by a positive.
 
-- **I. The gap exists.** Fluent wrongness lives here (not its own section). Entropy
+- **I. The gap exists.** Fluent wrongness lives here, not in its own section. Entropy
   here. Perplexity status TBD.
 - **II. It's not attention (or a circuit).** Binding experiments. A7's collapsed
   binding–accuracy correlation (gpt2 r=0.087, pythia r=-0.003, olmo r=0.115) is
@@ -156,22 +350,80 @@ pipeline run, so they come first.
 
 **Only Section I depends on A6.** II and III are untouched by the source flag.
 
-### Notes carried from discussion
+### Two-framing design (new, 2026-08-09)
+
+Each evaluative concept gets two items testing the same violation, differing only in
+whether the answer position permits termination:
+
+- **A — question.** Ends at `?`. The model may legitimately close the unit.
+- **B — cloze.** Grammatically incomplete; terminating is not a licensed continuation.
+
+Demonstrated at Pythia-2.8B: the question form
+(`What accessibility attribute is missing from this HTML: <img src='photo.jpg'>?`)
+produces `\n\n` and a fresh paragraph. The cloze form
+(`<img src='photo.jpg'> is missing the attribute`) produces `"alt"` — correct, first
+try, same model.
+
+**Cloze is primary** for the headline gap number: it is the conservative choice, since
+it gives the model its best shot. A gap surviving the friendliest framing is a stronger
+claim than one measured under the format most likely to produce artifacts.
+
+**This is also a within-concept test of the frequency hypothesis.** Corpus frequency is
+a property of the concept — `alt` has the same Pile count regardless of framing. If
+frequency were doing the explanatory work, framing should not move the outcome. It
+does. That is Section III's argument arriving by a method orthogonal to the Spearman
+correlations: frequency sets availability, framing determines reachability.
+
+Note that four of the five original Experiment 2a items were *already* cloze, and they
+still fail. That is the evidence against "the gap is entirely a prompt artifact."
+
+### Logit lens (new, 2026-08-09)
+
+Exploratory work in `~/Repos/Research/maybe-neurons/`. At Pythia-2.8B, tracking `" alt"`
+rank by layer at the final prompt position of the question-framed item:
+
+- L15–16: top1 is `Answer` — the model enters an answering frame
+- L18–19: top1 is `attribute`, `alt` reaches rank **21**
+- L20–31: top1 becomes `\n`, `alt` falls away to **325**
+
+Contrast with the declarative `skip link` item, which the model answers correctly: the
+target surfaces around L16–17 and *holds to the output* (rank 0 at L31).
+
+Same mid-network emergence, opposite late-layer fate. This suggests the gap is in part
+created in the final third of the network — retrieval succeeds and is then displaced by
+a structural prior.
+
+**Caveats before this becomes a claim:** the two traces differ in framing *and* in
+declarative-vs-evaluative, so the contrast is confounded until matched pairs exist
+(step 7). Rank 21 is a closest approach, not a retrieval. There is no null distribution
+for what an unrelated token's rank trajectory looks like.
+
+---
+
+## Notes carried from discussion
 
 - **Evaluative evidence is accessibility-only**, 5 items × 13 models. The domain
-  batteries are cloze, which measures production under structural constraint — it
-  cannot test evaluative capability. Scope to this honestly rather than reframing
-  around it. Five evaluative items per domain is Paper 3, and the real cost isn't the
-  rerun, it's asserting ground truth in domains where the author isn't the authority.
-- **The floor claim doesn't need many items, it needs uniformity.** "Never, anywhere,
-  across three families" is stronger at n=5 than "sometimes, on average" at n=50.
-- **Self-citation of Paper 1** is a judgment call either way, but note that Section II
-  refutes Paper 1's headline claim (sustained late-layer binding as a necessary
-  structural condition). Cited in third person it reads as self-correction, which is a
-  strength. Omitted, it risks looking like a quiet walk-back.
-- **The expansion wasn't the mistake.** The data layer verifies clean throughout —
+  batteries are cloze, which measures production under structural constraint and cannot
+  test evaluative capability. Scope to this honestly. Extending to other domains is
+  Paper 3, and the real cost is not the rerun — it is asserting ground truth in domains
+  where the author is not the authority.
+- **The floor claim needs uniformity, not sample size.** "Never, anywhere, across three
+  families" is stronger at n=5 than "sometimes, on average" at n=50.
+- **Not self-citing Paper 1.** Decided 2026-08-09. Note that Section II refutes Paper
+  1's headline claim (sustained late-layer binding as a necessary structural condition);
+  without the citation there is no prior claim in play, and the paper states what the
+  data shows once, correctly.
+- **Screen reader may not take an evaluative form.** It is a tool, not a page property
+  — every screen-reader violation is really another concept's violation. Likely joins
+  WCAG and ARIA as a stated exclusion, leaving seven paired concepts.
+- **The expansion was not the mistake.** The data layer verifies clean throughout:
   227/227 compounds round-trip, all 65 binding CSVs match schema, manifests
-  expected == written == actual everywhere. What broke is that the *analysis* layer
-  didn't expand with the data: code that was correct for the old scope and silently
-  became wrong for the new one, without ever throwing. That's the normal cost of scope
-  change, and it's why audits exist. The expansion is what caught the binding claim.
+  expected == written == actual everywhere. What broke is that the *analysis* layer did
+  not expand with the data — code correct for the old scope that silently became wrong
+  for the new one, without ever throwing. That is the normal cost of scope change, and
+  it is why audits exist. The expansion is what caught the binding claim.
+- **Audit trigger, for next time.** Not "audit more often" — that returns findings on
+  work in progress. Audit *after the scope moves and the dust settles*. Every finding
+  here clusters at one of four scope changes: compounds 11 → 53, layout flat →
+  per-domain, suites two → three, batteries one → five domains. The cheaper version is
+  making scope visible at load time, which step 1's skip counter starts.

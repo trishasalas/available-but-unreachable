@@ -2,6 +2,21 @@
 
 Research and methodology decisions with rationale. Pre-registrations are committed to git before any results are seen — timestamps are the evidence.
 
+> **This file is the historical record through D8 (2026-08-08).**
+> New decisions live in [`docs/decisions/`](docs/decisions/), one file per decision, in
+> ADR format — see that directory's README for the why and the how. Nothing here is
+> being backfilled: CLAIMS.md cites several of these by number, and breaking those
+> citations to gain tidiness is a bad trade.
+>
+> **Known problem: D7 is assigned twice.** "Single-token-ban counterfactual at Step 5"
+> (2026-07-04) and "Binding battery consolidated across domains" (2026-08-08) both
+> carry the number. CLAIMS A2/C6/D7 refer to the single-token-ban entry, so that one
+> keeps D7. The binding-battery entry is re-recorded as
+> [`docs/decisions/0009`](docs/decisions/0009-binding-battery-consolidated.md).
+>
+> This file is hard to scan, which is how the collision happened. That is the whole
+> reason for the new structure.
+
 ---
 
 ## D7 — Binding battery consolidated across domains (2026-08-08)
@@ -202,7 +217,8 @@ level) does not.
 
 ### 2026-07-27 — Pre-registration
 
-See `docs/d1-preregistration.md`.
+See `docs/preregistrations/0001-bos-diagnostic-12b.md`
+(moved 2026-08-09 from `docs/d1-preregistration.md`).
 
 ---
 
