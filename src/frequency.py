@@ -1,22 +1,37 @@
 """
-Corpus frequency analysis
+Corpus frequency — compound inventory and Infini-gram plumbing.
 
-Tests whether compound frequency in the training corpus predicts
-compound-level accuracy across model families. Uses the Infini-gram
-API (Liu et al. 2024) for n-gram counts. Computes Spearman
-correlations with partial-correlation controls for constituent
-frequency and tokenization length.
+This module holds only what a reviewer would not ask about: the compound
+inventory, the Infini-gram HTTP call with its retry/backoff, and per-suite
+table I/O with schema validation.
+
+It deliberately does NOT hold the mechanism. The query loop, the -1 sentinel
+screen, the conditional-probability and PMI computations, and the correlation
+itself live in readable cells in notebooks/frequency-{pythia,gpt2,olmo}.ipynb.
+The test for where a line belongs: if a reviewer asked "how did you compute
+this," a notebook should answer it without opening a module.
+
+It also does NOT compute a Spearman. The pre-registered estimator has exactly
+one implementation, src/dual_spearman.py, per DECISIONS 2026-07-03. A second
+one lived here until 2026-08-09 and wrote its results to spearman_summary.csv
+— the same path dual_spearman writes as PRIMARY — so the file under the
+authoritative name held whichever estimator ran last.
 
 Usage (from notebook):
     from src.frequency import (
-        COMPOUNDS,
-        query_infinigram, build_frequency_table,
-        frequency_accuracy_correlation,
-        save_frequency_results,
+        COMPOUNDS, FAILED_COUNT,
+        query_infinigram, save_suite_frequency_table,
     )
 
-    freq_df = build_frequency_table()
-    corr = frequency_accuracy_correlation(freq_df, accuracy_df)
+    CORPUS_INDEX = "v4_piletrain_llama"        # named as a literal, not looked up
+    ...                                        # query loop lives in the notebook
+    save_suite_frequency_table(freq_df, PROJECT_ROOT, "pythia", CORPUS_INDEX)
+
+Removed 2026-08-09 (zero external consumers; see git history):
+    build_frequency_table         -> mechanism, now inline in the notebooks
+    frequency_accuracy_correlation-> duplicate estimator, use dual_spearman
+    run_frequency_analysis        -> wrote both colliding global filenames
+    save_frequency_results        -> unused, stale output path
 """
 
 import time
@@ -581,22 +596,44 @@ COMPOUND_DOMAINS = {
 # Infini-gram API                                                              #
 # --------------------------------------------------------------------------- #
 INFINIGRAM_API = "https://api.infini-gram.io/"
-PILE_INDEX = "v4_piletrain_llama"   # Pile-train, Llama-2 tokenizer, 380B tokens
+
+# Corpus indices, for reference only. These are deliberately NOT defaults, and
+# there is deliberately no suite -> index mapping in this module:
+#
+#   v4_piletrain_llama       Pile-train, Llama-2 tokenizer, 380B tokens.
+#                            pythia (exact — Pile is the training corpus)
+#                            gpt2   (proxy — WebText is not public)
+#   v4_olmo-mix-1124_llama   OLMo-Mix-1124, Llama-2 tokenizer.
+#                            olmo   (exact)
+#
+# Each frequency notebook names its index as a literal in its first cells, so
+# the corpus that produced a number is visible in the notebook that produced
+# it. Audit finding A4 is what a lookup table costs: the primary path consulted
+# the dict correctly and the robustness paths did not, and four contradictory
+# OLMo rho values ended up on disk with no way to tell them apart.
+
+#: Infini-gram returns this as a count when a lookup fails after all retries.
+#: It is never a real count. Screen it to NaN before it reaches any statistic —
+#: it is not caught by dropna(), and as the smallest value it would take the
+#: bottom rank in a Spearman.
+FAILED_COUNT = -1
 
 
-def query_infinigram(ngram, index=PILE_INDEX, retries=5, delay=2.0):
-    """Query Infini-gram for the count of an n-gram in the corpus.
+def query_infinigram(ngram, index, retries=5, delay=2.0):
+    """Query Infini-gram for the count of an n-gram in a corpus.
 
     Args:
         ngram: string to count (e.g. "skip link", "screen reader").
-                Case-sensitive. Tokenized by infini-gram server-side.
-        index: corpus index. Default is Pile-train (Llama-2 tokenizer).
+            Case-sensitive. Tokenized by Infini-gram server-side.
+        index: corpus index. REQUIRED — there is no default on purpose. A
+            default here is how a robustness path silently used Pile counts
+            for OLMo (A4); with none, forgetting it raises at the call site.
         retries: number of retry attempts on failure.
         delay: seconds between retries.
 
     Returns:
         dict with keys: ngram, count, approx, tokens, latency_ms.
-        On failure after retries: count=-1 and an error key.
+        On failure after retries: count=FAILED_COUNT (-1) and an error key.
 
     Note: the Pile-train index uses the Llama-2 tokenizer, not Pythia's
     GPT-NeoX tokenizer. For regular English words this doesn't affect
@@ -625,7 +662,7 @@ def query_infinigram(ngram, index=PILE_INDEX, retries=5, delay=2.0):
 
             if "error" in data:
                 print(f"  API error for '{ngram}': {data['error']}")
-                return {"ngram": ngram, "count": -1, "error": data["error"]}
+                return {"ngram": ngram, "count": FAILED_COUNT, "error": data["error"]}
 
             return {
                 "ngram": ngram,
@@ -640,216 +677,116 @@ def query_infinigram(ngram, index=PILE_INDEX, retries=5, delay=2.0):
                 time.sleep(delay)
             else:
                 print(f"  Failed after {retries} attempts for '{ngram}': {e}")
-                return {"ngram": ngram, "count": -1, "error": str(e)}
+                return {"ngram": ngram, "count": FAILED_COUNT, "error": str(e)}
 
     # All retries exhausted by persistent rate-limiting (403). Degrade like the
-    # exception path above — return the -1 sentinel so build_frequency_table
-    # records a miss and moves on, instead of returning None and crashing.
+    # exception path above — return the sentinel so the caller records a miss
+    # and moves on, instead of returning None and crashing.
     print(f"  Rate limited out after {retries} attempts for '{ngram}'")
-    return {"ngram": ngram, "count": -1, "error": "rate_limited"}
+    return {"ngram": ngram, "count": FAILED_COUNT, "error": "rate_limited"}
 
 
-def build_frequency_table(compounds=None, index=PILE_INDEX):
-    """Query Infini-gram for all compounds and their component words.
+# --------------------------------------------------------------------------- #
+# Per-suite table I/O                                                          #
+# --------------------------------------------------------------------------- #
+# One suite, one file, one writer. The frequency notebooks are the only
+# writers; src/dual_spearman.py is the only reader. Nothing writes a global
+# results/frequency/frequency_table.csv any more — that file is a frozen Pile
+# artifact (see its sibling frequency_table.README.md) and a pipeline that can
+# overwrite a frozen artifact makes it not frozen.
 
-    For each compound, queries:
-      - bigram count (e.g. "skip link")
-      - word1 unigram count (e.g. "skip")
-      - word2 unigram count (e.g. "link")
+FREQUENCY_TABLE_COLUMNS = [
+    "compound", "domain", "word1", "word2",
+    "bigram_count", "word1_count", "word2_count",
+    "conditional_prob", "pmi", "corpus_index",
+]
 
-    Computes conditional probability: P(word2 | word1) = count(bigram) / count(word1).
+COUNT_COLUMNS = ["bigram_count", "word1_count", "word2_count"]
+
+
+def suite_frequency_table_path(project_root, suite):
+    """Canonical path for a suite's frequency table."""
+    return (Path(project_root) / "results" / "frequency" / suite /
+            f"{suite}_frequency_table.csv")
+
+
+def save_suite_frequency_table(freq_df, project_root, suite, index):
+    """Write results/frequency/{suite}/{suite}_frequency_table.csv.
+
+    Plumbing only — schema validation, provenance stamping, file I/O. The
+    query loop and the FAILED_COUNT screen live in the notebook, where a
+    reviewer can read them.
+
+    Stamps every row with `corpus_index` so provenance is recoverable from the
+    artifact rather than from the notebook that produced it.
 
     Args:
-        compounds: list of (name, word1, word2, prompt) tuples.
-                   Defaults to COMPOUNDS.
-        index: Infini-gram corpus index.
-
-    Returns:
-        DataFrame with columns: compound, domain, word1, word2, bigram_count,
-        word1_count, word2_count, conditional_prob.
-    """
-    if compounds is None:
-        compounds = COMPOUNDS
-
-    rows = []
-    for name, w1, w2, _prompt in compounds:
-        print(f"Querying: {name}...")
-
-        # Bigram (skip for single-word concepts like WCAG, ARIA)
-        if w2 is not None:
-            bigram = f"{w1} {w2}"
-            bg = query_infinigram(bigram, index=index)
-            bigram_count = bg["count"]
-        else:
-            bigram_count = None
-
-        # Unigram: word1
-        ug1 = query_infinigram(w1, index=index)
-        w1_count = ug1["count"]
-
-        # Unigram: word2 (if it exists)
-        if w2 is not None:
-            ug2 = query_infinigram(w2, index=index)
-            w2_count = ug2["count"]
-        else:
-            w2_count = None
-
-        # Conditional probability
-        if bigram_count is not None and w1_count > 0:
-            cond_prob = bigram_count / w1_count
-        else:
-            cond_prob = None
-
-        rows.append({
-            "compound": name,
-            "domain": COMPOUND_DOMAINS.get(name, "unknown"),
-            "word1": w1,
-            "word2": w2,
-            "bigram_count": bigram_count,
-            "word1_count": w1_count,
-            "word2_count": w2_count,
-            "conditional_prob": round(cond_prob, 6) if cond_prob else None,
-        })
-
-        # Be polite to the API
-        time.sleep(2.0)
-
-    return pd.DataFrame(rows)
-
-
-# --------------------------------------------------------------------------- #
-# Correlation analysis                                                         #
-# --------------------------------------------------------------------------- #
-def frequency_accuracy_correlation(freq_df, accuracy_df, suite="pythia"):
-    """Spearman correlation between corpus frequency and mean accuracy.
-
-    Merges the frequency table with per-compound mean accuracy from
-    elicitation results. Tests whether corpus frequency predicts how
-    well a model suite retrieves compound knowledge. Includes partial
-    correlations controlling for constituent frequency and tokenization
-    length.
-
-    Args:
-        freq_df: DataFrame from build_frequency_table.
-        accuracy_df: DataFrame with at least columns 'compound' and
-            'mean_accuracy'. Typically aggregated from elicitation CSVs.
-        suite: label for which model suite produced the accuracy data
-            (stored in output for bookkeeping, not used for filtering).
-
-    Returns:
-        dict with:
-            merged: the merged DataFrame (for inspection).
-            suite: the suite label.
-            bigram_spearman: Spearman r and p for bigram count vs mean_accuracy.
-            conditional_spearman: Spearman r and p for conditional prob vs
-                mean_accuracy.
-            word1_spearman: Spearman r and p for word1 frequency vs
-                mean_accuracy (partial-correlation control).
-    """
-    from scipy.stats import spearmanr
-
-    merged = freq_df.merge(accuracy_df[["compound", "mean_accuracy"]],
-                           on="compound", how="inner")
-
-    results = {"merged": merged, "suite": suite}
-
-    valid = merged.dropna(subset=["mean_accuracy"])
-
-    for col, label in [("bigram_count", "bigram_spearman"),
-                       ("conditional_prob", "conditional_spearman"),
-                       ("word1_count", "word1_spearman")]:
-        subset = valid.dropna(subset=[col])
-        if len(subset) >= 4:
-            r, p = spearmanr(subset[col], subset["mean_accuracy"])
-            results[label] = {"r": round(r, 4), "p": round(p, 4), "n": len(subset)}
-        else:
-            results[label] = {"r": None, "p": None, "n": len(subset),
-                              "note": "too few data points"}
-
-    return results
-
-
-# --------------------------------------------------------------------------- #
-# Persistence                                                                  #
-# --------------------------------------------------------------------------- #
-def save_frequency_results(freq_df, project_root, filename="frequency_analysis.csv"):
-    """Save frequency analysis results to results/analysis/.
-
-    Args:
-        freq_df: DataFrame from build_frequency_table.
+        freq_df: DataFrame with at least the non-provenance columns of
+            FREQUENCY_TABLE_COLUMNS. Failed lookups must already be NaN.
         project_root: path to the tmlr repo root.
-        filename: output filename.
+        suite: 'pythia' | 'gpt2' | 'olmo'.
+        index: the Infini-gram index this table was queried against.
 
     Returns:
-        Path to the saved file.
+        Path to the written file.
+
+    Raises:
+        ValueError: if required columns are missing, or if a negative count
+            survived — which means the FAILED_COUNT screen was skipped.
     """
-    out_dir = Path(project_root) / "results" / "analysis"
-    out_dir.mkdir(parents=True, exist_ok=True)
-    path = out_dir / filename
-    freq_df.to_csv(path, index=False)
-    print(f"Saved {len(freq_df)} rows to {path}")
-    return path
+    df = freq_df.copy()
+    df["corpus_index"] = index
+
+    missing = [c for c in FREQUENCY_TABLE_COLUMNS if c not in df.columns]
+    if missing:
+        raise ValueError(f"{suite}: frequency table missing columns {missing}")
+    df = df[FREQUENCY_TABLE_COLUMNS]
+
+    # A negative count here means the notebook did not screen FAILED_COUNT.
+    # Fail loudly rather than writing a -1 that a later Spearman would rank.
+    for col in COUNT_COLUMNS:
+        n_bad = int((df[col] < 0).sum())
+        if n_bad:
+            raise ValueError(
+                f"{suite}: {n_bad} negative value(s) in {col} — the "
+                f"Infini-gram {FAILED_COUNT} sentinel reached save unscreened")
+
+    out = suite_frequency_table_path(project_root, suite)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    df.to_csv(out, index=False, lineterminator="\n")
+
+    n_screened = int(df["bigram_count"].isna().sum())
+    print(f"{suite}: wrote {len(df)} rows -> {out}")
+    print(f"{suite}: corpus_index = {index}")
+    print(f"{suite}: {n_screened} row(s) have no usable bigram count")
+    return out
 
 
-# --------------------------------------------------------------------------- #
-# Pipeline entry point                                                         #
-# --------------------------------------------------------------------------- #
-def run_frequency_analysis(project_root, accuracy_df=None, accuracy_path=None,
-                           suite="pythia", index=None):
-    """Run the full frequency analysis pipeline.
-
-    Queries Infini-gram for corpus frequency of all compounds, correlates
-    with mean accuracy, and saves everything to results/frequency/.
+def load_suite_frequency_table(project_root, suite):
+    """Read a suite's frequency table and the corpus index it records.
 
     Args:
         project_root: path to the tmlr repo root.
-        accuracy_df: DataFrame with 'compound' and 'mean_accuracy' columns.
-            If None, loads from accuracy_path.
-        accuracy_path: path to a CSV with compound-level accuracy. Used
-            only when accuracy_df is not provided.
-        suite: model suite label (for output filenames).
-        index: Infini-gram corpus index. Defaults to PILE_INDEX.
+        suite: 'pythia' | 'gpt2' | 'olmo'.
 
     Returns:
-        dict with:
-            freq_df: DataFrame with corpus frequency data.
-            correlation: Spearman correlation results.
+        (df, corpus_index) — the table, and the single index string it carries.
+
+    Raises:
+        FileNotFoundError: if the suite has no table yet.
+        ValueError: if the table carries more than one corpus_index, which
+            would mean two corpora were merged into one set of x-values.
     """
-    if index is None:
-        index = PILE_INDEX
+    path = suite_frequency_table_path(project_root, suite)
+    if not path.exists():
+        raise FileNotFoundError(
+            f"{suite}: no per-suite frequency table at {path}. "
+            f"Run notebooks/frequency-{suite}.ipynb first.")
 
-    out_dir = Path(project_root) / "results" / "frequency"
-    out_dir.mkdir(parents=True, exist_ok=True)
-
-    freq_df = build_frequency_table(index=index)
-    freq_path = out_dir / "frequency_table.csv"
-    freq_df.to_csv(freq_path, index=False)
-    print(f"Saved frequency table -> {freq_path}")
-
-    if accuracy_df is None and accuracy_path is not None:
-        accuracy_df = pd.read_csv(accuracy_path)
-
-    correlation = None
-    if accuracy_df is not None:
-        corr = frequency_accuracy_correlation(freq_df, accuracy_df, suite=suite)
-        correlation = {
-            "bigram_spearman": corr["bigram_spearman"],
-            "conditional_spearman": corr["conditional_spearman"],
-            "word1_spearman": corr["word1_spearman"],
-        }
-        merged_path = out_dir / f"{suite}_frequency_accuracy.csv"
-        corr["merged"].to_csv(merged_path, index=False)
-        print(f"Saved {suite} frequency-accuracy merge -> {merged_path}")
-
-        spearman_rows = []
-        for metric, values in correlation.items():
-            spearman_rows.append({"suite": suite, "metric": metric, **values})
-        spearman_df = pd.DataFrame(spearman_rows)
-        spearman_path = out_dir / "spearman_summary.csv"
-        spearman_df.to_csv(spearman_path, index=False)
-        print(f"Saved Spearman summary -> {spearman_path}")
-
-    return {
-        "freq_df": freq_df,
-        "correlation": correlation,
-    }
+    df = pd.read_csv(path)
+    found = sorted(df["corpus_index"].dropna().unique())
+    if len(found) != 1:
+        raise ValueError(
+            f"{suite}: expected exactly one corpus_index in {path}, "
+            f"found {found}")
+    return df, found[0]
