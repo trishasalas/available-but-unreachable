@@ -34,45 +34,29 @@
 
 ## The accuracy line
 
-> **Added 2026-08-09.** The plan below is a complete cleanup. Accuracy does not require
-> a complete cleanup. This section separates the two, because the list otherwise reads
+> **Added 2026-08-09.** The plan below is a complete cleanup. Accuracy does not require  
+> a complete cleanup. This section separates the two, because the list otherwise reads  
 > as one long undifferentiated obligation.
 
-**The bar is: every number in the paper is correct.** Not tidy, not fully documented —
-correct.
+**The bar is: every number in the paper is correct.** Not tidy, not fully documented — correct.
 
 ### Trustworthy now
 
-- **The gap tables.** Concept population verified against the ten Experiment 1
-  originals, `source` derived rather than hardcoded, the impossible 6.9B negative
-  resolved, the 12B declarative regression real and reproducing a finding recorded
-  2026-06-28. Section I's core numbers are sound as of `aa7e1bb`.
-- **The binding data.** 227/227 compounds round-trip, all 65 CSVs match schema,
-  manifests reconcile. Section II's null (A7: gpt2 r=0.087, pythia r=−0.003, olmo
-  r=0.115) is computed from clean data.
+- **The gap tables.** Concept population verified against the ten Experiment 1 originals, `source` derived rather than hardcoded, the impossible 6.9B negative resolved, the 12B declarative regression real and reproducing a finding recorded 2026-06-28. Section I's core numbers are sound as of `aa7e1bb`.
+- **The binding data.** 227/227 compounds round-trip, all 65 CSVs match schema, manifests reconcile. Section II's null (A7: gpt2 r=0.087, pythia r=−0.003, olmo r=0.115) is computed from clean data.
 
 ### NOT trustworthy — these change numbers
 
 Four items. Nothing else on this page affects a value in the paper.
 
-1. **A18 — frequency pipeline bugs.** Infini-gram's `-1` failure sentinel enters
-   Spearman as if it were a real count, and `cond_prob == 0.0` becomes `None` through a
-   truthiness check instead of `is not None`. **Every rho in Section III is suspect
-   until this is fixed.** Partial-correlation controls are also dropped from the
-   per-suite path.
-2. **0012 — the OLMo corpus.** Four contradictory OLMo-1B rho values are on disk
-   because partial/Kendall/bootstrap use Pile x-values while the primary uses Dolma.
-   Needs ruling, then regenerating with a corpus column so provenance survives.
-3. **A1 — frequency filename clobbering.** `frequency_table.csv` and
-   `spearman_summary.csv` use fixed names inside a loop over suites, so whichever suite
-   ran last is what is on disk. The pythia and gpt2 rho values currently cannot be
-   trusted to be theirs.
-4. **A3 — the completion join.** Resolves on `alt text` alone because of the three-way
-   concept spelling mismatch. The p=0.0078 result is real but answers a much smaller
-   question than the claim states. Needs 0015's code landed first.
+1. **A18 — frequency pipeline bugs.** Infini-gram's `-1` failure sentinel enters Spearman as if it were a real count, and `cond_prob == 0.0` becomes `None` through a truthiness check instead of `is not None`. **Every rho in Section III is suspect**  
+** until this is fixed.** Partial-correlation controls are also dropped from the per-suite path.
+2. **0012 — the OLMo corpus.** Four contradictory OLMo-1B rho values are on disk because partial/Kendall/bootstrap use Pile x-values while the primary uses Dolma. Needs ruling, then regenerating with a corpus column so provenance survives.
+3. **A1 — frequency filename clobbering.** `frequency_table.csv` and `spearman_summary.csv` use fixed names inside a loop over suites, so whichever suite ran last is what is on disk. The pythia and gpt2 rho values currently cannot be  
+ trusted to be theirs.
+4. **A3 — the completion join.** Resolves on `alt text` alone because of the three-way concept spelling mismatch. The p=0.0078 result is real but answers a much smaller question than the claim states. Needs 0015's code landed first.
 
-**That is the whole accuracy list: fix A18, rule 0012, regenerate frequency once, land
-0015 and fix the join.** One decision, one code fix, one run, one join.
+**That is the whole accuracy list: fix A18, rule 0012, regenerate frequency once, land 0015 and fix the join.** One decision, one code fix, one run, one join.
 
 ### Below the line — does not change a number
 
@@ -81,19 +65,19 @@ Everything else. Recorded so it is visible, not so it blocks:
 - p-values printing as `0.0` (A22) — presentation; the underlying values are fine
 - file locations, `adhoc/` moves, archive tidying (0013)
 - `pythia-13b` / `pythia-12b` naming (0014) — an alias already handles it
-- figure scripts and dangling doc pointers — **these come last**, after the data
-  settles; repairing a figure path before the data is final is the same error as
-  updating prose before the numbers stabilised
+- figure scripts and dangling doc pointers — **these come last**, after the data  
+settles; repairing a figure path before the data is final is the same error as  
+updating prose before the numbers stabilised
 - CLAIMS pointer updates, dead `src/` modules, the entropy coverage gap
-- the latent gpt2/gpt2-small collision — currently 0 rows, harmless until the skipped
-  CSV is fixed
+- the latent gpt2/gpt2-small collision — currently 0 rows, harmless until the skipped  
+CSV is fixed
 - TransformerLens 2.17 → 2.18 drift — undocumented, but the results reproduce
 
 ### Not required for the paper at all
 
-- **The evaluative battery expansion** (preregistration 0002, step 7) and the
-  **two-framing design**. These are a new experiment. They make a stronger paper and
-  they are not a prerequisite for the one that exists.
+- **The evaluative battery expansion** (preregistration 0002, step 7) and the  
+**two-framing design**. These are a new experiment. They make a stronger paper and  
+they are not a prerequisite for the one that exists.
 - **The logit lens work** (step 9). Same — a revision or Paper 3, not a blocker.
 
 ---
@@ -207,8 +191,10 @@ Elicitation only, 13 models. *Why cheap: no binding, no frequency, no infini-gra
 - [ ] A16 — entropy battery gaps (pythia-1b has 1 of 5 domains; 13 legacy schema-drifted CSVs)
 - [ ] A17 — OLMo provenance: 1B commit-sha files in the 7B elicitation dir
 - [ ] A19 — archive superseded frequency-era artifacts (four different "pythia primary rho" values on disk)
-- [ ] A20 — delete dead `src/` modules, orphan `.pyc`, `data/backup.py`. **Do not delete** top-level `data/*.yaml` (prompt files, key `prompts`) — a different artifact from `data/binding/*.yaml` (key `compounds`). 
+- [ ] A20 — delete dead `src/` modules, orphan `.pyc`, `data/backup.py`. **Do not delete** top-level `data/*.yaml` (prompt files, key `prompts`) — a different artifact from `data/binding/*.yaml` (key `compounds`).
+
 **Keep** `dual_spearman.py`, `closeout_followups.py`, `d6/d7/d8_*.py`.
+
 - [ ] A21 — ~14 dangling doc pointers; the duplicate D7 (now noted in `docs/decisions/README.md`); appendix table placeholder. Set VS Code `workbench.editorAssociations` for `*.csv`
 
 ---
