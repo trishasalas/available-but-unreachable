@@ -1,3 +1,4 @@
-suite,rowlevel_spearman_rho,ci95_low,ci95_high,n_rows,n_compounds,n_boot
-pythia,0.4237,0.2443,0.5716,294,49,2000
-gpt2,0.3865,0.1956,0.5417,196,49,2000
+suite,corpus_index,rowlevel_spearman_rho,ci95_low,ci95_high,n_rows,n_compounds,n_boot
+pythia,v4_piletrain_llama,0.4252,0.2562,0.5728,294,49,2000
+gpt2,v4_piletrain_llama,0.3886,0.2085,0.542,196,49,2000
+olmo,v4_olmo-mix-1124_llama,0.4586,0.2643,0.6013,147,49,2000

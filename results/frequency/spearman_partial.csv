@@ -1,5 +1,7 @@
-suite,control,partial_rho,raw_rho,n_compounds
-pythia,compound_token_count,0.5603,0.5715,49
-pythia,word1_unigram_count,0.5913,0.5715,49
-gpt2,compound_token_count,0.4896,0.5052,49
-gpt2,word1_unigram_count,0.4857,0.5052,49
+suite,corpus_index,control,partial_rho,raw_rho,n_compounds
+pythia,v4_piletrain_llama,compound_token_count,0.5807,0.5875,49
+pythia,v4_piletrain_llama,word1_unigram_count,0.6059,0.5875,49
+gpt2,v4_piletrain_llama,compound_token_count,0.5092,0.5194,49
+gpt2,v4_piletrain_llama,word1_unigram_count,0.4988,0.5194,49
+olmo,v4_olmo-mix-1124_llama,compound_token_count,0.581,0.5823,49
+olmo,v4_olmo-mix-1124_llama,word1_unigram_count,0.5969,0.5823,49

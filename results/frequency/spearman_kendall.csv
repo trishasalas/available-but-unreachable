@@ -1,5 +1,7 @@
-suite,sense_split,kendall_tau_b,kendall_p,n_compounds
-pythia,all_rows,0.4348,0.0001,49
-pythia,a11y_sense_only,0.7191,0.0113,9
-gpt2,all_rows,0.3975,0.0003,49
-gpt2,a11y_sense_only,-0.1491,0.6872,6
+suite,corpus_index,sense_split,kendall_tau_b,kendall_p,n_compounds
+pythia,v4_piletrain_llama,all_rows,0.449,3.1777795256202014e-05,49
+pythia,v4_piletrain_llama,a11y_sense_only,0.7191,0.011253893050231846,9
+gpt2,v4_piletrain_llama,all_rows,0.4108,0.00021105100104663234,49
+gpt2,v4_piletrain_llama,a11y_sense_only,-0.1491,0.6871736183096481,6
+olmo,v4_olmo-mix-1124_llama,all_rows,0.461,2.7241504097795504e-05,49
+olmo,v4_olmo-mix-1124_llama,a11y_sense_only,0.0759,0.715062438791529,15
