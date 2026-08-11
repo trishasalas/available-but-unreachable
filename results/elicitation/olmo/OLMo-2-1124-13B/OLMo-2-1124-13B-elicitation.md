@@ -1,7 +1,7 @@
 # Model data captured during Elicitation Battery
 
-- Run (UTC): 2026-08-07T23:04:50.237628+00:00
-- Git commit: f58ef5d (DIRTY)
+- Run (UTC): 2026-08-11T23:48:11.906758+00:00
+- Git commit: 021b924
 
 ## Model
 
@@ -13,6 +13,11 @@
 - Hidden size: 5120
 - Vocab size: 100352
 - Params: 13717.9M
+- Revision: stage1-step596057-tokens5001B
+
+## Server
+
+- GPU: NVIDIA A100-SXM4-80GB
 
 ## Generation
 
@@ -26,6 +31,11 @@
 - torch: 2.11.0+cu128
 - python: 3.12.13
 - platform: Linux-6.6.122+-x86_64-with-glibc2.35
+
+## Hugging Face
+
+- Commit SHA: 3fefddc1bf18a30e1d9b91000271630718f2aa8b
+- Revision: stage1-step596057-tokens5001B
 
 ## Domains
 
