@@ -70,6 +70,13 @@ silently. Default to leaving files where they are.
 **If a task has a verifiable pass condition, run it and report the number.** If it does
 not match, stop and report — do not adjust until it does.
 
+**There is no test suite.** No `tests/`, no `test_*.py` anywhere outside `_Archive/`.
+The pass conditions written into the task briefs are the regression harness, and they
+run only when a human types them. Nothing in this repo fails on its own — which is why
+the failure mode below is the shape it is. Treat a brief's pass conditions as the
+tests for that change: run every one, report every number, and snapshot a baseline
+before editing when the condition is "this should not move."
+
 ## The recurring failure mode — read this one
 
 Every significant bug in this repo has the same shape: **a record that was true when

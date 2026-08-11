@@ -49,11 +49,16 @@ def run_gap_analysis(project_root):
 
     # Accuracy coding applies only to accessibility-domain prompts;
     # other domains have no coding rules and get 'uncoded'.
+    #
+    # concept_raw, NOT concept (decision 0015). The loader normalizes `concept`
+    # to canonical form; accuracy_coding dispatches on the on-disk space form,
+    # case-sensitively, and codes 'incorrect' on a miss rather than raising.
+    # Passing `concept` here sends the declarative mean to 0.0 silently.
     elicitation['accuracy'] = 'uncoded'
     acc_mask = elicitation['domain'] == 'accessibility'
     elicitation.loc[acc_mask, 'accuracy'] = elicitation.loc[acc_mask].apply(
         lambda r: code_response(
-            r['prompt_type'], r['concept'], r['prompt'], r['output']
+            r['prompt_type'], r['concept_raw'], r['prompt'], r['output']
         ),
         axis=1
     )
@@ -126,8 +131,11 @@ def run_gap_analysis(project_root):
                     (a11y['prompt_type'] == 'declarative')
                 ]
                 if len(matches) > 0:
+                    # Group on the canonical concept, code on the row's own
+                    # on-disk spelling (decision 0015). The loop variable is
+                    # normalized and would miss every rule.
                     coded = code_response(
-                        'declarative', concept,
+                        'declarative', matches.iloc[0]['concept_raw'],
                         matches.iloc[0]['prompt'],
                         matches.iloc[0]['output']
                     )
@@ -166,7 +174,12 @@ SCALE_ORDERS = {
 def _concept_to_compound(concept):
     """Map an accuracy-coding concept (space form) to a binding compound
     (snake_case). Single-token concepts (ARIA, WCAG, HTML) have no binding
-    compound and simply won't join."""
+    compound and simply won't join.
+
+    Since decision 0015 its callers pass an already-canonical `concept`, so
+    this is now a no-op on live data. Kept because it is idempotent and still
+    correct for the raw form; deleting it would make the join depend on the
+    loader silently."""
     special = {'captions': 'closed_captions', 'closed captions': 'closed_captions'}
     c = str(concept).strip().lower()
     return special.get(c, c.replace(' ', '_'))

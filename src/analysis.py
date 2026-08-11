@@ -17,22 +17,29 @@ DONE 2026-08-09 (audit findings A6, A9, A10; decision 0010 option A):
   - Every load reports its own scope: source counts, skipped CSVs, and any
     (suite, scale) claimed by more than one model directory.
 
+DONE 2026-08-11 (audit finding A3; decision 0015):
+  - `concept` is NORMALIZED to canonical form (lowercase, underscores) on
+    every frame that carries it. The on-disk spelling is preserved verbatim
+    as `concept_raw`, and every load prints the vocabulary collapse.
+  - `compound` (binding) is deliberately NOT normalized. Verified 2026-08-11:
+    all 227 binding compounds are already canonical, so normalizing there
+    would be a no-op dressed up as a safeguard. If that ever stops being
+    true it shows up as a failed join, not as silently merged rows.
+
 DEFERRED — not an omission:
-  - Concept-key normalization (decision 0015, audit finding A3) is NOT applied
-    to the `concept` / `compound` columns. `_canonical_concept` below exists
-    and is used for the `source` membership test only. The three spellings
-    documented in 0015 (`closed_captions` / `closed captions` / `captions`)
-    are still live on the loaded frames, so the completion-to-declarative
-    join still resolves on `alt text` alone.
-    Blocked on: 0015 being ruled. It cannot land as a drop-in, because
-    src/accuracy_coding.py dispatches on a 52-key rules dict in space form,
-    case-sensitively, and returns 'incorrect' on a miss rather than raising —
-    zero of those 52 keys survive canonicalization. Agreed shape when it
-    lands: preserve the on-disk spelling as `concept_raw`, normalize
-    `concept` in place here, and have gap_analysis pass `concept_raw` to
-    code_response.
   - The gpt2 / gpt2-small collision is REPORTED, not resolved. Deduping it is
     a decision about which run is authoritative, not a loader concern.
+
+DEPENDS ON — read before changing either column:
+  - Every consumer that DISPATCHES on the concept (rather than joining on it)
+    must read `concept_raw`, not `concept`. src/accuracy_coding.py routes on a
+    52-key rules dict in space form, case-sensitively ('WCAG', 'semantic
+    HTML'), and `rules.get(concept, {})` returns 'incorrect' on a miss rather
+    than raising. Zero of those 52 keys survive canonicalization, so a
+    consumer that passes the normalized `concept` to code_response codes every
+    declarative row incorrect — declarative mean 0.0 — with no error anywhere.
+    Current dispatching consumers: src/gap_analysis.py (2 call sites),
+    src/dual_spearman.py (2 call sites). Both pass `concept_raw`.
 """
 
 from pathlib import Path
@@ -52,7 +59,7 @@ KNOWN_DOMAINS = {'accessibility', 'control', 'medical', 'legal', 'finance'}
 # `source:` field in data/accessibility.yaml, deferred to the Phase 4 frequency
 # regeneration; this frozenset is superseded at that point.
 #
-# Trap: the tenth is `closed captions`, NOT `captions` (renamed in 7f84365).
+# Trap: the tenth is `closed captions`, NOT `captions` (renamed in ca01b59).
 # Getting it wrong silently yields nine concepts and no error.
 ORIGINAL_CONCEPTS = frozenset({
     'screen_reader',
@@ -140,6 +147,12 @@ def load_all_results(project_root):
         if 'scale' in df.columns:
             df.sort_values('scale', inplace=True)
 
+    # Concept-key normalization (decision 0015). Exactly one place, on purpose.
+    vocab = {}
+    for name, df in [('elicitation', elicitation_df), ('entropy', entropy_df),
+                     ('binding', binding_df)]:
+        vocab[name] = _normalize_concept_column(df)
+
     print("Loaded:")
     for name, df in [('Elicitation', elicitation_df), ('Entropy', entropy_df), ('Binding', binding_df)]:
         if not df.empty and 'model' in df.columns:
@@ -164,7 +177,50 @@ def load_all_results(project_root):
             listed = ', '.join(f"{d} ({n} rows)" for d, n in sorted(dirs.items()))
             print(f"  {data_type}/{suite} @ {scale_label(scale)}: {listed}")
 
+    # Vocabulary scope. Printed every load rather than documented once, because
+    # a collapse that appears later (a new battery, a re-spelled concept) is
+    # exactly the kind of change that otherwise lands silently.
+    for name, v in vocab.items():
+        if not v:
+            continue
+        print(f"\n{name}: concept vocabulary {v['n_before']} -> {v['n_after']} "
+              f"distinct after normalization "
+              f"({len(v['collapsed'])} many-to-one collapse(s))")
+        for canonical, raws in sorted(v['collapsed'].items()):
+            print(f"  {raws} -> {canonical!r}")
+
     return elicitation_df, entropy_df, binding_df
+
+
+def _normalize_concept_column(df):
+    """Canonicalize `concept` in place, preserving the on-disk spelling.
+
+    Decision 0015. Sets `concept_raw` to the value as written on disk, then
+    rewrites `concept` to canonical form via `_canonical_concept`.
+
+    Returns a vocabulary report: distinct counts before/after, and the
+    many-to-one collapses keyed by canonical form. Returns {} for frames with
+    no `concept` column (binding, which carries `compound` and is already
+    canonical — see the module docstring).
+
+    Depends on: no consumer dispatching on `concept`. Anything that routes on
+    the concept — code_response, observe_sense, any dict keyed in space form —
+    must read `concept_raw`.
+    """
+    if df.empty or 'concept' not in df.columns:
+        return {}
+
+    df['concept_raw'] = df['concept']
+    df['concept'] = df['concept'].map(_canonical_concept)
+
+    groups = {}
+    for raw, canonical in zip(df['concept_raw'], df['concept']):
+        groups.setdefault(canonical, set()).add(raw)
+    return {
+        'n_before': int(df['concept_raw'].nunique()),
+        'n_after': int(df['concept'].nunique()),
+        'collapsed': {k: sorted(v) for k, v in groups.items() if len(v) > 1},
+    }
 
 
 def _canonical_concept(value):
@@ -174,18 +230,10 @@ def _canonical_concept(value):
     Handles genuine cross-battery aliases (CONCEPT_ALIASES), not just
     whitespace and case.
 
-    NOTE (decision 0015, deferred): this is currently used ONLY for the
-    `source` membership test below. It is deliberately NOT applied to the
-    `concept` / `compound` columns themselves, because src/accuracy_coding.py
-    dispatches on a 52-key rules dict in space form, case-sensitively
-    ('WCAG', 'semantic HTML'); a miss returns 'incorrect' rather than raising.
-    Zero of those 52 keys survive canonicalization, so normalizing the column
-    in place would silently code every declarative row incorrect.
-
-    When 0015 is ruled, the agreed shape is: preserve the on-disk spelling as
-    `concept_raw`, normalize `concept` in place here, and have gap_analysis
-    pass `concept_raw` to code_response. Until then the three spellings
-    documented in 0015 remain live on the loaded frames.
+    Applied (decision 0015, landed 2026-08-11) by `_normalize_concept_column`
+    to the `concept` column of every loaded frame, and by `_derive_source`
+    below for the ORIGINAL_CONCEPTS membership test. NOT applied to binding's
+    `compound` column, which is already canonical.
     """
     c = str(value).strip().lower().replace(' ', '_')
     return CONCEPT_ALIASES.get(c, c)

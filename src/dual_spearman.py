@@ -114,13 +114,20 @@ def build_compound_table(project_root, suite):
     elic, _, _ = load_all_results(project_root)
     elic['scale_label'] = elic['scale'].apply(scale_label)
     elic = elic[elic['prompt_type'] == 'declarative'].copy()
+    # concept_raw, NOT concept (decision 0015). Both of these dispatch on the
+    # on-disk space form — code_response via a 52-key rules dict, observe_sense
+    # via A11Y_SENSE_MARKERS — and both miss silently rather than raising.
     elic['accuracy'] = elic.apply(
-        lambda r: code_response('declarative', r['concept'], r['prompt'],
+        lambda r: code_response('declarative', r['concept_raw'], r['prompt'],
                                 r['output']), axis=1)
     elic['sense'] = elic.apply(
-        lambda r: observe_sense(r['concept'], r['output']), axis=1)
+        lambda r: observe_sense(r['concept_raw'], r['output']), axis=1)
     # Faithful concept->compound (handles captions->closed_captions and
     # semantic HTML->semantic_html; falls back to space->underscore).
+    # Since 0015 `concept` arrives canonical, so every lookup takes the
+    # fallback and the result is unchanged — verified: no frequency-table
+    # compound is spelled 'WCAG'/'ARIA', the only two entries whose value is
+    # not the fallback's output.
     elic['compound'] = elic['concept'].map(
         lambda c: CONCEPT_TO_COMPOUND.get(c, str(c).replace(' ', '_')))
     elic = elic[elic['suite'] == suite].copy()
