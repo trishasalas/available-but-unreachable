@@ -14,7 +14,6 @@ paper-2/
 paper-3/
 .claude/
 _analysis/*
-CLAUDE.md
 
 # paper build artifacts (restructure 2026-07-10)
 paper/build-debug/
