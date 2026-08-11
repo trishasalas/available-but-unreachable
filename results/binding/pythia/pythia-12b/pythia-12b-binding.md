@@ -5,7 +5,9 @@
 
 ## Model
 
-- Model name: pythia-13b
+- Model name: pythia-12b
+  (recorded at run time as `pythia-13b`; renamed 2026-08-10 under decision 0014.
+  Same checkpoint — `Params: 11845.4M` below is EleutherAI/pythia-12b.)
 - Model dtype: torch.float32
 - Device: cuda:0
 - Layers: 36
@@ -30,11 +32,11 @@
 
 | domain | expected | written | file |
 |---|---|---|---|
-| control | 63360 | 63360 | `pythia-13b-control.csv` |
-| accessibility | 76320 | 76320 | `pythia-13b-accessibility.csv` |
-| medical | 60480 | 60480 | `pythia-13b-medical.csv` |
-| legal | 63360 | 63360 | `pythia-13b-legal.csv` |
-| finance | 63360 | 63360 | `pythia-13b-finance.csv` |
+| control | 63360 | 63360 | `pythia-12b-control.csv` |
+| accessibility | 76320 | 76320 | `pythia-12b-accessibility.csv` |
+| medical | 60480 | 60480 | `pythia-12b-medical.csv` |
+| legal | 63360 | 63360 | `pythia-12b-legal.csv` |
+| finance | 63360 | 63360 | `pythia-12b-finance.csv` |
 
 **Total rows:** 326880
 **Domains completed:** 5 / 5

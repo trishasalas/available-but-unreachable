@@ -47,11 +47,9 @@ not ship. These need re-homing or the claims need re-scoping.
 
 - `results/adhoc/d6_multihead_ablation/` — `pythia-2.8b-multihead-ablation.csv`,  
 `pythia-2.8b-candidate-heads.csv`
-- `results/adhoc/head_characterization/` — `pythia-2.8b-head-characterization.csv`,  
-`pythia-2.8b-collocation.csv`
+- `results/adhoc/head_characterization/` — `pythia-2.8b-head-characterization.csv`, `pythia-2.8b-collocation.csv`
 
-The two CLAIMS-cited analysis tables have already been restored to `results/analysis/` (2026-08-09): `completion_paradox.csv` and  
-`trajectory_stability_audit.csv`.
+The two CLAIMS-cited analysis tables have already been restored to `results/analysis/` (2026-08-09): `completion_paradox.csv` and `trajectory_stability_audit.csv`.
 
 The three uncited audit tables stay archived: `criteria_strictness_audit.csv`, `criteria_strictness_audit_full.csv`, `emergence_thresholds.csv`.
 

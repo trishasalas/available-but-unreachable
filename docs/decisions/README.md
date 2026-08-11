@@ -42,7 +42,7 @@ the number. The binding-battery entry is re-recorded here as 0009.
 | [0011](0011-gap-estimand-paired-concepts.md) | Gap estimand: pooled means or paired concepts | proposed |
 | [0012](0012-olmo-frequency-corpus.md) | OLMo x-corpus for the frequency battery | proposed |
 | [0013](0013-analysis-tables-archival-status.md) | Archival status of five `results/analysis` tables | proposed |
-| [0014](0014-pythia-12b-naming.md) | `pythia-13b` vs `pythia-12b` naming | proposed |
+| [0014](0014-pythia-12b-naming.md) | `pythia-13b` vs `pythia-12b` naming | accepted |
 | [0015](0015-concept-key-normalization.md) | Concept key normalization across batteries | proposed |
 
 Numbering continues from D8, which is the highest number in the legacy file — the

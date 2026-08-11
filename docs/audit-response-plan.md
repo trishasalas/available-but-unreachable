@@ -132,7 +132,7 @@ Paired within-concept, or difference of pooled means.
 
 - [ ] 0012 — OLMo x-corpus
 - [ ] 0013 — archival status of the five `results/analysis` tables
-- [ ] 0014 — `pythia-13b` vs `pythia-12b`
+- [x] 0014 — `pythia-13b` vs `pythia-12b` — accepted and executed 2026-08-10
 
 OLMo x-corpus; archival status of the five `results/analysis` tables; `pythia-13b` vs  `pythia-12b`.
 

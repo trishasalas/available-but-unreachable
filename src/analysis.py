@@ -264,10 +264,12 @@ def _extract_scale(model_name, suite):
     if suite == 'gpt2':
         return gpt2_scales.get(model_name, 0)
 
-    # pythia-13b is the same checkpoint as pythia-12b
-    if model_name == 'pythia-13b':
-        return 12_000_000_000
-
+    # No pythia-13b alias here on purpose (decision 0014). The binding outputs
+    # were renamed to pythia-12b, the upstream name. A stray 'pythia-13b'
+    # directory now falls through to the generic parse, which reads 13b as
+    # 13_000_000_000 and separates it from pythia-12b in every groupby —
+    # visibly wrong instead of silently absorbed. Depends on: results/binding/
+    # pythia/ containing pythia-12b and no pythia-13b.
     multipliers = {'m': 1_000_000, 'b': 1_000_000_000}
     parts = model_name.split('-')
     for part in parts:
