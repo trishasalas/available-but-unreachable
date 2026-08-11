@@ -1,4 +1,4 @@
 scale,declarative_score,evaluative_score,gap,declarative_pct,evaluative_pct,gap_pct_pts
 1B,1.0,0.6,0.4,50.0,30.0,20.0
-7B,1.1176,0.8,0.3176,55.9,40.0,15.9
-13B,1.1569,1.2,-0.0431,57.8,60.0,-2.2
+7B,1.5,0.8,0.7,75.0,40.0,35.0
+13B,1.5,1.2,0.3,75.0,60.0,15.0

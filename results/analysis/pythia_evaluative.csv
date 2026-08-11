@@ -1,6 +1,6 @@
 concept,160M,410M,1B,2.8B,6.9B,12B
-alt text,incorrect,incorrect,incorrect,incorrect,incorrect,incorrect
-empty link,incorrect,partial,incorrect,incorrect,incorrect,partial
-form label,partial,incorrect,partial,partial,partial,partial
-link text,incorrect,incorrect,incorrect,correct,correct,correct
-semantic HTML,incorrect,partial,incorrect,incorrect,correct,partial
+alt_text,incorrect,incorrect,incorrect,incorrect,incorrect,incorrect
+empty_link,incorrect,partial,incorrect,incorrect,incorrect,partial
+form_label,partial,incorrect,partial,partial,partial,partial
+link_text,incorrect,incorrect,incorrect,correct,correct,correct
+semantic_html,incorrect,partial,incorrect,incorrect,correct,partial

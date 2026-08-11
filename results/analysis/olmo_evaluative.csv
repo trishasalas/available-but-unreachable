@@ -1,6 +1,6 @@
 concept,1B,7B,13B
-alt text,incorrect,incorrect,incorrect
-empty link,incorrect,incorrect,incorrect
-form label,incorrect,incorrect,correct
-link text,correct,correct,correct
-semantic HTML,partial,correct,correct
+alt_text,incorrect,incorrect,incorrect
+empty_link,incorrect,incorrect,incorrect
+form_label,incorrect,incorrect,correct
+link_text,correct,correct,correct
+semantic_html,partial,correct,correct

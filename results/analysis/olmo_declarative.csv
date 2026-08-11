@@ -1,52 +1,11 @@
 concept,1B,7B,13B
-ARIA,incorrect,correct,correct
-WCAG,correct,correct,correct
-accessibility tree,partial,correct,partial
-accessible authentication,partial,partial,incorrect
-accessible description,partial,partial,partial
-accessible name,incorrect,incorrect,correct
-alt text,correct,correct,partial
-audio description,correct,incorrect,incorrect
-character key,incorrect,incorrect,partial
-closed captions,incorrect,correct,correct
-cognitive disabilities,correct,correct,correct
-color contrast,incorrect,incorrect,partial
-combo box,partial,correct,partial
-consistent help,incorrect,incorrect,incorrect
-decorative image,correct,partial,correct
-drag movement,partial,partial,partial
-error identification,incorrect,incorrect,correct
-focus appearance,incorrect,partial,incorrect
-focus indicator,correct,incorrect,correct
-focus management,incorrect,partial,incorrect
-form field,correct,correct,correct
-informative image,incorrect,incorrect,incorrect
-input purpose,incorrect,incorrect,incorrect
-keyboard interaction,partial,correct,partial
-keyboard navigation,partial,correct,correct
-landmark region,partial,incorrect,partial
-live region,partial,partial,partial
-low vision,correct,partial,partial
-menu bar,correct,correct,correct
-pointer cancellation,partial,partial,partial
-radio group,incorrect,incorrect,incorrect
-reading order,partial,incorrect,incorrect
-redundant entry,incorrect,incorrect,incorrect
-responsive design,correct,correct,correct
-screen reader,correct,partial,correct
-section heading,correct,correct,correct
-semantic HTML,partial,correct,partial
-semantic markup,correct,correct,correct
-sensory characteristics,incorrect,incorrect,incorrect
-sign language,correct,correct,correct
-skip link,incorrect,correct,incorrect
-status message,partial,partial,correct
-tab panel,correct,correct,correct
-target size,partial,incorrect,partial
-text alternative,partial,correct,partial
-text formatting,correct,correct,correct
-text spacing,incorrect,correct,partial
-tool tip,correct,correct,correct
-touch target,partial,correct,correct
-tree grid,incorrect,incorrect,partial
-universal design,partial,incorrect,incorrect
+alt_text,correct,correct,partial
+aria,incorrect,correct,correct
+closed_captions,incorrect,correct,correct
+color_contrast,incorrect,incorrect,partial
+focus_indicator,correct,incorrect,correct
+keyboard_navigation,partial,correct,correct
+screen_reader,correct,partial,correct
+semantic_html,partial,correct,partial
+skip_link,incorrect,correct,incorrect
+wcag,correct,correct,correct

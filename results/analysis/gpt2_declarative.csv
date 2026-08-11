@@ -1,52 +1,11 @@
 concept,124M,355M,774M,1.5B
-ARIA,incorrect,incorrect,incorrect,incorrect
-WCAG,incorrect,incorrect,incorrect,correct
-accessibility tree,partial,partial,partial,partial
-accessible authentication,partial,partial,partial,partial
-accessible description,partial,partial,partial,correct
-accessible name,correct,incorrect,incorrect,incorrect
-alt text,partial,partial,partial,correct
-audio description,incorrect,incorrect,incorrect,incorrect
-character key,incorrect,incorrect,incorrect,incorrect
-closed captions,incorrect,incorrect,incorrect,correct
-cognitive disabilities,correct,correct,correct,correct
-color contrast,partial,correct,correct,correct
-combo box,partial,partial,partial,partial
-consistent help,incorrect,partial,incorrect,incorrect
-decorative image,correct,correct,correct,partial
-drag movement,partial,partial,partial,partial
-error identification,incorrect,incorrect,incorrect,correct
-focus appearance,incorrect,incorrect,incorrect,incorrect
-focus indicator,correct,partial,correct,incorrect
-focus management,partial,partial,partial,partial
-form field,correct,correct,correct,correct
-informative image,incorrect,incorrect,incorrect,incorrect
-input purpose,incorrect,incorrect,incorrect,incorrect
-keyboard interaction,partial,partial,partial,partial
-keyboard navigation,partial,correct,partial,correct
-landmark region,incorrect,incorrect,incorrect,incorrect
-live region,partial,partial,partial,partial
-low vision,partial,partial,partial,correct
-menu bar,correct,correct,correct,correct
-pointer cancellation,incorrect,partial,incorrect,incorrect
-radio group,partial,incorrect,incorrect,incorrect
-reading order,incorrect,correct,incorrect,correct
-redundant entry,incorrect,incorrect,incorrect,incorrect
-responsive design,incorrect,incorrect,correct,correct
-screen reader,partial,partial,correct,correct
-section heading,incorrect,correct,correct,correct
-semantic HTML,partial,partial,partial,partial
-semantic markup,correct,correct,incorrect,partial
-sensory characteristics,incorrect,incorrect,incorrect,partial
-sign language,incorrect,correct,correct,correct
-skip link,incorrect,partial,partial,incorrect
-status message,partial,partial,correct,correct
-tab panel,partial,partial,partial,partial
-target size,partial,partial,partial,partial
-text alternative,incorrect,partial,partial,partial
-text formatting,incorrect,incorrect,partial,partial
-text spacing,partial,partial,incorrect,partial
-tool tip,incorrect,incorrect,incorrect,incorrect
-touch target,partial,partial,partial,correct
-tree grid,incorrect,incorrect,incorrect,incorrect
-universal design,incorrect,incorrect,incorrect,incorrect
+alt_text,partial,partial,partial,correct
+aria,incorrect,incorrect,incorrect,incorrect
+closed_captions,incorrect,incorrect,incorrect,correct
+color_contrast,partial,correct,correct,correct
+focus_indicator,correct,partial,correct,incorrect
+keyboard_navigation,partial,correct,partial,correct
+screen_reader,partial,partial,correct,correct
+semantic_html,partial,partial,partial,partial
+skip_link,incorrect,partial,partial,incorrect
+wcag,incorrect,incorrect,incorrect,correct

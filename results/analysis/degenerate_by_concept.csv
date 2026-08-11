@@ -1,234 +1,233 @@
 concept,n,n_degenerate,pct_degenerate
-ARIA,26,2,7.7
-HTML,13,0,0.0
-WCAG,13,1,7.7
-accelerated depreciation,13,0,0.0
-accessibility tree,13,0,0.0
-accessible authentication,13,0,0.0
-accessible description,13,0,0.0
-accessible name,13,0,0.0
-adequate consideration,13,0,0.0
-alarm clock,13,0,0.0
-alt text,117,26,22.2
-antibiotic resistance,13,0,0.0
-apple pie,13,1,7.7
-arbitration clause,13,0,0.0
-articles incorporation,13,0,0.0
-asset allocation,13,1,7.7
-audio description,13,1,7.7
-bacterial infection,13,1,7.7
-baked beans,13,0,0.0
-balance sheet,13,0,0.0
-bath towels,13,1,7.7
-bear market,13,0,0.0
-bench trial,13,0,0.0
+accelerated_depreciation,13,0,0.0
+accessibility_tree,13,0,0.0
+accessible_authentication,13,0,0.0
+accessible_description,13,0,0.0
+accessible_name,13,0,0.0
+adequate_consideration,13,0,0.0
+alarm_clock,13,0,0.0
+alt_text,117,26,22.2
+antibiotic_resistance,13,0,0.0
+apple_pie,13,1,7.7
+arbitration_clause,13,0,0.0
+aria,26,2,7.7
+articles_incorporation,13,0,0.0
+asset_allocation,13,1,7.7
+audio_description,13,1,7.7
+bacterial_infection,13,1,7.7
+baked_beans,13,0,0.0
+balance_sheet,13,0,0.0
+bath_towels,13,1,7.7
+bear_market,13,0,0.0
+bench_trial,13,0,0.0
 bicycle,65,1,1.5
-binding precedent,13,0,0.0
-birth defect,13,0,0.0
-blood clot,13,0,0.0
-blood pressure,13,1,7.7
-blue sky,13,0,0.0
-body temperature,13,0,0.0
-bond coupon,13,0,0.0
-bone marrow,13,0,0.0
-bowel resection,13,1,7.7
-brain stem,13,0,0.0
-breast cancer,13,0,0.0
-bull market,13,1,7.7
-call option,13,0,0.0
-capital structure,13,0,0.0
-captions,26,8,30.8
-car keys,13,0,0.0
-cash flow,13,0,0.0
-central clearing,13,0,0.0
-cerebral cortex,13,0,0.0
-character key,13,0,0.0
-chest pain,13,0,0.0
-chronic pain,13,2,15.4
-civil lawsuit,13,0,0.0
-class action,13,0,0.0
-clinical trial,13,1,7.7
-closed captions,78,4,5.1
-coffee shop,13,1,7.7
-cognitive disabilities,13,0,0.0
-cold water,13,0,0.0
-collar bone,13,0,0.0
-color contrast,78,0,0.0
-combo box,13,0,0.0
-commerce clause,13,0,0.0
-commodity futures,13,0,0.0
-complete remission,13,0,0.0
-conditional parole,13,0,0.0
-consistent help,13,0,0.0
-coral reef,13,0,0.0
-court order,13,0,0.0
-credit default,13,1,7.7
-credit rating,13,0,0.0
-credit spread,13,0,0.0
-criminal record,13,0,0.0
-currency hedge,13,0,0.0
-data base,13,0,0.0
-debt covenant,13,0,0.0
-decorative image,13,1,7.7
-dental appointment,13,0,0.0
-diluted earnings,13,0,0.0
-dining table,13,0,0.0
-double jeopardy,13,0,0.0
-drag movement,13,0,0.0
-drug interaction,13,1,7.7
-due diligence,13,0,0.0
-due process,13,0,0.0
-electronic discovery,13,0,0.0
-empty link,13,0,0.0
-equal protection,13,0,0.0
-error identification,13,0,0.0
-excessive bail,13,0,0.0
-expert witness,13,0,0.0
-felony conviction,13,1,7.7
-fifth amendment,13,0,0.0
-financial leverage,13,0,0.0
-fire station,13,0,0.0
-fiscal policy,13,0,0.0
-fluid retention,13,0,0.0
-focus appearance,13,0,0.0
-focus indicator,13,0,0.0
-focus management,13,0,0.0
-form field,13,2,15.4
-form label,13,3,23.1
-free speech,13,0,0.0
-gastrointestinal absorption,13,0,0.0
-grand indictment,13,0,0.0
-grilled cheese,13,2,15.4
-guilty plea,13,0,0.0
-hard drive,13,0,0.0
-heart rate,13,0,0.0
-hedge fund,13,0,0.0
-hostile merger,13,0,0.0
-hot chocolate,13,1,7.7
-ice cream,13,0,0.0
-immune response,13,0,0.0
-impairment goodwill,13,0,0.0
-implied volatility,13,0,0.0
-informative image,13,3,23.1
-informed consent,13,0,0.0
-input purpose,13,0,0.0
-interest swap,13,1,7.7
-joint custody,13,0,0.0
-joint replacement,13,0,0.0
-journal entry,13,1,7.7
-judicial review,13,0,0.0
-jury verdict,13,0,0.0
-keyboard interaction,13,0,0.0
-keyboard navigation,13,0,0.0
-landmark region,13,0,0.0
-legal standing,13,0,0.0
-life jacket,13,0,0.0
-light bulb,13,0,0.0
-link text,13,0,0.0
-live region,13,0,0.0
-living room,13,0,0.0
-low vision,13,0,0.0
-lung cancer,13,0,0.0
-magnetic resonance,13,0,0.0
-maintenance margin,13,0,0.0
-market liquidity,13,0,0.0
-material breach,13,0,0.0
-mental health,13,0,0.0
-menu bar,13,2,15.4
-metabolic panel,13,0,0.0
-modified duration,13,0,0.0
-money laundering,13,0,0.0
-mountain lion,13,0,0.0
-multiple sclerosis,13,0,0.0
-muscle spasm,13,1,7.7
-mutual fund,13,0,0.0
-nerve damage,13,1,7.7
-operating system,13,0,0.0
-oral deposition,13,1,7.7
-orange juice,13,0,0.0
-organ transplant,13,0,0.0
-oxygen saturation,13,0,0.0
-page title,91,5,5.5
-pain management,13,0,0.0
-palm tree,13,0,0.0
-parking lot,13,0,0.0
-patent infringement,13,0,0.0
-peanut butter,13,1,7.7
-personal jurisdiction,13,0,0.0
-platelet count,13,0,0.0
-plea bargain,13,0,0.0
-pointer cancellation,13,0,0.0
-post office,13,0,0.0
-power supply,13,0,0.0
-preferred dividend,13,0,0.0
-preliminary injunction,13,0,0.0
-price ratio,13,0,0.0
-prime rate,13,0,0.0
-probable cause,13,0,0.0
-proper venue,13,0,0.0
-public offering,13,0,0.0
-punitive damages,13,0,0.0
-radio group,13,0,0.0
-reading order,13,0,0.0
-redundant entry,13,0,0.0
-regulatory compliance,13,2,15.4
-respiratory tract,13,0,0.0
-responsive design,13,0,0.0
-restraining order,13,0,0.0
-roller coaster,13,0,0.0
-scar tissue,13,1,7.7
-school bus,13,0,0.0
-screen reader,26,0,0.0
+binding_precedent,13,0,0.0
+birth_defect,13,0,0.0
+blood_clot,13,0,0.0
+blood_pressure,13,1,7.7
+blue_sky,13,0,0.0
+body_temperature,13,0,0.0
+bond_coupon,13,0,0.0
+bone_marrow,13,0,0.0
+bowel_resection,13,1,7.7
+brain_stem,13,0,0.0
+breast_cancer,13,0,0.0
+bull_market,13,1,7.7
+call_option,13,0,0.0
+capital_structure,13,0,0.0
+car_keys,13,0,0.0
+cash_flow,13,0,0.0
+central_clearing,13,0,0.0
+cerebral_cortex,13,0,0.0
+character_key,13,0,0.0
+chest_pain,13,0,0.0
+chronic_pain,13,2,15.4
+civil_lawsuit,13,0,0.0
+class_action,13,0,0.0
+clinical_trial,13,1,7.7
+closed_captions,104,12,11.5
+coffee_shop,13,1,7.7
+cognitive_disabilities,13,0,0.0
+cold_water,13,0,0.0
+collar_bone,13,0,0.0
+color_contrast,78,0,0.0
+combo_box,13,0,0.0
+commerce_clause,13,0,0.0
+commodity_futures,13,0,0.0
+complete_remission,13,0,0.0
+conditional_parole,13,0,0.0
+consistent_help,13,0,0.0
+coral_reef,13,0,0.0
+court_order,13,0,0.0
+credit_default,13,1,7.7
+credit_rating,13,0,0.0
+credit_spread,13,0,0.0
+criminal_record,13,0,0.0
+currency_hedge,13,0,0.0
+data_base,13,0,0.0
+debt_covenant,13,0,0.0
+decorative_image,13,1,7.7
+dental_appointment,13,0,0.0
+diluted_earnings,13,0,0.0
+dining_table,13,0,0.0
+double_jeopardy,13,0,0.0
+drag_movement,13,0,0.0
+drug_interaction,13,1,7.7
+due_diligence,13,0,0.0
+due_process,13,0,0.0
+electronic_discovery,13,0,0.0
+empty_link,13,0,0.0
+equal_protection,13,0,0.0
+error_identification,13,0,0.0
+excessive_bail,13,0,0.0
+expert_witness,13,0,0.0
+felony_conviction,13,1,7.7
+fifth_amendment,13,0,0.0
+financial_leverage,13,0,0.0
+fire_station,13,0,0.0
+fiscal_policy,13,0,0.0
+fluid_retention,13,0,0.0
+focus_appearance,13,0,0.0
+focus_indicator,13,0,0.0
+focus_management,13,0,0.0
+form_field,13,2,15.4
+form_label,13,3,23.1
+free_speech,13,0,0.0
+gastrointestinal_absorption,13,0,0.0
+grand_indictment,13,0,0.0
+grilled_cheese,13,2,15.4
+guilty_plea,13,0,0.0
+hard_drive,13,0,0.0
+heart_rate,13,0,0.0
+hedge_fund,13,0,0.0
+hostile_merger,13,0,0.0
+hot_chocolate,13,1,7.7
+html,13,0,0.0
+ice_cream,13,0,0.0
+immune_response,13,0,0.0
+impairment_goodwill,13,0,0.0
+implied_volatility,13,0,0.0
+informative_image,13,3,23.1
+informed_consent,13,0,0.0
+input_purpose,13,0,0.0
+interest_swap,13,1,7.7
+joint_custody,13,0,0.0
+joint_replacement,13,0,0.0
+journal_entry,13,1,7.7
+judicial_review,13,0,0.0
+jury_verdict,13,0,0.0
+keyboard_interaction,13,0,0.0
+keyboard_navigation,13,0,0.0
+landmark_region,13,0,0.0
+legal_standing,13,0,0.0
+life_jacket,13,0,0.0
+light_bulb,13,0,0.0
+link_text,13,0,0.0
+live_region,13,0,0.0
+living_room,13,0,0.0
+low_vision,13,0,0.0
+lung_cancer,13,0,0.0
+magnetic_resonance,13,0,0.0
+maintenance_margin,13,0,0.0
+market_liquidity,13,0,0.0
+material_breach,13,0,0.0
+mental_health,13,0,0.0
+menu_bar,13,2,15.4
+metabolic_panel,13,0,0.0
+modified_duration,13,0,0.0
+money_laundering,13,0,0.0
+mountain_lion,13,0,0.0
+multiple_sclerosis,13,0,0.0
+muscle_spasm,13,1,7.7
+mutual_fund,13,0,0.0
+nerve_damage,13,1,7.7
+operating_system,13,0,0.0
+oral_deposition,13,1,7.7
+orange_juice,13,0,0.0
+organ_transplant,13,0,0.0
+oxygen_saturation,13,0,0.0
+page_title,91,5,5.5
+pain_management,13,0,0.0
+palm_tree,13,0,0.0
+parking_lot,13,0,0.0
+patent_infringement,13,0,0.0
+peanut_butter,13,1,7.7
+personal_jurisdiction,13,0,0.0
+platelet_count,13,0,0.0
+plea_bargain,13,0,0.0
+pointer_cancellation,13,0,0.0
+post_office,13,0,0.0
+power_supply,13,0,0.0
+preferred_dividend,13,0,0.0
+preliminary_injunction,13,0,0.0
+price_ratio,13,0,0.0
+prime_rate,13,0,0.0
+probable_cause,13,0,0.0
+proper_venue,13,0,0.0
+public_offering,13,0,0.0
+punitive_damages,13,0,0.0
+radio_group,13,0,0.0
+reading_order,13,0,0.0
+redundant_entry,13,0,0.0
+regulatory_compliance,13,2,15.4
+respiratory_tract,13,0,0.0
+responsive_design,13,0,0.0
+restraining_order,13,0,0.0
+roller_coaster,13,0,0.0
+scar_tissue,13,1,7.7
+school_bus,13,0,0.0
+screen_reader,26,0,0.0
 script,26,11,42.3
-search engine,13,0,0.0
-search warrant,13,0,0.0
-section heading,13,0,0.0
-semantic HTML,26,1,3.8
-semantic markup,13,1,7.7
-sensory characteristics,13,1,7.7
-shooting star,13,1,7.7
-side effect,13,0,0.0
-sign language,13,0,0.0
-skin graft,13,0,0.0
-skip link,13,0,0.0
-sleep apnea,13,0,0.0
-sore throat,13,0,0.0
-sovereign immunity,13,0,0.0
-specific performance,13,0,0.0
-spinal cord,13,1,7.7
-status message,13,0,0.0
-statute limitations,13,0,0.0
-stem cell,13,0,0.0
-stock market,13,0,0.0
-stress test,13,0,0.0
-strict liability,13,0,0.0
-summary motion,13,0,0.0
-swimming pool,13,0,0.0
-systemic risk,13,0,0.0
-tab panel,13,0,0.0
-target size,13,0,0.0
-tax shelter,13,0,0.0
-tea cup,13,0,0.0
-text alternative,13,1,7.7
-text formatting,13,0,0.0
-text spacing,13,0,0.0
-therapeutic dosage,13,0,0.0
-thunder storm,13,2,15.4
-tidal wave,13,0,0.0
-tool tip,13,0,0.0
-touch target,13,2,15.4
-trade deficit,13,0,0.0
-trade settlement,13,0,0.0
-train station,13,1,7.7
-tree grid,13,0,0.0
-tumor growth,13,0,0.0
-universal design,13,0,0.0
-user name,13,0,0.0
-venture capital,13,1,7.7
-viral infection,13,0,0.0
-waiting room,13,1,7.7
-washing machine,13,0,0.0
-witness testimony,13,0,0.0
-wound care,13,0,0.0
-yield maturity,13,0,0.0
-zero collar,13,1,7.7
+search_engine,13,0,0.0
+search_warrant,13,0,0.0
+section_heading,13,0,0.0
+semantic_html,26,1,3.8
+semantic_markup,13,1,7.7
+sensory_characteristics,13,1,7.7
+shooting_star,13,1,7.7
+side_effect,13,0,0.0
+sign_language,13,0,0.0
+skin_graft,13,0,0.0
+skip_link,13,0,0.0
+sleep_apnea,13,0,0.0
+sore_throat,13,0,0.0
+sovereign_immunity,13,0,0.0
+specific_performance,13,0,0.0
+spinal_cord,13,1,7.7
+status_message,13,0,0.0
+statute_limitations,13,0,0.0
+stem_cell,13,0,0.0
+stock_market,13,0,0.0
+stress_test,13,0,0.0
+strict_liability,13,0,0.0
+summary_motion,13,0,0.0
+swimming_pool,13,0,0.0
+systemic_risk,13,0,0.0
+tab_panel,13,0,0.0
+target_size,13,0,0.0
+tax_shelter,13,0,0.0
+tea_cup,13,0,0.0
+text_alternative,13,1,7.7
+text_formatting,13,0,0.0
+text_spacing,13,0,0.0
+therapeutic_dosage,13,0,0.0
+thunder_storm,13,2,15.4
+tidal_wave,13,0,0.0
+tool_tip,13,0,0.0
+touch_target,13,2,15.4
+trade_deficit,13,0,0.0
+trade_settlement,13,0,0.0
+train_station,13,1,7.7
+tree_grid,13,0,0.0
+tumor_growth,13,0,0.0
+universal_design,13,0,0.0
+user_name,13,0,0.0
+venture_capital,13,1,7.7
+viral_infection,13,0,0.0
+waiting_room,13,1,7.7
+washing_machine,13,0,0.0
+wcag,13,1,7.7
+witness_testimony,13,0,0.0
+wound_care,13,0,0.0
+yield_maturity,13,0,0.0
+zero_collar,13,1,7.7
