@@ -1,7 +1,7 @@
 # Audit response plan
 
 - **Created:** 2026-08-08
-- **Last updated:** 2026-08-09
+- **Last updated:** 2026-08-10
 - **Audit:** `docs/claude-science/tmlr_audit_2026-08-09.md`, run at commit `6786d13`
 - **Findings CSV:** `docs/claude-science/tmlr_audit_findings_2026-08-09.csv`
 - **Pending decisions:** `docs/decisions/` (0010–0015)
@@ -11,6 +11,10 @@
 ---
 
 ## Changelog
+
+**2026-08-10** — Decision 0014 implemented (`pythia-13b` → `pythia-12b`, all three layers, alias retired) and amended with two factual corrections found during implementation. **The accuracy line is down to one code change.** See its revised status below.
+
+**2026-08-09 (evening)** — Frequency work landed. `frequency-analysis.ipynb` split into `frequency-{pythia,gpt2,olmo}.ipynb` matching the repo convention; index named as a literal in each, no `SUITE_INDEX` dict, no loop over suites. A18's sentinel and truthiness bugs fixed. A1 retired structurally — `dual_spearman.run` is now the sole writer of all six outputs and `frequency.py` writes no global file. A22's p-value formatting and index caching both closed. Frozen `frequency_table.csv` repaired in place (blank rows and phantom columns stripped, verified no-op on the 49 real rows). **A4 turned out not to be a corpus finding** — see below. Session log: `docs/session-log-2026-08-09-frequency-split.md`.
 
 **2026-08-09 (afternoon)** — Steps 1 and 2 complete. `src/analysis.py` fixed and merged (`aa7e1bb`); decision 0010 accepted. Pass condition met: pythia-160M declarative = 0.5, declarative pivot n=10 (the ten originals, `closed captions` included), evaluative pivot unchanged at n=5. **The 12B declarative regression is now visible** — see Results below. Four new open items surfaced that were not in the audit.
 
@@ -47,24 +51,31 @@
 
 ### NOT trustworthy — these change numbers
 
-Four items. Nothing else on this page affects a value in the paper.
+> **Revised 2026-08-10.** Three of the original four are done. One code change remains.
 
-1. **A18 — frequency pipeline bugs.** Infini-gram's `-1` failure sentinel enters Spearman as if it were a real count, and `cond_prob == 0.0` becomes `None` through a truthiness check instead of `is not None`. **Every rho in Section III is suspect**  
-** until this is fixed.** Partial-correlation controls are also dropped from the per-suite path.
-2. **0012 — the OLMo corpus.** Four contradictory OLMo-1B rho values are on disk because partial/Kendall/bootstrap use Pile x-values while the primary uses Dolma. Needs ruling, then regenerating with a corpus column so provenance survives.
-3. **A1 — frequency filename clobbering.** `frequency_table.csv` and `spearman_summary.csv` use fixed names inside a loop over suites, so whichever suite ran last is what is on disk. The pythia and gpt2 rho values currently cannot be  
- trusted to be theirs.
-4. **A3 — the completion join.** Resolves on `alt text` alone because of the three-way concept spelling mismatch. The p=0.0078 result is real but answers a much smaller question than the claim states. Needs 0015's code landed first.
+**✗ STILL OPEN — 0015's code.** `concept_raw` for the coding layer, normalized `concept` for joins. Two files, small, ruled and accepted. Brief: `docs/task-0015-concept-normalization.md`. This is the last unfixed thing that changes a number.
 
-**That is the whole accuracy list: fix A18, rule 0012, regenerate frequency once, land 0015 and fix the join.** One decision, one code fix, one run, one join.
+**✗ STILL OPEN — the completion join (A3).** Needs 0015 first. Currently resolves on `alt text` alone: 7 greater / 6 ties / 0 less, p = 0.0078 — significant *through a broken join*. What it does with all four concepts is an open empirical question.
+
+**✗ STILL OPEN — the two OLMo-1B runs.** Now an accuracy item, because OLMo entered the pre-registered battery on 2026-08-09. Two result sets exist: ρ = 0.4819 and ρ = 0.3288, **identical corpus counts**, differing on 18 of 49 `mean_accuracy` rows. One records `Revision: stage1-step990000-tokens2077B`; the other records no revision. Raw elicitation confirms different generations for the same prompt under greedy decoding. This is a checkpoint adjudication, not a corpus one.
+
+**✗ STILL OPEN — re-ink Section III.** The paper cites ρ = 0.5715 (pythia) and 0.5052 (gpt2). Correct values are **0.5875 / 0.5194 / 0.5823**. The old numbers were computed at `ca0319e` against a `compound_accuracy_table.csv` built when `results/elicitation/pythia/pythia-2.8b/` did not yet exist — an incomplete input, not an alternative coding. Ruled 2026-08-09: re-ink. CLAIMS A3's cited values need the same update.
+
+**✓ DONE — A18, frequency pipeline bugs.** Sentinel screening and `is not None` landed in the new per-suite notebooks. 49 queried / 49 returned / 0 screened, all three suites.
+
+**✓ DONE — A1, filename clobbering.** Retired structurally rather than patched. `dual_spearman.run` is the sole writer of all six outputs; `frequency.py` writes no global file; `query_infinigram`'s index argument is now required, so a robustness path cannot silently inherit a default.
+
+**✓ RESOLVED, NOT AS STATED — 0012, the OLMo corpus.** **A4 was never a corpus finding.** The corpus columns are byte-identical across both OLMo result sets; the divergence is entirely in `mean_accuracy`. `SUITE_INDEX` had always mapped OLMo to `v4_olmo-mix-1124_llama` correctly. The real defect was in `rowlevel_bootstrap`, which built its x-vector via `tab.drop_duplicates('compound')` **across all suites** — so whichever suite sorted first supplied x for every other suite. Fixed. OLMo's corpus-matched ρ = 0.5823 and τ = 0.4610 now reproduce the audit's hand-computed figures exactly. `docs/decisions/0012` still describes the wrong problem and **needs superseding as a checkpoint-pinning decision.**
+
+**That is the accuracy list now: land 0015, fix the join, adjudicate the OLMo checkpoints, re-ink Section III.**
 
 ### Below the line — does not change a number
 
 Everything else. Recorded so it is visible, not so it blocks:
 
-- p-values printing as `0.0` (A22) — presentation; the underlying values are fine
+- p-values printing as `0.0` (A22) — **DONE 2026-08-09**, now scientific notation
 - file locations, `adhoc/` moves, archive tidying (0013)
-- `pythia-13b` / `pythia-12b` naming (0014) — an alias already handles it
+- `pythia-13b` / `pythia-12b` naming (0014) — **DONE 2026-08-10**
 - figure scripts and dangling doc pointers — **these come last**, after the data  
 settles; repairing a figure path before the data is final is the same error as  
 updating prose before the numbers stabilised
@@ -191,9 +202,7 @@ Elicitation only, 13 models. *Why cheap: no binding, no frequency, no infini-gra
 - [ ] A16 — entropy battery gaps (pythia-1b has 1 of 5 domains; 13 legacy schema-drifted CSVs)
 - [ ] A17 — OLMo provenance: 1B commit-sha files in the 7B elicitation dir
 - [ ] A19 — archive superseded frequency-era artifacts (four different "pythia primary rho" values on disk)
-- [ ] A20 — delete dead `src/` modules, orphan `.pyc`, `data/backup.py`. **Do not delete** top-level `data/*.yaml` (prompt files, key `prompts`) — a different artifact from `data/binding/*.yaml` (key `compounds`).
-
-**Keep** `dual_spearman.py`, `closeout_followups.py`, `d6/d7/d8_*.py`.
+- [ ] A20 — delete dead `src/` modules, orphan `.pyc`, `data/backup.py`. **Do not delete** top-level `data/*.yaml` (prompt files, key `prompts`) — a different artifact from `data/binding/*.yaml` (key `compounds`). **Keep** `dual_spearman.py`, `closeout_followups.py`, `d6/d7/d8_*.py`.
 
 - [ ] A21 — ~14 dangling doc pointers; the duplicate D7 (now noted in `docs/decisions/README.md`); appendix table placeholder. Set VS Code `workbench.editorAssociations` for `*.csv`
 
