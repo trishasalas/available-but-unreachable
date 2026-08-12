@@ -1,0 +1,161 @@
+# ============================================================
+# EVALUATIVE (paired redesign) — DRAFT
+# ============================================================
+# Addresses three defects in the original evaluative set (n=5):
+#   1. Only 2 of 5 evaluative concepts had declarative counterparts.
+#      Gap was computed across non-matched concept sets.
+#   2. No conformant artifacts — false positives undetectable.
+#   3. One item per concept — single coding decision = whole measurement.
+#
+# New fields:
+#   polarity     — violation | conformant
+#   framing      — code_review | scenario | minimal_pair
+#   paired_with  — prompt_id of the declarative counterpart
+#   expected     — what a correct completion contains (rubric seed)
+#
+# Frame decision (empirical, Pythia 2.8B, do_sample=False, 2026-08-12):
+#   "Accessible:" fails — model reads it as an HTML label and continues
+#     markup (produced a fabricated chartbeat.com URL).
+#   Prose wrapper produces codeable output. All frames below are prose.
+#
+# NOTE: authored blind to corpus frequency. Compound set was fixed prior
+# to count retrieval; no item was tuned to a known count.
+# ============================================================
+
+prompts:
+
+  # ----------------------------------------------------------
+  # ALT TEXT — paired to decl_alt_text_001
+  # Tests purpose-dependence: correct alt is a function of the image's
+  # role, not its contents. Same file, opposite correct answers.
+  # ----------------------------------------------------------
+
+  - prompt_id: evalp_alt_text_violation_001
+    concept: alt text
+    prompt_type: evaluative
+    template_type: code_review
+    polarity: violation
+    framing: code_review
+    paired_with: decl_alt_text_001
+    prompt: "<h1>Heavy-Duty Dish Soap</h1><p>Tired of coming home to this?</p><img src='sink.jpg'><p>The accessibility problem with the image above is"
+    expected: "names the missing alt attribute / text alternative"
+    max_tokens: 100
+
+  - prompt_id: evalp_alt_text_conformant_001
+    concept: alt text
+    prompt_type: evaluative
+    template_type: code_review
+    polarity: conformant
+    framing: code_review
+    paired_with: decl_alt_text_001
+    prompt: "<p>Quarterly results are shown below.</p><img src='chart.png' alt='Q3 revenue by region, rising each month'><p>The accessibility problem with the image above is"
+    expected: "denies the premise / stalls. Any named fault is a FALSE POSITIVE."
+    max_tokens: 100
+    # 2026-08-12 pilot: Pythia 2.8B confabulated "it's not a chart, it's a
+    # picture of a chart" — topically adjacent, wrong for this artifact.
+
+  - prompt_id: evalp_alt_text_filename_001
+    concept: alt text
+    prompt_type: evaluative
+    template_type: code_review
+    polarity: violation
+    framing: code_review
+    paired_with: decl_alt_text_001
+    prompt: "<p>Quarterly results are shown below.</p><img src='chart.png' alt='chart.png'><p>The accessibility problem with the image above is"
+    expected: "identifies alt as uninformative / filename echo"
+    max_tokens: 100
+    # Filename-echo signature — matches OLMo step-30k degradation to
+    # alt="photo.jpg". Presence of alt no longer predicts the answer.
+
+  - prompt_id: evalp_alt_text_decorative_001
+    concept: alt text
+    prompt_type: evaluative
+    template_type: minimal_pair
+    polarity: conformant
+    framing: minimal_pair
+    paired_with: decl_alt_text_001
+    prompt: "<p>Thanks for reading.</p><hr><img src='sink.jpg' alt=''><h2>Related posts</h2><p>The accessibility problem with the image above is"
+    expected: "denies the premise. Empty alt is CORRECT for a decorative image."
+    max_tokens: 100
+    # Minimal pair with evalp_alt_text_violation_001: same file, decorative
+    # context, opposite correct answer. No reflex passes both.
+
+  # ----------------------------------------------------------
+  # CLOSED CAPTIONS — paired to decl_captions_001
+  # ----------------------------------------------------------
+
+  - prompt_id: evalp_captions_violation_001
+    concept: closed captions
+    prompt_type: evaluative
+    template_type: code_review
+    polarity: violation
+    framing: code_review
+    paired_with: decl_captions_001
+    prompt: "<h2>Lecture 4: Cell Division</h2><video src='lecture.mp4' controls></video><p>The accessibility problem with the video above is"
+    expected: "names missing captions / track element / transcript"
+    max_tokens: 100
+
+  - prompt_id: evalp_captions_conformant_001
+    concept: closed captions
+    prompt_type: evaluative
+    template_type: code_review
+    polarity: conformant
+    framing: code_review
+    paired_with: decl_captions_001
+    prompt: "<h2>Lecture 4: Cell Division</h2><video src='lecture.mp4' controls><track kind='captions' src='lecture.vtt' srclang='en'></video><p>The accessibility problem with the video above is"
+    expected: "denies the premise / stalls. Any named fault is a FALSE POSITIVE."
+    max_tokens: 100
+
+  - prompt_id: evalp_captions_scenario_001
+    concept: closed captions
+    prompt_type: evaluative
+    template_type: scenario
+    polarity: violation
+    framing: scenario
+    paired_with: decl_captions_001
+    prompt: "A university posts lecture videos with no captions and no transcripts. For a deaf student, the problem is that"
+    expected: "cannot access spoken content / excluded from material"
+    max_tokens: 100
+    # Prose framing for compounds that resist code artifacts. Tagged so
+    # framing can be a robustness cut rather than a buried confound.
+
+  # ----------------------------------------------------------
+  # COLOR CONTRAST — paired to decl_color_contrast_001
+  # Contrast ratios stated in comments, not in the prompt.
+  # ----------------------------------------------------------
+
+  - prompt_id: evalp_contrast_violation_001
+    concept: color contrast
+    prompt_type: evaluative
+    template_type: code_review
+    polarity: violation
+    framing: code_review
+    paired_with: decl_color_contrast_001
+    prompt: "<p style='color:#999999; background:#ffffff'>Read our full privacy policy.</p><p>The accessibility problem with the text above is"
+    expected: "names insufficient contrast / hard to read for low vision"
+    max_tokens: 100
+    # 2.85:1 — fails WCAG AA (1.4.3 requires 4.5:1 for normal text).
+
+  - prompt_id: evalp_contrast_conformant_001
+    concept: color contrast
+    prompt_type: evaluative
+    template_type: code_review
+    polarity: conformant
+    framing: code_review
+    paired_with: decl_color_contrast_001
+    prompt: "<p style='color:#767676; background:#ffffff'>Read our full privacy policy.</p><p>The accessibility problem with the text above is"
+    expected: "denies the premise / stalls. Any named fault is a FALSE POSITIVE."
+    max_tokens: 100
+    # 4.54:1 — passes WCAG AA. Minimal pair with the violation above:
+    # only the hex value differs.
+
+  - prompt_id: evalp_contrast_scenario_001
+    concept: color contrast
+    prompt_type: evaluative
+    template_type: scenario
+    polarity: violation
+    framing: scenario
+    paired_with: decl_color_contrast_001
+    prompt: "A checkout page shows error messages in light grey on a white background. For a user with low vision, the problem is that"
+    expected: "cannot see / read the error message"
+    max_tokens: 100
