@@ -1,8 +1,18 @@
 # 0012 — OLMo x-corpus for the frequency battery
 
-- **Status:** proposed
+- **Status:** superseded by [0016](0016-olmo-checkpoint-pinning.md)
 - **Date:** 2026-08-09
+- **Superseded:** 2026-08-11
 - **Audit finding:** A4
+
+> **Superseded 2026-08-11.** This decision describes the wrong problem. A4 is not a
+> corpus finding — `SUITE_INDEX` always mapped OLMo to `v4_olmo-mix-1124_llama`
+> correctly, and the corpus columns in both contradictory result sets are
+> byte-identical. The divergence was entirely in `mean_accuracy`, and the real defect
+> was `rowlevel_bootstrap` building its x-vector via `drop_duplicates('compound')`
+> across all suites. The remaining reproducibility gap was checkpoint pinning, which
+> [0016](0016-olmo-checkpoint-pinning.md) resolves. The body below is left unedited as
+> a record of the reasoning at the time.
 
 ## Context
 
