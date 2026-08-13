@@ -1,7 +1,7 @@
 # Effective-binding run manifest
 
-- Run time (UTC): 2026-08-13T22:35:49.458895+00:00
-- Git commit: `4d4c5609369b53097528a16d4045fef045779c37`
+- Run time (UTC): 2026-08-13T22:37:04.028794+00:00
+- Git commit: `aa6b375bd10ca60e0b344f570efc85577f407d4a`
 - Working tree dirty at manifest time: `True`
 
 ## Experiment
@@ -46,7 +46,7 @@ The norm-aware measures are source-specific, head-specific writes. They are not 
 
 | domain | expected | written | output file | SHA-256 |
 |---|---:|---:|---|---|
-| accessibility | 63,600 | 63,600 | `gpt2-xl-uniform-accessibility.csv` | `d8251dc3457bbd0c62ba2ab203f6d774fdfcc78673fee541634cbabbea78cce5` |
+| accessibility | 63,600 | 63,600 | `gpt2-xl-uniform-accessibility.csv` | `6b3df2745bbad632ee91150a9ac29bc60c9274515b46c6805b14484644d4eac2` |
 
 ## Inputs
 
