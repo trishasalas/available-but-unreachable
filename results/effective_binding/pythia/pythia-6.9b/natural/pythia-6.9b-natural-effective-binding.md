@@ -1,7 +1,7 @@
 # Effective-binding run manifest
 
-- Run time (UTC): 2026-08-13T22:50:54.242169+00:00
-- Git commit: `65972305d99c1a3bce38d957ba20e67866f9cbb4`
+- Run time (UTC): 2026-08-13T22:58:33.650391+00:00
+- Git commit: `8cc913ad9e38640b3b6272808fc4eb6563c0164c`
 - Working tree dirty at manifest time: `True`
 
 ## Experiment
@@ -46,7 +46,7 @@ The norm-aware measures are source-specific, head-specific writes. They are not 
 
 | domain | expected | written | output file | SHA-256 |
 |---|---:|---:|---|---|
-| accessibility | 54,272 | 54,272 | `pythia-6.9b-natural-accessibility.csv` | `e6c5cc8313f324661c7ae73a7692433e02e37130992e6fbf59f57c667830b16c` |
+| accessibility | 54,272 | 54,272 | `pythia-6.9b-natural-accessibility.csv` | `3065f1a3633e4495048e8d8569ada7b004f8aa50875c0b52a785ffe9056e893d` |
 
 ## Inputs
 
