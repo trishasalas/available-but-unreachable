@@ -1,8 +1,8 @@
 # Effective-binding run manifest
 
-- Run time (UTC): 2026-08-13T22:44:18.980010+00:00
-- Git commit: `2fa960acfc34e6cd35caa9b931ebd6c6b53fbae6`
-- Working tree dirty at manifest time: `True`
+- Run time (UTC): 2026-08-13T23:03:08.566918+00:00
+- Git commit: `24fcb19c42387624e2864456aa3c03ecb35f9ddc`
+- Working tree dirty at manifest time: `False`
 
 ## Experiment
 
