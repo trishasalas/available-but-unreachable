@@ -1,6 +1,6 @@
 # 0013 — Archival status of five `results/analysis` tables
 
-- **Status:** proposed
+- **Status:** accepted
 - **Date:** 2026-08-09
 - **Audit finding:** A11, A10
 

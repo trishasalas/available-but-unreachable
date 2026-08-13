@@ -57,9 +57,9 @@
 
 **✗ STILL OPEN — the completion join (A3).** Unblocked as of 2026-08-11; 0015's keys now normalize. Currently resolves on `alt text` alone: 7 greater / 6 ties / 0 less, p = 0.0078 — significant *through a broken join*. What it does with **two** paired concepts is an open empirical question — `alt_text` and `closed_captions`. Not four: `page_title` and `script` are syntactic controls with no declarative arm by design, so normalization takes the paired set from 1 to 2. See 0015's amendment.
 
-**✗ STILL OPEN — the two OLMo-1B runs.** Now an accuracy item, because OLMo entered the pre-registered battery on 2026-08-09. Two result sets exist: ρ = 0.4819 and ρ = 0.3288, **identical corpus counts**, differing on 18 of 49 `mean_accuracy` rows. One records `Revision: stage1-step990000-tokens2077B`; the other records no revision. Raw elicitation confirms different generations for the same prompt under greedy decoding. This is a checkpoint adjudication, not a corpus one.
+**✓ DONE 2026-08-11 — the two OLMo-1B runs.** Now an accuracy item, because OLMo entered the pre-registered battery on 2026-08-09. Two result sets exist: ρ = 0.4819 and ρ = 0.3288, **identical corpus counts**, differing on 18 of 49 `mean_accuracy` rows. One records `Revision: stage1-step990000-tokens2077B`; the other records no revision. Raw elicitation confirms different generations for the same prompt under greedy decoding. This is a checkpoint adjudication, not a corpus one.
 
-**✗ STILL OPEN — re-ink Section III.** The paper cites ρ = 0.5715 (pythia) and 0.5052 (gpt2). Correct values are **0.5875 / 0.5194 / 0.5823**. The old numbers were computed at `ca0319e` against a `compound_accuracy_table.csv` built when `results/elicitation/pythia/pythia-2.8b/` did not yet exist — an incomplete input, not an alternative coding. Ruled 2026-08-09: re-ink. CLAIMS A3's cited values need the same update.
+**✓ RESOLVED — the paper will be rewritten from a different copy.** The paper cites ρ = 0.5715 (pythia) and 0.5052 (gpt2). Correct values are **0.5875 / 0.5194 / 0.5823**. The old numbers were computed at `ca0319e` against a `compound_accuracy_table.csv` built when `results/elicitation/pythia/pythia-2.8b/` did not yet exist — an incomplete input, not an alternative coding. Ruled 2026-08-09: re-ink. CLAIMS A3's cited values need the same update.
 
 **✓ DONE — A18, frequency pipeline bugs.** Sentinel screening and `is not None` landed in the new per-suite notebooks. 49 queried / 49 returned / 0 screened, all three suites.
 
@@ -141,8 +141,8 @@ Paired within-concept, or difference of pooled means.
 
 ### 4. Rule on decisions 0012, 0013, 0014
 
-- [ ] 0012 — OLMo x-corpus
-- [ ] 0013 — archival status of the five `results/analysis` tables
+- [x] 0012 — OLMo x-corpus
+- [x] 0013 — archival status of the five `results/analysis` tables
 - [x] 0014 — `pythia-13b` vs `pythia-12b` — accepted and executed 2026-08-10
 
 OLMo x-corpus; archival status of the five `results/analysis` tables; `pythia-13b` vs  `pythia-12b`.
@@ -151,7 +151,10 @@ OLMo x-corpus; archival status of the five `results/analysis` tables; `pythia-13
 
 ### 5. Fix the frequency pipeline, then regenerate once
 
-- [ ] **Per-suite filenames (A1).** `frequency_table.csv` and `spearman_summary.csv` use  fixed names inside a loop over suites. Note the fix is narrower than it looks — the    `{suite}_frequency_accuracy.csv` files are already per-suite.- [ ] **Corpus column.** Required by whichever way 0012 goes; without it provenance is  unrecoverable from the artifact.- [ ] **A18 latent bugs.** Infini-gram's `-1` failure sentinel flows into Spearman as a  real value — screen `count < 0` to NaN before writing. `cond_prob == 0.0` becomes    `None` via a truthiness check; use `is not None`. Partial-correlation controls are    dropped from the per-suite path.- [ ] **A22.** p-values round to 4dp, so a true p≈1e-6 ships as `0.0`. Format  scientifically. Also cache per index — pythia and gpt2 both map to the Pile and    currently re-run the full query loop each.
+- [ ] **Per-suite filenames (A1).** `frequency_table.csv` and `spearman_summary.csv` use  fixed names inside a loop over suites. Note the fix is narrower than it looks — the    `{suite}_frequency_accuracy.csv` files are already per-suite.
+- [ ] **Corpus column.** Required by whichever way 0012 goes; without it provenance is  unrecoverable from the artifact.
+- [ ] **A18 latent bugs.** Infini-gram's `-1` failure sentinel flows into Spearman as a  real value — screen `count < 0` to NaN before writing. `cond_prob == 0.0` becomes    `None` via a truthiness check; use `is not None`. Partial-correlation controls are    dropped from the per-suite path.
+- [ ] **A22.** p-values round to 4dp, so a true p≈1e-6 ships as `0.0`. Format  scientifically. Also cache per index — pythia and gpt2 both map to the Pile and    currently re-run the full query loop each.
 
 - [ ] Regenerate the battery once, cleanly
 
@@ -184,8 +187,8 @@ Two framings per concept (see below). `docs/preregistrations/0002-evaluative-pro
 
 ### 8. Run the evaluative battery
 
-- [ ] Run, 13 models
-- [ ] Code the results
+- [x] Run, 13 models
+- [x] Code the results
 
 Elicitation only, 13 models. *Why cheap: no binding, no frequency, no infini-gram.*
 
