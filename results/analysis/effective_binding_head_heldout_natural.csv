@@ -1,0 +1,2 @@
+condition,family,model,n_test,held_out_rho,held_out_p
+natural,gpt2,gpt2,25,-0.019999999999999997,0.9244025542285002
