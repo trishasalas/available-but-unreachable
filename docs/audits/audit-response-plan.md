@@ -12,6 +12,8 @@
 
 ## Changelog
 
+**2026-08-15** — Restored four mechanistic evidence CSVs flagged by Sol audit (Section 5): d6_multihead_ablation/{multihead-ablation,candidate-heads}.csv, head_characterization/{head-characterization,collocation}.csv. Packaging fix, no science change.
+
 **2026-08-10** — Decision 0014 implemented (`pythia-13b` → `pythia-12b`, all three layers, alias retired) and amended with two factual corrections found during implementation. **The accuracy line is down to one code change.** See its revised status below.
 
 **2026-08-09 (evening)** — Frequency work landed. `frequency-analysis.ipynb` split into `frequency-{pythia,gpt2,olmo}.ipynb` matching the repo convention; index named as a literal in each, no `SUITE_INDEX` dict, no loop over suites. A18's sentinel and truthiness bugs fixed. A1 retired structurally — `dual_spearman.run` is now the sole writer of all six outputs and `frequency.py` writes no global file. A22's p-value formatting and index caching both closed. Frozen `frequency_table.csv` repaired in place (blank rows and phantom columns stripped, verified no-op on the 49 real rows). **A4 turned out not to be a corpus finding** — see below. Session log: `docs/session-log-2026-08-09-frequency-split.md`.

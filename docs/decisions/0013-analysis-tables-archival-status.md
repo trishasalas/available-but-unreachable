@@ -86,7 +86,7 @@ That is an argument for the loader **flagging** unexpected paths rather than ski
 
 **Leave archived, downgrade the claims.** Rejected: the files are evidence for claims that are otherwise sound, and the archiving had no recorded rationale (see below).
 
-**Restore to a flat **`results/`** root.** Rejected: flat-and-weird is the condition the 2026-08-08 cleanup was reacting to. `results/peak_regress_lens.csv` is a surviving instance and should also move to `adhoc/`.
+**Restore to a flat `results/` root.** Rejected: flat-and-weird is the condition the 2026-08-08 cleanup was reacting to. `results/peak_regress_lens.csv` is a surviving instance and should also move to `adhoc/`.
 
 **Delete.** Rejected on principle. Deletion is the only irreversible action on the audit response list; an unneeded file costs clutter, a deleted one costs a reconstruction. This applies to A20's "dead" `src/` modules as well — move to `_Archive/_src/` rather than removing.
 
