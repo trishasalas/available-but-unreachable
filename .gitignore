@@ -23,4 +23,4 @@ paper/**/*.log
 paper/**/*.fls
 paper/**/*.fdb_latexmk
 
-docs/paper_draft/
+docs/paper_draft/.vscode/
