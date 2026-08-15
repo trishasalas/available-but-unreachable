@@ -60,8 +60,8 @@ flat bicycle control.
 (2) primary rises ≥ 0.1 → joint circuit found; reframe. (3) robustness  
 compounds diverge → reported per compound. (4) tail flat → instrumentation stop.
 
-**Outputs:** `results/pythia/pythia-2.8b-candidate-heads.csv`,  
-`results/pythia/pythia-2.8b-multihead-ablation.csv`.
+**Outputs:** `results/adhoc/d6_multihead_ablation/pythia-2.8b-candidate-heads.csv`,
+`results/adhoc/d6_multihead_ablation/pythia-2.8b-multihead-ablation.csv`.
 
 ### 2026-07-06 — Amendment (before rerun)
 

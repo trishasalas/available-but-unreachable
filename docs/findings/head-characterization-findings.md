@@ -2,8 +2,8 @@
 
 Session findings, 2026-06-28. Companion to
 `notebooks/what-are-they-doing.ipynb` and `src/head_characterization.py`.
-Results CSVs: `results/pythia/pythia-2.8b-head-characterization.csv`,
-`results/pythia/pythia-2.8b-collocation.csv`.
+Results CSVs: `results/adhoc/head_characterization/pythia-2.8b-head-characterization.csv`,
+`results/adhoc/head_characterization/pythia-2.8b-collocation.csv`.
 
 Framing note: this is a claim about **model internals** — what kind of attention
 computation the compound-"binding" metric actually measures. Accessibility

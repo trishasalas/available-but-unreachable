@@ -24,8 +24,8 @@ Usage (from notebook):
     run_d6(model, PROJECT_ROOT, "screen_reader")
 
 Outputs (repo convention — results are CSVs, ledgers accumulate):
-    results/pythia/pythia-2.8b-candidate-heads.csv     (Stage A, per compound)
-    results/pythia/pythia-2.8b-multihead-ablation.csv  (Stage B curves)
+    results/adhoc/d6_multihead_ablation/pythia-2.8b-candidate-heads.csv
+    results/adhoc/d6_multihead_ablation/pythia-2.8b-multihead-ablation.csv
 """
 
 from pathlib import Path
@@ -90,7 +90,10 @@ def _binding_rows(model, project_root, compound_name):
     binding CSV when the compound is in the sweep; otherwise runs a fresh
     in-memory single-compound pass (same math — binding.run_single_compound,
     one forward pass) for out-of-sweep compounds like stock_market."""
-    csv = Path(project_root) / "results/pythia" / f"{MODEL_NAME}-binding.csv"
+    csv = (
+        Path(project_root) / "results" / "binding" / "pythia" / MODEL_NAME
+        / f"{MODEL_NAME}-accessibility.csv"
+    )
     if csv.exists():
         df = pd.read_csv(csv)
         sub = df[df["compound"] == compound_name]
@@ -317,12 +320,13 @@ def run_d6(model, project_root, compound_name,
 
     cand = earn_candidate_set(model, root, compound_name,
                               min_layer=min_layer, n_candidates=n_candidates)
-    cand_path = _upsert(root / "results/pythia" /
+    output_dir = root / "results" / "adhoc" / "d6_multihead_ablation"
+    cand_path = _upsert(output_dir /
                         f"{MODEL_NAME}-candidate-heads.csv", cand)
     print(f"  Stage A table → {cand_path}")
 
     curves = run_joint_ablation(model, cand, compound_name)
-    curve_path = _upsert(root / "results/pythia" /
+    curve_path = _upsert(output_dir /
                          f"{MODEL_NAME}-multihead-ablation.csv", curves)
     print(f"  Stage B curves → {curve_path}")
 

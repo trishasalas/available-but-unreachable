@@ -21,7 +21,9 @@ Usage (from notebook):
     from src.head_characterization import (
         get_top_binding_heads, characterize_heads, collocation_scan,
     )
-    heads = get_top_binding_heads(PROJECT_ROOT / "results/pythia/pythia-2.8b-binding.csv")
+    heads = get_top_binding_heads(
+        PROJECT_ROOT / "results/binding/pythia/pythia-2.8b/pythia-2.8b-accessibility.csv"
+    )
     table = characterize_heads(model, heads)
     colloc = collocation_scan(model, heads_of_interest=[(layer, head), ...])
 """
@@ -363,7 +365,8 @@ def final_label(induction, prev, dup, bos=None, pos1=None):
 # --------------------------------------------------------------------------- #
 def save_head_results(model_name, project_root, char_df=None, colloc_df=None):
     """
-    Write characterization / collocation results to results/<suite>/.
+    Write characterization / collocation results to
+    ``results/adhoc/head_characterization/``.
 
     Args:
         model_name: e.g. "pythia-2.8b" (used for the suite + filename).
@@ -375,8 +378,7 @@ def save_head_results(model_name, project_root, char_df=None, colloc_df=None):
         dict of {kind: written path}.
     """
     short = model_name.split("/")[-1]
-    suite = "pythia" if "pythia" in short else "gpt2"
-    out_dir = Path(project_root) / "results" / suite
+    out_dir = Path(project_root) / "results" / "adhoc" / "head_characterization"
     out_dir.mkdir(parents=True, exist_ok=True)
 
     written = {}
