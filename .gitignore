@@ -1,4 +1,5 @@
 .ipynb_checkpoints
+.vscode
 .DS_Store
 ~$*
 build-debug/*
@@ -21,3 +22,5 @@ paper/**/*.aux
 paper/**/*.log
 paper/**/*.fls
 paper/**/*.fdb_latexmk
+
+docs/paper_draft/

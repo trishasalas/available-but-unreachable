@@ -87,7 +87,7 @@ The declarative/evaluative gap is intentionally a difference of pooled paradigm 
 - `scorecard_base_rate.csv` begins with `#` prose comments and requires `comment="#"` or equivalent when loading.
 - Pythia-1B entropy is missing for control, finance, legal, and medical (174 elicitation rows); accessibility entropy is present, so the paper's current accessibility entropy tables are unaffected.
 
-## 5. Packaging problem still present
+## ~~5. Packaging problem still present~~
 
 Four claim-supporting result files that decision 0013 says should be re-homed under `results/adhoc/` are absent from this ZIP:
 
@@ -98,11 +98,13 @@ Four claim-supporting result files that decision 0013 says should be re-homed un
 
 The notebooks and narrative summaries are present, but the frozen tables cited as evidence are not. Restore these before treating the ZIP as a reviewable evidence package.
 
+Restored 8/14
+
 ## Priority order
 
-1. **Investigate and preregister the inverse frequency–late-binding result.** This is the main missed scientific lead.
-2. **Restore the four missing mechanistic evidence tables.** This is the main packaging blocker.
-3. **Keep the completion-paradox and fluent-wrongness claims cut.** The current data support those decisions.
+1. **I~~nvestigate and preregister the inverse frequency–late-binding result.** This is the main missed scientific lead~~.
+2. ~~**Restore the four missing mechanistic evidence tables.** This is the main packaging blocker.~~
+3. ~~**Keep the completion-paradox and fluent-wrongness claims cut.** The current data support those decisions.~~
 4. **Describe global-max binding precisely.** It is a saturated generic-pairing null; avoid implying it exhausts every depth-specific binding relationship.
 5. **Leave the known entropy coverage and stale-artifact cleanup below the scientific line**, unless the paper expands beyond accessibility entropy.
 
