@@ -1,0 +1,212 @@
+# FROZEN 2026-08-20 — changes require a dated protocol amendment and full rerun
+#
+# Primary paired evaluative battery:
+#   - 8 concepts paired to the original declarative battery
+#   - 1 violation + 1 conformant item per concept
+#   - identical neutral answer frame across both polarities
+#   - a concept passes evaluation only when both items are correct
+#
+# Pythia-2.8B has seen an earlier, different draft. It must be labeled pilot
+# and excluded from any confirmatory count unless the preregistration says
+# otherwise before this proposal is run.
+
+metadata:
+  status: frozen
+  frozen: "2026-08-20"
+  author_reviewed: "2026-08-20"
+  primary_scoring: both_polarities_must_be_correct
+  pilot_models:
+    - pythia-2.8b
+  confirmatory_model_count: 12
+
+prompts:
+
+  # ALT TEXT — AUTHOR APPROVED
+  - prompt_id: evalp_alt_text_primary_violation
+    pair_id: alt_text_primary
+    concept: alt text
+    prompt_type: evaluative_paired
+    template_type: neutral_review
+    polarity: violation
+    paired_with: decl_alt_text_001
+    prompt: "<h1>Heavy-Duty Dish Soap</h1><p>Tired of coming home to this?</p><img src='sink.jpg'><p>Based only on the code shown, an accessibility reviewer should mark this example as"
+    expected: "inaccessible because the image is missing an alt attribute or text alternative"
+    max_tokens: 100
+
+  - prompt_id: evalp_alt_text_primary_conformant
+    pair_id: alt_text_primary
+    concept: alt text
+    prompt_type: evaluative_paired
+    template_type: neutral_review
+    polarity: conformant
+    paired_with: decl_alt_text_001
+    prompt: "<h1>Heavy-Duty Dish Soap</h1><p>Tired of coming home to this?</p><img src='sink.jpg' alt='Sink filled with dirty dishes'><p>Based only on the code shown, an accessibility reviewer should mark this example as"
+    expected: "accessible with respect to the image; does not invent a missing-alt problem"
+    max_tokens: 100
+
+  # CLOSED CAPTIONS — AUTHOR APPROVED
+  - prompt_id: evalp_captions_primary_violation
+    pair_id: captions_primary
+    concept: closed captions
+    prompt_type: evaluative_paired
+    template_type: neutral_review
+    polarity: violation
+    paired_with: decl_captions_001
+    prompt: "<h2>Lecture 4: Cell Division</h2><video src='lecture.mp4' controls></video><p>Based only on the code shown, an accessibility reviewer should mark this example as"
+    expected: "inaccessible because the video has no captions or equivalent text alternative"
+    max_tokens: 100
+
+  - prompt_id: evalp_captions_primary_conformant
+    pair_id: captions_primary
+    concept: closed captions
+    prompt_type: evaluative_paired
+    template_type: neutral_review
+    polarity: conformant
+    paired_with: decl_captions_001
+    prompt: "<h2>Lecture 4: Cell Division</h2><video src='lecture.mp4' controls><track kind='captions' src='lecture.vtt' srclang='en' label='English'></video><p>Based only on the code shown, an accessibility reviewer should mark this example as"
+    expected: "accessible with respect to captions; does not claim captions are missing"
+    max_tokens: 100
+
+  # COLOR CONTRAST — AUTHOR APPROVED
+  - prompt_id: evalp_contrast_primary_violation
+    pair_id: color_contrast_primary
+    concept: color contrast
+    prompt_type: evaluative_paired
+    template_type: neutral_review
+    polarity: violation
+    paired_with: decl_color_contrast_001
+    prompt: "<p style='color:#999999; background:#ffffff'>Read our full privacy policy.</p><p>Based only on the code shown, an accessibility reviewer should mark this example as"
+    expected: "inaccessible because the text contrast is insufficient"
+    max_tokens: 100
+    # 2.85:1; normal text fails WCAG AA.
+
+  - prompt_id: evalp_contrast_primary_conformant
+    pair_id: color_contrast_primary
+    concept: color contrast
+    prompt_type: evaluative_paired
+    template_type: neutral_review
+    polarity: conformant
+    paired_with: decl_color_contrast_001
+    prompt: "<p style='color:#767676; background:#ffffff'>Read our full privacy policy.</p><p>Based only on the code shown, an accessibility reviewer should mark this example as"
+    expected: "accessible with respect to text contrast; does not claim the contrast is insufficient"
+    max_tokens: 100
+    # 4.54:1; normal text passes WCAG AA.
+
+  # FOCUS INDICATOR — AUTHOR APPROVED
+  - prompt_id: evalp_focus_indicator_primary_violation
+    pair_id: focus_indicator_primary
+    concept: focus indicator
+    prompt_type: evaluative_paired
+    template_type: neutral_review
+    polarity: violation
+    paired_with: decl_focus_indicator_001
+    prompt: "<button class='buy'>Buy now</button><style>.buy:focus { outline: none; }</style><p>Based only on the code shown, an accessibility reviewer should mark this example as"
+    expected: "inaccessible because keyboard focus has no visible indicator"
+    max_tokens: 100
+
+  - prompt_id: evalp_focus_indicator_primary_conformant
+    pair_id: focus_indicator_primary
+    concept: focus indicator
+    prompt_type: evaluative_paired
+    template_type: neutral_review
+    polarity: conformant
+    paired_with: decl_focus_indicator_001
+    prompt: "<button class='buy'>Buy now</button><style>.buy:focus { outline: 3px solid #005fcc; outline-offset: 2px; }</style><p>Based only on the code shown, an accessibility reviewer should mark this example as"
+    expected: "accessible with respect to visible keyboard focus; does not claim the indicator is missing"
+    max_tokens: 100
+    # A custom outline is not required for basic focus visibility. Browsers
+    # provide a native focus indicator unless author CSS suppresses it. This
+    # item uses an explicit visible replacement to make the contrast with
+    # outline:none unambiguous.
+
+  # KEYBOARD NAVIGATION — AUTHOR APPROVED
+  - prompt_id: evalp_keyboard_navigation_primary_violation
+    pair_id: keyboard_navigation_primary
+    concept: keyboard navigation
+    prompt_type: evaluative_paired
+    template_type: neutral_review
+    polarity: violation
+    paired_with: decl_keyboard_nav_001
+    prompt: "<form><label>First name <input name='first' tabindex='2'></label><label>Last name <input name='last' tabindex='1'></label><button type='submit' tabindex='3'>Submit</button></form><p>Based only on the code shown, an accessibility reviewer should mark this example as"
+    expected: "inaccessible because positive tabindex values override the natural document order; interactive elements should remain in source order rather than being manually numbered"
+    max_tokens: 100
+
+  - prompt_id: evalp_keyboard_navigation_primary_conformant
+    pair_id: keyboard_navigation_primary
+    concept: keyboard navigation
+    prompt_type: evaluative_paired
+    template_type: neutral_review
+    polarity: conformant
+    paired_with: decl_keyboard_nav_001
+    prompt: "<form><label>First name <input name='first'></label><label>Last name <input name='last'></label><button type='submit'>Submit</button></form><p>Based only on the code shown, an accessibility reviewer should mark this example as"
+    expected: "accessible with respect to tab order; native interactive elements need no tabindex and follow First name, Last name, then Submit in document order"
+    max_tokens: 100
+
+  # SEMANTIC HTML — AUTHOR APPROVED
+  - prompt_id: evalp_semantic_html_primary_violation
+    pair_id: semantic_html_primary
+    concept: semantic HTML
+    prompt_type: evaluative_paired
+    template_type: neutral_review
+    polarity: violation
+    paired_with: decl_semantic_html_001
+    prompt: "<div class='heading'>Shipping information</div><p>Orders ship within two business days.</p><p>Based only on the code shown, an accessibility reviewer should mark this example as"
+    expected: "inaccessible because a visual heading is not marked up as a programmatic heading"
+    max_tokens: 100
+
+  - prompt_id: evalp_semantic_html_primary_conformant
+    pair_id: semantic_html_primary
+    concept: semantic HTML
+    prompt_type: evaluative_paired
+    template_type: neutral_review
+    polarity: conformant
+    paired_with: decl_semantic_html_001
+    prompt: "<h2>Shipping information</h2><p>Orders ship within two business days.</p><p>Based only on the code shown, an accessibility reviewer should mark this example as"
+    expected: "accessible with respect to heading semantics; does not claim the heading lacks structure"
+    max_tokens: 100
+
+  # SKIP LINK — AUTHOR APPROVED
+  - prompt_id: evalp_skip_link_primary_violation
+    pair_id: skip_link_primary
+    concept: skip link
+    prompt_type: evaluative_paired
+    template_type: neutral_review
+    polarity: violation
+    paired_with: decl_skip_link_001
+    prompt: "A site repeats a 40-link navigation menu at the top of every page. A keyboard user must tab through all 40 links before reaching the main content, and the page provides no way to bypass the menu. Based only on this description, an accessibility reviewer should mark the page as"
+    expected: "inaccessible because repeated navigation cannot be bypassed"
+    max_tokens: 100
+
+  - prompt_id: evalp_skip_link_primary_conformant
+    pair_id: skip_link_primary
+    concept: skip link
+    prompt_type: evaluative_paired
+    template_type: neutral_review
+    polarity: conformant
+    paired_with: decl_skip_link_001
+    prompt: "A site repeats a 40-link navigation menu at the top of every page. The first focusable element lets a keyboard user jump directly to the main content. Based only on this description, an accessibility reviewer should mark the page as"
+    expected: "accessible with respect to bypassing repeated navigation; does not claim a bypass is missing"
+    max_tokens: 100
+
+  # SCREEN READER — AUTHOR APPROVED
+  - prompt_id: evalp_screen_reader_primary_violation
+    pair_id: screen_reader_primary
+    concept: screen reader
+    prompt_type: evaluative_paired
+    template_type: neutral_review
+    polarity: violation
+    paired_with: decl_screen_reader_001
+    prompt: "<main aria-hidden='true'><h1>Order status</h1><p>Your order has shipped.</p></main><p>Based only on the code shown, an accessibility reviewer should mark this example as"
+    expected: "inaccessible because the main content is hidden from screen readers or the accessibility tree"
+    max_tokens: 100
+
+  - prompt_id: evalp_screen_reader_primary_conformant
+    pair_id: screen_reader_primary
+    concept: screen reader
+    prompt_type: evaluative_paired
+    template_type: neutral_review
+    polarity: conformant
+    paired_with: decl_screen_reader_001
+    prompt: "<main><h1>Order status</h1><p>Your order has shipped.</p></main><p>Based only on the code shown, an accessibility reviewer should mark this example as"
+    expected: "accessible with respect to screen-reader exposure; does not claim the main content is hidden"
+    max_tokens: 100

@@ -1,168 +1,203 @@
-# 0002 — Evaluative prompt battery expansion
+# 0002 — Paired declarative–evaluative battery
 
-- **Status:** draft — NOT YET FROZEN
-- **Drafted:** 2026-08-09
-- **Frozen (commit):** *(fill in — this commit must precede any run)*
-- **Related decisions:** 0010 (source flag), 0011 (gap estimand), 0015 (key
-  normalization)
+- **Status:** FROZEN 2026-08-20 — model outputs not inspected at freeze
+- **Original draft:** 2026-08-09
+- **Instrument redesigned and author-reviewed:** 2026-08-20
+- **Frozen commit:** *(must be filled by the freeze commit before any frozen run)*
+- **Frozen battery SHA-256:** *(must be filled by the freeze commit)*
+- **Related decisions:** 0010 (source flag), 0011 (gap estimand), 0015 (concept normalization)
 
-> **Freeze statement.** This file is complete and committed before any of the new
-> evaluative prompts are run against any model. Items are not revised after results
-> are seen. If an item turns out to be badly constructed, it is reported as-is and the
-> problem is discussed in limitations — it is not silently replaced. Revision after
-> seeing which items produced the effect would fit the instrument to the hypothesis.
+> This document is still a draft protocol. No run made before the frozen commit
+> counts as confirmatory. The freeze commit must contain this preregistration, the
+> final battery, deterministic coding rules, synthetic tests, and the paired analyzer.
+> After that commit, prompts and rubrics do not change in response to model output.
 
----
+## 1. Question
 
-## 1. Motivation
+The current behavioral gap subtracts a ten-concept declarative mean from a
+five-concept evaluative mean. The concept populations differ. That estimator cannot
+show, for a specific concept in a specific model, that the model can define the
+concept but cannot apply it.
 
-The declarative–evaluative gap is currently measured by comparing a declarative
-battery (10 original concepts) against an evaluative battery of 5 code-review prompts
-that do not correspond to those concepts. Alt text pairs directly; "Click here" tests
-link text, which is not among the ten; unlabeled input has no declarative counterpart
-at all. Any pairing of the existing batteries is therefore forced.
+This battery tests that within-concept claim directly. Each evaluative concept is
+paired with its existing declarative prompt and is tested with both a violation and a
+conformant example.
 
-This expansion authors evaluative items that correspond one-to-one with declarative
-concepts, so the gap can be stated as a within-concept claim — *for this concept, at
-this scale, the model defines it and cannot apply it* — rather than as a difference
-between two means over non-overlapping concept sets.
+## 2. Development history and pilot boundary
 
-Cost is low: evaluative prompts touch elicitation only. No binding rerun, no frequency
-rerun, no infini-gram queries.
+An earlier ten-item draft covered alt text, closed captions, and color contrast. Its
+prompt wrapper and at least one item were informed by exploratory Pythia-2.8B output.
+The Pythia evaluative notebook also contains a partial attempted run of that earlier
+draft, although no paired-result CSV survives under `results/`.
 
-## 2. Concept mapping
+The redesigned instrument differs from that pilot draft. Nevertheless,
+**Pythia-2.8B is the pilot model** because its output was visible during instrument
+development. It is excluded from every confirmatory aggregate. It will be run on the
+frozen instrument without further changes and reported descriptively.
 
-Eight of the ten Paper 1 declarative concepts take a natural evaluative form. Two do
-not, and are excluded deliberately rather than by omission.
+The confirmatory set is the remaining twelve models, whose output on this instrument
+has not been inspected.
 
-| # | Concept | Declarative prompt (existing) | Evaluative item |
-|---|---------|-------------------------------|-----------------|
-| 1 | screen reader | "A screen reader is" | *(to author)* |
-| 2 | skip link | "A skip link is" | *(to author)* |
-| 3 | alt text | "The purpose of alt text is" | *(to author)* |
-| 4 | focus indicator | "A focus indicator is" | *(to author)* |
-| 5 | keyboard navigation | "Keyboard navigation allows" | *(to author)* |
-| 6 | color contrast | "Color contrast is important because" | *(to author)* |
-| 7 | semantic HTML | "Semantic HTML helps" | *(to author)* |
-| 8 | closed captions | "Closed captions are used for" | *(to author)* |
+## 3. Concepts
 
-**Excluded, with reason:**
+Eight of the ten original declarative concepts have author-approved evaluative pairs.
 
-- **WCAG** — an acronym expansion task. An evaluative item ("which WCAG criterion does
-  this violate") tests criterion-number recall, not application of the concept. The
-  declarative item tests whether the model can expand the acronym; there is no
-  matching evaluative capability to test.
-- **ARIA** — same reason. ARIA additionally serves as the fluent-confabulation control
-  in the existing battery, a role that a paired evaluative item would confuse.
+| concept | declarative prompt | evaluative pair |
+|---|---|---|
+| screen reader | `decl_screen_reader_001` | main content exposed to vs removed from the accessibility tree |
+| skip link | `decl_skip_link_001` | repeated navigation with vs without a bypass |
+| alt text | `decl_alt_text_001` | contextual image with vs without an appropriate text alternative |
+| focus indicator | `decl_focus_indicator_001` | visible replacement focus outline vs `outline: none` |
+| keyboard navigation | `decl_keyboard_nav_001` | native document order vs positive `tabindex` overriding it |
+| color contrast | `decl_color_contrast_001` | 4.54:1 passing pair vs 2.85:1 failing pair |
+| semantic HTML | `decl_semantic_html_001` | native `h2` vs visually styled `div` heading |
+| closed captions | `decl_captions_001` | lecture video with vs without a captions track |
 
-The paper reports **eight pairs**, and states the exclusion explicitly rather than
-letting a reader wonder where the other two went.
+Two declarative concepts remain excluded:
 
-## 3. Item authoring rules
+- **WCAG:** the declarative item tests acronym expansion. A natural evaluative item
+  would test criterion recall or some other accessibility concept, not application of
+  the acronym expansion.
+- **ARIA:** the declarative item also tests acronym expansion. An ARIA implementation
+  item would test a particular component or state, not application of the expansion.
 
-Frozen before authoring. Each evaluative item must:
+The final battery contains **16 primary items: 8 concepts × 2 polarities**.
 
-1. **Have unambiguous ground truth.** A single correct answer that any practising
-   accessibility specialist would give. If two specialists could reasonably disagree,
-   the item is out.
-2. **Require application, not recall.** The correct answer must not be derivable from
-   restating the definition. An item answerable by pattern-completion from the
-   declarative prompt is testing the wrong thing.
-3. **Match the existing evaluative style.** Zero-shot, completion-framed, consistent
-   with Experiment 2a's `code_review` template type so results are comparable to the
-   original five.
-4. **Not name the concept in the prompt.** "What is this `<img>` missing?" not "What
-   alt text is missing?" Naming the concept converts the item into a recall task.
-5. **Be authored without reference to model outputs.** Items are written from the
-   concept list and the WCAG success criteria, not by looking at what models already
-   get right or wrong.
+## 4. Item construction
 
-The existing five Experiment 2a items are **retained unchanged** and reported
-alongside. They are not replaced, and their results are not re-coded.
+Each pair contains:
 
-## 4. Run configuration
+1. one **violation** item with a single, author-verified accessibility fault; and
+2. one **conformant** item in which the relevant fault is absent.
 
-Frozen:
+Both polarities use the neutral answer frame:
 
-- **Models (13):** Pythia 160M / 410M / 1B / 2.8B / 6.9B / 12B; GPT-2 small / medium /
-  large / XL; OLMo-2 1B / 7B / 13B. Base (non-instruction-tuned) checkpoints.
-- **Decoding:** greedy, `do_sample=False`, `temperature=0`. *(Explicitly stated
-  because a prior `do_sample=True` defect invalidated an earlier elicitation run.)*
-- **`max_tokens`:** 100, matching the standardization already applied in
-  `data/accessibility.yaml`.
-- **Battery file:** items added to `data/accessibility.yaml` with
-  `prompt_type: evaluative`, `template_type: code_review`, and
-  `source: original` *(pending 0010)*.
-- **Coding rubric:** identical to the existing evaluative coding — correct = identifies
-  the specific violation; partial = identifies some issue but not the core violation;
-  incorrect = wrong, off-topic, or loops. No new rubric is introduced.
+> Based only on the code shown, an accessibility reviewer should mark this example as
 
-## 5. Analysis plan
+The frame permits either `accessible` or `inaccessible because ...`. It does not
+assert that a problem exists. Items do not name the target concept in the prompt.
 
-Frozen:
+Ground truth was reviewed by the author before the coding rules or confirmatory runs.
+The review and caveats are recorded in `docs/audits/paired-battery-readiness.md`.
 
-- **Primary.** Paired within-concept comparison across all 13 models: for each
-  concept × model, declarative outcome vs evaluative outcome. Reported as the count of
-  model × concept cells where declarative is correct and evaluative is not.
-- **Secondary.** Gap in percentage points per scale, per family, restricted to the
-  eight paired concepts. Compared against
-  `_Archive/_results/pythia_gap_PRE_EXPANSION_REFERENCE.csv` as a sanity check on
-  the concept restriction.
-- **Uniformity is the claim.** The floor claim is carried by "no evaluative emergence
-  at any scale in any family," not by an average difference. Report the full
-  8 × 13 grid, not only the aggregate.
-- **No significance test on the aggregate gap.** Per-cell outcomes are categorical and
-  the interesting statement is uniformity, not a mean difference.
+## 5. Models and decoding
 
-## 6. Predictions
+All models are base checkpoints decoded greedily with `do_sample=False` and
+`max_new_tokens=100`.
 
-Recorded in advance:
+### Confirmatory models (12)
 
-1. The gap holds at every scale in every family, on the paired items.
-2. Pythia 6.9B is the strongest evaluative performer and still shows the gap.
-3. Declarative accuracy rises with scale on the paired concepts; evaluative accuracy
-   stays near floor with occasional isolated successes.
-4. Isolated evaluative successes cluster on concepts that appear in training data as
-   named anti-patterns (the "Click here" pattern) rather than on concepts requiring
-   inference from the code.
+- Pythia: 160M, 410M, 1B, 6.9B, 12B
+- GPT-2: 124M, 355M, 774M, 1.5B
+- OLMo 2: 1B, 7B, 13B, using the pinned revisions in `src/olmo_config.py`
 
-## 7. Branches — all ship
+### Pilot model (reported separately)
 
-- **Gap replicates on all eight pairs.** Reported as the primary result; the paired
-  framing replaces the pooled-means framing throughout Section I.
-- **Gap replicates on some pairs and not others.** Reported per concept. Which
-  concepts break the pattern is itself a finding and is discussed rather than
-  averaged away.
-- **Gap does not replicate.** Reported. The pooled-means result is then attributed to
-  the concept-population mismatch documented in decision 0010, and Section I is
-  rewritten around whatever the paired data actually shows.
-- **New items produce degenerate output** (looping, prompt echo) at a rate materially
-  different from the original five. Instrumentation problem; reported as such, and the
-  original five remain the primary evidence.
+- Pythia-2.8B
 
-## 8. Outputs
+## 6. Frozen item coding
 
-- `data/accessibility.yaml` — eight new entries, `prompt_type: evaluative`
-- `results/elicitation/{suite}/{model}/{model}-accessibility.csv` — regenerated
-- `results/analysis/paired_gap.csv` — the 8 × 13 grid *(new)*
+Every generated item is coded `correct`, `partial`, or `incorrect` by the prompt-
+specific rules in `src/paired_evaluative.py`.
 
----
+For a violation item:
 
-## Authoring worksheet
+- **correct:** the response classifies the example as inaccessible or failing and
+  identifies the pair's specific fault;
+- **partial:** the response identifies only that something is inaccessible, or names
+  the relevant issue without giving a coherent classification;
+- **incorrect:** the response calls the example accessible, identifies another issue,
+  or is unrelated or degenerate.
 
-*Not part of the frozen protocol. Delete or move below the freeze line before
-committing.*
+For a conformant item:
 
-For each concept: what does a violation look like in code, and what is the single
-correct identification of it?
+- **correct:** the response classifies the example as accessible, conformant, passing,
+  or free of the claimed issue;
+- **partial:** the response does not make a codeable accessibility judgment;
+- **incorrect:** the response classifies the example as inaccessible, or explicitly
+  contradicts an accessible classification by asserting the target fault.
 
-| Concept | Violation in code | Correct answer |
-|---------|-------------------|----------------|
-| screen reader | | |
-| skip link | | |
-| alt text | | |
-| focus indicator | | |
-| keyboard navigation | | |
-| color contrast | | |
-| semantic HTML | | |
-| closed captions | | |
+Synthetic tests exercise every rule before the freeze. Tests contain authored example
+strings only; no model output is used to shape the rules.
+
+## 7. Primary estimand
+
+An evaluative concept **passes only when both its violation and conformant items are
+coded correct**. This blocks two trivial strategies: always declaring a problem and
+never declaring one.
+
+For every model × concept cell:
+
+- `declarative_pass = declarative accuracy == correct`
+- `evaluative_pass = violation correct AND conformant correct`
+
+The full cell state is reported:
+
+1. declarative pass / evaluative pass;
+2. declarative pass / evaluative fail (**declarative–evaluative gap cell**);
+3. declarative fail / evaluative pass;
+4. declarative fail / evaluative fail.
+
+The primary summary is the number and proportion of declaratively correct cells that
+fail the evaluative pair, with the denominator printed explicitly. Confirmatory and
+pilot cells are never pooled.
+
+No independence-based significance test is applied to the 8 × 12 confirmatory grid.
+Concepts repeat across related model scales, and model scales repeat within families.
+The complete grid is more informative than a pseudo-replicated p-value.
+
+## 8. Secondary summaries
+
+- Declarative and evaluative pass rates over the same eight concepts at each scale,
+  plus their percentage-point difference.
+- Item-level correct/partial/incorrect outcomes for both polarities.
+- Strict-binary and partial-credit item means, clearly labeled secondary.
+- Polarity shortcut counts: violation correct/conformant wrong and the reverse.
+- The original five evaluative items remain a historical battery and are not pooled
+  into the paired estimator.
+
+## 9. Predictions
+
+1. At least one confirmatory model × concept cell will show declarative pass with
+   evaluative failure.
+2. The declarative-only state will be more common than the evaluative-only state.
+3. Requiring both polarities will reduce evaluative success relative to scoring only
+   violation items because some models will invent faults on conformant examples.
+4. The size and distribution of the paired gap may differ from the old pooled-means
+   gap. The paired result replaces, rather than retroactively validates, that estimator.
+
+## 10. Outcome branches — all ship
+
+- **Gap widespread:** report its exact distribution by concept, scale, and family;
+  do not collapse it into a universal claim if exceptions exist.
+- **Gap concept-specific or family-specific:** make the heterogeneity the result and
+  identify which cells break the pattern.
+- **Little or no paired gap:** withdraw the same-concept formulation. Retain the old
+  pooled result only as a difference between historical batteries.
+- **Conformant items cause broad false positives:** report this as polarity or prompt-
+  frame sensitivity, not automatically as lack of concept knowledge.
+- **Items produce substantial degeneration or uncodable continuations:** report the
+  instrument failure, preserve the outputs, and do not rewrite items after inspection.
+
+## 11. Frozen artifacts and outputs
+
+The freeze commit must contain:
+
+- `data/evaluative_paired.yaml` — renamed from the approved proposal;
+- `docs/preregistrations/0002-evaluative-prompts.md` — this protocol;
+- `src/paired_evaluative.py` — validation, coding, and analysis;
+- `tests/test_paired_evaluative.py` — synthetic rule and aggregation tests.
+
+Each model run writes to a separate paired-battery path, never to the existing
+elicitation battery:
+
+- `results/evaluative_paired/{suite}/{model}/{model}-evaluative-paired.csv`
+- `results/evaluative_paired/{suite}/{model}/{model}-evaluative-paired.md`
+
+The analyzer writes:
+
+- `results/analysis/paired_item_coded.csv`
+- `results/analysis/paired_gap_cells.csv`
+- `results/analysis/paired_gap_summary.csv`
+
+No existing `*_gap.csv` file is overwritten.
