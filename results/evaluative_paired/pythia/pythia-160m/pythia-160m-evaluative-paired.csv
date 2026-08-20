@@ -1,0 +1,82 @@
+suite,scale,model,prompt_id,pair_id,concept,polarity,paired_with,prompt_type,template_type,prompt,output,max_tokens
+pythia,160M,pythia-160m,evalp_alt_text_primary_violation,alt_text_primary,alt text,violation,decl_alt_text_001,evaluative_paired,neutral_review,"<h1>Heavy-Duty Dish Soap</h1><p>Tired of coming home to this?</p><img src='sink.jpg'><p>Based only on the code shown, an accessibility reviewer should mark this example as"," a ""work in progress"" and not a ""work in progress.""</p><p>The code is based on the code shown in the link below.</p><p>The code is based on the code shown in the link below.</p><p>The code is based on the code shown in the link below.</p><p>The code is based on the code shown in the link below.</p><p>The code is based on the code shown in the link below.</",100
+pythia,160M,pythia-160m,evalp_alt_text_primary_conformant,alt_text_primary,alt text,conformant,decl_alt_text_001,evaluative_paired,neutral_review,"<h1>Heavy-Duty Dish Soap</h1><p>Tired of coming home to this?</p><img src='sink.jpg' alt='Sink filled with dirty dishes'><p>Based only on the code shown, an accessibility reviewer should mark this example as"," a ""dirty"" dish. The code is not a ""dirty"" dish, but a ""dirty"" dish.</p><p>The code is a ""dirty"" dish, but a ""dirty"" dish.</p><p>The code is a ""dirty"" dish, but a ""dirty"" dish.</p><p>The code is a ""dirty"" dish, but a ""dirty"" dish.</p><p>The code is a ""dirty"" dish, but a ""dirty",100
+pythia,160M,pythia-160m,evalp_captions_primary_violation,captions_primary,closed captions,violation,decl_captions_001,evaluative_paired,neutral_review,"<h2>Lecture 4: Cell Division</h2><video src='lecture.mp4' controls></video><p>Based only on the code shown, an accessibility reviewer should mark this example as"," a ""live"" video. The code is available for download from the following link:</p><p>http://www.youtube.com/watch?v=JZ_0_0_0oQ&feature=related</p><p>The code is available for download from the following link:</p><p>http://www.youtube.com/watch?v=JZ_0_0_0oQ&feature=related</p><p>The code",100
+pythia,160M,pythia-160m,evalp_captions_primary_conformant,captions_primary,closed captions,conformant,decl_captions_001,evaluative_paired,neutral_review,"<h2>Lecture 4: Cell Division</h2><video src='lecture.mp4' controls><track kind='captions' src='lecture.vtt' srclang='en' label='English'></video><p>Based only on the code shown, an accessibility reviewer should mark this example as"," a ""Lecture 4: Cell Division"".</p><p>The code is based on the code shown in the following link:</p><p>http://www.google.com/search?q=cell+division&amp;oq=en&amp;q=cell+division&amp;oq=en&amp;q=cell+division&amp;oq=en&amp;q=cell+division&amp;oq=en&",100
+pythia,160M,pythia-160m,evalp_contrast_primary_violation,color_contrast_primary,color contrast,violation,decl_color_contrast_001,evaluative_paired,neutral_review,"<p style='color:#999999; background:#ffffff'>Read our full privacy policy.</p><p>Based only on the code shown, an accessibility reviewer should mark this example as"," a violation of the privacy policy.</p>
+<p>The code is not available for download.</p>
+<p>The code is not available for download.</p>
+<p>The code is not available for download.</p>
+<p>The code is not available for download.</p>
+<p>The code is not available for download.</p>
+<p>The code is not available for download.</p>
+<p>The code is",100
+pythia,160M,pythia-160m,evalp_contrast_primary_conformant,color_contrast_primary,color contrast,conformant,decl_color_contrast_001,evaluative_paired,neutral_review,"<p style='color:#767676; background:#ffffff'>Read our full privacy policy.</p><p>Based only on the code shown, an accessibility reviewer should mark this example as"," a violation of the privacy policy.</p>
+<p>The code is not available for download.</p>
+<p>The code is not available for download.</p>
+<p>The code is not available for download.</p>
+<p>The code is not available for download.</p>
+<p>The code is not available for download.</p>
+<p>The code is not available for download.</p>
+<p>The code is",100
+pythia,160M,pythia-160m,evalp_focus_indicator_primary_violation,focus_indicator_primary,focus indicator,violation,decl_focus_indicator_001,evaluative_paired,neutral_review,"<button class='buy'>Buy now</button><style>.buy:focus { outline: none; }</style><p>Based only on the code shown, an accessibility reviewer should mark this example as"," a <a href='https://github.com/jonschlinkert/css-accessibility-reviewer'>accessibility review</a>.</p>
+
+<p>The <a href='https://github.com/jonschlinkert/css-accessibility-reviewer'>accessibility review</a> is a <a href='https://github.com/jonschlinkert/css-accessibility-reviewer/issues'>issue</",100
+pythia,160M,pythia-160m,evalp_focus_indicator_primary_conformant,focus_indicator_primary,focus indicator,conformant,decl_focus_indicator_001,evaluative_paired,neutral_review,"<button class='buy'>Buy now</button><style>.buy:focus { outline: 3px solid #005fcc; outline-offset: 2px; }</style><p>Based only on the code shown, an accessibility reviewer should mark this example as"," a “public” page.
+
+<div class='buy'>Buy now</div>
+
+<div class='buy'>Buy now</div>
+
+<div class='buy'>Buy now</div>
+
+<div class='buy'>Buy now</div>
+
+<div class='buy'>Buy now</div>
+
+<div class='buy'>Buy now</div>
+
+<div class='buy'>Buy now</div>
+
+<",100
+pythia,160M,pythia-160m,evalp_keyboard_navigation_primary_violation,keyboard_navigation_primary,keyboard navigation,violation,decl_keyboard_nav_001,evaluative_paired,neutral_review,"<form><label>First name <input name='first' tabindex='2'></label><label>Last name <input name='last' tabindex='1'></label><button type='submit' tabindex='3'>Submit</button></form><p>Based only on the code shown, an accessibility reviewer should mark this example as"," a <a href='http://www.google.com/search?q=first&amp;type=1' target='_blank'>first name</a>.</p>
+<p>The <a href='http://www.google.com/search?q=first&amp;type=1' target='_blank'>first name</a> is a search term that is used to search for a particular name. The search term is used to search for a",100
+pythia,160M,pythia-160m,evalp_keyboard_navigation_primary_conformant,keyboard_navigation_primary,keyboard navigation,conformant,decl_keyboard_nav_001,evaluative_paired,neutral_review,"<form><label>First name <input name='first'></label><label>Last name <input name='last'></label><button type='submit'>Submit</button></form><p>Based only on the code shown, an accessibility reviewer should mark this example as", a <a href='http://www.google.com/search?q=firstname&amp;type=text&amp;q=lastname&amp;q=firstname&amp;type=html&amp;type=text&amp;type=html&amp;type=html&amp;type=html&amp;type=html&amp;type=html&amp;type=html&amp;type=html&amp;type=html&,100
+pythia,160M,pythia-160m,evalp_semantic_html_primary_violation,semantic_html_primary,semantic HTML,violation,decl_semantic_html_001,evaluative_paired,neutral_review,"<div class='heading'>Shipping information</div><p>Orders ship within two business days.</p><p>Based only on the code shown, an accessibility reviewer should mark this example as"," a ""Accessibility Review"" and not as a ""Review.""
+</div><p>The following is a list of the most recent versions of the Accessibility Review.
+</p><p>The following is a list of the most recent versions of the Accessibility Review.
+</p><p>The following is a list of the most recent versions of the Accessibility Review.
+</p><p>The following is a list of the most recent versions of the Accessibility Review",100
+pythia,160M,pythia-160m,evalp_semantic_html_primary_conformant,semantic_html_primary,semantic HTML,conformant,decl_semantic_html_001,evaluative_paired,neutral_review,"<h2>Shipping information</h2><p>Orders ship within two business days.</p><p>Based only on the code shown, an accessibility reviewer should mark this example as"," a ""Not Available"" or ""Not Available"" for the purpose of the review.</p><p>The following code is not available for this review.</p><p>The following code is not available for this review.</p><p>The following code is not available for this review.</p><p>The following code is not available for this review.</p><p>The following code is not available for this review.</p><p>The following code is not available for this review",100
+pythia,160M,pythia-160m,evalp_skip_link_primary_violation,skip_link_primary,skip link,violation,decl_skip_link_001,evaluative_paired,neutral_review,"A site repeats a 40-link navigation menu at the top of every page. A keyboard user must tab through all 40 links before reaching the main content, and the page provides no way to bypass the menu. Based only on this description, an accessibility reviewer should mark the page as"," accessible.
+
+A site repeats a 40-link navigation menu at the top of every page. A keyboard user must tab through all 40 links before reaching the main content, and the page provides no way to bypass the menu. Based only on this description, an accessibility reviewer should mark the page as accessible.
+
+A site repeats a 40-link navigation menu at the top of every page. A keyboard user must tab through all 40 links before reaching the main content, and the page provides no",100
+pythia,160M,pythia-160m,evalp_skip_link_primary_conformant,skip_link_primary,skip link,conformant,decl_skip_link_001,evaluative_paired,neutral_review,"A site repeats a 40-link navigation menu at the top of every page. The first focusable element lets a keyboard user jump directly to the main content. Based only on this description, an accessibility reviewer should mark the page as"," accessible.
+
+A site repeats a 40-link navigation menu at the top of every page. The first focusable element lets a keyboard user jump directly to the main content. Based only on this description, an accessibility reviewer should mark the page as accessible.
+
+A site repeats a 40-link navigation menu at the top of every page. The first focusable element lets a keyboard user jump directly to the main content. Based only on this description, an accessibility reviewer should mark the page as",100
+pythia,160M,pythia-160m,evalp_screen_reader_primary_violation,screen_reader_primary,screen reader,violation,decl_screen_reader_001,evaluative_paired,neutral_review,"<main aria-hidden='true'><h1>Order status</h1><p>Your order has shipped.</p></main><p>Based only on the code shown, an accessibility reviewer should mark this example as"," a ""complete"" order.</p></main>
+<p>The following code shows the order status:</p>
+<pre><code>
+<span class=""code"">
+<span class=""code"">
+<span class=""code"">
+<span class=""code"">
+<span class=""code"">
+<span class=""code"">
+<span class=""code"">
+<span class=""code"">
+<span class=""code"">
+<span class=""code"">",100
+pythia,160M,pythia-160m,evalp_screen_reader_primary_conformant,screen_reader_primary,screen reader,conformant,decl_screen_reader_001,evaluative_paired,neutral_review,"<main><h1>Order status</h1><p>Your order has shipped.</p></main><p>Based only on the code shown, an accessibility reviewer should mark this example as"," a ""complete"" order.</p></p></p></div>
+<div class=""section"">
+<h2>Description</h2>
+<p>The order has been shipped.</p>
+<p>The order has been shipped.</p>
+<p>The order has been shipped.</p>
+<p>The order has been shipped.</p>
+<p>The order has been shipped.</p>
+<p>The order has been shipped",100
