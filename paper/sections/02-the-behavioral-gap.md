@@ -1,8 +1,6 @@
 ## The Behavioral Gap
 
-A model that correctly defines an accessibility concept when asked directly can fail completely when asked to apply it — and the two abilities scale differently. The difference between declarative accuracy and evaluative accuracy is the declarative-evaluative gap. This section establishes it behaviorally across both model families.
 
-**Setup.** All five investigations in this paper share one environment, declared here once; each later section states its own instrument where it is used. The models are six Pythia scales (160M, 410M, 1B, 2.8B, 6.9B, 12B) and four GPT-2 scales (124M, 355M, 774M, 1.5B), all base models, generating greedily. Corpus frequency is measured with Infini-gram against The Pile — exact for Pythia, a labeled cross-corpus proxy for GPT-2 (Section 4). The behavioral instrument is an elicitation battery: matched declarative and evaluative prompts per concept, plus a small completion battery across four concepts (n = 8 per scale). Responses are coded by deterministic, version-controlled criteria. All 510 responses were coded; every change to the criteria is recorded in the decision log before it takes effect.
 
 Two cuts of the coded data appear in this paper: the gap series, computed on the concepts that appear in both the declarative and evaluative batteries, and the full-battery view, which scores every response as binary correct or incorrect. Both views find the gap at nine of ten model-scale points; at Pythia-12B, declarative accuracy declines to meet evaluative failure and the gap closes. Whether that decline appears in the aggregate depends on which concepts are in the denominator — but per-concept, the regression is unambiguous, and the trajectory claims that follow are made at that resolution.
 

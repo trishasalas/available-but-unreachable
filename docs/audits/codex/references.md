@@ -1,12 +1,7 @@
 # References
 
-Yes. I found a particularly important precedent—but nothing that appears to report your exact result.
-
-The closest paper is [Voita et al. (2019), “Analyzing Multi-Head Self-Attention: Specialized Heads Do the Heavy Lifting, the Rest Can Be Pruned”](https://aclanthology.org/P19-1580/). They identify attention heads specialized for rare words. That gives you published evidence for the missing conceptual step:
-
-> token frequency can systematically affect attention specialization.
-
-Their setting is machine translation, and their rarity measure is different. They do not test compound frequency, late-layer token binding, decoder-only models, or the relationship to behavioral accuracy. So your result seems to extend this substantially.
+- [Voita et al. (2019), “Analyzing Multi-Head Self-Attention: Specialized Heads Do the Heavy Lifting, the Rest Can Be Pruned”](https://aclanthology.org/P19-1580/). 
+They identify attention heads specialized for rare words. That gives you published evidence for the missing conceptual step:
 
 ### Papers I would definitely cite
 
