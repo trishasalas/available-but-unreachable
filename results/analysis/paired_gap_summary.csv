@@ -1,0 +1,14 @@
+model,model_key,suite,scale,is_pilot,confirmatory,n_concepts,declarative_passes,evaluative_pair_passes,gap_cells,gap_given_declarative_numerator,gap_given_declarative_denominator,gap_given_declarative_pct,declarative_pass_pct,evaluative_pass_pct,paired_gap_pct_pts,declarative_and_evaluative_pass,declarative_pass_evaluative_fail,declarative_fail_evaluative_pass,declarative_and_evaluative_fail
+gpt2,gpt2,gpt2,124M,False,True,8,1,0,1,1,1,100.0,12.5,0.0,12.5,0,1,0,7
+gpt2-large,gpt2-large,gpt2,774M,False,True,8,3,0,3,3,3,100.0,37.5,0.0,37.5,0,3,0,5
+gpt2-medium,gpt2-medium,gpt2,355M,False,True,8,2,0,2,2,2,100.0,25.0,0.0,25.0,0,2,0,6
+gpt2-xl,gpt2-xl,gpt2,1.5B,False,True,8,5,0,5,5,5,100.0,62.5,0.0,62.5,0,5,0,3
+OLMo-2-0425-1B,OLMo-2-0425-1B,olmo,1B,False,True,8,3,0,3,3,3,100.0,37.5,0.0,37.5,0,3,0,5
+OLMo-2-1124-13B,OLMo-2-1124-13B,olmo,13B,False,True,8,4,0,4,4,4,100.0,50.0,0.0,50.0,0,4,0,4
+OLMo-2-1124-7B,OLMo-2-1124-7B,olmo,7B,False,True,8,5,0,5,5,5,100.0,62.5,0.0,62.5,0,5,0,3
+pythia-12b,pythia-12b,pythia,12B,False,True,8,3,0,3,3,3,100.0,37.5,0.0,37.5,0,3,0,5
+pythia-160m,pythia-160m,pythia,160M,False,True,8,0,0,0,0,0,,0.0,0.0,0.0,0,0,0,8
+pythia-1b,pythia-1b,pythia,1B,False,True,8,2,0,2,2,2,100.0,25.0,0.0,25.0,0,2,0,6
+pythia-2.8b,pythia-2.8b,pythia,2.8B,True,False,8,5,1,4,4,5,80.0,62.5,12.5,50.0,1,4,0,3
+pythia-410m,pythia-410m,pythia,410M,False,True,8,2,0,2,2,2,100.0,25.0,0.0,25.0,0,2,0,6
+pythia-6.9b,pythia-6.9b,pythia,6.9B,False,True,8,5,0,5,5,5,100.0,62.5,0.0,62.5,0,5,0,3
