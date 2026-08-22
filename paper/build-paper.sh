@@ -23,8 +23,8 @@
 
 set -e
 
-OUTPUT="accessibility-concept-emergence.pdf"
-SECTIONS="paper/sections"
+OUTPUT="tmlr-untitled.pdf"
+SECTIONS="sections"
 DEBUG_DIR="build-debug"
 INTERMEDIATE="$DEBUG_DIR/paper-intermediate.tex"
 DEBUG=false
@@ -38,7 +38,10 @@ if [[ "$1" == "--debug" ]]; then
 fi
 
 PANDOC_FLAGS=(
-  --from markdown-implicit_figures
+  # tex_math_single_backslash: the manuscript writes inline math as \( ... \).
+  # Pandoc's default markdown reader does NOT enable this, and silently reads
+  # \( as an escaped paren — dropping every \rho and doubling nested parens.
+  --from markdown-implicit_figures+tex_math_single_backslash
   --metadata-file=build/metadata.yaml
   --lua-filter=build/filters/caption-style.lua
   --template=build/template.tex
@@ -55,12 +58,12 @@ PANDOC_FLAGS=(
 SECTION_FILES=(
   "$SECTIONS/01-introduction.md"
   "$SECTIONS/02-related.md"
-  "$SECTIONS/03-methodology.md"
-  "$SECTIONS/04-results.md"
-  "$SECTIONS/05-discussion.md"
-  "$SECTIONS/06-conclusion.md"
-  "$SECTIONS/07-limitations.md"
-  "$SECTIONS/08-appendix.md"
+  "$SECTIONS/03-methods.md"
+  "$SECTIONS/04-the-behavioral-gap.md"
+  "$SECTIONS/05-binding-is-compensatory.md"
+  "$SECTIONS/06-frequency-is-the-floor.md"
+  "$SECTIONS/07-discussion.md"
+  "$SECTIONS/08-limitations.md"
   "$SECTIONS/09-references.md"
   "$SECTIONS/10-colophon.md"
 )

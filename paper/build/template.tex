@@ -273,6 +273,11 @@ $endif$
 
 
 % Reduce code block font size so long lines fit within the page margins.
+% fancyvrb is loaded explicitly: pandoc only emits it inside $highlighting-macros$,
+% which is empty when the manuscript contains no highlighted code block. Re-loading
+% it is a no-op when pandoc already did. Without this, the next line fails with
+% "Undefined control sequence \DefineVerbatimEnvironment".
+\usepackage{fancyvrb}
 \DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\},fontsize=\small}
 $if(tables)$
 \usepackage{longtable,booktabs}

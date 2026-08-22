@@ -1,0 +1,17 @@
+## Discussion
+
+The results establish a behavioral mismatch and rule out two simple explanations for it. The original pooled gap reproduces across three model families. The paired test sharpens the claim: in all 35 confirmatory cells where a model defines the concept correctly, it fails the violation/conformant application pair for that same concept.
+
+The binding result is easiest to understand as a difficulty signal. Rarer compounds receive stronger value-weighted writes in the final third of every model tested. The direction survives a uniform prompt and token-count controls. Yet the compounds receiving those writes are also the ones answered less accurately. Stronger late interaction is not evidence of stronger knowledge.
+
+The ablation keeps this interpretation bounded. Frequency-selected heads perturb the output distribution more than matched controls at some Pythia scales, but their effects are small, inconsistent across scale, and never change the top token in the saved trials. The data support a distributed late-layer response. They do not support a fixed circuit that carries the response into behavior.
+
+Frequency has a different role. It is the strongest predictor of declarative accuracy across all three families, with correlations between 0.52 and 0.59. But frequency is constant for a concept, while the model's response changes with the task. The paired result holds the concept fixed across declarative and evaluative measures, but it does not isolate which feature of the task blocks access. Availability and reachability are useful names for the distinction, not identified internal mechanisms.
+
+Pythia-2.8B provides the one exception to the strict pair-level result. Reported separately as the development-exposed pilot, it passes skip link, the only concept described entirely in prose. The other seven pairs require interpreting HTML or CSS. That success is consistent with framing-dependent reachability, but format and concept are confounded. It does not establish a general framing effect or special skip-link knowledge.
+
+Related work suggests that a separation between stored information and successful use is not unique to accessibility. Dai et al. (2026) observe memorized facts that fail to reach downstream reasoning, and Basu et al. (2026) recover clinical information internally that interventions do not reliably turn into correct decisions. Our results do not establish a general property of all autoregressive transformers. They add a cross-family behavioral case with a frequency-sensitive internal correlate.
+
+Accessibility also raises a training-data hypothesis that the present study does not test. Concepts such as alt text and skip links are described in standards and tutorials, while ordinary code examples may fail to implement them. If descriptive and applied examples are distributed differently, increasing corpus volume could preserve the imbalance rather than repair it. Testing that account requires measuring the ratio directly.
+
+Scale alone is not an intervention supported by these results. A direct test would change the composition of exposure while holding its volume fixed, then ask whether evaluative accuracy improves and late value-weighted binding weakens. Until that experiment is run, compensatory binding is a diagnostic candidate, not an intervention target.
