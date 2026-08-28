@@ -1,18 +1,30 @@
 ---
 title: "Available but Unreachable: The Declarative-Evaluative Gap in Language Models"
-author: "Trisha Salas"
-date: "August 2026"
-affiliation: "Independent Researcher"
+author: 
+  - name: "Trisha Salas"
+    # heading: unused -- tmlr.sty generates the running head from its
+    # package option ("Under review as submission to TMLR" when anonymous).
+    heading: "Under Submittion to TMLR"
+    email: "trisha@trishasalas.com"
 abstract: |
   A language model can state what an accessibility concept means and still fail to apply it. We measure this declarative-evaluative gap in thirteen models from three families: Pythia, GPT-2, and OLMo 2. In the original behavioral batteries, the gap opens early and persists across families. At Pythia-12B, it closes because declarative accuracy falls. Three concepts answered correctly at smaller scales regress to incorrect at 12B. Convergence by decay is not mastery. A frozen same-concept validation is harsher: all 35 confirmatory cases in which a model defines a concept correctly fail the corresponding violation-and-conformant application pair.
   We test two possible explanations for the gap. The global maximum of attention between a compound’s constituents does not predict accuracy. When the measure is restricted to late-layer, value-weighted binding, a consistent pattern appears: rarer compounds receive stronger distributed value-weighted writes at all thirteen model-scale points ($p$ = 0.0003). This is the opposite of what we would expect if stronger binding indicated knowledge. Instead, stronger value-weighted binding marks concepts the model has more difficulty processing.
   Corpus frequency is the strongest measured predictor of accuracy across 49 compounds (Spearman $\rho$ = 0.52–0.59 across families), but it leaves most compound-to-compound variation unexplained. The same concept can be available to definition and unreachable in application, even though its corpus frequency has not changed. Frequency predicts availability. Task form constrains reachability.
 lang: en
-mainfont: "Atkinson Hyperlegible"
-header-includes:
-  - \DeclareMathSizes{12}{10}{8}{6}
-  - \usepackage{changepage}
-  - \usepackage{titlesec}
-  - \titleformat{\paragraph}[hang]{\normalfont\normalsize\bfseries}{}{0em}{}
-  - \titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{0.5em}
+
+# Bibliography. Built by BibTeX from references.bib using build/tmlr.bst.
+# biblio-style feeds pandoc's natbib partial: \bibliographystyle{tmlr}.
+bibliography: references.bib
+biblio-style: tmlr
+
+# TEMPORARY, remove before submission. Prints every entry in references.bib
+# whether or not it is cited, so nothing disappears silently while the prose
+# citations are still plain text rather than @keys.
+nocite: |
+  @*
+
+# NOTE: no mainfont / fontsize / geometry / header-includes here on purpose.
+# tmlr.sty owns the page dimensions, the 10pt Latin Modern body, the title
+# block, the abstract environment, the section styles and the running head.
+# Anything set here that touches those will silently fight the style file.
 ---
