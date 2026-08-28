@@ -3,10 +3,11 @@
 Figure: Binding is not knowing.
 
 Scatter of max attention-binding score (x) against behavioral accuracy score (y),
-one point per compound per scale, colored by suite. The point is the dense vertical
-band at x ~ 1.0 spanning every accuracy level: binding saturates regardless of
-whether the model understands the concept. Pearson/Spearman correlations annotated
-from binding_accuracy_corr.csv confirm binding does not predict accuracy.
+one point per compound per scale, colored by family. The point is the dense
+vertical band at x ~ 1.0 spanning every accuracy level: binding saturates
+regardless of whether the model understands the concept. Pearson/Spearman
+correlations are annotated from binding_accuracy_corr.csv and asserted against
+the values reported in the paper (GPT-2 0.087, Pythia -0.003, OLMo 0.115).
 
 Reads:  results/analysis/binding_vs_accuracy.csv, binding_accuracy_corr.csv
 Writes: paper/figures/binding-vs-accuracy.png
@@ -29,10 +30,29 @@ ANALYSIS_DIR = PROJECT_DIR / "results" / "analysis"
 FIGURES_DIR  = PROJECT_DIR / "paper" / "figures"
 FIGURES_DIR.mkdir(parents=True, exist_ok=True)
 
-NAVY       = "#08306b"
-LIGHT_BLUE = "#6baed6"
-SUITE_COLOR = {"pythia": NAVY, "gpt2": LIGHT_BLUE}
-SUITE_LABEL = {"pythia": "Pythia", "gpt2": "GPT-2"}
+# Okabe-Ito colorblind-safe palette (matplotlib)
+okabe_ito = {
+    "purple":    "#CC79A7",
+    "blue":      "#0072B2",
+    "skyblue":   "#56B4E9",
+    "green":     "#009E73",
+    "yellow":    "#F0E442",
+    "orange":    "#E69F00",
+    "red":       "#D55E00",
+}
+
+# Paper-wide meaning: families are orange / purple / green.
+SUITE_COLOR = {
+    "pythia": okabe_ito["orange"],
+    "gpt2": okabe_ito["purple"],
+    "olmo": okabe_ito["green"],
+}
+SUITE_LABEL = {"pythia": "Pythia", "gpt2": "GPT-2", "olmo": "OLMo 2"}
+SUITES = ["pythia", "gpt2", "olmo"]
+
+# Paper-reported Pearson correlations; the script refuses to draw if the
+# data on disk disagrees with the prose.
+EXPECTED_PEARSON = {"gpt2": 0.087, "pythia": -0.003, "olmo": 0.115}
 
 available_fonts = [f.name for f in fm.fontManager.ttflist]
 FONT = "Atkinson Hyperlegible" if "Atkinson Hyperlegible" in available_fonts else "DejaVu Sans"
@@ -44,8 +64,8 @@ plt.rcParams.update({
     "axes.facecolor":    "white",
 })
 
-# Deterministic vertical jitter so overlapping points at each accuracy level spread
-# out (accuracy is the ordinal 0/1/2; jitter is cosmetic only).
+# Deterministic vertical jitter so overlapping points at each accuracy level
+# spread out (accuracy is the ordinal 0/1/2; jitter is cosmetic only).
 RNG = np.random.default_rng(0)
 
 
@@ -53,45 +73,40 @@ def make_figure():
     bv = pd.read_csv(ANALYSIS_DIR / "binding_vs_accuracy.csv")
     corr = pd.read_csv(ANALYSIS_DIR / "binding_accuracy_corr.csv").set_index("suite")
 
+    for suite in SUITES:
+        assert suite in corr.index, f"missing correlations for {suite}"
+        assert abs(corr.loc[suite, "pearson_r"] - EXPECTED_PEARSON[suite]) < 1e-6, (
+            suite, corr.loc[suite, "pearson_r"], EXPECTED_PEARSON[suite],
+        )
+        n_scatter = int((bv.suite == suite).sum())
+        assert n_scatter == int(corr.loc[suite, "n_pairs"]), (
+            suite, n_scatter, int(corr.loc[suite, "n_pairs"]),
+        )
+
     fig, ax = plt.subplots(figsize=(9, 5.5))
 
-    for suite in ["pythia", "gpt2"]:
+    for suite in SUITES:
         sub = bv[bv.suite == suite]
-        jitter = RNG.uniform(-0.12, 0.12, size=len(sub))
+        jitter = RNG.uniform(-0.28, 0.28, size=len(sub))
         ax.scatter(sub["max_binding"], sub["accuracy_score"] + jitter,
-                   s=60, alpha=0.7, color=SUITE_COLOR[suite],
+                   s=40, alpha=0.6, color=SUITE_COLOR[suite],
                    edgecolor="white", linewidth=0.5,
                    label=SUITE_LABEL[suite], zorder=3)
 
     ax.set_yticks([0, 1, 2])
     ax.set_yticklabels(["incorrect (0)", "partial (1)", "correct (2)"], fontsize=10)
-    ax.set_ylim(-0.4, 2.4)
-    ax.set_xlim(0.65, 1.02)
+    ax.set_ylim(-0.45, 2.6)
+    x_lo = min(0.65, float(bv["max_binding"].min()) - 0.02)
+    ax.set_xlim(x_lo, 1.02)
     ax.set_xlabel("Max attention-binding score", fontsize=10, labelpad=8)
     ax.set_ylabel("Behavioral accuracy", fontsize=10, labelpad=8)
 
-    # Correlation annotation box
-    lines = ["Binding does not predict accuracy:"]
-    for suite in ["pythia", "gpt2"]:
-        r = corr.loc[suite]
-        lines.append(
-            f"  {SUITE_LABEL[suite]}: r = {r['pearson_r']:.2f}  "
-            f"(ρ = {r['spearman_r']:.2f}, n = {int(r['n_pairs'])})"
-        )
-    ax.text(0.66, 2.3, "\n".join(lines), fontsize=9.5, color="#444444",
-            va="top", ha="left", linespacing=1.5,
-            bbox=dict(boxstyle="round,pad=0.5", facecolor="#f5f6fa",
-                      edgecolor="#cccccc", linewidth=0.8))
+    ax.legend(fontsize=11, frameon=False, loc="upper left",
+              bbox_to_anchor=(0.0, 1.0))
 
-    ax.legend(fontsize=11, frameon=False, loc="lower left",
-              bbox_to_anchor=(0.0, 0.02))
-
-    fig.suptitle("Strong binding is present even when the concept is absent",
-                 fontsize=13, fontweight="bold", y=0.99)
-
-    fig.tight_layout(rect=[0, 0, 1, 0.97])
+    fig.tight_layout()
     out = FIGURES_DIR / "binding-vs-accuracy.png"
-    fig.savefig(out, dpi=150, bbox_inches="tight")
+    fig.savefig(out, dpi=300, bbox_inches="tight")
     plt.close(fig)
     print(f"Saved: {out}")
 
