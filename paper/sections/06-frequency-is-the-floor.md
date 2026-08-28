@@ -2,7 +2,13 @@
 
 The binding result shows that corpus frequency is related to what happens between a compound's constituents during inference. This section asks how much frequency explains at the behavioral level.
 
-Bigram frequency predicts declarative accuracy in all three model families. Spearman $\rho$ is 0.5875 in Pythia, 0.5194 in GPT-2, and 0.5823 in OLMo, with $p$ < 0.001 and $n$ = 49 compounds in each family. The Pythia count comes from its training corpus. GPT-2 reproduces the relationship using Pile counts as a cross-corpus proxy, and OLMo reproduces it using OLMo-Mix counts. The OLMo result is unchanged after pinning and rerunning the model checkpoints.
+Bigram frequency predicts declarative accuracy in all three model families. Spearman $\rho$ is 0.5875 in Pythia, 0.5194 in GPT-2, and 0.5823 in OLMo, with $p$ < 0.001 and $n$ = 49 compounds in each family. The Pythia count comes from its training corpus. GPT-2 reproduces the relationship using Pile counts as a cross-corpus proxy, and OLMo reproduces it using OLMo-Mix counts. The OLMo result is unchanged after pinning and rerunning the model checkpoints. Figure 6 shows all 49 compounds in each family.
+
+![Three scatter panels, one per family, plotting log bigram count against mean declarative accuracy for 49 compounds. Accuracy trends upward with frequency in every panel, with wide vertical spread at similar counts, including zero-accuracy compounds across most of the frequency range.](figures/frequency-floor.png)
+
+::: {.caption}
+Figure 6. Log bigram count against mean declarative accuracy, 49 compounds per family. Frequency sets the floor; the vertical spread at similar counts is what it leaves unexplained.
+:::
 
 Frequency is the strongest measured predictor in this study, but it is not a complete explanation. Correlations of $\rho$ = 0.52–0.59 are substantial but leave much unexplained: compounds with similar counts follow different trajectories, and the same concept can succeed or fail when the task changes.
 
