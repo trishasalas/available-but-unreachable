@@ -1,0 +1,396 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+\documentclass[
+  english,
+]{article}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+
+% TMLR submission format. Options: none = anonymous (double-blind, what you
+% submit), [preprint] = named authors + no venue header, [accepted] = camera
+% ready. tmlr.sty sets its own page geometry, \maketitle, abstract env,
+% section styles, and running head -- do not load geometry alongside it.
+\usepackage{tmlr}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{longtable,booktabs,array}
+\newcounter{none} % for unnumbered tables
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+\ifLuaTeX
+\usepackage[bidi=basic,shorthands=off]{babel}
+\else
+\usepackage[bidi=default,shorthands=off]{babel}
+\fi
+\ifLuaTeX
+  \usepackage{selnolig} % disable illegal ligatures
+\fi
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage[]{natbib}
+\bibliographystyle{tmlr}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Available but Unreachable: The Declarative-Evaluative Gap in Language Models},
+  pdflang={en},
+  colorlinks=true,
+  linkcolor={Maroon},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Available but Unreachable: The Declarative-Evaluative Gap in Language Models}
+\author{\name Trisha Salas \email trisha@trishasalas.com}
+\date{}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+A language model can state what an accessibility concept means and still fail to apply it. We measure this declarative-evaluative gap in thirteen models from three families: Pythia, GPT-2, and OLMo 2. In the original behavioral batteries, the gap opens early and persists across families. At Pythia-12B, it closes because declarative accuracy falls. Three concepts answered correctly at smaller scales regress to incorrect at 12B. Convergence by decay is not mastery. A frozen same-concept validation is harsher: all 35 confirmatory cases in which a model defines a concept correctly fail the corresponding violation-and-conformant application pair. We test two possible explanations for the gap. The global maximum of attention between a compound's constituents does not predict accuracy. When the measure is restricted to late-layer, value-weighted binding, a consistent pattern appears: rarer compounds receive stronger distributed value-weighted writes at all thirteen model-scale points (\(p\) = 0.0003). This is the opposite of what we would expect if stronger binding indicated knowledge. Instead, stronger value-weighted binding marks concepts the model has more difficulty processing. Corpus frequency is the strongest measured predictor of accuracy across 49 compounds (Spearman \(\rho\) = 0.52--0.59 across families), but it leaves most compound-to-compound variation unexplained. The same concept can be available to definition and unreachable in application, even though its corpus frequency has not changed. Frequency predicts availability. Task form constrains reachability.
+\end{abstract}
+
+\section{Introduction}\label{introduction}
+
+Give Pythia-12B three prompts with the same structure, and watch it complete them three different ways (Figure 1). An image without alt text is not accessible because ``it has no text alternative'' --- correct. A website without screen reader support is not accessible because ``it does not have a text alternative'' --- fluent, confident, and wrong in a way most readers outside this domain would miss. A long navigation menu without a skip link is not accessible because ``of the following error: The page you are trying to reach is not available in the current context'' --- a fluent 404 template, confidently wrong. The compounds differ sharply in corpus frequency. Alt text appears 23,306 times in the model's training corpus; screen reader, 32,100; skip link, 662. Frequency explains the worst failure: skip link is rare. It does not explain the other: screen reader appears more often than alt text and still fails. This paper asks what corpus frequency predicts, how far that prediction reaches inside the model, and what it does not explain.
+
+\pandocbounded{\includegraphics[keepaspectratio,alt={Three prompt-and-completion cards from Pythia-12B with corpus counts in each header. Alt text, 23,306 occurrences, completes correctly. Screen reader, 32,100 occurrences, completes fluently but wrongly. Skip link, 662 occurrences, completes with a fluent 404 error template. The most frequent compound of the three still fails.}]{figures/vignette-three-completions.png}}
+
+Figure 1. Three prompts, one structure, three outcomes at Pythia-12B. Corpus counts in each header: frequency explains the skip-link failure and not the screen-reader failure.
+
+Digital accessibility is a good test domain for these questions for reasons unrelated to accessibility itself. Its concepts are concrete enough to code deterministically and rare enough in web text to reveal frequency effects. The phenomenon under study concerns words and their documentation density. Accessibility is where we measured it, not what it is about.
+
+Across six Pythia scales, four GPT-2 scales, and three OLMo 2 scales, models that correctly define accessibility concepts often do not apply them correctly. In the original behavioral batteries, evaluative accuracy lags behind declarative accuracy at nearly every scale. GPT-2's gap widens to 55 percentage points at 1.5B. In Pythia, it closes at 12B --- but only because declarative accuracy regresses to meet evaluative failure. A frozen same-concept validation makes the mismatch direct: in all 35 confirmatory model-concept cases with a correct definition, the model fails to classify both a violation and a conformant example correctly.
+
+Corpus frequency explains much of the failure structure. Across 49 compounds, frequency correlates with accuracy at Spearman \(\rho\) = 0.59 in Pythia, 0.52 in GPT-2, and 0.58 in OLMo 2. But it leaves most compound-to-compound variation unexplained. It predicts which concepts are likely to be available; it does not explain why knowledge that appears in a definition prompt remains unreachable in an application task.
+
+The obvious mechanistic candidate is attention between the two words of the compound. If the model does not bind ``screen'' to ``reader,'' perhaps it cannot retrieve the compound meaning. Globally maximal constituent-to-constituent attention does not support that account. Late-layer value-weighted binding reveals a different pattern: rarer compounds receive stronger value-weighted writes at every model-scale point. The signal is distributed, and ablating the highest-scoring heads produces only small probability shifts without changing the top prediction. Binding looks less like stored knowledge than work expended on difficult inputs.
+
+The resulting account is deliberately narrower than a mechanism of understanding. Frequency predicts availability, while prompt demands constrain whether available knowledge can be used. The experiments that follow measure the behavioral gap, test the binding hypothesis, and separate what corpus exposure explains from what it leaves unresolved.
+
+\section{Related Work}\label{related-work}
+
+Several lines of work begin from the same observation: a model can contain information that its output does not reveal. Dai et al.~(2026) call this the Knowing-Using Gap. In their fine-tuning experiments, models memorize new facts before they can use them in downstream reasoning, and the failure is consistent with knowledge that does not reach the layers where it would affect the task. Basu et al.~(2026) find a similar separation in clinical triage. Linear probes recover hazard information much more reliably than the model acts on it, and four mechanistic interventions leave most errors uncorrected. Jiang et al.~(2020) show that failure under one prompt does not establish absent knowledge, because prompt form changes what is retrieved. Burns et al.~(2023) recover latent knowledge from internal activations that the model's outputs do not state. We study the separation behaviorally, using concepts whose definitions and applications can be evaluated directly: availability here is demonstrated by output, not recovered by a probe.
+
+Corpus frequency is already known to predict what language models learn. Kandpal et al.~(2023) show that factual accuracy increases with the number of relevant documents in training. Merullo et al.~(2024) connect corpus frequency to the formation and stability of linear representations. Our frequency result is consistent with this work. The difference is the dependent variable: we also ask whether compound frequency predicts what happens between constituent tokens during inference.
+
+That question requires more than raw attention. Kobayashi et al.~(2020) show that attention weights can misstate information transfer when the corresponding value vectors differ in magnitude. We therefore measure both raw constituent attention and a value-weighted write. In the same domain, Salas (2026) reports behavioral emergence of accessibility terms across Pythia scales, and Tran (2026) tracks attention-based binding of accessibility terms across training checkpoints, finding that it decouples from behavioral accuracy at scale. We also separate early from late layers. Prior work has found that compound and multiword-expression representations change across depth and depend on surface form and frequency (Miletić \& Schulte im Walde, 2023, 2024; Vig \& Belinkov, 2019).
+
+Voita et al.~(2019) identify a specialized rare-word head in an encoder model. That result provides a useful contrast. In the decoder-only models studied here, the frequency relationship does not reduce to one head or a small fixed set. It appears across the upper tail of late-layer value-weighted writes.
+
+\section{Methods}\label{methods}
+
+The experiments draw from a shared model set and version-controlled stimulus inventory. This section defines the common environment. Each results section introduces the measure specific to that analysis.
+
+\emph{Models.} We study six Pythia scales (160M, 410M, 1B, 2.8B, 6.9B, and 12B; Biderman et al., 2023), four GPT-2 scales (124M, 355M, 774M, and 1.5B; Radford et al., 2019), and three OLMo 2 scales (1B, 7B, and 13B; Team OLMo et al., 2025). All are base models decoded greedily with sampling disabled. OLMo checkpoints are pinned to explicit revisions. The pinned reruns reproduce the saved elicitation outputs byte for byte.
+
+\emph{Stimuli.} The full inventory contains 49 two-word accessibility compounds drawn from WCAG 2.2 and related W3C terminology (W3C, 2024). In the Pile index, counts range from 3 occurrences for \texttt{accessible\_authentication} to 32,100 for \texttt{screen\_reader}. The frequency and binding analyses use all 49 compounds. The original behavioral comparison uses ten declarative concepts and five evaluative concepts. A separate paired battery uses the eight declarative concepts for which a violation and a conformant application item could both be constructed without naming the target concept in the prompt.
+
+\emph{Behavioral measures.} Declarative prompts ask the model to state what a concept means. Evaluative prompts ask it to judge an accessibility problem in an example. Responses are coded as correct, partial, or incorrect using deterministic, version-controlled rules. In the original gap tables, these categories receive scores of 1, 0.5, and 0. The reported gap is the difference between the mean score on the ten-concept declarative battery and the mean score on the five-concept evaluative battery at each model scale. The two original batteries are not concept-matched, so this estimate is a difference between paradigm means rather than a within-concept comparison.
+
+\emph{Paired validation.} The paired battery contains one violation and one conformant item for each of eight concepts. Both items use the same neutral answer frame. A concept passes only when the violation is coded correct and the conformant item is coded correct, preventing an always-fail or always-pass response strategy from satisfying the measure. The primary paired gap cell requires a correct declarative response and a failed evaluative pair for the same concept in the same model. Pythia-2.8B is reported separately because its behavior informed development before the battery was frozen; the other twelve models form the confirmatory set. All sixteen prompts, coding rules, outcome branches, and the analysis were frozen before confirmatory output was generated.
+
+\emph{Corpus frequency.} Bigram counts come from Infini-gram (Liu et al., 2024) and are frozen before analysis. Pythia uses counts from The Pile, its training corpus. GPT-2 uses the same Pile counts as a cross-corpus proxy because WebText is not publicly available. OLMo uses counts from OLMo-Mix-1124, matching its training data. The primary frequency analysis uses one observation per compound: log bigram frequency is correlated with mean strict declarative accuracy across scales, where correct receives 1 and partial or incorrect receives 0. Because Spearman correlation depends on ranks, the base of the logarithm does not affect the result.
+
+\emph{Binding measures.} Raw binding is the attention paid by the later constituent token to the earlier constituent token, using the last subtoken when a constituent splits. The global measure takes the maximum over all layers and heads. Value-weighted binding multiplies this attention weight by the norm of the source token's head-specific value vector after the output projection, then divides by the target token's pre-attention residual norm (registered as effective binding in preregistration 0003 and renamed to better reflect what is measured). The primary value-weighted binding statistic is the 95th percentile across heads in the final third of the model. Natural and uniform prompt conditions are analyzed separately.
+
+\emph{Aggregate permutation test.} The cross-model binding result is evaluated with a preregistered shared-label permutation test. For each of the thirteen model-scale points, Spearman \(\rho\) is computed between log bigram frequency and the compound's 95th-percentile late-layer measure. The aggregate statistic is the mean of the Fisher-transformed per-model correlations. In each of 10,000 iterations, the frequency labels are shuffled across the 49 compounds and the same shuffled labels are applied to every model, preserving the dependence created by testing identical compounds across related architectures. The one-sided \(p\)-value is the proportion of permuted aggregates at least as extreme as the observed value, with a one-count correction in numerator and denominator (random seed 20260813). The test and its interpretation branches were frozen by preregistration before any value-weighted binding result was inspected.
+
+\emph{Ablation.} The causal analysis is limited to Pythia. At each of six scales, five frequency-sensitive heads selected on one half of the compounds are zero-ablated at the later constituent position on 25 held-out compounds. Five layer-matched random heads serve as controls. The outcome is the KL divergence between the original and ablated next-token distributions; top-token changes are also recorded. The surviving manifests for these runs were reconstructed after execution and are labeled \texttt{POST-RUN\ RECONSTRUCTION}.
+
+\emph{Measurement Pathways.} A decision-point analysis initially appeared to show the correct continuation for skip link losing to a higher-frequency competitor between Pythia-6.9B and Pythia-12B. The analysis projected the final residual stream directly through the unembedding matrix, omitting the model's final LayerNorm. A preregistered gate required the resulting trace to agree with the true forward pass. It did not, and the competition claim was withdrawn.
+
+An audit of the saved rollouts found the same failure at all six Pythia scales: the shortcut left the true greedy trajectory within seven tokens. Under weight folding, the final LayerNorm bias becomes an effective unembedding bias, \(b_U\), whose correlation with log Pile unigram frequency ranges from 0.664 to 0.779 across scales. The shortcut omits this frequency-ordered term; in all six observed divergences, the true pathway selected the more frequent token. This is a finding about measurement validity, not an explanation of the behavioral gap. All generation results therefore use the true forward pass, and vocabulary projections apply the realized final normalization.
+
+\emph{Reproducibility.} Model inference and activation capture use TransformerLens 2.18.0. The OLMo adapter was validated against the native Hugging Face forward pass and matched its top prediction at every tested position. Code, prompts, frozen counts, coding rules, result tables, preregistrations, decision records, and run manifests are included in the project repository. Claims that depend on incomplete or reconstructed provenance are identified as such.
+
+\section{1. The Behavioral Gap}\label{the-behavioral-gap}
+
+The demonstrations above were run using the same model, prompted in the same way. The model produces correct, plausible-but-wrong, and incoherent completions depending on the concept. The question is whether this pattern generalizes.
+
+We define declarative accuracy as whether or not a model can correctly state a concept's definition. Evaluative accuracy measures whether the model can use accessibility knowledge to perform a task. We first summarize the difference between the mean scores of the original ten-concept declarative battery and five-concept evaluative battery. This pooled estimate compares paradigms, not the same concept item by item. A separate paired test below asks the stronger same-concept question. The pooled pattern is not specific to Pythia. It reproduces across thirteen models in three families: Pythia, GPT-2, and OLMo 2.
+
+Table 1 presents the original Pythia battery means at six scales. Declarative accuracy rises with scale, reaching a peak at 6.9B. Evaluative accuracy lags behind at every scale. The gap opens at 160M, widens to a maximum at 2.8B, and persists through 6.9B where the model's declarative knowledge is strongest.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}llll@{}}
+\toprule\noalign{}
+Scale & Declarative & Evaluative & Gap \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+160M & 25\% & 10\% & 15\% \\
+410M & 40\% & 20\% & 20\% \\
+1B & 30\% & 10\% & 20\% \\
+2.8B & 60\% & 30\% & 30\% \\
+6.9B & 65\% & 50\% & 15\% \\
+12B & 45\% & 50\% & -5\% \\
+\end{longtable}
+}
+
+At 12B, the gap closes --- but not from below. Declarative accuracy drops. Three concepts answered correctly at earlier scales regress to incorrect by maximum scale: keyboard navigation, skip link, and closed captions. Table 2 shows the per-concept declarative trajectory; \texttt{cor}, \texttt{part}, and \texttt{inc} denote correct, partial, and incorrect. These are not averages obscuring noise --- individual concepts flip from correct to incorrect. Each scale is a separately trained model, so the regression runs across scale, not across time within one training run. Convergence by decay is not mastery.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}lllllll@{}}
+\toprule\noalign{}
+Concept & 160M & 410M & 1B & 2.8B & 6.9B & 12B \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+ARIA & inc & inc & inc & inc & inc & inc \\
+WCAG & inc & inc & inc & inc & cor & cor \\
+alt text & inc & part & part & cor & cor & cor \\
+closed captions & inc & inc & inc & cor & inc & inc \\
+color contrast & part & cor & part & part & cor & cor \\
+focus indicator & part & inc & inc & inc & inc & inc \\
+keyboard navigation & part & cor & cor & cor & cor & inc \\
+screen reader & part & part & cor & cor & cor & cor \\
+semantic HTML & part & part & inc & part & part & part \\
+skip link & inc & part & inc & cor & cor & inc \\
+\end{longtable}
+}
+
+The pattern is not specific to Pythia. In GPT-2 the gap widens with scale, reaching 55 points at 1.5B --- declarative knowledge accumulates faster than the ability to deploy it. OLMo replicates the dissociation across three scales. Table 3 gives the family results not shown in Table 1.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}lrrrr@{}}
+\toprule\noalign{}
+Family & Scale & Declarative & Evaluative & Gap \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+GPT-2 & 124M & 35\% & 20\% & 15\% \\
+GPT-2 & 355M & 45\% & 20\% & 25\% \\
+GPT-2 & 774M & 50\% & 30\% & 20\% \\
+GPT-2 & 1.5B & 65\% & 10\% & 55\% \\
+OLMo 2 & 1B & 50\% & 30\% & 20\% \\
+OLMo 2 & 7B & 75\% & 40\% & 35\% \\
+OLMo 2 & 13B & 75\% & 60\% & 15\% \\
+\end{longtable}
+}
+
+The gap reproduces across three model families trained on different corpora with different tokenizers and different architectures. It also differs in character across families. In Pythia, incorrect responses remain high-entropy; in GPT-2, confidence in errors grows with scale. At OLMo 7B and 13B, incorrect accessibility responses have lower entropy than correct bicycle-control responses, although that reversal does not hold against correct accessibility responses. Figure 2 shows the accuracy and entropy gaps across scale.
+
+\pandocbounded{\includegraphics[keepaspectratio,alt={Six line charts in two rows, one column per family. Top row: declarative accuracy climbs with model scale while evaluative accuracy stays lower in Pythia, GPT-2, and OLMo 2, with the shaded gap between the lines persisting at every scale. Bottom row: last-token entropy on evaluative prompts stays high across scale while declarative entropy falls; the OLMo 2 entropy gap is the widest of the three.}]{figures/gap-behavioral-internal.png}}
+
+Figure 2. The gap in behavior and in uncertainty. Top: declarative and evaluative accuracy across scale for all three families. Bottom: last-token entropy for the same prompt types. Evaluative uncertainty stays high even as declarative accuracy improves.
+
+\subsection{A same-concept test}\label{a-same-concept-test}
+
+The pooled comparison leaves an obvious objection: the declarative and evaluative batteries contain different concepts. We therefore froze a second battery covering eight of the declarative concepts. Each concept receives two evaluative items with the same neutral answer frame: one example contains the accessibility violation, and one conformant example removes it. A concept passes only if the model gets both polarities right. Always finding a problem and never finding one both fail.
+
+The result is harsher than the pooled gap. Across twelve untouched confirmatory models, none passes a single evaluative pair. The test contains 96 model-by-concept cells. Eighty-five pass neither item, seven pass only the conformant item, four pass only the violation item, and zero pass both. Table 4 separates those results from the development-exposed pilot; Figure 3 shows every cell.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1579}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2105}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2105}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2105}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2105}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Set
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Model-concept cells
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Declarative passes
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Evaluative pair passes
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Declarative pass / evaluative fail
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Confirmatory models & 96 & 35 & 0 & 35 \\
+Pythia-2.8B pilot & 8 & 5 & 1 & 4 \\
+\end{longtable}
+}
+
+\pandocbounded{\includegraphics[keepaspectratio,alt={Grid of eight concepts by thirteen models. Most cells are gray, meaning neither evaluative item was answered correctly; a few are light or dark blue for one correct item. Thirty-five black dots mark cells with a correct declarative response, every one sitting on a cell that fails the evaluative pair. A single black cell, the only pair pass, sits in the pilot column beyond a vertical rule.}]{figures/paired-battery-grid.png}}
+
+Figure 3. Paired-battery outcomes. Cell color gives the evaluative pair result; a dot marks a correct declarative response for the same concept and model (white on the passing cell). No confirmatory cell passes both polarities. The vertical rule separates the development-exposed Pythia-2.8B pilot.
+
+The 35 confirmatory cells with a correct declarative response all fail the evaluative pair for that same concept. Pythia-160M contributes no cells to this conditional result because it has no declarative passes among the eight paired concepts. The paired test therefore supports the stronger mismatch directly: when declarative knowledge is present in the confirmatory set, no concept survives both application polarities.
+
+Pythia-2.8B is reported separately because its behavior informed instrument development before the battery was frozen. It produces the only pair pass, on skip link. It classifies the violation as inaccessible and the conformant example as accessible, then repeats much of the prompt. Skip link is also the battery's only prose-described concept; the other seven require interpreting HTML or CSS. The result is consistent with framing-dependent reachability, but it does not separate framing from concept.
+
+The gap is real, cross-family, and persistent. The original result does not reduce to a single confidence profile or a single failure mode, and the paired result does not reduce to a difference between concept inventories. A single corpus statistic --- the bigram frequency of each compound in the training data --- predicts which concepts take which path. The next two sections ask how far that prediction reaches and what it does not explain.
+
+\section{2. Binding tracks rarity, not knowledge}\label{binding-tracks-rarity-not-knowledge}
+
+If the behavioral gap comes from a failure to combine the two words in a compound, binding strength should predict accuracy. Compounds with stronger constituent binding should be the ones the model gets right.
+
+The global measure does not support that account. We take the maximum attention from the later constituent token to the earlier one across every layer and head. Its Pearson correlation with accuracy is 0.087 in GPT-2, -0.003 in Pythia, and 0.115 in OLMo. Maximum binding does not predict which compounds the model knows. Figure 4 shows the saturation: a dense band near 1.0 at every accuracy level.
+
+\pandocbounded{\includegraphics[keepaspectratio,alt={Scatter plot of maximum attention binding against behavioral accuracy for Pythia, GPT-2, and OLMo 2 compounds. Points form a dense band near binding 1.0 at every accuracy level; vertical position within each accuracy band is jittered for legibility.}]{figures/binding-vs-accuracy.png}}
+
+Figure 4. Maximum attention binding against behavioral accuracy, one point per compound per scale. Binding saturates near 1.0 regardless of accuracy; vertical jitter within bands is cosmetic. Per-family correlations are reported in the text.
+
+The measure is also close to its ceiling. In GPT-2, 98\% of compound pairs have a maximum attention score of at least 0.99. A measure with almost no remaining variance cannot distinguish compounds from one another. The null therefore rules out saturated, whole-network maximum attention as a knowledge measure. It does not rule out every form of constituent interaction.
+
+We next restrict the analysis to the final third of each model and include the magnitude of the value write. For each head, value-weighted binding is the attention weight multiplied by the source token's value-write norm and divided by the target token's residual norm. We then take the 95th percentile across late-layer heads. This measure is negatively correlated with corpus frequency at all thirteen model-scale points. A shared-label aggregate permutation test (see Methods) gives \(p = 0.0003\). The direction repeats under uniform prompts and after controlling for compound token count. Table 5 shows the primary natural-prompt correlations, and Figure 5 plots them with bootstrap confidence intervals.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}llr@{}}
+\toprule\noalign{}
+Family & Model & Spearman \(\rho\) \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+GPT-2 & 124M & -0.284 \\
+GPT-2 & 355M & -0.342 \\
+GPT-2 & 774M & -0.362 \\
+GPT-2 & 1.5B & -0.152 \\
+OLMo 2 & 1B & -0.165 \\
+OLMo 2 & 7B & -0.276 \\
+OLMo 2 & 13B & -0.254 \\
+Pythia & 160M & -0.318 \\
+Pythia & 410M & -0.420 \\
+Pythia & 1B & -0.451 \\
+Pythia & 2.8B & -0.485 \\
+Pythia & 6.9B & -0.450 \\
+Pythia & 12B & -0.369 \\
+\end{longtable}
+}
+
+\pandocbounded{\includegraphics[keepaspectratio,alt={Dot plot of thirteen Spearman correlations between log bigram frequency and late-layer value-weighted binding, grouped by family, with confidence interval whiskers. Every dot sits left of zero; some intervals cross zero.}]{figures/binding-frequency-forest.png}}
+
+Figure 5. Spearman correlation between log bigram frequency and 95th-percentile late-layer value-weighted binding, one point per model, with bootstrap confidence intervals. All thirteen are negative; aggregate significance comes from the preregistered shared-label permutation test (Methods).
+
+Rarer compounds receive stronger late-layer value-weighted writes. This is the opposite of what a knowledge-bearing account predicts. Common compounds are more likely to be answered correctly, but they receive less of the late-layer interaction measured here. The result is more consistent with unresolved or difficult processing than with successful composition.
+
+The signal is distributed. It appears in the upper tail across many heads rather than in one head shared across models. Held-out head tests do not recover a small fixed set that carries the frequency relationship across compounds. This differs from the specialized rare-word head reported by Voita et al.~(2019). Here the response is a population pattern, not a stable circuit.
+
+The ablation results narrow the claim further. At each Pythia scale, we zero five frequency-sensitive heads at the second constituent and compare them with five layer-matched controls on 25 held-out compounds. Selected heads have larger effects than controls at four of six scales, but the absolute KL divergences are small. No intervention changes the top predicted token across 300 natural and uniform trials, and KL divergence does not vary consistently with compound frequency. The selected heads affect the output distribution, but this intervention does not show that they carry the behavioral effect.
+
+Late value-weighted binding is real, distributed, and frequency-sensitive. Under the ablation tested here, it is not load-bearing. The pattern is consistent with difficulty, not with resolution.
+
+\section{3. Frequency is the floor, not the ceiling}\label{frequency-is-the-floor-not-the-ceiling}
+
+The binding result shows that corpus frequency is related to what happens between a compound's constituents during inference. This section asks how much frequency explains at the behavioral level.
+
+Bigram frequency predicts declarative accuracy in all three model families. Spearman \(\rho\) is 0.5875 in Pythia, 0.5194 in GPT-2, and 0.5823 in OLMo, with \(p\) \textless{} 0.001 and \(n\) = 49 compounds in each family. The Pythia count comes from its training corpus. GPT-2 reproduces the relationship using Pile counts as a cross-corpus proxy, and OLMo reproduces it using OLMo-Mix counts. The OLMo result is unchanged after pinning and rerunning the model checkpoints. Figure 6 shows all 49 compounds in each family.
+
+\pandocbounded{\includegraphics[keepaspectratio,alt={Three scatter panels, one per family, plotting log bigram count against mean declarative accuracy for 49 compounds. Accuracy trends upward with frequency in every panel, with wide vertical spread at similar counts, including zero-accuracy compounds across most of the frequency range.}]{figures/frequency-floor.png}}
+
+Figure 6. Log bigram count against mean declarative accuracy, 49 compounds per family. Frequency sets the floor; the vertical spread at similar counts is what it leaves unexplained.
+
+Frequency is the strongest measured predictor in this study, but it is not a complete explanation. Correlations of \(\rho\) = 0.52--0.59 are substantial but leave much unexplained: compounds with similar counts follow different trajectories, and the same concept can succeed or fail when the task changes.
+
+One Pythia-2.8B diagnostic makes the framing problem concrete. Asked, \texttt{What\ accessibility\ attribute\ is\ missing\ from\ this\ HTML:\ \textless{}img\ src=\textquotesingle{}photo.jpg\textquotesingle{}\textgreater{}?}, the model produces two newlines and starts a new paragraph. Given the cloze prompt, \texttt{\textless{}img\ src=\textquotesingle{}photo.jpg\textquotesingle{}\textgreater{}\ is\ missing\ the\ attribute}, it produces \texttt{alt}. The model, weights, concept, and corpus count are unchanged. Only the answer position changes.
+
+The paired battery extends the point beyond one diagnostic. Across the twelve confirmatory models, 35 model-by-concept cells have a correct declarative response. All 35 fail the violation/conformant evaluative pair for that same concept. The compound and its corpus frequency are fixed; what changes is the form in which the model must use it. This does not isolate one prompt feature---the declarative and evaluative tasks differ in more than wording---but it rules out frequency as a sufficient explanation of whether available knowledge will be reached by a particular task.
+
+The frequency and binding results point in opposite behavioral directions. More frequent compounds are answered more accurately. Less frequent compounds receive stronger late-layer value-weighted writes. The additional interaction does not compensate enough to reverse the accuracy relationship, and the ablation does not identify a small causal carrier.
+
+To our knowledge, prior work has not reported this inverse relationship between multiword-expression frequency and late-layer, norm-aware constituent interaction across autoregressive model families. What is new here is the combination: frequency predicts which concepts are learned, rarity predicts stronger late interaction, and neither result alone explains whether the model will apply the concept correctly.
+
+Frequency sets a floor. More exposure makes knowledge more likely to appear, but it does not guarantee that the knowledge will be available in the form a task requires. What lies above that floor remains unresolved.
+
+\section{Discussion}\label{discussion}
+
+The results establish a behavioral mismatch and rule out two simple explanations for it. The original pooled gap reproduces across three model families. The paired test sharpens the claim: in all 35 confirmatory cells where a model defines the concept correctly, it fails the violation/conformant application pair for that same concept.
+
+The binding result is easiest to understand as a difficulty signal. Rarer compounds receive stronger value-weighted writes in the final third of every model tested. The direction survives a uniform prompt and token-count controls. Yet the compounds receiving those writes are also the ones answered less accurately. Stronger late interaction is not evidence of stronger knowledge.
+
+The ablation keeps this interpretation bounded. Frequency-selected heads perturb the output distribution more than matched controls at some Pythia scales, but their effects are small, inconsistent across scale, and never change the top token in the saved trials. The data support a distributed late-layer response. They do not support a fixed circuit that carries the response into behavior.
+
+Frequency has a different role. It is the strongest predictor of declarative accuracy across all three families, with correlations between 0.52 and 0.59. But frequency is constant for a concept, while the model's response changes with the task. The paired result holds the concept fixed across declarative and evaluative measures, but it does not isolate which feature of the task blocks access. Availability and reachability are useful names for the distinction, not identified internal mechanisms.
+
+Pythia-2.8B provides the one exception to the strict pair-level result. Reported separately as the development-exposed pilot, it passes skip link, the only concept described entirely in prose. The other seven pairs require interpreting HTML or CSS. That success is consistent with framing-dependent reachability, but format and concept are confounded. It does not establish a general framing effect or special skip-link knowledge.
+
+Related work suggests that a separation between stored information and successful use is not unique to accessibility. Dai et al.~(2026) observe memorized facts that fail to reach downstream reasoning, and Basu et al.~(2026) recover clinical information internally that interventions do not reliably turn into correct decisions. Our results do not establish a general property of all autoregressive transformers. They add a cross-family behavioral case with a frequency-sensitive internal correlate.
+
+Accessibility also raises a training-data hypothesis that the present study does not test. Concepts such as alt text and skip links are described in standards and tutorials, while ordinary code examples may fail to implement them. If descriptive and applied examples are distributed differently, increasing corpus volume could preserve the imbalance rather than repair it. Testing that account requires measuring the ratio directly.
+
+Scale alone is not an intervention supported by these results. A direct test would change the composition of exposure while holding its volume fixed, then ask whether evaluative accuracy improves and late value-weighted binding weakens. Until that experiment is run, compensatory binding is a diagnostic candidate, not an intervention target.
+
+\section{Limitations}\label{limitations}
+
+The original behavioral gap uses two small, non-matched batteries: ten declarative concepts and five evaluative concepts. Its pooled percentage is a difference between paradigm means. The paired battery addresses the same-concept objection, but it remains small: eight concepts, each represented by one violation and one conformant item. The result establishes failure under this instrument, not under every possible application prompt.
+
+The paired pass rule is deliberately strict. Both polarities must be correct, so a model that gets one side right receives no concept-level pass. Across the confirmatory set, 85 of 96 cells pass neither item, seven pass only the conformant item, and four pass only the violation item. The zero pair count should therefore be reported with its item-level distribution rather than treated as a complete account of behavior.
+
+The paired coder is deterministic and was frozen before confirmatory generation, but keyword rules do not resolve every malformed continuation. Manual audit found two conformant items labeled correct by incidental string matches. Neither has a correct violation partner, so adjudicating them cannot change the primary zero-pair result. Twenty-one confirmatory outputs also echo their prompt exactly. Removing exact echoes changes no confirmatory item label or pair outcome.
+
+Pythia-2.8B's sole pair pass also needs a narrow interpretation. It clearly classifies both skip-link polarities correctly, but then repeats much of the prompt, so the output does not establish an independently generated explanation. Skip link is the only prose-described pair; concept and representation format are therefore confounded in the one successful cell.
+
+The full frequency and binding analyses contain 49 accessibility compounds. Whether the same relationships hold in other domains is unknown. Security and privacy provide plausible comparisons because they also contain norms that may be described more often than they are followed, but that corpus structure has not been measured here.
+
+The model set is broad across families but small by current standards. The largest model has 13 billion parameters. The results do not establish what happens in larger base models, instruction-tuned models, or closed models trained on undisclosed corpora.
+
+The value-weighted binding measure includes attention weight, value-write magnitude, and target residual norm. It does not follow information through every residual, normalization, and downstream path. ALTI or another full attribution method could test whether the same frequency relationship survives a more complete decomposition.
+
+Causal ablation is limited to Pythia and to zeroing selected head outputs at the later constituent position. A different intervention could reveal effects that this one misses. The ablation manifests were reconstructed from surviving artifacts after the runs, so runtime facts not preserved in those artifacts remain unavailable.
+
+Frequency provenance also differs by family. Pythia uses counts from its training corpus, and OLMo uses OLMo-Mix counts. GPT-2 uses Pile counts because WebText is unavailable, making that family a cross-corpus replication rather than an exact training-frequency analysis.
+
+Finally, the compensatory interpretation is an inference from direction, distribution, and ablation. The experiments show that rare compounds receive stronger late value-weighted writes and that the selected heads are not sufficient to change the top prediction under the tested intervention. They do not show what computation the additional write performs.
+
+\nocite{*}
+\bibliography{references.bib}
+
+\end{document}

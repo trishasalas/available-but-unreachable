@@ -1,60 +1,62 @@
 #!/bin/bash
-
-# build-sections.sh
-# Run from sections-1/ directory
-# Requires: pandoc, lualatex (MacTeX)
-#   brew install pandoc
-#   brew install --cask mactex
 #
-# Produces a tagged PDF/UA-2 + PDF/A-4f document via the template in
-# sections/template.tex, which enables \DocumentMetadata tagging. This
-# requires a TeX Live 2022+ / MacTeX 2022+ installation.
+# build-paper.sh — TMLR submission build
 #
-# Accessibility checklist before building:
-#   - All figures referenced with descriptive alt text: ![Describe what a
-#     sighted reader sees](../figures/filename.png)
-#   - sections/metadata.yaml has: title, author, date, abstract, lang
-#   - sections/10-colophon.md is written
+# Markdown sections -> pandoc -> LaTeX -> latexmk (pdflatex + bibtex) -> PDF,
+# formatted by build/tmlr.sty and build/tmlr.bst.
+#
+# Requires: pandoc, MacTeX (pdflatex, bibtex, latexmk)
 #
 # Usage:
-#   ./build-sections.sh           # normal build
-#   ./build-sections.sh --debug   # two-step build, keeps intermediate .tex,
-#                               # verbose pandoc output, full lualatex log
+#   ./build-paper.sh              # anonymous, double-blind (what you submit)
+#   ./build-paper.sh --preprint   # named authors, no venue running head
+#   ./build-paper.sh --accepted   # camera-ready
+#
+# Notes on this build, because they are not obvious:
+#
+#   * tmlr.sty owns the layout — page dimensions, 10pt Latin Modern body, title
+#     block, abstract environment, section styles, running head. Do NOT pass
+#     -V geometry / fontsize / mainfont / documentclass here; they fight it.
+#
+#   * Under the default (anonymous) option tmlr.sty DISCARDS the author block
+#     and prints "Anonymous authors / Paper under double-blind review". The name
+#     and email in metadata.yaml only render under --preprint or --accepted.
+#
+#   * Sections are authored with `##` as their top heading, so headings shift up
+#     one level to become \section. Section numbering is left OFF because the
+#     section titles carry their own manual numbers ("## 1. The Behavioral Gap").
+#
+#   * References come from references.bib via BibTeX, NOT from
+#     sections/09-references.md, which is deliberately excluded below. Keeping
+#     both in the build would produce two reference lists that drift apart.
+#
+#   * metadata.yaml currently sets `nocite: "@*"`, so all 18 bib entries print
+#     whether or not they are cited. Remove that before submission.
 
 set -e
 
-OUTPUT="tmlr-untitled.pdf"
+TMLR_OPTION=""
+OUTNAME="tmlr-submission"
+
+case "$1" in
+  --preprint) TMLR_OPTION="preprint"; OUTNAME="tmlr-preprint" ;;
+  --accepted) TMLR_OPTION="accepted"; OUTNAME="tmlr-camera-ready" ;;
+  "")         ;;
+  *) echo "Unknown option: $1 (expected --preprint or --accepted)" >&2; exit 1 ;;
+esac
+
+OUTDIR="build-out"
+TEX="$OUTDIR/$OUTNAME.tex"
+
+mkdir -p "$OUTDIR"
+
+# Let LaTeX and BibTeX find tmlr.sty / tmlr.bst in build/, and references.bib
+# in the paper root. The trailing colon means "then search the normal paths".
+export TEXINPUTS="./build:"
+export BSTINPUTS="./build:"
+export BIBINPUTS=".:"
+
 SECTIONS="sections"
-DEBUG_DIR="build-debug"
-INTERMEDIATE="$DEBUG_DIR/paper-intermediate.tex"
-DEBUG=false
-
-if [[ "$1" == "--debug" ]]; then
-  DEBUG=true
-  mkdir -p "$DEBUG_DIR"
-  echo "=== DEBUG MODE ==="
-  echo "Debug output → $DEBUG_DIR/"
-  echo ""
-fi
-
-PANDOC_FLAGS=(
-  # tex_math_single_backslash: the manuscript writes inline math as \( ... \).
-  # Pandoc's default markdown reader does NOT enable this, and silently reads
-  # \( as an escaped paren — dropping every \rho and doubling nested parens.
-  --from markdown-implicit_figures+tex_math_single_backslash
-  --metadata-file=build/metadata.yaml
-  --lua-filter=build/filters/caption-style.lua
-  --template=build/template.tex
-  --wrap=none
-  --citeproc
-  -V documentclass=extarticle
-  -V geometry:margin=1in
-  -V "mainfont=Atkinson Hyperlegible Next"
-  -V fontsize=14pt
-  -V linestretch=1.15
-  -V colorlinks=true
-)
-
 SECTION_FILES=(
   "$SECTIONS/01-introduction.md"
   "$SECTIONS/02-related.md"
@@ -64,46 +66,39 @@ SECTION_FILES=(
   "$SECTIONS/06-frequency-is-the-floor.md"
   "$SECTIONS/07-discussion.md"
   "$SECTIONS/08-limitations.md"
-  "$SECTIONS/09-references.md"
-  "$SECTIONS/10-colophon.md"
+  # 09-references.md is intentionally omitted — BibTeX generates the list.
 )
 
-if $DEBUG; then
-  # --- Step 1: Markdown → LaTeX ---
-  echo "Step 1: pandoc → .tex"
-  echo ""
-  pandoc \
-    "${PANDOC_FLAGS[@]}" \
-    "${SECTION_FILES[@]}" \
-    -o "$INTERMEDIATE" \
-    --verbose 2>&1 | tail -20
+PANDOC_FLAGS=(
+  # tex_math_single_backslash: the manuscript writes inline math as \( ... \).
+  # Pandoc's default markdown reader does NOT enable this, and silently reads
+  # \( as an escaped paren — dropping every \rho and doubling nested parens.
+  --from markdown-implicit_figures+tex_math_single_backslash
+  --metadata-file=build/metadata.yaml
+  # No --lua-filter. caption-style.lua emits \figurecaptionfont, a fontspec
+  # macro that only exists in the lualatex template. The two ::: {.caption}
+  # divs render as plain paragraphs without it, which is fine for now.
+  --template=build/template-tmlr.tex
+  --shift-heading-level-by=-1
+  --wrap=none
+  # --natbib (not --citeproc): emits \citep{}/\citet{} and \bibliography{},
+  # which is what tmlr.bst needs. @key citations in markdown become natbib
+  # citations; plain-prose citations are left untouched.
+  --natbib
+  -V "tmlr-option=$TMLR_OPTION"
+  -V colorlinks=true
+)
 
-  echo ""
-  echo "Pandoc succeeded → $INTERMEDIATE"
-  echo ""
+# --- Step 1: Markdown -> LaTeX ---
+echo "Step 1: pandoc -> $TEX"
+pandoc "${PANDOC_FLAGS[@]}" "${SECTION_FILES[@]}" -o "$TEX"
 
-  # --- Step 2: LaTeX → PDF ---
-  echo "Step 2: lualatex → .pdf"
-  echo ""
-  lualatex -interaction=nonstopmode -halt-on-error -output-directory="$DEBUG_DIR" "$INTERMEDIATE"
+# --- Step 2: LaTeX + BibTeX -> PDF ---
+echo "Step 2: latexmk (pdflatex + bibtex) -> $OUTDIR/$OUTNAME.pdf"
+latexmk -pdf -interaction=nonstopmode -halt-on-error \
+        -outdir="$OUTDIR" "$TEX"
 
-  echo ""
-  echo "Done: $DEBUG_DIR/paper-intermediate.pdf"
-  echo ""
-  echo "Debug files in $DEBUG_DIR/:"
-  echo "  paper-intermediate.tex  ← check LaTeX line numbers here"
-  echo "  paper-intermediate.log  ← full lualatex log"
-  echo ""
-  echo "Tip: When lualatex reports an error on line N, run:"
-  echo "  sed -n 'Np' $INTERMEDIATE"
-
-else
-  # --- Single-step build (normal) ---
-  pandoc \
-    "${PANDOC_FLAGS[@]}" \
-    "${SECTION_FILES[@]}" \
-    -o "$OUTPUT" \
-    --pdf-engine=lualatex
-
-  echo "Done: $OUTPUT"
-fi
+echo ""
+echo "Done: $OUTDIR/$OUTNAME.pdf"
+echo "Intermediate LaTeX: $TEX"
+echo "Full log:           $OUTDIR/$OUTNAME.log"
