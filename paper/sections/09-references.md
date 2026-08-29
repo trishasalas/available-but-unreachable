@@ -26,6 +26,8 @@ Radford, A., Wu, J., Child, R., Luan, D., Amodei, D., & Sutskever, I. (2019). *L
 
 Salas, T. (2026). *Testing accessibility knowledge across Pythia model sizes*. https://trishasalas.com/writing/notes/testing-accessibility-knowledge-pythia/
 
+Salas, T. (2026). *thatDangCircuit: Compound binding is distributed* (v1.0.0) [Software and data]. Zenodo. https://doi.org/10.5281/zenodo.21604592
+
 Team OLMo, Walsh, P., Soldaini, L., Groeneveld, D., Lo, K., Arora, S., Bhagia, A., Gu, Y., Huang, S., Jordan, M., Lambert, N., Schwenk, D., Tafjord, O., Anderson, T., et al. (2025). 2 OLMo 2 Furious. In *Proceedings of the Second Conference on Language Modeling*. https://arxiv.org/abs/2501.00656
 
 Tran, K.-D. (2026). Attention-head binding as a term-conditioned mechanistic marker of accessibility concept emergence in language models. *Transactions on Machine Learning Research*. https://openreview.net/forum?id=QG7mfCy9mu

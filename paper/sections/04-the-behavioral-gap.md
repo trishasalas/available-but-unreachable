@@ -42,19 +42,13 @@ The pattern is not specific to Pythia. In GPT-2 the gap widens with scale, reach
 | OLMo 2 | 7B | 75% | 40% | 35% |
 | OLMo 2 | 13B | 75% | 60% | 15% |
 
-The gap reproduces across three model families trained on different corpora with different tokenizers and different architectures. It also differs in character across families. In Pythia, incorrect responses remain high-entropy; in GPT-2, confidence in errors grows with scale. At OLMo 7B and 13B, incorrect accessibility responses have lower entropy than correct bicycle-control responses, although that reversal does not hold against correct accessibility responses. Figure 2 shows the accuracy and entropy gaps across scale.
-
-![Six line charts in two rows, one column per family. Top row: declarative accuracy climbs with model scale while evaluative accuracy stays lower in Pythia, GPT-2, and OLMo 2, with the shaded gap between the lines persisting at every scale. Bottom row: last-token entropy on evaluative prompts stays high across scale while declarative entropy falls; the OLMo 2 entropy gap is the widest of the three.](figures/gap-behavioral-internal.png)
-
-::: {.caption}
-Figure 2. The gap in behavior and in uncertainty. Top: declarative and evaluative accuracy across scale for all three families. Bottom: last-token entropy for the same prompt types. Evaluative uncertainty stays high even as declarative accuracy improves.
-:::
+The gap reproduces across three model families trained on different corpora with different tokenizers and different architectures. It also differs in character across families. In Pythia, incorrect responses remain high-entropy; in GPT-2, confidence in errors grows with scale. At OLMo 7B and 13B, incorrect accessibility responses have lower entropy than correct bicycle-control responses, although that reversal does not hold against correct accessibility responses. Figure 1 shows the accuracy and entropy gaps across scale.
 
 ### A same-concept test
 
 The pooled comparison leaves an obvious objection: the declarative and evaluative batteries contain different concepts. We therefore froze a second battery covering eight of the declarative concepts. Each concept receives two evaluative items with the same neutral answer frame: one example contains the accessibility violation, and one conformant example removes it. A concept passes only if the model gets both polarities right. Always finding a problem and never finding one both fail.
 
-The result is harsher than the pooled gap. Across twelve untouched confirmatory models, none passes a single evaluative pair. The test contains 96 model-by-concept cells. Eighty-five pass neither item, seven pass only the conformant item, four pass only the violation item, and zero pass both. Table 4 separates those results from the development-exposed pilot; Figure 3 shows every cell.
+The result is harsher than the pooled gap. Across twelve untouched confirmatory models, none passes a single evaluative pair. The test contains 96 model-by-concept cells. Eighty-five pass neither item, seven pass only the conformant item, four pass only the violation item, and zero pass both. Table 4 separates those results from the development-exposed pilot; Figure 2 shows the per-model collapse, and Figure 3 shows every cell.
 
 | Set | Model-concept cells | Declarative passes | Evaluative pair passes | Declarative pass / evaluative fail |
 | --- | ---: | ---: | ---: | ---: |

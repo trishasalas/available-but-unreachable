@@ -1,4 +1,4 @@
-\begin{thebibliography}{18}
+\begin{thebibliography}{19}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -112,11 +112,19 @@ Alec Radford, Jeffrey Wu, Rewon Child, David Luan, Dario Amodei, and Ilya
 \newblock URL
   \url{https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf}.
 
-\bibitem[Salas(2026)]{salas2026testing}
+\bibitem[Salas(2026{\natexlab{a}})]{salas2026testing}
 Trisha Salas.
-\newblock Testing accessibility knowledge across {Pythia} model sizes, 2026.
+\newblock Testing accessibility knowledge across {Pythia} model sizes,
+  2026{\natexlab{a}}.
 \newblock URL
   \url{https://trishasalas.com/writing/notes/testing-accessibility-knowledge-pythia/}.
+
+\bibitem[Salas(2026{\natexlab{b}})]{salas2026thatdangcircuit}
+Trisha Salas.
+\newblock {thatDangCircuit}: Compound binding is distributed,
+  2026{\natexlab{b}}.
+\newblock URL \url{https://doi.org/10.5281/zenodo.21604592}.
+\newblock Software and data, v1.0.0. Zenodo.
 
 \bibitem[{Team OLMo} et~al.(2025){Team OLMo}, Walsh, Soldaini, Groeneveld, Lo,
   Arora, Bhagia, Gu, Huang, Jordan, Lambert, Schwenk, Tafjord, Anderson,
