@@ -264,6 +264,10 @@ Pythia-2.8B pilot & 8 & 5 & 1 & 4 \\
 \end{longtable}
 }
 
+\pandocbounded{\includegraphics[keepaspectratio,alt={Thirteen dumbbell rows grouped by family. For each model a filled marker shows the number of the eight paired concepts passed declaratively, from zero to five, and a hollow marker shows evaluative pair passes. Every hollow marker sits at zero except the Pythia-2.8B pilot at one; the filled markers scatter rightward, so each connecting line is the width of the knowledge that fails to apply.}]{figures/paired-collapse.png}}
+
+Figure 2. Per-model paired-battery collapse. For each model, the filled marker gives declarative pair-concepts passed (of eight) and the hollow marker gives evaluative pair passes. Every confirmatory model reaches zero evaluative pair passes regardless of declarative knowledge; only the development-exposed Pythia-2.8B pilot clears one. Companion to Figure 3.
+
 \pandocbounded{\includegraphics[keepaspectratio,alt={Grid of eight concepts by thirteen models. Most cells are gray, meaning neither evaluative item was answered correctly; a few are light or dark blue for one correct item. Thirty-five black dots mark cells with a correct declarative response, every one sitting on a cell that fails the evaluative pair. A single black cell, the only pair pass, sits in the pilot column beyond a vertical rule.}]{figures/paired-battery-grid.png}}
 
 Figure 3. Paired-battery outcomes. Cell color gives the evaluative pair result; a dot marks a correct declarative response for the same concept and model (white on the passing cell). No confirmatory cell passes both polarities. The vertical rule separates the development-exposed Pythia-2.8B pilot.
@@ -360,7 +364,7 @@ Pythia-2.8B provides the one exception to the strict pair-level result. Reported
 
 Related work suggests that a separation between stored information and successful use is not unique to accessibility. Dai et al.~(2026) observe memorized facts that fail to reach downstream reasoning, and Basu et al.~(2026) recover clinical information internally that interventions do not reliably turn into correct decisions. Our results do not establish a general property of all autoregressive transformers. They add a cross-family behavioral case with a frequency-sensitive internal correlate.
 
-Accessibility also raises a training-data hypothesis that the present study does not test. Concepts such as alt text and skip links are described in standards and tutorials, while ordinary code examples may fail to implement them. If descriptive and applied examples are distributed differently, increasing corpus volume could preserve the imbalance rather than repair it. Testing that account requires measuring the ratio directly.
+Accessibility also raises a training-data hypothesis that the present study does not test. Concepts such as alt text and skip links are described in standards and tutorials, while ordinary code examples may fail to implement them. If descriptive and applied examples are distributed differently, increasing corpus volume could preserve the imbalance rather than repair it. Testing that account requires measuring the ratio directly. Consistent with this, six structural concepts that never reach correct declarative form in Pythia or GPT-2 first appear in OLMo-2 at 7B --- a family trained on Dolma rather than the Pile --- a hint that corpus composition, not volume alone, shifts which concepts become available (n = 1 per concept; suggestive only).
 
 Scale alone is not an intervention supported by these results. A direct test would change the composition of exposure while holding its volume fixed, then ask whether evaluative accuracy improves and late value-weighted binding weakens. Until that experiment is run, compensatory binding is a diagnostic candidate, not an intervention target.
 
