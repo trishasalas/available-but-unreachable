@@ -22,5 +22,8 @@ paper/**/*.aux
 paper/**/*.log
 paper/**/*.fls
 paper/**/*.fdb_latexmk
+paper/build-out/*.bbl
+paper/build-out/*.blg
+paper/build-out/tmlr-submission.pdf
+paper/build-out/*.tex
 
-paper/paper_draft/
