@@ -55,6 +55,12 @@ The result is harsher than the pooled gap. Across twelve untouched confirmatory 
 | Confirmatory models | 96 | 35 | 0 | 35 |
 | Pythia-2.8B pilot | 8 | 5 | 1 | 4 |
 
+![Thirteen dumbbell rows grouped by family. For each model a filled marker shows the number of the eight paired concepts passed declaratively, from zero to five, and a hollow marker shows evaluative pair passes. Every hollow marker sits at zero except the Pythia-2.8B pilot at one; the filled markers scatter rightward, so each connecting line is the width of the knowledge that fails to apply.](figures/paired-collapse.png)
+
+::: {.caption}
+Figure 2. Per-model paired-battery collapse. For each model, the filled marker gives declarative pair-concepts passed (of eight) and the hollow marker gives evaluative pair passes. Every confirmatory model reaches zero evaluative pair passes regardless of declarative knowledge; only the development-exposed Pythia-2.8B pilot clears one. Companion to Figure 3.
+:::
+
 ![Grid of eight concepts by thirteen models. Most cells are gray, meaning neither evaluative item was answered correctly; a few are light or dark blue for one correct item. Thirty-five black dots mark cells with a correct declarative response, every one sitting on a cell that fails the evaluative pair. A single black cell, the only pair pass, sits in the pilot column beyond a vertical rule.](figures/paired-battery-grid.png)
 
 ::: {.caption}

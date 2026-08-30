@@ -41,9 +41,9 @@ okabe_ito = {
     "red":       "#D55E00",
 }
 
-# Paper-wide meaning: blue/skyblue = the declarative/evaluative pair.
+# Paper-wide meaning: blue/vermillion = the declarative/evaluative pair.
 DECL_COLOR = okabe_ito["blue"]      # declarative: solid
-EVAL_COLOR = okabe_ito["skyblue"]   # evaluative: dashed
+EVAL_COLOR = okabe_ito["red"]       # evaluative: dashed (vermillion; was skyblue — too low-contrast)
 
 available_fonts = [f.name for f in fm.fontManager.ttflist]
 FONT = "Atkinson Hyperlegible" if "Atkinson Hyperlegible" in available_fonts else "DejaVu Sans"
