@@ -57,7 +57,7 @@ def make_figure():
         ax.scatter(decl, yy, color=color, s=80, zorder=4, edgecolor="white", lw=0.6)
         if r["is_pilot"]:
             ax.annotate("pilot (2.8B): the only\nevaluative pair-pass",
-                        xy=(evl, yy), xytext=(2.4, yy + 1.15), fontsize=8, color="#333",
+                        xy=(evl, yy), xytext=(3.4, yy + -1.19), fontsize=8, color="#333",
                         ha="left", va="center",
                         arrowprops=dict(arrowstyle="->", color="#888", lw=1.0))
 

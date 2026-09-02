@@ -4,6 +4,12 @@ The demonstrations above were run using the same model, prompted in the same way
 
 We define declarative accuracy as whether or not a model can correctly state a concept's definition. Evaluative accuracy measures whether the model can use accessibility knowledge to perform a task. We first summarize the difference between the mean scores of the original ten-concept declarative battery and five-concept evaluative battery. This pooled estimate compares paradigms, not the same concept item by item. A separate paired test below asks the stronger same-concept question. The pooled pattern is not specific to Pythia. It reproduces across thirteen models in three families: Pythia, GPT-2, and OLMo 2.
 
+![Three line-chart panels show declarative and evaluative accuracy across model scale for Pythia, GPT-2, and OLMo 2. Declarative accuracy is generally higher, with gaps reaching 30 percentage points for Pythia, 55 for GPT-2, and 35 for OLMo 2. In Pythia, the lines cross at 12B because declarative accuracy falls from its 6.9B peak while evaluative accuracy remains at 50 percent.](figures/gap-scissors.png)
+
+::: {.caption}
+Figure 2. Declarative and evaluative accuracy across model scale. The behavioral gap appears in all three families and reaches 55 percentage points in GPT-2. In Pythia, the apparent closure at 12B comes from a decline in declarative accuracy rather than improved evaluative performance. Shading emphasizes the separation between the two measures.
+:::
+
 Table 1 presents the original Pythia battery means at six scales. Declarative accuracy rises with scale, reaching a peak at 6.9B. Evaluative accuracy lags behind at every scale. The gap opens at 160M, widens to a maximum at 2.8B, and persists through 6.9B where the model's declarative knowledge is strongest.
 
 | Scale | Declarative | Evaluative | Gap |
@@ -42,13 +48,13 @@ The pattern is not specific to Pythia. In GPT-2 the gap widens with scale, reach
 | OLMo 2 | 7B | 75% | 40% | 35% |
 | OLMo 2 | 13B | 75% | 60% | 15% |
 
-The gap reproduces across three model families trained on different corpora with different tokenizers and different architectures. It also differs in character across families. In Pythia, incorrect responses remain high-entropy; in GPT-2, confidence in errors grows with scale. At OLMo 7B and 13B, incorrect accessibility responses have lower entropy than correct bicycle-control responses, although that reversal does not hold against correct accessibility responses. Figure 1 shows the accuracy and entropy gaps across scale.
+The gap reproduces across three model families trained on different corpora with different tokenizers and different architectures. It also differs in character across families. In Pythia, incorrect responses remain high-entropy; in GPT-2, confidence in errors grows with scale. At OLMo 7B and 13B, incorrect accessibility responses have lower entropy than correct bicycle-control responses, although that reversal does not hold against correct accessibility responses. Figure 2 shows the accuracy gap across scale.
 
 ### A same-concept test
 
 The pooled comparison leaves an obvious objection: the declarative and evaluative batteries contain different concepts. We therefore froze a second battery covering eight of the declarative concepts. Each concept receives two evaluative items with the same neutral answer frame: one example contains the accessibility violation, and one conformant example removes it. A concept passes only if the model gets both polarities right. Always finding a problem and never finding one both fail.
 
-The result is harsher than the pooled gap. Across twelve untouched confirmatory models, none passes a single evaluative pair. The test contains 96 model-by-concept cells. Eighty-five pass neither item, seven pass only the conformant item, four pass only the violation item, and zero pass both. Table 4 separates those results from the development-exposed pilot; Figure 2 shows the per-model collapse, and Figure 3 shows every cell.
+The result is harsher than the pooled gap. Across twelve untouched confirmatory models, none passes a single evaluative pair. The test contains 96 model-by-concept cells. Eighty-five pass neither item, seven pass only the conformant item, four pass only the violation item, and zero pass both. Table 4 separates those results from the development-exposed pilot; Figure 3 shows the per-model collapse.
 
 | Set | Model-concept cells | Declarative passes | Evaluative pair passes | Declarative pass / evaluative fail |
 | --- | ---: | ---: | ---: | ---: |
@@ -58,13 +64,7 @@ The result is harsher than the pooled gap. Across twelve untouched confirmatory 
 ![Thirteen dumbbell rows grouped by family. For each model a filled marker shows the number of the eight paired concepts passed declaratively, from zero to five, and a hollow marker shows evaluative pair passes. Every hollow marker sits at zero except the Pythia-2.8B pilot at one; the filled markers scatter rightward, so each connecting line is the width of the knowledge that fails to apply.](figures/paired-collapse.png)
 
 ::: {.caption}
-Figure 2. Per-model paired-battery collapse. For each model, the filled marker gives declarative pair-concepts passed (of eight) and the hollow marker gives evaluative pair passes. Every confirmatory model reaches zero evaluative pair passes regardless of declarative knowledge; only the development-exposed Pythia-2.8B pilot clears one. Companion to Figure 3.
-:::
-
-![Grid of eight concepts by thirteen models. Most cells are gray, meaning neither evaluative item was answered correctly; a few are light or dark blue for one correct item. Thirty-five black dots mark cells with a correct declarative response, every one sitting on a cell that fails the evaluative pair. A single black cell, the only pair pass, sits in the pilot column beyond a vertical rule.](figures/paired-battery-grid.png)
-
-::: {.caption}
-Figure 3. Paired-battery outcomes. Cell color gives the evaluative pair result; a dot marks a correct declarative response for the same concept and model (white on the passing cell). No confirmatory cell passes both polarities. The vertical rule separates the development-exposed Pythia-2.8B pilot.
+Figure 3. Per-model paired-battery collapse. For each model, the filled marker gives declarative pair-concepts passed (of eight) and the hollow marker gives evaluative pair passes. Every confirmatory model reaches zero evaluative pair passes regardless of declarative knowledge; only the development-exposed Pythia-2.8B pilot clears one.
 :::
 
 The 35 confirmatory cells with a correct declarative response all fail the evaluative pair for that same concept. Pythia-160M contributes no cells to this conditional result because it has no declarative passes among the eight paired concepts. The paired test therefore supports the stronger mismatch directly: when declarative knowledge is present in the confirmatory set, no concept survives both application polarities.

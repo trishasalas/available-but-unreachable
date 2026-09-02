@@ -7,17 +7,33 @@ Regenerate with `python paper/generate-figures/<script>.py`.
 
 | # | Figure (PNG) | Script | Section | Note |
 | --- | --- | --- | --- | --- |
-| 1 | `gap-behavioral-internal.png` | `generate-fig-gap-behavioral-internal.py` | Intro | accuracy + entropy, all families; repaletted to blue/vermillion |
-| 2 | `paired-collapse.png` | `generate-fig-paired-collapse.py` | §4 | **new** — per-model paired collapse; fills the formerly-dangling Fig 2 slot |
-| 3 | `paired-battery-grid.png` | `generate-fig-paired-battery-grid.py` | §4 | the full cell grid (heatmap) |
+| 1 | `intro-infographic.png` | manually cropped from `ChatGPTImage.png` | Intro | motivating infographic; frozen counts and completions |
+| 2 | `gap-scissors.png` | `generate-fig-gap-scissors.py` | §4 | declarative/evaluative accuracy across scale |
+| 3 | `paired-collapse.png` | `generate-fig-paired-collapse.py` | §4 | per-model paired collapse |
 | 4 | `binding-vs-accuracy.png` | `generate-fig-binding-vs-accuracy.py` | §5 | |
 | 5 | `binding-frequency-forest.png` | `generate-fig-binding-frequency-forest.py` | §5 | |
 | 6 | `frequency-floor.png` | `generate-fig-frequency-floor.py` | §6 | |
 
 ## Built, not yet placed (need a prose reference the author will write)
 
-- `gap-scissors.png` (`generate-fig-gap-scissors.py`) — behavior-only gap; its role is
-  currently carried by Fig 1's top row. Kept for a possible future split.
+- `introduction-frequency-gap.png` (`generate-fig-introduction-infographic.py`) —
+  reproducible Matplotlib version of the Introduction infographic: the three frozen
+  Pythia-12B completions, validated Pile counts, outcomes, and the
+  available-versus-reachable framing. Preserves the existing raster and dot-plot
+  alternatives until the author chooses the final placement.
+
+- `intro-frequency-outcome.png` (`generate-fig-intro-frequency-outcome.py`) — the three
+  Pythia-12B "because" completions on a log Pile-count axis; correctness is not monotone
+  in frequency. Candidate replacement for Fig 1 in the Intro (which duplicates §4's
+  `gap-behavioral-internal.png`). Also writes `intro-frequency-outcome-table.md`, the
+  companion reference table of completions for placement under the figure.
+
+- `paired-battery-grid.png` (`generate-fig-paired-battery-grid.py`) — the full
+  model-by-concept outcome grid; intentionally not placed because Table 4 preserves the
+  underlying result and Figure 3 carries the per-model story.
+- `gap-behavioral-internal.png` (`generate-fig-gap-behavioral-internal.py`) — combined
+  accuracy and entropy panels; intentionally not placed because Figure 2 carries the
+  behavioral story and the entropy results remain tabulated/described.
 - `emergence-staircase.png` (`generate-fig-emergence-staircase.py`) — per-concept
   first-emergence by family; candidate for §4 near the per-concept trajectory (Table 2).
 - `fluent-wrongness-raincloud.png` (`generate-fig-fluent-wrongness-raincloud.py`) —
