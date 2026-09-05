@@ -12,23 +12,8 @@ Figure 4. Maximum attention binding against behavioral accuracy, one point per c
 
 The measure is also close to its ceiling. In GPT-2, 98% of compound pairs have a maximum attention score of at least 0.99. This concentration near the ceiling limits the measure’s ability to distinguish compounds. The weak, mixed-direction associations do not support using whole-network maximum attention as a general indicator of knowledge. They do not rule out other forms of constituent interaction.
 
-We next restrict the analysis to the final third of each model and include the magnitude of the value write. For each head, value-weighted binding is the attention weight multiplied by the source token's value-write norm and divided by the target token's residual norm. We then take the 95th percentile across late-layer heads. This measure is negatively correlated with corpus frequency at all thirteen model-scale points. A shared-label aggregate permutation test (see Methods) gives $p = 0.0003$. The direction repeats under uniform prompts at all thirteen model-scale points. Table 5 shows the primary natural-prompt correlations, and Figure 5 plots them with bootstrap confidence intervals.
+We next restrict the analysis to the final third of each model and include the magnitude of the value write. For each head, value-weighted binding is the attention weight multiplied by the source token's value-write norm and divided by the target token's residual norm. We then take the 95th percentile across late-layer heads. This measure is negatively correlated with corpus frequency at all thirteen model-scale points. A shared-label aggregate permutation test (see Methods) gives $p = 0.0003$. The direction repeats under uniform prompts at all thirteen model-scale points. Table \ref{tab:binding-sensitivity} shows the primary natural-prompt correlations, and Figure 5 plots them with bootstrap confidence intervals.
 
-| Family | Model | Spearman $\rho$ |
-| --- | --- | ---: |
-| GPT-2 | 124M | -0.284 |
-| GPT-2 | 355M | -0.342 |
-| GPT-2 | 774M | -0.350 |
-| GPT-2 | 1.5B | -0.152 |
-| OLMo 2 | 1B | -0.165 |
-| OLMo 2 | 7B | -0.276 |
-| OLMo 2 | 13B | -0.254 |
-| Pythia | 160M | -0.318 |
-| Pythia | 410M | -0.420 |
-| Pythia | 1B | -0.451 |
-| Pythia | 2.8B | -0.485 |
-| Pythia | 6.9B | -0.450 |
-| Pythia | 12B | -0.369 |
 
 ![Dot plot of thirteen Spearman correlations between log bigram frequency and late-layer value-weighted binding, grouped by family, with confidence interval whiskers. Every dot sits left of zero; some intervals cross zero.](figures/binding-frequency-forest.png)
 
@@ -42,4 +27,4 @@ The frequency association is distributed across multiple late-layer heads. It ap
 
 The registered held-out ablation did not support the predicted greater perturbation for rarer compounds. Across 24 test compounds, frequency and selected-set KL had Spearman $\rho = 0.037$ (one-sided permutation $p = 0.563$). The selected correlation was not unusually negative relative to the 100 random sets (empirical one-sided tail probability 0.248). Mean KL was $2.13 \times 10^{-5}$, and no highest-probability token changed. Both control gates passed: the empty intervention produced zero KL for every compound, and the penultimate-layer control exceeded the registered KL threshold for all 24 compounds. These results do not show that the selected heads have no effect; they show that the measured perturbation did not increase with rarity as predicted.
 
-Late value-weighted binding is real, distributed, and frequency-sensitive. The pattern is consistent with difficulty, not with resolution; the present evidence does not establish its causal role.
+Late value-weighted binding is real, distributed, and frequency-sensitive. It marks where the model has difficulty; it does not show that the difficulty has been resolved. The present evidence does not establish its causal role.

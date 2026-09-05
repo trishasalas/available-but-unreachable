@@ -1,10 +1,11 @@
 ---
 title: "Available but Unreachable: The Declarative-Evaluative Gap in Language Models"
+thanks: "Generative AI tools assisted with code development, analysis verification, and manuscript preparation. The research, methodology, analysis, and conclusions are the author’s own, and the author is responsible for the final content."
 author: 
   - name: "Trisha Salas"
     # heading: unused -- tmlr.sty generates the running head from its
     # package option ("Under review as submission to TMLR" when anonymous).
-    heading: "Under Submittion to TMLR"
+    heading: "Under Submission to TMLR"
     email: "trisha@trishasalas.com"
 abstract: |
   A language model can state what an accessibility concept means and still fail to apply it. We measure this declarative-evaluative gap in thirteen models from three families: Pythia, GPT-2, and OLMo 2. In the original behavioral batteries, the gap opens early and persists across families. At Pythia-12B, it closes because declarative accuracy falls. Three concepts answered correctly at smaller scales regress to incorrect at 12B. Convergence by decay is not mastery. In a frozen same-concept validation, none of 96 confirmatory model-concept cells passes both a violation and a conformant application item. Eleven cells pass one item; a development-exposed pilot, reported separately, passes one pair. The 96 confirmatory cells include 35 with correct definitions.

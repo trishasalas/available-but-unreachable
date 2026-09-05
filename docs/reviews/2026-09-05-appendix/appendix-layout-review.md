@@ -1,7 +1,6 @@
 \clearpage
 \setcounter{table}{0}
 \renewcommand{\thetable}{A\arabic{table}}
-\renewcommand{\theHtable}{appendix.\arabic{table}}
 
 ## Appendix
 
@@ -102,7 +101,7 @@ The saved effective-binding analysis uses `results/frequency/frequency_table.csv
 | pythia-410m | -0.420 | [-0.634, -0.134] | -0.413 | [-0.625, -0.133] |
 | pythia-6.9b | -0.450 | [-0.659, -0.186] | -0.352 | [-0.577, -0.087] |
 
-Table: Frequency correlations for the 95th-percentile normalized value-weighted binding measure, with 49 compounds per model and condition. \label{tab:binding-sensitivity}
+Table: Frequency correlations for the 95th-percentile normalized value-weighted binding measure, with 49 compounds per model and condition. This expands the former main-text Table 5. \label{tab:binding-sensitivity}
 
 
 The declarative-frequency token-count sensitivity uses GPT-2 tokenization as a common count measure across families and partial Spearman correlation: variables are ranked and the first-order partial-correlation formula is applied to their Pearson rank correlations. The saved family-level partial correlations controlling compound token count are 0.5807 for Pythia, 0.5092 for GPT-2, and 0.5810 for OLMo. These results concern declarative accuracy and do not establish token-count robustness for value-weighted binding.
@@ -196,7 +195,7 @@ Table: GPT-2 and OLMo 2 original-battery means, using the same scoring as Table 
 
 A decision-point analysis initially appeared to show the correct continuation for skip link losing to a higher-frequency competitor between Pythia-6.9B and Pythia-12B. The analysis projected the final residual stream directly through the unembedding matrix, omitting the model's final LayerNorm. A preregistered gate required the resulting trace to agree with the true forward pass. It did not, and the competition claim was withdrawn.
 
-An audit of the saved rollouts found the same failure at all six Pythia scales: the shortcut left the true greedy trajectory by the eighth generated token. Under weight folding, the final LayerNorm bias becomes an effective unembedding bias, $b_U$, whose correlation with log Pile unigram frequency ranges from 0.664 to 0.779 across scales. The shortcut omits this frequency-ordered term; in all six observed divergences, the true pathway selected the more frequent token. This is a finding about measurement validity, not an explanation of the behavioral gap.
+An audit of the saved rollouts found the same failure at all six Pythia scales: the shortcut left the true greedy trajectory within seven tokens. Under weight folding, the final LayerNorm bias becomes an effective unembedding bias, $b_U$, whose correlation with log Pile unigram frequency ranges from 0.664 to 0.779 across scales. The shortcut omits this frequency-ordered term; in all six observed divergences, the true pathway selected the more frequent token. This is a finding about measurement validity, not an explanation of the behavioral gap.
 
 
 
@@ -223,3 +222,4 @@ The reproducibility materials preserve separate roles for the stimulus inventori
 | Protocols and controls amendment | docs/preregistrations/0002-evaluative-prompts.md; 0003-frequency-and-effective-late-layer-binding.md; 0003-amendment-2026-09-04-ablation-controls.md |
 
 Table: Reproducibility artifact map. \label{tab:artifact-map}
+

@@ -1,0 +1,16 @@
+step,chosen,top1,top2,top3,top4,top5,expected_chosen,chosen_match,top1_match,top2_match,top3_match,top4_match,top5_match
+0,a,a,an,used,generally,typically,a,True,True,True,True,True,True
+1,link,link,type,special,component,web,link,True,True,True,True,True,True
+2,that,that,to,between,which,in,that,True,True,True,True,True,True
+3,is,is,allows,can,points,links,is,True,True,True,True,True,True
+4,not,not,used,embedded,displayed,placed,not,True,True,True,True,True,True
+5,click,click,visible,followed,displayed,a,click,True,True,True,True,True,True
+6,able,able,-,able,b,ba,able,True,True,True,True,True,True
+7,.,.,",",by,and,or,.,True,True,True,True,True,True
+8,It,It,A,Skip,The,This,It,True,True,True,True,True,True
+9,is,is,can,'s,may,appears,is,True,True,True,True,True,True
+10,used,used,usually,a,often,typically,used,True,True,True,True,True,True
+11,to,to,in,for,as,when,to,True,True,True,True,True,True
+12,link,link,navigate,create,connect,indicate,link,True,True,True,True,True,True
+13,to,to,a,from,other,pages,to,True,True,True,True,True,True
+14,another,another,a,other,content,an,another,True,True,True,True,True,True

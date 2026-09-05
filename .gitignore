@@ -27,3 +27,5 @@ paper/build-out/*.blg
 paper/build-out/tmlr-submission.pdf
 paper/build-out/*.tex
 
+# Rebuildable anonymous submission package
+paper/build-out/tmlr-anonymous-supplement.zip

@@ -34,6 +34,7 @@
 #     Same-author/year suffixes are assigned by BibTeX.
 
 set -e
+cd -- "$(dirname -- "$0")"
 
 TMLR_OPTION=""
 OUTNAME="tmlr-submission"
@@ -49,6 +50,7 @@ OUTDIR="build-out"
 TEX="$OUTDIR/$OUTNAME.tex"
 
 mkdir -p "$OUTDIR"
+python3 build/prepare-appendix.py
 
 # Let LaTeX and BibTeX find tmlr.sty / tmlr.bst in build/, and references.bib
 # in the paper root. The trailing colon means "then search the normal paths".
@@ -65,7 +67,9 @@ SECTION_FILES=(
   "$SECTIONS/05-binding-is-compensatory.md"
   "$SECTIONS/06-frequency-is-the-floor.md"
   "$SECTIONS/07-discussion.md"
+  "$SECTIONS/07a-conclusion.md"
   "$SECTIONS/08-limitations.md"
+  "$SECTIONS/08a-broader-impact.md"
   # 09-references.md is intentionally omitted — BibTeX generates the list.
 )
 
@@ -85,6 +89,7 @@ PANDOC_FLAGS=(
   # which is what tmlr.bst needs. @key citations in markdown become natbib
   # citations; plain-prose citations are left untouched.
   --natbib
+  --include-after-body="$OUTDIR/appendix.tex"
   -V "tmlr-option=$TMLR_OPTION"
   -V colorlinks=true
 )

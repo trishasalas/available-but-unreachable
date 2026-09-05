@@ -1,0 +1,16 @@
+model,step,chosen,top1,top2,top3,top4,top5
+pythia-160m,0,a,a,an,used,the,required
+pythia-160m,1,link,link,skip,line,sequence,way
+pythia-160m,2,between,between,that,to,which,in
+pythia-160m,3,two,two,a,an,multiple,the
+pythia-160m,4,links,links,or,objects,different,nodes
+pythia-160m,5,that,that,.,",",which,in
+pythia-160m,6,are,are,have,may,can,occur
+pythia-160m,7,connected,connected,not,linked,both,separated
+pythia-160m,8,by,by,to,together,via,.
+pythia-160m,9,a,a,an,means,the,some
+pythia-160m,10,single,single,path,link,common,cable
+pythia-160m,11,link,link,connection,path,cable,line
+pythia-160m,12,.,.,",",or,that,to
+pythia-160m,13,,,This,The,<|endoftext|>,If
+pythia-160m,14,,,If,The,Usually,Example

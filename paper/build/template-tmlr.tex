@@ -25,6 +25,7 @@ $if(geometry)$
 \usepackage[$for(geometry)$$geometry$$sep$,$endfor$]{geometry}
 $endif$
 \usepackage{amsmath,amssymb}
+\usepackage{needspace}
 
 % TMLR submission format. Options: none = anonymous (double-blind, what you
 % submit), [preprint] = named authors + no venue header, [accepted] = camera
@@ -80,6 +81,7 @@ $endif$
 \date{$date$}
 
 \begin{document}
+\raggedbottom
 $if(has-frontmatter)$
 \frontmatter
 $endif$

@@ -37,24 +37,24 @@
   - [x] Resolve same-author/same-year citations as 2026a, 2026b, and so on.
   - [x] Rebuild and confirm that every in-text citation resolves and only cited references appear.
 
-- [ ] Build a substantive appendix and include it after the references.
-  - Draft and exact prompt inventory prepared in `docs/reviews/2026-09-05-appendix/`; not yet approved or integrated. Review notes flag the missing binding token-count sensitivity artifact and distinguish the registered shared frequency reference from family-specific declarative counts.
-  - [ ] Exact model identifiers, revisions, architecture sizes, and tokenizer information.
-  - [ ] Generation settings, decoding configuration, and maximum continuation length.
-  - [ ] Full prompt inventory and deterministic coding rules.
-  - [ ] Token-matching rules, exclusions, and per-model sample sizes.
-  - [ ] Bootstrap procedure and token-count robustness method.
-  - [ ] Natural- and uniform-prompt sensitivity results.
-  - [ ] Preregistration 0003 adherence, amendment, head selection, controls, and held-out causal result.
-  - [ ] Preregistration adherence and any deviations.
-  - [ ] Artifact, notebook, manifest, and source-code map.
-  - [ ] Move main-text Tables 1, 2, 3, and 5 to the appendix; retain the paired-result summary in the main paper.
-  - [ ] Give every appendix table a formal caption and label.
+- [x] Build a substantive appendix and include it after the references.
+  - Draft and exact prompt inventory prepared in `docs/reviews/2026-09-05-appendix/`; A rendered integration preview is available as `paper/build-out/tmlr-appendix-review.pdf`; canonical appendix is now integrated. The token-count wording and corpus-reference distinction are resolved. Exact prompts remain in the prepared inventory for the pending supplement.
+  - [x] Exact model identifiers, revisions, architecture sizes, and tokenizer information.
+  - [x] Generation settings, decoding configuration, and maximum continuation length.
+  - [x] Full prompt inventory and deterministic coding rules.
+  - [x] Token-matching rules, exclusions, and per-model sample sizes.
+  - [x] Bootstrap procedure and declarative token-count robustness method, explicitly separate from binding measurement validity.
+  - [x] Natural- and uniform-prompt sensitivity results.
+  - [x] Preregistration 0003 adherence, amendment, head selection, controls, and held-out causal result.
+  - [x] Preregistration adherence and any deviations.
+  - [x] Artifact, notebook, manifest, and source-code map.
+  - [x] Move main-text Tables 1, 2, 3, and 5 to the appendix; retain the paired-result summary in the main paper.
+  - [x] Give every appendix table a formal caption and label.
 
 - [ ] Complete TMLR submission requirements.
-  - [ ] Add the required first-page disclosure describing generative-AI assistance accurately.
-  - [ ] Prepare an anonymized reproducibility supplement or repository snapshot.
-  - [ ] Verify that the submission PDF and supplement do not link to a named version of this manuscript.
+  - [x] Add the author-approved first-page disclosure describing generative-AI assistance accurately. Current official guidance checked on 2026-09-05 does not substantiate the earlier claim that this is mandatory.
+  - [x] Prepare an anonymized reproducibility supplement or repository snapshot.
+  - [x] Verify that the submission PDF and supplement do not link to a named version of this manuscript.
   - [ ] Confirm all author OpenReview profile and submission-form requirements separately from the anonymous PDF.
 
 ## Manuscript strengthening
@@ -66,11 +66,11 @@
 - [x] Quantify the evidence supporting the claim that the late-layer signal is distributed.
   - Saved-data head-localization audit completed on 2026-09-05; primary aggregates reproduce, but head-level evidence is heterogeneous. Approved wording retaining “distributed” as an observational claim is applied; the record is in `docs/reviews/2026-09-05-head-localization-prose.md`; audit and detailed tables are in `docs/audits/2026-09-05-head-localization*`.
 - [x] Report the exact registered Pythia-2.8B ablation result and random-control comparison.
-- [ ] Give every main-text table a formal caption and label.
+- [x] Give every main-text table a formal caption and label.
 - [x] Move the detailed Measurement Pathways audit to the appendix, retaining a concise methodological-validity statement in the main paper.
-- [ ] Add a short Conclusion that states the bounded result and its value to the field.
-- [ ] Decide whether the title should identify the accessibility or low-frequency-domain scope more explicitly.
-- [ ] Decide whether a concise Broader Impact statement is appropriate, particularly for misuse of definition-level performance as evidence of accessibility-tooling competence.
+- [x] Add a short Conclusion that states the bounded result and its value to the field.
+- [x] Decide whether the title should identify the accessibility or low-frequency-domain scope more explicitly.
+- [x] Add the author-approved Broader Impact statement connecting availability/reachability to training, interpretability, transfer, and concept-level scaling; empirical scope remains explicit.
 
 ## Related-work coverage
 
@@ -79,22 +79,22 @@
   - [x] Jain and Wallace on attention as explanation.
   - [x] Serrano and Smith on attention interpretability.
   - [x] Michel et al. on attention-head ablation and redundancy.
-- [ ] Recheck all novelty wording against the final related-work set.
+- [x] Recheck all novelty wording against the final related-work set.
 
 ## Final audit
 
 - [x] Reconcile effective-binding prompt labels: GPT-2-large natural/uniform files are reversed by saved prompt text; GPT-2-medium uniform rerun is now verified (780f639), with thirteen complete results in each condition; audit derivatives are refreshed. Canonical summary tables, analysis input mapping, paper Figure 5, and reconciled head audit are integrated. See `docs/audits/2026-09-05-tokenization-history.md`.
 - [x] Resolve unsupported binding token-count-control wording after reviewing existing tokenization work: approved clauses removed, token-aware measurement description retained. No new token-count sensitivity was run.
 
-- [ ] Verify every numerical claim against its canonical result artifact.
-- [ ] Verify every table and figure against its generator and source data.
-- [ ] Verify figure and table numbering, captions, citations, and cross-references after moving material to the appendix.
-- [ ] Verify that the abstract, Introduction, Results, Discussion, Limitations, and Conclusion use the same claim strength.
-- [ ] Reconcile `docs/findings/CLAIMS.md` with the final manuscript and remove stale `CURRENT` claims.
-- [ ] Build the anonymous TMLR PDF with the official style and inspect every rendered page.
-- [ ] Check PDF metadata, anonymization, references, links, image resolution, and supplementary files.
-- [ ] Remove temporary build settings, drafting comments, stale generated figures, and abandoned submission assets from the package.
-- [ ] Run `git diff --check` and confirm that the intended submission state is clean and reproducible.
+- [x] Verify every numerical claim against its canonical result artifact.
+- [x] Verify every table and figure against its generator and source data.
+- [x] Verify figure and table numbering, captions, citations, and cross-references after moving material to the appendix.
+- [x] Verify that the abstract, Introduction, Results, Discussion, Limitations, and Conclusion use the same claim strength.
+- [x] Reconcile `docs/findings/CLAIMS.md` with the final manuscript and remove stale `CURRENT` claims.
+- [x] Build the anonymous TMLR PDF with the official style and inspect every rendered page.
+- [x] Check PDF metadata, anonymization, references, links, image resolution, and supplementary files.
+- [x] Remove temporary build settings, drafting comments, stale generated figures, and abandoned submission assets from the package.
+- [x] Run `git diff --check` and confirm that the intended submission state is clean and reproducible. Final checkpoint includes approved source and the canonical PDF; the anonymous ZIP is rebuilt by the checked-in package script.
 
 ## Review notes — Claude Fable 5.1 (2026-09-01)
 
@@ -109,7 +109,7 @@ Read-only review of the built sections, abstract, CLAUDE.md, DECISIONS, and this
 - [x] Calibrate "difficulty" to what the evidence supports. *(overlaps TODO: abstract calibration)*
   - Abstract states value-weighted binding "marks concepts the model has more difficulty processing" as flat fact; Limitations correctly calls the compensatory reading an inference from direction, distribution, and ablation. Reviewers check that abstract and Limitations agree.
   - Section 2 title ("tracks rarity, not knowledge") is fine — that is what the data show. Reserve "difficulty" for interpretation-flagged sentences.
-- [ ] Demote the pooled tables from headline to motivation. *(overlaps TODO: move Tables 1–3 to appendix)*
+- [x] Demote the pooled tables from headline to motivation. *(overlaps TODO: move Tables 1–3 to appendix)*
   - With 5 evaluative concepts and 1/0.5/0 scoring, 10% = one partial; "GPT-2's gap widens to 55 points" is roughly a two-item movement. The intro states it as a headline.
   - Either add bootstrap intervals to Figure 2 or soften the intro to "the pooled gap appears in all three families" and let the paired battery (n=96) carry the weight.
 
@@ -120,8 +120,8 @@ Read-only review of the built sections, abstract, CLAUDE.md, DECISIONS, and this
 - [x] Precision consistency: Section 3 gives ρ = 0.5875 / 0.5194 / 0.5823; intro gives 0.59 / 0.52 / 0.58. Two decimals is enough for Spearman at n=49.
 - [x] The "Measurement Pathways" paragraph in Methods is a result (withdrawn claim + audit), not a method. *(overlaps TODO: move audit to appendix)* Leave two sentences in Methods: all generation uses the true forward pass, and why.
 - [x] Remove the provisional six-scale ablation summary rather than promoting pre-rerun numbers into the paper.
-- [ ] Section numbering: Intro/Related/Methods unnumbered, then "1. / 2. / 3.", then Discussion unnumbered. Reads as a movement structure, which works — but make it a conscious decision rather than a build-script artifact, since TMLR style numbers everything.
-- [ ] `paper/build/metadata.yaml` heading field: "Under Submittion to TMLR" — typo. Unused by tmlr.sty but fix before any `--preprint` build.
+- [x] Section numbering: Intro/Related/Methods unnumbered, then "1. / 2. / 3.", then Discussion unnumbered. Reads as a movement structure, which works — but make it a conscious decision rather than a build-script artifact, since TMLR style numbers everything.
+- [x] `paper/build/metadata.yaml` heading field: "Under Submittion to TMLR" — typo. Unused by tmlr.sty but fix before any `--preprint` build.
 
 ### Keep as-is
 
@@ -180,3 +180,15 @@ The line "the words arranged in the shape of a reason, with the reasoning absent
 - Removed nocite-all. Build verification: 23 unique cited keys, 23 printed entries, no missing or extra entries, and no final citation/overflow warnings. Salas preprint = 2026a; blog = 2026b. The unused thatDangCircuit bibliography entry remains in the source bank but is not printed.
 - `paper/sections/09-references.md` is synchronized as a reference inventory, not a second build source.
 - PDF author metadata is blank. Full PDF/supplement anonymization and final source-content/novelty audit remain separate open gates.
+
+## Canonical integration — 2026-09-05
+
+- Approved appendix now builds from `paper/sections/10-appendix.md`, after references, into the sole active `tmlr-submission.pdf`. Historical preview files are not sources. Generated duplicate main sections were retired to a local temporary backup.
+- Preserved all pre-existing main prose at integration, verified by whitespace-normalized comparison allowing only table removals, one caption, and table references. Fable's restorations remain.
+- Added the Conclusion and disclosure exactly as approved in this session. Retained the title and deliberate three-part Results numbering; corrected the metadata typo.
+- Inspected all 20 rendered pages. One main table and eight appendix tables resolve; duplicate hyperlink target fixed. No final LaTeX warnings or overfull boxes. Registered audit passes all eleven hashes and original statistical checks.
+- The final assembly/evidence record is `docs/audits/2026-09-05-final-assembly.md`; it states the passed checks and remaining provenance limits. The anonymous supplement is generated and verified. OpenReview author fields remain separate.
+
+- Author approved explicit authorship language in the AI footnote: research, methodology, analysis, and conclusions are the author’s own.
+
+- Final author-approved caption cleanup removes the historical “former main-text Table 5” review sentence.

@@ -10,43 +10,14 @@ We define declarative accuracy as whether or not a model can correctly state a c
 Figure 2. Declarative and evaluative accuracy across model scale. The pooled behavioral gap appears in all three families. In Pythia, the apparent closure at 12B comes from a decline in declarative accuracy rather than improved evaluative performance. Shading emphasizes the separation between the two measures.
 :::
 
-Table 1 presents the original Pythia battery means at six scales. Declarative accuracy rises with scale, reaching a peak at 6.9B. Evaluative accuracy lags behind through 6.9B. The gap opens at 160M, widens to a maximum at 2.8B, and persists through 6.9B where the model's declarative knowledge is strongest.
+Table \ref{tab:pooled-pythia} presents the original Pythia battery means at six scales. Declarative accuracy rises with scale, reaching a peak at 6.9B. Evaluative accuracy lags behind through 6.9B. The gap opens at 160M, widens to a maximum at 2.8B, and persists through 6.9B where the model's declarative knowledge is strongest.
 
-| Scale | Declarative | Evaluative | Gap |
-| ----- | ----------- | ---------- | --- |
-| 160M  | 25%         | 10%        | 15% |
-| 410M  | 40%         | 20%        | 20% |
-| 1B    | 30%         | 10%        | 20% |
-| 2.8B  | 60%         | 30%        | 30% |
-| 6.9B  | 65%         | 50%        | 15% |
-| 12B   | 45%         | 50%        | -5% |
 
-At 12B, the gap closes — but not from below. Declarative accuracy drops. Three concepts answered correctly at earlier scales regress to incorrect by maximum scale: keyboard navigation, skip link, and closed captions. Table 2 shows the per-concept declarative trajectory; `cor`, `part`, and `inc` denote correct, partial, and incorrect. These are not averages obscuring noise — individual concepts flip from correct to incorrect. Each scale is a separately trained model, so the regression runs across scale, not across time within one training run. Convergence by decay is not mastery.
+At 12B, the gap closes — but not from below. Declarative accuracy drops. Three concepts answered correctly at earlier scales regress to incorrect by maximum scale: keyboard navigation, skip link, and closed captions. Table \ref{tab:trajectories} shows the per-concept declarative trajectory; `cor`, `part`, and `inc` denote correct, partial, and incorrect. These are not averages obscuring noise — individual concepts flip from correct to incorrect. Each scale is a separately trained model, so the regression runs across scale, not across time within one training run. Convergence by decay is not mastery.
 
-| Concept             | 160M | 410M | 1B   | 2.8B | 6.9B | 12B |
-| ------------------- | ---- | ---- | ---- | ---- | ---- | --- |
-| ARIA                | inc  | inc  | inc  | inc  | inc  | inc |
-| WCAG                | inc  | inc  | inc  | inc  | cor  | cor |
-| alt text            | inc  | part | part | cor  | cor  | cor |
-| closed captions     | inc  | inc  | inc  | cor  | inc  | inc |
-| color contrast      | part | cor  | part | part | cor  | cor |
-| focus indicator     | part | inc  | inc  | inc  | inc  | inc |
-| keyboard navigation | part | cor  | cor  | cor  | cor  | inc |
-| screen reader       | part | part | cor  | cor  | cor  | cor |
-| semantic HTML       | part | part | inc  | part | part | part|
-| skip link           | inc  | part | inc  | cor  | cor  | inc |
 
-The pooled gap also appears in GPT-2 and OLMo. GPT-2 reaches a 55-point gap at 1.5B, but the evaluative battery contains only five items: one partial answer contributes ten percentage points. These small, unmatched batteries motivate the same-concept test below. Table 3 gives the family results not shown in Table 1.
+The pooled gap also appears in GPT-2 and OLMo. GPT-2 reaches a 55-point gap at 1.5B, but the evaluative battery contains only five items: one partial answer contributes ten percentage points. These small, unmatched batteries motivate the same-concept test below. Table \ref{tab:pooled-other} gives the family results not shown in Table \ref{tab:pooled-pythia}.
 
-| Family | Scale | Declarative | Evaluative | Gap |
-| --- | ---: | ---: | ---: | ---: |
-| GPT-2 | 124M | 35% | 20% | 15% |
-| GPT-2 | 355M | 45% | 20% | 25% |
-| GPT-2 | 774M | 50% | 30% | 20% |
-| GPT-2 | 1.5B | 65% | 10% | 55% |
-| OLMo 2 | 1B | 50% | 30% | 20% |
-| OLMo 2 | 7B | 75% | 40% | 35% |
-| OLMo 2 | 13B | 75% | 60% | 15% |
 
 The gap reproduces across three model families trained on different corpora with different tokenizers and different architectures. It also differs in character across families. In Pythia, incorrect responses remain high-entropy; in GPT-2, confidence in errors grows with scale. At OLMo 7B and 13B, incorrect accessibility responses have lower entropy than correct bicycle-control responses, although that reversal does not hold against correct accessibility responses. Figure 2 shows the accuracy gap across scale.
 
@@ -54,12 +25,14 @@ The gap reproduces across three model families trained on different corpora with
 
 The pooled comparison leaves an obvious objection: the declarative and evaluative batteries contain different concepts. We therefore froze a second battery covering eight of the declarative concepts. Each concept receives two evaluative items with the same neutral answer frame: one example contains the accessibility violation, and one conformant example removes it. A concept passes only if the model gets both polarities right. Always finding a problem and never finding one both fail.
 
-The result is harsher than the pooled gap. Across twelve untouched confirmatory models, none passes a single evaluative pair. The test contains 96 model-by-concept cells. Eighty-five pass neither item, seven pass only the conformant item, four pass only the violation item, and zero pass both. The development-exposed pilot passes one pair, showing that the instrument can yield a pass, although its development history and the pair’s prose format limit that comparison. The 96 confirmatory cells include 35 with correct declarative responses: application failure therefore also occurs for concepts the models can define. Table 4 separates those results from the development-exposed pilot; Figure 3 shows the per-model collapse.
+The result is harsher than the pooled gap. Across twelve untouched confirmatory models, none passes a single evaluative pair. The test contains 96 model-by-concept cells. Eighty-five pass neither item, seven pass only the conformant item, four pass only the violation item, and zero pass both. The development-exposed pilot passes one pair, showing that the instrument can yield a pass, although its development history and the pair’s prose format limit that comparison. The 96 confirmatory cells include 35 with correct declarative responses: application failure therefore also occurs for concepts the models can define. Table \ref{tab:paired} separates those results from the development-exposed pilot; Figure 3 shows the per-model collapse.
 
 | Set | Model-concept cells | Declarative passes | Evaluative pair passes | Declarative pass / evaluative fail |
 | --- | ---: | ---: | ---: | ---: |
 | Confirmatory models | 96 | 35 | 0 | 35 |
 | Pythia-2.8B pilot | 8 | 5 | 1 | 4 |
+
+Table: Frozen paired-battery outcomes, separating the twelve confirmatory models from the development-exposed pilot. \label{tab:paired}
 
 ![Thirteen dumbbell rows grouped by family. For each model a filled marker shows the number of the eight paired concepts passed declaratively, from zero to five, and a hollow marker shows evaluative pair passes. Every hollow marker sits at zero except the Pythia-2.8B pilot at one; the filled markers scatter rightward, so each connecting line is the width of the knowledge that fails to apply.](figures/paired-collapse.png)
 

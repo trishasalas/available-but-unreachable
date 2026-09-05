@@ -1,0 +1,47 @@
+[
+  {
+    "original": "_Archive/_results/mlp/pythia/pythia-2.8b_skip_link_steps.csv",
+    "copy": "docs/audits/measurement-pathway-evidence/pythia-2.8b_skip_link_steps.csv",
+    "sha256": "d59bba5db45d4cd4090919ddd309fb062324a9a7254459f9f5de23794ddb8441"
+  },
+  {
+    "original": "_Archive/_results/mlp/pythia/pythia-12b_skip_link_steps.csv",
+    "copy": "docs/audits/measurement-pathway-evidence/pythia-12b_skip_link_steps.csv",
+    "sha256": "20997cc3bca9f44e4d87ac99fa710034f4e3068d945586ef4cdee7ccd4205f84"
+  },
+  {
+    "original": "_Archive/_results/mlp/pythia/pythia-6.9b_skip_link_steps.csv",
+    "copy": "docs/audits/measurement-pathway-evidence/pythia-6.9b_skip_link_steps.csv",
+    "sha256": "0e8dc945ae91fad51e4b282889fab2904813b0e5b9ff7bcd71d38c47a62fc91a"
+  },
+  {
+    "original": "_Archive/_results/mlp/pythia/pythia-1b_skip_link_steps.csv",
+    "copy": "docs/audits/measurement-pathway-evidence/pythia-1b_skip_link_steps.csv",
+    "sha256": "7d635bd13ab1c2e2078ee1b7fa69c010f89c05288e1fef1e6f225c0c385257ed"
+  },
+  {
+    "original": "_Archive/_results/mlp/pythia/pythia-160m_skip_link_steps.csv",
+    "copy": "docs/audits/measurement-pathway-evidence/pythia-160m_skip_link_steps.csv",
+    "sha256": "c1eadabb863c4931cbce8c304e9ce825f782c47b6de3bd708a8fd7205354ca23"
+  },
+  {
+    "original": "_Archive/_results/mlp/pythia/pythia-410m_skip_link_steps.csv",
+    "copy": "docs/audits/measurement-pathway-evidence/pythia-410m_skip_link_steps.csv",
+    "sha256": "7c1743124c4bafa93e30ea65198a16d7d81106b7ccb281f0739d09c7fd585a28"
+  },
+  {
+    "original": "_Archive/_results/d7_gate1_lens_regression.csv",
+    "copy": "docs/audits/measurement-pathway-evidence/d7_gate1_lens_regression.csv",
+    "sha256": "d82f802fcab6a860287b4153e578d262d6638e156a876758d9a080e6e32e6016"
+  },
+  {
+    "original": "_Archive/_results/d7_gate2_forward_trace.csv",
+    "copy": "docs/audits/measurement-pathway-evidence/d7_gate2_forward_trace.csv",
+    "sha256": "8b1859cd82a148dfea01d521a6e4a5a5f5dcbdf4a9fdf0e239be2e49814d4a32"
+  },
+  {
+    "original": "_Archive/_results/d7_summary.md",
+    "copy": "docs/audits/measurement-pathway-evidence/d7_summary.md",
+    "sha256": "daac3a623a9ae84c7fabad449f8038312c89351429663f57f4e9691fa3cbfb5f"
+  }
+]

@@ -1,0 +1,16 @@
+model,step,chosen,top1,top2,top3,top4,top5
+pythia-410m,0,a,a,an,provided,included,available
+pythia-410m,1,link,link,type,way,URL,shortcut
+pythia-410m,2,that,that,to,between,from,which
+pythia-410m,3,is,is,goes,takes,does,appears
+pythia-410m,4,skipped,skipped,not,used,automatically,removed
+pythia-410m,5,when,when,by,.,in,from
+pythia-410m,6,the,the,a,you,clicking,there
+pythia-410m,7,link,link,page,user,browser,URL
+pythia-410m,8,is,is,goes,destination,doesn,isn
+pythia-410m,9,clicked,clicked,not,followed,selected,first
+pythia-410m,10,.,.,on,",",but,or
+pythia-410m,11,For,For,Skip,,The,A
+pythia-410m,12,example,example,instance,a,the,more
+pythia-410m,13,",",",",:,if,a,when
+pythia-410m,14,if,if,a,when,the,you

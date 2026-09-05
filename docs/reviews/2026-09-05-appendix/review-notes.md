@@ -1,6 +1,6 @@
 # Appendix review notes
 
-Status: draft for review; not applied to `paper/` or included in the PDF.
+Status: historical review notes. The approved appendix was integrated into `paper/sections/10-appendix.md` and the canonical PDF on 2026-09-05. Items below describe the earlier review state; token-count wording and frequency-reference distinctions have since been resolved. See README.md.
 
 ## Proposed contents
 
