@@ -14,8 +14,6 @@ The model set is broad across families but small by current standards. The large
 
 The value-weighted binding measure includes attention weight, value-write magnitude, and target residual norm. It does not follow information through every residual, normalization, and downstream path. ALTI or another full attribution method could test whether the same frequency relationship survives a more complete decomposition.
 
-Causal ablation is limited to Pythia and to zeroing selected head outputs at the later constituent position. A different intervention could reveal effects that this one misses. The ablation manifests were reconstructed from surviving artifacts after the runs, so runtime facts not preserved in those artifacts remain unavailable.
-
 Frequency provenance also differs by family. Pythia uses counts from its training corpus, and OLMo uses OLMo-Mix counts. GPT-2 uses Pile counts because WebText is unavailable, making that family a cross-corpus replication rather than an exact training-frequency analysis.
 
-Finally, the compensatory interpretation is an inference from direction, distribution, and ablation. The experiments show that rare compounds receive stronger late value-weighted writes and that the selected heads are not sufficient to change the top prediction under the tested intervention. They do not show what computation the additional write performs.
+Finally, the compensatory interpretation is an inference from direction and distribution. The experiments show that rare compounds receive stronger late value-weighted writes. They do not show what computation the additional write performs or whether it causally affects the model's prediction.

@@ -40,3 +40,13 @@
 | Pythia | 2.8B | -0.485 |
 | Pythia | 6.9B | -0.450 |
 | Pythia | 12B | -0.369 |
+
+### Measurement-pathway validation
+
+A decision-point analysis initially appeared to show the correct continuation for skip link losing to a higher-frequency competitor between Pythia-6.9B and Pythia-12B. The analysis projected the final residual stream directly through the unembedding matrix, omitting the model's final LayerNorm. A preregistered gate required the resulting trace to agree with the true forward pass. It did not, and the competition claim was withdrawn.
+
+An audit of the saved rollouts found the same failure at all six Pythia scales: the shortcut left the true greedy trajectory within seven tokens. Under weight folding, the final LayerNorm bias becomes an effective unembedding bias, $b_U$, whose correlation with log Pile unigram frequency ranges from 0.664 to 0.779 across scales. The shortcut omits this frequency-ordered term; in all six observed divergences, the true pathway selected the more frequent token. This is a finding about measurement validity, not an explanation of the behavioral gap.
+
+### Preregistration 0003 deviation
+
+Preregistration 0003 specified both the cross-model frequency--binding analysis and a held-out causal ablation in Pythia-2.8B. The frequency--binding analysis and its shared-label aggregate permutation test were completed as registered. The causal extension was not completed under the registered split and control design and is not included in the evidence reported in this manuscript. Earlier exploratory six-scale ablation outputs used a different split and control design; they are retained as project artifacts but excluded from manuscript claims.

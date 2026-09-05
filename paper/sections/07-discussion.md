@@ -4,7 +4,7 @@ The results establish a behavioral mismatch and rule out two simple explanations
 
 The binding result is easiest to understand as a difficulty signal. Rarer compounds receive stronger value-weighted writes in the final third of every model tested. The direction survives a uniform prompt and token-count controls. Yet the compounds receiving those writes are also the ones answered less accurately. Stronger late interaction is not evidence of stronger knowledge.
 
-The ablation keeps this interpretation bounded. Frequency-selected heads perturb the output distribution more than matched controls at some Pythia scales, but their effects are small, inconsistent across scale, and never change the top token in the saved trials. The data support a distributed late-layer response. They do not support a fixed circuit that carries the response into behavior.
+The upper-tail statistic keeps this interpretation at the population level. The strongest frequency-sensitive heads are not shared across model-scale points, so the data support a distributed late-layer response rather than a fixed cross-model circuit. Whether that response causally affects behavior remains open.
 
 Frequency has a different role. It is the strongest predictor of declarative accuracy across all three families, with correlations between 0.52 and 0.59. But frequency is constant for a concept, while the model's response changes with the task. The paired result holds the concept fixed across declarative and evaluative measures, but it does not isolate which feature of the task blocks access. Availability and reachability are useful names for the distinction, not identified internal mechanisms.
 

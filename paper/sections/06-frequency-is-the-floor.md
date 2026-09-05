@@ -16,7 +16,7 @@ One Pythia-2.8B diagnostic makes the framing problem concrete. Asked, `What acce
 
 The paired battery extends the point beyond one diagnostic. Across the twelve confirmatory models, 35 model-by-concept cells have a correct declarative response. All 35 fail the violation/conformant evaluative pair for that same concept. The compound and its corpus frequency are fixed; what changes is the form in which the model must use it. This does not isolate one prompt feature—the declarative and evaluative tasks differ in more than wording—but it rules out frequency as a sufficient explanation of whether available knowledge will be reached by a particular task.
 
-The frequency and binding results point in opposite behavioral directions. More frequent compounds are answered more accurately. Less frequent compounds receive stronger late-layer value-weighted writes. The additional interaction does not compensate enough to reverse the accuracy relationship, and the ablation does not identify a small causal carrier.
+The frequency and binding results point in opposite behavioral directions. More frequent compounds are answered more accurately. Less frequent compounds receive stronger late-layer value-weighted writes. The additional interaction does not compensate enough to reverse the accuracy relationship.
 
 To our knowledge, prior work has not reported this inverse relationship between multiword-expression frequency and late-layer, norm-aware constituent interaction across autoregressive model families. What is new here is the combination: frequency predicts which concepts are learned, rarity predicts stronger late interaction, and neither result alone explains whether the model will apply the concept correctly.
 
