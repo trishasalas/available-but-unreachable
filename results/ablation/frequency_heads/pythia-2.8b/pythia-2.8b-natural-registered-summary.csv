@@ -1,0 +1,2 @@
+model,condition,random_seed,n_selection,n_test,selected_rho_frequency_kl,selected_permutation_p_one_sided,n_permutations,selected_mean_kl,selected_median_kl,selected_top_changes,empty_max_abs_kl,positive_control_max_kl,positive_control_median_kl,positive_control_top_changes,n_random_sets,n_finite_random_rhos,random_rho_median,selected_rho_random_tail_p
+pythia-2.8b,natural,20260813,25,24,0.03652173913043478,0.5626437356264373,10000,2.1266434487188235e-05,1.622827403480187e-05,0,0.0,0.001837609801441431,0.00011818399070762098,0,100,100,0.15304347826086956,0.24752475247524752
