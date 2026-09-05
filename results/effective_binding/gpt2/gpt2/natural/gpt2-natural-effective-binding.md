@@ -1,7 +1,7 @@
 # Effective-binding run manifest
 
-- Run time (UTC): 2026-08-13T22:19:41.072707+00:00
-- Git commit: `6cd29410575100dd1bea51f1526845860d5d307a`
+- Run time (UTC): 2026-09-05T17:10:34.428769+00:00
+- Git commit: `83fc0d6f2adfa2016bae69807345d4dc824b0f17`
 - Working tree dirty at manifest time: `True`
 
 ## Experiment
@@ -46,7 +46,7 @@ The norm-aware measures are source-specific, head-specific writes. They are not 
 
 | domain | expected | written | output file | SHA-256 |
 |---|---:|---:|---|---|
-| accessibility | 7,632 | 7,632 | `gpt2-natural-accessibility.csv` | `aefacafc83c8be4082af35ee9a8281bca510cdc320333de752039dbc110b29ac` |
+| accessibility | 7,632 | 7,632 | `gpt2-natural-accessibility.csv` | `a02b0a85df33f4a9f17a6a71ed7536750e19477703d5e29667594234e6854107` |
 
 ## Inputs
 
@@ -60,11 +60,11 @@ The norm-aware measures are source-specific, head-specific writes. They are not 
 
 ## Environment
 
-- Python: `3.12.13`
+- Python: `3.11.13`
 - Platform: `Linux-6.6.122+-x86_64-with-glibc2.35`
-- torch: `2.11.0+cu128`
+- torch: `2.6.0+cu124`
 - transformer-lens: `2.18.0`
 - transformers: `4.57.6`
-- pandas: `2.2.2`
+- pandas: `2.0.3`
 - numpy: `1.26.4`
-- PyYAML: `6.0.3`
+- PyYAML: `6.0.2`
