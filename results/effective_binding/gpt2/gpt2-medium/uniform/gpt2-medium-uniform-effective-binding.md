@@ -1,7 +1,7 @@
 # Effective-binding run manifest
 
-- Run time (UTC): 2026-08-13T22:34:05.976133+00:00
-- Git commit: `7ec64dc43b3fc8e67040d629ff13e85b14f40c23`
+- Run time (UTC): 2026-09-05T17:23:12.287553+00:00
+- Git commit: `e2b050abec06ea98a66dd6203fff6f3a4d356e8d`
 - Working tree dirty at manifest time: `True`
 
 ## Experiment
@@ -22,6 +22,8 @@
 - Parameter count: 406,236,241
 - Parameter dtype: `torch.float32`
 - Device: `cuda:0 (NVIDIA A100-SXM4-80GB)`
+- Requested model revision: `main`
+- Resolved Hugging Face commit: `6dcaa7a952f72f9298047fd5137cd6e4f05f41da`
 
 ## Measurements
 
@@ -46,7 +48,7 @@ The norm-aware measures are source-specific, head-specific writes. They are not 
 
 | domain | expected | written | output file | SHA-256 |
 |---|---:|---:|---|---|
-| accessibility | 20,352 | 20,352 | `gpt2-medium-uniform-accessibility.csv` | `6e33b03dae381ff10cc7cf17b84bb8a1c526ac958acc26bb0e58bdea8ebc9d80` |
+| accessibility | 20,352 | 20,352 | `gpt2-medium-uniform-accessibility.csv` | `49fb7cc5e081cb79559f01fb14da0d35e186527e8526aa154cb3e26e62e62e7f` |
 
 ## Inputs
 
@@ -60,11 +62,11 @@ The norm-aware measures are source-specific, head-specific writes. They are not 
 
 ## Environment
 
-- Python: `3.12.13`
+- Python: `3.11.13`
 - Platform: `Linux-6.6.122+-x86_64-with-glibc2.35`
-- torch: `2.11.0+cu128`
+- torch: `2.6.0+cu124`
 - transformer-lens: `2.18.0`
 - transformers: `4.57.6`
-- pandas: `2.2.2`
+- pandas: `2.0.3`
 - numpy: `1.26.4`
-- PyYAML: `6.0.3`
+- PyYAML: `6.0.2`
