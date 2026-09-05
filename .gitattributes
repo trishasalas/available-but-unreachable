@@ -1,0 +1,2 @@
+# Preserve byte-identical copies of historical measurement evidence, including CRLF.
+docs/audits/measurement-pathway-evidence/*.csv -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

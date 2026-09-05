@@ -222,4 +222,3 @@ The reproducibility materials preserve separate roles for the stimulus inventori
 | Protocols and controls amendment | docs/preregistrations/0002-evaluative-prompts.md; 0003-frequency-and-effective-late-layer-binding.md; 0003-amendment-2026-09-04-ablation-controls.md |
 
 Table: Reproducibility artifact map. \label{tab:artifact-map}
-
