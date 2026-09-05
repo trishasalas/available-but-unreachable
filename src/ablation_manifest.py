@@ -271,3 +271,154 @@ def write_reconstructed_ablation_manifest(**kwargs) -> Path:
     kwargs["reconstructed"] = True
     kwargs["model"] = None
     return write_ablation_manifest(**kwargs)
+
+
+def write_registered_ablation_manifest(
+    *,
+    project_root,
+    primary_csv,
+    random_controls_csv,
+    random_set_summary_csv,
+    head_sets_csv,
+    summary_csv,
+    split_path,
+    candidate_path,
+    amendment_path,
+    notebook_path,
+    intervention_code_path,
+    model_metadata_manifest,
+    model,
+    selected_heads,
+    positive_control_heads,
+    random_seed: int,
+    n_permutations: int,
+    manifest_path=None,
+) -> Path:
+    """Write the contemporaneous record for preregistration 0003's causal run."""
+    project_root = Path(project_root)
+    primary_csv = Path(primary_csv)
+    random_controls_csv = Path(random_controls_csv)
+    random_set_summary_csv = Path(random_set_summary_csv)
+    head_sets_csv = Path(head_sets_csv)
+    summary_csv = Path(summary_csv)
+    split_path = Path(split_path)
+    candidate_path = Path(candidate_path)
+    amendment_path = Path(amendment_path)
+    notebook_path = Path(notebook_path)
+    intervention_code_path = Path(intervention_code_path)
+    model_metadata_manifest = Path(model_metadata_manifest)
+
+    required = [
+        primary_csv,
+        random_controls_csv,
+        random_set_summary_csv,
+        head_sets_csv,
+        summary_csv,
+        split_path,
+        candidate_path,
+        amendment_path,
+        notebook_path,
+        intervention_code_path,
+        model_metadata_manifest,
+    ]
+    missing = [path for path in required if not path.exists()]
+    if missing:
+        raise FileNotFoundError(f"Missing manifest inputs: {missing}")
+
+    primary_rows = _load_rows(primary_csv)
+    random_rows = _load_rows(random_controls_csv)
+    random_summary_rows = _load_rows(random_set_summary_csv)
+    head_set_rows = _load_rows(head_sets_csv)
+    summary_rows = _load_rows(summary_csv)
+    if (
+        not primary_rows
+        or not random_rows
+        or not random_summary_rows
+        or not head_set_rows
+        or len(summary_rows) != 1
+    ):
+        raise ValueError("Registered ablation artifacts are empty or malformed")
+
+    model_name = str(_unique_literal(primary_rows, "model"))
+    condition = str(_unique_literal(primary_rows, "condition"))
+    commit, dirty = _git_state(project_root)
+    if manifest_path is None:
+        manifest_path = primary_csv.with_suffix(".md")
+    manifest_path = Path(manifest_path)
+    manifest_path.parent.mkdir(parents=True, exist_ok=True)
+
+    summary = summary_rows[0]
+    artifact_rows = [
+        ("Primary compound results", primary_csv),
+        ("Random-control compound results", random_controls_csv),
+        ("Random-set statistical summaries", random_set_summary_csv),
+        ("Frozen head sets", head_sets_csv),
+        ("Statistical summary", summary_csv),
+        ("Frozen compound split", split_path),
+        ("Candidate-head table", candidate_path),
+        ("Preregistration amendment", amendment_path),
+        ("Ablation notebook", notebook_path),
+        ("Intervention implementation", intervention_code_path),
+        ("Effective-binding model manifest", model_metadata_manifest),
+    ]
+
+    lines = [
+        "# Registered held-out frequency-head ablation manifest",
+        "",
+        "**Record status: CONTEMPORANEOUS RUN RECORD**",
+        "",
+        f"- Manifest creation time (UTC): {dt.datetime.now(dt.timezone.utc).isoformat()}",
+        f"- Repository commit at manifest creation: `{commit}`",
+        f"- Working tree dirty at manifest creation: `{dirty}`",
+        "",
+        "## Design",
+        "",
+        f"- Model: `{model_name}`",
+        f"- Prompt condition: `{condition}`",
+        f"- Random seed: `{random_seed}`",
+        "- Split: saved preregistered 25-compound selection / 24-compound held-out test split",
+        f"- Selected heads: `{[(int(l), int(h)) for l, h in selected_heads]}`",
+        f"- Positive-control heads: `{[(int(l), int(h)) for l, h in positive_control_heads]}`",
+        f"- Random controls: 100 saved five-head sets drawn from late layers",
+        f"- Directional permutations: {n_permutations:,}",
+        "- Intervention: zero listed heads' `hook_z` output at the later constituent position",
+        "- Outcome: full-precision KL(base || ablated) at the final prompt position",
+        "",
+        "## Model/runtime",
+        "",
+        *_model_lines(model, None),
+        "",
+        "## Artifacts",
+        "",
+        "| artifact | path | SHA-256 |",
+        "|---|---|---|",
+        *[_file_row(label, path, project_root) for label, path in artifact_rows],
+        "",
+        "## Saved statistical summary",
+        "",
+        "| field | value |",
+        "|---|---:|",
+        *[f"| `{key}` | {value} |" for key, value in summary.items()],
+        "",
+        "## Output schemas",
+        "",
+        f"- Primary: {', '.join(f'`{column}`' for column in primary_rows[0])}",
+        f"- Random controls: {', '.join(f'`{column}`' for column in random_rows[0])}",
+        f"- Random-set summaries: {', '.join(f'`{column}`' for column in random_summary_rows[0])}",
+        f"- Head sets: {', '.join(f'`{column}`' for column in head_set_rows[0])}",
+        f"- Summary: {', '.join(f'`{column}`' for column in summary)}",
+        "",
+        "## Manifest-generation environment",
+        "",
+        f"- Python: `{platform.python_version()}`",
+        f"- Platform: `{platform.platform()}`",
+        f"- torch: `{_package_version('torch')}`",
+        f"- transformer-lens: `{_package_version('transformer-lens')}`",
+        f"- pandas: `{_package_version('pandas')}`",
+        f"- numpy: `{_package_version('numpy')}`",
+        "",
+    ]
+
+    manifest_path.write_text("\n".join(lines), encoding="utf-8")
+    print(f"Registered ablation manifest: {manifest_path}")
+    return manifest_path

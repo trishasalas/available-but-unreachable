@@ -120,6 +120,68 @@ def ov_logit_lens(model, layer, head, prompt, source_word, dest_word, top_k=15):
 # --------------------------------------------------------------------------- #
 # Causal check                                                                 #
 # --------------------------------------------------------------------------- #
+def ablate_head_sets_at_position(model, prompt, head_sets, dest_word, top_k=10):
+    """Evaluate several head sets against one shared baseline forward pass.
+
+    ``head_sets`` maps a readable condition name to a list of ``(layer, head)``
+    pairs.  The empty list is valid.  KL values are returned at full precision
+    so downstream rank tests do not acquire artificial ties from rounding.
+
+    This batched-by-condition helper is intended for registered control runs:
+    it avoids recomputing the unablated baseline for every random head set while
+    keeping each intervention in a separate hooked forward pass.
+    """
+    str_tokens = model.to_str_tokens(prompt)
+    di = find_token_index(str_tokens, dest_word)
+    if di is None:
+        raise ValueError(
+            f"dest_word '{dest_word}' not found in prompt tokens: {str_tokens}")
+
+    with torch.inference_mode():
+        base = model(prompt)[0, -1].float().log_softmax(-1)
+
+        def top(lp):
+            return [
+                (model.to_single_str_token(i.item()), round(lp[i].exp().item(), 4))
+                for i in torch.topk(lp, top_k).indices
+            ]
+
+        baseline_top = top(base)
+        results = {}
+
+        for label, heads in head_sets.items():
+            normalized_heads = [(int(layer), int(head)) for layer, head in heads]
+            by_layer = {}
+            for layer, head in normalized_heads:
+                by_layer.setdefault(layer, []).append(head)
+
+            def make_hook(head_list):
+                def hook(z, hook):
+                    for head in head_list:
+                        z[:, di, head, :] = 0.0
+                    return z
+                return hook
+
+            fwd_hooks = [
+                (f"blocks.{layer}.attn.hook_z", make_hook(layer_heads))
+                for layer, layer_heads in sorted(by_layer.items())
+            ]
+            abl = model.run_with_hooks(prompt, fwd_hooks=fwd_hooks)[0, -1]
+            abl = abl.float().log_softmax(-1)
+            kl = torch.sum(base.exp() * (base - abl)).item()
+
+            results[label] = {
+                "dest_word": dest_word,
+                "ablated_heads": normalized_heads,
+                "n_ablated": len(normalized_heads),
+                "kl_base_to_ablated": float(kl),
+                "baseline_top": baseline_top,
+                "ablated_top": top(abl),
+            }
+
+    return results
+
+
 def ablate_heads_at_position(model, prompt, heads, dest_word, top_k=10):
     """
     Zero a SET of heads' outputs at the `dest_word` position in ONE forward pass
@@ -138,44 +200,15 @@ def ablate_heads_at_position(model, prompt, heads, dest_word, top_k=10):
     baseline_top, ablated_top. Small KL + unchanged top tokens => the set's
     joint contribution is not load-bearing here.
     """
-    str_tokens = model.to_str_tokens(prompt)
-    di = find_token_index(str_tokens, dest_word)
-    if di is None:
-        raise ValueError(
-            f"dest_word '{dest_word}' not found in prompt tokens: {str_tokens}")
-
-    base = model(prompt)[0, -1].log_softmax(-1)
-
-    # One hook per layer; each zeroes all of that layer's targeted heads.
-    by_layer = {}
-    for layer, head in heads:
-        by_layer.setdefault(int(layer), []).append(int(head))
-
-    def make_hook(head_list):
-        def hook(z, hook):
-            for h in head_list:
-                z[:, di, h, :] = 0.0
-            return z
-        return hook
-
-    fwd_hooks = [(f"blocks.{layer}.attn.hook_z", make_hook(hs))
-                 for layer, hs in sorted(by_layer.items())]
-    abl = model.run_with_hooks(prompt, fwd_hooks=fwd_hooks)[0, -1].log_softmax(-1)
-
-    kl = torch.sum(base.exp() * (base - abl)).item()
-
-    def top(lp):
-        return [(model.to_single_str_token(i.item()), round(lp[i].exp().item(), 4))
-                for i in torch.topk(lp, top_k).indices]
-
-    return {
-        "dest_word": dest_word,
-        "ablated_heads": [(int(l), int(h)) for l, h in heads],
-        "n_ablated": len(heads),
-        "kl_base_to_ablated": round(kl, 6),
-        "baseline_top": top(base),
-        "ablated_top": top(abl),
-    }
+    result = ablate_head_sets_at_position(
+        model,
+        prompt,
+        {"requested": heads},
+        dest_word,
+        top_k=top_k,
+    )["requested"]
+    result["kl_base_to_ablated"] = round(result["kl_base_to_ablated"], 6)
+    return result
 
 
 def ablate_head_at_position(model, prompt, layer, head, dest_word, top_k=10):
