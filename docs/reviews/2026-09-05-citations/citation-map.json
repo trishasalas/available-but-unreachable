@@ -1,0 +1,17 @@
+{
+  "Dai et al. (2026)": "@dai2026towards",
+  "Basu et al. (2026)": "@basu2026interpretability",
+  "Jiang et al. (2020)": "@jiang2020how",
+  "Burns et al. (2023)": "@burns2023discovering",
+  "Kandpal et al. (2023)": "@kandpal2023large",
+  "Merullo et al. (2024)": "@merullo2024mutual",
+  "Kobayashi et al. (2020)": "@kobayashi2020attention",
+  "Tran (2026)": "@tran2026attention",
+  "Voita et al. (2019)": "@voita2019analyzing",
+  "(Miletić & Schulte im Walde, 2023, 2024; Vig & Belinkov, 2019)": "[@miletic2023systematic; @miletic2024semantics; @vig2019analyzing]",
+  "Biderman et al., 2023": "@biderman2023pythia",
+  "Radford et al., 2019": "@radford2019language",
+  "Team OLMo et al., 2025": "@olmo2025furious",
+  "(W3C, 2024)": "[@w3c2024wcag]",
+  "(Liu et al., 2024)": "[@liu2024infinigram]"
+}

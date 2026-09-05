@@ -1,2 +1,2 @@
 condition,measure,n_models,n_compounds,n_permutations,random_seed,observed_mean_fisher_z,extreme_permutation_count,one_sided_p_value
-uniform,p95_relative,13,49,10000,20260813,-0.35574717936160594,2,0.00029997000299970003
+uniform,p95_relative,13,49,10000,20260813,-0.3647669405773822,3,0.00039996000399960006

@@ -5,9 +5,10 @@ Figure: Binding is not knowing.
 Scatter of max attention-binding score (x) against behavioral accuracy score (y),
 one point per compound per scale, colored by family. The point is the dense
 vertical band at x ~ 1.0 spanning every accuracy level: binding saturates
-regardless of whether the model understands the concept. Pearson/Spearman
-correlations are annotated from binding_accuracy_corr.csv and asserted against
-the values reported in the paper (GPT-2 0.087, Pythia -0.003, OLMo 0.115).
+regardless of whether the model understands the concept. Spearman
+correlations are checked against binding_accuracy_corr.csv and the scatter data
+using the paper values (GPT-2 -0.059, Pythia -0.126, OLMo 0.108).
+Correlations are reported in the manuscript, not drawn on this scatter plot.
 
 Reads:  results/analysis/binding_vs_accuracy.csv, binding_accuracy_corr.csv
 Writes: paper/figures/binding-vs-accuracy.png
@@ -50,9 +51,9 @@ SUITE_COLOR = {
 SUITE_LABEL = {"pythia": "Pythia", "gpt2": "GPT-2", "olmo": "OLMo 2"}
 SUITES = ["pythia", "gpt2", "olmo"]
 
-# Paper-reported Pearson correlations; the script refuses to draw if the
+# Paper-reported Spearman correlations; the script refuses to draw if the
 # data on disk disagrees with the prose.
-EXPECTED_PEARSON = {"gpt2": 0.087, "pythia": -0.003, "olmo": 0.115}
+EXPECTED_SPEARMAN = {"gpt2": -0.059, "pythia": -0.126, "olmo": 0.108}
 
 available_fonts = [f.name for f in fm.fontManager.ttflist]
 FONT = "Atkinson Hyperlegible" if "Atkinson Hyperlegible" in available_fonts else "DejaVu Sans"
@@ -75,9 +76,14 @@ def make_figure():
 
     for suite in SUITES:
         assert suite in corr.index, f"missing correlations for {suite}"
-        assert abs(corr.loc[suite, "pearson_r"] - EXPECTED_PEARSON[suite]) < 1e-6, (
-            suite, corr.loc[suite, "pearson_r"], EXPECTED_PEARSON[suite],
+        assert abs(corr.loc[suite, "spearman_r"] - EXPECTED_SPEARMAN[suite]) < 1e-6, (
+            suite, corr.loc[suite, "spearman_r"], EXPECTED_SPEARMAN[suite],
         )
+        sub = bv[bv.suite == suite]
+        assert sub[["max_binding", "accuracy_score"]].notna().all().all(), suite
+        observed = sub["max_binding"].corr(sub["accuracy_score"], method="spearman")
+        assert round(observed, 3) == EXPECTED_SPEARMAN[suite], (suite, observed)
+        print(f"{suite}: n={len(sub)}, Spearman rho={observed:.6f}")
         n_scatter = int((bv.suite == suite).sum())
         assert n_scatter == int(corr.loc[suite, "n_pairs"]), (
             suite, n_scatter, int(corr.loc[suite, "n_pairs"]),

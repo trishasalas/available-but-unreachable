@@ -42,6 +42,7 @@ the number. The binding-battery entry is re-recorded here as 0009.
 | [0013](0013-analysis-tables-archival-status.md) | Archival status of five `results/analysis` tables | proposed   |
 | [0014](0014-pythia-12b-naming.md)               | `pythia-13b` vs `pythia-12b` naming               | accepted   |
 | [0015](0015-concept-key-normalization.md)       | Concept key normalization across batteries        | accepted   |
+| [0017](0017-report-spearman-binding-accuracy.md) | Report Spearman for maximum binding versus accuracy | accepted |
 
 Numbering continues from D8, which is the highest number in the legacy file — the  
 b_U-as-frequency-prior pre-registration and verdict (2026-07-05, H1 confirmed at all  

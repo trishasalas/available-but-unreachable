@@ -1,4 +1,4 @@
-\begin{thebibliography}{19}
+\begin{thebibliography}{23}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -7,8 +7,8 @@
 
 \bibitem[Basu et~al.(2026)Basu, Patel, Sheth, Muralidharan, Elamaran, Kinra,
   Morgan, and Batniji]{basu2026interpretability}
-Sanjay Basu, Sadiq~Y. Patel, Parth Sheth, Bhairavi Muralidharan, Nikhil
-  Elamaran, Aashish Kinra, Jonathan Morgan, and Rajaie Batniji.
+Sanjay Basu, Sadiq~Y. Patel, Parth Sheth, Bhairavi Muralidharan, Namrata
+  Elamaran, Aakriti Kinra, John Morgan, and Rajaie Batniji.
 \newblock Interpretability without actionability: Mechanistic methods cannot
   correct language model errors despite near-perfect internal representations.
 \newblock \emph{arXiv preprint arXiv:2603.18353}, 2026.
@@ -36,11 +36,31 @@ Collin Burns, Haotian Ye, Dan Klein, and Jacob Steinhardt.
 \newblock URL \url{https://openreview.net/forum?id=ETKGuby0hcs}.
 
 \bibitem[Dai et~al.(2026)Dai, Rao, Wang, Wang, Liu, and Xiong]{dai2026towards}
-Lei Dai, Zhen Rao, Yu~Wang, Hao Wang, Hui Liu, and Hui Xiong.
+Lu~Dai, Ziyang Rao, Yili Wang, Hanqing Wang, Hao Liu, and Hui Xiong.
 \newblock Towards mechanistically understanding why memorized knowledge fails
   to generalize in large language model finetuning.
 \newblock \emph{arXiv preprint arXiv:2607.08393}, 2026.
 \newblock URL \url{https://arxiv.org/abs/2607.08393}.
+
+\bibitem[Ferrando et~al.(2022)Ferrando, G{\'a}llego, and
+  Costa-juss{\`a}]{ferrando2022mixing}
+Javier Ferrando, Gerard~I. G{\'a}llego, and Marta~R. Costa-juss{\`a}.
+\newblock Measuring the mixing of contextual information in the transformer.
+\newblock In \emph{Proceedings of the 2022 Conference on Empirical Methods in
+  Natural Language Processing}, pp.\  8698--8714. Association for Computational
+  Linguistics, 2022.
+\newblock \doi{10.18653/v1/2022.emnlp-main.595}.
+\newblock URL \url{https://aclanthology.org/2022.emnlp-main.595/}.
+
+\bibitem[Jain \& Wallace(2019)Jain and Wallace]{jain2019attention}
+Sarthak Jain and Byron~C. Wallace.
+\newblock Attention is not explanation.
+\newblock In \emph{Proceedings of the 2019 Conference of the North American
+  Chapter of the Association for Computational Linguistics: Human Language
+  Technologies, Volume 1 (Long and Short Papers)}, pp.\  3543--3556.
+  Association for Computational Linguistics, 2019.
+\newblock \doi{10.18653/v1/N19-1357}.
+\newblock URL \url{https://aclanthology.org/N19-1357/}.
 
 \bibitem[Jiang et~al.(2020)Jiang, Xu, Araki, and Neubig]{jiang2020how}
 Zhengbao Jiang, Frank~F. Xu, Jun Araki, and Graham Neubig.
@@ -84,6 +104,14 @@ Jack Merullo, Sarah Wiegreffe, and Yanai Elazar.
   2024.
 \newblock URL \url{https://neurips.cc/virtual/2024/105361}.
 
+\bibitem[Michel et~al.(2019)Michel, Levy, and Neubig]{michel2019sixteen}
+Paul Michel, Omer Levy, and Graham Neubig.
+\newblock Are sixteen heads really better than one?
+\newblock In \emph{Advances in Neural Information Processing Systems},
+  volume~32, 2019.
+\newblock URL
+  \url{https://papers.neurips.cc/paper_files/paper/2019/hash/2c601ad9d2ff9bc8b282670cdd54f69f-Abstract.html}.
+
 \bibitem[Mileti{\'c} \& Schulte~im Walde(2023)Mileti{\'c} and Schulte~im
   Walde]{miletic2023systematic}
 Filip Mileti{\'c} and Sabine Schulte~im Walde.
@@ -112,19 +140,30 @@ Alec Radford, Jeffrey Wu, Rewon Child, David Luan, Dario Amodei, and Ilya
 \newblock URL
   \url{https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf}.
 
-\bibitem[Salas(2026{\natexlab{a}})]{salas2026testing}
+\bibitem[Salas(2026{\natexlab{a}})]{salas2026emergence}
 Trisha Salas.
-\newblock Testing accessibility knowledge across {Pythia} model sizes,
-  2026{\natexlab{a}}.
+\newblock Accessibility concept emergence in the {Pythia} suite: Thresholds,
+  binding, and the declarative-evaluative gap, May 2026{\natexlab{a}}.
+\newblock URL \url{https://doi.org/10.5281/zenodo.20360787}.
+\newblock Preprint. Zenodo. Published May 23, 2026. Version DOI:
+  10.5281/zenodo.20360788.
+
+\bibitem[Salas(2026{\natexlab{b}})]{salas2026testing}
+Trisha Salas.
+\newblock Testing accessibility knowledge across {Pythia} model sizes, January
+  2026{\natexlab{b}}.
 \newblock URL
   \url{https://trishasalas.com/writing/notes/testing-accessibility-knowledge-pythia/}.
+\newblock Research blog post.
 
-\bibitem[Salas(2026{\natexlab{b}})]{salas2026thatdangcircuit}
-Trisha Salas.
-\newblock {thatDangCircuit}: Compound binding is distributed,
-  2026{\natexlab{b}}.
-\newblock URL \url{https://doi.org/10.5281/zenodo.21604592}.
-\newblock Software and data, v1.0.0. Zenodo.
+\bibitem[Serrano \& Smith(2019)Serrano and Smith]{serrano2019attention}
+Sofia Serrano and Noah~A. Smith.
+\newblock Is attention interpretable?
+\newblock In \emph{Proceedings of the 57th Annual Meeting of the Association
+  for Computational Linguistics}, pp.\  2931--2951. Association for
+  Computational Linguistics, 2019.
+\newblock \doi{10.18653/v1/P19-1282}.
+\newblock URL \url{https://aclanthology.org/P19-1282/}.
 
 \bibitem[{Team OLMo} et~al.(2025){Team OLMo}, Walsh, Soldaini, Groeneveld, Lo,
   Arora, Bhagia, Gu, Huang, Jordan, Lambert, Schwenk, Tafjord, Anderson,
@@ -138,7 +177,7 @@ Trisha Salas.
 \newblock URL \url{https://arxiv.org/abs/2501.00656}.
 
 \bibitem[Tran(2026)]{tran2026attention}
-Khanh-Duy Tran.
+Khanh-Dung Tran.
 \newblock Attention-head binding as a term-conditioned mechanistic marker of
   accessibility concept emergence in language models.
 \newblock \emph{Transactions on Machine Learning Research}, 2026.

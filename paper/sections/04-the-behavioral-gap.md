@@ -7,10 +7,10 @@ We define declarative accuracy as whether or not a model can correctly state a c
 ![Three line-chart panels show declarative and evaluative accuracy across model scale for Pythia, GPT-2, and OLMo 2. Declarative accuracy is generally higher, with gaps reaching 30 percentage points for Pythia, 55 for GPT-2, and 35 for OLMo 2. In Pythia, the lines cross at 12B because declarative accuracy falls from its 6.9B peak while evaluative accuracy remains at 50 percent.](figures/gap-scissors.png)
 
 ::: {.caption}
-Figure 2. Declarative and evaluative accuracy across model scale. The behavioral gap appears in all three families and reaches 55 percentage points in GPT-2. In Pythia, the apparent closure at 12B comes from a decline in declarative accuracy rather than improved evaluative performance. Shading emphasizes the separation between the two measures.
+Figure 2. Declarative and evaluative accuracy across model scale. The pooled behavioral gap appears in all three families. In Pythia, the apparent closure at 12B comes from a decline in declarative accuracy rather than improved evaluative performance. Shading emphasizes the separation between the two measures.
 :::
 
-Table 1 presents the original Pythia battery means at six scales. Declarative accuracy rises with scale, reaching a peak at 6.9B. Evaluative accuracy lags behind at every scale. The gap opens at 160M, widens to a maximum at 2.8B, and persists through 6.9B where the model's declarative knowledge is strongest.
+Table 1 presents the original Pythia battery means at six scales. Declarative accuracy rises with scale, reaching a peak at 6.9B. Evaluative accuracy lags behind through 6.9B. The gap opens at 160M, widens to a maximum at 2.8B, and persists through 6.9B where the model's declarative knowledge is strongest.
 
 | Scale | Declarative | Evaluative | Gap |
 | ----- | ----------- | ---------- | --- |
@@ -36,7 +36,7 @@ At 12B, the gap closes — but not from below. Declarative accuracy drops. Three
 | semantic HTML       | part | part | inc  | part | part | part|
 | skip link           | inc  | part | inc  | cor  | cor  | inc |
 
-The pattern is not specific to Pythia. In GPT-2 the gap widens with scale, reaching 55 points at 1.5B — declarative knowledge accumulates faster than the ability to deploy it. OLMo replicates the dissociation across three scales. Table 3 gives the family results not shown in Table 1.
+The pooled gap also appears in GPT-2 and OLMo. GPT-2 reaches a 55-point gap at 1.5B, but the evaluative battery contains only five items: one partial answer contributes ten percentage points. These small, unmatched batteries motivate the same-concept test below. Table 3 gives the family results not shown in Table 1.
 
 | Family | Scale | Declarative | Evaluative | Gap |
 | --- | ---: | ---: | ---: | ---: |
@@ -54,7 +54,7 @@ The gap reproduces across three model families trained on different corpora with
 
 The pooled comparison leaves an obvious objection: the declarative and evaluative batteries contain different concepts. We therefore froze a second battery covering eight of the declarative concepts. Each concept receives two evaluative items with the same neutral answer frame: one example contains the accessibility violation, and one conformant example removes it. A concept passes only if the model gets both polarities right. Always finding a problem and never finding one both fail.
 
-The result is harsher than the pooled gap. Across twelve untouched confirmatory models, none passes a single evaluative pair. The test contains 96 model-by-concept cells. Eighty-five pass neither item, seven pass only the conformant item, four pass only the violation item, and zero pass both. Table 4 separates those results from the development-exposed pilot; Figure 3 shows the per-model collapse.
+The result is harsher than the pooled gap. Across twelve untouched confirmatory models, none passes a single evaluative pair. The test contains 96 model-by-concept cells. Eighty-five pass neither item, seven pass only the conformant item, four pass only the violation item, and zero pass both. The development-exposed pilot passes one pair, showing that the instrument can yield a pass, although its development history and the pair’s prose format limit that comparison. The 96 confirmatory cells include 35 with correct declarative responses: application failure therefore also occurs for concepts the models can define. Table 4 separates those results from the development-exposed pilot; Figure 3 shows the per-model collapse.
 
 | Set | Model-concept cells | Declarative passes | Evaluative pair passes | Declarative pass / evaluative fail |
 | --- | ---: | ---: | ---: | ---: |
@@ -67,7 +67,7 @@ The result is harsher than the pooled gap. Across twelve untouched confirmatory 
 Figure 3. Per-model paired-battery collapse. For each model, the filled marker gives declarative pair-concepts passed (of eight) and the hollow marker gives evaluative pair passes. Every confirmatory model reaches zero evaluative pair passes regardless of declarative knowledge; only the development-exposed Pythia-2.8B pilot clears one.
 :::
 
-The 35 confirmatory cells with a correct declarative response all fail the evaluative pair for that same concept. Pythia-160M contributes no cells to this conditional result because it has no declarative passes among the eight paired concepts. The paired test therefore supports the stronger mismatch directly: when declarative knowledge is present in the confirmatory set, no concept survives both application polarities.
+Because no confirmatory cell passes a pair, the 35 failures among correct-definition cells follow from the overall zero-pair result; they are not a separate conditional effect. Their value is the same-concept comparison: a correct definition does not ensure success on this application pair. Pythia-160M contributes no correct-definition cells among these eight concepts.
 
 Pythia-2.8B is reported separately because its behavior informed instrument development before the battery was frozen. It produces the only pair pass, on skip link. It classifies the violation as inaccessible and the conformant example as accessible, then repeats much of the prompt. Skip link is also the battery's only prose-described concept; the other seven require interpreting HTML or CSS. The result is consistent with framing-dependent reachability, but it does not separate framing from concept.
 

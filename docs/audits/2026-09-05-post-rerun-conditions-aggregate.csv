@@ -1,0 +1,4 @@
+version,n_models,n_compounds,n_permutations,random_seed,observed_mean_fisher_z,extreme_permutation_count,one_sided_p_value
+original_labels,13,49,10000,20260813,-0.3504419592159309,2,0.00029997000299970003
+reconciled_natural_prompts,13,49,10000,20260813,-0.3493544488460022,2,0.00029997000299970003
+reconciled_uniform_prompts,13,49,10000,20260813,-0.3647669405773822,3,0.00039996000399960006

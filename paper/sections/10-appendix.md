@@ -29,7 +29,7 @@
 | --- | --- | ---: |
 | GPT-2 | 124M | -0.284 |
 | GPT-2 | 355M | -0.342 |
-| GPT-2 | 774M | -0.362 |
+| GPT-2 | 774M | -0.350 |
 | GPT-2 | 1.5B | -0.152 |
 | OLMo 2 | 1B | -0.165 |
 | OLMo 2 | 7B | -0.276 |
@@ -49,4 +49,4 @@ An audit of the saved rollouts found the same failure at all six Pythia scales: 
 
 ### Preregistration 0003 deviation
 
-Preregistration 0003 specified both the cross-model frequency--binding analysis and a held-out causal ablation in Pythia-2.8B. The frequency--binding analysis and its shared-label aggregate permutation test were completed as registered. The causal extension was not completed under the registered split and control design and is not included in the evidence reported in this manuscript. Earlier exploratory six-scale ablation outputs used a different split and control design; they are retained as project artifacts but excluded from manuscript claims.
+The registered Pythia-2.8B causal test was completed using the frozen 25/24 compound split and the controls specified in the September 4 amendment. Earlier six-scale exploratory ablations used a different split and control design and are excluded from the manuscript’s evidence. Their artifacts are retained in the repository. The registered run has a contemporaneous manifest recording the output and code hashes.

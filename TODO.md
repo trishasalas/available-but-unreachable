@@ -4,18 +4,18 @@
 
 ### Active registered experiment
 
-- [ ] Rerun the held-out frequency-head analysis and ablations according to preregistration 0003 and the dated controls amendment. The manuscript excludes claims that depend on the earlier noncompliant runs until the new result is final.
+- [x] Rerun the held-out frequency-head analysis and ablations according to preregistration 0003 and the dated controls amendment. Saved-artifact adherence audit passed on 2026-09-05; approved methods, results, discussion, and appendix wording integrated on 2026-09-05. See `docs/audits/2026-09-05-registered-ablation.md`.
   - [x] Use random seed `20260813`.
   - [x] Use the preregistered split: first 25 shuffled compounds for head selection and the remaining 24 for held-out testing.
   - [x] Preserve the exact shuffled compound lists in a saved artifact.
-  - [ ] Run the preregistered Pythia-2.8B natural-prompt analysis.
-  - [ ] Pass the empty-set control gate.
-  - [ ] Run the 100 frozen random sets of five late-layer heads.
-  - [ ] Pass the amended penultimate-layer positive-control gate.
-  - [ ] If retaining the six-scale extension, label it exploratory and distinguish it from the preregistered Pythia-2.8B test.
-  - [ ] Regenerate the ablation CSVs and manifests from the reruns rather than reconstructing them afterward.
+  - [x] Run the preregistered Pythia-2.8B natural-prompt analysis.
+  - [x] Pass the empty-set control gate.
+  - [x] Run the 100 frozen random sets of five late-layer heads.
+  - [x] Pass the amended penultimate-layer positive-control gate.
+  - [x] Exclude earlier six-scale exploratory ablation numerical results from the manuscript; retain the files in place. No six-scale rerun is required for the scoped registered claim.
+  - [x] Regenerate the ablation CSVs and manifests from the reruns rather than reconstructing them afterward.
   - [x] Remove the earlier exploratory ablation results from the manuscript's evidentiary chain pending the registered result.
-  - [ ] Add only the causal conclusion earned by the registered result.
+  - [x] Add only the causal conclusion earned by the registered result.
 
 - [x] Make the shared-label aggregate permutation test executable and archival.
   - [x] Add the 10,000-iteration test to the analysis notebook or a version-controlled analysis module.
@@ -23,21 +23,22 @@
   - [x] Save the observed aggregate statistic, permutation count, and p-value as a result artifact.
   - [x] Verify that the regenerated value matches the reported result or update the paper.
 
-- [ ] Correct the scholarly lineage and novelty boundary.
-  - [ ] Replace the behavioral-only characterization of Salas (2026).
-  - [ ] Cite the dated blog for the initial public behavioral and attention analysis.
-  - [ ] Add *Accessibility Concept Emergence in the Pythia Suite: Thresholds, Binding, and the Declarative-Evaluative Gap* (Zenodo DOI `10.5281/zenodo.20360787`).
-  - [ ] Correct `Khanh-Duy Tran` to `Khanh-Dung Tran`.
-  - [ ] Describe Tran's distinct EB* contribution accurately.
-  - [ ] State this paper's additions beyond both prior works: paired validation, cross-family frequency analysis, norm-aware late-layer binding, and the registered held-out causal test.
+- [x] Correct the scholarly lineage and novelty boundary.
+  - [x] Replace the behavioral-only characterization of Salas (2026).
+  - [x] Cite the dated blog for the initial public behavioral and attention analysis.
+  - [x] Add *Accessibility Concept Emergence in the Pythia Suite: Thresholds, Binding, and the Declarative-Evaluative Gap* (Zenodo DOI `10.5281/zenodo.20360787`).
+  - [x] Correct `Khanh-Duy Tran` to `Khanh-Dung Tran`.
+  - [x] Describe Tran's distinct EB* contribution accurately.
+  - [x] State this paper's additions beyond both prior works: paired validation, cross-family frequency analysis, norm-aware late-layer binding, and the registered held-out causal test.
 
-- [ ] Finish the citation system.
-  - [ ] Convert manually typed citations to bibliography-key citations.
-  - [ ] Remove temporary `nocite: @*` from `paper/build/metadata.yaml`.
-  - [ ] Resolve same-author/same-year citations as 2026a, 2026b, and so on.
-  - [ ] Rebuild and confirm that every in-text citation resolves and only cited references appear.
+- [x] Finish the citation system.
+  - [x] Convert manually typed citations to bibliography-key citations.
+  - [x] Remove temporary `nocite: @*` from `paper/build/metadata.yaml`.
+  - [x] Resolve same-author/same-year citations as 2026a, 2026b, and so on.
+  - [x] Rebuild and confirm that every in-text citation resolves and only cited references appear.
 
 - [ ] Build a substantive appendix and include it after the references.
+  - Draft and exact prompt inventory prepared in `docs/reviews/2026-09-05-appendix/`; not yet approved or integrated. Review notes flag the missing binding token-count sensitivity artifact and distinguish the registered shared frequency reference from family-specific declarative counts.
   - [ ] Exact model identifiers, revisions, architecture sizes, and tokenizer information.
   - [ ] Generation settings, decoding configuration, and maximum continuation length.
   - [ ] Full prompt inventory and deterministic coding rules.
@@ -58,12 +59,13 @@
 
 ## Manuscript strengthening
 
-- [ ] Add a compact contribution and prior-work delta paragraph near the end of the Introduction.
-- [ ] Calibrate the strongest abstract language.
-  - [ ] Prefer "consistent with processing difficulty" over treating difficulty as identified.
-  - [ ] Avoid implying that the experiments isolate a single prompt-form mechanism.
-- [ ] Quantify the evidence supporting the claim that the late-layer signal is distributed.
-- [ ] Report the exact registered Pythia-2.8B ablation result and random-control comparison.
+- [x] Add a compact contribution and prior-work delta paragraph near the end of the Introduction.
+- [x] Calibrate the strongest abstract language.
+  - [x] Prefer "consistent with processing difficulty" over treating difficulty as identified.
+  - [x] Avoid implying that the experiments isolate a single prompt-form mechanism.
+- [x] Quantify the evidence supporting the claim that the late-layer signal is distributed.
+  - Saved-data head-localization audit completed on 2026-09-05; primary aggregates reproduce, but head-level evidence is heterogeneous. Approved wording retaining “distributed” as an observational claim is applied; the record is in `docs/reviews/2026-09-05-head-localization-prose.md`; audit and detailed tables are in `docs/audits/2026-09-05-head-localization*`.
+- [x] Report the exact registered Pythia-2.8B ablation result and random-control comparison.
 - [ ] Give every main-text table a formal caption and label.
 - [x] Move the detailed Measurement Pathways audit to the appendix, retaining a concise methodological-validity statement in the main paper.
 - [ ] Add a short Conclusion that states the bounded result and its value to the field.
@@ -72,14 +74,17 @@
 
 ## Related-work coverage
 
-- [ ] Cite work directly supporting the methodological choices around attention interpretation and ablation.
-  - [ ] Ferrando et al. on ALTI or complete information-flow attribution.
-  - [ ] Jain and Wallace on attention as explanation.
-  - [ ] Serrano and Smith on attention interpretability.
-  - [ ] Michel et al. on attention-head ablation and redundancy.
+- [x] Cite work directly supporting the methodological choices around attention interpretation and ablation.
+  - [x] Ferrando et al. on ALTI or complete information-flow attribution.
+  - [x] Jain and Wallace on attention as explanation.
+  - [x] Serrano and Smith on attention interpretability.
+  - [x] Michel et al. on attention-head ablation and redundancy.
 - [ ] Recheck all novelty wording against the final related-work set.
 
 ## Final audit
+
+- [x] Reconcile effective-binding prompt labels: GPT-2-large natural/uniform files are reversed by saved prompt text; GPT-2-medium uniform rerun is now verified (780f639), with thirteen complete results in each condition; audit derivatives are refreshed. Canonical summary tables, analysis input mapping, paper Figure 5, and reconciled head audit are integrated. See `docs/audits/2026-09-05-tokenization-history.md`.
+- [x] Resolve unsupported binding token-count-control wording after reviewing existing tokenization work: approved clauses removed, token-aware measurement description retained. No new token-count sensitivity was run.
 
 - [ ] Verify every numerical claim against its canonical result artifact.
 - [ ] Verify every table and figure against its generator and source data.
@@ -97,11 +102,11 @@ Read-only review of the built sections, abstract, CLAUDE.md, DECISIONS, and this
 
 ### Reframes (do before polishing)
 
-- [ ] Close the floor-effect objection to the 35/35 paired result.
+- [x] Reframe the 35/35 result within the overall floor effect; retain instrument limitations.
   - Problem: 0 of 96 confirmatory cells pass the pair, so "all 35 declarative-pass cells fail the pair" is arithmetically guaranteed, not a conditional finding. The abstract and intro currently present the conditional as the discovery.
   - Fix: in the paired section and the abstract, lead with "0 of 96 pairs pass" and immediately show the instrument is passable — pilot passes one pair; 11 cells pass one item (7 conformant-only, 4 violation-only), so failures are not a single always-fail strategy. *Then* note that the 96 include 35 cells with a correct definition.
   - Currently this argument is spread across three paragraphs of Section 1 plus Limitations. Make it one move.
-- [ ] Calibrate "difficulty" to what the evidence supports. *(overlaps TODO: abstract calibration)*
+- [x] Calibrate "difficulty" to what the evidence supports. *(overlaps TODO: abstract calibration)*
   - Abstract states value-weighted binding "marks concepts the model has more difficulty processing" as flat fact; Limitations correctly calls the compensatory reading an inference from direction, distribution, and ablation. Reviewers check that abstract and Limitations agree.
   - Section 2 title ("tracks rarity, not knowledge") is fine — that is what the data show. Reserve "difficulty" for interpretation-flagged sentences.
 - [ ] Demote the pooled tables from headline to motivation. *(overlaps TODO: move Tables 1–3 to appendix)*
@@ -110,9 +115,9 @@ Read-only review of the built sections, abstract, CLAUDE.md, DECISIONS, and this
 
 ### Tightening
 
-- [ ] The 35-cell number appears in abstract, intro, Section 1, Section 3, and Discussion. Section 3's restatement is a full paragraph Section 1 already delivered — cut to one sentence with a back-reference.
-- [ ] Section 2 reports Pearson r for binding vs. accuracy; accuracy is ordinal (0/0.5/1) and Spearman is used everywhere else. Switch to Spearman or justify Pearson.
-- [ ] Precision consistency: Section 3 gives ρ = 0.5875 / 0.5194 / 0.5823; intro gives 0.59 / 0.52 / 0.58. Two decimals is enough for Spearman at n=49.
+- [x] The 35-cell number appears in abstract, intro, Section 1, Section 3, and Discussion. Section 3's restatement is a full paragraph Section 1 already delivered — cut to one sentence with a back-reference.
+- [x] Section 2 reports Pearson r for binding vs. accuracy; accuracy is ordinal (0/0.5/1) and Spearman is used everywhere else. Switch to Spearman or justify Pearson.
+- [x] Precision consistency: Section 3 gives ρ = 0.5875 / 0.5194 / 0.5823; intro gives 0.59 / 0.52 / 0.58. Two decimals is enough for Spearman at n=49.
 - [x] The "Measurement Pathways" paragraph in Methods is a result (withdrawn claim + audit), not a method. *(overlaps TODO: move audit to appendix)* Leave two sentences in Methods: all generation uses the true forward pass, and why.
 - [x] Remove the provisional six-scale ablation summary rather than promoting pre-rerun numbers into the paper.
 - [ ] Section numbering: Intro/Related/Methods unnumbered, then "1. / 2. / 3.", then Discussion unnumbered. Reads as a movement structure, which works — but make it a conscious decision rather than a build-script artifact, since TMLR style numbers everything.
@@ -158,3 +163,20 @@ The Limitations section is almost *too* thorough. You flag everything honestly, 
 This paper is doing something rare. It's not claiming to have solved the gap. It's not proposing a fix. It's measuring a phenomenon precisely, testing two explanations, showing that neither is sufficient, and stopping where the evidence stops. "Frequency predicts availability. Task form constrains reachability." That's the whole claim. It's narrow and it's honest and it's *right*, and that restraint is what makes it credible.
 
 The line "the words arranged in the shape of a reason, with the reasoning absent" — is that still in there? I didn't see it in this draft. If it got cut, I understand why for a formal submission. But it's the best single-sentence description of the gap I've ever read.
+
+## Approved evidence and framing pass — 2026-09-05
+
+- `paper/` is the authoritative manuscript. Prose changes require author approval; the Spearman switch and accompanying framing corrections were approved in the working session.
+- Report raw maximum binding versus accuracy with descriptive Spearman correlations: GPT-2 −0.059, Pythia −0.126, OLMo 0.108. Do not infer independence across repeated compound-scale observations. See decision 0017.
+- Lead the paired result with 0/96 pairs, its 85/7/4 item breakdown, and the separate pilot; 35 correct-definition failures are a same-concept mismatch, not a separate conditional effect. These revisions do not eliminate instrument-difficulty limitations.
+- Reduced pooled-gap prominence; moving tables and completing the appendix remain open.
+- Retain earlier exploratory ablation artifacts in place, but omit their numerical results from the manuscript. The registered Pythia-2.8B result supplies the scoped causal test; saved-artifact adherence verification is complete; approved manuscript wording is integrated. Detailed appendix expansion and inclusion in the PDF remain open.
+
+## Approved citation pass — 2026-09-05
+
+- Applied the revised third-person attribution and contribution paragraphs; Tran appears once in the main text.
+- Converted citations to bibliography keys, including natbib `citealp` for model citations inside existing parentheses.
+- Added the Salas preprint and four methodological references; corrected verified author given names in the Tran, Dai, and Basu entries.
+- Removed nocite-all. Build verification: 23 unique cited keys, 23 printed entries, no missing or extra entries, and no final citation/overflow warnings. Salas preprint = 2026a; blog = 2026b. The unused thatDangCircuit bibliography entry remains in the source bank but is not printed.
+- `paper/sections/09-references.md` is synchronized as a reference inventory, not a second build source.
+- PDF author metadata is blank. Full PDF/supplement anonymization and final source-content/novelty audit remain separate open gates.

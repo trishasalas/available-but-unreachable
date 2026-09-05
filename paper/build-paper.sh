@@ -30,8 +30,8 @@
 #     sections/09-references.md, which is deliberately excluded below. Keeping
 #     both in the build would produce two reference lists that drift apart.
 #
-#   * metadata.yaml currently sets `nocite: "@*"`, so all 18 bib entries print
-#     whether or not they are cited. Remove that before submission.
+#   * Only bibliography-key citations used in the manuscript are printed.
+#     Same-author/year suffixes are assigned by BibTeX.
 
 set -e
 
