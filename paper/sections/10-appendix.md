@@ -77,6 +77,8 @@ For a head, the measure is its attention from the later position to the earlier 
 
 The late-layer set uses zero-indexed layers $l \geq \lceil 2L/3 \rceil$. The primary statistic is the 95th percentile across all heads in that set for each compound. The maximum attention, maximum weighted write, maximum normalized write, and mean of the five largest normalized writes are retained as alternative summaries.
 
+The saved secondary summaries limit the generality of the all-negative sign pattern. Normalized maxima have negative frequency correlations in eight of thirteen models under natural prompts and ten under uniform prompts; the top-five mean has negative correlations in eleven and twelve, respectively. The primary 95th percentile is negative in all thirteen under each condition. These are descriptive sign counts, not counts of individually significant effects. All these comparisons use the final third of layers and do not test a final-quarter cutoff.
+
 ### D. Statistical procedures and prompt sensitivity
 
 The binding confidence intervals use 2,000 paired compound bootstrap resamples with seed 20260813. Each resample draws 49 rows with replacement and recomputes Spearman correlation; nonfinite estimates are omitted. The endpoints are the 2.5th and 97.5th percentiles. These are per-model intervals, not simultaneous confidence intervals.

@@ -40,7 +40,7 @@ TMLR_OPTION=""
 OUTNAME="tmlr-submission"
 
 case "$1" in
-  --preprint) TMLR_OPTION="preprint"; OUTNAME="tmlr-preprint" ;;
+  --preprint) TMLR_OPTION="preprint"; OUTNAME="correct-definitions-failed-applications" ;;
   --accepted) TMLR_OPTION="accepted"; OUTNAME="tmlr-camera-ready" ;;
   "")         ;;
   *) echo "Unknown option: $1 (expected --preprint or --accepted)" >&2; exit 1 ;;
