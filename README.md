@@ -69,8 +69,11 @@ Notebooks are in `notebooks/` and are designed to run on either local (MPS/CUDA)
 ## Building the paper
 
 ```bash
-cd paper && bash build-paper.sh
+bash paper/build-paper.sh
 ```
+
+The tagged PDF is written to `paper/build-out/available-but-unreachable.pdf`.
+See [paper/README.md](paper/README.md) for dependencies and build details.
 
 Figures are generated from results CSVs by scripts in `paper/generate-figures/`.
 

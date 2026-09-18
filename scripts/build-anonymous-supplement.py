@@ -9,7 +9,7 @@ import re
 import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "paper" / "build-out" / "tmlr-anonymous-supplement.zip"
+OUT = ROOT / "paper" / "build-out" / "available-but-unreachable-anonymous-supplement.zip"
 paths = set()
 
 def include(pattern):
@@ -176,7 +176,7 @@ with zipfile.ZipFile(OUT, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9
         info = zipfile.ZipInfo(name, date_time=(2026, 9, 5, 0, 0, 0))
         info.compress_type = zipfile.ZIP_DEFLATED
         z.writestr(info, content, compresslevel=9)
-assert OUT.stat().st_size < 100_000_000, "Supplement exceeds TMLR's 100 MB limit"
+assert OUT.stat().st_size < 100_000_000, "Supplement exceeds the 100 MB packaging budget"
 with zipfile.ZipFile(OUT) as z:
     assert z.testzip() is None
     for name, digest in json.loads(z.read("SHA256SUMS.json")).items():
