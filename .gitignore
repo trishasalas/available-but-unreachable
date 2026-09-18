@@ -18,14 +18,4 @@ _analysis/*
 
 # paper build artifacts (restructure 2026-07-10)
 paper/build-debug/
-paper/**/*.aux
-paper/**/*.log
-paper/**/*.fls
-paper/**/*.fdb_latexmk
-paper/build-out/*.bbl
-paper/build-out/*.blg
-paper/build-out/tmlr-submission.pdf
-paper/build-out/*.tex
-
-# Rebuildable anonymous submission package
-paper/build-out/tmlr-anonymous-supplement.zip
+paper/build-out/
